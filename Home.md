@@ -1,6 +1,6 @@
 # Welcome
 
-linux terminal command(https://bitbucket.org/yulilong/my_wiki/wiki/linux%20terminal%20command)
+[linux terminal command](https://bitbucket.org/yulilong/my_wiki/wiki/linux%20terminal%20command)
 
 ## Wiki features
 
