@@ -1,6 +1,6 @@
 # Welcome
 
-Welcome to your wiki! This is the default page we've installed for your convenience. Go ahead and edit it.
+linux terminal command(https://bitbucket.org/yulilong/my_wiki/wiki/linux%20terminal%20command)
 
 ## Wiki features
 
