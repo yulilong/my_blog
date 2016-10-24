@@ -1,7 +1,10 @@
 ```
-1.安装Samba#   yum -y install samba samba-client samba-common
+1.安装Samba
+# yum -y install samba samba-client samba-common
 2.selinux 设为警告模式
-3.创建共享目录  mkdir -p /home/smb/myself
+# setenforce 0
+3.创建共享目录 
+# mkdir -p /home/smb/myself
 4.(可不用)配置内核参数 # ulimit -n 16384
 		       # vi /etc/security/limits.conf
 		       #在最后加入以下内容
