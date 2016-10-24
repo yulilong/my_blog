@@ -1,6 +1,7 @@
 # Welcome
 
 * [linux terminal command](https://bitbucket.org/yulilong/my_wiki/wiki/linux%20terminal%20command)
+* [centos7 搭建samba方法](https://bitbucket.org/yulilong/my_wiki/wiki/centos7%20%E6%90%AD%E5%BB%BAsamba%E6%96%B9%E6%B3%95)
 
 ## Wiki features
 
