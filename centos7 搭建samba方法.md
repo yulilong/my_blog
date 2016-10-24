@@ -64,5 +64,30 @@ $ smbclient //192.168.1.44/smb -U myself
 smb：文件夹
 myself： samba的用户
 
+2.连接后文件上传与下载
+连接后是ftp形式的，ftp命令：
+1．FTP服务器的登陆
+匿名用户：FTP 口令：FTP
+用户：ANONYMOUS 口令：任何电子邮件
+2．显示文件信息：DIR/LS
+3．下载文件：GET 文件名（下载到当前目录）
+4．上传文件：PUT 文件名
+5．多文件下载：MGET
+6．多文件上传：MPUT
+7．退出：BYE
+8．帮助：HELP
+ls 列出远程机的当前目录
+cd 在远程机上改变工作目录
+lcd 在本地机上改变工作目录
+ascii 设置文件传输方式为ASCII模式
+binary 设置文件传输方式为二进制模式
+close 终止当前的ftp会话
+hash 每次传输完数据缓冲区中的数据后就显示一个#号
+get（mget） 从远程机传送指定文件到本地机
+put（mput） 从本地机传送指定文件到远程机
+open 连接远程ftp站点
+断开与远程机的连接并退出ftp
+? 显示本地帮助信息
+! 转到Shell中
 ```
 
