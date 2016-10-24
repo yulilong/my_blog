@@ -4,7 +4,7 @@
 2.selinux 设为警告模式
 # setenforce 0
 3.创建共享目录 
-# mkdir -p /home/smb/myself
+# mkdir -p /home/smb/share_folder
 4.(可不用)配置内核参数 # ulimit -n 16384
 		       # vi /etc/security/limits.conf
 		       #在最后加入以下内容
