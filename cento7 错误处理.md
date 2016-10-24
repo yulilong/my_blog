@@ -12,3 +12,9 @@ then try install epel via dnf
 
 dnf clean all dnf install epel-release
 ```
+#tar uncompress xxx.tar.xz
+```
+tar xf archive.tar.xz
+tar xf archive.tar.gz
+tar xf archive.tar
+```
