@@ -21,11 +21,16 @@ git config --list
 
 #git-credentials
 ```
-vim /home/deploy/.git-credentials
+$ vim /home/deploy/.git-credentials
+```
+```
 https://micfan:abcdefg123@bitbucket.org
 https://micfan:e36f475917bd5c7e5ff7c4c1ebfe5dda1e142600@github.com
 http://micfan:e36f475917bd5c7e5ff7c4c1ebfe5dda1e142600@github.com
 http://pivotal-cf:abcdefg123@github.com
 https://pivotal-cf:abcdefg123@github.com
 https://cfmobile:abcdefg123@github.com
+```
+```
+$ git config --global credential.helper store
 ```
