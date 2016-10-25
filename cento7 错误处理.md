@@ -14,6 +14,7 @@ dnf clean all dnf install epel-release
 
 注：
 如果删除了/etc/yum.repos.d/epel* ，那么一旦dnf命令安装失败，然后用yum安装，那么就要恢复删除的这些选项。
+可先给yum.repos.d 文件夹做一个备份，如果dnf安装失败，则用yum安装，这个时候恢复这个文件夹。
 ```
 #tar uncompress xxx.tar.xz
 ```
