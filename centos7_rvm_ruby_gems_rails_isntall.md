@@ -17,6 +17,8 @@ $ rvm list known
 选一个版本
 $ rvm install 2.3.0
 $ rvm use 2.3.0 --default
+$ echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"' >>~/.bashrc
+$ source ~/.bashrc
 $ ruby -v
 如果出现版本，那么说明安装成功。
 ```
