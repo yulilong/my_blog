@@ -38,6 +38,7 @@ http://zhidao.baidu.com/link?url=YWnbBbR1fLGrWwQ9bKROr_2A_7fotpIgs2IJA0yh7-MfDDB
 ```
 
 #centos7开机自动关闭网络,开启网络，有线设置
+http://jingyan.baidu.com/article/6dad5075f3d766a123e36eaa.html
 ```
 $ cd /etc/sysconfig/network-scirpts
 $ ls
