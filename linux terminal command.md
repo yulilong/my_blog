@@ -36,3 +36,17 @@ scp root@/172.19.2.75:/home/root/full.tar.gz /home/daisy/full.tar.gz
 ```
 http://zhidao.baidu.com/link?url=YWnbBbR1fLGrWwQ9bKROr_2A_7fotpIgs2IJA0yh7-MfDDBKf3GSsB8Hab1pn0-Q8xpBnW0rSUUOhY1jIngKlX_O3-O9q2G0uIQCsANK80e
 ```
+
+#centos7开机自动关闭网络,开启网络，有线设置
+```
+$ cd /etc/sysconfig/network-scirpts
+$ ls
+$sudo vi ifcfg-eth0
+修改：
+ONBOOT=yes
+关闭
+ONBOOT=no
+```
+
+
+
