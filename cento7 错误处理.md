@@ -46,3 +46,23 @@ node --version
 $ sudo yum -y install npm
 如果yum也提示没有，那么更新yum源
 ```
+#sudo yum update
+```
+error info:
+警告：/var/cache/yum/x86_64/7/elrepo-kernel/packages/python-perf-4.8.4-1.el7.elrepo.x86_64.rpm: 头V4 DSA/SHA1 Signature, 密钥 ID baadae52: NOKEY
+从 file:///etc/pki/rpm-gpg/RPM-GPG-KEY-elrepo.org 检索密钥
+获取 GPG 密钥失败：[Errno 14] curl#37 - "Couldn't open file /etc/pki/rpm-gpg/RPM-GPG-KEY-elrepo.org"
+
+process result
+http://elrepo.org/tiki/tiki-index.php
+$ rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+
+```
+
+
+
+
+
+
+
+
