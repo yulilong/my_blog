@@ -27,6 +27,39 @@ scp --- 主要是在不同的Linux系统之间来回copy文件
 将档案 aaa 复制(已存在)，并命名为 bbb： 
 cp aaa bbb 
 从 本地 复制到 远程 
+cp [options] source1 source2 source3 …. directory
+上面第一条命令为单个文件或目录拷贝，下一个为多个文件拷贝到最后的目录。
+options选项包括：
+- a 保留链接和文件属性，递归拷贝目录，相当于下面的d、p、r三个选项组合。
+- d 拷贝时保留链接。
+- f 删除已经存在目标文件而不提示。
+- i 覆盖目标文件前将给出确认提示，属交互式拷贝。
+- p 复制源文件内容后，还将把其修改时间和访问权限也复制到新文件中。
+- r 若源文件是一目录文件，此时cp将递归复制该目录下所有的子目录和文件。当然，目标文件必须为一个目录名。
+- l 不作拷贝，只是链接文件。
+-s 复制成符号连结文件 (symbolic link)，亦即『快捷方式』档案；
+-u 若 destination 比 source 旧才更新 destination。
+cp命令使用范例：
+1、将文档 file1复制成file2，复制后名称被改file2
+cp -i file1 file2
+或，
+cp file1 file2
+2、将文档 file1复制到dir1目录下，复制后名称仍未file1
+cp -i file1 dir1
+或，
+cp file1 dir1
+3、将目录dir1复制到dir2目录下，复制结果目录被改名为dir2
+cp -r dir1 dir2
+4、将目录dir1下所有文件包括文件夹，都复制到dir2目录下
+cp -r dir1/*.* dir2
+常见错误：
+1、提示cp: omitting directory错误
+复制目录时，使用-r选项即可递归拷贝，如下：
+cp -r dir1 dir2
+
+
+```
+```
 scp /home/daisy/full.tar.gz root@172.19.2.75:/home/root （然后会提示你输入另外那台172.19.2.75主机的root用户的登录密码，接着就开始copy了），复制目录加参数 -r 即可 
 从 远程 复制到 本地 
 scp root@/172.19.2.75:/home/root/full.tar.gz /home/daisy/full.tar.gz
