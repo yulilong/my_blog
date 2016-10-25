@@ -57,6 +57,8 @@ process result
 http://elrepo.org/tiki/tiki-index.php
 $ rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 
+1.如果导入失败，则手动下载，然后把文件复制到 /etc/pki/rpm-gpg/
+
 ```
 
 
