@@ -3,6 +3,7 @@
 * [linux terminal command](https://bitbucket.org/yulilong/my_wiki/wiki/linux%20terminal%20command)
 * [centos7 搭建samba方法](https://bitbucket.org/yulilong/my_wiki/wiki/centos7%20%E6%90%AD%E5%BB%BAsamba%E6%96%B9%E6%B3%95)
 * [ cento7 错误处理](https://bitbucket.org/yulilong/my_wiki/wiki/cento7%20%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86)
+* [centos7_rvm_ruby_gems_rails_isntall](https://bitbucket.org/yulilong/my_wiki/wiki/centos7_rvm_ruby_gems_rails_isntall)
 
 ## Wiki features
 
