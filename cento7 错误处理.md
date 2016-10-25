@@ -36,3 +36,9 @@ sudo make install
 node --version
 如果出现了版本号，则说明安装成功了。
 ```
+# sudo dnf -y install npm 如果安装失败
+```
+尝试是使用yum安装，
+$ sudo yum -y install npm
+如果yum也提示没有，那么更新yum源
+```
