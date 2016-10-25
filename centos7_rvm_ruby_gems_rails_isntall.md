@@ -22,11 +22,15 @@ $ ruby -v
 ```
 * Install RubyGems:
 ```
- rvm rubygems current
+$ rvm rubygems current
+$ rvm -v
+如果出现版本，那么说明安装成功。
 ```
 * Install Rails
 ```
-gem install rails
+$ gem install rails
+$ rails -v
+如果出现版本，那么说明安装成功。
 ```
 
 
