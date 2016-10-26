@@ -60,7 +60,25 @@ $ rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 1.如果导入失败，则手动下载，然后把文件复制到 /etc/pki/rpm-gpg/
 
 ```
+# yum install postgresql-devel error
+* description
+```
+ERROR:  Error installing pg:
+	ERROR: Failed to build gem native extension.
+.....
+.....
+.....
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+```
+* solution
+http://www.faqoverflow.com/serverfault/316703.html
+```
+$ yum install postgresql-devel
 
+If you still encounter issues with pg_config, you may need to add it to your PATH, e.g.:
+$ export PATH=$PATH:/usr/pgsql-x.x/bin
+where x.x is your version, such as /usr/pgsql-9.2./bin.
+```
 
 
 
