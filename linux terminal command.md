@@ -89,5 +89,6 @@ PostgreSQL是以加州大学伯克利分校计算机系开发的 POSTGRES，现�
 ```
 $ su postgres
 $ psql
+$ sudo find / -name postgresql.conf
 ```
 
