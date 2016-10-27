@@ -92,4 +92,25 @@ bash-4.2$ psql
 postgres=# \du
 $ sudo find / -name postgresql.conf
 ```
+* 安装 pqadmin3
+https://yum.postgresql.org/
+http://www.voidcn.com/blog/houzhizhen/article/p-4388378.html
+```
+$ wget http://ftp.riken.jp/Linux/fedora/epel/6/x86_64/epel-release-6-8.noarch.rpm
+$ rpm -ivh epel-release-6-8.noarch.rpm
+$ yum install pgadmin3
+```
+* 修改数据库配置文件，允许连接
+```
+$ yum install pgadmin3
+$ sudo vi /var/opt/rh/rh-postgresql94/lib/pgsql/data/pg_hba.conf
+找到下面的内容：
+# IPv4 local connections:
+host    all             all             127.0.0.1/32            ident
+# IPv6 local connections:
+host    all             all             ::1/128                 ident
+
+把ident修改为 trust 
+
+```
 
