@@ -100,8 +100,8 @@ https://yum.postgresql.org/
 http://www.voidcn.com/blog/houzhizhen/article/p-4388378.html
 ```
 $ wget http://ftp.riken.jp/Linux/fedora/epel/6/x86_64/epel-release-6-8.noarch.rpm
-$ rpm -ivh epel-release-6-8.noarch.rpm
-$ yum install pgadmin3
+$ sudo rpm -ivh epel-release-6-8.noarch.rpm
+$ sudo yum install pgadmin3
 ```
 * 修改数据库配置文件，允许连接
 ```
