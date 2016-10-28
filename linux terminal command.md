@@ -89,6 +89,8 @@ PostgreSQL是以加州大学伯克利分校计算机系开发的 POSTGRES，现�
 ```
 $ su postgres
 bash-4.2$ psql
+如果psql notfound ，则 scl enable rh-postgresql94 bash，这个由于postgres升级导致的，http://manageiq.org/docs/guides/developer_setup/postgresql_software_collection
+
 postgres=# \du
 $ sudo find / -name postgresql.conf
 ```
