@@ -73,7 +73,7 @@ To see why this extension failed to compile, please check the mkmf.log which can
 * solution
 http://www.faqoverflow.com/serverfault/316703.html
 ```
-$ yum install postgresql-devel
+$ sudo yum install postgresql-devel
 
 If you still encounter issues with pg_config, you may need to add it to your PATH, e.g.:
 $ export PATH=$PATH:/usr/pgsql-x.x/bin
