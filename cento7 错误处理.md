@@ -60,7 +60,7 @@ $ rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 1.如果导入失败，则手动下载，然后把文件复制到 /etc/pki/rpm-gpg/
 
 ```
-# yum install postgresql-devel error
+# gem install pg -v '0.18.4'  error
 * description
 ```
 ERROR:  Error installing pg:
