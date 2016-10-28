@@ -21,7 +21,7 @@ git config --list
 
 #git-credentials
 ```
-$ vim /home/deploy/.git-credentials
+$ vim ~/.git-credentials
 ```
 ```
 https://micfan:abcdefg123@bitbucket.org
