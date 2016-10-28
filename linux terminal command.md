@@ -81,7 +81,8 @@ ONBOOT=yes
 关闭
 ONBOOT=no
 ```
-#查看linux中postgres 版本
+# 安装 pqadmin3
+* 查看linux中postgres 版本
 ```
 $ psql --version
 ```
