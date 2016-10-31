@@ -21,6 +21,9 @@ dnf clean all dnf install epel-release
 tar xf archive.tar.xz
 tar xf archive.tar.gz
 tar xf archive.tar
+.tar.gz 格式解压为 tar -zxvf xx.tar.gz
+.tar.bz2 格式解压为 tar -jxvf xx.tar.bz2
+
 ```
 * uncompress xxx.rar
 http://blog.csdn.net/alpha_xiao/article/details/52238962
