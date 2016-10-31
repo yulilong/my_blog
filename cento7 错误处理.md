@@ -22,6 +22,28 @@ tar xf archive.tar.xz
 tar xf archive.tar.gz
 tar xf archive.tar
 ```
+* uncompress xxx.rar
+http://blog.csdn.net/alpha_xiao/article/details/52238962
+```
+$ wget http://www.rarsoft.com/rar/rarlinux-3.9.3.tar.gz  
+$ tar -xvf rarlinux-3.9.3.tar.gz  
+$ cd rar  
+$ sudo make
+看见下面这些信息就是安装成功了
+mkdir -p /usr/local/bin
+mkdir -p /usr/local/lib
+cp rar unrar /usr/local/bin
+cp rarfiles.lst /etc
+cp default.sfx /usr/local/lib
+运行命令rar时,出现下面这个问题
+rar: /lib/i686/nosegneg/libc.so.6: version `GLIBC_2.7' not found (required byrar)
+解决办法：
+$ cp rar_static /usr/local/bin/rar
+解壓：
+$ rar x vpsyou.rar  //解压 vpsyou.rar 到当前目录
+$ rar vpsyou.rar ./vpsyou.com/   //将 vpsyou.com 目录打包为vpsyou.rar
+```
+
 #sudo dnf -y install nodejs ,error :no package matched: nodejs
 ```
 1. 去官网下载安装
