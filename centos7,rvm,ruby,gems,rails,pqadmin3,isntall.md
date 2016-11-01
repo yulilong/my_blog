@@ -52,11 +52,14 @@ PostgreSQL是以加州大学伯克利分校计算机系开发的 POSTGRES，现�
 ```
 $ su postgres
 bash-4.2$ psql
-如果psql notfound ，则 scl enable rh-postgresql94 bash，这个由于postgres升级导致的，http://manageiq.org/docs/guides/developer_setup/postgresql_software_collection
-
 postgres=# \du
 $ sudo find / -name postgresql.conf
 ```
+* 注：
+* 1.如果postgres 没有设置密码则用如下命令设置：
+$ sudo passwd postgres
+* 2.如果psql notfound ，则 scl enable rh-postgresql94 bash，这个由于postgres升级导致的，http://manageiq.org/docs/guides/developer_setup/postgresql_software_collection
+
 * 安装 pqadmin3
 https://yum.postgresql.org/
 http://www.voidcn.com/blog/houzhizhen/article/p-4388378.html
