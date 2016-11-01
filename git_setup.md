@@ -24,12 +24,10 @@ git config --list
 $ vim ~/.git-credentials
 ```
 ```
-https://micfan:abcdefg123@bitbucket.org
-https://micfan:e36f475917bd5c7e5ff7c4c1ebfe5dda1e142600@github.com
-http://micfan:e36f475917bd5c7e5ff7c4c1ebfe5dda1e142600@github.com
-http://pivotal-cf:abcdefg123@github.com
-https://pivotal-cf:abcdefg123@github.com
-https://cfmobile:abcdefg123@github.com
+https://yulilong:password@bitbucket.org
+http://yulilong:password@bitbucket.org
+https://yulilong:385f054bdcf8d95b4372c6e5199818388420c0fd@github.com
+http://yulilong:385f054bdcf8d95b4372c6e5199818388420c0fd@github.com
 ```
 ```
 $ git config --global credential.helper store
