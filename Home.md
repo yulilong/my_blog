@@ -6,6 +6,7 @@
 * [centos7_rvm_ruby_gems_rails_isntall](https://bitbucket.org/yulilong/my_wiki/wiki/centos7_rvm_ruby_gems_rails_isntall)
 * [centos7_install_stardict](https://bitbucket.org/yulilong/my_wiki/wiki/centos7_install_stardict)
 * [git_setup](https://bitbucket.org/yulilong/my_wiki/wiki/git_setup)
+* [virtualbox虚拟机 centos7安装增强工具](https://bitbucket.org/yulilong/my_wiki/wiki/virtualbox%E8%99%9A%E6%8B%9F%E6%9C%BA%20centos7%E5%AE%89%E8%A3%85%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7)
 
 ## Wiki features
 
