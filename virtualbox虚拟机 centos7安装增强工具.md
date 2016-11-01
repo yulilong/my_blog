@@ -11,3 +11,12 @@ Command:  /usr/bin/gnome-terminal (Terminal 程序的路径）
 点击apply
 6. 一开始是禁用（disabled）的,点击disabled出现下面情形,此时按下你喜欢的快捷键比如Ctrl+Alt+T,
 ```
+在virtualbox虚拟机中，如果鼠标指针出不来， 按键盘上右边的 alt+ctrl。
+
+# 添加virtualbox 增强工具
+http://www.tuicool.com/articles/VRbq2em
+```
+$ sudo yum update
+$ sudo yum install gcc kernel-devel kernel-headers dkms make bzip2 
+$ reboot
+```
