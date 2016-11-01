@@ -19,4 +19,28 @@ http://www.tuicool.com/articles/VRbq2em
 $ sudo yum update
 $ sudo yum install gcc kernel-devel kernel-headers dkms make bzip2 
 $ reboot
+1.点击虚拟机左上角的 Devices ,选择：insert guest addition CD image
+2.进入到虚拟机中运行这个镜像自动安装。
 ```
+
+# 设置共享文件夹
+http://www.cnblogs.com/zqifa/p/linux-virtualbox-1.html
+http://www.cnblogs.com/jenry/archive/2013/09/06/3305062.html
+```
+1.在VirtualBox的菜单点击"设备(Devices)" -> 分配数据空间(Shared Folders)菜单，添加一个共享文件夹，选项固定和临时是指该文件夹是否是持久的。尽量使用英文名称。我这里用winshare.
+2. 重新进入虚拟CentOs5.5，在命令行终端下输入：
+#sudo mkdir /mnt/share
+#sudo mount -t vboxsf winshare /mnt/share
+如果提示 /sbin/mount.vboxsf: mounting failed with the error: No such device
+可能是没有载入内核模块 vboxfs ，先查看下：
+#lsmod | grep vboxsf
+如果没有结果返回，说明 vboxsf没有载入，执行
+#sudo modprobe vboxsf
+正常的话mount -t vboxsf winshare /mnt/share共享文件夹应该可以访问了
+#cd /mnt/share
+#ls -al
+假如您不想每一次都手动挂载，可以在/etc/fstab中添加一项
+share /mnt/share vboxsf rw,gid=100,uid=1000,auto 0 0
+这样就能够自动挂载了。
+```
+
