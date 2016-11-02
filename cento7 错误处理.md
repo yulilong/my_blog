@@ -140,6 +140,7 @@ export PATH
 
 * 导致这文问题的原因：
 http://manageiq.org/docs/guides/developer_setup/postgresql_software_collection
+
 里面的这段话：
 ```
 source /opt/rh/rh-postgresql94/enable
