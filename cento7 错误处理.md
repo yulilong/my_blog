@@ -1,4 +1,4 @@
-## dnf -y install memcached Failed to open:
+## 1.dnf -y install memcached Failed to open:
 ```
 http://stackoverflow.com/questions/32541196/i-attempted-to-enable-the-epel-repo-on-my-fedora-22-machine-and-i-broke-it-now
 
@@ -16,7 +16,7 @@ dnf clean all dnf install epel-release
 如果删除了/etc/yum.repos.d/epel* ，那么一旦dnf命令安装失败，然后用yum安装，那么就要恢复删除的这些选项。
 可先给yum.repos.d 文件夹做一个备份，如果dnf安装失败，则用yum安装，这个时候恢复这个文件夹。
 ```
-#tar uncompress xxx.tar.xz
+#2. tar uncompress xxx.tar.xz
 ```
 tar xf archive.tar.xz
 tar xf archive.tar.gz
@@ -65,7 +65,7 @@ sudo make install
 node --version
 如果出现了版本号，则说明安装成功了。
 ```
-# sudo dnf -y install npm 如果安装失败
+# 3. sudo dnf -y install npm 如果安装失败
 ```
 尝试是使用yum安装，
 $ sudo yum -y install npm
@@ -85,7 +85,7 @@ $ rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 1.如果导入失败，则手动下载，然后把文件复制到 /etc/pki/rpm-gpg/
 
 ```
-# gem install pg -v '0.18.4'  error
+# 4. gem install pg -v '0.18.4'  error
 * description
 ```
 ERROR:  Error installing pg:
@@ -104,7 +104,38 @@ If you still encounter issues with pg_config, you may need to add it to your PAT
 $ export PATH=$PATH:/usr/pgsql-x.x/bin
 where x.x is your version, such as /usr/pgsql-9.2./bin.
 ```
+# 5. 在安装好manageiq 跟rvm后 重起后输入密码后重新输入错误
 
+* 1. bashrc 脚本被清除了
+原本：
+```
+# .bashrc
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+# User specific aliases and functions
+```
+如果没有这一段，那么首先用root用户登陆，然后进入用户目录把这段加上
+* 2. $HOME/.bash_profile 里面缺少下面这段代码：
+```
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/.local/bin:$HOME/bin
+
+export PATH
+```
+如果缺少这段代码，那么复制这段代码到里面。
 
 
 
