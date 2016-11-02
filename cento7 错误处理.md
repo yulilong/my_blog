@@ -119,7 +119,8 @@ fi
 # export SYSTEMD_PAGER=
 # User specific aliases and functions
 ```
-如果没有这一段，那么首先用root用户登陆，然后进入用户目录把这段加上
+如果没有这一段，那么首先用root用户登陆，然后进入用户目录把这段加上。
+
 * $HOME/.bash_profile 里面缺少下面这段代码：
 ```
 # .bash_profile
