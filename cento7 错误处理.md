@@ -47,7 +47,7 @@ $ rar x vpsyou.rar  //解压 vpsyou.rar 到当前目录
 $ rar vpsyou.rar ./vpsyou.com/   //将 vpsyou.com 目录打包为vpsyou.rar
 ```
 
-#sudo dnf -y install nodejs ,error :no package matched: nodejs
+# 3. sudo dnf -y install nodejs ,error :no package matched: nodejs
 ```
 1. 去官网下载安装
 https://nodejs.org/
@@ -65,7 +65,7 @@ sudo make install
 node --version
 如果出现了版本号，则说明安装成功了。
 ```
-# 3. sudo dnf -y install npm 如果安装失败
+# 4. sudo dnf -y install npm 如果安装失败
 ```
 尝试是使用yum安装，
 $ sudo yum -y install npm
@@ -85,7 +85,7 @@ $ rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 1.如果导入失败，则手动下载，然后把文件复制到 /etc/pki/rpm-gpg/
 
 ```
-# 4. gem install pg -v '0.18.4'  error
+# 5. gem install pg -v '0.18.4'  error
 * description
 ```
 ERROR:  Error installing pg:
@@ -104,7 +104,7 @@ If you still encounter issues with pg_config, you may need to add it to your PAT
 $ export PATH=$PATH:/usr/pgsql-x.x/bin
 where x.x is your version, such as /usr/pgsql-9.2./bin.
 ```
-# 5. 在安装好manageiq 跟rvm后 重起后输入密码后重新输入错误
+# 6. 在安装好manageiq 跟rvm后 重起后输入密码后重新输入错误
 
 * 1. bashrc 脚本被清除了
 原本：
@@ -136,6 +136,18 @@ PATH=$PATH:$HOME/.local/bin:$HOME/bin
 export PATH
 ```
 如果缺少这段代码，那么复制这段代码到里面。
+
+*导致这文问题的原因：
+http://manageiq.org/docs/guides/developer_setup/postgresql_software_collection
+里面的这段话：
+```
+source /opt/rh/rh-postgresql94/enable
+It is good idea to add this to your personal .bash_profile:
+$ cat > $HOME/.bash_profile <<.
+source /opt/rh/rh-postgresql94/enable
+.
+```
+还有 .bsahrc里面的内容也不能少
 
 
 
