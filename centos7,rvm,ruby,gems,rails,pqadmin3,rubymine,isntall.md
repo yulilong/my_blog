@@ -90,6 +90,16 @@ $ sudo systemctl restart rh-postgresql94-postgresql
 $ lsof -i:5432
 ```
 
+# install rubymine
+```
+1. rubymine 最好是7.1.4版本的，这个网络上有激活码。
+2.rubymine安装后找不到ruby解释器位置：
+http://stackoverflow.com/questions/17950288/rubymine-cant-find-sdk-where-is-it
+* Windows - d:\dev\Ruby19\bin\ruby.exe
+* Mac Brew - /usr/local/Cellar/ruby/2.0.0-p247/bin/ruby
+* Ruby Version Manager - /Users/<user>/.rvm/rubies/ruby-1.9.3-p327/bin/ruby
+* Linux/Mac Default - /usr/bin/ruby
 
+```
 
 
