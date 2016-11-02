@@ -106,7 +106,7 @@ where x.x is your version, such as /usr/pgsql-9.2./bin.
 ```
 # 6. 在安装好manageiq 跟rvm后 重起后输入密码后重新输入错误
 
-* 1. bashrc 脚本被清除了
+* bashrc 脚本被清除了
 原本：
 ```
 # .bashrc
@@ -120,7 +120,7 @@ fi
 # User specific aliases and functions
 ```
 如果没有这一段，那么首先用root用户登陆，然后进入用户目录把这段加上
-* 2. $HOME/.bash_profile 里面缺少下面这段代码：
+* $HOME/.bash_profile 里面缺少下面这段代码：
 ```
 # .bash_profile
 
@@ -137,7 +137,7 @@ export PATH
 ```
 如果缺少这段代码，那么复制这段代码到里面。
 
-*导致这文问题的原因：
+* 导致这文问题的原因：
 http://manageiq.org/docs/guides/developer_setup/postgresql_software_collection
 里面的这段话：
 ```
