@@ -5,3 +5,7 @@ http://stackoverflow.com/questions/33754137/rails-server-command-returns-error-m
 sudo mkdir tmp
 sudo chmod 777 tmp
 ```
+
+## 由于之前安装了miq-Citrix,导致manageiq登陆不上提示token无效
+
+删除系统中/var 中的 www 文件夹就好了
