@@ -10,7 +10,7 @@
 
 ##ruby rails 学习资料
 ### rake
-* [Ruby中任务构建工具rake的入门学习教程](https://bitbucket.org/yulilong/my_wiki/wiki/Ruby%E4%B8%AD%E4%BB%BB%E5%8A%A1%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7rake%E7%9A%84%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B) 推荐读这个，简单易懂。
+* [Ruby中任务构建工具rake的入门学习教程](https://bitbucket.org/yulilong/my_wiki/wiki/Ruby%E4%B8%AD%E4%BB%BB%E5%8A%A1%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7rake%E7%9A%84%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B)          推荐读这个，简单易懂。
 * [Ruby on Rails中的Rake教程](https://bitbucket.org/yulilong/my_wiki/wiki/%20Ruby%20on%20Rails%E4%B8%AD%E7%9A%84Rake%E6%95%99%E7%A8%8B)
 * [Ruby中的Rake任务详述](https://bitbucket.org/yulilong/my_wiki/wiki/Ruby%E4%B8%AD%E7%9A%84Rake%E4%BB%BB%E5%8A%A1%E8%AF%A6%E8%BF%B0)
 
