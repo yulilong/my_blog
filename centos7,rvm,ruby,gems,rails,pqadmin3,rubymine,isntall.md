@@ -34,7 +34,7 @@ ps:
 * Install RubyGems:
 ```
 $ rvm rubygems current
-$ rvm -v
+$ gem -v
 如果出现版本，那么说明安装成功。
 ```
 * Install Rails
