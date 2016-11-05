@@ -16,6 +16,8 @@
 * [Ruby on Rails中的Rake教程](https://bitbucket.org/yulilong/my_wiki/wiki/%20Ruby%20on%20Rails%E4%B8%AD%E7%9A%84Rake%E6%95%99%E7%A8%8B)
 * [Ruby中的Rake任务详述](https://bitbucket.org/yulilong/my_wiki/wiki/Ruby%E4%B8%AD%E7%9A%84Rake%E4%BB%BB%E5%8A%A1%E8%AF%A6%E8%BF%B0)
 
+###rails -> view
+* [rails中view 部分haml资料](https://bitbucket.org/yulilong/my_wiki/wiki/rails%E4%B8%ADview%20%E9%83%A8%E5%88%86haml%E8%B5%84%E6%96%99)
 
 ## Wiki features
 
