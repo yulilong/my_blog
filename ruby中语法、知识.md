@@ -66,3 +66,21 @@ SChild.new a, b, c # puts a, b, c if super
 SChild.new a, b, c # puts nothing if super() 
 可以看出当SChild的initialize中调用super()时，代码是不会打印任何信息的。这是因为super()没有向SParent的initialize方法传任何参数。
 ```
+
+## ruby 类方法中 self.class.方法名
+子类中方法调用父类中同名的方法
+```
+class AA
+  def self.te
+    p 'I an AA'
+  end
+end
+class BB < AA
+  def te
+    self.class.te
+  end
+end
+a = BB.new
+a.te
+# "I an AA"
+```
