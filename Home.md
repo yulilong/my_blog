@@ -12,6 +12,10 @@
 
 * [Ruby on Rails 在线教程](https://railstutorial-china.org/book/)
 
+* [Rails 中文指南](http://guides.ruby-china.org/)
+* [Rails 官网](http://rubyonrails.org/)
+* [rubygems 官网](https://rubygems.org/)
+
 * [ruby_or_rails_错误解决](https://bitbucket.org/yulilong/my_wiki/wiki/ruby_or_rails_%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3)
 * [ruby中语法、知识](https://bitbucket.org/yulilong/my_wiki/wiki/ruby%E4%B8%AD%E8%AF%AD%E6%B3%95%E3%80%81%E7%9F%A5%E8%AF%86)
 ### rake
