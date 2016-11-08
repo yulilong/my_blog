@@ -9,6 +9,9 @@
 * [virtualbox虚拟机 centos7安装增强工具](https://bitbucket.org/yulilong/my_wiki/wiki/virtualbox%E8%99%9A%E6%8B%9F%E6%9C%BA%20centos7%E5%AE%89%E8%A3%85%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7)
 
 ##ruby rails 学习资料
+
+* [Ruby on Rails 在线教程](https://railstutorial-china.org/book/)
+
 * [ruby_or_rails_错误解决](https://bitbucket.org/yulilong/my_wiki/wiki/ruby_or_rails_%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3)
 * [ruby中语法、知识](https://bitbucket.org/yulilong/my_wiki/wiki/ruby%E4%B8%AD%E8%AF%AD%E6%B3%95%E3%80%81%E7%9F%A5%E8%AF%86)
 ### rake
