@@ -11,6 +11,37 @@ end
 Array.hint
 这段代码是添加类方法，只能类去调用这个方法
 ```
+* 类方法的定义：
+
+```
+class HelloWorld
+  def greet
+  end
+end
+```
+class << 类名 ～ end
+```
+class << HelloWorld
+  def hello
+  end
+end 
+```
+class << self ~ end
+```
+class HelloWorld
+  class << self
+    def hello
+    end
+  end
+end
+```
+def 类名.方法名 ~ end
+```
+class << HelloWorld
+  def HelloWorld.hello
+  end
+end 
+```
 ### ruby 中super和super()的区别
 http://blog.csdn.net/autumn20080101/article/details/8146310
 ```
