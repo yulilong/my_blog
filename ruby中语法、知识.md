@@ -68,7 +68,7 @@ SChild.new a, b, c # puts nothing if super()
 ```
 
 ## ruby 类方法中 self.class.方法名
-子类中方法调用父类中同名的方法
+子类中方法调用父类中同名的 类方法
 ```
 class AA
   def self.te
