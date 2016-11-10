@@ -28,8 +28,10 @@
 * [rails中view 部分haml资料](https://bitbucket.org/yulilong/my_wiki/wiki/rails%E4%B8%ADview%20%E9%83%A8%E5%88%86haml%E8%B5%84%E6%96%99)
 
 
+###rails -> route
+* [rails中route官方教程](http://guides.ruby-china.org/routing.html)http://guides.ruby-china.org/routing.html
 
-
+要想查看程序完整的路由列表，可以在开发环境中使用浏览器打开 http://localhost:3000/rails/info/routes。也可以在终端执行 rake routes 任务查看，结果是一样的。
 
 
 如果 .md里面要方图片，一种是把图片放到网易博客中去。
