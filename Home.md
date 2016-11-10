@@ -38,6 +38,10 @@
 
 
 如果 .md里面要方图片，一种是把图片放到网易博客中去。
+
+## 阿里云应用部署文档
+* [阿里云应用部署文档](https://bitbucket.org/yulilong/my_wiki/wiki/%20%E9%98%BF%E9%87%8C%E4%BA%91%E5%BA%94%E7%94%A8%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3)
+
 ## Wiki features
 
 This wiki uses the [Markdown](http://daringfireball.net/projects/markdown/) syntax. The [MarkDownDemo tutorial](https://bitbucket.org/tutorials/markdowndemo) shows how various elements are rendered. [Bitbucket documentation](https://confluence.atlassian.com/display/BITBUCKET/Use+a+wiki) has more information about how using a wiki.
