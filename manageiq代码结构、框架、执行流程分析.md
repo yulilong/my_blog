@@ -50,7 +50,7 @@ MVC 架构图解：
 
 根据上面的执行流程，如果想知道manageiq某一个网页的代码，以及修改某一部分，就可以按照上面的过程来查找。  
 
-### manageiq运行解析 ###
+### manageiq登陆过程分析 ###
 
 * 启动服务
 
@@ -96,9 +96,13 @@ https://github.com/ManageIQ/manageiq/blob/darga-4/app/views/dashboard/login.html
 
 * controllers/dashboard_controller.rb 的authenticate方法对密码进行验证
 
-
-
-
+代码位置：  
+https://github.com/ManageIQ/manageiq/blob/darga-4/app/controllers/dashboard_controller.rb#L433
+如果验证成功，则会指向一个新的url地址，代码如下：  
+```
+page.redirect_to(validation.url)
+```
+* 登陆过程结束，此时进入到了网站页面。
 
 
 
