@@ -74,7 +74,7 @@ root :to => 'dashboard#login'
 ```
 从这段代码可以看到处理默认访问的controller是 dashboard里面的login方法，去 controller里面找到dashboard控制器。
 
-* contriller对请求进行处理
+* controllers/dashboard_controller.rb对请求进行处理
 
 controller文件位置：  
 https://github.com/ManageIQ/manageiq/blob/darga-4/app/controllers/dashboard_controller.rb  
@@ -82,10 +82,19 @@ https://github.com/ManageIQ/manageiq/blob/darga-4/app/controllers/dashboard_cont
 https://github.com/ManageIQ/manageiq/blob/darga-4/app/controllers/dashboard_controller.rb#L347  
 这个方法执行完毕后，如果在方法里面没有指定执行的view，那么则默认去view里面找到同名的文件夹，在里面找到跟这个方法名同名的文件。
 
-* view对网页进行渲染
+* views/dashboard/login.html.haml对网页进行渲染
 
 view文件位置：  
 https://github.com/ManageIQ/manageiq/blob/darga-4/app/views/dashboard/login.html.haml  
+在里面找到登陆按钮的位置：  
+https://github.com/ManageIQ/manageiq/blob/darga-4/app/views/dashboard/login.html.haml#L91  
+如下图所示：  
+![Firefox_Screenshot_2016-11-12T09-35-36.372Z.png](https://bitbucket.org/repo/oE6yEX/images/2111170952-Firefox_Screenshot_2016-11-12T09-35-36.372Z.png)  
+当在浏览器中输入用户名、密码后点击 login 按钮后，如上图 1、2、3 过程所示，会从新回到 controller里面去验证用户名密码。
+
+* controllers/dashboard_controller.rb 的authenticate方法对密码进行验证
+
+
 
 
 
