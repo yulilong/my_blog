@@ -46,9 +46,21 @@ MVC 架构图解：
 
 根据上面的执行流程，如果想知道manageiq某一个网页的代码，以及修改某一部分，就可以按照上面的过程来查找。  
 
+### manageiq运行解析 ###
 
+* 启动服务
 
+在此之前需要先安装好环境，并下载代码，进入代码目录并执行下面命令：
+```
+rails server
+```
+* 浏览器输入地址：http://localhost:3000
 
+此时浏览器已经向rails服务发送了请求，请求的是默认地址。  
+* 去路由中需要默认地址负责处理的controller
+
+路由文件位置：  
+https://github.com/ManageIQ/manageiq/blob/darga-4/config/routes.rb#L2623
 
 
 
