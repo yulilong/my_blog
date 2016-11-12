@@ -12,4 +12,4 @@ http://www.2cto.com/kf/201601/485095.html
 
 
 ## piture
-![imges](https://bitbucket.org/yulilong/my_wiki/src/6dc8a80ea6d62125cd33b273130d8397c20f5571/picture/manageiq/mvc_detailed.png?at=master&fileviewer=file-view-default)
+![imges](https://bytebucket.org/yulilong/my_wiki/raw/6dc8a80ea6d62125cd33b273130d8397c20f5571/picture/manageiq/mvc_detailed.png)
