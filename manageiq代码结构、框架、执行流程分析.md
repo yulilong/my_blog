@@ -121,7 +121,9 @@ https://github.com/ManageIQ/manageiq/blob/darga-4/app/controllers/ems_common.rb#
 view文件位置：  
 https://github.com/ManageIQ/manageiq/blob/darga-4/app/views/ems_cloud/new.html.haml  
 这里面在基本渲染后，又调用的局部渲染：  
+```
   = render :partial => "shared/views/ems_common/angular/form"
+```
 文件位置：  
 https://github.com/ManageIQ/manageiq/blob/darga-4/app/views/shared/views/ems_common/angular/_form.html.haml  
 这里面是选择providers的位置：  
