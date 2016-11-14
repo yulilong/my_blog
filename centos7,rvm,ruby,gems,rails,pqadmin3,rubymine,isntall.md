@@ -1,6 +1,6 @@
 #rvm isntall
-https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-on-centos-6-with-rvm
 
+https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-on-centos-6-with-rvm  
 * rvm install:
 ```
 $ sudo yum update
@@ -44,6 +44,8 @@ $ rails -v
 如果出现版本，那么说明安装成功。
 ```
 # 安装 pqadmin3
+
+这里首先需要系统中已经安装了postgres，如果没有安装请先安装。  
 * 查看linux中postgres 版本
 ```
 $ psql --version
@@ -93,7 +95,10 @@ $ lsof -i:5432
 # install rubymine
 ```
 1. rubymine 最好是7.1.4版本的，这个网络上有激活码。
-2.rubymine安装后找不到ruby解释器位置：
+如果公司对版权有要求请公司购买激活码，这时候请安装最新版。
+2.下载后解压，进入bin目录，运行里面的rubymine.sh 即可安装。
+使用中的问题：
+3.rubymine安装后找不到ruby解释器位置：
 http://stackoverflow.com/questions/17950288/rubymine-cant-find-sdk-where-is-it
 * Windows - d:\dev\Ruby19\bin\ruby.exe
 * Mac Brew - /usr/local/Cellar/ruby/2.0.0-p247/bin/ruby
