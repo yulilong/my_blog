@@ -1,6 +1,9 @@
 # Welcome
 
-[manageiq代码结构、框架、执行流程分析](https://bitbucket.org/yulilong/my_wiki/wiki/manageiq%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84%E3%80%81%E6%A1%86%E6%9E%B6%E3%80%81%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90)
+[manageiq代码结构、框架、执行流程分析](https://bitbucket.org/yulilong/my_wiki/wiki/manageiq%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84%E3%80%81%E6%A1%86%E6%9E%B6%E3%80%81%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90)  
+
+[manageiq开发安装教程](https://bitbucket.org/yulilong/my_wiki/wiki/manageiq%E5%BC%80%E5%8F%91%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B)
+## centos7 
 ## centos7 
 * [linux terminal command](https://bitbucket.org/yulilong/my_wiki/wiki/linux%20terminal%20command)
 * [centos7 搭建samba方法](https://bitbucket.org/yulilong/my_wiki/wiki/centos7%20%E6%90%AD%E5%BB%BAsamba%E6%96%B9%E6%B3%95)
