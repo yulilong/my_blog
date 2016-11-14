@@ -66,7 +66,92 @@ $ sudo systemctl disable postgresql-server
 $ sudo yum -y remove 'postgresql-*'
 ```
 
+* 卸载ruby 链接postgres 的gem包 pg，如果没有安装则略过：
+```
+$ gem uninstall pg
+```
+
+* Install the PostgreSQL 9.4 collection
+
+```
+$ sudo yum -y install \
+rh-postgresql94-postgresql-server \
+rh-postgresql94-postgresql-devel
+```
+This will install the required files under /opt/rh/rh-postgresql94, so each time you need to use a command like pgsql you will have to use the complete path. Alternatively, you can enable that collection:  
+```
+$ scl enable rh-postgresql94 bash
+$ source /opt/rh/rh-postgresql94/enable
+```
+注意！！！下面这步可能会把～/.bash_profile 文件里面所有内容清空，使用前请备份注意：
+```
+$ cat > $HOME/.bash_profile <<.
+source /opt/rh/rh-postgresql94/enable
+.
+```
+* Create and configure the database  
+
+By default the database directory used by the software collection is /var/opt/rh/rh-postgresql94/lib/pgsql/data, but the ManageIQ instructions assume it to be /var/lib/pgsql/data. The name of the service is also different. Make sure to take these differences into account when creating and configure the database. For example, to initially create the database you will need to do the following:  
+```
+$ su - root
+$ scl enable rh-postgresql94 bash
+$ postgresql-setup initdb
+```
+To setup authentication you will need to modify the pg_hba.conf file, as described in the instructions, but taking into account the different location:  
+```
+$ PGDATA=/var/opt/rh/rh-postgresql94/lib/pgsql/data
+$ sudo grep -q '^local\s' $PGDATA/pg_hba.conf || echo "local all all trust" | sudo tee -a $PGDATA/pg_hba.conf
+$ sudo sed -i.bak 's/\(^local\s*\w*\s*\w*\s*\)\(peer$\)/\1trust/' $PGDATA/pg_hba.conf
+```
+To enable and start the server:
+```
+$ sudo systemctl enable rh-postgresql94-postgresql
+$ sudo systemctl start rh-postgresql94-postgresql
+```
+And, finally, to create the database user:  
+```
+$ su - postgres
+$ scl enable rh-postgresql94 bash
+$ psql -c "CREATE ROLE root SUPERUSER LOGIN PASSWORD 'smartvm'"
+```
+* Configure PostgreSQL
+
+```
+sudo postgresql-setup initdb
+sudo grep -q '^local\s' /var/lib/pgsql/data/pg_hba.conf || echo "local all all trust" | sudo tee -a /var/lib/pgsql/data/pg_hba.conf
+sudo sed -i.bak 's/\(^local\s*\w*\s*\w*\s*\)\(peer$\)/\1trust/' /var/lib/pgsql/data/pg_hba.conf
+sudo systemctl enable postgresql
+sudo systemctl start postgresql
+sudo -u postgres psql -c "CREATE ROLE root SUPERUSER LOGIN PASSWORD 'smartvm'"
+# This command can return with a "could not change directory to" error, but you can ignore it
+```
 ## rvm,ruby,gems,rails,pqadmin3,rubymine,isntall ##  
 这里是rails开发的必要插件，具体安装看如下链接：  
 
 * [centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall](https://bitbucket.org/yulilong/my_wiki/wiki/centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall)
+
+
+## clone ManageIQ 代码 ##
+
+```
+git clone https://github.com/ManageIQ/manageiq
+```
+
+## Installs dependencies, config, prepares database, etc ##
+
+```
+$ bin/setup
+```
+
+## Starts the ManageIQ EVM Application in the background ##
+下面的命令是开始启动服务，这个是正常的启动。  
+```
+$ bundle exec rake evm:start
+$ rails server
+```
+## 开发环境最小配置运行 ##
+
+```
+$ MIQ_SPARTAN=minimal rake evm:start
+$ rails server
+```
