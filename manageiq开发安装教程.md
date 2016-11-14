@@ -22,6 +22,6 @@ manageiq要求是 centos的 linux，所以请安装centos版linux，不会请找
 $ git --version
 ```
 如果出来版本号则说明已经安装了，如果没有安装请看如下教程安装：  
-* [git安装、配置](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%AE%89%E8%A3%85%E3%80%81%E9%85%8D%E7%BD%AE) 
+* [git安装、配置](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%AE%89%E8%A3%85%E3%80%81%E9%85%8D%E7%BD%AE)  
 这里面描写了git的安装、git命令的别名、以及拉取代码时自动验证用户名密码设置。
 
