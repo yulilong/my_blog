@@ -27,6 +27,45 @@ $ git --version
 
 这里面描写了git的安装、git命令的别名、以及拉取代码时自动验证用户名密码设置。
 
+## manageiq依赖安装 ##
+
+官方文档使用的是dnf包管理器来安装的，但是我安装时发现有的包使用dnf找不到，只好全部用yum来安装了。
+
+* Install packages
+```
+sudo yum -y install memcached                          
+sudo yum -y install bzip2 libffi-devel readline-devel  
+sudo yum -y install libxml2-devel libxslt-devel patch  
+sudo yum -y install sqlite-devel                       
+sudo yum -y install nodejs                             
+sudo yum -y install gcc-c++                            
+sudo yum -y install libcurl-devel                     
+rpm -q --whatprovides npm || sudo yum -y install npm   
+sudo yum -y install openssl-devel                     
+sudo yum -y install cmake                              
+```
+* Install the Bower package manager
+```
+sudo npm install -g bower
+```
+* Enable Memcached
+```
+sudo systemctl enable memcached
+sudo systemctl start memcached
+```
+*  PostgreSQL version is 9.4+ 的安装
+
+postgres数据库官方推荐使用9.4+的版本，如果系统没有安装那么直接安装这个版本以上的，如果有旧的版本则先卸载在安装新的。
+manageiq官方postgres9.4+的安装文档：  
+http://manageiq.org/docs/guides/developer_setup/postgresql_software_collection  
+
+```
+$ sudo yum -y install centos-release-scl
+$ sudo systemctl stop postgresql-server
+$ sudo systemctl disable postgresql-server
+$ sudo yum -y remove 'postgresql-*'
+```
+
 ## rvm,ruby,gems,rails,pqadmin3,rubymine,isntall ##  
 这里是rails开发的必要插件，具体安装看如下链接：  
 
