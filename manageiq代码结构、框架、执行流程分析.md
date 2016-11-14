@@ -4,7 +4,7 @@
 
 ## manageiq代码的目录结构 ##
 
-1. 首先了解一下标准的rails目录结构，如下图：
+1. 首先了解一下标准的rails目录结构，如下图：  
 ![rails_dir_schema.png](https://bitbucket.org/repo/oE6yEX/images/3712103408-rails_dir_schema.png)
 
 2. ManageIQ的代码目录结构:  
