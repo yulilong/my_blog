@@ -124,7 +124,7 @@ https://github.com/ManageIQ/manageiq/blob/darga-4/app/views/ems_cloud/new.html.h
   = render :partial => "shared/views/ems_common/angular/form"
 文件位置：  
 https://github.com/ManageIQ/manageiq/blob/darga-4/app/views/shared/views/ems_common/angular/_form.html.haml  
-这里面是选择providers的位置：
+这里面是选择providers的位置：  
 https://github.com/ManageIQ/manageiq/blob/darga-4/app/views/shared/views/ems_common/angular/_form.html.haml#L27
 
 * view处理结束后把结果返回给网页，这次请求将结束。
