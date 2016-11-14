@@ -130,3 +130,10 @@ https://github.com/ManageIQ/manageiq/blob/darga-4/app/views/shared/views/ems_com
 https://github.com/ManageIQ/manageiq/blob/darga-4/app/views/shared/views/ems_common/angular/_form.html.haml#L27
 
 * view处理结束后把结果返回给网页，这次请求将结束。
+
+
+## rails是如何加载的 ##
+
+http://blog.csdn.net/cloudcraft/article/details/7654118  
+https://ruby-china.org/topics/23588  
+http://www.oschina.net/question/136896_166772?sort=time
