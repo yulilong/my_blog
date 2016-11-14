@@ -4,7 +4,7 @@
 http://manageiq.org/docs/guides/developer_setup.html  
 你可以看这个官方的安装文档，这里面依赖环境安装是使用dnf管理其来安装的，我个人安装的时候会有点问题，你可以先尝试安装，如果有问题不能解决，那么可以看下面的安装教程。
 
-# 根据官方文档自定义安装 #
+# manageiq自定义安装 #
 
 ## 概述review ##
 
@@ -27,3 +27,7 @@ $ git --version
 
 这里面描写了git的安装、git命令的别名、以及拉取代码时自动验证用户名密码设置。
 
+## rvm,ruby,gems,rails,pqadmin3,rubymine,isntall ##  
+这里是rails开发的必要插件，具体安装看如下链接：  
+
+* [centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall](https://bitbucket.org/yulilong/my_wiki/wiki/centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall)
