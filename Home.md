@@ -8,7 +8,7 @@
 
 * 微软providers  
 
-https://github.com/fog/fog-azure
+https://github.com/fog/fog-azure  
 https://github.com/ManageIQ/manageiq-providers-azure  
 
 * amazon  
