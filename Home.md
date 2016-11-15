@@ -6,6 +6,22 @@
 
 [新建提供者](https://bitbucket.org/yulilong/my_wiki/wiki/%E6%96%B0%E5%BB%BA%E6%8F%90%E4%BE%9B%E8%80%85)
 
+* 微软providers  
+
+https://github.com/fog/fog-azure
+https://github.com/ManageIQ/manageiq-providers-azure  
+
+* amazon  
+
+https://github.com/ManageIQ/manageiq-providers-amazon  
+
+* aliyun
+
+https://github.com/fog/fog-aliyun
+https://rubygems.org/gems/fog-aliyun
+
+
+
 
 ## centos7 
 * [linux terminal command](https://bitbucket.org/yulilong/my_wiki/wiki/linux%20terminal%20command)
