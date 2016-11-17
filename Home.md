@@ -30,7 +30,12 @@ https://rubygems.org/gems/fog-aliyun
 * [centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall](https://bitbucket.org/yulilong/my_wiki/wiki/centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall)
 * [centos7_install_stardict](https://bitbucket.org/yulilong/my_wiki/wiki/centos7_install_stardict)
 * [git安装、配置](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%AE%89%E8%A3%85%E3%80%81%E9%85%8D%E7%BD%AE)
-* [virtualbox虚拟机 centos7安装增强工具](https://bitbucket.org/yulilong/my_wiki/wiki/virtualbox%E8%99%9A%E6%8B%9F%E6%9C%BA%20centos7%E5%AE%89%E8%A3%85%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7)
+* [virtualbox虚拟机 centos7安装增强工具](https://bitbucket.org/yulilong/my_wiki/wiki/virtualbox%E8%99%9A%E6%8B%9F%E6%9C%BA%20centos7%E5%AE%89%E8%A3%85%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7)  
+
+* HTML 参考手册  
+http://www.w3school.com.cn/tags/  
+* HTML 在线效果测试  
+http://www.w3school.com.cn/tiy/t.asp?f=html_div_test
 
 ##ruby rails 学习资料
 
