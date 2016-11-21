@@ -1,4 +1,8 @@
-###ruby的class << self, 及其class_eval和instance_eval的区别
+# 知识点 #  
+
+[ruby中include和extend以及模块中ClassMethods](https://bitbucket.org/yulilong/my_wiki/wiki/ruby%E4%B8%ADinclude%E5%92%8Cextend%E4%BB%A5%E5%8F%8A%E6%A8%A1%E5%9D%97%E4%B8%ADClassMethods%20)
+
+##ruby的class << self, 及其class_eval和instance_eval的区别
 http://blog.csdn.net/lyx2007825/article/details/10089115
 ```
 class Array  
