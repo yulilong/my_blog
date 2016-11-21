@@ -17,8 +17,10 @@ https://github.com/ManageIQ/manageiq-providers-amazon
 
 * aliyun
 
-https://github.com/fog/fog-aliyun
-https://rubygems.org/gems/fog-aliyun
+https://github.com/fog/fog-aliyun  
+https://rubygems.org/gems/fog-aliyun  
+https://rubygems.org/gems/aliyun-api  
+https://help.aliyun.com/document_detail/25485.html?spm=5176.doc25484.6.241.tethIg  
 
 
 
