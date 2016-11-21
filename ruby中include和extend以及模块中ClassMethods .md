@@ -68,6 +68,7 @@ module Base
   end  
  
   #类方法  
+  # extend ActiveSupport::Concern # if not add this line,then module ClassMethods is Invalid
   module ClassMethods  
     def hello  
       puts "Hello baby!"  
