@@ -1,4 +1,4 @@
-# Welcome
+# providers 
 
 [manageiq代码结构、框架、执行流程分析](https://bitbucket.org/yulilong/my_wiki/wiki/manageiq%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84%E3%80%81%E6%A1%86%E6%9E%B6%E3%80%81%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90)  
 
@@ -20,9 +20,12 @@ https://github.com/ManageIQ/manageiq-providers-amazon
 https://github.com/fog/fog-aliyun  
 https://rubygems.org/gems/fog-aliyun  
 https://rubygems.org/gems/aliyun-api  
+https://rubygems.org/gems/aliyun-sdk  
 https://help.aliyun.com/document_detail/25485.html?spm=5176.doc25484.6.241.tethIg  
 
+* manageiq-providers-lenovo  
 
+https://github.com/ManageIQ/manageiq-providers-lenovo  
 
 
 ## centos7 
