@@ -41,3 +41,7 @@ http://yulilong:385f054bdcf8d95b4372c6e5199818388420c0fd@github.com
 ```
 $ git config --global credential.helper store
 ```
+
+## git命令指导 ##
+
+[git命令指导](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%91%BD%E4%BB%A4%E6%8C%87%E5%AF%BC)
