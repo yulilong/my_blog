@@ -68,7 +68,9 @@ http://www.w3school.com.cn/tiy/t.asp?f=html_div_test
 要想查看程序完整的路由列表，可以在开发环境中使用浏览器打开 http://localhost:3000/rails/info/routes    
 也可以在终端执行 rake routes 任务查看，结果是一样的。
  
+## git命令指导 ##
 
+[git命令指导](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%91%BD%E4%BB%A4%E6%8C%87%E5%AF%BC)
 
 
 如果 .md里面要方图片，一种是把图片放到网易博客中去。
