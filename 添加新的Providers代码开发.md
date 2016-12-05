@@ -5,7 +5,7 @@
 
 manageiq/app/assets/javascripts/controllers/ems_common/ems_common_form_controller.js  
 
-
+在191行 附近如下代码处添加一行代码（$scope.emsCommonModel.emstype == "aliyun" ||）  
 ```
 #!js
 
