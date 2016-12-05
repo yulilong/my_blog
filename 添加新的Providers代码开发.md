@@ -24,4 +24,7 @@ ManageIQ::Providers::Aliyun::CloudManager::MetricsCollectorWorker
 ManageIQ::Providers::Aliyun::CloudManager::RefreshWorker     
 ![monitor_class_names.png](https://bitbucket.org/repo/oE6yEX/images/2637574744-monitor_class_names.png)  
 
-![monitor_class_names_in_kill_order.png](https://bitbucket.org/repo/oE6yEX/images/1078881447-monitor_class_names_in_kill_order.png)
+![monitor_class_names_in_kill_order.png](https://bitbucket.org/repo/oE6yEX/images/1078881447-monitor_class_names_in_kill_order.png)   
+
+
+## providers中添加代码 ##
