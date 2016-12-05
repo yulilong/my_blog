@@ -4,7 +4,9 @@
 
 [manageiq开发安装教程](https://bitbucket.org/yulilong/my_wiki/wiki/manageiq%E5%BC%80%E5%8F%91%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B)  
 
-[新建提供者](https://bitbucket.org/yulilong/my_wiki/wiki/%E6%96%B0%E5%BB%BA%E6%8F%90%E4%BE%9B%E8%80%85)
+[新建提供者](https://bitbucket.org/yulilong/my_wiki/wiki/%E6%96%B0%E5%BB%BA%E6%8F%90%E4%BE%9B%E8%80%85)   
+
+[添加新的Providers代码开发](https://bitbucket.org/yulilong/my_wiki/wiki/%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%9A%84Providers%E4%BB%A3%E7%A0%81%E5%BC%80%E5%8F%91)
 
 * 微软providers  
 
