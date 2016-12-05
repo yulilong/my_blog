@@ -21,7 +21,7 @@ git config --list
 ```
 
 # github Personal access tokens
-这里是为下一步操作做准备的，如果你的仓库网站提供了token，那么设置以下，没有请忽略。
+这里是为下一步操作做准备的，如果你的仓库网站提供了token，那么设置一个读取token，没有tokens的请忽略。
 
 385f054bdcf8d95b4372c6e5199818388420c0fd
 
