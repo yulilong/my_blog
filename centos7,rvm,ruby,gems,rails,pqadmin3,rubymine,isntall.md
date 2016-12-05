@@ -92,9 +92,9 @@ $ sudo systemctl restart rh-postgresql94-postgresql
 $ lsof -i:5432
 ```
 
-# install rubymine
+# install rubymine 公司对版权有要求请公司购买正版，支持正版。
 ```
-1. rubymine 最好是7.1.4版本的，这个网络上有激活码。
+1. rubymine 最好是7.1.4版本的，这个网络上有激活码，此方法不建议。
 如果公司对版权有要求请公司购买激活码，这时候请安装最新版。
 2.下载后解压，进入bin目录，运行里面的rubymine.sh 即可安装。
 使用中的问题：
