@@ -8,9 +8,9 @@ $ sudo yum install curl
 $ curl -L get.rvm.io | bash -s stable
 如果提示缺少密钥，那么按照提示安装密钥
 # If you ran the installer as root, run:
-source /usr/local/rvm/rvm.sh
+$ source /usr/local/rvm/rvm.sh
 # If you installed it through a user with access to sudo:
-source ~/.rvm/rvm.sh
+$ source ~/.rvm/rvm.sh
 $ source ~/.profile
 $ rvm -v
 如果出现版本，那么说明安装成功。
