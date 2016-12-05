@@ -1,6 +1,27 @@
 # 添加一个新的providers代码目录 #
 
 
+## 添加页面validate按钮可用设置 ##
+
+manageiq/app/assets/javascripts/controllers/ems_common/ems_common_form_controller.js  
+
+
+```
+#!js
+
+$scope.isBasicInfoValid = function() {
+    if(($scope.currentTab == "default" && $scope.emsCommonModel.emstype != "azure") &&
+      ($scope.emsCommonModel.emstype == "ec2" ||
+      $scope.emsCommonModel.emstype == "aliyun" ||
+       $scope.emsCommonModel.emstype == "openstack" && $scope.emsCommonModel.default_hostname ||
+       $scope.emsCommonModel.emstype == "scvmm" && $scope.emsCommonModel.default_hostname ||
+       $scope.emsCommonModel.emstype == "openstack_infra" && $scope.emsCommonModel.default_hostname ||
+       $scope.emsCommonModel.emstype == "nuage_network"  && $scope.emsCommonModel.default_hostname ||
+       $scope.emsCommonModel.emstype == "rhevm" && $scope.emsCommonModel.default_hostname ||
+       $scope.emsCommonModel.emstype == "vmwarews" && $scope.emsCommonModel.default_hostname
+```
+
+
 # 添加work #
 
 ## EVM启用监听 ##  
