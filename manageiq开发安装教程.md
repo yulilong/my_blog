@@ -85,12 +85,24 @@ This will install the required files under /opt/rh/rh-postgresql94, so each time
 $ scl enable rh-postgresql94 bash
 $ source /opt/rh/rh-postgresql94/enable
 ```
-注意！！！下面这步可能会把～/.bash_profile 文件里面所有内容清空，使用前请备份注意：
+注意！！！下面这步会把～/.bash_profile 文件里面所有内容清空，使用前请备份注意：
 ```
 $ cat > $HOME/.bash_profile <<.
 source /opt/rh/rh-postgresql94/enable
 .
 ```
+
+```
+在$HOME/.bash_profile文件加了这句话后，如果你重新登陆，会导致当前用户图形界面登陆不上。
+两种解决方法：
+1. 把这句注销调，后期经实测，没有这条语句对于rails开发没有影响，数据库能打开就好。
+2. 打开/opt/rh/rh-postgresql94/enable，把如下三条语句注释掉：
+export XDG_CONFIG_DIRS="/etc/opt/rh/rh-postgresql94/xdg:${XDG_CONFIG_DIRS:-/etc/xdg}"
+export XDG_DATA_DIRS="/opt/rh/rh-postgresql94/root/usr/share${XDG_DATA_DIRS:+:${XDG_DATA_DIRS}}"
+export PKG_CONFIG_PATH="/opt/rh/rh-postgresql94/root/usr/lib64/pkgconfig${PKG_CONFIG_PATH:+:${PKG_CONFIG_PATH}}"
+
+```
+
 * Create and configure the database  
 
 By default the database directory used by the software collection is /var/opt/rh/rh-postgresql94/lib/pgsql/data, but the ManageIQ instructions assume it to be /var/lib/pgsql/data. The name of the service is also different. Make sure to take these differences into account when creating and configure the database. For example, to initially create the database you will need to do the following:  
