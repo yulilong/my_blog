@@ -114,17 +114,7 @@ $ su - postgres
 $ scl enable rh-postgresql94 bash
 $ psql -c "CREATE ROLE root SUPERUSER LOGIN PASSWORD 'smartvm'"
 ```
-* Configure PostgreSQL
 
-```
-sudo postgresql-setup initdb
-sudo grep -q '^local\s' /var/lib/pgsql/data/pg_hba.conf || echo "local all all trust" | sudo tee -a /var/lib/pgsql/data/pg_hba.conf
-sudo sed -i.bak 's/\(^local\s*\w*\s*\w*\s*\)\(peer$\)/\1trust/' /var/lib/pgsql/data/pg_hba.conf
-sudo systemctl enable postgresql
-sudo systemctl start postgresql
-sudo -u postgres psql -c "CREATE ROLE root SUPERUSER LOGIN PASSWORD 'smartvm'"
-# This command can return with a "could not change directory to" error, but you can ignore it
-```
 ## rvm,ruby,gems,rails,pqadmin3,rubymine,isntall ##  
 这里是rails开发的必要插件，具体安装看如下链接：  
 
