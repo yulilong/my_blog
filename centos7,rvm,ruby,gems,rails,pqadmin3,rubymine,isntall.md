@@ -96,16 +96,15 @@ $ sudo systemctl restart rh-postgresql94-postgresql
 $ lsof -i:5432
 ```
 
-# install rubymine 如果公司对版权有要求，请公司购买正版，支持正版。
+# install rubymine 
+## 如果公司对版权有要求，请公司购买激活码，这时候请安装最新版。官网地址：https://www.jetbrains.com/ruby/
 ```
 1. rubymine 最好是7.1.4版本的，这个网络上有激活码，此方法不建议。
-```
+
 个人网盘下载：
 链接: https://pan.baidu.com/s/1o8PgQ50 密码: mk2q
 
-## 如果公司对版权有要求，请公司购买激活码，这时候请安装最新版。官网地址：https://www.jetbrains.com/ruby/
 
-```
 2.下载后解压，进入bin目录，运行里面的rubymine.sh 即可安装。
 使用中的问题：
 3.rubymine安装后找不到ruby解释器位置：
