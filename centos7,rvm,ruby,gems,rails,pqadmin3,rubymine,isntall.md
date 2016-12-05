@@ -80,11 +80,12 @@ $ yum install pgadmin3
 $ sudo vi /var/opt/rh/rh-postgresql94/lib/pgsql/data/pg_hba.conf
 ```
 找到下面的内容：
+```
 # IPv4 local connections:
 host    all             all             127.0.0.1/32            ident
 # IPv6 local connections:
 host    all             all             ::1/128                 ident
-
+```
 **把ident修改为 trust** 
 
 并在下面添加一行：
