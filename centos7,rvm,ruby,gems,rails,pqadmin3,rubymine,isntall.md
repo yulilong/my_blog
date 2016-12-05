@@ -76,7 +76,6 @@ $ sudo yum install pgadmin3
 ```
 * 修改数据库配置文件，允许连接
 ```
-$ yum install pgadmin3
 $ sudo vi /var/opt/rh/rh-postgresql94/lib/pgsql/data/pg_hba.conf
 ```
 找到下面的内容：
