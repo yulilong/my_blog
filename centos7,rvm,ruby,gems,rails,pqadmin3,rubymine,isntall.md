@@ -84,7 +84,8 @@ host    all             all             127.0.0.1/32            ident
 # IPv6 local connections:
 host    all             all             ::1/128                 ident
 
-把ident修改为 trust 
+**把ident修改为 trust** 
+
 并在下面添加一行：
 host	all 		all 		192.168.0.0/24 		trust
 
