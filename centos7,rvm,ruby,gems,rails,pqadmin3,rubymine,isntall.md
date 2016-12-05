@@ -78,6 +78,7 @@ $ sudo yum install pgadmin3
 ```
 $ yum install pgadmin3
 $ sudo vi /var/opt/rh/rh-postgresql94/lib/pgsql/data/pg_hba.conf
+```
 找到下面的内容：
 # IPv4 local connections:
 host    all             all             127.0.0.1/32            ident
@@ -87,9 +88,12 @@ host    all             all             ::1/128                 ident
 **把ident修改为 trust** 
 
 并在下面添加一行：
+```
 host	all 		all 		192.168.0.0/24 		trust
+```
 
 保存后重起数据库：
+```
 $ sudo systemctl restart rh-postgresql94-postgresql
 ```
 * 查看数据库的运行：
