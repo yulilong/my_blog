@@ -132,7 +132,7 @@ $ psql -c "CREATE ROLE root SUPERUSER LOGIN PASSWORD 'smartvm'"
 ## rvm,ruby,gems,rails,pqadmin3,rubymine,isntall ##  
 这里是rails开发的必要插件，具体安装看如下**链接**：  
 
-* [centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall](https://bitbucket.org/yulilong/my_wiki/wiki/centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall)
+* [***centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall***](https://bitbucket.org/yulilong/my_wiki/wiki/centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall)
 
 
 ## clone ManageIQ 代码 ##
