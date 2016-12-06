@@ -48,4 +48,15 @@ ManageIQ::Providers::Aliyun::CloudManager::RefreshWorker
 ![monitor_class_names_in_kill_order.png](https://bitbucket.org/repo/oE6yEX/images/1078881447-monitor_class_names_in_kill_order.png)   
 
 
-## providers中添加代码 ##
+## providers中添加代码 ## 
+
+可以参考其他providers，需要添加如下几个文件：   
+manageiq-providers-aliyun/app/models/manageiq/providers/aliyun/cloud_manager/metrics_collector_worker/runner.rb     
+
+manageiq-providers-aliyun/app/models/manageiq/providers/aliyun/cloud_manager/metrics_collector_worker.rb    
+
+manageiq-providers-aliyun/app/models/manageiq/providers/aliyun/cloud_manager/refresh_worker.rb   
+
+manageiq-providers-aliyun/app/models/manageiq/providers/aliyun/cloud_manager/refresher.rb
+
+![aliyun_dirctory.png](https://bitbucket.org/repo/oE6yEX/images/1161947007-aliyun_dirctory.png)
