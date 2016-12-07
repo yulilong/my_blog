@@ -23,7 +23,7 @@ https://github.com/fog/fog-aliyun
 https://rubygems.org/gems/fog-aliyun  
 https://rubygems.org/gems/aliyun-api  
 https://rubygems.org/gems/aliyun-sdk  
-https://rubygems.org/gems/aliyun_ruby_api
+https://rubygems.org/gems/aliyun_ruby_api                 
 https://help.aliyun.com/document_detail/25485.html?spm=5176.doc25484.6.241.tethIg  
 
 * manageiq-providers-lenovo  
