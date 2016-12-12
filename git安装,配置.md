@@ -6,8 +6,8 @@ sudo yum install -y git
 # git命令别名设置 #
 这里是为了在频繁git操作的时候，命令简化。
 ```
-git config --global user.name "Michael Fan"
-git config --global user.email fanlinsheng@gmail.com
+git config --global user.name "you name"
+git config --global user.email you_email_addr@gmail.com
 git config --global core.editor vim
 git config --global credential.helper store
 git config --global alias.co checkout
