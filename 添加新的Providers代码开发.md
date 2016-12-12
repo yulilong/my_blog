@@ -72,3 +72,8 @@ manageiq/app/assets/images/100
 图片名字：  
 vendor-aliyun.png   
 
+### 添加自动监视 ###
+
+manageiq/lib/miq_automation_engine/service_models
+
+
