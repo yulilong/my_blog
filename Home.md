@@ -56,7 +56,7 @@ http://www.w3school.com.cn/tiy/t.asp?f=html_div_test
 
 * [ruby_or_rails_错误解决](https://bitbucket.org/yulilong/my_wiki/wiki/ruby_or_rails_%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3)
 * [ruby中语法、知识](https://bitbucket.org/yulilong/my_wiki/wiki/ruby%E4%B8%AD%E8%AF%AD%E6%B3%95%E3%80%81%E7%9F%A5%E8%AF%86)  
-[ruby比较常用的gems包](https://bitbucket.org/yulilong/my_wiki/wiki/ruby%E6%AF%94%E8%BE%83%E5%B8%B8%E7%94%A8%E7%9A%84gems%E5%8C%85)
+* [ruby比较常用的gems包](https://bitbucket.org/yulilong/my_wiki/wiki/ruby%E6%AF%94%E8%BE%83%E5%B8%B8%E7%94%A8%E7%9A%84gems%E5%8C%85)
 
 ### rake
 * [Ruby中任务构建工具rake的入门学习教程](https://bitbucket.org/yulilong/my_wiki/wiki/Ruby%E4%B8%AD%E4%BB%BB%E5%8A%A1%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7rake%E7%9A%84%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B)          推荐读这个，简单易懂。
