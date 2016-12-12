@@ -59,4 +59,15 @@ manageiq-providers-aliyun/app/models/manageiq/providers/aliyun/cloud_manager/ref
 
 manageiq-providers-aliyun/app/models/manageiq/providers/aliyun/cloud_manager/refresher.rb
 
-![aliyun_dirctory.png](https://bitbucket.org/repo/oE6yEX/images/1161947007-aliyun_dirctory.png)
+![aliyun_dirctory.png](https://bitbucket.org/repo/oE6yEX/images/1161947007-aliyun_dirctory.png)    
+
+## aliyun providers 中读取套餐(Flavors) ##
+
+### 在显示套餐详细信息页面中添加aliyun providers 图标 (http://localhost:3000/flavor/show/15)###
+
+图标存放位置：   
+manageiq/app/assets/images/100   
+
+图片名字：  
+vendor-aliyun.png   
+
