@@ -76,4 +76,14 @@ vendor-aliyun.png
 
 manageiq/lib/miq_automation_engine/service_models
 
+在运行我worker时候，查看evm.log文件的时候发现如下错误，
+```
+Error: [uninitialized constant MiqAeMethodService::MiqAeServiceManageIQ_Providers_Aliyun_CloudManager]
+[NameError]: uninitialized constant MiqAeMethodService::MiqAeServiceManageIQ_Providers_Aliyun_CloudManager  Method:[rescue in deliver]
+```
+参考其他的provider的写法，把aliyun相关的类添加上：        
+MiqAeServiceManageIQ_Providers_Aliyun_CloudManager    
+MiqAeServiceManageIQ_Providers_Aliyun_CloudManager_Flavor    
+在里面每个provider都有很多类，写到哪个类的时候可以自动添加上。    
+
 
