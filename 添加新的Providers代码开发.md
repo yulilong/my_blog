@@ -84,6 +84,6 @@ Error: [uninitialized constant MiqAeMethodService::MiqAeServiceManageIQ_Provider
 参考其他的provider的写法，把aliyun相关的类添加上：        
 MiqAeServiceManageIQ_Providers_Aliyun_CloudManager    
 MiqAeServiceManageIQ_Providers_Aliyun_CloudManager_Flavor    
-在里面每个provider都有很多类，写到哪个类的时候可以自动添加上。    
+在里面每个provider都有很多类，写到哪个类的时候可以手动添加上。    
 
 
