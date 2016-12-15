@@ -24,7 +24,7 @@ $scope.isBasicInfoValid = function() {
 
 # 添加work #
 
-## EVM启用监听 ##  
+## EVM CloudManager 启用监听      
 
 ### ManageIQ/manageiq/config/settings.yml  
 
@@ -62,7 +62,7 @@ manageiq-providers-aliyun/app/models/manageiq/providers/aliyun/cloud_manager/ref
 ![aliyun_dirctory.png](https://bitbucket.org/repo/oE6yEX/images/1161947007-aliyun_dirctory.png)    
 
 --------------------------------------------------------------------------------------------------------------  
-## aliyun providers 中读取套餐(Flavors) ##
+## aliyun providers 读取信息  ##
 
 ### 在显示套餐详细信息页面中添加aliyun providers 图标 (http://localhost:3000/flavor/show/15)###
 
@@ -85,5 +85,39 @@ Error: [uninitialized constant MiqAeMethodService::MiqAeServiceManageIQ_Provider
 MiqAeServiceManageIQ_Providers_Aliyun_CloudManager    
 MiqAeServiceManageIQ_Providers_Aliyun_CloudManager_Flavor    
 在里面每个provider都有很多类，写到哪个类的时候可以手动添加上。    
+
+### 代码编写 ###
+
+manageiq-providers-aliyun/app/models/manageiq/providers/aliyun/cloud_manager/refresher.rb     
+这个文件是provider worker工作的入口，这个文件里面先搜集信息，然后保存信息，相关写法可参考amazon、openstack providers的写法
+```
+def parse_legacy_inventory(ems) # 这个方法是搜集云服务的一些信息（套餐、可用区、安全组、镜像、实例等）
+
+def save_inventory(ems, _targets, hashes) # 这个方法保存搜集到的信息，2中保存方法
+```    
+
+manageiq-providers-aliyun/app/models/manageiq/providers/aliyun/cloud_manager/refresh_parser.rb     
+这个文件是搜集信息的具体代码定义处。     
+```
+def ems_inv_to_hashes #这里就是每个信息的搜集处
+```   
+### 套餐(Flavors) ###
+
+manageiq-providers-aliyun/app/models/manageiq/providers/aliyun/cloud_manager/refresh_parser.rb   
+```
+def get_flavors # 具体实现参考amazon、openstack providers的写法
+```  
+
+### 可用区(Availability Zones) ###
+
+manageiq-providers-aliyun/app/models/manageiq/providers/aliyun/cloud_manager/refresh_parser.rb   
+```
+def get_availability_zones # 具体实现参考amazon、openstack providers的写法
+```  
+
+
+
+     
+
 
 
