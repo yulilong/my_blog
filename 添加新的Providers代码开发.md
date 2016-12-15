@@ -24,6 +24,8 @@ $scope.isBasicInfoValid = function() {
 
 # 添加work #
 
+## 添加 ManageIQ::Providers::Aliyun::CloudManager::RefreshWorker ##
+
 ## EVM CloudManager 启用监听      
 
 ### ManageIQ/manageiq/config/settings.yml  
@@ -81,9 +83,8 @@ manageiq/lib/miq_automation_engine/service_models
 Error: [uninitialized constant MiqAeMethodService::MiqAeServiceManageIQ_Providers_Aliyun_CloudManager]
 [NameError]: uninitialized constant MiqAeMethodService::MiqAeServiceManageIQ_Providers_Aliyun_CloudManager  Method:[rescue in deliver]
 ```
-参考其他的provider的写法，把aliyun相关的类添加上：        
-MiqAeServiceManageIQ_Providers_Aliyun_CloudManager    
-MiqAeServiceManageIQ_Providers_Aliyun_CloudManager_Flavor    
+参考其他的provider的写法，把aliyun相关的类添加上，一个类一个文件：        
+MiqAeServiceManageIQ_Providers_Aliyun_CloudManager       
 在里面每个provider都有很多类，写到哪个类的时候可以手动添加上。    
 
 ### 代码编写 ###
@@ -106,17 +107,74 @@ def ems_inv_to_hashes #这里就是每个信息的搜集处
 manageiq-providers-aliyun/app/models/manageiq/providers/aliyun/cloud_manager/refresh_parser.rb   
 ```
 def get_flavors # 具体实现参考amazon、openstack providers的写法
-```  
+```    
+添加文件,可参考amazon、openstack providers的写法
+manageiq-providers-aliyun/app/models/manageiq/providers/aliyun/cloud_manager/flavor.rb  
+添加类：
+manageiq/lib/miq_automation_engine/service_models   
+MiqAeServiceManageIQ_Providers_Aliyun_CloudManager_Flavor 
+
 
 ### 可用区(Availability Zones) ###
 
-manageiq-providers-aliyun/app/models/manageiq/providers/aliyun/cloud_manager/refresh_parser.rb   
+app/models/manageiq/providers/aliyun/cloud_manager/refresh_parser.rb   
 ```
 def get_availability_zones # 具体实现参考amazon、openstack providers的写法
-```  
+```    
+添加文件,可参考amazon、openstack providers的写法
+app/models/manageiq/providers/aliyun/cloud_manager/availability_zone.rb
+添加类：
+manageiq/lib/miq_automation_engine/service_models   
+MiqAeServiceManageIQ_Providers_Aliyun_CloudManager_AvailabilityZone
 
+安全组是在NetworkManager 模块里面的，所以先提阿加 NetworkManager   
 
+## 添加ManageIQ::Providers::Aliyun::NetworkManager::RefreshWorker ##
 
+## EVM NetworkManager 启用监听      
+
+### ManageIQ/manageiq/config/settings.yml    
+这里与上边的设置一样，在相关位置添加如下代码(大约是第1370行附近)：    
+```
+:ems_refresh_worker_aliyun_network: {}
+```    
+
+### manageiq/app/models/miq_server/worker_management/monitor/class_names.rb    
+在2个数组中（MONITOR_CLASS_NAMES、MONITOR_CLASS_NAMES_IN_KILL_ORDER）添加如下代码：  
+```
+ManageIQ::Providers::Aliyun::NetworkManager::RefreshWorker
+```   
+
+## 添加 networkmanager 图标 ##
+
+manageiq/app/assets/images/svg     
+添加一个图片，名字： vendor-aliyun_network.svg   
+manageiq/app/assets/images/100     
+添加一个图片，名字： vendor-aliyun_network.png  
+
+## NetworkManager代码 ##
+
+app/models/manageiq/providers/aliyun/network_manager.rb   
+app/models/manageiq/providers/aliyun/network_manager/refresher.rb     
+app/models/manageiq/providers/aliyun/network_manager/refresh_worker.rb   
+app/models/manageiq/providers/aliyun/network_manager/refresh_parser.rb    
+app/models/manageiq/providers/aliyun/network_manager/metrics_collector_worker.rb    
+app/models/manageiq/providers/aliyun/network_manager/refresh_worker/runner.rb    
+app/models/manageiq/providers/aliyun/network_manager/metrics_collector_worker/runner.rb   
+
+可以看到，Aliyun::NetworkManager 与 Aliyun::CloudManager 文件、代码结构差不多。具体实现也是一样的。
+
+### 添加安全组(security_groups) ### 
+
+app/models/manageiq/providers/aliyun/network_manager/refresh_parser.rb   
+```
+def get_availability_zones # 具体实现参考amazon、openstack providers的写法
+```    
+添加文件,可参考amazon、openstack providers的写法
+app/models/manageiq/providers/aliyun/network_manager/security_group.rb
+添加类：
+manageiq/lib/miq_automation_engine/service_models   
+MiqAeServiceManageIQ_Providers_Aliyun_NetworkManager_SecurityGroup
      
 
 
