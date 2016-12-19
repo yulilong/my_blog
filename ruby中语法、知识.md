@@ -126,3 +126,59 @@ find(".") do |f| #block开始
 end #block结束    
 
 由此可见，yield属于定义层，属于宣告层，也就是在心里说一句:"这个位置不错，我先用书本占了再说!";而block属于使用层，实现层,也就是最终你坐在了你先前占的位置上，从而真正的实现了对号入座的过程.   
+
+
+## empty、nil、blank三者之间的区别 ##
+
+http://www.cnblogs.com/lmei/p/3262816.html   
+这三个方法在ROR中经常用到，都是用来判断是否为空的。    
+
+区别是：     
+
+ruby的方法：.nil?、.empty?    
+
+rails的方法 ：.blank?    
+
+用法的区别：    
+
+.nil?    :   判断对象是否存在。      
+.empty? :   是对象已经存在，判断是否为空字段。    
+.blank?  :   相当于同时满足 .nil? 和 .empty? 。     
+注： Rails API中的解释是如果对象是：false, empty, 空白字符都是blank。     
+比如说： "", " ", nil, [], 和{}都算是blank。   
+也就是说，object.blank? 相当于 object.nil? || object.empty?     
+.nil? 和 empty? 的简单例子   
+```
+true.blank?       
+=> false
+
+false.blank?
+=> true
+
+"true".blank?    
+=> false
+
+"".blank?          
+=> true
+
+"\n".blank?       
+=> true
+
+'\n'.blank?
+=> false
+
+'true'.blank?
+=> false
+
+''.blank?
+=> true
+
+1.blank?
+=> false
+
+[].blank?
+=> true
+
+[1].blank?
+=> true
+```
