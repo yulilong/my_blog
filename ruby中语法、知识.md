@@ -5,11 +5,11 @@
 ## method查看方法是哪个类定义的 methods查看对象有哪些方法
 
 ```
-#!ruby
-
-arr = Array.new
-p arr.methods
-p arr.method("size")
+method = method('_run_validate_callbacks')
+p method
+p method.source_location
+#<Method: ManageIQ::Providers::Aliyun::CloudManager::Vm(ActiveRecord::Base)#_run_validate_callbacks>
+# ["/home/yulilong/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb", 749
 ```
 
 ## p caller 可以查看是谁调用了你
