@@ -3,6 +3,7 @@
 [ruby中include和extend以及模块中ClassMethods](https://bitbucket.org/yulilong/my_wiki/wiki/ruby%E4%B8%ADinclude%E5%92%8Cextend%E4%BB%A5%E5%8F%8A%E6%A8%A1%E5%9D%97%E4%B8%ADClassMethods%20)
 
 ## method查看方法是哪个类定义的 methods查看对象有哪些方法
+## source_locationc查看方法定义处 ##
 
 ```
 method = method('_run_validate_callbacks')
