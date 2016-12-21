@@ -198,6 +198,7 @@ end
 这里也添加一下：      
 db/fixtures/miq_searches.yml   
 ```
+# line:43
 -attributes:
      name: default_Platform / Aliyun
      description: Platform / Aliyun
@@ -209,6 +210,7 @@ db/fixtures/miq_searches.yml
      search_type: default
      search_key: _hidden_
      db: Vm
+# line:1020
 - attributes:
      name: default_Platform / Aliyun
      description: Platform / Aliyun
