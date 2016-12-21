@@ -221,7 +221,7 @@ db/fixtures/miq_searches.yml
      search_key: _hidden_
      db: ManageIQ::Providers::CloudManager::Vm
 ```
-添加数据库中，vms表 vendor字段的aliyun支持：    
+数据库中，vms表 vendor字段的aliyun支持：    
 app/models/vm_or_template.rb   
 ```
 VENDOR_TYPES = {  # 如果没有这个，数据库将不能存储实例，数据验证失败
