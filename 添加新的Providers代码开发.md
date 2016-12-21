@@ -174,7 +174,62 @@ def get_availability_zones # 具体实现参考amazon、openstack providers的�
 app/models/manageiq/providers/aliyun/network_manager/security_group.rb
 添加类：
 manageiq/lib/miq_automation_engine/service_models   
-MiqAeServiceManageIQ_Providers_Aliyun_NetworkManager_SecurityGroup
+MiqAeServiceManageIQ_Providers_Aliyun_NetworkManager_SecurityGroup   
+
+### 添加实例(Instance) ###
+
+app/models/manageiq/providers/aliyun/network_manager/refresh_parser.rb   
+```
+get_instances # 具体实现参考amazon、openstack providers的写法
+```    
+添加文件,可参考amazon、openstack providers的写法
+app/models/manageiq/providers/aliyun/cloud_manager/vm.rb 
+添加类：
+manageiq/lib/miq_automation_engine/service_models   
+MiqAeServiceManageIQ_Providers_Aliyun_CloudManager_Vm   
+
+添加方法：
+ app/models/manageiq/providers/aliyun/cloud_manager/refresher.rb  
+```
+def post_process_refresh_classes #如果没有这个方法，vm.rb将不能执行
+  [::Vm]
+end
+```   
+这里也添加一下：
+db/fixtures/miq_searches.yml   
+```
+-attributes:
+     name: default_Platform / Aliyun
+     description: Platform / Aliyun
+     filter: !ruby/object:MiqExpression
+       exp:
+         "=":
+           field: Vm-type
+           value: ManageIQ::Providers::Aliyun::CloudManager::Vm
+     search_type: default
+     search_key: _hidden_
+     db: Vm
+- attributes:
+     name: default_Platform / Aliyun
+     description: Platform / Aliyun
+     filter: !ruby/object:MiqExpression
+       exp:
+         "=":
+           field: VmCloud-type
+           value: ManageIQ::Providers::Aliyun::CloudManager::Vm
+     search_type: default
+     search_key: _hidden_
+     db: ManageIQ::Providers::CloudManager::Vm
+```
+添加数据库中，vms表 vendor字段的aliyun支持：    
+app/models/vm_or_template.rb   
+```
+VENDOR_TYPES = {  # 如果没有这个，数据库将不能存储实例，数据验证失败
+     "google"    => "Google",
+     "aliyun"    => "Aliyun",
+     "unknown"   => "Unknown"}
+```
+
      
 
 
