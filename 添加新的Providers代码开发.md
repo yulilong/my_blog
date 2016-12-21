@@ -108,9 +108,9 @@ manageiq-providers-aliyun/app/models/manageiq/providers/aliyun/cloud_manager/ref
 ```
 def get_flavors # 具体实现参考amazon、openstack providers的写法
 ```    
-添加文件,可参考amazon、openstack providers的写法
-manageiq-providers-aliyun/app/models/manageiq/providers/aliyun/cloud_manager/flavor.rb  
-添加类：
+添加文件,可参考amazon、openstack providers的写法     
+manageiq-providers-aliyun/app/models/manageiq/providers/aliyun/cloud_manager/flavor.rb     
+添加类：     
 manageiq/lib/miq_automation_engine/service_models   
 MiqAeServiceManageIQ_Providers_Aliyun_CloudManager_Flavor 
 
@@ -121,9 +121,9 @@ app/models/manageiq/providers/aliyun/cloud_manager/refresh_parser.rb
 ```
 def get_availability_zones # 具体实现参考amazon、openstack providers的写法
 ```    
-添加文件,可参考amazon、openstack providers的写法
-app/models/manageiq/providers/aliyun/cloud_manager/availability_zone.rb
-添加类：
+添加文件,可参考amazon、openstack providers的写法      
+app/models/manageiq/providers/aliyun/cloud_manager/availability_zone.rb     
+添加类：       
 manageiq/lib/miq_automation_engine/service_models   
 MiqAeServiceManageIQ_Providers_Aliyun_CloudManager_AvailabilityZone
 
@@ -162,17 +162,17 @@ app/models/manageiq/providers/aliyun/network_manager/metrics_collector_worker.rb
 app/models/manageiq/providers/aliyun/network_manager/refresh_worker/runner.rb    
 app/models/manageiq/providers/aliyun/network_manager/metrics_collector_worker/runner.rb   
 
-可以看到，Aliyun::NetworkManager 与 Aliyun::CloudManager 文件、代码结构差不多。具体实现也是一样的。
+可以看到，Aliyun::NetworkManager 与 Aliyun::CloudManager 文件、代码结构差不多。具体实现也是一样的。     
 
 ### 添加安全组(security_groups) ### 
 
 app/models/manageiq/providers/aliyun/network_manager/refresh_parser.rb   
 ```
-def get_availability_zones # 具体实现参考amazon、openstack providers的写法
+def get_availability_zones # 具体实现参考amazon、openstack providers的写法     
 ```    
-添加文件,可参考amazon、openstack providers的写法
-app/models/manageiq/providers/aliyun/network_manager/security_group.rb
-添加类：
+添加文件,可参考amazon、openstack providers的写法     
+app/models/manageiq/providers/aliyun/network_manager/security_group.rb      
+添加类：      
 manageiq/lib/miq_automation_engine/service_models   
 MiqAeServiceManageIQ_Providers_Aliyun_NetworkManager_SecurityGroup   
 
@@ -180,22 +180,22 @@ MiqAeServiceManageIQ_Providers_Aliyun_NetworkManager_SecurityGroup
 
 app/models/manageiq/providers/aliyun/network_manager/refresh_parser.rb   
 ```
-get_instances # 具体实现参考amazon、openstack providers的写法
+get_instances # 具体实现参考amazon、openstack providers的写法   
 ```    
-添加文件,可参考amazon、openstack providers的写法
+添加文件,可参考amazon、openstack providers的写法        
 app/models/manageiq/providers/aliyun/cloud_manager/vm.rb 
-添加类：
+添加类：      
 manageiq/lib/miq_automation_engine/service_models   
 MiqAeServiceManageIQ_Providers_Aliyun_CloudManager_Vm   
 
-添加方法：
+添加方法：      
  app/models/manageiq/providers/aliyun/cloud_manager/refresher.rb  
 ```
 def post_process_refresh_classes #如果没有这个方法，vm.rb将不能执行
   [::Vm]
 end
 ```   
-这里也添加一下：
+这里也添加一下：      
 db/fixtures/miq_searches.yml   
 ```
 -attributes:
