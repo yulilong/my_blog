@@ -210,8 +210,8 @@ db/fixtures/miq_searches.yml
      search_type: default
      search_key: _hidden_
      db: Vm
-# line:1020
-- attributes:
+
+- attributes: # line:1020
      name: default_Platform / Aliyun
      description: Platform / Aliyun
      filter: !ruby/object:MiqExpression
@@ -230,9 +230,72 @@ VENDOR_TYPES = {  # 如果没有这个，数据库将不能存储实例，数据
      "google"    => "Google",
      "aliyun"    => "Aliyun",
      "unknown"   => "Unknown"}
+```   
+### 添加实例的开机、关机、重启功能 ###
+当在网页点击开机后，rails 会给evm 服务发送消息，由EVM 服务来完成的，
+* 添加电源操作Operations模块：    
+app/models/manageiq/providers/aliyun/cloud_manager/vm/operations.rb 
 ```
+module ManageIQ::Providers::Aliyun::CloudManager::Vm::Operations
+  extend ActiveSupport::Concern
+  include_concern 'Guest'
+  include_concern 'Power'
+end
+```   
+* 添加Guest模块，这里是重启服务器的实现部分    
+ app/models/manageiq/providers/aliyun/cloud_manager/vm/operations/guest.rb      
+```
+module ManageIQ::Providers::Aliyun::CloudManager::Vm::Operations::Guest
+  extend ActiveSupport::Concern
+  included do
+    supports :reboot_guest do
+      unsupported_reason_add(:reboot_guest, unsupported_reason(:control)) unless supports_control?
+      unsupported_reason_add(:reboot_guest, _("The VM is not powered on")) unless current_state == "on"
+    end
+  end
 
-     
+  def raw_reboot_guest
+    with_provider_connection { |connection|
+      parameters = {:InstanceId => ems_ref}
+      connection.RebootInstance(parameters) # retrun {"RequestId"=>"9585CF9B-9049-41A1-B42B-BE3867C26AAB"}
+    }
+    # Temporarily update state for quick UI response until refresh comes along
+    self.update_attributes!(:raw_power_state => "reboot") # show state as suspended
+  end
+end
+```       
+* 添加Power模块，这里是开机、关机实现部分   
+app/models/manageiq/providers/aliyun/cloud_manager/vm/operations/power.rb     
+```
+module ManageIQ::Providers::Aliyun::CloudManager::Vm::Operations::Power
+  extend ActiveSupport::Concern
+
+  def raw_start
+    with_provider_connection { |connection|
+      parameters = {:InstanceId => ems_ref}
+      connection.StartInstance(parameters)
+    }
+    # Temporarily update state for quick UI response until refresh comes along
+    self.update_attributes!(:raw_power_state => "powering_up")
+  end
+
+  def raw_stop
+    with_provider_connection { |connection|
+      parameters = {:InstanceId => ems_ref}
+      connection.StopInstance(parameters)
+    }
+    # Temporarily update state for quick UI response until refresh comes along
+    self.update_attributes!(:raw_power_state => "shutting_down")
+  end
+end
+
+```    
+* 最后在vm类中添加Operations的引用    
+app/models/manageiq/providers/aliyun/cloud_manager/vm.rb     
+```
+include_concern 'Operations'
+```  
+
 
 
 
