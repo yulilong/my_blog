@@ -3,21 +3,15 @@ whoami
 ## linux修改文件所属用户和组
 ```
 使用chown命令可以修改文件或目录所属的用户：
-
        命令：chown 用户 目录或文件名
-
        例如：chown qq /home/qq  (把home目录下的qq目录的拥有者改为qq用户) 
-
 使用chgrp命令可以修改文件或目录所属的组：
-
        命令：chgrp 组 目录或文件名
-
        例如：chgrp qq /home/qq  (把home目录下的qq目录的所属组改为qq组)
 如果需要修改目录及子目录的权限则需要加 -R
 sudo chown yulilong -R local
 
-```
-
+```   
 ## cp  scp
 ```
 http://www.jb51.net/LINUXjishu/70474.html
@@ -63,8 +57,10 @@ cp -r dir1 dir2
 从 本地 复制到 远程:
 scp /home/daisy/full.tar.gz root@172.19.2.75:/home/root 
 从 远程 复制到 本地:
-scp root@172.19.2.75:/home/root/full.tar.gz /home/daisy/full.tar.gz
-（然后会提示你输入另外那台172.19.2.75主机的root用户的登录密码，接着就开始copy了），复制目录加参数 -r 即可 
+scp root@172.19.2.75:/home/root/full.tar.gz /home/daisy
+（然后会提示你输入另外那台172.19.2.75主机的root用户的登录密码，接着就开始copy了）
+
+复制目录加参数 -r 即可 
 ```
 
 ##centos添加用户跟组
