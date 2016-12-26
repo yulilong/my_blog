@@ -12,7 +12,11 @@
 * 微软providers  
 
 https://github.com/fog/fog-azure  
-https://github.com/ManageIQ/manageiq-providers-azure  
+https://github.com/ManageIQ/manageiq-providers-azure     
+azure开发文档：https://docs.microsoft.com/zh-cn/azure/      
+azure ruby开发：https://azure.microsoft.com/zh-cn/develop/ruby/     
+               https://github.com/Azure/azure-sdk-for-ruby     
+https://azure.microsoft.com/zh-cn/downloads/
 
 * amazon  
 
