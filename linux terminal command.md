@@ -89,4 +89,20 @@ ONBOOT=no
 27M     work/testing/logs
 8.1M    work/testing/nohup.out
 8.0K    work/testing/testing_c.php
+```    
+
+## linux 压缩、解压 ##
+http://www.blogjava.net/jiangjf/archive/2007/07/29/133122.html      
+```
+.tar
+　　解包：tar zxvf FileName.tar
+　　打包：tar czvf FileName.tar DirName
+　　---------------------------------------------
+.zip
+　　解压：unzip FileName.zip
+　　压缩：zip FileName.zip DirName
+　　---------------------------------------------
+　　.rar
+　　解压：rar a FileName.rar
+　　压缩：r ar e FileName.rar
 ```
