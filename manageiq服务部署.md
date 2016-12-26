@@ -8,7 +8,7 @@ http://manageiq.org/download/
 1.在 Application Installer 软件中心搜索 filezilla，如果能搜索出来，那么至今诶点击安装。     
 2.如果没有那么在终端运行命令：    
 ```
-# http://linux.it.net.cn/CentOS/course/2016/0401/20899.html  
+## http://linux.it.net.cn/CentOS/course/2016/0401/20899.html  
 $ sudo yum install –y filezilla
 ```
       
