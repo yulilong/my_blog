@@ -54,13 +54,13 @@ cp -r dir1 dir2
 
 ```
 ```
-从 本地 复制到 远程:
+# 从 本地 复制到 远程:
 scp /home/daisy/full.tar.gz root@172.19.2.75:/home/root 
-从 远程 复制到 本地:
+# 从 远程 复制到 本地:
 scp root@172.19.2.75:/home/root/full.tar.gz /home/daisy
-（然后会提示你输入另外那台172.19.2.75主机的root用户的登录密码，接着就开始copy了）
+#（然后会提示你输入另外那台172.19.2.75主机的root用户的登录密码，接着就开始copy了）
 
-复制目录加参数 -r 即可 
+# 复制目录加参数 -r 即可 
 ```
 
 ##centos添加用户跟组
