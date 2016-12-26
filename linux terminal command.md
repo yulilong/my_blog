@@ -82,4 +82,15 @@ $sudo vi ifcfg-eth0
 ONBOOT=yes
 关闭
 ONBOOT=no
+```   
+## ***查看文件文件夹大小*** ##
+```
+[root@bsso yayu]# du -h --max-depth=1 work/testing
+27M     work/testing/logs
+35M     work/testing
+[root@bsso yayu]# du -h --max-depth=1 work/testing/*
+8.0K    work/testing/func.php
+27M     work/testing/logs
+8.1M    work/testing/nohup.out
+8.0K    work/testing/testing_c.php
 ```
