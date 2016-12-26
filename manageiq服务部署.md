@@ -10,5 +10,18 @@ http://manageiq.org/download/
 ```
 ## http://linux.it.net.cn/CentOS/course/2016/0401/20899.html  
 $ sudo yum install –y filezilla
+```     
+
+## filezilla的设置 ##
+
+* 连接服务器    
+打开软件后，输入host、username、password,port一般输入22，然后点快速连接。      
+* 软件语言设置    
+edit -> settings -> language，然后在里面找和中文(Chinese(Simplified)(zh_CN) )、英文。      
+* 编辑.rb文件的编辑器设置    
+编辑 -> 设置 -> 文件编辑 -> 文件格式关联，在里面添加：
 ```
-      
+rb /usr/bin/gedit
+```
+
+
