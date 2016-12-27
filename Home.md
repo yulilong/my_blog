@@ -83,7 +83,8 @@ http://www.w3school.com.cn/tiy/t.asp?f=html_div_test
 
 ## ***ruby gem*** ##
 
-[ruby_gems命令](https://bitbucket.org/yulilong/my_wiki/wiki/ruby_gems%E5%91%BD%E4%BB%A4)
+[ruby_gems命令](https://bitbucket.org/yulilong/my_wiki/wiki/ruby_gems%E5%91%BD%E4%BB%A4)     
+[国内RubyGems镜像](https://bitbucket.org/yulilong/my_wiki/wiki/%E5%9B%BD%E5%86%85RubyGems%E9%95%9C%E5%83%8F)
 
 如果 .md里面要方图片，一种是把图片放到网易博客中去。
 
