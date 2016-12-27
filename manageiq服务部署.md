@@ -24,6 +24,34 @@ edit -> settings -> language，然后在里面找和中文(Chinese(Simplified)(z
 编辑 -> 设置 -> 文件编辑 -> 文件格式关联，在里面添加：
 ```
 rb /usr/bin/gedit
+```   
+## 确认服务器能够上网 ##
+因为需要安装ruby gem包，所需需要确认能够联网：   
 ```
+$ ping wwww.baidu.com
+$ ping www.github.com
+$ ping bitbucket.org
+```  
+如果不能上网：    
+
+* 配置DNS地址     
+
+http://jingyan.baidu.com/article/870c6fc32c028eb03fe4be30.html    
+
+```
+cd /etc/sysconfig/network-scripts
+cp ifcfg-eth0 ifcfg-eth0.backup
+vi ifcfg-eth0
+# 修改里面DNS
+DNS1=221.228.255.1   
+```    
+```
+$ vi /etc/resolv.conf 
+# 在里面添加下面三行
+nameserver 221.228.255.1
+nameserver 114.114.114.114
+nameserver 8.8.88
+```
+
 
 
