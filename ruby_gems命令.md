@@ -61,4 +61,6 @@ gem query --local --name-matches doom
 ```
 gem build package.gemspec 
 #运用bulid子命令构建gem包
-```
+```  
+
+http://www.jb51.net/article/65136.htm
