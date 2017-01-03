@@ -32,3 +32,5 @@ find / -type f -name "*.log" | xargs grep "ERROR"
 ```
 find . -name "*.in" | xargs grep "thermcontact"
 ```
+
+http://blog.chinaunix.net/uid-25266990-id-199887.html
