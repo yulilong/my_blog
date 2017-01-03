@@ -13,8 +13,13 @@ ActiveModel::MissingAttributeError: can't write unknown attribute `region_number
 /home/yulilong/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.1/lib/active_support/core_ext/hash/transform_values.rb:15:in `each'
 /home/yulilong/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.1/lib/active_support/core_ext/hash/transform_values.rb:15:in `transform_values'
 /home/yulilong/.rvm/gems/ruby-2.3.0/gems/activerecord-5.0.1/lib/active_record/attribute_set/builder.rb:26:in `transform_values'
+```      
+查看rails版本：   
+```
+$ rails -v
+Rails 5.0.0.1
 ```    
-解决方法：    
+在rails 版本是 5.0.0.1下，解决方法： 
 打开Gemfile文件，修改如下：
 ```
 -gem "rails",                          "~>5.0.0", ">= 5.0.0.1"
