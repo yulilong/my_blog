@@ -1,4 +1,4 @@
-## can't write unknown attribute `region_number` ##
+## 运行`bin/setup`命令发生错误 ##
 当下载manageiq后运行：    
 ```
 [manageiq]$ bin/setup 
@@ -27,3 +27,12 @@ Rails 5.0.0.1
 ```    
 保存后，删除Gemfile.lock文件，然后从新运行命令即可解决问题。    
 
+## 修改官方虚拟机中的.js文件不起作用 ##
+下载： http://releases.manageiq.org/manageiq-ovirt-euwe-1-rc2.ova    
+运行这个虚拟机后，修.rb文件时有效的，但是修改.js文件时不起作用的，经查找，虚拟机中.js文件已经编译了，
+网页访问的资源(/var/www/miq/vmdb/public/assets). .js文件编译后都放在这个文件中了。
+如果修改了.js文件，那么在虚拟机中运行:    
+```
+# bin/update
+$ bin/rails evm:compile_assets
+```
