@@ -1,4 +1,4 @@
-# 安裝stardict
+# 安裝stardict 星火字典
 http://bckong.blog.51cto.com/5092126/1575904/     
 http://www.centoscn.com/image-text/install/2015/0624/5734.html       
 ```
