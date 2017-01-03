@@ -1,3 +1,5 @@
+* [Linux查找文件内容](https://bitbucket.org/yulilong/my_wiki/wiki/Linux%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9)
+
 ## 查看当前用户
 whoami
 ## linux修改文件所属用户和组
