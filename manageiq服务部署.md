@@ -3,7 +3,7 @@ http://manageiq.org/download/
 在这里选好一个系统，如redhat，vmware虚拟机，这里下载好，可以直接在虚拟机中运行，环境已经搭配好。    
 http://releases.manageiq.org/manageiq-ovirt-euwe-1.ova
 
-# fileZilla的安装 #
+# FileZilla的安装 #
 服务器已经有了，此时需要把开发好的代码上传到服务器运行，使用filezilla软件可以连接服务器并修改文件。   
 
 * centos系统下下载filezilla    
@@ -15,7 +15,7 @@ http://releases.manageiq.org/manageiq-ovirt-euwe-1.ova
 $ sudo yum install –y filezilla
 ```     
 
-## filezilla的设置 ##
+## FileZilla的设置 ##
 
 * 连接服务器    
 打开软件后，输入host、username、password,port一般输入22，然后点快速连接。      
@@ -54,5 +54,7 @@ nameserver 114.114.114.114
 nameserver 8.8.88
 ```
 
+## 服务器的代码更新 ##
 
+使用FileZilla 输入用户名、密码、地址、端口(22)，链接，然后把代码上传上去，部分文件
 
