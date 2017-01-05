@@ -67,3 +67,24 @@ $ git clone -b 分支名  代码地址
 $ git clone -b euwe-1-rc2 https://github.com/ManageIQ/manageiq
 
 ```
+* 拉取远程分支
+```
+git branch -r          #获取其它分支信息
+git branch -a          #查看本地和远程的分支
+git remote show origin #查看远程所有分支
+git remote update
+git fetch
+git checkout -b local-name origin/remote-name  #拉取远程分支到本地
+```  
+* 创建本地分支  
+```
+git branch testing
+```    
+* 切换分支     
+```
+git checkout testing
+```     
+* 删除本地分支分支     
+```
+git branch -d testing
+```
