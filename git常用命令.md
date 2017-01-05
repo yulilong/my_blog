@@ -53,7 +53,7 @@ $ git tag -a v0.1.1 9fbc3d0  # 需要你知道某个提交对象的校验和（�
 通常的git push不会将标签对象提交到git服务器，我们需要进行显式的操作：        
 ```
 $ git push origin v0.1.2 # 将v0.1.2标签提交到git服务器
-$ git push origin –tags # 将本地所有标签一次性提交到git服务器
+$ git push origin --tags # 将本地所有标签一次性提交到git服务器
 ```      
 注意：如果想看之前某个标签状态下的文件，可以这样操作
 1.git tag   查看当前分支下的标签
@@ -66,7 +66,4 @@ $ git push origin –tags # 将本地所有标签一次性提交到git服务器
 $ git clone -b 分支名  代码地址
 $ git clone -b euwe-1-rc2 https://github.com/ManageIQ/manageiq
 
-```  
-
-
-
+```
