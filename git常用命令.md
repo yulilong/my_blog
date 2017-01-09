@@ -25,12 +25,10 @@ $ git tag v0.1.2-light   # 创建轻量标签
 # 建议使用附注标签
 $ git tag -a v0.1.2 -m “0.1.2版本”     # 创建附注标签
 ```
-* 切换到标签    
-
-与切换分支命令相同，用git checkout [tagname]      
-用git show命令可以查看标签的版本信息：     
+* 切换到标签         
 ```
-$ git show v0.1.2   
+$ git checkout [tagname] # 切换到标签
+$ git show v0.1.2   # 查看标签的版本信息
 ```     
 
 * 删除标签     
