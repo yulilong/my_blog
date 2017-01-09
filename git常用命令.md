@@ -1,11 +1,8 @@
 ## add文件后放弃某个文件的添加 ##
 
 ```
-#!git
-
 git reset file_name
 ```  
-
 # git tag — 标签相关操作   
 
 http://blog.csdn.net/wangjia55/article/details/8793577  
@@ -13,9 +10,7 @@ http://gitref.org/zh/branching/#tag
 
 * 列出标签     
 
-
 ```
-#!git
 
 $ Git tag # 在控制台打印出当前仓库的所有标签
 $ git tag -l ‘v0.1.*’ # 搜索符合模式的标签
@@ -64,11 +59,8 @@ $ git push origin --tags # 将本地所有标签一次性提交到git服务器
 
 ```
 $ git clone -b 分支名  代码地址
-$ git clone -b euwe-1-rc2 https://github.com/ManageIQ/manageiq
-
-```
-* 拉取远程分支
-```
+$ git clone -b euwe-1-rc2 https://github.com/ManageIQ/manageiq  #拉取远程特定分支的代码
+# 下载默认分支后还想拉取其他分支的代码
 git branch -r          #获取其它分支信息
 git branch -a          #查看本地和远程的分支
 git remote show origin #查看远程所有分支
@@ -76,15 +68,10 @@ git remote update
 git fetch
 git checkout -b local-name origin/remote-name  #拉取远程分支到本地
 ```  
-* 创建本地分支  
+* 分支管理  
 ```
-git branch testing
-```    
-* 切换分支     
-```
-git checkout testing
-```     
-* 删除本地分支分支     
-```
-git branch -d testing
+git branch testing # 创建本地分支 
+git checkout testing  # 切换分支
+git checkout -b euwe-1-jas # 创建分支并切换到这个分支
+git branch -d testing  # 删除本地分支分支
 ```
