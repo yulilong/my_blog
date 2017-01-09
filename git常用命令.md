@@ -1,5 +1,4 @@
-## add文件后放弃某个文件的添加 ##
-
+* add文件后放弃某个文件的添加    
 ```
 git reset file_name
 ```  
@@ -73,4 +72,13 @@ $ git br -m 旧名字 新名字
 * git 回滚到某个commit     
 ```
 $ git reset 046bd7b5c1d134b8123f
+```     
+* git 查看改动  
+```
+# 当修改文件但是没有提交时：
+$ git diff # 查看所有的改动
+$ git diff 文件名  #查看这个文件的改动
+
+# 查看某个commit做了哪些改动
+$ git show 046bd7b5c1d134b8123f
 ```
