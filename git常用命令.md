@@ -34,7 +34,11 @@ $ git show v0.1.2   # 查看标签的版本信息
 * 删除标签     
 
 ```
+# 删除本地标签
 $ git tag -d v0.1.2 # 删除标签  参数d即delete的缩写，意为删除其后指定的标签。
+# 删除远程标签
+$ git push origin :refs/tags/<tagname> # 推送一个空tag到远程tag
+$ git push origin --delete tag <tagname> # 在Git v1.7.0 之后，可以使用这种语法删除远程分支
 ```
 
 * 给指定的commit打标签     
@@ -69,8 +73,14 @@ git checkout -b local-name origin/remote-name  #拉取远程分支到本地
 ```  
 * 分支管理  
 ```
-git branch testing # 创建本地分支 
-git checkout testing  # 切换分支
-git checkout -b euwe-1-jas # 创建分支并切换到这个分支
-git branch -d testing  # 删除本地分支分支
+$ git branch testing # 创建本地分支 
+$ git checkout testing  # 切换分支
+$ git checkout -b euwe-1-jas # 创建分支并切换到这个分支
+$ git branch -d testing  # 删除本地分支分支
+# 删除远程分支
+$ git push origin --delete <branchName> # 在Git v1.7.0 之后，可以使用这种语法删除远程分支
+$ git push origin :<branchName>  # 推送一个空分支到远程分支，其实就相当于删除远程分支
+$ git br -m 旧名字 新名字  #重命令本地分支，
+# 如果想重命名远程分支，那么先重命名本地分支，然后上传，最后删除就分知名
+
 ```
