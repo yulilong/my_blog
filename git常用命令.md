@@ -31,11 +31,9 @@ $ git push origin --delete tag <tagname> # 在Git v1.7.0 之后，可以使用�
 
 # 给指定的commit打标签   
 $ git tag -a v0.1.1 9fbc3d0  # 需要你知道某个提交对象的校验和（通过git log获取）
-```
 
-* 标签发布       
-通常的git push不会将标签对象提交到git服务器，我们需要进行显式的操作：        
-```
+# 标签发布       
+# 通常的git push不会将标签对象提交到git服务器，我们需要进行显式的操作：        
 $ git push origin v0.1.2 # 将v0.1.2标签提交到git服务器
 $ git push origin --tags # 将本地所有标签一次性提交到git服务器
 ```      
