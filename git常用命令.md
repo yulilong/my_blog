@@ -69,4 +69,8 @@ $ git push origin :<branchName>  # 推送一个空分支到远程分支，其实
 $ git br -m 旧名字 新名字  
 # 如果想重命名远程分支，那么先重命名本地分支，然后上传，最后删除就分知名
 
+```    
+* git 回滚到某个commit     
+```
+$ git reset 046bd7b5c1d134b8123f
 ```
