@@ -26,7 +26,9 @@ If you do not have an Azure AD tenant yet, please see How to get an Azure Active
 https://docs.microsoft.com/zh-cn/azure/active-directory/active-directory-howto-tenant      
 **Client ID**:    
 https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal    
-***Microsoft Graph***: https://graph.microsoft.io/zh-cn/            
+***Microsoft Graph***: https://graph.microsoft.io/zh-cn/           
+**Region**:     
+https://azure.microsoft.com/zh-cn/regions/ 
 https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services       
 
 * amazon  
