@@ -31,6 +31,8 @@ https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-cre
 https://azure.microsoft.com/zh-cn/regions/        
 **中国区 Azure 应用程序开发说明**:      
 https://www.azure.cn/documentation/articles/developerdifferences/      
+**对云服务的操作：**      
+https://msdn.microsoft.com/library/en-us/Ee460812.aspx
 https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services       
 
 * amazon  
