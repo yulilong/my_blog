@@ -18,7 +18,9 @@ https://github.com/ManageIQ/manageiq-providers-azure
 azure开发文档：https://docs.microsoft.com/zh-cn/azure/      
 azure ruby开发：https://azure.microsoft.com/zh-cn/develop/ruby/     
                https://github.com/Azure/azure-sdk-for-ruby     
-https://azure.microsoft.com/zh-cn/downloads/
+https://azure.microsoft.com/zh-cn/downloads/     
+https://docs.microsoft.com/zh-cn/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-overview      
+https://docs.microsoft.com/zh-cn/rest/api/index           
 
 * amazon  
 
