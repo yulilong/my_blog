@@ -35,6 +35,8 @@ https://www.azure.cn/documentation/articles/developerdifferences/
 https://msdn.microsoft.com/library/en-us/Ee460812.aspx         
 https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services       
 
+https://msdn.microsoft.com/zh-cn/library/azure/ee460799#Anchor_3    
+
 * amazon  
 
 https://github.com/ManageIQ/manageiq-providers-amazon  
