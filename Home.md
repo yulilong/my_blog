@@ -29,6 +29,8 @@ https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-cre
 ***Microsoft Graph***: https://graph.microsoft.io/zh-cn/           
 **Region**:     
 https://azure.microsoft.com/zh-cn/regions/        
+**中国区 Azure 应用程序开发说明**:      
+https://www.azure.cn/documentation/articles/developerdifferences/      
 https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services       
 
 * amazon  
