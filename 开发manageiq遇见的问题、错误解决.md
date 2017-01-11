@@ -37,7 +37,7 @@ Rails 5.0.0.1
 # bin/update
 $ bin/rails evm:compile_assets
 ```      
-## **manageiq Gemfile 文件加载的不止一个** ##   
+## **manageiq Gemfile 文件加载的不止一个**        
 在根目录的Gemfile文件里面：    
 ```
 # Load other additional Gemfiles
