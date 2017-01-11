@@ -20,7 +20,12 @@ azure ruby开发：https://azure.microsoft.com/zh-cn/develop/ruby/
                https://github.com/Azure/azure-sdk-for-ruby     
 https://azure.microsoft.com/zh-cn/downloads/     
 https://docs.microsoft.com/zh-cn/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-overview      
-***api***: https://docs.microsoft.com/zh-cn/rest/api/index           
+***api***: https://docs.microsoft.com/zh-cn/rest/api/index         
+**Tenant ID**:     
+If you do not have an Azure AD tenant yet, please see How to get an Azure Active Directory tenant.    
+https://docs.microsoft.com/zh-cn/azure/active-directory/active-directory-howto-tenant      
+**Client ID**:    
+https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal    
 ***Microsoft Graph***: https://graph.microsoft.io/zh-cn/            
 https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services       
 
