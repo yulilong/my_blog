@@ -63,4 +63,9 @@ gem build package.gemspec
 #运用bulid子命令构建gem包
 ```  
 
-http://www.jb51.net/article/65136.htm
+http://www.jb51.net/article/65136.htm     
+
+* gem引用本地开发的gem包    
+```
+gem "azure-armrest", :path => "../azure-armrest/"  #相对路径或者全路径
+```
