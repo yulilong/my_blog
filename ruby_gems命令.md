@@ -65,7 +65,7 @@ gem build package.gemspec
 
 http://www.jb51.net/article/65136.htm     
 
-* gem引用本地开发的gem包    
+* **gem引用本地开发的gem包**    
 ```
 gem "azure-armrest", :path => "../azure-armrest/"  #相对路径或者全路径
 ```
