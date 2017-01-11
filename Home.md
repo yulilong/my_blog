@@ -22,6 +22,7 @@ https://azure.microsoft.com/zh-cn/downloads/
 https://docs.microsoft.com/zh-cn/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-overview      
 https://docs.microsoft.com/zh-cn/rest/api/index           
 https://graph.microsoft.io/zh-cn/            
+https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services       
 
 * amazon  
 
