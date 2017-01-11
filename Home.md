@@ -20,8 +20,8 @@ azure ruby开发：https://azure.microsoft.com/zh-cn/develop/ruby/
                https://github.com/Azure/azure-sdk-for-ruby     
 https://azure.microsoft.com/zh-cn/downloads/     
 https://docs.microsoft.com/zh-cn/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-overview      
-***api***": https://docs.microsoft.com/zh-cn/rest/api/index           
-https://graph.microsoft.io/zh-cn/            
+***api***: https://docs.microsoft.com/zh-cn/rest/api/index           
+***Microsoft Graph***: https://graph.microsoft.io/zh-cn/            
 https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services       
 
 * amazon  
