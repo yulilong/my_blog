@@ -2,8 +2,8 @@
 
 [ruby中include和extend以及模块中ClassMethods](https://bitbucket.org/yulilong/my_wiki/wiki/ruby%E4%B8%ADinclude%E5%92%8Cextend%E4%BB%A5%E5%8F%8A%E6%A8%A1%E5%9D%97%E4%B8%ADClassMethods%20)
 
-## method查看方法是哪个类定义的 methods查看对象有哪些方法
-## source_locationc查看方法定义处 ##
+* method查看方法是哪个类定义的 methods查看对象有哪些方法
+* source_locationc查看方法定义处 ##
 
 ```
 method = method('_run_validate_callbacks')
@@ -13,10 +13,10 @@ p method.source_location
 # ["/home/yulilong/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb", 749
 ```
 
-## p caller 可以查看是谁调用了你
+* p caller 可以查看是谁调用了你
 
 
-##ruby的class << self, 及其class_eval和instance_eval的区别
+* ruby的class << self, 及其class_eval和instance_eval的区别
 http://blog.csdn.net/lyx2007825/article/details/10089115
 ```
 class Array  
@@ -60,7 +60,7 @@ class << HelloWorld
   end
 end 
 ```
-### ruby 中super和super()的区别
+* ruby 中super和super()的区别
 http://blog.csdn.net/autumn20080101/article/details/8146310
 ```
 我们经常要在子类的initialize方法中调用super和super()。
@@ -85,7 +85,7 @@ SChild.new a, b, c # puts nothing if super()
 可以看出当SChild的initialize中调用super()时，代码是不会打印任何信息的。这是因为super()没有向SParent的initialize方法传任何参数。
 ```
 
-## ruby 类方法中 self.class.方法名
+* ruby 类方法中 self.class.方法名
 子类中方法调用父类中同名的 类方法
 ```
 class AA
@@ -103,7 +103,7 @@ a.te
 # "I an AA"
 ```
 
-## 完美理解ruby中的yield的概念 ##
+* 完美理解ruby中的yield的概念 ##
 
  看到axgle 兄解释ruby中的yield的概念，形象的理解为“占位”的作用。  
    但是对yield还可以带着参数的概念总觉得有点不够形象，  
@@ -129,7 +129,7 @@ end #block结束
 由此可见，yield属于定义层，属于宣告层，也就是在心里说一句:"这个位置不错，我先用书本占了再说!";而block属于使用层，实现层,也就是最终你坐在了你先前占的位置上，从而真正的实现了对号入座的过程.   
 
 
-## empty、nil、blank三者之间的区别 ##
+* empty、nil、blank三者之间的区别    
 
 http://www.cnblogs.com/lmei/p/3262816.html   
 这三个方法在ROR中经常用到，都是用来判断是否为空的。    
