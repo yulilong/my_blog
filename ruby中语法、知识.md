@@ -149,36 +149,21 @@ rails的方法 ：.blank?
 也就是说，object.blank? 相当于 object.nil? || object.empty?     
 .nil? 和 empty? 的简单例子   
 
-true.blank?       
-=> false
-
-false.blank?
-=> true
-
-"true".blank?    
-=> false
-
-"".blank?          
-=> true
-
-"\n".blank?       
-=> true
-
-'\n'.blank?
-=> false
-
-'true'.blank?
-=> false
-
-''.blank?
-=> true
-
-1.blank?
-=> false
-
-[].blank?
-=> true
-
-[1].blank?
-=> false
+true.blank?   #=> false
+false.blank?  #=> true
+"true".blank? #=> false
+"".blank?     #=> true
+"\n".blank?   #=> true
+'\n'.blank?   #=> false
+'true'.blank? #=> false
+''.blank?     #=> true
+1.blank?      #=> false
+[].blank?     #=> true
+[1].blank?    #=> false
+```    
+* alias设置别名     
+```
+alias 别名  原名  #直接使用方法名
+alias :别名 :原名 #使用符号名
+除了为方法设置别名外，在重定义以存在的方法时，为了能用别名调用原来的方法，也需要用alias
 ```
