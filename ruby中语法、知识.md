@@ -181,5 +181,5 @@ false.blank?
 => true
 
 [1].blank?
-=> true
+=> false
 ```
