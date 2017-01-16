@@ -3,6 +3,10 @@
 
 * api链接网站国内的地址      
 
+* 访问token的获得地址    
+https://login.microsoftonline.com/73931c80-2096-4efa-a21c-e82d3594a109/oauth2/token      
+73931c80-2096-4efa-a21c-e82d3594a109 ： Tenant ID
+
 ------------------------------------------
 **Tenant ID**:     
 If you do not have an Azure AD tenant yet, please see How to get an Azure Active Directory tenant.    
