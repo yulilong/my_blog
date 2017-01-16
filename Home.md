@@ -20,16 +20,11 @@ azure ruby开发：https://azure.microsoft.com/zh-cn/develop/ruby/
                https://github.com/Azure/azure-sdk-for-ruby     
 https://azure.microsoft.com/zh-cn/downloads/     
 https://docs.microsoft.com/zh-cn/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-overview      
-***api***: https://docs.microsoft.com/zh-cn/rest/api/index      
+***api***: https://docs.microsoft.com/zh-cn/rest/api/index     
+      
 [azure服务器调用API接口问题搜集](https://bitbucket.org/yulilong/my_wiki/wiki/azure%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%B0%83%E7%94%A8API%E6%8E%A5%E5%8F%A3%E9%97%AE%E9%A2%98%E6%90%9C%E9%9B%86)   
-**Tenant ID**:     
-If you do not have an Azure AD tenant yet, please see How to get an Azure Active Directory tenant.    
-https://docs.microsoft.com/zh-cn/azure/active-directory/active-directory-howto-tenant      
-**Client ID**:    
-https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal    
-***Microsoft Graph***: https://graph.microsoft.io/zh-cn/           
-**Region**:     
-https://azure.microsoft.com/zh-cn/regions/        
+
+       
 **中国区 Azure 应用程序开发说明**:      
 https://www.azure.cn/documentation/articles/developerdifferences/      
 **对云服务的操作：**      
