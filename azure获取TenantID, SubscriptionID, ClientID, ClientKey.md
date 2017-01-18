@@ -25,6 +25,7 @@ PS /home/user_name> exit   #exit powershell
 ```     
 
 * install powershell Azure Module    
+http://www.cnblogs.com/hengwei/p/5804139.html         
 ```
 $ su root                                       #这个要在root用户权限下安装才有效，普通用户安装失败 
 $ mkdir -p /usr/local/share/powershell/Modules  #创建PowerShell Moudle的安装目录
@@ -36,7 +37,7 @@ PS user_name> Import-Module AzureRM.NetCore.Preview
 ```
 
 ## 微软国内帐号获得Tenant ID, Subscription ID, Client ID, Client Key ##
-
+* azure中国的获得      
 ```
 [yu@localhost ~]$ powershell
 PowerShell 
@@ -54,4 +55,52 @@ SubscriptionId        : 4b1b759a-1958-412a-90ec-d9a4959xxxxx
 SubscriptionName      : Windows Azure 企业
 CurrentStorageAccount : 
 
+>Set-AzureRmContext -SubscriptionId 4b1b759a-1958-412a-90ec-d9a4959xxxxx
+>$azureAdApplication = New-AzureRmADApplication -DisplayName "webapp01" -HomePage "https://www.webapp01.zyax.cn" -IdentifierUris "https://www.contoso.org/webapp01" -Password "cloud@1qaz@xxx"
+> $azureAdApplication
+
+# ClientKey: 就是上面设置的密码 cloud@1qaz@xxx
+# ClientID : 就是下面的ApplicationId
+
+DisplayName             : webapp01
+ObjectId                : 201a9648-6b80-40ce-8b7c-eb7ecda58223
+IdentifierUris          : {https://www.contoso.org/webapp01}
+HomePage                : https://www.webapp01.zyax.cn
+Type                    : Application
+ApplicationId           : 409a871d-b24f-4bef-ac8f-b13becf6c84d
+AvailableToOtherTenants : False
+AppPermissions          :
+ReplyUrls               : {}
+
+
+
+> New-AzureRmADServicePrincipal -ApplicationId $azureAdApplication.ApplicationId
+
+DisplayName                    Type                           ObjectId
+-----------                    ----                           --------
+webapp01                       ServicePrincipal               ee14f618-e3b2-466b-9ff7-82471616a27b
+
+# 给这个app设置相应的 订阅ID权限
+> New-AzureRmRoleAssignment -RoleDefinitionName Reader -ServicePrincipalName $azureAdApplication.ApplicationId
+
+
+RoleAssignmentId   : /subscriptions/4b1b759a-1958-412a-90ec-d9a4959ad8bc/providers/Microsoft.Authorization/roleAssignments/ae74b507-19e3-4e0a-8e84-cfae054c73f9
+Scope              : /subscriptions/4b1b759a-1958-412a-90ec-d9a4959ad8bc
+DisplayName        : webapp01
+SignInName         :
+RoleDefinitionName : Reader
+RoleDefinitionId   : acdd72a7-3385-48ef-bd42-f606fba81ae7
+ObjectId           : ee14f618-e3b2-466b-9ff7-82471616a27b
+ObjectType         : ServicePrincipal
+
+> Get-AzureRmRoleAssignment
+
+RoleAssignmentId   : /subscriptions/4b1b759a-1958-412a-90ec-d9a4959ad8bc/providers/Microsoft.Authorization/roleAssignments/ae74b507-19e3-4e0a-8e84-cfae054c73f9
+Scope              : /subscriptions/4b1b759a-1958-412a-90ec-d9a4959ad8bc
+DisplayName        : webapp01
+SignInName         :
+RoleDefinitionName : Reader
+RoleDefinitionId   : acdd72a7-3385-48ef-bd42-f606fba81ae7
+ObjectId           : ee14f618-e3b2-466b-9ff7-82471616a27b
+ObjectType         : ServicePrincipal
 ```
