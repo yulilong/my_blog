@@ -8,7 +8,9 @@
 
 ### ***powershell install***
 
-* 安装教程：   
+使用教程：     
+https://www.azure.cn/documentation/articles/powershell-install-configure/     
+安装教程：   
 https://github.com/PowerShell/PowerShell        
 里面有各种系统的安装教程，下面以centos linux 为例说明。      
      
