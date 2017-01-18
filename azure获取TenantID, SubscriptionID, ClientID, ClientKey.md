@@ -103,4 +103,77 @@ RoleDefinitionName : Reader
 RoleDefinitionId   : acdd72a7-3385-48ef-bd42-xxxxxxxxxxxx
 ObjectId           : ee14f618-e3b2-466b-9ff7-xxxxxxxxxxxx
 ObjectType         : ServicePrincipal
+```     
+
+* azure国外获得     
+```
+PS C:\Users\xxxx> Login-AzureRmAccount
+VERBOSE: To sign in, use a web browser to open the page 
+https://aka.ms/devicelogin and enter the code GTMMSNYNX to authenticate.
+
+# 这里打开这个连接，然后输入后面的代码，之后输入帐号，密码后就会出现下面的信息。
+# TenantID，SubscriptionID在下面
+
+Environment           : AzureCloud
+Account               : kylin_fedora@hotmail.com
+TenantId              : 73931c80-2096-4efa-a21c-xxxxxxxxxxxx
+SubscriptionId        : 3b22ed16-6255-4eb4-b808-xxxxxxxxxxxx
+SubscriptionName      : 即用即付
+CurrentStorageAccount :
+
+
+
+PS C:\Users\xxxx> Set-AzureRmContext -SubscriptionId 3b22ed16-6255-4eb4-b808-xxxxxxxxxxxx
+
+PS C:\Users\xxxx> $azureAdApplication = New-AzureRmADApplication -DisplayName "webapp01" -HomePage "https://www.webapp01.xxxxxxxxxxxx.cn" -IdentifierUris "https://www.xxxxxxxxxxxx.org/webapp01" -Password "cloud@1qaz@WSX"
+PS C:\Users\xxxx> $azureAdApplication
+# ClientKey: 就是上面设置的密码 cloud@1qaz@xxx
+# ClientID : 就是下面的ApplicationId
+
+DisplayName             : webapp01
+ObjectId                : f31dc940-54af-49be-9c17-xxxxxxxxxxxx
+IdentifierUris          : {https://www.xxxxxxxxxxxx.org/webapp01}
+HomePage                : https://www.webapp01.xxxxxxxxxxxx.cn
+Type                    : Application
+ApplicationId           : 8ba1064d-d53c-4ad3-82e2-xxxxxxxxxxxx
+AvailableToOtherTenants : False
+AppPermissions          :
+ReplyUrls               : {}
+
+
+
+PS C:\Users\kylin> New-AzureRmADServicePrincipal -ApplicationId $azureAdApplication.ApplicationId
+
+DisplayName                    Type                           ObjectId
+-----------                    ----                           --------
+webapp01                       ServicePrincipal               1757c1ee-12bb-4e62-9ef4-xxxxxxxxxxxx
+
+
+# 给这个app设置相应的 订阅ID权限
+PS C:\Users\kylin> New-AzureRmRoleAssignment -RoleDefinitionName Reader -ServicePrincipalName $azureAdApplication.ApplicationId
+
+
+RoleAssignmentId   : /subscriptions/3b22ed16-6255-4eb4-b808-xxxxxxxxxxxx/providers/Microsoft.Authorization/roleAssignments/fc911348-23cc-4329-bbc4-xxxxxxxxxxxx
+Scope              : /subscriptions/3b22ed16-6255-4eb4-b808-xxxxxxxxxxxx
+DisplayName        : webapp01
+SignInName         :
+RoleDefinitionName : Reader
+RoleDefinitionId   : acdd72a7-3385-48ef-bd42-xxxxxxxxxxxx
+ObjectId           : 1757c1ee-12bb-4e62-9ef4-xxxxxxxxxxxx
+ObjectType         : ServicePrincipal
+
+
+
+PS C:\Users\kylin> Get-AzureRmRoleAssignment
+
+
+RoleAssignmentId   : /subscriptions/3b22ed16-6255-4eb4-b808-xxxxxxxxxxxx/providers/Microsoft.Authorization/roleAssignments/fc911348-23cc-4329-bbc4-xxxxxxxxxxxx
+Scope              : /subscriptions/3b22ed16-6255-4eb4-b808-xxxxxxxxxxxx
+DisplayName        : webapp01
+SignInName         :
+RoleDefinitionName : Reader
+RoleDefinitionId   : acdd72a7-3385-48ef-bd42-xxxxxxxxxxxx
+ObjectId           : 1757c1ee-12bb-4e62-9ef4-xxxxxxxxxxxx
+ObjectType         : ServicePrincipal
+
 ```
