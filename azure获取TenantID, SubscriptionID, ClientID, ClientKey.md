@@ -9,7 +9,7 @@
 ### ***powershell install***
 
 * 安装教程：   
-https://github.com/PowerShell/PowerShell
+https://github.com/PowerShell/PowerShell        
 里面有各种系统的安装教程，下面以centos linux 为例说明。      
 
 * install     
