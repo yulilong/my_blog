@@ -20,8 +20,8 @@ $ sudo yum install https://github.com/PowerShell/PowerShell/releases/download/v6
 $ sudo yum remove powershell
    
 # run     
-$ powershell  # run
-$ exit        #exit powershell
+$ powershell               # run
+PS /home/user_name> exit   #exit powershell
 ```
 
 
