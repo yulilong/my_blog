@@ -125,7 +125,7 @@ CurrentStorageAccount :
 
 PS C:\Users\xxxx> Set-AzureRmContext -SubscriptionId 3b22ed16-6255-4eb4-b808-xxxxxxxxxxxx
 
-PS C:\Users\xxxx> $azureAdApplication = New-AzureRmADApplication -DisplayName "webapp01" -HomePage "https://www.webapp01.xxxxxxxxxxxx.cn" -IdentifierUris "https://www.xxxxxxxxxxxx.org/webapp01" -Password "cloud@1qaz@WSX"
+PS C:\Users\xxxx> $azureAdApplication = New-AzureRmADApplication -DisplayName "webapp01" -HomePage "https://www.webapp01.xxxxxxxxxxxx.cn" -IdentifierUris "https://www.xxxxxxxxxxxx.org/webapp01" -Password "cloud@1qaz@xxx"
 PS C:\Users\xxxx> $azureAdApplication
 # ClientKey: 就是上面设置的密码 cloud@1qaz@xxx
 # ClientID : 就是下面的ApplicationId
