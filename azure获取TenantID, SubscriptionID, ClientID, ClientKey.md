@@ -177,3 +177,8 @@ ObjectId           : 1757c1ee-12bb-4e62-9ef4-xxxxxxxxxxxx
 ObjectType         : ServicePrincipal
 
 ```
+Azure RBAC has three basic roles that apply to all resource types:
+
+Owner has full access to all resources including the right to delegate access to others.
+Contributor can create and manage all types of Azure resources but can’t grant access to others.
+Reader can view existing Azure resources.
