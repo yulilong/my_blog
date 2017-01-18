@@ -11,17 +11,15 @@
 * 安装教程：   
 https://github.com/PowerShell/PowerShell        
 里面有各种系统的安装教程，下面以centos linux 为例说明。      
-
-* install     
+     
 ```
+# install
 $ sudo yum install https://github.com/PowerShell/PowerShell/releases/download/v6.0.0-alpha.14/powershell-6.0.0_alpha.14-1.el7.centos.x86_64.rpm
-```     
-* Uninstallation       
-```
+     
+# Uninstallation       
 $ sudo yum remove powershell
-```    
-* run     
-```
+   
+# run     
 $ powershell  # run
 $ exit        #exit powershell
 ```
