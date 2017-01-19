@@ -12,6 +12,7 @@
 https://www.azure.cn/documentation/articles/powershell-install-configure/     
 安装教程：   
 https://github.com/PowerShell/PowerShell        
+https://github.com/PowerShell/azure-powershell           
 里面有各种系统的安装教程，下面以centos linux 为例说明。      
      
 ```
