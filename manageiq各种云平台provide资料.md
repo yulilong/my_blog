@@ -1,4 +1,4 @@
-* **微软azure providers**  
+##  **微软azure providers**  
 
 https://github.com/fog/fog-azure  
 https://github.com/ManageIQ/manageiq-providers-azure     
@@ -20,11 +20,15 @@ https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-s
 
 https://msdn.microsoft.com/zh-cn/library/azure/ee460799#Anchor_3    
 
-* **amazon**  
+---------------------------------------------------------------------------------------------------
+
+## **amazon**  
 
 https://github.com/ManageIQ/manageiq-providers-amazon  
 
-* **阿里云aliyun**
+---------------------------------------------------------------------------------------------------
+
+## **阿里云aliyun**
 
 https://github.com/fog/fog-aliyun  
 https://rubygems.org/gems/fog-aliyun  
@@ -33,6 +37,8 @@ https://rubygems.org/gems/aliyun-sdk
 https://rubygems.org/gems/aliyun_ruby_api                 
 https://help.aliyun.com/document_detail/25485.html?spm=5176.doc25484.6.241.tethIg  
 
-* **manageiq-providers-lenovo**  
+---------------------------------------------------------------------------------------------------
+
+## **manageiq-providers-lenovo**  
 
 https://github.com/ManageIQ/manageiq-providers-lenovo
