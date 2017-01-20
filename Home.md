@@ -13,7 +13,7 @@
 
 [***manageiq各种云平台provide资料***](https://bitbucket.org/yulilong/my_wiki/wiki/manageiq%E5%90%84%E7%A7%8D%E4%BA%91%E5%B9%B3%E5%8F%B0provide%E8%B5%84%E6%96%99)
 
-
+---------------------------------------------------------------------------------------------------------
 
 ## centos7 
 * [linux terminal command](https://bitbucket.org/yulilong/my_wiki/wiki/linux%20terminal%20command)       
@@ -23,12 +23,16 @@
 * [centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall](https://bitbucket.org/yulilong/my_wiki/wiki/centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall)
 
 * [git安装、配置](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%AE%89%E8%A3%85%E3%80%81%E9%85%8D%E7%BD%AE)
-* [virtualbox虚拟机 centos7安装增强工具](https://bitbucket.org/yulilong/my_wiki/wiki/virtualbox%E8%99%9A%E6%8B%9F%E6%9C%BA%20centos7%E5%AE%89%E8%A3%85%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7)  
+* [virtualbox虚拟机 centos7安装增强工具](https://bitbucket.org/yulilong/my_wiki/wiki/virtualbox%E8%99%9A%E6%8B%9F%E6%9C%BA%20centos7%E5%AE%89%E8%A3%85%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7)    
+
+-------------------------------------------------------------------------------------------------
 
 * HTML 参考手册  
 http://www.w3school.com.cn/tags/  
 * HTML 在线效果测试  
 http://www.w3school.com.cn/tiy/t.asp?f=html_div_test
+
+-------------------------------------------------------------------------------------------------
 
 ##ruby rails 学习资料
 
@@ -40,10 +44,12 @@ http://www.w3school.com.cn/tiy/t.asp?f=html_div_test
 * [ruby中语法、知识](https://bitbucket.org/yulilong/my_wiki/wiki/ruby%E4%B8%AD%E8%AF%AD%E6%B3%95%E3%80%81%E7%9F%A5%E8%AF%86)  
 * [ruby比较常用的gems包](https://bitbucket.org/yulilong/my_wiki/wiki/ruby%E6%AF%94%E8%BE%83%E5%B8%B8%E7%94%A8%E7%9A%84gems%E5%8C%85)
 
+
 ### rake
 * [Ruby中任务构建工具rake的入门学习教程](https://bitbucket.org/yulilong/my_wiki/wiki/Ruby%E4%B8%AD%E4%BB%BB%E5%8A%A1%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7rake%E7%9A%84%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B)          推荐读这个，简单易懂。
 * [Ruby on Rails中的Rake教程](https://bitbucket.org/yulilong/my_wiki/wiki/%20Ruby%20on%20Rails%E4%B8%AD%E7%9A%84Rake%E6%95%99%E7%A8%8B)
 * [Ruby中的Rake任务详述](https://bitbucket.org/yulilong/my_wiki/wiki/Ruby%E4%B8%AD%E7%9A%84Rake%E4%BB%BB%E5%8A%A1%E8%AF%A6%E8%BF%B0)
+
 
 ###rails -> view
 * [rails中view 部分haml资料](https://bitbucket.org/yulilong/my_wiki/wiki/rails%E4%B8%ADview%20%E9%83%A8%E5%88%86haml%E8%B5%84%E6%96%99)
@@ -65,6 +71,8 @@ http://www.w3school.com.cn/tiy/t.asp?f=html_div_test
 
 [ruby_gems命令](https://bitbucket.org/yulilong/my_wiki/wiki/ruby_gems%E5%91%BD%E4%BB%A4)     
 [国内RubyGems镜像](https://bitbucket.org/yulilong/my_wiki/wiki/%E5%9B%BD%E5%86%85RubyGems%E9%95%9C%E5%83%8F)
+
+-------------------------------------------------------------------------------------------------
 
 如果 .md里面要方图片，一种是把图片放到网易博客中去。
 
