@@ -11,8 +11,6 @@ https://docs.microsoft.com/zh-cn/azure/virtual-machine-scale-sets/virtual-machin
       
 [azure服务器调用API接口问题搜集](https://bitbucket.org/yulilong/my_wiki/wiki/azure%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%B0%83%E7%94%A8API%E6%8E%A5%E5%8F%A3%E9%97%AE%E9%A2%98%E6%90%9C%E9%9B%86)   
 
-**中国区 Azure 应用程序开发说明**:      
-https://www.azure.cn/documentation/articles/developerdifferences/      
 **对云服务的操作：**      
 https://msdn.microsoft.com/library/en-us/Ee460812.aspx         
 https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services       
@@ -20,6 +18,8 @@ https://msdn.microsoft.com/zh-cn/library/azure/ee460799#Anchor_3
 **powershell azure_CLI 中文安装文档**        
 https://www.azure.cn/documentation/articles/xplat-cli-install/       
 
+**中国区 Azure 应用程序开发说明(国内站点网址)**:      
+https://www.azure.cn/documentation/articles/developerdifferences/     
 [azure开发连接的国内网站](https://bitbucket.org/yulilong/my_wiki/wiki/azure%E5%BC%80%E5%8F%91%E8%BF%9E%E6%8E%A5%E7%9A%84%E5%9B%BD%E5%86%85%E7%BD%91%E7%AB%99)       
 
 ---------------------------------------------------------------------------------------------------
