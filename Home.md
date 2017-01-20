@@ -45,32 +45,39 @@ http://www.w3school.com.cn/tiy/t.asp?f=html_div_test
 * [ruby比较常用的gems包](https://bitbucket.org/yulilong/my_wiki/wiki/ruby%E6%AF%94%E8%BE%83%E5%B8%B8%E7%94%A8%E7%9A%84gems%E5%8C%85)
 
 
-### rake
+### **rake**
 * [Ruby中任务构建工具rake的入门学习教程](https://bitbucket.org/yulilong/my_wiki/wiki/Ruby%E4%B8%AD%E4%BB%BB%E5%8A%A1%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7rake%E7%9A%84%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B)          推荐读这个，简单易懂。
 * [Ruby on Rails中的Rake教程](https://bitbucket.org/yulilong/my_wiki/wiki/%20Ruby%20on%20Rails%E4%B8%AD%E7%9A%84Rake%E6%95%99%E7%A8%8B)
 * [Ruby中的Rake任务详述](https://bitbucket.org/yulilong/my_wiki/wiki/Ruby%E4%B8%AD%E7%9A%84Rake%E4%BB%BB%E5%8A%A1%E8%AF%A6%E8%BF%B0)
 
 
-###rails -> view
+###**rails -> view**
 * [rails中view 部分haml资料](https://bitbucket.org/yulilong/my_wiki/wiki/rails%E4%B8%ADview%20%E9%83%A8%E5%88%86haml%E8%B5%84%E6%96%99)
 
 
-###rails -> route
+###**rails -> route**
 * [rails中route官方教程](http://guides.ruby-china.org/routing.html)http://guides.ruby-china.org/routing.html
 
 要想查看程序完整的路由列表，可以在开发环境中使用浏览器打开 http://localhost:3000/rails/info/routes    
 也可以在终端执行 rake routes 任务查看，结果是一样的。
  
-## ***GIT*** ##
+### **GIT**   
 
 [git安装,配置](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%AE%89%E8%A3%85,%E9%85%8D%E7%BD%AE)
 
 [git常用命令](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4)     
 
-## ***ruby gem*** ##
+### **ruby gem**    
 
 [ruby_gems命令](https://bitbucket.org/yulilong/my_wiki/wiki/ruby_gems%E5%91%BD%E4%BB%A4)     
-[国内RubyGems镜像](https://bitbucket.org/yulilong/my_wiki/wiki/%E5%9B%BD%E5%86%85RubyGems%E9%95%9C%E5%83%8F)
+[国内RubyGems镜像](https://bitbucket.org/yulilong/my_wiki/wiki/%E5%9B%BD%E5%86%85RubyGems%E9%95%9C%E5%83%8F)   
+
+###  **rubymine**   
+
+[RubyMine常用快捷键](https://bitbucket.org/yulilong/my_wiki/wiki/RubyMine%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE)     
+
+
+
 
 -------------------------------------------------------------------------------------------------
 
@@ -78,42 +85,3 @@ http://www.w3school.com.cn/tiy/t.asp?f=html_div_test
 
 ## 阿里云应用部署文档
 * [阿里云应用部署文档](https://bitbucket.org/yulilong/my_wiki/wiki/%20%E9%98%BF%E9%87%8C%E4%BA%91%E5%BA%94%E7%94%A8%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3)
-
-## Wiki features
-
-This wiki uses the [Markdown](http://daringfireball.net/projects/markdown/) syntax. The [MarkDownDemo tutorial](https://bitbucket.org/tutorials/markdowndemo) shows how various elements are rendered. [Bitbucket documentation](https://confluence.atlassian.com/display/BITBUCKET/Use+a+wiki) has more information about how using a wiki.
-
-The wiki itself is actually a git repository, which means you can clone it, edit it locally/offline, add images or any other file type, and push it back to us. It will be live immediately.
-
-Go ahead and try:
-
-```
-$ git clone https://yulilong@bitbucket.org/yulilong/my_wiki.git/wiki
-```
-
-Wiki pages are normal files, with the .md extension. You can edit them locally, as well as creating new ones.
-
-## Syntax highlighting
-
-
-You can also highlight snippets of text (we use the excellent [Pygments][] library).
-
-[Pygments]: http://pygments.org/
-
-
-Here's an example of some Python code:
-
-```
-#!python
-
-def wiki_rocks(text):
-    formatter = lambda t: "funky"+t
-    return formatter(text)
-```
-
-
-You can check out the source of this page to see how that's done, and make sure to bookmark [the vast library of Pygment lexers][lexers], we accept the 'short name' or the 'mimetype' of anything in there.
-[lexers]: http://pygments.org/docs/lexers/
-
-
-Have fun!
