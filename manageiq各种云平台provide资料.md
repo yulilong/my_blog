@@ -20,6 +20,8 @@ https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-s
 
 https://msdn.microsoft.com/zh-cn/library/azure/ee460799#Anchor_3    
 
+[azure开发连接的国内网站](https://bitbucket.org/yulilong/my_wiki/wiki/azure%E5%BC%80%E5%8F%91%E8%BF%9E%E6%8E%A5%E7%9A%84%E5%9B%BD%E5%86%85%E7%BD%91%E7%AB%99)       
+
 ---------------------------------------------------------------------------------------------------
 
 ## **amazon**  
