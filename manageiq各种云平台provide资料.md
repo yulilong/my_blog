@@ -3,8 +3,10 @@
 https://github.com/fog/fog-azure  
 https://github.com/ManageIQ/manageiq-providers-azure     
 azure开发文档：https://docs.microsoft.com/zh-cn/azure/      
-azure ruby开发：https://azure.microsoft.com/zh-cn/develop/ruby/     
-               https://github.com/Azure/azure-sdk-for-ruby     
+azure ruby开发：      
+https://azure.microsoft.com/zh-cn/develop/ruby/     
+https://github.com/Azure/azure-sdk-for-ruby     
+
 https://azure.microsoft.com/zh-cn/downloads/     
 https://docs.microsoft.com/zh-cn/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-overview      
 ***api***: https://docs.microsoft.com/zh-cn/rest/api/index     
@@ -15,10 +17,10 @@ https://docs.microsoft.com/zh-cn/azure/virtual-machine-scale-sets/virtual-machin
 https://msdn.microsoft.com/library/en-us/Ee460812.aspx         
 https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services       
 https://msdn.microsoft.com/zh-cn/library/azure/ee460799#Anchor_3    
-**powershell azure_CLI 中文安装文档**        
+**powershell azure_CLI 中文安装文档：**        
 https://www.azure.cn/documentation/articles/xplat-cli-install/       
        
-**中国区 Azure 应用程序开发说明(国内站点网址)**:      
+**中国区 Azure 应用程序开发说明(国内站点网址)：**      
 https://www.azure.cn/documentation/articles/developerdifferences/     
 [azure开发连接的国内网站](https://bitbucket.org/yulilong/my_wiki/wiki/azure%E5%BC%80%E5%8F%91%E8%BF%9E%E6%8E%A5%E7%9A%84%E5%9B%BD%E5%86%85%E7%BD%91%E7%AB%99)       
 
