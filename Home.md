@@ -1,4 +1,4 @@
-# manageiq  providers 
+# **manageiq  providers** 
 
 [manageiq代码结构、框架、执行流程分析](https://bitbucket.org/yulilong/my_wiki/wiki/manageiq%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84%E3%80%81%E6%A1%86%E6%9E%B6%E3%80%81%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90)  
 
@@ -15,7 +15,7 @@
 
 ---------------------------------------------------------------------------------------------------------
 
-## centos7 
+## **centos7** 
 * [linux terminal command](https://bitbucket.org/yulilong/my_wiki/wiki/linux%20terminal%20command)       
 * [ linux下常用软件](https://bitbucket.org/yulilong/my_wiki/wiki/linux%E4%B8%8B%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6)       
 * [centos7 搭建samba方法](https://bitbucket.org/yulilong/my_wiki/wiki/centos7%20%E6%90%AD%E5%BB%BAsamba%E6%96%B9%E6%B3%95)
@@ -34,7 +34,7 @@ http://www.w3school.com.cn/tiy/t.asp?f=html_div_test
 
 -------------------------------------------------------------------------------------------------
 
-##ruby rails 学习资料
+##**ruby rails 学习资料**
 
 * [Ruby on Rails 在线教程](https://railstutorial-china.org/book/)          
 * [Rails 中文指南](http://guides.ruby-china.org/)     
