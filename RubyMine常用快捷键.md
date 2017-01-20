@@ -68,5 +68,5 @@ Ctrl+~：切换主题，配色等(一般默认会被输入法占用)
 成功后应用保存，即可生效.     
 
 
-
+转载自：      
 http://blog.csdn.net/iam_song/article/details/7863636
