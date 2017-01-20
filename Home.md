@@ -11,7 +11,7 @@
 [开发manageiq遇见的问题、错误解决](https://bitbucket.org/yulilong/my_wiki/wiki/%E5%BC%80%E5%8F%91manageiq%E9%81%87%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98%E3%80%81%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3)           
 [azure获取TenantID, SubscriptionID, ClientID, ClientKey](https://bitbucket.org/yulilong/my_wiki/wiki/azure%E8%8E%B7%E5%8F%96TenantID,%20SubscriptionID,%20ClientID,%20ClientKey)          
 
-[***manageiq各种云平台provide资料***](https://bitbucket.org/yulilong/my_wiki/wiki/manageiq%E5%90%84%E7%A7%8D%E4%BA%91%E5%B9%B3%E5%8F%B0provide%E8%B5%84%E6%96%99)
+[**manageiq各种云平台provide资料**](https://bitbucket.org/yulilong/my_wiki/wiki/manageiq%E5%90%84%E7%A7%8D%E4%BA%91%E5%B9%B3%E5%8F%B0provide%E8%B5%84%E6%96%99)
 
 ---------------------------------------------------------------------------------------------------------
 
