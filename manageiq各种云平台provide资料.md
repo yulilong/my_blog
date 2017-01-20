@@ -9,7 +9,7 @@ https://github.com/Azure/azure-sdk-for-ruby
 
 https://azure.microsoft.com/zh-cn/downloads/     
 https://docs.microsoft.com/zh-cn/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-overview      
-***api***: https://docs.microsoft.com/zh-cn/rest/api/index       
+**api**: https://docs.microsoft.com/zh-cn/rest/api/index       
 
 **对云服务的操作：**      
 https://msdn.microsoft.com/library/en-us/Ee460812.aspx         
