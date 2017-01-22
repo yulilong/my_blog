@@ -21,7 +21,7 @@ https://www.azure.cn/documentation/articles/xplat-cli-install/
 **中国区 Azure 应用程序开发说明(国内站点网址)：**      
 https://www.azure.cn/documentation/articles/developerdifferences/     
 [azure开发连接的国内网站](https://bitbucket.org/yulilong/my_wiki/wiki/azure%E5%BC%80%E5%8F%91%E8%BF%9E%E6%8E%A5%E7%9A%84%E5%9B%BD%E5%86%85%E7%BD%91%E7%AB%99)       
-* **powershell CLI 中对虚拟的操作，获得镜像信息**
+* **powershell CLI 中对虚拟的操作，获得镜像信息**              
 https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-linux-cli-ps-findimage?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json       
 
 ---------------------------------------------------------------------------------------------------
