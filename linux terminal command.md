@@ -112,3 +112,11 @@ http://www.blogjava.net/jiangjf/archive/2007/07/29/133122.html
 　　解压：rar a FileName.rar
 　　压缩：r ar e FileName.rar
 ```
+
+* **查看当前系统版本**
+
+```
+$ lsb_release -a
+$ cat /etc/issue
+
+```
