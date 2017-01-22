@@ -4,9 +4,10 @@ $ grep "被查找的字符串" 文件名  # 从文件内容查找匹配指定字
 $ find / -type f -name "*.log" | xargs grep "ERROR" # 从根目录开始查找所有扩展名为.log的文本文件，并找出包含”ERROR”的行
 ```
 
-## 查看当前用户
-whoami
-## linux修改文件所属用户和组
+* **查看当前用户**      
+whoami    
+
+*  **linux修改文件所属用户和组**              
 ```
 使用chown命令可以修改文件或目录所属的用户：
        命令：chown 用户 目录或文件名
@@ -17,8 +18,8 @@ whoami
 如果需要修改目录及子目录的权限则需要加 -R
 sudo chown yulilong -R local
 
-```   
-## cp  scp
+```      
+* **cp  scp**       
 ```
 http://www.jb51.net/LINUXjishu/70474.html
 Linux为我们提供了两个用于文件copy的命令，一个是cp，一个是scp，但是他们略有不同。 
@@ -69,12 +70,12 @@ scp root@172.19.2.75:/home/root/full.tar.gz /home/daisy
 # 复制目录加参数 -r 即可 
 ```
 
-##centos添加用户跟组
+* **centos添加用户跟组**      
 ```
 http://zhidao.baidu.com/link?url=YWnbBbR1fLGrWwQ9bKROr_2A_7fotpIgs2IJA0yh7-MfDDBKf3GSsB8Hab1pn0-Q8xpBnW0rSUUOhY1jIngKlX_O3-O9q2G0uIQCsANK80e
 ```
-
-#centos7开机自动关闭网络,开启网络，有线设置
+ 
+* **centos7开机自动关闭网络,开启网络，有线设置**    
 http://jingyan.baidu.com/article/6dad5075f3d766a123e36eaa.html
 ```
 $ cd /etc/sysconfig/network-scirpts
@@ -84,8 +85,8 @@ $sudo vi ifcfg-eth0
 ONBOOT=yes
 关闭
 ONBOOT=no
-```   
-## ***查看文件文件夹大小*** ##
+```    
+*  ***查看文件文件夹大小*** 
 ```
 [root@bsso yayu]# du -h --max-depth=1 work/testing
 27M     work/testing/logs
@@ -97,7 +98,7 @@ ONBOOT=no
 8.0K    work/testing/testing_c.php
 ```    
 
-## linux 压缩、解压 ##
+* **linux 压缩、解压**
 http://www.blogjava.net/jiangjf/archive/2007/07/29/133122.html      
 ```
 .tar
