@@ -1,3 +1,4 @@
+###  [**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
 # 添加一个新的providers代码目录 #
 
 
@@ -294,8 +295,4 @@ end
 app/models/manageiq/providers/aliyun/cloud_manager/vm.rb     
 ```
 include_concern 'Operations'
-```  
-
-
-
-
+```
