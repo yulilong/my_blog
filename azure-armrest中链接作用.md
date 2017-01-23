@@ -7,7 +7,7 @@ https://management.chinacloudapi.cn/subscriptions/4b1b759a-1958-412a-90ec-d9a495
 对应的网站信息：     
 ![Screenshot from 2017-01-23 15-06-23.png](https://bitbucket.org/repo/oE6yEX/images/2559928105-Screenshot%20from%202017-01-23%2015-06-23.png)      
 
-* **获取storageAccounts/testdiag563下key信息**
+* **获取storageAccounts/testdiag563下key信息**      
 https://management.chinacloudapi.cn/subscriptions/4b1b759a-1958-412a-90ec-d9a4959ad8bc/resourceGroups/test/providers/Microsoft.Storage/storageAccounts/testdiag563/listKeys?api-version=2016-05-01       
 返回信息：    
 ```
