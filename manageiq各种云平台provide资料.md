@@ -11,7 +11,7 @@ https://azure.microsoft.com/zh-cn/downloads/
 **api**: https://docs.microsoft.com/zh-cn/rest/api/index       
 
 **对云服务的操作：**      
-https://msdn.microsoft.com/library/en-us/Ee460812.aspx         
+URL访问资源rest： https://msdn.microsoft.com/library/en-us/Ee460812.aspx         
 https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services       
 https://msdn.microsoft.com/zh-cn/library/azure/ee460799#Anchor_3    
 **powershell azure_CLI 中文安装文档：**        
