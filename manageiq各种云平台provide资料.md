@@ -1,6 +1,8 @@
 ###  [**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
 ##  **微软azure providers**  
 
+Resource Manager 模式 - 用于在 Resource Manager 部署模型中处理 Azure 资源。若要设置此模式，请运行 azure config mode **arm**    
+https://github.com/ManageIQ/azure-armrest/tree/v0.5.2/lib/azure/armrest      
 https://github.com/fog/fog-azure  
 https://github.com/ManageIQ/manageiq-providers-azure     
 azure开发文档：https://docs.microsoft.com/zh-cn/azure/      
