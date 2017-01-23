@@ -1,9 +1,9 @@
 ###  [**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
 ##  **微软azure providers**    
 https://github.com/fog/fog-azure  
-https://github.com/ManageIQ/manageiq-providers-azure   
+**manageiq azure provider:**https://github.com/ManageIQ/manageiq-providers-azure   
 Resource Manager 模式 - 用于在 Resource Manager 部署模型中处理 Azure 资源。若要设置此模式，请运行 azure config mode **arm**    
-https://github.com/ManageIQ/azure-armrest/tree/v0.5.2/lib/azure/armrest      
+**manageiq开发的azure服务SDK：**https://github.com/ManageIQ/azure-armrest/tree/v0.5.2/lib/azure/armrest      
 **powershell azure_CLI 中文安装文档：**https://www.azure.cn/documentation/articles/xplat-cli-install/     
 azure开发文档：https://docs.microsoft.com/zh-cn/azure/      
 azure ruby开发：https://azure.microsoft.com/zh-cn/develop/ruby/     
@@ -13,8 +13,10 @@ https://azure.microsoft.com/zh-cn/downloads/
 **对云服务的操作：**      
 URL访问资源rest： https://msdn.microsoft.com/library/en-us/Ee460812.aspx         
 https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services       
-**服务管理 REST API 参考:** https://msdn.microsoft.com/zh-cn/library/azure/ee460799#Anchor_3    
-**Azure Active Directory介绍：**https://msdn.microsoft.com/zh-cn/library/azure/mt168838.aspx    
+
+* **服务管理 REST API 参考:** https://msdn.microsoft.com/zh-cn/library/azure/ee460799#Anchor_3    
+
+* **Azure Active Directory介绍：**https://msdn.microsoft.com/zh-cn/library/azure/mt168838.aspx    
        
 **中国区 Azure 应用程序开发说明(国内站点网址)：**      
 https://www.azure.cn/documentation/articles/developerdifferences/     
