@@ -8,8 +8,7 @@ azure ruby开发：
 https://azure.microsoft.com/zh-cn/develop/ruby/     
 https://github.com/Azure/azure-sdk-for-ruby     
 
-https://azure.microsoft.com/zh-cn/downloads/     
-https://docs.microsoft.com/zh-cn/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-overview      
+https://azure.microsoft.com/zh-cn/downloads/         
 **api**: https://docs.microsoft.com/zh-cn/rest/api/index       
 
 **对云服务的操作：**      
