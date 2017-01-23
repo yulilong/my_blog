@@ -1,3 +1,4 @@
+###  [**return Home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
 ##  **GIMP图片编辑工具，用于处理文档图片** 
 * install  
 在linux应用商店里搜索GIMP 就能出来
