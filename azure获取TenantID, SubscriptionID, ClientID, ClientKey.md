@@ -1,4 +1,4 @@
-###  [**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
+###  [**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)
 ## **overview** ##
 在获得软件开发帐号之前，需要准备的工作：     
 
