@@ -1,3 +1,4 @@
+###  [**return Home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)    
 #rvm isntall
 
 https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-on-centos-6-with-rvm  
@@ -120,5 +121,3 @@ http://stackoverflow.com/questions/17950288/rubymine-cant-find-sdk-where-is-it
 * Linux/Mac Default - /usr/bin/ruby
 
 ```
-
-
