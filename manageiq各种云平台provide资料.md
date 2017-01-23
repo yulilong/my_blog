@@ -23,6 +23,7 @@ https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-s
 * [**powershell CLI 中对虚拟的操作，获得镜像信息**](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-linux-cli-ps-findimage?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)              
        
 
+
 ---------------------------------------------------------------------------------------------------
 
 ## **amazon**  
