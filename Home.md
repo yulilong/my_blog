@@ -19,10 +19,8 @@
 * [linux terminal command](https://bitbucket.org/yulilong/my_wiki/wiki/linux%20terminal%20command)       
 * [ linux下常用软件](https://bitbucket.org/yulilong/my_wiki/wiki/linux%E4%B8%8B%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6)       
 * [centos7 搭建samba方法](https://bitbucket.org/yulilong/my_wiki/wiki/centos7%20%E6%90%AD%E5%BB%BAsamba%E6%96%B9%E6%B3%95)
-* [ cento7 错误处理](https://bitbucket.org/yulilong/my_wiki/wiki/cento7%20%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86)
-* [centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall](https://bitbucket.org/yulilong/my_wiki/wiki/centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall)
-
-* [git安装、配置](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%AE%89%E8%A3%85%E3%80%81%E9%85%8D%E7%BD%AE)
+* [ cento7 错误处理](https://bitbucket.org/yulilong/my_wiki/wiki/cento7%20%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86)  
+* [centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall](https://bitbucket.org/yulilong/my_wiki/wiki/centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall)     
 * [virtualbox虚拟机 centos7安装增强工具](https://bitbucket.org/yulilong/my_wiki/wiki/virtualbox%E8%99%9A%E6%8B%9F%E6%9C%BA%20centos7%E5%AE%89%E8%A3%85%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7)    
 
 -------------------------------------------------------------------------------------------------
