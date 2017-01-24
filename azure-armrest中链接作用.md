@@ -12,4 +12,13 @@ https://management.chinacloudapi.cn/subscriptions/4b1b759a-1958-412a-90ec-d9a495
 返回信息：    
 ```
 NKxXLEqWH80FIReivSMGgNb8vwUHDl47UkeZ1Xm3LfPIazV+FhtRmTt56rTsy7EjhA9dVh0H+YrB5nZxBigMww==
+```      
+
+```
+{:url=>"https://testvmdisks334.blob.core.chinacloudapi.cn/?comp=list", :headers=>{"Content-Type"=>"", "x-ms-date"=>"Tue, 24 Jan 2017 01:35:14 GMT", "x-ms-version"=>"2015-12-11", :auth_string=>true, "content-type"=>"", "auth_string"=>true, "Authorization"=>"SharedKey testvmdisks334:0KTn90jFVVekdTyW/C4nMlw7wCditXSc7j+VFlfxSBU="}, :proxy=>nil, :ssl_version=>"TLSv1", :ssl_verify=>nil, :method=>:get}
+{:url=>"https://testvmdisks334.blob.core.chinacloudapi.cn/vhds?restype=container&comp=list", :headers=>{"Content-Type"=>"", "x-ms-date"=>"Tue, 24 Jan 2017 01:35:14 GMT", "x-ms-version"=>"2015-12-11", :auth_string=>true, "content-type"=>"", "auth_string"=>true, "Authorization"=>"SharedKey testvmdisks334:2CRLCongUiRYOIUI6+DRJSuPDDLUDE0DQ3MiCkBg8us="}, :proxy=>nil, :ssl_version=>"TLSv1", :ssl_verify=>nil, :method=>:get}
+```      
+返回结果：    
+```
+#<Azure::Armrest::StorageAccount::Blob:0x0000000368a1e8 name="centos7-base20170104130639.vhd", container="vhds", properties=#<Azure::Armrest::StorageAccount::Blob::Properties:0x00000003688fc8 last_modified="Wed, 04 Jan 2017 05:43:47 GMT", content_length="32212255232", content_type="application/octet-stream", content_encoding=nil, cache_control=nil, content_md5="DbNvfmFA1vHNiZdl1j8pnw==", lease_state="available", etag="0x8D43464A759CAEA", lease_status="unlocked", content_language=nil, content_disposition=nil, x_ms_blob_sequence_number="1", blob_type="PageBlob", server_encrypted="false">>
 ```
