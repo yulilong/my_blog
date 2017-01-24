@@ -13,7 +13,7 @@ https://management.chinacloudapi.cn/subscriptions/4b1b759a-1958-412a-90ec-d9a495
 ```
 NKxXLEqWH80FIReivSMGgNb8vwUHDl47UkeZ1Xm3LfPIazV+FhtRmTt56rTsy7EjhA9dVh0H+YrB5nZxBigMww==
 ```      
-
+这个应该查询存储账户下面的信息，知道后更新
 ```
 {:url=>"https://testvmdisks334.blob.core.chinacloudapi.cn/?comp=list", :headers=>{"Content-Type"=>"", "x-ms-date"=>"Tue, 24 Jan 2017 01:35:14 GMT", "x-ms-version"=>"2015-12-11", :auth_string=>true, "content-type"=>"", "auth_string"=>true, "Authorization"=>"SharedKey testvmdisks334:0KTn90jFVVekdTyW/C4nMlw7wCditXSc7j+VFlfxSBU="}, :proxy=>nil, :ssl_version=>"TLSv1", :ssl_verify=>nil, :method=>:get}
 {:url=>"https://testvmdisks334.blob.core.chinacloudapi.cn/vhds?restype=container&comp=list", :headers=>{"Content-Type"=>"", "x-ms-date"=>"Tue, 24 Jan 2017 01:35:14 GMT", "x-ms-version"=>"2015-12-11", :auth_string=>true, "content-type"=>"", "auth_string"=>true, "Authorization"=>"SharedKey testvmdisks334:2CRLCongUiRYOIUI6+DRJSuPDDLUDE0DQ3MiCkBg8us="}, :proxy=>nil, :ssl_version=>"TLSv1", :ssl_verify=>nil, :method=>:get}
