@@ -11,7 +11,7 @@ azure开发文档：https://docs.microsoft.com/zh-cn/azure/
 azure ruby开发：https://azure.microsoft.com/zh-cn/develop/ruby/     
 https://github.com/Azure/azure-sdk-for-ruby     
 https://azure.microsoft.com/zh-cn/downloads/         
-**api**: https://docs.microsoft.com/zh-cn/rest/api/index       
+**Azure REST API Reference:** https://docs.microsoft.com/zh-cn/rest/api/index       
 **对云服务的操作：**      
 URL访问资源rest： https://msdn.microsoft.com/library/en-us/Ee460812.aspx         
 https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services       
