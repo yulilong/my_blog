@@ -23,6 +23,7 @@ https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-s
 * [**powershell CLI 中对虚拟的操作，获得镜像信息**](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-linux-cli-ps-findimage?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)     
 
 
+个人编写的文档：    
 * [**azure-armrest中链接作用**](https://bitbucket.org/yulilong/my_wiki/wiki/azure-armrest%E4%B8%AD%E9%93%BE%E6%8E%A5%E4%BD%9C%E7%94%A8)          
        
 
