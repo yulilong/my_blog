@@ -105,12 +105,12 @@ http://www.blogjava.net/jiangjf/archive/2007/07/29/133122.html
 .tar
 　　解包：tar zxvf FileName.tar
 　　打包：tar czvf FileName.tar DirName
-　　---------------------------------------------
+---------------------------------------------
 .zip
 　　解压：unzip FileName.zip
 　　压缩：zip FileName.zip DirName
-　　---------------------------------------------
-　　.rar
+---------------------------------------------
+.rar
 　　解压：rar a FileName.rar
 　　压缩：r ar e FileName.rar
 ```
@@ -120,5 +120,14 @@ http://www.blogjava.net/jiangjf/archive/2007/07/29/133122.html
 ```
 $ lsb_release -a
 $ cat /etc/issue
+
+```    
+
+* **wget**    
+
+http://www.cnblogs.com/dingn/p/5658442.html     
+```
+# Linux系统中wget是一个下载文件的工具，它用在命令行下。对于Linux用户是必不可少的工具，我们经常要下载一些软件或从远程服务器恢复备份到本地服务器。
+$ wget http://place.your.url/here
 
 ```
