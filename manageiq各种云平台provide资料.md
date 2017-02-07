@@ -24,6 +24,7 @@ https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-s
 
 
 个人编写的文档：    
+
 * [**azure-armrest中链接作用**](https://bitbucket.org/yulilong/my_wiki/wiki/azure-armrest%E4%B8%AD%E9%93%BE%E6%8E%A5%E4%BD%9C%E7%94%A8)          
        
 
