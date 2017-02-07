@@ -125,8 +125,8 @@ $ cat /etc/issue
 
 * **wget**    
     
+http://www.cnblogs.com/dingn/p/5658442.html       
 ```
-# http://www.cnblogs.com/dingn/p/5658442.html 
 # Linux系统中wget是一个下载文件的工具，它用在命令行下。对于Linux用户是必不可少的工具，我们经常要下载一些软件或从远程服务器恢复备份到本地服务器。
 $ wget http://place.your.url/here
 
@@ -134,8 +134,8 @@ $ wget http://place.your.url/here
 
 * **curl**    
     
+http://www.linuxdiyf.com/linux/2800.html       
 ```
-# http://www.linuxdiyf.com/linux/2800.html
 # 在Linux中curl是一个利用URL规则在命令行下工作的文件传输工具，可以说是一款很强大的http命令行工具。它支持文件的上传和下载，是综合传输工具，但按传统，习惯称url为下载工具。
 $ curl www.baidu.com  # 会把百度网页元素语言显示出来
 
