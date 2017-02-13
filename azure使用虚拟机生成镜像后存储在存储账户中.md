@@ -39,4 +39,9 @@ CurrentStorageAccount :
 # centos7ExtractIamge: 虚拟机名字(Computer name)
 PS C:\Users\kyxxx>Set-AzureRmVM -ResourceGroupName test-vm -Name centos7ExtractIamge -Generalized
 # 操作成功后会显示下面信息
+OperationId :
+Status      :
+StartTime   :
+EndTime     :
+Error       :
 ```
