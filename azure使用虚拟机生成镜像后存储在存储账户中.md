@@ -14,14 +14,18 @@
 ## **开始**     
 
 * **1.创建虚拟机后关机**    
-https://portal.azure.cn， 打开这个网站后选择虚拟机(Virtual machines) -> 新加一个虚拟机(add) -> 选择需要的镜像后下一步(create)，配置好CPU，内存大小，等资源信息后，生成虚拟机，稍等一会，虚拟机生成成功后，进入这个虚拟机中，选择停止这个虚拟机。      
+https://portal.azure.cn， 打开这个网站后选择虚拟机(Virtual machines) -> 新加一个虚拟机(add) -> 选择需要的镜像后下一步(create)，配置好CPU，内存大小，等资源信息后，生成虚拟机，稍等一会，虚拟机生成成功后，进入这个虚拟机中，选择停止这个虚拟机。  
+![create_virtual.png](https://bitbucket.org/repo/oE6yEX/images/2531739198-create_virtual.png)      
 
 * **2.连接虚拟机对虚拟机进行初始化**       
 windows虚拟机初始化教程： https://www.azure.cn/documentation/articles/virtual-machines-windows-generalize-vhd/    
-linux虚拟机初始化： 打开终端：
+linux虚拟机初始化： 
+1.azure.cn打开这个虚拟机，然后点击连接会出来一个ssh连接  终端开大连接进去
 ```
+$ sudo su -
 $ waagent -deprovision
-```
+```   
+![init.png](https://bitbucket.org/repo/oE6yEX/images/3636706195-init.png)
 
 * **3.对一台ARM的windows虚拟机执行sysprep【linux waagent -deprovision】，成功配置后，从管理门户关机以便释放资源**    
 
