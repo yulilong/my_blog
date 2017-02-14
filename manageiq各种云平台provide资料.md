@@ -27,7 +27,7 @@ https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-s
 
 * [**azure-armrest中链接作用**](https://bitbucket.org/yulilong/my_wiki/wiki/azure-armrest%E4%B8%AD%E9%93%BE%E6%8E%A5%E4%BD%9C%E7%94%A8)          
 * [**azure获取TenantID, SubscriptionID, ClientID, ClientKey**](https://bitbucket.org/yulilong/my_wiki/wiki/azure%E8%8E%B7%E5%8F%96TenantID,%20SubscriptionID,%20ClientID,%20ClientKey)          
-* [**azure使用虚拟机生成镜像后存储在存储账户中**](https://bitbucket.org/yulilong/my_wiki/wiki/azure%E4%BD%BF%E7%94%A8%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%94%9F%E6%88%90%E9%95%9C%E5%83%8F%E5%90%8E%E5%AD%98%E5%82%A8%E5%9C%A8%E5%AD%98%E5%82%A8%E8%B4%A6%E6%88%B7%E4%B8%AD)
+* [**azure使用虚拟机生成私有镜像**](https://bitbucket.org/yulilong/my_wiki/wiki/azure%E4%BD%BF%E7%94%A8%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%94%9F%E6%88%90%E7%A7%81%E6%9C%89%E9%95%9C%E5%83%8F)
 
        
 
