@@ -11,6 +11,8 @@
 2.powershell 软件已经安装好了，如果没有安装好，安装教程：https://www.azure.cn/documentation/articles/powershell-install-configure/             
 3.目前的操作是基于微软中国区的操作，门户预览：https://portal.azure.cn  ，本文当的操作是在2017-02-13之前操作的。     
 
+* **生成的私有镜像在存储账户中**
+
 ## **开始**     
 
 * **1.创建虚拟机后关机**    
