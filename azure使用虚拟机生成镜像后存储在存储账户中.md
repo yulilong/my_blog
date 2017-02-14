@@ -13,13 +13,19 @@
 
 ## **开始**     
 
-* **创建虚拟机后关机**    
+* **1.创建虚拟机后关机**    
 https://portal.azure.cn， 打开这个网站后选择虚拟机(Virtual machines) -> 新加一个虚拟机(add) -> 选择需要的镜像后下一步(create)，配置好CPU，内存大小，等资源信息后，生成虚拟机，稍等一会，虚拟机生成成功后，进入这个虚拟机中，选择停止这个虚拟机。      
 
+* **2.连接虚拟机对虚拟机进行初始化**
+windows虚拟机初始化教程： https://www.azure.cn/documentation/articles/virtual-machines-windows-generalize-vhd/    
+linux虚拟机初始化： 打开终端：
+```
+$ waagent -deprovision
+```
 
-* **对一台ARM的windows虚拟机执行sysprep【linux waagent -deprovision】，成功配置后，从管理门户关机以便释放资源**    
+* **3.对一台ARM的windows虚拟机执行sysprep【linux waagent -deprovision】，成功配置后，从管理门户关机以便释放资源**    
 
-* **powershell login azure**     
+* **4.powershell login azure**     
 
 ```
 $ powershell
@@ -32,7 +38,7 @@ SubscriptionId        : 4xxxxxxa-xxx8-4xxx-xxxc-xxxxxxxxxx48
 SubscriptionName      : Windows Azure 企业
 CurrentStorageAccount :
 ```      
-* **对该虚拟机执行Generalized标记**      
+* **5.对该虚拟机执行Generalized标记**      
 
 ```
 # test-vm            : 资源组(Resource group) 
@@ -44,4 +50,5 @@ Status      :
 StartTime   :
 EndTime     :
 Error       :
-```
+```      
+执行完以上步骤，该虚拟机就无法启动了.
