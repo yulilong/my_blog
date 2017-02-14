@@ -101,8 +101,6 @@ Error       :
 
 ```
 "vhd": {
-
-              "uri": "https://jackrmdisks943.blob.core.chinacloudapi.cn/vmcontainerdce4465c-1f58-4159-a405-d43b751b566d/osDisk.dce4465c-test.vhd"
-
+ "uri": "https://jackrmdisks943.blob.core.chinacloudapi.cn/vmcontainerdce4465c-1f58-4159-a405-d43b751b566d/osDisk.dce4465c-test.vhd"
         },
 ```
