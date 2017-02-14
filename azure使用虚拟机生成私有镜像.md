@@ -62,7 +62,7 @@ Error       :
 * **5.开始生成镜像**   
 ```
 
-PS C:\Users\kylin> Save-AzureRmVMImage -ResourceGroupName test-vm -VMName centos7ExtractIamge -DestinationContainerName "imagetest"  -VHDNamePrefix "centos7.2"    
+PS C:\Users\kyxxx> Save-AzureRmVMImage -ResourceGroupName test-vm -VMName centos7ExtractIamge -DestinationContainerName "imagetest"  -VHDNamePrefix "centos7.2"    
 
 # test-vm            : 资源组(Resource group) 
 # centos7ExtractIamge: 虚拟机名字(Computer name)
