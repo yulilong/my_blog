@@ -1,3 +1,5 @@
+###  [**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
+
 * add文件后放弃某个文件的添加    
 ```
 git reset file_name
