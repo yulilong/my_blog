@@ -27,4 +27,16 @@ $ find / -amin n   # 最后n分钟
 $ find / -atime n  # 最后n天
 $ find / -cmin n   # 最后n分钟改变状态
 $ find / -ctime n  # 最后n天改变状态
+```   
+
+* **5. 其它：**    
+
+```
+$ find / -empty           # 空白文件、空白文件夹、没有子目录的文件夹
+$ find / -false           # 查找系统中总是错误的文件
+$ find / -fstype type     # 找存在于指定文件系统的文件，如type为ext2
+$ find / -gid n           # 组id为n的文件
+$ find / -group gname     # 组名为gname的文件
+$ find / -depth n         # 在某层指定目录中优先查找文件内容
+$ find / -maxdepth levels # 在某个层次目录中按递减方式查找
 ```
