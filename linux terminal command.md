@@ -1,9 +1,10 @@
-* **[Linux查找文件内容](https://bitbucket.org/yulilong/my_wiki/wiki/Linux%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9)**  
+* **Linux查找文件内容**  
     
 ```
 $ grep "被查找的字符串" 文件名  # 从文件内容查找匹配指定字符串的行：
 $ find / -type f -name "*.log" | xargs grep "ERROR" # 从根目录开始查找所有扩展名为.log的文本文件，并找出包含”ERROR”的行
-```
+```    
+[更多详细点这里](https://bitbucket.org/yulilong/my_wiki/wiki/Linux%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9)      
 
 * **查看当前用户**      
 whoami    
