@@ -33,6 +33,11 @@ http://www.w3school.com.cn/tiy/t.asp?f=html_div_test
 
 -------------------------------------------------------------------------------------------------
 
+* **Markdown 语法说明**
+http://www.appinn.com/markdown/index.html
+
+-------------------------------------------------------------------------------------------------
+
 ##**ruby rails 学习资料**
 
 * [Ruby on Rails 在线教程](https://railstutorial-china.org/book/)          
