@@ -1,3 +1,13 @@
+* **查找文件find**  
+    
+```
+$ find / -name 文件名   
+$ find / -name 'azure-armrest*' # 部分名字匹配 例如azure-armrest-0.3.9   
+# find ver1.d ver2.d -name '*.c' -print    查找ver1.d,ver2.d *.c文件并打印      
+# find . -type d -print 从当前目录查找，仅查找目录，找到后，打印路径名。可用于打印目录结构。
+```    
+[更多详细点这里](https://bitbucket.org/yulilong/my_wiki/wiki/%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6find)      
+
 * **Linux查找文件内容**  
     
 ```
