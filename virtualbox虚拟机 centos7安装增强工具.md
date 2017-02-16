@@ -1,3 +1,10 @@
+* **virtualBox语言设置**    
+
+virtualbox -> file -> perferences -> language ->选择对应的语言 -> OK     
+virtualbox -> 管理 -> 全局设定 -> 语言 -> 选择相应的语言 -> OK     
+
+
+
 # 设置终端启动快捷键
 http://www.centoscn.com/CentOS/config/2015/0330/5044.html
 ```
