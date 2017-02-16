@@ -57,4 +57,6 @@ share /mnt/share vboxsf rw,gid=100,uid=1000,auto 0 0
 2.virtualbox -> file -> perferences -> network -> Host-only Network -> add new host only network   
 
 
-http://blog.csdn.net/astrotycoon/article/details/8143146
+http://blog.csdn.net/astrotycoon/article/details/8143146     
+
+http://blog.csdn.net/ixidof/article/details/12685549
