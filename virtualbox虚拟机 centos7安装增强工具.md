@@ -54,4 +54,7 @@ share /mnt/share vboxsf rw,gid=100,uid=1000,auto 0 0
 * **ssh,IP地址可以访问虚拟机设置**
 
 1.VirtualBox Version 5.1.8      
-2.virtualbox -> file -> perferences -> network -> Host-only Network -> add new host only network
+2.virtualbox -> file -> perferences -> network -> Host-only Network -> add new host only network   
+
+
+http://blog.csdn.net/astrotycoon/article/details/8143146
