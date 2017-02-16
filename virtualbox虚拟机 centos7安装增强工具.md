@@ -44,3 +44,7 @@ share /mnt/share vboxsf rw,gid=100,uid=1000,auto 0 0
 这样就能够自动挂载了。
 ```
 
+* **ssh,IP地址可以访问虚拟机设置**
+
+1.VirtualBox Version 5.1.8      
+2.virtualbox -> file -> perferences -> network -> Host-only Network -> add new host only network
