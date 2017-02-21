@@ -1,4 +1,4 @@
-* **睡眠，重启 ，关机**
+* **睡眠重启关机**       
 
 Ctrl+Shift+Power: 关闭屏幕      
 Cmd+Opt+Power: 睡眠 (sleep)     
