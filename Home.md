@@ -96,7 +96,11 @@ https://github.com/riku/Markdown-Syntax-CN
 
 * [Mac 系统 操作习惯设置](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20%E7%B3%BB%E7%BB%9F%20%E6%93%8D%E4%BD%9C%E4%B9%A0%E6%83%AF%E8%AE%BE%E7%BD%AE)   
 
+* 高效macbook工作环境配置     
+http://xialeizhou.com/2019/06/23/%E9%AB%98%E6%95%88macbook%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/      
 
+* Mac 键盘快捷键     
+https://support.apple.com/zh-cn/HT201236      
 
 -------------------------------------------------------------------------------------------------
 
