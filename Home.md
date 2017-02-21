@@ -29,7 +29,10 @@
 * HTML 参考手册  
 http://www.w3school.com.cn/tags/  
 * HTML 在线效果测试  
-http://www.w3school.com.cn/tiy/t.asp?f=html_div_test
+http://www.w3school.com.cn/tiy/t.asp?f=html_div_test      
+
+* 在线正则表达式测试     
+http://tool.oschina.net/regex/#      
 
 -------------------------------------------------------------------------------------------------
 
