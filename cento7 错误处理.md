@@ -1,3 +1,14 @@
+* **ssh: connect to host 192.168.123.123 port 22: Connection refused**
+
+1.linux中打开终端    
+```
+$ netstat -ntlp  # 查看所有端口，如果里面没有22端口则尝试重启ssh
+# 重启ssh
+$ sudo systemctl restart sshd
+# 一般来说到这里就可以，如果不行请查找别的方法，
+```
+
+
 ## 1.dnf -y install memcached Failed to open:
 ```
 http://stackoverflow.com/questions/32541196/i-attempted-to-enable-the-epel-repo-on-my-fedora-22-machine-and-i-broke-it-now
@@ -150,9 +161,3 @@ source /opt/rh/rh-postgresql94/enable
 .
 ```
 还有 .bsahrc里面的内容也不能少
-
-
-
-
-
-
