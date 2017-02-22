@@ -1,3 +1,6 @@
+###  [**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
+-----------------------------------------------------------------------------------------
+
 * **睡眠重启关机**       
 
 Ctrl+Shift+Power: 关闭屏幕      
