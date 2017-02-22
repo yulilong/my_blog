@@ -13,4 +13,10 @@ $ sudo nvram SystemAudioVolume=%80
 # 如果想要恢复正常的开机生硬，只要在终端中再次输入如下命令即可：
 $ sudo nvram -d SystemAudioVolume
 
-```
+```    
+
+* **ssh远程连接mac**   
+
+mac 默认安装了openssh。    
+依次代开系统设置－－共享，把remote login勾上，选择允许的用户，就ok了   
+在共享里面可以看见ssh命令，看这个命令就可以了。
