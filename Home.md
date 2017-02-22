@@ -2,6 +2,8 @@
 
 [manageiq代码结构、框架、执行流程分析](https://bitbucket.org/yulilong/my_wiki/wiki/manageiq%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84%E3%80%81%E6%A1%86%E6%9E%B6%E3%80%81%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90)  
 
+[manageIQ网页部分功能代码实现](https://bitbucket.org/yulilong/my_wiki/wiki/manageIQ%E7%BD%91%E9%A1%B5%E9%83%A8%E5%88%86%E5%8A%9F%E8%83%BD%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0)    
+
 [manageiq安装文档(centos7.2系统)](https://bitbucket.org/yulilong/my_wiki/wiki/manageiq%E5%AE%89%E8%A3%85%E6%96%87%E6%A1%A3(centos7.2%E7%B3%BB%E7%BB%9F))    
 
 [mac系统安装manageIQ环境](https://bitbucket.org/yulilong/my_wiki/wiki/mac%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85manageIQ%E7%8E%AF%E5%A2%83)         文档还在编写中
