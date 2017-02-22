@@ -4,7 +4,7 @@
 
 [manageiq安装文档(centos7.2系统)](https://bitbucket.org/yulilong/my_wiki/wiki/manageiq%E5%AE%89%E8%A3%85%E6%96%87%E6%A1%A3(centos7.2%E7%B3%BB%E7%BB%9F))    
 
-[mac系统安装manageIQ环境](https://bitbucket.org/yulilong/my_wiki/wiki/mac%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85manageIQ%E7%8E%AF%E5%A2%83)    
+[mac系统安装manageIQ环境](https://bitbucket.org/yulilong/my_wiki/wiki/mac%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85manageIQ%E7%8E%AF%E5%A2%83)         文档还在编写中
 
 [新建提供者](https://bitbucket.org/yulilong/my_wiki/wiki/%E6%96%B0%E5%BB%BA%E6%8F%90%E4%BE%9B%E8%80%85)   
 
