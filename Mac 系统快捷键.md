@@ -16,11 +16,17 @@ Cmd+Ctrl+Opt+Power: 关机 (shutdown)
 
 Control + 箭头 → ←       
 
-* **全屏(变成一整个桌面)**    
+* **全屏(变成一整个桌面)，退出全屏再按一次**    
 Control-Command-F   
 
 * **最小化应用**    
 Command + M
 
 * **同一个应用多个窗口切换**   
-Command + ~(就是esc下面那个按键)
+Command + ~(就是esc下面那个按键)     
+
+* **关闭窗口**   
+Command + W   
+
+* **退出应用**   
+Command + Q
