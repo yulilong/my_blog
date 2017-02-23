@@ -29,4 +29,10 @@ Command + ~(就是esc下面那个按键)
 Command + W   
 
 * **退出应用**   
-Command + Q
+Command + Q      
+
+* **调整OS X系统窗口大小**   
+
+1.Option 键双向加宽，按着Option 键再一起拖曳窗口会变成往两边伸展。    
+2.Shift 键放射状加大， shift把窗口长宽一起加大。    
+3.在窗口顶部按两下，最大化窗口。
