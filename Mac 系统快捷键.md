@@ -7,3 +7,7 @@ Ctrl+Shift+Power: 关闭屏幕
 Cmd+Opt+Power: 睡眠 (sleep)     
 Cmd+Ctrl+Power: 重启 (restart)     
 Cmd+Ctrl+Opt+Power: 关机 (shutdown)
+
+* **一个应用多个窗口之间切换快捷键： **  
+
+默认cmd+`就是程序内窗口切换。或者你用手势，四指下滑（有些人用三指的）
