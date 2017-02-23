@@ -1,3 +1,17 @@
+##**Mac OS **  
+
+* [Mac 系统快捷键](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20%E7%B3%BB%E7%BB%9F%E5%BF%AB%E6%8D%B7%E9%94%AE)    
+
+* [Mac 系统 操作习惯设置](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20%E7%B3%BB%E7%BB%9F%20%E6%93%8D%E4%BD%9C%E4%B9%A0%E6%83%AF%E8%AE%BE%E7%BD%AE)   
+
+* 高效macbook工作环境配置     
+http://xialeizhou.com/2019/06/23/%E9%AB%98%E6%95%88macbook%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/      
+
+* Mac 键盘快捷键     
+https://support.apple.com/zh-cn/HT201236      
+
+-------------------------------------------------------------------------------------------------
+
 # **manageiq  providers** 
 
 [manageiq代码结构、框架、执行流程分析](https://bitbucket.org/yulilong/my_wiki/wiki/manageiq%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84%E3%80%81%E6%A1%86%E6%9E%B6%E3%80%81%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90)  
@@ -94,19 +108,6 @@ https://github.com/riku/Markdown-Syntax-CN
 
 -------------------------------------------------------------------------------------------------
 
-##**Mac OS **  
-
-* [Mac 系统快捷键](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20%E7%B3%BB%E7%BB%9F%E5%BF%AB%E6%8D%B7%E9%94%AE)    
-
-* [Mac 系统 操作习惯设置](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20%E7%B3%BB%E7%BB%9F%20%E6%93%8D%E4%BD%9C%E4%B9%A0%E6%83%AF%E8%AE%BE%E7%BD%AE)   
-
-* 高效macbook工作环境配置     
-http://xialeizhou.com/2019/06/23/%E9%AB%98%E6%95%88macbook%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/      
-
-* Mac 键盘快捷键     
-https://support.apple.com/zh-cn/HT201236      
-
--------------------------------------------------------------------------------------------------
 
 如果 .md里面要方图片，一种是把图片放到网易博客中去。
 
