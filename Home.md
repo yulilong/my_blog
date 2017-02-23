@@ -8,7 +8,8 @@
 http://xialeizhou.com/2019/06/23/%E9%AB%98%E6%95%88macbook%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/      
 
 * Mac 键盘快捷键     
-https://support.apple.com/zh-cn/HT201236      
+https://support.apple.com/zh-cn/HT201236        
+http://jingyan.baidu.com/article/08b6a591aac09614a909224f.html      
 
 -------------------------------------------------------------------------------------------------
 
