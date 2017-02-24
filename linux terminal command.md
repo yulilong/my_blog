@@ -84,6 +84,8 @@ scp root@172.19.2.75:/home/root/full.tar.gz /home/daisy
 #（然后会提示你输入另外那台172.19.2.75主机的root用户的登录密码，接着就开始copy了）
 
 # 复制目录加参数 -r 即可 
+# 远程/var/www/miq/vmdb 复制到当前目录下
+scp -r root@192.168.100.110:/var/www/miq/vmdb ./
 ```
 
 * **centos添加用户跟组**      
