@@ -33,4 +33,9 @@ mac 默认安装了openssh。
 * **Mac关闭自动更新app Store**  
 
 1.用户必须先进入“系统偏好设置”，找到Mac app store：    
-2.　点击进去之后就就能看到Mac App Store的更新设置，这个时候只需要把自动更新设置去掉即可：
+2.　点击进去之后就就能看到Mac App Store的更新设置，这个时候只需要把自动更新设置去掉即可：    
+
+* **Dashboard**    
+偏好设置 --> Mission Control --> Dashboard
+不是所有 Mac 上的工作都需要使用大型应用程式，有些简单的工作不妨让 [tiger] 上的新功能 Dashboard 来为您完成。只要按下一个键，半透明的 Dashboard 就会浮现在电脑桌面上，供您快速取用多种有趣又实用的迷你应用程式 widget。需要加减乘除吗？交给“计算机”widget 吧！想知道心爱的人所坐的班机飞到哪了吗？请看看 Flight Tracker widget。办公室没有窗户让您一窥外头的情况吗？打开 Weather widget 就知道现在窗外是什么天气。     
+http://jingyan.baidu.com/article/066074d6910570c3c21cb0d9.html
