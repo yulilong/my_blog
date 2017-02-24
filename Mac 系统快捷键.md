@@ -39,4 +39,7 @@ Command + Q
 
 * **浏览器快捷键**   
 cmd+1（2、3...）分别是打开书签栏的第一个、第二个...网址     
-Option + Command + 箭头 → ←
+Option + Command + 箭头 → ←       
+
+* **隐藏 ／显示Dock**   
+option+command+D
