@@ -57,10 +57,11 @@ http://tool.oschina.net/regex/#
 
 -------------------------------------------------------------------------------------------------
 
-* **Markdown 语法说明**      
+###  **Markdown**         
 
-http://www.appinn.com/markdown/index.html        
-https://github.com/riku/Markdown-Syntax-CN
+[Markdown 语法说明 (简体中文版)](http://www.appinn.com/markdown/index.html)      
+https://github.com/riku/Markdown-Syntax-CN       
+[Markdown，你只需要掌握这几个](http://www.tuicool.com/articles/fmeMbqR)    
 
 -------------------------------------------------------------------------------------------------
 
@@ -107,9 +108,6 @@ https://github.com/riku/Markdown-Syntax-CN
 [RubyMine常用快捷键](https://bitbucket.org/yulilong/my_wiki/wiki/RubyMine%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE)     
 
 
-###  **Markdown**     
-
-[Markdown，你只需要掌握这几个](http://www.tuicool.com/articles/fmeMbqR)    
 
 
 
