@@ -1,3 +1,23 @@
+* **SSH不能连接并提示REMOTE HOST IDENTIFICATION HAS CHANGED解决**     
+错误信息：     
+```
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HASCHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.....
+....
+Add correcthost key in /root/.ssh/known_hosts to get rid of this message.
+Offending keyin /root/.ssh/known_hosts:15   #主要看这里，这里是存放ssh主机信任的地方，找到，然后删除这儿ssh地址就好了
+RSA host keyfor 192.168.0.252 has changed and you have requested strict checking.
+Host keyverification failed.
+rsync:connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error:error in rsync protocol data stream (code 12) at io.c(359)
+```   
+
+的解决办法：    
+vi /root/.ssh/known_hosts     
+找到要连接的主机的ip，把它的那行所有信息删除（就是一行）
+
 * **ssh: connect to host 192.168.123.123 port 22: Connection refused**
 
 1.linux中打开终端    
@@ -149,7 +169,7 @@ export PATH
 ```
 如果缺少这段代码，那么复制这段代码到里面。
 
-* 导致这文问题的原因：
+* 导致这个问题的原因：     
 http://manageiq.org/docs/guides/developer_setup/postgresql_software_collection
 
 里面的这段话：
