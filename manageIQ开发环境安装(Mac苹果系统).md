@@ -47,4 +47,6 @@ psql -d postgres -c "CREATE ROLE root SUPERUSER LOGIN PASSWORD 'smartvm'"
 
 ![WX20170301-153734.png](https://bitbucket.org/repo/oE6yEX/images/755488350-WX20170301-153734.png)    
 
-![WX20170301-154802.png](https://bitbucket.org/repo/oE6yEX/images/2730176671-WX20170301-154802.png)
+![WX20170301-154802.png](https://bitbucket.org/repo/oE6yEX/images/2730176671-WX20170301-154802.png)     
+
+![WX20170301-155126.png](https://bitbucket.org/repo/oE6yEX/images/1236129641-WX20170301-155126.png)
