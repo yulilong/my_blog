@@ -1,3 +1,5 @@
+###  [**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
+-----
 ## 以下所有操作都不能在root用户操作，要用你登陆电脑的用户来操作 ##
 
 # manqgeiq官方的安装文档 #
