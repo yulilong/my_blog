@@ -1,4 +1,7 @@
-###  [**return Home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)    
+###  [**return Home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)   
+------ 
+# 注意：要按照顺序安装      
+
 #rvm isntall
 
 https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-on-centos-6-with-rvm  
