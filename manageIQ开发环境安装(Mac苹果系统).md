@@ -34,4 +34,6 @@ npm install -g bower
   
 ![WX20170301-153348.png](https://bitbucket.org/repo/oE6yEX/images/3408132826-WX20170301-153348.png)      
 
-![WX20170301-153734.png](https://bitbucket.org/repo/oE6yEX/images/755488350-WX20170301-153734.png)
+![WX20170301-153734.png](https://bitbucket.org/repo/oE6yEX/images/755488350-WX20170301-153734.png)    
+
+![WX20170301-154802.png](https://bitbucket.org/repo/oE6yEX/images/2730176671-WX20170301-154802.png)
