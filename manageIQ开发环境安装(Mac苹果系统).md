@@ -28,6 +28,17 @@ brew install node
 npm install -g bower
 ```
 
+* **Configure and start PostgreSQL**    
+
+Required PostgreSQL version is 9.4+     
+```
+# Enable PostgreSQL on boot
+mkdir -p ~/Library/LaunchAgents
+ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+# Create the ManageIQ superuser
+psql -d postgres -c "CREATE ROLE root SUPERUSER LOGIN PASSWORD 'smartvm'"
+```
 
 ![WX20170301-154521.png](https://bitbucket.org/repo/oE6yEX/images/2025153199-WX20170301-154521.png)
      
