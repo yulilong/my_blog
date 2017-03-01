@@ -108,7 +108,9 @@ https://github.com/riku/Markdown-Syntax-CN
 [RubyMine常用快捷键](https://bitbucket.org/yulilong/my_wiki/wiki/RubyMine%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE)     
 
 
+###  **RVM**   
 
+[rvm 实用指南](http://ruby-china.org/topics/576)
 
 
 -------------------------------------------------------------------------------------------------
