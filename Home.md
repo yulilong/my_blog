@@ -98,7 +98,10 @@ https://github.com/riku/Markdown-Syntax-CN
 
 [git安装,配置](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%AE%89%E8%A3%85,%E9%85%8D%E7%BD%AE)
 
-[git常用命令](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4)     
+[git常用命令](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4)    
+
+git教程：    
+https://git-scm.com/book/zh/v2   
 
 ### **ruby gem**    
 
