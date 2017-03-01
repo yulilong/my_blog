@@ -38,6 +38,14 @@ ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 # Create the ManageIQ superuser
 psql -d postgres -c "CREATE ROLE root SUPERUSER LOGIN PASSWORD 'smartvm'"
+```    
+
+* **Start memcached**    
+
+```
+# Enable Memcached on boot
+ln -sfv /usr/local/opt/memcached/homebrew.mxcl.memcached.plist ~/Library/LaunchAgents
+launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist
 ```
 
 ![WX20170301-154521.png](https://bitbucket.org/repo/oE6yEX/images/2025153199-WX20170301-154521.png)
