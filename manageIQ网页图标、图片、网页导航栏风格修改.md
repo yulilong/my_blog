@@ -6,4 +6,7 @@
 打开网站后，网页右键-->inspect(检查) --> select an element in the page to inspect it -->    
 然后把鼠标放到图标那里，点击一下，就会看见定义信息，
 
-右上角图标信息：<img src="/assets/login-screen-logo-ec4bd0dff8e47d1283c87674ce89d26a1b03d6c85f49f030d3a116c2d963dcfc.png">
+右上角图标信息：       
+<img src="/assets/login-screen-logo-ec4bd0dff8e47d1283c87674ce89d26a1b03d6c85f49f030d3a116c2d963dcfc.png">   
+用户名上面的图标：   
+<img alt="ManageIQ" src="/assets/brand-7005158295b20605eae00a080448d69a9c7b541ee3f99469b86e1bae955b0e89.svg">
