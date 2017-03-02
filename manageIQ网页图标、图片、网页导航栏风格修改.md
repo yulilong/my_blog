@@ -17,10 +17,34 @@
 # manageiq官网镜像下载后虚拟机中代码位置
 $ cd /var/www/miq/vmdb
 $ find ./ -name "login-screen-logo*" #查找图标信息
+
 # 源代码中定义的图标
 ./app/assets/images/login-screen-logo.png  #源代码中修改此处就可以，图片替换
+
 # 为了加快网页速度，生成的js共有资源的位置，网页中真实的访问图片位置，
-# 官网镜像中为了方便，可以直接修改此处
+# 官网镜像中为了快速修改，可以直接修改此处
 ./public/assets/login-screen-logo-cd43380036fc96964823fd8d6d7486fe9bcfcce1498daf0c41d8bc94385511da.png
+
 ./public/self_service/images/login-screen-logo.png
+```        
+
+* **用户名上面的图片(manageIQ)修改**  
+
+```
+# manageiq官网镜像下载后虚拟机中代码位置
+$ cd /var/www/miq/vmdb
+$ find ./ -name "brand*" #查找图标(manageIQ)位置
+
+# 源代码中定义的图标
+./app/assets/images/brand.svg  #源代码中修改此处就可以，图片替换
+./public/assets/brand-7005158295b20605eae00a080448d69a9c7b541ee3f99469b86e1bae955b0e89.svg.gz
+
+# 为了加快网页速度，生成的js共有资源的位置，网页中真实的访问图片位置，名字要一样。
+./public/assets/brand-7005158295b20605eae00a080448d69a9c7b541ee3f99469b86e1bae955b0e89.svg
+
+./public/self_service/images/brand.svg
+./public/self_service/img/brand-alt.svg
+./public/self_service/img/brand.svg
+./vendor/assets/bower_components/patternfly-sass/assets/images/patternfly/brand-alt.svg
+./vendor/assets/bower_components/patternfly-sass/assets/images/patternfly/brand.svg
 ```
