@@ -34,7 +34,8 @@ http://xialeizhou.com/2019/06/23/%E9%AB%98%E6%95%88macbook%E5%B7%A5%E4%BD%9C%E7%
 [添加新的Providers代码开发](https://bitbucket.org/yulilong/my_wiki/wiki/%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%9A%84Providers%E4%BB%A3%E7%A0%81%E5%BC%80%E5%8F%91)      
 [manageiq服务部署](https://bitbucket.org/yulilong/my_wiki/wiki/manageiq%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2)   
 [开发manageiq遇见的问题、错误解决](https://bitbucket.org/yulilong/my_wiki/wiki/%E5%BC%80%E5%8F%91manageiq%E9%81%87%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98%E3%80%81%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3)           
-[azure获取TenantID, SubscriptionID, ClientID, ClientKey](https://bitbucket.org/yulilong/my_wiki/wiki/azure%E8%8E%B7%E5%8F%96TenantID,%20SubscriptionID,%20ClientID,%20ClientKey)          
+
+[manageIQ网页图标、图片、网页导航栏风格修改](https://bitbucket.org/yulilong/my_wiki/wiki/manageIQ%E7%BD%91%E9%A1%B5%E5%9B%BE%E6%A0%87%E3%80%81%E5%9B%BE%E7%89%87%E3%80%81%E7%BD%91%E9%A1%B5%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%A3%8E%E6%A0%BC%E4%BF%AE%E6%94%B9)     
 
 [**manageiq各种云平台provide资料**](https://bitbucket.org/yulilong/my_wiki/wiki/manageiq%E5%90%84%E7%A7%8D%E4%BA%91%E5%B9%B3%E5%8F%B0provide%E8%B5%84%E6%96%99)
 
