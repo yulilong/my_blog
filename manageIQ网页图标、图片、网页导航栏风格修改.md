@@ -53,4 +53,6 @@ $ find ./ -name "brand*" #查找图标(manageIQ)位置
 ./vendor/assets/bower_components/patternfly-sass/assets/images/patternfly/brand.svg
 ```     
 
-* **网页标题(title)更改**
+* **网页标题(title)更改**      
+
+1.这个是文字不是图片，查找定义处：
