@@ -1,7 +1,6 @@
 * **代码版本**   
-
 https://github.com/ManageIQ/manageiq/tree/euwe-1       
-
+-----
 
 * **创建一个虚拟机实例(instance)** 
 
