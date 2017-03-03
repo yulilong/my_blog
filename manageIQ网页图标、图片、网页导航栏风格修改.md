@@ -1,3 +1,7 @@
+* **代码版本**   
+https://github.com/ManageIQ/manageiq/tree/euwe-1       
+-----
+
 ## **登录首页图标的修改**   
 
 ![WX20170302-145333.png](https://bitbucket.org/repo/oE6yEX/images/450901201-WX20170302-145333.png)    
@@ -47,4 +51,6 @@ $ find ./ -name "brand*" #查找图标(manageIQ)位置
 ./public/self_service/img/brand.svg
 ./vendor/assets/bower_components/patternfly-sass/assets/images/patternfly/brand-alt.svg
 ./vendor/assets/bower_components/patternfly-sass/assets/images/patternfly/brand.svg
-```
+```     
+
+* **网页标题(title)更改**
