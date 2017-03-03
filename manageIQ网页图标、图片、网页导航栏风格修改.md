@@ -74,11 +74,11 @@ https://github.com/ManageIQ/manageiq/blob/euwe-1/locale/zh_CN.yml
 ```
 zh-CN:
   product:
-    name: ManageIQ   
-    name_full: ManageIQ        #name_full: JasCloud
-    copyright: "Copyright (c) 2016 ManageIQ。由红帽赞助。"
-    support_website: "http://www.manageiq.org"
-    support_website_text: "ManageIQ.org"
+    name: ManageIQ   # 这个是网页title名字
+    name_full: ManageIQ                                  #这个是登录后右上角 问号按钮的字段
+    copyright: "Copyright (c) 2016 ManageIQ。由红帽赞助。" #这个是登录后右上角 问号按钮的字段
+    support_website: "http://www.manageiq.org"           #这个是登录后右上角 问号按钮的字段
+    support_website_text: "ManageIQ.org"                 #这个是登录后右上角 问号按钮的字段
 
 # 修改后
 zh-CN:
