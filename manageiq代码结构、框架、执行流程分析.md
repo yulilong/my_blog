@@ -85,10 +85,10 @@ view文件位置：
 https://github.com/ManageIQ/manageiq/blob/darga-4/app/views/dashboard/login.html.haml  
 在里面找到登陆按钮的位置：  
 https://github.com/ManageIQ/manageiq/blob/darga-4/app/views/dashboard/login.html.haml#L91 
-``` 
+
 如下图所示：  
 ![Firefox_Screenshot_2016-11-12T09-35-36.372Z.png](https://bitbucket.org/repo/oE6yEX/images/2111170952-Firefox_Screenshot_2016-11-12T09-35-36.372Z.png)  
-```
+
 当在浏览器中输入用户名、密码后点击 login 按钮后，如上图 1、2、3 过程所示，会从新回到 controller里面去验证用户名密码。
 
 * controllers/dashboard_controller.rb 的authenticate方法对密码进行验证
