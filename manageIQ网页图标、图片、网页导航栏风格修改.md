@@ -89,4 +89,5 @@ zh-CN:
     support_website: "www.jasgroup.cn"
     support_website_text: "www.jasgroup.cn"
 ```   
-en.yml, es.yml, fr.yml, ja.yml 也需要做相应修改。
+en.yml, es.yml, fr.yml, ja.yml 也需要做相应修改。     
+修改好后需要中期服务。
