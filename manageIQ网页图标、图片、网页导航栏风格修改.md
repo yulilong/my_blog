@@ -55,4 +55,38 @@ $ find ./ -name "brand*" #查找图标(manageIQ)位置
 
 * **网页标题(title)更改**      
 
-1.这个是文字不是图片，查找定义处：
+1.这个是文字不是图片，查找定义处：     
+```    
+# 这里是首页登录的控制器处理部分，在这一喊显示了调用了哪部分视图
+https://github.com/ManageIQ/manageiq/blob/euwe-1/app/controllers/dashboard_controller.rb#L357
+# 这里是网页渲染，这一行显示了title处理部分， -->title_from_layout 这个方法返回title是什么
+https://github.com/ManageIQ/manageiq/blob/euwe-1/app/views/layouts/login.html.haml#L6     
+# title_from_layout 方法定义处，这里用I18n来自动转换语言，在语言里写着标题
+https://github.com/ManageIQ/manageiq/blob/euwe-1/app/helpers/application_helper.rb#L443   
+
+#最后，这里就是标题定义处，这个有几种语言(汉语，英语等)，别的代码版本不是这个路径，不过还是local这个目录里面，
+# 别的版本只要找这个local目录就好了，例如：/var/www/miq/vmdb/config/locales
+manageIQ/locale
+```     
+
+2.修改标题    
+https://github.com/ManageIQ/manageiq/blob/euwe-1/locale/zh_CN.yml      
+```
+zh-CN:
+  product:
+    name: ManageIQ   
+    name_full: ManageIQ        #name_full: JasCloud
+    copyright: "Copyright (c) 2016 ManageIQ。由红帽赞助。"
+    support_website: "http://www.manageiq.org"
+    support_website_text: "ManageIQ.org"
+
+# 修改后
+zh-CN:
+  product:
+    name: JasCloud
+    name_full: JasCloud
+    copyright: "Copyright (c) 2017 JasCloud。由中盈安信赞助。"
+    support_website: "www.jasgroup.cn"
+    support_website_text: "www.jasgroup.cn"
+```   
+en.yml, es.yml, fr.yml, ja.yml 也需要做相应修改。
