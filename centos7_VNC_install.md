@@ -13,6 +13,8 @@ http://www.educity.cn/linux/1442864.html
 CentOS安装VNC Server远程桌面
 http://www.metsky.com/archives/818.html    
 
+## 开始安装       
+
 * **安装VNCServer**    
 
 ```
