@@ -61,4 +61,21 @@ $ vncserver
 
 ![WX20170306-172330.png](https://bitbucket.org/repo/oE6yEX/images/293260000-WX20170306-172330.png)      
 
-* **其他电脑连接这台电脑**
+* **其他电脑连接这台电脑**      
+
+
+
+## VNC调试参考    
+
+```
+1、查看VNC进程情况（如果有VNC启动窗口，列表中可看到）：
+$ ps -ef|grep -i vnc
+2、启动一个窗口
+$ vncserver :1 
+3、杀死一个桌面(注意kill后面有个空格)
+$ vncserver -kill :1
+$ rm -f  /tmp/.X1-lock
+如果是其它桌面号，需要对应修改ID号。
+4、修改VNC登录密码
+$  vncpasswd 
+``
