@@ -67,15 +67,29 @@ $ vncserver
 
 ## VNC调试参考    
 
-```
-1、查看VNC进程情况（如果有VNC启动窗口，列表中可看到）：
+```  
+1.查看VNC进程情况（如果有VNC启动窗口，列表中可看到）：
 $ ps -ef|grep -i vnc
-2、启动一个窗口
+2.启动一个窗口
 $ vncserver :1 
-3、杀死一个桌面(注意kill后面有个空格)
+3.杀死一个桌面(注意kill后面有个空格)
 $ vncserver -kill :1
 $ rm -f  /tmp/.X1-lock
 如果是其它桌面号，需要对应修改ID号。
-4、修改VNC登录密码
+4.修改VNC登录密码
 $  vncpasswd 
-``
+```    
+
+## 常见错误       
+
+1、命令启动VNCServer报错      
+
+$ systemctl start vncserver@:1.service     
+
+报告如下错误：Job for vncserver@:1.service failed. See ‘systemctl status vncserver@:1.service’ and ‘journ alctl -xn’ for details.     
+
+解决方法：修改配置文件 vncserver@:1.service 中 Type 为 simple     
+
+修改完成后执行：      
+$ systemctl daemon-reload      
+$ systemctl start vncserver:1.service
