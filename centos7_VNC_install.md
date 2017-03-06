@@ -3,14 +3,14 @@
 
 　　VNC技术与平台无关，VNC Viewer可以和VNC Server在不同的操作系统上。VNC几乎支持所有的操作系统，也支持Java，甚至可以通过支持Java的浏览器来访问VNC Server。多个VNC客户端可以同时连接到一个VNC Server上。     
 
-* **参考链接**
-CentOs 7安装配置VNC Server---[亲测]      
-http://www.jianshu.com/p/35640fc5672b      
+* **参考链接**     
 
-https://www.phpini.com/linux/centos-7-install-vnc-server                 
+* CentOs 7安装配置VNC Server---[亲测]         
+http://www.jianshu.com/p/35640fc5672b      
+* 用VNC实现远程桌面共享的方法:    
 http://www.educity.cn/linux/1442864.html               
 
-CentOS安装VNC Server远程桌面
+* CentOS安装VNC Server远程桌面：      
 http://www.metsky.com/archives/818.html    
 
 ## 开始安装       
