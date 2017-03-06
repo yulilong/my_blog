@@ -46,7 +46,7 @@ http://xialeizhou.com/2019/06/23/%E9%AB%98%E6%95%88macbook%E5%B7%A5%E4%BD%9C%E7%
 ## **centos7**       
 
 * [centos7_VNC_install](https://bitbucket.org/yulilong/my_wiki/wiki/centos7_VNC_install)
-* [linux terminal command](https://bitbucket.org/yulilong/my_wiki/wiki/linux%20terminal%20command)    
+* [linux下常用的终端命令](https://bitbucket.org/yulilong/my_wiki/wiki/linux%E4%B8%8B%E5%B8%B8%E7%94%A8%E7%9A%84%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4)    
 * [centos7下习惯设置](https://bitbucket.org/yulilong/my_wiki/wiki/centos7%E4%B8%8B%E4%B9%A0%E6%83%AF%E8%AE%BE%E7%BD%AE)      
 * [ linux下常用软件](https://bitbucket.org/yulilong/my_wiki/wiki/linux%E4%B8%8B%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6)       
 * [centos7 搭建samba方法](https://bitbucket.org/yulilong/my_wiki/wiki/centos7%20%E6%90%AD%E5%BB%BAsamba%E6%96%B9%E6%B3%95)
