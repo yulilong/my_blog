@@ -22,6 +22,8 @@ $ rpm -q tigervnc tigervnc-server
 #install VNC
 $ yum install tigervnc tigervnc-server
 ```   
+![WX20170306-163432.png](https://bitbucket.org/repo/oE6yEX/images/1350621553-WX20170306-163432.png)      
+
 
 * **配置NVC**     
 
@@ -30,6 +32,5 @@ $ yum install tigervnc tigervnc-server
 $ cp /lib/systemd/system/vncserver@.service /etc/systemd/system/vncserver@:1.service
 # 编辑刚刚我们复制得新文件，将文件中得<USER>修改成 VNC Client连接的账号
 $ sudo vi /etc/systemd/system/vncserver@:1.service
-#
 ```   
 ![WX20170306-164613.png](https://bitbucket.org/repo/oE6yEX/images/663789721-WX20170306-164613.png)
