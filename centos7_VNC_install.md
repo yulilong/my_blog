@@ -63,7 +63,11 @@ $ vncserver
 
 ![WX20170306-172330.png](https://bitbucket.org/repo/oE6yEX/images/293260000-WX20170306-172330.png)      
 
-* **其他电脑连接这台电脑**      
+* **Mac苹果系统链接centos**  
+
+1.使用Jump Desktop软件。
+
+![WX20170306-174705.png](https://bitbucket.org/repo/oE6yEX/images/456845642-WX20170306-174705.png)     
 
 
 
@@ -90,7 +94,10 @@ $ systemctl start vncserver@:1.service
 
 报告如下错误：Job for vncserver@:1.service failed. See ‘systemctl status vncserver@:1.service’ and ‘journ alctl -xn’ for details.     
 
-解决方法：修改配置文件 vncserver@:1.service 中 Type 为 simple     
+解决方法(2中方法，我第二种成功了，)：
+1.删除/tmp/.X11-unix/ 目录，再启用一次即可
+
+2.修改配置文件 vncserver@:1.service 中 Type 为 simple     
 
 修改完成后执行：      
 $ systemctl daemon-reload      
