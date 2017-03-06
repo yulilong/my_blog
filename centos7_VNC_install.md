@@ -33,4 +33,32 @@ $ cp /lib/systemd/system/vncserver@.service /etc/systemd/system/vncserver@:1.ser
 # 编辑刚刚我们复制得新文件，将文件中得<USER>修改成 VNC Client连接的账号
 $ sudo vi /etc/systemd/system/vncserver@:1.service
 ```   
-![WX20170306-164613.png](https://bitbucket.org/repo/oE6yEX/images/663789721-WX20170306-164613.png)
+![WX20170306-164613.png](https://bitbucket.org/repo/oE6yEX/images/663789721-WX20170306-164613.png)      
+
+* **设置VNCServer开机自启动**      
+
+```
+# 切换到root账号，开启VNCServer并设置开机自启
+$ systemctl start vncserver@:1.service
+$ systemctl enable vncserver@:1.service
+```     
+
+* **设置防火墙**     
+
+最后，需要配置一下防火墙，允许VNC客户端连接VNC server。VNC server监听的端口从5900开始，display :1的监听5901，display :2监听5902，以此类推。CentOs的防火墙缺省是不允许连接这些端口的，所以需要使用下面的步骤打开防火墙（需要root权限)：    
+```
+# centos 默认使用的防火墙
+$ firewall-cmd --permanent --add-service="vnc-server" --zone="public"
+$ firewall-cmd --reload
+```
+![WX20170306-172041.png](https://bitbucket.org/repo/oE6yEX/images/2420996592-WX20170306-172041.png)       
+
+* **开启VNCServer**       
+
+```
+$ vncserver
+```
+
+![WX20170306-172330.png](https://bitbucket.org/repo/oE6yEX/images/293260000-WX20170306-172330.png)      
+
+* **其他电脑连接这台电脑**
