@@ -23,6 +23,8 @@ $ rpm -q tigervnc tigervnc-server
 # 如出现not installed说明没有安装 
 #install VNC
 $ yum install tigervnc tigervnc-server
+
+# 用YUM删除软件包命令：yum remove ~
 ```   
 ![WX20170306-163432.png](https://bitbucket.org/repo/oE6yEX/images/1350621553-WX20170306-163432.png)      
 
