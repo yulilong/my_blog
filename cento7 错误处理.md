@@ -16,7 +16,8 @@ rsync error:error in rsync protocol data stream (code 12) at io.c(359)
 
 的解决办法：    
 vi /root/.ssh/known_hosts     
-找到要连接的主机的ip，把它的那行所有信息删除（就是一行）
+找到要连接的主机的ip，把它的那行所有信息删除（就是一行）     
+http://www.linuxidc.com/Linux/2012-07/64941.htm      
 
 * **ssh: connect to host 192.168.123.123 port 22: Connection refused**
 
