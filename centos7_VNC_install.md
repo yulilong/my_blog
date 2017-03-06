@@ -8,4 +8,7 @@ CentOs 7安装配置VNC Server---[亲测]
 http://www.jianshu.com/p/35640fc5672b      
 
 https://www.phpini.com/linux/centos-7-install-vnc-server                 
-http://www.educity.cn/linux/1442864.html
+http://www.educity.cn/linux/1442864.html               
+
+CentOS安装VNC Server远程桌面
+http://www.metsky.com/archives/818.html
