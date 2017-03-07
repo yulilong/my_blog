@@ -39,6 +39,8 @@ http://xialeizhou.com/2019/06/23/%E9%AB%98%E6%95%88macbook%E5%B7%A5%E4%BD%9C%E7%
 
 * [manageIQ网页图标、图片、网页导航栏风格修改](https://bitbucket.org/yulilong/my_wiki/wiki/manageIQ%E7%BD%91%E9%A1%B5%E5%9B%BE%E6%A0%87%E3%80%81%E5%9B%BE%E7%89%87%E3%80%81%E7%BD%91%E9%A1%B5%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%A3%8E%E6%A0%BC%E4%BF%AE%E6%94%B9)     
 
+* [manageIQ汉化](https://bitbucket.org/yulilong/my_wiki/wiki/manageIQ%E6%B1%89%E5%8C%96)      
+
 * [**manageiq各种云平台provide资料**](https://bitbucket.org/yulilong/my_wiki/wiki/manageiq%E5%90%84%E7%A7%8D%E4%BA%91%E5%B9%B3%E5%8F%B0provide%E8%B5%84%E6%96%99)
 
 ---------------------------------------------------------------------------------------------------------
