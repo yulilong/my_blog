@@ -54,6 +54,10 @@ $ sudo chmod go-w /home/yulilong
 * **bundle install error:无法打开 .git/FETCH_HEAD：????**     
 
 ```
+# https://github.com/Homebrew/legacy-homebrew/issues/43471
+# centos 7.2的解决方案(亲测有效果)
 sudo chown -R $(whoami):root /usr/local && sudo chmod -R g+rwx /usr/local
+# Mac苹果系统的解决方式(没有试过)
+sudo chown -R $(whoami):admin /usr/local && sudo chmod -R g+rwx /usr/local
 ```
 ![WX20170308-150708.png](https://bitbucket.org/repo/oE6yEX/images/203021941-WX20170308-150708.png)
