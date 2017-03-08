@@ -23,7 +23,7 @@ http://xialeizhou.com/2019/06/23/%E9%AB%98%E6%95%88macbook%E5%B7%A5%E4%BD%9C%E7%
 
 * [manageIQ网页部分功能代码实现](https://bitbucket.org/yulilong/my_wiki/wiki/manageIQ%E7%BD%91%E9%A1%B5%E9%83%A8%E5%88%86%E5%8A%9F%E8%83%BD%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0)    
 
-* [manageiq安装文档(centos7.2系统)](https://bitbucket.org/yulilong/my_wiki/wiki/manageiq%E5%AE%89%E8%A3%85%E6%96%87%E6%A1%A3(centos7.2%E7%B3%BB%E7%BB%9F))    
+* [manageIQ开发环境安装(centos7.2系统)](https://bitbucket.org/yulilong/my_wiki/wiki/manageIQ%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85(centos7.2%E7%B3%BB%E7%BB%9F))    
 
 * [manageIQ开发环境安装(Mac苹果系统)](https://bitbucket.org/yulilong/my_wiki/wiki/manageIQ%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85(Mac%E8%8B%B9%E6%9E%9C%E7%B3%BB%E7%BB%9F))   
 
