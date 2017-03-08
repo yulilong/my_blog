@@ -66,9 +66,11 @@ http://manageiq.org/docs/guides/developer_setup/postgresql_software_collection
 ```
 # 您需要做的第一件事是启用SoftwareCollections.org包存储库。如果你使用CentOS，那么命令如下：
 $ sudo yum -y install centos-release-scl
-$ sudo systemctl stop postgresql-server
-$ sudo systemctl disable postgresql-server
-$ sudo yum -y remove 'postgresql-*'
+# 查看postgres是否已经安装了了低版本的，如果已经安装了高版本的，或者没安装在不需卸载，直接安装
+$ psql --version
+$ sudo systemctl stop postgresql-server    # 停止psotgres服务
+$ sudo systemctl disable postgresql-server # 关掉postgres
+$ sudo yum -y remove 'postgresql-*'        # 卸载postgres
 ```
 
 * 卸载ruby 链接postgres 的gem包 pg，如果没有安装则略过：
