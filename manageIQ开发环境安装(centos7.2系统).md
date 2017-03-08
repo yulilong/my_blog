@@ -64,6 +64,7 @@ manageiq官方postgres9.4+的安装文档：
 http://manageiq.org/docs/guides/developer_setup/postgresql_software_collection  
 
 ```
+# 您需要做的第一件事是启用SoftwareCollections.org包存储库。如果你使用CentOS，那么命令如下：
 $ sudo yum -y install centos-release-scl
 $ sudo systemctl stop postgresql-server
 $ sudo systemctl disable postgresql-server
