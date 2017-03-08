@@ -60,4 +60,25 @@ sudo chown -R $(whoami):root /usr/local && sudo chmod -R g+rwx /usr/local
 # Mac苹果系统的解决方式(没有试过)
 sudo chown -R $(whoami):admin /usr/local && sudo chmod -R g+rwx /usr/local
 ```
-![WX20170308-150708.png](https://bitbucket.org/repo/oE6yEX/images/203021941-WX20170308-150708.png)
+![WX20170308-150708.png](https://bitbucket.org/repo/oE6yEX/images/203021941-WX20170308-150708.png)      
+
+## gem install pg -v '0.18.4'  error
+* description
+```
+ERROR:  Error installing pg:
+	ERROR: Failed to build gem native extension.
+.....
+.....
+.....
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+```
+* solution:   
+http://www.faqoverflow.com/serverfault/316703.html      
+```
+$ sudo yum install postgresql-devel
+
+If you still encounter issues with pg_config, you may need to add it to your PATH, e.g.:
+$ export PATH=$PATH:/usr/pgsql-x.x/bin
+where x.x is your version, such as /usr/pgsql-9.2./bin.
+```   
+![WX20170308-152045.png](https://bitbucket.org/repo/oE6yEX/images/2522309900-WX20170308-152045.png)
