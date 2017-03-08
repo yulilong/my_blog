@@ -49,4 +49,11 @@ Dir.glob("bundler.d/*.rb").each { |f| eval_gemfile(File.expand_path(f, __dir__))
 
 ```
 $ sudo chmod go-w /home/yulilong
+```     
+
+* **bundle install error:无法打开 .git/FETCH_HEAD：????**     
+
 ```
+sudo chown -R $(whoami):root /usr/local && sudo chmod -R g+rwx /usr/local
+```
+![WX20170308-150708.png](https://bitbucket.org/repo/oE6yEX/images/203021941-WX20170308-150708.png)
