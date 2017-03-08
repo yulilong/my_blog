@@ -173,8 +173,8 @@ $ lsof -i:5432
 And, finally, to create the database user:  
 ```
 $ su - postgres
-$ scl enable rh-postgresql94 bash
-$ psql -c "CREATE ROLE root SUPERUSER LOGIN PASSWORD 'smartvm'"
+-bash-4.2$ scl enable rh-postgresql94 bash
+bash-4.2$ psql -c "CREATE ROLE root SUPERUSER LOGIN PASSWORD 'smartvm'"
 ```
 
 ## rvm,ruby,gems,rails,pqadmin3,rubymine,isntall ##  
