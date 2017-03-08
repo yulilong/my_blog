@@ -70,14 +70,25 @@ $ sudo find / -name postgresql.conf
 $ sudo passwd postgres
 * 2.如果psql notfound ，则 scl enable rh-postgresql94 bash，这个由于postgres升级导致的，http://manageiq.org/docs/guides/developer_setup/postgresql_software_collection
 
-* 安装 pqadmin3
+* centos7.2安装 pgadmin3
 https://yum.postgresql.org/
 http://www.voidcn.com/blog/houzhizhen/article/p-4388378.html
 ```
 $ wget http://ftp.riken.jp/Linux/fedora/epel/6/x86_64/epel-release-6-8.noarch.rpm
 $ sudo rpm -ivh epel-release-6-8.noarch.rpm
 $ sudo yum install pgadmin3
+```     
+
+* **Mac install pgadmin3**    
 ```
+#终端，已经安装了brew ，cask
+~ brew search pgadmin3
+Caskroom/versions/pgadmin3
+~ brew install Caskroom/versions/pgadmin3
+```
+![WX20170308-104055.png](https://bitbucket.org/repo/oE6yEX/images/3516961668-WX20170308-104055.png)     
+
+
 * 修改数据库配置文件，允许连接
 ```
 $ sudo vi /var/opt/rh/rh-postgresql94/lib/pgsql/data/pg_hba.conf
