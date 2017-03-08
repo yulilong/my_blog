@@ -201,8 +201,10 @@ $ bin/setup
 ## Starts the ManageIQ EVM Application in the background ##
 下面的命令是开始启动服务，这个是正常的启动。  
 ```
-$ bundle exec rake evm:start
+# 启动manageIQ服务，网站
 $ rails server
+# 这个是后台处理程序，读取虚拟机信息，读取镜像信息等，如果只是网站则不需要运行这个
+$ bundle exec rake evm:start
 ```
 ## 开发环境最小配置运行 ##
 
