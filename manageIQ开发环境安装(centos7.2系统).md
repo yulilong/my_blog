@@ -175,7 +175,10 @@ And, finally, to create the database user:
 $ su - postgres
 -bash-4.2$ scl enable rh-postgresql94 bash
 bash-4.2$ psql -c "CREATE ROLE root SUPERUSER LOGIN PASSWORD 'smartvm'"
-```
+```    
+
+![WX20170308-100713.png](https://bitbucket.org/repo/oE6yEX/images/2557248133-WX20170308-100713.png)     
+
 
 ## rvm,ruby,gems,rails,pqadmin3,rubymine,isntall ##  
 这里是rails开发的必要插件，具体安装看如下**链接**：  
