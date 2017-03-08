@@ -76,6 +76,8 @@ $ vncserver
 ## VNC调试参考    
 
 ```  
+# 查看所有端口，5900 5901 5902 是vnc所用的
+$ netstat -ntlp  
 1.查看VNC进程情况（如果有VNC启动窗口，列表中可看到）：
 $ ps -ef|grep -i vnc
 2.启动一个窗口
