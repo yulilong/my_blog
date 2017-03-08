@@ -44,3 +44,9 @@ $ bin/rails evm:compile_assets
 eval_gemfile(File.expand_path("gems/pending/Gemfile", __dir__))
 Dir.glob("bundler.d/*.rb").each { |f| eval_gemfile(File.expand_path(f, __dir__)) }
 ```
+
+* **bin/setup:26: warning: Insecure world writable dir /home/yulilong in PATH, mode 040777**    
+
+```
+$ sudo chmod go-w /home/yulilong
+```
