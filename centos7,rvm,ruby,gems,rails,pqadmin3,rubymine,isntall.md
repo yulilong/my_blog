@@ -70,9 +70,9 @@ $ sudo find / -name postgresql.conf
 $ sudo passwd postgres
 * 2.如果psql notfound ，则 scl enable rh-postgresql94 bash，这个由于postgres升级导致的，http://manageiq.org/docs/guides/developer_setup/postgresql_software_collection
 
-* centos7.2安装 pgadmin3
-https://yum.postgresql.org/
-http://www.voidcn.com/blog/houzhizhen/article/p-4388378.html
+* centos7.2安装 pgadmin3       
+https://yum.postgresql.org/       
+http://www.voidcn.com/blog/houzhizhen/article/p-4388378.html        
 ```
 $ wget http://ftp.riken.jp/Linux/fedora/epel/6/x86_64/epel-release-6-8.noarch.rpm
 $ sudo rpm -ivh epel-release-6-8.noarch.rpm
