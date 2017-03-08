@@ -78,6 +78,8 @@ $ wget http://ftp.riken.jp/Linux/fedora/epel/6/x86_64/epel-release-6-8.noarch.rp
 $ sudo rpm -ivh epel-release-6-8.noarch.rpm
 $ sudo yum install pgadmin3
 ```     
+![WX20170308-105307.png](https://bitbucket.org/repo/oE6yEX/images/3537175084-WX20170308-105307.png)
+
 
 * **Mac install pgadmin3**    
 ```
