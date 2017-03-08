@@ -92,9 +92,25 @@ $ source /opt/rh/rh-postgresql94/enable
 ```
 注意！！！下面这步会把～/.bash_profile 文件里面所有内容清空，使用前请备份注意：
 ```
+# 这条命令可以不用执行，后期经实测不影响manageIQ的使用
 $ cat > $HOME/.bash_profile <<.
 source /opt/rh/rh-postgresql94/enable
 .
+
+[@centos ~]$ cat $HOME/.bash_profile
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/.local/bin:$HOME/bin
+
+export PATH
+#source /opt/rh/rh-postgresql94/enable
 ```
 
 ```
