@@ -75,7 +75,7 @@ $ git br -m 旧名字 新名字
 ```    
 * git 回滚到某个commit     
 ```
-# 
+# 记住最新的commit，然后在用此命令回滚到最新
 $ git reset 046bd7b5c1d134b8123f
 $ git reset --hard resetVersionHash //将当前branch的HEAD指针指向commit hash
 
