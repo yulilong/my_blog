@@ -59,4 +59,17 @@ share /mnt/share vboxsf rw,gid=100,uid=1000,auto 0 0
 
 http://blog.csdn.net/astrotycoon/article/details/8143146     
 
-http://blog.csdn.net/ixidof/article/details/12685549
+http://blog.csdn.net/ixidof/article/details/12685549     
+
+* **虚拟机磁盘扩容**   
+
+```
+$ VBoxManage list hdds 
+# 在列出的信息中找到需要的虚拟机，复制UUID
+$ VBoxManage modifyhd a0f06f66-f696-41dc-827a-e79bee50f65b   --resize 51200
+# 操作成功后该虚拟的硬盘即增加了50G，但要注意了，此50G空间还没有分配.
+
+
+```     
+
+![WX20170308-165624.png](https://bitbucket.org/repo/oE6yEX/images/3806856555-WX20170308-165624.png)
