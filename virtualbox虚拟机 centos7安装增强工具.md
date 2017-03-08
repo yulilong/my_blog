@@ -63,6 +63,7 @@ http://blog.csdn.net/ixidof/article/details/12685549
 
 * **虚拟机磁盘扩容**   
 
+http://blog.csdn.net/ganshuyu/article/details/17954733     
 ```
 $ VBoxManage list hdds 
 # 在列出的信息中找到需要的虚拟机，复制UUID
