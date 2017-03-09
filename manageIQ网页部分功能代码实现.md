@@ -15,5 +15,8 @@ else
 ##登录后网页效果显示的代码    
 
 1.在每个网页显示效果是， Rails会指定一个默认的页面模板，这个模板位置：          
-app/views/layouts/application.html.haml     
+[app/views/layouts/application.html.haml](https://github.com/ManageIQ/manageiq/blob/euwe-1/app/views/layouts/application.html.haml)       
 这个模板里定义了网页的风格与导航栏的定义。
+在这个文件里：    
+4~12行，18~48行是网页的 head部分(登录网页后右键查看元素)。      
+13~14，50~53行， 是网页的body部分，
