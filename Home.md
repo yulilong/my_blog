@@ -94,7 +94,9 @@ https://github.com/riku/Markdown-Syntax-CN
 
 
 ###**rails -> view**
-* [rails中view 部分haml资料](https://bitbucket.org/yulilong/my_wiki/wiki/rails%E4%B8%ADview%20%E9%83%A8%E5%88%86haml%E8%B5%84%E6%96%99)
+* [haml语法 符号的含义](https://bitbucket.org/yulilong/my_wiki/wiki/haml%E8%AF%AD%E6%B3%95%20%E7%AC%A6%E5%8F%B7%E7%9A%84%E5%90%AB%E4%B9%89)      
+
+[ Haml 参考大全](http://blackanger.blog.51cto.com/140924/47642/)
 
 
 ###**rails -> route**
