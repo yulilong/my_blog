@@ -23,6 +23,8 @@ $ git tag -a v0.1.2 -m “0.1.2版本”     # 创建附注标签
  
 # 切换到标签         
 $ git checkout [tagname] # 切换到标签
+# 如果你想在这个标签中开发，那么则创建一个新分支
+$ git checkout -b new_branch_name
 $ git show v0.1.2   # 查看标签的版本信息    
 
 # 删除标签     
