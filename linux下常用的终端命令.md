@@ -126,9 +126,15 @@ ONBOOT=no
 [root@bsso yayu]# du -h --max-depth=1 work/testing/*
 8.0K    work/testing/func.php
 27M     work/testing/logs
-8.1M    work/testing/nohup.out
-8.0K    work/testing/testing_c.php
+
+# 查看磁盘各分区大小、已用空间等信息
+$ df -h
+# 查看foo目录的大小：
+$ du -sh foo
+# 查看当前目录以下搜索文件和子目录大小:
+$ du -sh *
 ```    
+![Screenshot from 2017-03-09 09-28-19.png](https://bitbucket.org/repo/oE6yEX/images/2094033154-Screenshot%20from%202017-03-09%2009-28-19.png)       
 
 * **linux 压缩、解压**
 http://www.blogjava.net/jiangjf/archive/2007/07/29/133122.html      
