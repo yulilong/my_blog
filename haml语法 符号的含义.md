@@ -117,8 +117,164 @@
   <p>
     1 + 1 = 2
   </p>
+```     
+
+* **!!!**     
+当用haml来表示一个XHTML文档，你可以通过!!!这个符号来自动生成文档类型和XML prolog。比如：      
+```
+!!! XML
+  !!!
+  %html
+    %head
+      %title Myspace
+    %body
+      %h1 I am the international space station
+      %p Sign my guestbook
+转换为：
+  <?xml version="1.0" encoding="utf-8" ?>
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html>
+    <head>
+      <title>Myspace</title>
+    </head>
+    <body>
+      <h1>I am the international space station</h1>
+      <p>Sign my guestbook</p>
+    </body>
+  </html>
+
+
+你也可以在！！！后面加版本号。比如：
+  !!! 1.1
+转换为：
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+and
+ 
+  !!! Strict
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+如果你不想用UTF-8的编码，你也可以指定你想要的编码：
+  !!! XML iso-8859-1
+转换为：
+  <?xml version="1.0" encoding="iso-8859-1" ?>
+ 
+```      
+
+* **/**     
+如果这个斜线写在打头的位置，则会注释这行。       
+放在代码的上方，则注释整个代码：     
+```
+%billabong
+    / This is the billabong element
+    I like billabongs!
+转换为：
+  <billabong>
+    <!-- This is the billabong element -->
+    I like billabongs!
+  </billabong>
+---------------------
+/
+    %p This doesn't render...
+    %div
+      %h1 Because it's commented out!
+转换为：
+ 
+  <!--
+    <p>This doesn't render...</p>
+    <div>
+      <h1>Because it's commented out!</h1>
+    </div>
+  -->
+```    
+
+* **\**       
+反斜杠符号允许字符串前面的第一个符号作为纯文本使用。      
+```
+ %title
+    = @title
+    \- MySite
+转换为：
+ 
+  <title>
+    MyPage
+    - MySite
+  </title>
 ```
 
+* **|**      
+管道符可以允许把输出为一行的内容写成多行。     
+```
+ %whoo
+    %hoo I think this might get |
+      pretty long so I should |
+      probably make it |
+      multiline so it doesn't |
+      look awful. |
+    %p This is short.
+
+is compiled to:
+转换为：
+ 
+  <whoo>
+    <hoo>
+      I think this might get pretty long so I should probably make it multiline so it doesn't look awful.
+    </hoo>
+  </whoo>
+```
+
+* **:**     
+冒号是指定一个过滤器。冒号后面是你要使用的那个过滤器的名字。For example,      
+```
+%p
+    :markdown
+      Textile
+      =======
+      Hello, *World*
+转换为：
+  <p>
+    <h1>Textile</h1>
+    <p>Hello, <em>World</em></p>
+  </p>
+
+Haml支持的过滤器定义
+plain
+ruby
+preserve
+erb
+sass
+redcloth
+textile
+markdown
+```    
+
+* **-**
+横杠符号，很有性格，可以使文本变为”silent script”：意思是，代码可以执行，但并不输出任何东西。     
+
+
+* **Blocks**     
+Ruby中的块，也不需要明显的去关闭，haml会让它自动关闭。这写都是基于缩进的。千万记住要缩进两个空格。     
+```
+- (42...47).each do |i|
+    %p= i
+  %p See, I can count!
+编译为:
+ 
+  <p>
+    42
+  </p>
+  <p>
+    43
+  </p>
+  <p>
+    44
+  </p>
+  <p>
+    45
+  </p>
+  <p>
+    46
+  </p>
+```
+上面的语法出自： http://blackanger.blog.51cto.com/140924/47642/
 
 
 ##haml官网
