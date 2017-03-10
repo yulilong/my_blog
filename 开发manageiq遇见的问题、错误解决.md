@@ -87,7 +87,7 @@ where x.x is your version, such as /usr/pgsql-9.2./bin.
 ![WX20170310-135142.png](https://bitbucket.org/repo/oE6yEX/images/802757315-WX20170310-135142.png)     
 解决方法：    
 ```
-# 打开程序根目录bower.json,大约58到63
+# 打开程序根目录bower.json,大约58到63行，
 "resolutions": {
     "patternfly-bootstrap-treeview": "~2.1.1",
     "moment": ">=2.10.5",
