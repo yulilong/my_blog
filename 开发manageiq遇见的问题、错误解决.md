@@ -92,7 +92,7 @@ where x.x is your version, such as /usr/pgsql-9.2./bin.
     "patternfly-bootstrap-treeview": "~2.1.1",
     "moment": ">=2.10.5",
     "d3": "~3.5.0",
-    "jquery": ">1.8.*"
+    "jquery": ">1.8.*" # 改成"jquery": ">=1.7.1"，如果还出错，就把这一行删除然后在运行
   }
 把"jquery": ">1.8.*"  改成"jquery": ">=1.7.1"
 # 然后运行下面命令：
