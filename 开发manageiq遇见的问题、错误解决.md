@@ -45,13 +45,13 @@ eval_gemfile(File.expand_path("gems/pending/Gemfile", __dir__))
 Dir.glob("bundler.d/*.rb").each { |f| eval_gemfile(File.expand_path(f, __dir__)) }
 ```
 
-* **bin/setup:26: warning: Insecure world writable dir /home/yulilong in PATH, mode 040777**    
+## **bin/setup:26: warning: Insecure world writable dir /home/yu in PATH, mode 040777**    
 
 ```
 $ sudo chmod go-w /home/yulilong
 ```     
 
-* **bundle install error:无法打开 .git/FETCH_HEAD：????**     
+## **bundle install error:无法打开 .git/FETCH_HEAD：????**     
 
 ```
 # https://github.com/Homebrew/legacy-homebrew/issues/43471
@@ -81,4 +81,6 @@ If you still encounter issues with pg_config, you may need to add it to your PAT
 $ export PATH=$PATH:/usr/pgsql-x.x/bin
 where x.x is your version, such as /usr/pgsql-9.2./bin.
 ```   
-![WX20170308-152045.png](https://bitbucket.org/repo/oE6yEX/images/2522309900-WX20170308-152045.png)
+![WX20170308-152045.png](https://bitbucket.org/repo/oE6yEX/images/2522309900-WX20170308-152045.png)    
+
+## Error caught: [ActionView::Template::Error] couldn't find file 'jquery' with type 'application/javascript'
