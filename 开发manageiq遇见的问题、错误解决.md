@@ -84,7 +84,7 @@ where x.x is your version, such as /usr/pgsql-9.2./bin.
 ![WX20170308-152045.png](https://bitbucket.org/repo/oE6yEX/images/2522309900-WX20170308-152045.png)    
 
 ## Error caught: [ActionView::Template::Error] couldn't find file 'jquery' with type 'application/javascript'      
-
+![WX20170310-135142.png](https://bitbucket.org/repo/oE6yEX/images/802757315-WX20170310-135142.png)     
 解决方法：    
 ```
 # 打开程序根目录bower.json,大约58到63
