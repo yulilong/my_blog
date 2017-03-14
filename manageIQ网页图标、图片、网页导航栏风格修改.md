@@ -102,4 +102,12 @@ $login-bg-color: #083c5a; # 大约是在28行附近
 ```     
 
 ## **3.登陆后页面上部(header)导航栏的背景色**    
-![WX20170314-140348.png](https://bitbucket.org/repo/oE6yEX/images/843502405-WX20170314-140348.png)
+![WX20170314-140348.png](https://bitbucket.org/repo/oE6yEX/images/843502405-WX20170314-140348.png)      
+文件位置：   
+app/assets/stylesheets/main.scss       
+```
+# 上面的背景色设置：
+$navbar-pf-alt-bg-color: #0c69a5; //大约在第9行 sets backgound color of navigation bar
+# 上面的图片设置：
+$img-bg-navbar: "navbar.png"; //大约在第11行 sets a custom background image in the header
+```
