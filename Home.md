@@ -103,6 +103,11 @@ http://selfcontroller.iteye.com/blog/1786610
 Rails Asset Pipeline 资源管线（笔记）:         
 http://www.tuicool.com/articles/YvuANj    
 
+基于Jquery的开源网页用户界面代码库:    
+http://www.jqueryui.org.cn/       
+jQuery UI API中文文档(适用jQuery UI 1.10)       
+http://www.css88.com/jquery-ui-api/       
+
 
 ###**rails -> route**
 * [rails中route官方教程](http://guides.ruby-china.org/routing.html)http://guides.ruby-china.org/routing.html
