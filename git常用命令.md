@@ -78,7 +78,6 @@ $ git br -m 旧名字 新名字
 * git 回滚到某个commit     
 ```
 # 记住最新的commit，然后在用此命令回滚到最新
-$ git reset 046bd7b5c1d134b8123f
 $ git reset --hard resetVersionHash //将当前branch的HEAD指针指向commit hash
 
 ```     
@@ -90,4 +89,25 @@ $ git diff 文件名  #查看这个文件的改动
 
 # 查看某个commit做了哪些改动
 $ git show 046bd7b5c1d134b8123f
+```    
+
+* **git恢复删除的文件**  
+```
+# 要查看删除的文件： 
+$ git ls-files --deleted
+# 使用命令checkout来恢复：
+$ git checkout -- file_name
+# 如果要恢复多个被删除的文件，可以使用批处理命令：
+$ git ls-files -d | xargs git checkout --
+# 如果要恢复被修改的文件，命令：
+$ git ls-files -m | xargs git checkout --
+
+1.git pull会使用git merge导致冲突，需要将冲突的文件resolve掉 git add -u, git commit之后才能成功pull.
+
+2.如果想放弃本地的文件修改，可以使用git reset --hard FETCH_HEAD，FETCH_HEAD表示上一次成功git pull之后形成的commit点。然后git pull.
+```    
+
+* **查看某个文件的详细修改记录：**    
+```
+$ git log -p files
 ```
