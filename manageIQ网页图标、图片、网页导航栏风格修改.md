@@ -136,4 +136,20 @@ app/assets/stylesheets/main.scss
 $navbar-pf-alt-bg-color: #0c69a5; //大约在第9行 sets backgound color of navigation bar
 # 上面的图片设置：
 $img-bg-navbar: "navbar.png"; //大约在第11行 sets a custom background image in the header
+```        
+
+## **4.登录后右上角 关于(about)页面的风格设置**    
+![WX20170314-155928.png](https://bitbucket.org/repo/oE6yEX/images/1203226833-WX20170314-155928.png)       
+文件位置：    
+app/assets/stylesheets/about_modal_background.scss       
+```
+#app/assets/stylesheets/about_modal_background.scss
+.about-modal-pf {
+  background-color: $modal-about-pf-bg-color;           # 背景色的设置
+  background-image: image-url($modal-about-pf-bg-img);  # 图片的设置
+}
+
+# app/assets/stylesheets/main.scss
+$modal-about-pf-bg-img:  "bg-modal-about-pf.png"; // sets background image of 'About' modal
+$modal-about-pf-bg-color:   #083c5a; // sets background color of 'About' modal
 ```
