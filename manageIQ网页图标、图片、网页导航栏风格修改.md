@@ -103,8 +103,19 @@ app/assets/stylesheets/main.scss
 &.login-pf {
     background-color: $login-bg-color !important;  # 这里设置背景色的地方
   }
+@media (min-width: $screen-sm) {
+    &.login-pf {
+      background: image-url($img-bg-login-2); # 这是右下角的图片设置
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: 30%;
+    }
+  }
 # app/assets/stylesheets/main.scss  
 $login-bg-color: #083c5a; # 大约是在28行附近
+$img-bg-login:  "bg-login.png"; # 左上角的图片 图片位置：app/assets/images/bg-login.png
+$img-bg-login-2: "bg-login-2.png";#  右下角的图片
+
 ```     
 
 ## **3.登陆后页面上部(header)导航栏的背景色**    
