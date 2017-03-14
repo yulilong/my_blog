@@ -56,7 +56,8 @@ http://xialeizhou.com/2019/06/23/%E9%AB%98%E6%95%88macbook%E5%B7%A5%E4%BD%9C%E7%
 * [centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall](https://bitbucket.org/yulilong/my_wiki/wiki/centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall)     
 * [virtualbox虚拟机 centos7安装增强工具](https://bitbucket.org/yulilong/my_wiki/wiki/virtualbox%E8%99%9A%E6%8B%9F%E6%9C%BA%20centos7%E5%AE%89%E8%A3%85%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7)    
 
--------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------   
+### **在线工具**
 
 * HTML 参考手册  
 http://www.w3school.com.cn/tags/  
@@ -65,6 +66,11 @@ http://www.w3school.com.cn/tiy/t.asp?f=html_div_test
 
 * 在线正则表达式测试     
 http://tool.oschina.net/regex/#      
+
+* **在线调色板**   
+http://tool.chinaz.com/Tools/onlinecolor.aspx       
+* **在线颜色选择器 | RGB颜色查询对照表 **     
+http://www.atool.org/colorpicker.php       
 
 -------------------------------------------------------------------------------------------------
 
