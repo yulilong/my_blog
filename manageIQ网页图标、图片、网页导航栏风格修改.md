@@ -109,10 +109,10 @@ app/assets/stylesheets/main.scss
 ```
 # app/assets/stylesheets/header_background.scss     
 .navbar-pf-vertical {
-  background: image-url($img-bg-navbar);
+  background: image-url($img-bg-navbar);  # 右边的图片
   background-repeat: no-repeat;
   background-position: 100% 0;
-  background-color: $navbar-pf-alt-bg-color;
+  background-color: $navbar-pf-alt-bg-color;  # 背景色设置
 }
 # app/assets/stylesheets/main.scss     
 # 上面的背景色设置：
