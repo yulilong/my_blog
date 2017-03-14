@@ -98,5 +98,5 @@ en.yml, es.yml, fr.yml, ja.yml 也需要做相应修改。
 文件位置：   
 app/assets/stylesheets/main.scss       
 ```
-$login-bg-color: #2024a4; # 大约是在28行附近
+$login-bg-color: #083c5a; # 大约是在28行附近
 ```
