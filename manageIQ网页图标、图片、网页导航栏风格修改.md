@@ -96,8 +96,14 @@ en.yml, es.yml, fr.yml, ja.yml 也需要做相应修改。
 ![WX20170314-111146.png](https://bitbucket.org/repo/oE6yEX/images/4151897052-WX20170314-111146.png)     
 
 文件位置：   
+app/assets/stylesheets/login.scss
 app/assets/stylesheets/main.scss       
-```
+```    
+# app/assets/stylesheets/login.scss 
+&.login-pf {
+    background-color: $login-bg-color !important;  # 这里设置背景色的地方
+  }
+# app/assets/stylesheets/main.scss  
 $login-bg-color: #083c5a; # 大约是在28行附近
 ```     
 
