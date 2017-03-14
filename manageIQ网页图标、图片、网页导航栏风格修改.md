@@ -91,3 +91,12 @@ zh-CN:
 ```   
 en.yml, es.yml, fr.yml, ja.yml 也需要做相应修改。     
 修改好后需要重启服务。
+
+##登录页面的中间部分的背景色修改     
+![WX20170314-111146.png](https://bitbucket.org/repo/oE6yEX/images/4151897052-WX20170314-111146.png)     
+
+文件位置：   
+app/assets/stylesheets/main.scss       
+```
+$login-bg-color: #2024a4; # 大约是在28行附近
+```
