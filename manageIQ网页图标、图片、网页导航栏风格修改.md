@@ -2,7 +2,7 @@
 https://github.com/ManageIQ/manageiq/tree/euwe-1       
 -----
 
-## **登录首页图标的修改**   
+## **1.登录首页图标的修改**   
 
 ![WX20170302-145333.png](https://bitbucket.org/repo/oE6yEX/images/450901201-WX20170302-145333.png)    
 
@@ -92,11 +92,14 @@ zh-CN:
 en.yml, es.yml, fr.yml, ja.yml 也需要做相应修改。     
 修改好后需要重启服务。
 
-##登录页面的中间部分的背景色修改     
+## **2.登录页面的中间部分的背景色修改**     
 ![WX20170314-111146.png](https://bitbucket.org/repo/oE6yEX/images/4151897052-WX20170314-111146.png)     
 
 文件位置：   
 app/assets/stylesheets/main.scss       
 ```
 $login-bg-color: #083c5a; # 大约是在28行附近
-```
+```     
+
+## **3.登陆后页面上部(header)导航栏的背景色**    
+![WX20170314-140348.png](https://bitbucket.org/repo/oE6yEX/images/843502405-WX20170314-140348.png)
