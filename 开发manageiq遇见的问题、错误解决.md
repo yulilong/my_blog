@@ -96,5 +96,9 @@ where x.x is your version, such as /usr/pgsql-9.2./bin.
   }
 把"jquery": ">1.8.*"  改成"jquery": ">=1.7.1"
 # 然后运行下面命令：
-$ bower install # 如果这个命令运行后没有什么输出，那么运行 bower update 后再次运行这个命令
+$ bower install 
+# 如果这个命令运行后没有什么输出，那么运行 bower update 后再次运行这个命令
+# 如果还是没有反应就看看是不是代理失效了，这个命令需要代理翻墙才可以，确认代理后从新运行这个命令
+#或者使用下面命令
+$ bin/update
 ```
