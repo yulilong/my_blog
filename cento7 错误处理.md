@@ -163,4 +163,12 @@ $ cat > $HOME/.bash_profile <<.
 source /opt/rh/rh-postgresql94/enable
 .
 ```
-还有 .bsahrc里面的内容也不能少
+还有 .bsahrc里面的内容也不能少                 
+
+
+## centos gnome 桌面崩溃    
+
+1. 键盘按 control + alt + F2
+2. root登陆后，切换到个人用户
+3. $ systemctl restart gdm.service
+4.切回桌面： control + alt + F1
