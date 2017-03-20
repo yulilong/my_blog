@@ -101,4 +101,8 @@ $ bower install
 # 如果还是没有反应就看看是不是代理失效了，这个命令需要代理翻墙才可以，确认代理后从新运行这个命令
 #或者使用下面命令
 $ bin/update
-```
+```    
+
+## Failed to instantiate module ManageIQ.toolbar due to:(头部工具栏消失)
+
+![WX20170317-172420.png](https://bitbucket.org/repo/oE6yEX/images/3411011686-WX20170317-172420.png)
