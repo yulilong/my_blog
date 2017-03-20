@@ -1,4 +1,5 @@
-##  **运行`bin/setup`命令发生错误** 
+##  **运行`bin/setup`命令发生错误**      
+
 当下载manageiq后运行：    
 ```
 [manageiq]$ bin/setup 
