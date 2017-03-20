@@ -6,7 +6,7 @@ http://manageiq.org/docs/guides/developer_setup
 Mac 安装在中间
 
 * **Install Homebrew**    
-下面的安装都要brew，所以没需要第一个安装
+下面的安装都要brew，如果没有brew需要第一个安装
 ```
 # https://brew.sh/
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
