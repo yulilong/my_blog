@@ -152,4 +152,19 @@ app/assets/stylesheets/about_modal_background.scss
 # app/assets/stylesheets/main.scss
 $modal-about-pf-bg-img:  "bg-modal-about-pf.png"; // sets background image of 'About' modal
 $modal-about-pf-bg-color:   #083c5a; // sets background color of 'About' modal
+```       
+
+## 登陆后，垂直导航栏的颜色设置     
+![WX20170320-141604.png](https://bitbucket.org/repo/oE6yEX/images/1840381616-WX20170320-141604.png)       
+
+这个导航栏的风格是第三方插件：  
 ```
+# Gemfile 文件
+group :ui_dependencies do # Added to Bundler.require in config/application.rb
+  ·········
+  gem "patternfly-sass",  "~>3.12.0"   # 这个是垂直导航栏的风格
+  ·········
+end
+```       
+垂直导航栏颜色设置源码：    
+https://github.com/patternfly/patternfly-sass/blob/v3.12.0/assets/stylesheets/patternfly/_vertical-nav.scss
