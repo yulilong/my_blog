@@ -1,6 +1,13 @@
 * **代码版本**   
 https://github.com/ManageIQ/manageiq/tree/euwe-1       
------
+-----        
+
+## 修改后的生产环境需要从新编译js文件     
+
+```
+# bin/update
+$ bin/rails evm:compile_assets
+```
 
 ## **1.登录首页图标的修改**   
 
