@@ -162,9 +162,39 @@ $modal-about-pf-bg-color:   #083c5a; // sets background color of 'About' modal
 # Gemfile 文件
 group :ui_dependencies do # Added to Bundler.require in config/application.rb
   ·········
-  gem "patternfly-sass",  "~>3.12.0"   # 这个是垂直导航栏的风格
+  gem "patternfly-sass",  "~>3.12.0"   # 这个是垂直导航栏的风格，大约95行附近
   ·········
 end
 ```       
 垂直导航栏颜色设置源码：    
-https://github.com/patternfly/patternfly-sass/blob/v3.12.0/assets/stylesheets/patternfly/_vertical-nav.scss
+https://github.com/patternfly/patternfly-sass/blob/v3.12.0/assets/stylesheets/patternfly/_vertical-nav.scss         
+
+manageIQ文件可设置颜色参数，变量即上面的变量：      
+```
+# app/assets/stylesheets/main.scss
+//手动添加的内容
+$nav-pf-vertical-bg-color: #1770e6;           //垂直导航栏第一列背景色
+$nav-pf-vertical-item-border-color: #f5ed3c;  //垂直导航栏第一列边栏的颜色
+$nav-pf-vertical-color: #ffe015;              //垂直导航栏第一列字体颜色
+$nav-pf-vertical-active-bg-color: #261ac0;    //垂直导航栏第一列鼠标选择按钮时候的颜色
+$nav-pf-vertical-active-color: #d60116;       //垂直导航栏第一列鼠标选择时,字体的颜色
+$nav-pf-vertical-icon-color: #fcfcfc;         //垂直导航栏第一列 图标颜色
+$nav-pf-vertical-active-icon-color: #b22e23;  //垂直导航栏第一列鼠标选择时,图标的颜色
+$nav-pf-vertical-active-before-color: #82237b;//垂直导航栏第一列鼠标选择后,左边多出来的一条颜色
+
+$nav-pf-vertical-secondary-color: #fff717;            //垂直导航栏第二列导航标题字体颜色
+//$nav-pf-vertical-secondary-bg-color: #7b22ff;       //垂直导航栏第二列背景色,如果这个不设置则跟鼠标选择第一列的颜色是一样的。
+$nav-pf-vertical-secondary-item-color: #d60116;       //垂直导航栏第二列字体颜色,
+$nav-pf-vertical-secondary-active-bg-color: #696fff;  //垂直导航栏第二列鼠标选择按钮时候的背景色
+$nav-pf-vertical-secondary-active-color: #ffe015;     //垂直导航栏第二列鼠标选择按钮时 字体的颜色
+$nav-pf-vertical-secondary-indicator-color: #ff03e8;  //垂直导航栏箭头颜色
+
+
+$nav-pf-vertical-tertiary-bg-color: #696fff;          //垂直导航栏第三列的背景色
+$nav-pf-vertical-tertiary-color: #b82433;             //垂直导航栏第三列标题字颜色
+$nav-pf-vertical-tertiary-item-color: #db0921;        //垂直导航栏第三列字体的颜色
+$nav-pf-vertical-tertiary-active-bg-color: #fef9ff;   //垂直导航栏第三列鼠标选择时的背景色
+$nav-pf-vertical-tertiary-active-color: #000000;      //垂直导航栏第三列鼠标选择时的 字体颜色
+
+
+```
