@@ -105,4 +105,25 @@ $ bin/update
 
 ## Failed to instantiate module ManageIQ.toolbar due to:(头部工具栏消失)
 
-![WX20170317-172420.png](https://bitbucket.org/repo/oE6yEX/images/3411011686-WX20170317-172420.png)
+![WX20170317-172420.png](https://bitbucket.org/repo/oE6yEX/images/3411011686-WX20170317-172420.png)       
+
+解决方法：    
+```     
+# https://github.com/ManageIQ/manageiq/pull/13750
+# http://talk.manageiq.org/t/failed-to-instantiate-module-manageiq-toolbar-due-to/2185/3
+# 打开程序根目录bower.json,大约58到63行，
+"dependencies": {
+    "angular": "~1.5.8",
+    "angular-animate": "~1.5.8",
+    ········
+    "manageiq-ui-components": "~0.0.9", # 这里改成"manageiq-ui-components": "0.0.11",
+    ·······
+  }
+把"manageiq-ui-components": "~0.0.9",  改成 "manageiq-ui-components": "0.0.11",
+# 然后运行下面命令：
+$ bower update
+$ bower install 
+# 如果没有反应就看看是不是代理失效了，这个命令需要代理翻墙才可以，确认代理后从新运行这个命令
+#或者使用下面命令
+$ bin/update
+```
