@@ -126,4 +126,10 @@ $ bower install
 # 如果没有反应就看看是不是代理失效了，这个命令需要代理翻墙才可以，确认代理后从新运行这个命令
 #或者使用下面命令
 $ bin/update
+```     
+
+## run /opt/manageiq/manageiq/tools/ldap_ping.rb from command line   
+
+```
+$ bundle exec rails r tools/ldap_ping.rb
 ```
