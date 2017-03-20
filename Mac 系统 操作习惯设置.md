@@ -53,4 +53,8 @@ http://jingyan.baidu.com/article/363872ecd5b8406e4aa16f5e.html
 
 ##find 进入特定目录    
 find -> 前往 -> 前往文件夹，输入路径即可：     
-![WX20170320-132530.png](https://bitbucket.org/repo/oE6yEX/images/614659939-WX20170320-132530.png)
+![WX20170320-132530.png](https://bitbucket.org/repo/oE6yEX/images/614659939-WX20170320-132530.png)      
+
+## mac 系统桌面背景图片位置    
+
+/Library/Desktop Pictures/
