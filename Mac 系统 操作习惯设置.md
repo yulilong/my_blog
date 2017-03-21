@@ -57,4 +57,8 @@ find -> 前往 -> 前往文件夹，输入路径即可：
 
 ## mac 系统桌面背景图片位置    
 
-/Library/Desktop Pictures/
+/Library/Desktop Pictures/    
+
+## **把应用程序图标放在finder上**    
+
+按住 cmd键，鼠标拖动应用即可。
