@@ -82,10 +82,10 @@ https://github.com/ManageIQ/manageiq/blob/euwe-1/locale/zh_CN.yml
 zh-CN:
   product:
     name: ManageIQ   # 这个是网页title名字
-    name_full: ManageIQ                                  #这个是登录后右上角 问号按钮的字段
-    copyright: "Copyright (c) 2016 ManageIQ。由红帽赞助。" #这个是登录后右上角 问号按钮的字段
-    support_website: "http://www.manageiq.org"           #这个是登录后右上角 问号按钮的字段
-    support_website_text: "ManageIQ.org"                 #这个是登录后右上角 问号按钮的字段
+    name_full: ManageIQ                                  #这个是登录后右上角 问号按钮的字段    (关于页面)about
+    copyright: "Copyright (c) 2016 ManageIQ。由红帽赞助."  #这个是登录后右上角 问号按钮的字段    (关于页面)about
+    support_website: "http://www.manageiq.org"           #这个是登录后右上角 问号按钮的字段    (关于页面)about
+    support_website_text: "ManageIQ.org"                 #这个是登录后右上角 问号按钮的字段    (关于页面)about
 
 # 修改后
 zh-CN:
@@ -196,12 +196,10 @@ $nav-pf-vertical-secondary-active-bg-color: #696fff;  //垂直导航栏第二列
 $nav-pf-vertical-secondary-active-color: #ffe015;     //垂直导航栏第二列鼠标选择按钮时 字体的颜色
 $nav-pf-vertical-secondary-indicator-color: #ff03e8;  //垂直导航栏箭头颜色
 
-
 $nav-pf-vertical-tertiary-bg-color: #696fff;          //垂直导航栏第三列的背景色
 $nav-pf-vertical-tertiary-color: #b82433;             //垂直导航栏第三列标题字颜色
 $nav-pf-vertical-tertiary-item-color: #db0921;        //垂直导航栏第三列字体的颜色
 $nav-pf-vertical-tertiary-active-bg-color: #fef9ff;   //垂直导航栏第三列鼠标选择时的背景色
 $nav-pf-vertical-tertiary-active-color: #000000;      //垂直导航栏第三列鼠标选择时的 字体颜色
-
 
 ```
