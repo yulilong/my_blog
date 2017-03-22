@@ -27,8 +27,9 @@ https://github.com/ManageIQ/manageiq/blob/euwe-1/app/controllers/dashboard_contr
 = WidgetPresenter.new(self, controller, widget).render_partial   
 ```    
 
-4. app/presenters/widget_presenter.rb 对 render_partial 方法进行处理    
+4 . app/presenters/widget_presenter.rb 对 render_partial 方法进行处理    
 https://github.com/ManageIQ/manageiq/blob/euwe-1/app/presenters/widget_presenter.rb#L19      
+
 ```
 def render_partial
     @controller.render_to_string(:template => 'dashboard/_widget', :handler => [:haml], 
@@ -38,8 +39,9 @@ end
 # 这里是调用app/views/dashboard/_widget.html.haml 
 ```        
 
-5. app/views/dashboard/_widget.html.haml       
+5 . app/views/dashboard/_widget.html.haml       
 https://github.com/ManageIQ/manageiq/blob/euwe-1/app/views/dashboard/_widget.html.haml#L8   
+
 ```
 = h(presenter.widget.title) # 这一行就是 dashboard里面的每个插件的标题，也就是需要汉化的标题
 ```
