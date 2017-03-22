@@ -38,4 +38,45 @@ http://www.sdifenzhou.com/rubymine201612.html
 
 5. 用文本文档打开 右键rubymine程序 -> 显示包内容(Show Package Contents) -> 点击Contets -> 找到bin -> rubymine.vmoptions  添加 `-javaagent:JetbrainsCrack.jar`到行尾。    
 
-6. 回到crack文件夹，这次点开SH.txt，复制里面内容，运行rubymine， 进入激活界面，然后三种激活方式，选择第一个”Activate Code”，在下面的框框里粘贴进刚刚复制的东西， 点击ok！成功激活！ 如果不能点ok，则第四，第五步从新操作，或者rubymine应用换个文件夹试试。
+6. 回到crack文件夹，这次点开SH.txt，复制里面内容，运行rubymine， 进入激活界面，然后三种激活方式，选择第一个”Activate Code”，在下面的框框里粘贴进刚刚复制的东西， 点击ok！成功激活！ 如果不能点ok，则第四，第五步从新操作，或者rubymine应用换个文件夹试试。         
+
+* **Mac install pgadmin3**    
+```
+#终端，已经安装了brew ，cask
+~ brew search pgadmin3
+Caskroom/versions/pgadmin3
+~ brew install Caskroom/versions/pgadmin3
+```
+![WX20170308-104055.png](https://bitbucket.org/repo/oE6yEX/images/3516961668-WX20170308-104055.png)     
+
+
+* 修改数据库配置文件，允许连接
+```
+~ vi /usr/local/var/postgres/pg_hba.conf
+```
+找到下面的内容：
+```
+# IPv4 local connections:
+host    all             all             127.0.0.1/32            ident
+# IPv6 local connections:
+host    all             all             ::1/128                 ident
+```
+**把ident修改为 trust** 
+
+并在下面添加一行：
+```
+host	all 		all 		192.168.0.0/24 		trust
+```
+
+保存后重起数据库：
+```
+# 没试过，
+~ pg_ctl start -D /usr/local/var/postgres/data -l /usr/local/var/log/postgres/log.log
+# 停止的话把后面的start换成stop即可。 如果不想每次都指定数据目录，可以创建保存该地址的环境变量PGDATA
+# export PGDATA=/usr/local/var/postgres/data
+```
+* 查看数据库的运行：
+```
+# 亲测有效
+$ lsof -i:5432
+```
