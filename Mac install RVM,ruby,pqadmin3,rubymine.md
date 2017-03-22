@@ -26,7 +26,7 @@ $ rvm -v
 http://blog.csdn.net/arabela35/article/details/53318640       
 http://www.sdifenzhou.com/rubymine201612.html      
 
-1 下载 download      
+1. 下载 download      
 链接: https://pan.baidu.com/s/1hr8NpZY    
 密码: ey5a     
 
@@ -34,6 +34,8 @@ http://www.sdifenzhou.com/rubymine201612.html
 
 3. 打开crack，复制jetbrainsCrack.jar      
 
-4. 打开应用程序，右键rubymine程序 -> 显示包内容(Show Package Contents) -> 点击Contets -> 找到bin -> 点开，把刚刚复制的jetbrainsCrack.jar粘贴进去      
+4. 打开应用程序，右键rubymine程序 -> 显示包内容(Show Package Contents) -> 点击Contets -> 找到bin -> 点开，把刚刚复制的jetbrainsCrack.jar粘贴进去，如果打不开，则把rubymine.app复制到别的文件夹里面操作这一步。      
 
-5. 用文本文档打开 右键rubymine程序 -> 显示包内容(Show Package Contents) -> 点击Contets -> 找到bin -> rubymine.vmoptions  添加 `-javaagent:JetbrainsCrack.jar`到行尾。
+5. 用文本文档打开 右键rubymine程序 -> 显示包内容(Show Package Contents) -> 点击Contets -> 找到bin -> rubymine.vmoptions  添加 `-javaagent:JetbrainsCrack.jar`到行尾。    
+
+6. 回到crack文件夹，这次点开SH.txt，复制里面内容，运行rubymine， 进入激活界面，然后三种激活方式，选择第一个”Activate Code”，在下面的框框里粘贴进刚刚复制的东西， 点击ok！成功激活！ 如果不能点ok，则第四，第五步从新操作，或者rubymine应用换个文件夹试试。
