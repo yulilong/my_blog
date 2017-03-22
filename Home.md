@@ -1,6 +1,6 @@
 ##**Mac OS **  
 
-* [Mac 开发环境安装](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85)
+* [**Mac install RVM,ruby,pqadmin3,rubymine**](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20install%20RVM,ruby,pqadmin3,rubymine)     
 
 * [Mac 系统快捷键](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20%E7%B3%BB%E7%BB%9F%E5%BF%AB%E6%8D%B7%E9%94%AE)    
 
