@@ -80,17 +80,6 @@ $ sudo yum install pgadmin3
 ```     
 ![WX20170308-105307.png](https://bitbucket.org/repo/oE6yEX/images/3537175084-WX20170308-105307.png)
 
-
-* **Mac install pgadmin3**    
-```
-#终端，已经安装了brew ，cask
-~ brew search pgadmin3
-Caskroom/versions/pgadmin3
-~ brew install Caskroom/versions/pgadmin3
-```
-![WX20170308-104055.png](https://bitbucket.org/repo/oE6yEX/images/3516961668-WX20170308-104055.png)     
-
-
 * 修改数据库配置文件，允许连接
 ```
 $ sudo vi /var/opt/rh/rh-postgresql94/lib/pgsql/data/pg_hba.conf
