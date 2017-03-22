@@ -1,4 +1,4 @@
-* **install RVM**   
+## **install RVM**   
  
 1.未装homebrew先装homebrew，否则报错：     
 ```
@@ -18,4 +18,10 @@ $ source ~/.rvm/scripts/rvm
 # 检查一下是否安装正确命令
 $ rvm -v
 # 如果出现邦本则说明安装成功
-```
+```    
+
+## 2. 安装 rubymine ruby编辑器      
+
+1 下载 download      
+链接: https://pan.baidu.com/s/1hr8NpZY    
+密码: ey5a
