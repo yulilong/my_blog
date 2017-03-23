@@ -2,7 +2,7 @@
 https://github.com/ManageIQ/manageiq/tree/euwe-1       
 -----    
 
-* **I18自动转化成网页当前语言的包**
+* **I18自动转化成网页当前语言的包**         
 rails I18n 资料： http://guides.ruby-china.org/i18n.html        
 
 * **汉化的文件**     
