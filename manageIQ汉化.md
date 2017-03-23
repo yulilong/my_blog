@@ -3,7 +3,9 @@ https://github.com/ManageIQ/manageiq/tree/euwe-1
 -----    
 
 * **I18自动转化成网页当前语言的包**         
-rails I18n 资料： http://guides.ruby-china.org/i18n.html        
+rails I18n 资料： http://guides.ruby-china.org/i18n.html    
+https://rubygems.org/gems/rails-i18n       
+Gemfile 里面：`gem "rails-i18n", "~>5.x"`         
 
 * **汉化的文件**     
 
