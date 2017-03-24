@@ -49,4 +49,10 @@ https://github.com/ManageIQ/manageiq/blob/euwe-1/app/views/dashboard/_widget.htm
 
 ```
 = h(presenter.widget.title) # 这一行就是 dashboard里面的每个插件的标题，也就是需要汉化的标题
-```
+```    
+
+* 展示板里面的插件数据库位置     
+
+数据库名： `vmdb_development`       
+表名： `miq_widgets`      
+字段： `title`
