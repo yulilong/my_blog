@@ -24,7 +24,7 @@ http://localhost:3000/dashboard/show
 https://github.com/ManageIQ/manageiq/blob/euwe-1/app/controllers/dashboard_controller.rb#L88      
 这里面对数据进行处理后，view调用默认的show页面对数据进行渲染。      
 
-3. app/views/dashboard/show.html.haml 网页渲染。     
+1. app/views/dashboard/show.html.haml 网页渲染。     
 
 ```
 # https://github.com/ManageIQ/manageiq/blob/euwe-1/app/views/dashboard/show.html.haml#L8 
@@ -32,7 +32,7 @@ https://github.com/ManageIQ/manageiq/blob/euwe-1/app/controllers/dashboard_contr
 = WidgetPresenter.new(self, controller, widget).render_partial   
 ```    
 
-4. app/presenters/widget_presenter.rb 对 render_partial 方法进行处理    
+1. app/presenters/widget_presenter.rb 对 render_partial 方法进行处理    
 https://github.com/ManageIQ/manageiq/blob/euwe-1/app/presenters/widget_presenter.rb#L19      
 
 ```
@@ -49,7 +49,4 @@ https://github.com/ManageIQ/manageiq/blob/euwe-1/app/views/dashboard/_widget.htm
 
 ```
 = h(presenter.widget.title) # 这一行就是 dashboard里面的每个插件的标题，也就是需要汉化的标题
-```     
-
-- [ ] home
-  - [x] manageiq汉化
+```
