@@ -87,4 +87,31 @@ def format_timezone(time, timezone = Time.zone.name, ftype = "view")
 "EVM: Recently Discovered Hosts"
 "EVM: Recently Discovered VMs"
 "Tenant Quotas"
+```     
+
+* http://localhost:3000/dashboard/show   页面左上角 "Default Dashboard" 出处   
+
+```
+
+# https://github.com/ManageIQ/manageiq/blob/euwe-1/app/views/layouts/_tabs.html.haml#L7  
+= h(tab[1])
+# 这里列出了"Default Dashboard"字段   
+
+# https://github.com/ManageIQ/manageiq/blob/euwe-1/app/views/layouts/_content.html.haml#L122
+= render :partial => 'layouts/tabs'
+# 这里是调用tab字段
+
+# https://github.com/ManageIQ/manageiq/blob/euwe-1/app/views/layouts/application.html.haml#L52 
+= render :partial => "layouts/content"
+# 这里是调用 content
+
+# views/layouts/_tabs.html.haml 中变量 @tabs 的定义处：
+# https://github.com/ManageIQ/manageiq/blob/euwe-1/app/controllers/dashboard_controller.rb#L96
+def show
+    @layout    = "dashboard"
+    @dashboard = true
+    @display = "dashboard"
+    @lastaction = "show"
+    @tabs = []
+# 应该在这里把 "Default Dashboard" 汉化了
 ```
