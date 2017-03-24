@@ -66,7 +66,7 @@ msgstr "下次更新"
 # 这里是把时间转换为中国区的， format_timezone 所在文件：lib/vmdb/global_methods.rb#L36
 # https://github.com/ManageIQ/manageiq/blob/euwe-1/lib/vmdb/global_methods.rb#L36
 def format_timezone(time, timezone = Time.zone.name, ftype = "view")
-  new_time = I18n.l(new_time.to_date) + new_time.strftime(" %H:%M:%S %Z")
+  new_time = I18n.l(new_time.to_date) + new_time.strftime(" %H:%M:%S %Z") # 这里就是时间格式转换的代码
 # 这里进行了中国区的时间转换
 
 ```    
