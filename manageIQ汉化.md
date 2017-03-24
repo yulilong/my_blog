@@ -45,10 +45,30 @@ end
 ```        
 
 *  app/views/dashboard/_widget.html.haml       
-https://github.com/ManageIQ/manageiq/blob/euwe-1/app/views/dashboard/_widget.html.haml#L8   
 
 ```
-= h(presenter.widget.title) # 这一行就是 dashboard里面的每个插件的标题，也就是需要汉化的标题
+# https://github.com/ManageIQ/manageiq/blob/euwe-1/app/views/dashboard/_widget.html.haml#L8   
+= h(presenter.widget.title) # 这一行就是 dashboard里面的每个插件的标题，也就是需要汉化的标题    
+
+# https://github.com/ManageIQ/manageiq/blob/euwe-1/app/views/dashboard/_widget.html.haml#L35 
+= render :partial => 'widget_footer', :locals => {:widget => presenter.widget}
+# 这里是每个小插件下面的时间显示设置，指向文件位置： app/views/dashboard/_widget_footer.html.haml   
+
+# https://github.com/ManageIQ/manageiq/blob/euwe-1/app/views/dashboard/_widget_footer.html.haml#L10
+= _('Never')
+# 这行会根据地区自动来转换翻译
+# https://github.com/ManageIQ/manageiq/blob/euwe-1/locale/zh_CN/manageiq.po
+msgid "Next"
+msgstr "下次更新"
+
+# https://github.com/ManageIQ/manageiq/blob/euwe-1/app/views/dashboard/_widget_footer.html.haml#L15
+= format_timezone(next_run_on, session[:user_tz], "widget_footer")
+# 这里是把时间转换为中国区的， format_timezone 所在文件：lib/vmdb/global_methods.rb#L36
+# https://github.com/ManageIQ/manageiq/blob/euwe-1/lib/vmdb/global_methods.rb#L36
+def format_timezone(time, timezone = Time.zone.name, ftype = "view")
+  new_time = I18n.l(new_time.to_date) + new_time.strftime(" %H:%M:%S %Z")
+# 这里进行了中国区的时间转换
+
 ```    
 
 * 展示板里面的插件数据库位置     
