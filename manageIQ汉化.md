@@ -55,4 +55,16 @@ https://github.com/ManageIQ/manageiq/blob/euwe-1/app/views/dashboard/_widget.htm
 
 数据库名： `vmdb_development`       
 表名： `miq_widgets`      
-字段： `title`
+字段： `title`    
+```
+"Guest OS Information"
+"Hosts - Summary by Version"
+"Vendor and Guest OS Chart"
+"Virtual Infrastructure Platforms"
+"Top CPU Consumers (weekly)"
+"Top Memory Consumers (weekly)"
+"Top Storage Consumers"
+"EVM: Recently Discovered Hosts"
+"EVM: Recently Discovered VMs"
+"Tenant Quotas"
+```
