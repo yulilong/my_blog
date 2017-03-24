@@ -14,7 +14,24 @@ p method
 p method.source_location
 #<Method: ManageIQ::Providers::Aliyun::CloudManager::Vm(ActiveRecord::Base)#_run_validate_callbacks>
 # ["/home/yulilong/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb", 749
+```    
+
+* **检查一个变量是否已经定义**    
+可以用defined?，如果未定义会返回字符串"nil"，否则返回该变量的定义类型。如下面的例子:    
 ```
+irb(main):007:0> a = 1
+=> 1
+irb(main):008:0> defined? a
+=> "local-variable"
+irb(main):009:0> defined? b
+=> nil
+irb(main):010:0> defined? nil
+=> "nil"
+irb(main):011:0> defined? String
+=> "constant"
+irb(main):012:0> defined? 1
+=> "expression"
+```   
 
 * **p caller 可以查看是谁调用了你**
 
