@@ -1,6 +1,10 @@
 ###  [**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
 -----------------------------------------------------------------------------------------
 
+## 擦考链接    
+
+* [**理解Ruby中的作用域**](http://www.cnblogs.com/xrlin/p/5914712.html)     
+
 # 知识点 #  
 
 [ruby中include和extend以及模块中ClassMethods](https://bitbucket.org/yulilong/my_wiki/wiki/ruby%E4%B8%ADinclude%E5%92%8Cextend%E4%BB%A5%E5%8F%8A%E6%A8%A1%E5%9D%97%E4%B8%ADClassMethods%20)
