@@ -2,7 +2,7 @@
 
 * [**Mac install RVM,ruby,pqadmin3,rubymine**](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20install%20RVM,ruby,pqadmin3,rubymine)     
 
-* [Mac 系统快捷键](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20%E7%B3%BB%E7%BB%9F%E5%BF%AB%E6%8D%B7%E9%94%AE)    
+* [**Mac 操作快捷键**](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20%E6%93%8D%E4%BD%9C%E5%BF%AB%E6%8D%B7%E9%94%AE)    
 
 * [Mac 系统 操作习惯设置](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20%E7%B3%BB%E7%BB%9F%20%E6%93%8D%E4%BD%9C%E4%B9%A0%E6%83%AF%E8%AE%BE%E7%BD%AE)   
 
