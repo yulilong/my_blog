@@ -1,7 +1,7 @@
 ###  [**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
 -----------------------------------------------------------------------------------------
 
-## 擦考链接    
+## 参考链接    
 
 * [**理解Ruby中的作用域**](http://www.cnblogs.com/xrlin/p/5914712.html)      
 * [**Ruby 中的类与对象**](https://ruby-china.org/topics/32637)     
