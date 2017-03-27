@@ -5,7 +5,7 @@
 
 * [**理解Ruby中的作用域**](http://www.cnblogs.com/xrlin/p/5914712.html)     
 
-# 知识点 #  
+## 知识点  
 
 [ruby中include和extend以及模块中ClassMethods](https://bitbucket.org/yulilong/my_wiki/wiki/ruby%E4%B8%ADinclude%E5%92%8Cextend%E4%BB%A5%E5%8F%8A%E6%A8%A1%E5%9D%97%E4%B8%ADClassMethods%20)
 
@@ -53,6 +53,20 @@ end
 Array.hint
 这段代码是添加类方法，只能类去调用这个方法
 ```
+* **对象中存在实例变量 (instance variables) ，可以通过方法 instance_variables 进行查看当前对象中的 实例变量**    
+```
+class MyClass
+  def my_method
+    @v = 1
+  end
+end
+obj = MyClass.new
+obj.class   # => MyClass
+obj.instance_variables  # => []
+obj.my_method
+obj.instance_variables  # => [:@v]
+```
+
 * **类方法的定义：**
 
 ```
