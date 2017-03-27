@@ -4,7 +4,7 @@
 4. 在Irb里用load比用require 好，load允许我们多次加载同一个文件，这样如果我们发现一个BUG后编辑文件，可以将它重新加载到Irb的会话中。    
 
 
-总结：
+总结：      
 1. require, load,include都是Kernel模块中的方法，他们的区别如下：     
 2. require，load用于包含文件，include则用于包含的模块。     
 3. require加载一次，load可加载多次。       
