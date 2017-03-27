@@ -37,9 +37,9 @@ Command + Q
 
 * **浏览器快捷键**   
 cmd+1（2、3...）分别是打开书签栏的第一个、第二个...网址     
-Option + Command + 箭头 → ←  切换网页
-shift + command +T : 从新打开关闭的标签     
-刷新网页： cmd + R         
+切换网页 ：Option + Command + 箭头 → ←       
+从新打开关闭的标签： shift + command +T       
+刷新网页：         cmd + R         
 
 * **隐藏 ／显示Dock**   
 option + command + D       
