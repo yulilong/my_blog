@@ -19,6 +19,7 @@ http://www.cnblogs.com/mover/p/3686176.html
 
 load例子：    
 ```
+#!ruby
 4.times do |i|   
         File.open("temp.rb","w") do |f|   
             f.puts "def test"  
@@ -57,6 +58,7 @@ def self.included(c) ... end 中
 
 完整的示例如下：     
 ```
+#!ruby
 module Ma   
   MA_VALUE = 1  
   def ma_1   
