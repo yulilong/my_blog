@@ -29,8 +29,6 @@ http://xialeizhou.com/2019/06/23/%E9%AB%98%E6%95%88macbook%E5%B7%A5%E4%BD%9C%E7%
 
 * [manageIQ开发环境安装(Mac苹果系统)](https://bitbucket.org/yulilong/my_wiki/wiki/manageIQ%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85(Mac%E8%8B%B9%E6%9E%9C%E7%B3%BB%E7%BB%9F))   
 
-* [mac系统安装manageIQ环境](https://bitbucket.org/yulilong/my_wiki/wiki/mac%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85manageIQ%E7%8E%AF%E5%A2%83)         文档还在编写中
-
 * [新建提供者](https://bitbucket.org/yulilong/my_wiki/wiki/%E6%96%B0%E5%BB%BA%E6%8F%90%E4%BE%9B%E8%80%85)   
 
 * [添加新的Providers代码开发](https://bitbucket.org/yulilong/my_wiki/wiki/%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%9A%84Providers%E4%BB%A3%E7%A0%81%E5%BC%80%E5%8F%91)      
