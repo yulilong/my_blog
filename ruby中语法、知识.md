@@ -8,7 +8,11 @@
 
 ## 知识点  
 
-* [**ruby中include和extend以及模块中ClassMethods**](https://bitbucket.org/yulilong/my_wiki/wiki/ruby%E4%B8%ADinclude%E5%92%8Cextend%E4%BB%A5%E5%8F%8A%E6%A8%A1%E5%9D%97%E4%B8%ADClassMethods%20)
+* [**ruby中include和extend以及模块中ClassMethods**](https://bitbucket.org/yulilong/my_wiki/wiki/ruby%E4%B8%ADinclude%E5%92%8Cextend%E4%BB%A5%E5%8F%8A%E6%A8%A1%E5%9D%97%E4%B8%ADClassMethods%20)      
+
+* [**Ruby require,load,include,extend的显著区别**](https://bitbucket.org/yulilong/my_wiki/wiki/Ruby%20require,load,include,extend%E7%9A%84%E6%98%BE%E8%91%97%E5%8C%BA%E5%88%AB)       
+
+-------
 
 * **method查看方法是哪个类定义的 methods查看对象有哪些方法**
 * **source_locationc查看方法定义处**
