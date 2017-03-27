@@ -38,6 +38,7 @@ end
 
 ## **include和extend**    
 
+http://blog.csdn.net/rocky_j2ee/article/details/3754781     
 include主要用来将一个模块插入（mix）到一个类或者其它模块。      
 extend 用来在一个对象（object，或者说是instance）中引入一个模块，这个类从而也具备了这个模块的方法。       
 通常引用模块有以下3种情况：       
