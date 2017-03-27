@@ -1,6 +1,6 @@
-## require，load用于包含文件；include，extend则用于包含模块。     
+## **require，load用于包含文件；include，extend则用于包含模块。**     
 
-## include,require,load的显著区别     
+## **include,require,load的显著区别**     
 
 http://www.cnblogs.com/mover/p/3686176.html     
 
@@ -36,7 +36,7 @@ end
 
 ```     
 
-## include和extend    
+## **include和extend**    
 
 include主要用来将一个模块插入（mix）到一个类或者其它模块。      
 extend 用来在一个对象（object，或者说是instance）中引入一个模块，这个类从而也具备了这个模块的方法。       
@@ -52,4 +52,49 @@ extend 用来在一个对象（object，或者说是instance）中引入一个�
 3.在类定义中引入模块，既希望引入实例方法，也希望引入类方法       
 这个时候需要使用 include,       
 但是在模块中对类方法的定义有不同，定义出现在 方法       
-def self.included(c) ... end 中
+def self.included(c) ... end 中       
+
+完整的示例如下：     
+```
+module Ma   
+  MA_VALUE = 1  
+  def ma_1   
+    puts "it is ma_1"  
+  end   
+end   
+  
+module Mb   
+  MB_VALUE = 1  
+  def self.included(c)   
+    def c.mb_2   
+      puts "it is mb_2"  
+    end   
+  end   
+  def mb_1   
+    puts "it is mb_1"  
+  end   
+end   
+  
+class Ca   
+  include Ma      
+end   
+     
+class Cb   
+  extend Ma   
+  include Mb   
+end   
+  
+c1 = Ca.new  
+c1.ma_1   
+  
+c2 = Cb.new  
+c2.mb_1   
+Cb.ma_1   
+Cb.mb_2   
+  
+puts Ma::MA_VALUE   
+puts Ca::MA_VALUE   
+  
+puts Mb::MB_VALUE   
+puts Cb::MB_VALUE  
+```
