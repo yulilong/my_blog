@@ -52,7 +52,28 @@ require 'bar'
 ```    
 时会在ruby安装的lib目录和/home/oldsong/目录下查找bar.rb。而不会去rb文件的目录/usr/local/ruby/下查找。    
 1、引用一个文件     
-
+引用当前rb同目录下的file_to_require.rb    
+```
+require File.join(__FILE_, '../file_to_require')。
+require File.expand_path('../file_to_require', __FILE__)
+require File.dirname(__FILE__) + '/file_to_require'
+```   
+其中，File.expand_path是Rails常用的做法。
+__FILE__为常量，表示当前文件的绝对路径，如/home/oldsong/test.rb      
+还可以：    
+```
+$LOAD_PATH.unshift(File.dirname(__FILE__))  # 先把目录加入LOAD_PATH变量中，然后可直接引用文件名
+require 'bar'
+```    
+2、引用一个目录下所有文件     
+例：引用当前rb相同目录下lib/文件下所有*.rb文件。     
+```
+# 方法一
+Dir[File.dirname(__FILE__) + '/lib/*.rb'].each {|file| require file }     
+# 方法二
+# 一个gem
+# https://rubygems.org/gems/require_all
+```
 
 ## **include和extend**    
 
