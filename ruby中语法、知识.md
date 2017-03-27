@@ -3,7 +3,8 @@
 
 ## 擦考链接    
 
-* [**理解Ruby中的作用域**](http://www.cnblogs.com/xrlin/p/5914712.html)     
+* [**理解Ruby中的作用域**](http://www.cnblogs.com/xrlin/p/5914712.html)      
+* [**Ruby 中的类与对象**](https://ruby-china.org/topics/32637)     
 
 ## 知识点  
 
@@ -65,6 +66,14 @@ obj.class   # => MyClass
 obj.instance_variables  # => []
 obj.my_method
 obj.instance_variables  # => [:@v]
+```     
+
+* **.class的使用**   
+因为类也是一种对象，因此所有对象的特性也是类具有的特性。比如，(Class) 有自己的类，这个类就是——Class，举个例子，假如一个字符串可以通过 str#class 获得它的类 String ，那么 String 作为一个对象也可以通过 String#class 获知它自己的类。比如下面的代码:  
+```
+"hello".class   # => String
+String.class    # => Class
+Class.class     # => Class
 ```
 
 * **类方法的定义：**
