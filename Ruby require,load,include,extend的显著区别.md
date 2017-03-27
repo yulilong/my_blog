@@ -37,6 +37,23 @@ end
 
 ```     
 
+## 引用单个和目录下所有rb的方法    
+
+http://blog.csdn.net/xuleilx/article/details/21830395      
+`除引用系统rb外，require中不能用相对路径。`       
+同一目录下的文件，如/usr/local/ruby/foo.rb与/usr/local/ruby/bar.rb两个文件。      
+如果直接在foo.rb中：  
+```
+require 'bar'
+```     
+执行时会报找不到bar.rb错误。这是因为运行:      
+```
+/home/oldsong~ ruby /usr/local/ruby/foo.rb
+```    
+时会在ruby安装的lib目录和/home/oldsong/目录下查找bar.rb。而不会去rb文件的目录/usr/local/ruby/下查找。    
+1、引用一个文件     
+
+
 ## **include和extend**    
 
 http://blog.csdn.net/rocky_j2ee/article/details/3754781     
