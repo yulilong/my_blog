@@ -6,6 +6,7 @@
 ```
 git reset file_name
 ```  
+----------------
 # git tag — 标签相关操作   
 
 http://blog.csdn.net/wangjia55/article/details/8793577  
@@ -46,7 +47,7 @@ $ git push origin --tags # 将本地所有标签一次性提交到git服务器
 1.git tag   查看当前分支下的标签     
 2.git  checkout v0.21   此时会指向打v0.21标签时的代码状态，（但现在处于一个空的分支上）      
 3. cat  test.txt   查看某个文件        
-
+--------------
 # 拉取特定分支的代码 #
 
 ```
@@ -60,6 +61,7 @@ git remote update
 git fetch
 git checkout -b local-name origin/remote-name  #拉取远程分支到本地
 ```  
+-----------
 * 分支管理  
 ```
 $ git branch testing # 创建本地分支 
@@ -75,12 +77,14 @@ $ git br -m 旧名字 新名字
 # 如果想重命名远程分支，那么先重命名本地分支，然后上传，最后删除就分知名
 
 ```    
+-----------
 * git 回滚到某个commit     
 ```
 # 记住最新的commit，然后在用此命令回滚到最新
 $ git reset --hard resetVersionHash //将当前branch的HEAD指针指向commit hash
 
-```     
+```   
+-------  
 * git 查看改动  
 ```
 # 当修改文件但是没有提交时：
@@ -90,7 +94,7 @@ $ git diff 文件名  #查看这个文件的改动
 # 查看某个commit做了哪些改动
 $ git show 046bd7b5c1d134b8123f
 ```    
-
+-----------
 * **git恢复删除的文件**  
 ```
 # 要查看删除的文件： 
@@ -111,7 +115,7 @@ $ git ls-files -m | xargs git checkout --
 ```
 $ git log -p files
 ```     
-
+--------
 * **git放弃修改**   
 在git命令还没有 commit的时候，可以使用命令放弃文件的修改：   
 ```
@@ -120,9 +124,10 @@ $ git log -p files
 # 放弃修改某个文件
 ~ git checkout filename
 ```     
-
+----------
 * **"git rm" 和 "rm" 的区别**    
- 
+
+http://blog.csdn.net/jfkidear/article/details/12152167
 这是一个比较肤浅的问题，但对于 Git 初学者来说，还是有必要提一下的。     
 用 `git rm`来删除文件，同时还会将这个删除操作记录下来；     
 用`rm`来删除文件，仅仅是删除了物理文件，没有将其从 git 的记录中剔除。     
