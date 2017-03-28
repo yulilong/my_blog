@@ -110,4 +110,13 @@ $ git ls-files -m | xargs git checkout --
 * **查看某个文件的详细修改记录：**    
 ```
 $ git log -p files
+```     
+
+* **git放弃修改**   
+在git命令还没有 commit的时候，可以使用命令放弃文件的修改：   
+```
+# 放弃所有修改
+~ git checkout .
+# 放弃修改某个文件
+~ git checkout filename
 ```
