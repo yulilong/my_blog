@@ -140,11 +140,11 @@ $ git log -p files
 是的，此时用`git rm`逐个地再删除一次就显得相当蛋疼了。     
 所幸还有更方便的处理方案，用如下的方式做提交就没有问题了：`git commit -am "abc"`      
 
-总结一下：
+总结一下：     
 
-在被 git 管理的目录中删除文件时，可以选择如下两种方式来记录删除动作：
-一、rm + git commit -am "abc"
-二、git rm + git commit -m "abc"
-另外，git add . 仅能记录添加、改动的动作，删除的动作需靠 git rm 来完成。
-最后，rm 删除的文件是处于 not staged 状态的，
+在被 git 管理的目录中删除文件时，可以选择如下两种方式来记录删除动作：        
+一、`rm + git commit -am "abc" `     
+二、`git rm + git commit -m "abc"`      
+另外，`git add .` 仅能记录添加、改动的动作，删除的动作需靠`git rm`来完成。      
+最后，`rm`删除的文件是处于`not staged`状态的，      
 也就是一种介于 “未改动” 和 “已提交过” 之间的状态。
