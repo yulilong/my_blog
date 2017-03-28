@@ -112,6 +112,61 @@ def show
     @dashboard = true
     @display = "dashboard"
     @lastaction = "show"
-    @tabs = []
-# 应该在这里把 "Default Dashboard" 汉化了
+    @tabs = []  # 这里把 "Default Dashboard" 汉化了,在这个方法后面用I18n来转化
+
+```      
+
+* **汉化代码**
+
+1、 dashboard页面的标题汉化     
+
+https://github.com/ManageIQ/manageiq/blob/euwe-1/app/views/dashboard/_widget.html.haml#L8       
+```
+@@ -5,7 +5,13 @@
+   .card-pf
+     .card-pf-heading
+       %h2.card-pf-title.sortable-handle{:style => "cursor:move"}
+-        = h(presenter.widget.title)
++        - if :"zh-CN" == I18n.locale
++          - begin
++            = I18n.t presenter.widget.title, raise: true
++          - rescue
++            = h(presenter.widget.title)
++        - else
++          = h(presenter.widget.title)
+         .dropdown.dropdown-kebab-pf.pull-right
+```      
+https://github.com/ManageIQ/manageiq/blob/euwe-1/locale/zh_CN.yml#L7       
+```
++
++  "Vendor and Guest OS Chart": "供应商和客户操作系统图"
++  "Guest OS Information": "客户操作系统信息"
++  "Hosts - Summary by Version": "主机 - 摘要 与 版本"
++  "Virtual Infrastructure Platforms": "虚拟基础设施平台"
++  "Top CPU Consumers (weekly)": "最高CPU使用者(每周)"
++  "Top Memory Consumers (weekly)": "最高内存使用者(每周)"
++  "Top Storage Consumers": "最高存储使用者"
++  "EVM: Recently Discovered Hosts": "引擎：最近发现的主机"
++  "EVM: Recently Discovered VMs": "引擎: 最近发现的虚拟机"
++  "Tenant Quotas": "租户配额"
++  "Default Dashboard": "默认展示板"
+```      
+2、dashboard页面 中左上角 "Default Dashboard" 的汉化     
+https://github.com/ManageIQ/manageiq/blob/euwe-1/app/controllers/dashboard_controller.rb#L204     
+```
+@@ -202,6 +202,16 @@ class DashboardController < ApplicationController
+       @widgets_menu[:allow_reset] = can_reset
+     end
+ 
++    if :"zh-CN" == I18n.locale
++      @tabs.each { |e|
++        begin
++          e[1] = I18n.t e[1], raise: true
++        rescue
++        end
++      }
++    end
++
++
+     # Make widget presenter forget chart data from previous HTTP request handled
 ```
