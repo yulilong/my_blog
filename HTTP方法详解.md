@@ -74,4 +74,6 @@
 * 请求：header与body。
 * 响应：body中包含整个请求消息。    
 
+----
+
 参考链接： http://www.tuicool.com/articles/3eaUJbu
