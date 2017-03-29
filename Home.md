@@ -59,21 +59,14 @@ http://xialeizhou.com/2019/06/23/%E9%AB%98%E6%95%88macbook%E5%B7%A5%E4%BD%9C%E7%
 -------------------------------------------------------------------------------------------------   
 ### **在线工具**
 
-* HTML 参考手册  
-http://www.w3school.com.cn/tags/  
-* HTML 在线效果测试  
-http://www.w3school.com.cn/tiy/t.asp?f=html_div_test      
-
-* 在线正则表达式测试     
-http://tool.oschina.net/regex/#      
-
+* HTML 参考手册: http://www.w3school.com.cn/tags/  
+* HTML 在线效果测试: http://www.w3school.com.cn/tiy/t.asp?f=html_div_test      
+* 在线正则表达式测试: http://tool.oschina.net/regex/#      
 * **在线调色板**   
 http://tool.chinaz.com/Tools/onlinecolor.aspx       
 * **在线颜色选择器 | RGB颜色查询对照表 **     
 http://www.atool.org/colorpicker.php       
-
-* **在线编辑软件流程图**
-http://asciiflow.com/        
+* **在线编辑软件流程图: **http://asciiflow.com/        
 
 -------------------------------------------------------------------------------------------------
 
