@@ -102,7 +102,7 @@ Rails Assets Pipeline: http://selfcontroller.iteye.com/blog/1786610
 Rails Asset Pipeline 资源管线（笔记）:  http://www.tuicool.com/articles/YvuANj    
 基于Jquery的开源网页用户界面代码库: http://www.jqueryui.org.cn/       
 jQuery UI API中文文档(适用jQuery UI 1.10):  http://www.css88.com/jquery-ui-api/       
-* [**HTTP方法详解**](https://bitbucket.org/yulilong/my_wiki/wiki/HTTP%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3)GET，HEAD，POST，PUT，DELETE     
+* [**HTTP方法详解**](https://bitbucket.org/yulilong/my_wiki/wiki/HTTP%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3)　　GET，HEAD，POST，PUT，DELETE     
 
 ###**rails -> route**
 * [rails中route官方教程](http://guides.ruby-china.org/routing.html)http://guides.ruby-china.org/routing.html
