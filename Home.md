@@ -97,7 +97,7 @@ https://github.com/riku/Markdown-Syntax-CN
 
 ###**rails -> view**
 * [haml语法 符号的含义](https://bitbucket.org/yulilong/my_wiki/wiki/haml%E8%AF%AD%E6%B3%95%20%E7%AC%A6%E5%8F%B7%E7%9A%84%E5%90%AB%E4%B9%89)      
-[ Haml 参考大全](http://blackanger.blog.51cto.com/140924/47642/)      
+* [**Haml 参考大全**](http://blackanger.blog.51cto.com/140924/47642/)      
 Rails Assets Pipeline: http://selfcontroller.iteye.com/blog/1786610     
 Rails Asset Pipeline 资源管线（笔记）:  http://www.tuicool.com/articles/YvuANj    
 基于Jquery的开源网页用户界面代码库: http://www.jqueryui.org.cn/       
