@@ -62,10 +62,8 @@ http://xialeizhou.com/2019/06/23/%E9%AB%98%E6%95%88macbook%E5%B7%A5%E4%BD%9C%E7%
 * HTML 参考手册: http://www.w3school.com.cn/tags/  
 * HTML 在线效果测试: http://www.w3school.com.cn/tiy/t.asp?f=html_div_test      
 * 在线正则表达式测试: http://tool.oschina.net/regex/#      
-* **在线调色板**   
-http://tool.chinaz.com/Tools/onlinecolor.aspx       
-* **在线颜色选择器 | RGB颜色查询对照表 **     
-http://www.atool.org/colorpicker.php       
+* **在线调色板: **http://tool.chinaz.com/Tools/onlinecolor.aspx       
+* **在线颜色选择器 | RGB颜色查询对照表: **http://www.atool.org/colorpicker.php       
 * **在线编辑软件流程图: **http://asciiflow.com/        
 
 -------------------------------------------------------------------------------------------------
@@ -99,19 +97,12 @@ https://github.com/riku/Markdown-Syntax-CN
 
 ###**rails -> view**
 * [haml语法 符号的含义](https://bitbucket.org/yulilong/my_wiki/wiki/haml%E8%AF%AD%E6%B3%95%20%E7%AC%A6%E5%8F%B7%E7%9A%84%E5%90%AB%E4%B9%89)      
-
 [ Haml 参考大全](http://blackanger.blog.51cto.com/140924/47642/)      
-
-Rails Assets Pipeline:   
-http://selfcontroller.iteye.com/blog/1786610     
-Rails Asset Pipeline 资源管线（笔记）:         
-http://www.tuicool.com/articles/YvuANj    
-
-基于Jquery的开源网页用户界面代码库:    
-http://www.jqueryui.org.cn/       
-jQuery UI API中文文档(适用jQuery UI 1.10)       
-http://www.css88.com/jquery-ui-api/       
-
+Rails Assets Pipeline: http://selfcontroller.iteye.com/blog/1786610     
+Rails Asset Pipeline 资源管线（笔记）:  http://www.tuicool.com/articles/YvuANj    
+基于Jquery的开源网页用户界面代码库: http://www.jqueryui.org.cn/       
+jQuery UI API中文文档(适用jQuery UI 1.10):  http://www.css88.com/jquery-ui-api/       
+* [**HTTP方法详解**](https://bitbucket.org/yulilong/my_wiki/wiki/HTTP%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3)GET，HEAD，POST，PUT，DELETE     
 
 ###**rails -> route**
 * [rails中route官方教程](http://guides.ruby-china.org/routing.html)http://guides.ruby-china.org/routing.html
