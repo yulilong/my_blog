@@ -12,7 +12,7 @@
 
 * [**Ruby require,load,include,extend的显著区别**](https://bitbucket.org/yulilong/my_wiki/wiki/Ruby%20require,load,include,extend%E7%9A%84%E6%98%BE%E8%91%97%E5%8C%BA%E5%88%AB)       
 
-* [**Ruby中的 Object、Class、Module之间关系**](https://bitbucket.org/yulilong/my_wiki/wiki/Ruby%E4%B8%AD%E7%9A%84Object%E3%80%81Class%E3%80%81Module%E4%B9%8B%E9%97%B4%E5%85%B3%E7%B3%BB)　　　class与Module的区别        
+* [**Ruby中的 Object、Class、Module之间关系**](https://bitbucket.org/yulilong/my_wiki/wiki/Ruby%E4%B8%AD%E7%9A%84Object%E3%80%81Class%E3%80%81Module%E4%B9%8B%E9%97%B4%E5%85%B3%E7%B3%BB)　　Class与Module的区别        
 
 -------
 
