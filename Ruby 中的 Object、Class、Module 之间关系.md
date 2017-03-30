@@ -22,5 +22,5 @@ superclass
 ruby中：    
 * 在Ruby中使用Class来标识所有的数据类型，所有的变量和常量都是Object的子类      
 * Kernel是Module，Object的实现中包含了Kernel      
-
+![WX20170330-164838.png](https://bitbucket.org/repo/oE6yEX/images/825673219-WX20170330-164838.png)
 https://www.zhihu.com/question/19922190/answer/13359458
