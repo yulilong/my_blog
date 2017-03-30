@@ -40,4 +40,5 @@ module的应用场景:
 作为工具模块，放通用方法，别的类里面直接include或者extend以后使用，也可以看成动态扩展业务类
 可以作为抽象类，module里面提供默认实现，业务类include或者extend以后覆盖
 作为接口来用，一个可用的接口库，module-interface
-```
+```     
+http://jingpin.jikexueyuan.com/article/58139.html
