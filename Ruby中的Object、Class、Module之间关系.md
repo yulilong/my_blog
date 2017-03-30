@@ -25,4 +25,19 @@ ruby中：
 * Kernel是Module，Object的实现中包含了Kernel      
 
 `![WX20170330-164838.png](https://bitbucket.org/repo/oE6yEX/images/825673219-WX20170330-164838.png)`       
-https://www.zhihu.com/question/19922190/answer/13359458
+https://www.zhihu.com/question/19922190/answer/13359458      
+
+## module 与Class 区别    
+
+一句话概括，就是： `class可以实例化, module不可以`, 别的都一样.    
+关于继承的一点区别:    
+class是使用`<`作为继承的关键字，只支持单继承.       
+module是使用`include`来做实例继承（实例化的时候动态功能插入），`extend`做类继承（可以理解为static继承）.     
+
+module的应用场景:    
+```
+作为namespace，里面放一般的const或者自己的class
+作为工具模块，放通用方法，别的类里面直接include或者extend以后使用，也可以看成动态扩展业务类
+可以作为抽象类，module里面提供默认实现，业务类include或者extend以后覆盖
+作为接口来用，一个可用的接口库，module-interface
+```
