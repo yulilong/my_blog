@@ -5,6 +5,7 @@
 
 * [**理解Ruby中的作用域**](http://www.cnblogs.com/xrlin/p/5914712.html)      
 * [**Ruby 中的类与对象**](https://ruby-china.org/topics/32637)     
+* [**Ruby学习之元编程**](http://jingpin.jikexueyuan.com/article/58180.html)　　Kernel#evel(), Object#instance_evel()、Module#class_evel()      
 
 ## 知识点  
 
