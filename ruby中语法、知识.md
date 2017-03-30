@@ -217,4 +217,20 @@ false.blank?  #=> true
 alias 别名  原名  #直接使用方法名
 alias :别名 :原名 #使用符号名
 除了为方法设置别名外，在重定义以存在的方法时，为了能用别名调用原来的方法，也需要用alias
-```
+```      
+
+----
+#### ruby中的布尔值     
+
+ruby中布尔值是一个特殊对象。它由两个类型组成TrueClass和FalseClass，可以在irb里试一下 true.class，这两个类型生成两个特殊的对象： true  和 false。
+
+所有ruby中的对象都可以转成布尔值，nil是false，其他全部是true，当然false还是false。
+在irb里试：puts "true" if nil，则不会打出 true，而是返回nil。
+
+ 0并不象想象中的那样是false，而是true.  可以在irb里试一下: puts "true" if 0 . 这会打印出true，说明0就是true，因为它是一个对象，ruby没有数字型的说法，而是一个对象。
+
+在使用的时候，如果掌握不了这种灵活的用法，那么就注意几点就行了：        
+1.使用同类型比较，返回的布尔值肯定是对的。比如： 0=="0" ，这是false。 0==0 就是true。       
+2.不要直接取对象的布尔值。比如： 0 是true, "0" 也是 true， 而 0!=0 是false，如果判断非0一定要直接写 obj != 0 ，不能象c那样写。即使是判断nil，也用 obj.nil?，这样代码比较清晰。        
+3.使用if ，弃用unless。如果你有时候会弄晕，那么为了保证安全，只用if ，即使是检查nil也不用unless。       
+特别是你在多种语言间转来转去的时候。
