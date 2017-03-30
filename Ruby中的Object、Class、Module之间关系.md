@@ -1,4 +1,4 @@
-从继承关系来说，是Class --> Module --> Object，即Object是继承树的顶层，紧接着是Module，然后是Class。  
+## 从继承关系来说，是Class --> Module --> Object，即Object是继承树的顶层，紧接着是Module，然后是Class。  
 
 irb的输出结果：     
 ```
