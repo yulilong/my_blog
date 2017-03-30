@@ -26,7 +26,7 @@ ruby中：
 
 `![WX20170330-164838.png](https://bitbucket.org/repo/oE6yEX/images/825673219-WX20170330-164838.png)`       
 https://www.zhihu.com/question/19922190/answer/13359458      
-
+------
 ## module 与Class 区别    
 
 一句话概括，就是： `class可以实例化, module不可以`, 别的都一样.    
