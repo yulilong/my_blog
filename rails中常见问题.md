@@ -42,4 +42,8 @@ end
 SELECT * FROM clients LIMIT 10
 SELECT addresses.* FROM addresses
   WHERE (addresses.client_id IN (1,2,3,4,5,6,7,8,9,10))
-```
+```     
+
+参考资料：   
+http://guides.rubyonrails.org/active_record_querying.html#eager-loading-associations     
+http://guides.ruby-china.org/active_record_querying.html#%E5%8F%8A%E6%97%A9%E5%8A%A0%E8%BD%BD%E5%85%B3%E8%81%94
