@@ -112,9 +112,7 @@ jQuery UI API中文文档(适用jQuery UI 1.10):  http://www.css88.com/jquery-ui
 
 要想查看程序完整的路由列表，可以在开发环境中使用浏览器打开 http://localhost:3000/rails/info/routes    
 也可以在终端执行 rake routes 任务查看，结果是一样的。
- 
 ### **GIT**   
-
 * [git安装,配置](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%AE%89%E8%A3%85,%E9%85%8D%E7%BD%AE)
 
 * [git常用命令](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4)    
