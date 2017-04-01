@@ -11,7 +11,7 @@ N+1问题是数据库访问中最常见的一个性能问题，首先介绍一�
 使用Left Join一次性取出所有数据：     
 `SELECT * FROM Customers LEFT JOIN Orders on Customers.id = Orders.customer_id`      
 这样虽然取出的数据相对多一些，但是只需要一次执行     
-
+-----
 * **Rails中的N+1问题:**      
 因为Rails使用ActiveRecord访问数据库。所以，它的N+1问题暴露的不是那么明显。     
 假设有如下代码，查找 10 条客户记录并打印这些客户的邮编：     
