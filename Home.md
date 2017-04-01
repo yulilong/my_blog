@@ -88,7 +88,7 @@ https://github.com/riku/Markdown-Syntax-CN
 * [ruby比较常用的gems包](https://bitbucket.org/yulilong/my_wiki/wiki/ruby%E6%AF%94%E8%BE%83%E5%B8%B8%E7%94%A8%E7%9A%84gems%E5%8C%85)
 * **深入透彻了解 Rails 应用部署：** http://ruby-china.org/wiki/deployment-rails       
 * **rails常量自动加载和重新加载机制：** http://guides.ruby-china.org/autoloading_and_reloading_constants.html       
-* **Rails缓存：** http://guides.ruby-china.org/caching_with_rails.html　　使用缓存提升 Rails 应用的速度     
+* **Rails缓存：** http://guides.ruby-china.org/caching_with_rails.html　　  使用缓存提升Rails应用的速度     
 
 ### **rake**
 * [Ruby中任务构建工具rake的入门学习教程](https://bitbucket.org/yulilong/my_wiki/wiki/Ruby%E4%B8%AD%E4%BB%BB%E5%8A%A1%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7rake%E7%9A%84%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B)          推荐读这个，简单易懂。
