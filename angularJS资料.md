@@ -3,4 +3,6 @@ https://angular.cn/
 https://angular.cn/docs/ts/latest/         
 这个里面包含： 快速起步 开发指南   API 参考 (v2.4.5)     
 
-https://github.com/getlantern/forum  蓝灯翻墙软件
+https://github.com/getlantern/forum  蓝灯翻墙软件     
+
+* **angularJS代码在线编辑网站：  **  https://embed.plnkr.co/?show=preview&show=app%2Fapp.component.ts
