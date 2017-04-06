@@ -1,6 +1,10 @@
 ## angularJS 
 
-* **编辑器： ** https://code.visualstudio.com/
+* **编辑器： ** 
+下载地址：    
+https://code.visualstudio.com     
+帮助文档：     
+https://code.visualstudio.com/docs     
 
 ##**Mac OS **  
 
