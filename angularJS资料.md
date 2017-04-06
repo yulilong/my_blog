@@ -5,4 +5,9 @@ https://angular.cn/docs/ts/latest/
 
 https://github.com/getlantern/forum  蓝灯翻墙软件     
 
-* **angularJS代码在线编辑网站：  **  https://embed.plnkr.co/?show=preview&show=app%2Fapp.component.ts
+* **angularJS代码在线编辑网站：  **  https://embed.plnkr.co/?show=preview&show=app%2Fapp.component.ts   
+
+
+------
+
+* **TypeScript官方文档：**  https://www.tslang.cn/docs/tutorial.html
