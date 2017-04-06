@@ -1,3 +1,7 @@
+## angularJS 
+
+* **编辑器： ** https://code.visualstudio.com/
+
 ##**Mac OS **  
 
 * [**Mac install RVM,ruby,pqadmin3,rubymine**](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20install%20RVM,ruby,pqadmin3,rubymine)     
