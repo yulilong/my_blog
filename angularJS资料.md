@@ -10,4 +10,6 @@ https://github.com/getlantern/forum  蓝灯翻墙软件
 
 ------
 
-* **TypeScript官方文档：**  https://www.tslang.cn/docs/tutorial.html
+* **TypeScript官方文档：**  https://www.tslang.cn/docs/tutorial.html      
+
+* **ECMAScript 6 入门**  http://es6.ruanyifeng.com/
