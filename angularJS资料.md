@@ -4,6 +4,7 @@
 * [**Mac下angular开发环境安装**](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%E4%B8%8Bangular%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85)      
 * [**javascript一些问题**](https://bitbucket.org/yulilong/my_wiki/wiki/javascript%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98)      
 立即执行函数       
+* [**JavaScript语法**](https://bitbucket.org/yulilong/my_wiki/wiki/JavaScript%E8%AF%AD%E6%B3%95)     
 
 * **CSS参考手册： **  http://css.doyoe.com/     
 * **RunJS在线编辑、展示、分享、交流JavaScript代码**http://runjs.cn/
