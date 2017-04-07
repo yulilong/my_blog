@@ -41,4 +41,6 @@ HTML Snippets : https://marketplace.visualstudio.com/items?itemName=abusaidm.htm
 JavaScript (ES6) code snippets : https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets    
 JavaScript snippets for Dynamics 365/CRM 2011/2013/2015/2016 : https://marketplace.visualstudio.com/items?itemName=JLattimer.dynamics-crm-js     
 JS-CSS-HTML Formatter : https://marketplace.visualstudio.com/items?itemName=lonefy.vscode-JS-CSS-HTML-formatter    
-JSFiddle Like Syntax Theme : https://marketplace.visualstudio.com/items?itemName=davidmart.theme-jsfiddle-like-syntax-vscode
+JSFiddle Like Syntax Theme : https://marketplace.visualstudio.com/items?itemName=davidmart.theme-jsfiddle-like-syntax-vscode       
+
+![WX20170407-140316.png](https://bitbucket.org/repo/oE6yEX/images/3552433634-WX20170407-140316.png)
