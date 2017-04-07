@@ -52,4 +52,15 @@ https://code.visualstudio.com/docs
 * **REPL在线编译器，可以在线将 ES6 代码转为 ES5 代码**       
  http://babeljs.io/          
 
-30分钟掌握ES6/ES2015核心内容 : http://www.jianshu.com/p/ebfeb687eb70
+30分钟掌握ES6/ES2015核心内容 : http://www.jianshu.com/p/ebfeb687eb70    
+
+------
+
+### JavaScript视频教程    
+
+* **JavaScript深入浅出**    
+http://www.imooc.com/learn/277       
+* **JavaScript基础教程 **     
+http://www.jikexueyuan.com/course/179.html    
+* **TypeScript入门**     
+http://www.imooc.com/learn/763
