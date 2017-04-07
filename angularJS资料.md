@@ -29,6 +29,7 @@ https://code.visualstudio.com/docs
 * **TypeScript官方文档：**  https://www.tslang.cn/docs/tutorial.html      
 
 * **ECMAScript 6 入门**  http://es6.ruanyifeng.com/      
-* **ES6在线编辑网站**  http://babeljs.io/          
+* **REPL在线编译器，可以在线将 ES6 代码转为 ES5 代码**       
+ http://babeljs.io/          
 
 30分钟掌握ES6/ES2015核心内容 : http://www.jianshu.com/p/ebfeb687eb70
