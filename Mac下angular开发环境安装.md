@@ -13,4 +13,10 @@
 
 下载地址： 
 https://code.visualstudio.com/  
-选择一个Mac版本的，下载后，解压，把程序拖到 应用程序目录中，
+选择一个Mac版本的，下载后，解压，把程序拖到 应用程序目录中.     
+
+一些angularJS开发需要安装的插件：  
+Atom One Dark Theme: https://marketplace.visualstudio.com/items?itemName=freebroccolo.theme-atom-one-dark    
+Auto Import : https://marketplace.visualstudio.com/items?itemName=steoates.autoimport      
+Autolinting for Javascript : https://marketplace.visualstudio.com/items?itemName=t-sauer.autolinting-for-javascript     
+background  : https://marketplace.visualstudio.com/items?itemName=shalldie.background
