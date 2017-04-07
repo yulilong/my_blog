@@ -16,6 +16,12 @@ https://code.visualstudio.com/
 选择一个Mac版本的，下载后，解压，把程序拖到 应用程序目录中.     
 
 一些angularJS开发需要安装的插件：  
+Add Angular2 Files : https://marketplace.visualstudio.com/items?itemName=sebastianbaar.vscode-add-angular2-files     
+Angular 2, 4 and upcoming latest TypeScript HTML Snippets : https://marketplace.visualstudio.com/items?itemName=UVBrain.Angular2     
+Angular ES6 snips : https://marketplace.visualstudio.com/items?itemName=kasperkeso.es6-angular-snips   
+Angular Files : https://marketplace.visualstudio.com/items?itemName=alexiv.vscode-angular2-files    
+Angular v4 TypeScript Snippets : https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2    
+angular2-useful-dev-extensions : https://marketplace.visualstudio.com/items?itemName=boastr.angular2-useful-dev-extensions    
 Atom One Dark Theme: https://marketplace.visualstudio.com/items?itemName=freebroccolo.theme-atom-one-dark    
 Auto Import : https://marketplace.visualstudio.com/items?itemName=steoates.autoimport      
 Autolinting for Javascript : https://marketplace.visualstudio.com/items?itemName=t-sauer.autolinting-for-javascript     
