@@ -25,12 +25,12 @@ JavaScript 网页的行为
 
 ### 手册网 http://www.shouce.ren/      
 * **参考手册速查 **   http://www.shouce.ren/api/index   
-* **JavaScript教程** http://www.shouce.ren/api/view/a/13858   
+* **廖雪峰 JavaScript教程** http://www.shouce.ren/api/view/a/13858      
+* **JavaScript 教程： **  http://www.shouce.ren/api/view/a/823      
 * **AngularJS教程、实例、参考手册**   http://www.shouce.ren/api/view/a/3079    
 * **CSS参考手册： **  http://www.shouce.ren/docs/css/    
 * **HTML 教程： ** http://www.shouce.ren/api/view/a/7     
 * **HTML快速参考手册：  **   http://www.shouce.ren/api/html/kuaisu/     
-* **JavaScript 教程： **  http://www.shouce.ren/api/view/a/823
 
 ------
 * **编辑器： **         
