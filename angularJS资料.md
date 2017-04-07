@@ -17,6 +17,10 @@ https://github.com/getlantern/forum  蓝灯翻墙软件
 * **AngularJS 教程 ： **  http://www.runoob.com/angularjs/angularjs-tutorial.html    
 * **AngularJS2 教程**http://www.runoob.com/angularjs2/angularjs2-tutorial.html    
 
+### 手册网 http://www.shouce.ren/
+* **JavaScript教程** http://www.shouce.ren/api/view/a/13858   
+* **AngularJS教程、实例、参考手册**   http://www.shouce.ren/api/view/a/3079    
+
 ------
 * **编辑器： **         
 下载地址：    
