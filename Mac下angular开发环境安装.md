@@ -19,4 +19,14 @@ https://code.visualstudio.com/
 Atom One Dark Theme: https://marketplace.visualstudio.com/items?itemName=freebroccolo.theme-atom-one-dark    
 Auto Import : https://marketplace.visualstudio.com/items?itemName=steoates.autoimport      
 Autolinting for Javascript : https://marketplace.visualstudio.com/items?itemName=t-sauer.autolinting-for-javascript     
-background  : https://marketplace.visualstudio.com/items?itemName=shalldie.background
+background  : https://marketplace.visualstudio.com/items?itemName=shalldie.background     
+Class autocomplete for HTML : https://marketplace.visualstudio.com/items?itemName=AESSoft.aessoft-class-autocomplete     
+CSS Auto Prefix : https://marketplace.visualstudio.com/items?itemName=sporiley.css-auto-prefix     
+CSS Peek  : https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek     
+Dark+ Material : https://marketplace.visualstudio.com/items?itemName=vangware.dark-plus-material    
+Ember JS (ES6) and Handlebars code snippets : https://marketplace.visualstudio.com/items?itemName=phanitejakomaravolu.EmberES6Snippets     
+Extension Manifest Editor : https://marketplace.visualstudio.com/items?itemName=ms-devlabs.extension-manifest-editor    
+File Peek : https://marketplace.visualstudio.com/items?itemName=abierbaum.vscode-file-peek     
+Flatland_Dark Theme : https://marketplace.visualstudio.com/items?itemName=gerane.Theme-FlatlandDark    
+HTML CSS Class Completion : https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion    
+HTML CSS Support : https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css
