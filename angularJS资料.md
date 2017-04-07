@@ -14,6 +14,9 @@ https://github.com/getlantern/forum  蓝灯翻墙软件
 * **angularJS代码在线编辑网站：  **  https://embed.plnkr.co/?show=preview&show=app%2Fapp.component.ts   
 
 ### 菜鸟教程     
+HTML 定义了网页的内容      
+CSS 描述了网页的布局     
+JavaScript 网页的行为      
 * **AngularJS 教程 ： **  http://www.runoob.com/angularjs/angularjs-tutorial.html    
 * **AngularJS2 教程**http://www.runoob.com/angularjs2/angularjs2-tutorial.html    
 
