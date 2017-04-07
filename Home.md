@@ -1,11 +1,7 @@
 ## angularJS 
 
-* **编辑器： **         
+* [**angularJS资料**](https://bitbucket.org/yulilong/my_wiki/wiki/angularJS%E8%B5%84%E6%96%99)     
 
-下载地址：    
-https://code.visualstudio.com     
-帮助文档：     
-https://code.visualstudio.com/docs     
 
 ##**Mac OS **  
 
