@@ -30,7 +30,8 @@ JavaScript 网页的行为
 * **CSS参考手册： **  http://www.shouce.ren/docs/css/    
 * **HTML 教程： ** http://www.shouce.ren/api/view/a/7     
 * **HTML快速参考手册：  **   http://www.shouce.ren/api/html/kuaisu/     
- 
+* **JavaScript 教程： **  http://www.shouce.ren/api/view/a/823
+
 ------
 * **编辑器： **         
 下载地址：    
