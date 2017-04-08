@@ -3,7 +3,7 @@
 **比较 和 逻辑运算符：** http://www.shouce.ren/api/view/a/837      
 
 * **JavaScript 参考： **https://msdn.microsoft.com/zh-cn/library/yek4tbz0(v=vs.94).aspx     
-对象：列出对象以及每个对象相关信息的链接。        
+对象：列出对象以及每个对象相关信息的链接。object，JSON 对象。        
 常量：列出常量以及每个常量相关信息的链接。                
 属性：列出属性以及每个属性相关信息的链接。        
 函数：列出函数以及每个函数相关信息的链接。        
