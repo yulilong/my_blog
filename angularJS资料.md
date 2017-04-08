@@ -39,6 +39,10 @@ JavaScript 网页的行为
 * **HTML 教程： ** http://www.shouce.ren/api/view/a/7     
 * **HTML快速参考手册：  **   http://www.shouce.ren/api/html/kuaisu/     
 
+### 微软文档     
+* **JavaScript 语言参考： **https://msdn.microsoft.com/zh-cn/library/d1et7k7c(v=vs.94).aspx      
+JavaScript 语言参考，  JavaScript 基础，  高级 JavaScript， JavaScript 参考，
+
 ### 其他     
 
 * **JavaScript： **https://developer.mozilla.org/zh-CN/docs/learn/JavaScript    
