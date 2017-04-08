@@ -28,6 +28,7 @@ JavaScript 网页的行为
 * **AngularJS2 教程**http://www.runoob.com/angularjs2/angularjs2-tutorial.html    
 * **HTML 教程- (HTML5 标准)： **  http://www.runoob.com/html/html-tutorial.html     
 * **CSS 教程： **   http://www.runoob.com/css/css-tutorial.html    
+* **JavaScript 教程： **http://www.runoob.com/js/js-tutorial.html      
 
 ### 手册网 http://www.shouce.ren/      
 * **参考手册速查 **   http://www.shouce.ren/api/index   
