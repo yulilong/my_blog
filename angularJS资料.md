@@ -46,7 +46,10 @@ JavaScript 语言参考，  JavaScript 基础，  高级 JavaScript， JavaScrip
 ### 其他     
 
 * **JavaScript： **https://developer.mozilla.org/zh-CN/docs/learn/JavaScript    
-* **JavaScript 指南： **https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide     
+* **JavaScript 指南： **https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide      
+本指南分为以下章节：
+介绍， 语法与数据类型， 控制流与错误处理， 循环与迭代， 函数， 表达式和运算符， 数字和日期， 文本格式化      
+索引集合，  键值集合，  处理对象，  对象模型的细节，  迭代器与生成器， 元 (meta) 编程     
 * **Web API 接口： **https://developer.mozilla.org/zh-CN/docs/Web/API    
 
 ------
