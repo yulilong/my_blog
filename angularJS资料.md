@@ -43,6 +43,7 @@ JavaScript 语言参考，  JavaScript 基础，  高级 JavaScript， JavaScrip
 * **HTML 参考手册：**http://www.w3school.com.cn/tags/index.asp       
 * **CSS 参考手册：**http://www.w3school.com.cn/cssref/index.asp      
 * **JavaScript 参考手册：**http://www.w3school.com.cn/jsref/index.asp      
+* **AngularJS 参考手册： **http://www.w3cschool.cn/angularjs/angularjs-reference.html     
 
 ### 其他     
 
