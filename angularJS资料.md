@@ -7,29 +7,23 @@
 * [**JavaScript语法**](https://bitbucket.org/yulilong/my_wiki/wiki/JavaScript%E8%AF%AD%E6%B3%95)     
 
 * **CSS参考手册： **  http://css.doyoe.com/     
-* **RunJS在线编辑、展示、分享、交流JavaScript代码**http://runjs.cn/
 
 -----
 
-* **angularJS官方文档**      
+### **angularJS官方文档**      
 https://angular.cn/           
 https://angular.cn/docs/ts/latest/         
 这个里面包含： 快速起步 开发指南   API 参考 (v2.4.5)     
 
-https://github.com/getlantern/forum  蓝灯翻墙软件     
-
-* **angularJS代码在线编辑网站：  **  https://embed.plnkr.co/?show=preview&show=app%2Fapp.component.ts   
-
 ### 菜鸟教程 http://www.runoob.com/    
-HTML 定义了网页的内容      
-CSS 描述了网页的布局     
-JavaScript 网页的行为      
+HTML 定义了网页的内容，CSS 描述了网页的布局，JavaScript 网页的行为      
 * **AngularJS 教程 ： **  http://www.runoob.com/angularjs/angularjs-tutorial.html    
 * **AngularJS2 教程**http://www.runoob.com/angularjs2/angularjs2-tutorial.html    
 * **HTML 教程- (HTML5 标准)： **  http://www.runoob.com/html/html-tutorial.html     
 * **CSS 教程： **   http://www.runoob.com/css/css-tutorial.html    
 * **JavaScript 教程： **http://www.runoob.com/js/js-tutorial.html      
 
+----
 ### 手册网 http://www.shouce.ren/      
 * **参考手册速查 **   http://www.shouce.ren/api/index   
 * **廖雪峰 JavaScript教程** http://www.shouce.ren/api/view/a/13858      
@@ -39,9 +33,16 @@ JavaScript 网页的行为
 * **HTML 教程： ** http://www.shouce.ren/api/view/a/7     
 * **HTML快速参考手册：  **   http://www.shouce.ren/api/html/kuaisu/     
 
+-----
 ### 微软文档     
 * **JavaScript 语言参考： **https://msdn.microsoft.com/zh-cn/library/d1et7k7c(v=vs.94).aspx      
-JavaScript 语言参考，  JavaScript 基础，  高级 JavaScript， JavaScript 参考，
+JavaScript 语言参考，  JavaScript 基础，  高级 JavaScript， JavaScript 参考，        
+
+-----
+### w3school http://www.w3school.com.cn/       
+* **HTML 参考手册：**http://www.w3school.com.cn/tags/index.asp       
+* **CSS 参考手册：**http://www.w3school.com.cn/cssref/index.asp      
+* **JavaScript 参考手册：**http://www.w3school.com.cn/jsref/index.asp      
 
 ### 其他     
 
