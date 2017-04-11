@@ -6,7 +6,7 @@
 立即执行函数       
 * [**JavaScript语法**](https://bitbucket.org/yulilong/my_wiki/wiki/JavaScript%E8%AF%AD%E6%B3%95)     
 
-* **CSS参考手册： **  http://css.doyoe.com/     
+
 
 -----
 
@@ -52,7 +52,8 @@ JavaScript 语言参考，  JavaScript 基础，  高级 JavaScript， JavaScrip
 本指南分为以下章节：
 介绍， 语法与数据类型， 控制流与错误处理， 循环与迭代， 函数， 表达式和运算符， 数字和日期， 文本格式化      
 索引集合，  键值集合，  处理对象，  对象模型的细节，  迭代器与生成器， 元 (meta) 编程     
-* **Web API 接口： **https://developer.mozilla.org/zh-CN/docs/Web/API    
+* **Web API 接口： **https://developer.mozilla.org/zh-CN/docs/Web/API       
+* **CSS参考手册： **  http://css.doyoe.com/     
 
 ------
 * **编辑器： **         
