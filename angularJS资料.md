@@ -80,4 +80,6 @@ http://www.imooc.com/learn/277
 * **JavaScript基础教程 **     
 http://www.jikexueyuan.com/course/179.html    
 * **TypeScript入门**     
-http://www.imooc.com/learn/763
+http://www.imooc.com/learn/763    
+
+* **AngularJS执行流程详解** http://www.cnblogs.com/shytong/p/5011411.html
