@@ -1,10 +1,10 @@
 ### 根据认证状态来查询数据      
 
-![WX20170411-170727.png](https://bitbucket.org/repo/oE6yEX/images/253475548-WX20170411-170727.png)      
+`![WX20170411-170727.png](https://bitbucket.org/repo/oE6yEX/images/253475548-WX20170411-170727.png)`      
 
 如上图所示。    
 
-上图 1 部分代码：    
+* **上图 1 部分代码：**    
 
 src/app/jasframework/admin-center/privilege-admin/enterprise-admin/enterprise-list/enterprise-list-show/enterprise-list-show.component.html        
 ```
@@ -53,7 +53,7 @@ div.init {
     }
 ```
 
-上图2 的代码：     
+* **上图2 的代码：**     
 src/app/jasframework/admin-center/privilege-admin/enterprise-admin/enterprise-list/enterprise-list-show/enterprise-list-show.component.html        
 ```     
 # 组件文档： https://www.primefaces.org/primeng/#/datatable  
