@@ -64,8 +64,7 @@ Foreground `<`颜色，  Background 背景色
 
 ![WX20170412-190325.png](https://bitbucket.org/repo/oE6yEX/images/3615565469-WX20170412-190325.png)      
 
-`<div><span>企业信息管理dsdsddddd</span></div>`      
-
+`<div><span>企业信息管理dsdsddddd</span></div>`        
 1. div span 字体的颜色设置      
 
 2. 没有被任何符号包含(企业信息管理ds)的字体颜色 设置
