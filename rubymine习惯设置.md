@@ -24,11 +24,11 @@ MAC OS X 系统：RubyMine | Preferences | Editor | General | Appearance
 ### rubymine 颜色设置    
 
 ![WX20170412-154746.png](https://bitbucket.org/repo/oE6yEX/images/77549440-WX20170412-154746.png)       
-* 1.输入行的背景色    
+*  1.输入行的背景色    
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Editor -> Caret row
 
-* 2.代码编辑区背景色
+*  2.代码编辑区背景色
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Test -> Default test     
 
-* 3. 行号的颜色设置    
+*  3. 行号的颜色设置    
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Code -> Line number
