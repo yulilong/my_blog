@@ -29,7 +29,7 @@ MAC OS X 系统：RubyMine | Preferences | Editor | General | Appearance
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Editor -> Caret row
 
 2.  代码编辑区背景色
-preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Test -> Default test     
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Test -> Default test -> background     
 
 3. 行号的颜色设置    
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Code -> Line number    
