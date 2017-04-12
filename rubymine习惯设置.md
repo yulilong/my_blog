@@ -32,4 +32,8 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Editor -> Caret 
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Test -> Default test     
 
 3. 行号的颜色设置    
-preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Code -> Line number
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Code -> Line number    
+
+
+- [ ] home
+  - [x] manageiq汉化
