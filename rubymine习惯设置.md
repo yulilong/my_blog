@@ -47,4 +47,17 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Editor -> Select
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> String -> String text -> Foreground    
 这是通用的设置，如果想某种语言字符串颜色特定 以ruby语言为例：    
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Ruby -> String -> Foreground     
-如果勾选了 `Use inherited attributes`则会使用上面的设置，在这里也告诉了此处默认的设置位置`String -> String text` of Language Defaults
+如果勾选了 `Use inherited attributes`则会使用上面的设置，在这里也告诉了此处默认的设置位置`String -> String text` of Language Defaults    
+
+![WX20170412-182734.png](https://bitbucket.org/repo/oE6yEX/images/1064908234-WX20170412-182734.png)       
+
+HTML代码`<div  class=  "line">   &times;    </div    >`    
+1. `class=`  颜色背景色设置
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Markup -> Attribute ->    
+Foreground 字体颜色，  Background 背景色      
+2. `&times;` 颜色背景色设置   
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Markup -> Entity ->    
+Foreground 字体颜色，  Background 背景色      
+3.  ` <    />` 颜色背景色设置     
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Markup -> Tag ->    
+Foreground `<`颜色，  Background 背景色
