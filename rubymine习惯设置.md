@@ -34,6 +34,9 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Test -> Default 
 3. 行号的颜色设置    
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Code -> Line number    
 
+![WX20170412-160435.png](https://bitbucket.org/repo/oE6yEX/images/450904385-WX20170412-160435.png)     
 
- [ ] home
-   [x] manageiq汉化
+1. 鼠标选择区域前景色(字体颜色)    
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Editor -> Selection background      
+2. 鼠标选择的背景色    
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Editor -> Selection foreground
