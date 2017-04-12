@@ -35,5 +35,5 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Test -> Default 
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Code -> Line number    
 
 
-- [ ] home
-  - [x] manageiq汉化
+ [ ] home
+   [x] manageiq汉化
