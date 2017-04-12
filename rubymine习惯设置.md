@@ -8,8 +8,10 @@ MAC OS X 系统：RubyMine | Preferences | Editor | General | Appearance
 
 参考链接：  http://www.jb51.net/softs/516343.html     
 
+[**rubymine2016安装教程**](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20install%20RVM,ruby,pqadmin3,rubymine2016)         
+下载链接：  https://pan.baidu.com/s/1c2ou9w8 密码: kqjh     
 **RubyMine 2016汉化包使用方法：**        
-解压后，里面有个文件`resources_cn.jar`,把这个文件复制到`/Applications/RubyMine.app/Contents/lib`中
+解压后，里面有个文件`resources_cn.jar`,把这个文件复制到`/Applications/RubyMine.app/Contents/lib`中      
 ![WX20170412-152939.png](https://bitbucket.org/repo/oE6yEX/images/661412829-WX20170412-152939.png)    
 
 如果没有`resources_cn.jar`,怎按照下面的步骤来制作`resources_cn.jar`：     
