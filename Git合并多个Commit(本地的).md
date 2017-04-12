@@ -15,6 +15,14 @@
 当前我们只要知道 pick 和 squash 这两个命令即可：     
 pick 的意思是要会执行这个 commit      
 squash 的意思是这个 commit 会被合并到前一个commit      
+```
+pick：正常选中
+reword：选中，并且修改提交信息；
+edit：选中，rebase时会暂停，允许你修改这个commit（参考这里）
+squash：选中，会将当前commit与上一个commit合并
+fixup：与squash相同，但不会保存当前commit的提交信息
+exec：执行其他shell命令
+```
 
 我们将 1b45fb6 这个 commit 前方的命令改成 squash 或 s，然后输入:wq以保存并退出       
 这时我们会看到 commit message 的编辑界面：      
