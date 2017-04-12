@@ -18,4 +18,10 @@ MAC OS X 系统：RubyMine | Preferences | Editor | General | Appearance
 1、链接: https://pan.baidu.com/s/1pLlWpSn 密码: yptn   下载汉化包       
 2、将/Applications/RubyMine.app/Contents/lib目录下的resources_en.jar文件复制出来，并更名resources_cn.jar      
 3、双击打开resources_cn.jar(注意是打开而不是解压出来)，将下载的汉化包zh_CN目录下的所有文件拖到刚才打开的resources_cn.jar文件内的messages目录中，并保存。            
-4、将resources_cn.jar文件复制回/Applications/RubyMine.app/Contents/lib
+4、将resources_cn.jar文件复制回/Applications/RubyMine.app/Contents/lib       
+
+
+### rubymine 颜色设置    
+
+![WX20170412-154746.png](https://bitbucket.org/repo/oE6yEX/images/77549440-WX20170412-154746.png)       
+* 代码编辑区域背景色
