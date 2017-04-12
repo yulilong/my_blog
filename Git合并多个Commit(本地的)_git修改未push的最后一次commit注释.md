@@ -44,4 +44,12 @@ exec：执行其他shell命令
 参考链接：    
 
 http://www.jianshu.com/p/964de879904a     
-http://yongpoliu.com/reorganize-git-local-commits/
+http://yongpoliu.com/reorganize-git-local-commits/      
+
+## git修改未push的最后一次commit注释     
+
+```
+# 如果设置了 commit简写为 ci，则可以用： git ci --amend
+git commit --amend
+```        
+![WX20170412-145019.png](https://bitbucket.org/repo/oE6yEX/images/12829341-WX20170412-145019.png)
