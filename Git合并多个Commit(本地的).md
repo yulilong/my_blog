@@ -26,4 +26,22 @@ exec：执行其他shell命令
 
 我们将 1b45fb6 这个 commit 前方的命令改成 squash 或 s，然后输入:wq以保存并退出       
 这时我们会看到 commit message 的编辑界面：      
-![WX20170412-132924.png](https://bitbucket.org/repo/oE6yEX/images/1443189753-WX20170412-132924.png)
+![WX20170412-132924.png](https://bitbucket.org/repo/oE6yEX/images/1443189753-WX20170412-132924.png)     
+
+其中, 非注释部分就是两次的 commit message, 你要做的就是将这两个修改成新的 commit message。      
+输入wq保存并推出, 再次输入git log查看 commit 历史信息，你会发现这两个 commit 已经合并了。      
+
+![WX20170412-143544.png](https://bitbucket.org/repo/oE6yEX/images/1624539404-WX20170412-143544.png)    
+
+**注意事项：**如果这个过程中有操作错误，可以使用 git rebase --abort来撤销修改，回到没有开始操作合并之前的状态。     
+
+* **注意推送代码之前的命令：**     
+```
+#  --rebase   还不知道什么意思
+~git pull --rebase
+```
+
+参考链接：    
+
+http://www.jianshu.com/p/964de879904a     
+http://yongpoliu.com/reorganize-git-local-commits/
