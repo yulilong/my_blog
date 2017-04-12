@@ -39,4 +39,12 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Code -> Line num
 1. 鼠标选择区域前景色(字体颜色)    
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Editor -> Selection background      
 2. 鼠标选择的背景色    
-preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Editor -> Selection foreground
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Editor -> Selection foreground       
+
+![WX20170412-180743.png](https://bitbucket.org/repo/oE6yEX/images/2747762884-WX20170412-180743.png)       
+
+1. 字符串的颜色设置    
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> String -> String text -> Foreground    
+这是通用的设置，如果想某种语言字符串颜色特定 以ruby语言为例：    
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Ruby -> String -> Foreground     
+如果勾选了 `Use inherited attributes`则会使用上面的设置，在这里也告诉了此处默认的设置位置`String -> String text` of Language Defaults
