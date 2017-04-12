@@ -9,7 +9,11 @@ MAC OS X 系统：RubyMine | Preferences | Editor | General | Appearance
 参考链接：  http://www.jb51.net/softs/516343.html     
 
 **RubyMine 2016汉化包使用方法：**        
+解压后，里面有个文件`resources_cn.jar`,把这个文件复制到`/Applications/RubyMine.app/Contents/lib`中
+![WX20170412-152939.png](https://bitbucket.org/repo/oE6yEX/images/661412829-WX20170412-152939.png)    
+
+如果没有`resources_cn.jar`,怎按照下面的步骤来制作`resources_cn.jar`：     
 1、链接: https://pan.baidu.com/s/1pLlWpSn 密码: yptn   下载汉化包       
-2、将C:\Program Files (x86)\JetBrains\RubyMine 2016\lib目录下的resources_en.jar文件复制出来，并更名resources_cn.jar      
-3、双击打开resources_cn.jar(注意是打开而不是解压出来)，将下载的汉化包zh_CN目录下的所有文件拖到刚才打开的resources_cn.jar文件内的messages目录中，并保存            
-4、将resources_cn.jar文件复制回C:\Program Files (x86)\JetBrains\RubyMine 2016\lib目录
+2、将/Applications/RubyMine.app/Contents/lib目录下的resources_en.jar文件复制出来，并更名resources_cn.jar      
+3、双击打开resources_cn.jar(注意是打开而不是解压出来)，将下载的汉化包zh_CN目录下的所有文件拖到刚才打开的resources_cn.jar文件内的messages目录中，并保存。            
+4、将resources_cn.jar文件复制回/Applications/RubyMine.app/Contents/lib
