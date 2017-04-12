@@ -27,8 +27,8 @@ http://blog.csdn.net/arabela35/article/details/53318640
 http://www.sdifenzhou.com/rubymine201612.html      
 
 1. 下载 download      
-链接: https://pan.baidu.com/s/1hr8NpZY    
-密码: ey5a     
+链接: https://pan.baidu.com/s/1hr8NpZY  密码: ey5a     
+链接: https://pan.baidu.com/s/1c2ou9w8 密码: kqjh        
 
 2. 打开dmg镜像，拖动RubyMine 到 application 应用程序里       
 
