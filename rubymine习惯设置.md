@@ -108,4 +108,9 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Commen
 
 1. 搜索结果的颜色背景色设置：    
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Search Results -> Text search result     
-搜索结果字体颜色： Foreground ，搜索结果背景色： Background
+搜索结果字体颜色： Foreground ，搜索结果背景色： Background    
+
+
+* 当回车后，按删除键后又回到了上一行，禁止    
+
+preferences(cmd + ,) -> Editor -> General -> Smart Keys -> Backspace -> Unident: To nearest indent position
