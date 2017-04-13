@@ -79,4 +79,14 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Identi
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Number -> Foreground     
 
 1. 行注释，块注释 颜色修改     
-preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Comments -> Line comment -> Foreground
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Comments -> Line comment -> Foreground      
+
+![WX20170413-104255.png](https://bitbucket.org/repo/oE6yEX/images/1403576230-WX20170413-104255.png)     
+
+`export class EnterpriseListShowComponent implements OnInit {`      
+1. `export class` keyword 关键字颜色设置
+(JavaScript) Editor ->  Colors & Fonts -> JavaScript -> Keyword -> Foreground  
+如果勾选了： Use inherited attributes : Language Defaults -> Keyword
+2. 类名字颜色设置     
+(JavaScript) Editor ->  Colors & Fonts -> JavaScript -> Class -> Foreground  
+如果勾选了： Use inherited attributes : Language Defaults -> Classes -> Class name
