@@ -1,7 +1,10 @@
 #  **一级必会**
 
-Shift+F10：运行running     
+**Ctrl+Alt+L：格式化代码**     
+**Ctrl+D：复制一行**       
+**Ctrl+Y：删除一行**      
 
+Shift+F10：运行running     
 Ctrl+Alt+R：弹出Rake      
 Ctrl+Alt+G：弹出Generate     
 Ctrl+Alt+L：格式化代码     
