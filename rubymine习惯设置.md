@@ -89,4 +89,10 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Commen
 如果勾选了： Use inherited attributes : Language Defaults -> Keyword
 2. 类名字颜色设置     
 (JavaScript) Editor ->  Colors & Fonts -> JavaScript -> Class -> Foreground  
-如果勾选了： Use inherited attributes : Language Defaults -> Classes -> Class name
+如果勾选了： Use inherited attributes : Language Defaults -> Classes -> Class name      
+
+![WX20170413-110636.png](https://bitbucket.org/repo/oE6yEX/images/1937567871-WX20170413-110636.png)   
+
+1. 实例成员方法名颜色设置：    
+(JavaScript) Editor ->  Colors & Fonts -> JavaScript -> Instance member function -> Foreground      
+如果勾选了： Use inherited attributes : Language Defaults -> Classes -> Instance method
