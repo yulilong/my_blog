@@ -95,4 +95,10 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Commen
 
 1. 实例成员方法名颜色设置：    
 (JavaScript) Editor ->  Colors & Fonts -> JavaScript -> Instance member function -> Foreground      
-如果勾选了： Use inherited attributes : Language Defaults -> Classes -> Instance method
+如果勾选了： Use inherited attributes : Language Defaults -> Classes -> Instance method     
+
+![WX20170413-113053.png](https://bitbucket.org/repo/oE6yEX/images/29999157-WX20170413-113053.png)      
+
+1. 搜索结果的颜色背景色设置：    
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Search Results -> Text search result     
+搜索结果字体颜色： Foreground ，搜索结果背景色： Background
