@@ -1,5 +1,12 @@
 * **设置行号**    
 
+------
+
+* **RubyMine2016.3自动补全默认第一个选项配置:**http://blog.csdn.net/lj_550566181/article/details/53504208      
+
+-----
+
+
 MAC OS X 系统：RubyMine | Preferences | Editor | General | Appearance       
 1. show line numbers    
 2. show whitespaces    
