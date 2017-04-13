@@ -30,7 +30,19 @@ MAC OS X 系统：RubyMine | Preferences | Editor | General | Appearance
 3、双击打开resources_cn.jar(注意是打开而不是解压出来)，将下载的汉化包zh_CN目录下的所有文件拖到刚才打开的resources_cn.jar文件内的messages目录中，并保存。            
 4、将resources_cn.jar文件复制回/Applications/RubyMine.app/Contents/lib       
 
+--------------
 
+### rubymine 编辑器代码自动缩进设置    
+
+preferences(cmd + ,) -> Editor -> Code Style:    
+Indents Dection  -> detect and use existing file indents for sditing(检测并使用现有的文件缩进进行编辑) 对号去掉    
+
+EditorConfig -> Enable EditorConfig support    对号去掉    
+
+根据代码语言进行缩进设置： 
+(TypeScript) Editor -> Code Style -> TypeScript -> Tabs and Indents        
+
+-----------------
 ### rubymine 颜色设置    
 
 ![WX20170412-154746.png](https://bitbucket.org/repo/oE6yEX/images/77549440-WX20170412-154746.png)       
