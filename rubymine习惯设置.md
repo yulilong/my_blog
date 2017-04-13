@@ -3,6 +3,9 @@
 ------
 
 * **RubyMine2016.3自动补全默认第一个选项配置:**http://blog.csdn.net/lj_550566181/article/details/53504208      
+*  **Only two spaces of indentation in JavaScript in RubyMine?**: http://stackoverflow.com/questions/5540068/only-two-spaces-of-indentation-in-javascript-in-rubymine     
+On OSX Mavericks with RubyMine 7.1.2: `File -> Default Settings -> Editor -> Code Style -> Javascript`     
+
 
 -----
 
