@@ -67,5 +67,13 @@ Foreground `<`颜色，  Background 背景色
 `<div><span>企业信息管理dsdsddddd</span></div>`        
 1. div span 字体的颜色设置      
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Keyword -> Foreground    
-2. 没有被任何符号包含(企业信息管理ds)的字体颜色 设置      
-preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Text -> Default text -> Foreground
+2. 没有被任何符号包含(企业信息管理ds)的字体颜色 设置         
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Text -> Default text -> Foreground       
+
+![WX20170413-094349.png](https://bitbucket.org/repo/oE6yEX/images/869757487-WX20170413-094349.png)     
+
+1. 局部变量颜色设置      
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Identifiers -> Local variable -> Foreground    
+其他语言个性化设置(JavaScript)： Editor ->  Colors & Fonts -> JavaScript -> Local variable -> Foreground     
+2. 数字颜色设置     
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Number -> Foreground
