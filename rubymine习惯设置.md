@@ -134,6 +134,7 @@ EditorConfig  -> Enable EditorConfig support把这里的对号去掉
 根据编程语言进行相应设置：     
 Editor -> Code Style -> TypeScript -> Tabs and Indents      
 
+------
 
 * **Editor Tabs 编辑器标签页设置，显示正在编辑文件的路径**    
 
@@ -146,4 +147,11 @@ Tab Appearance -> Show tabs in single row(在单行显示标签), 对号去掉�
 Tab Closing Policy(选项卡关闭策略) -> Tab limit(选项卡限制) , 里面的数字改大一点
 
 2. 显示编辑文件的路径：    
-rubymine左上角 -> View -> navigation Bar , 前面打上对号。
+rubymine左上角 -> View -> navigation Bar , 前面打上对号。      
+
+* **关闭rubymine代码自动保存功能**      
+https://www.jetbrains.com/help/ruby/2016.3/saving-and-reverting-changes.html      
+在编辑TypeScript代码的时候，由于自动保存导致每写一点代码，服务都会从新编译运行，因此需要关闭自动保存：     
+preferences(cmd + ,) -> Appearance & Behavior -> System Settings -> Synchrogazation(同步):   
+save file on frame deactivation(鼠标光标停止的时候保存文件，好像这么理解), 把这个前面的对号去掉，就可以在编辑时不会自动保存了。   
+Synchronize file on frame or editor tab activation, 这个是否去掉暂时不知道，
