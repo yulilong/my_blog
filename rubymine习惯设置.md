@@ -126,4 +126,7 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Search Results -
 
 * 当回车后，按删除键后又回到了上一行，禁止    
 
-preferences(cmd + ,) -> Editor -> General -> Smart Keys -> Backspace -> Unident: To nearest indent position
+这个选择一下：     
+preferences(cmd + ,) -> Editor -> General -> Smart Keys -> Backspace -> Unident: To nearest indent position          
+这里设置一下：   
+sss
