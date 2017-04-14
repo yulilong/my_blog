@@ -154,4 +154,15 @@ https://www.jetbrains.com/help/ruby/2016.3/saving-and-reverting-changes.html
 在编辑TypeScript代码的时候，由于自动保存导致每写一点代码，服务都会从新编译运行，因此需要关闭自动保存：     
 preferences(cmd + ,) -> Appearance & Behavior -> System Settings -> Synchrogazation(同步):   
 save file on frame deactivation(鼠标光标停止的时候保存文件，好像这么理解), 把这个前面的对号去掉，就可以在编辑时不会自动保存了。   
-Synchronize file on frame or editor tab activation, 这个是否去掉暂时不知道，
+Synchronize file on frame or editor tab activation, 这个是否去掉暂时不知道，           
+
+* **git 新增行，修改行，删除行 颜色标记修改**       
+
+![WX20170414-174836.png](https://bitbucket.org/repo/oE6yEX/images/2490896529-WX20170414-174836.png)      
+
+1. git 修改行标记颜色修改：    
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> Added lines -> Background        
+2. git 删除行标记颜色修改：      
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> Deleted lines -> Background        
+3. git 新增行标记颜色修改：    
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> modified lines -> Background
