@@ -137,7 +137,7 @@ jQuery UI API中文文档(适用jQuery UI 1.10):  http://www.css88.com/jquery-ui
 
 * [RubyMine常用快捷键](https://bitbucket.org/yulilong/my_wiki/wiki/RubyMine%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE)    
 * [rubymine习惯设置](https://bitbucket.org/yulilong/my_wiki/wiki/rubymine%E4%B9%A0%E6%83%AF%E8%AE%BE%E7%BD%AE)    
-关闭自动保存，编辑栏标签多分多行显示，编辑区的颜色设置       
+关闭自动保存，编辑栏标签多分多行显示，编辑区的颜色设置，汉化       
 
 
 ###  **RVM**   
