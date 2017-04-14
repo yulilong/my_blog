@@ -18,6 +18,8 @@ CHM View(.chm文件阅读器)， MagicanLite流量监控，lantern 蓝灯
 * 高效macbook工作环境配置     
 http://xialeizhou.com/2019/06/23/%E9%AB%98%E6%95%88macbook%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/     
 
+* **强迫症的 Mac 设置指南：**https://github.com/macdao/ocds-guide-to-setting-up-mac        
+
 * [**mac中常见错误以及处理方法**](https://bitbucket.org/yulilong/my_wiki/wiki/mac%E4%B8%AD%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E4%BB%A5%E5%8F%8A%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95)       
 
 * Mac 键盘快捷键     
