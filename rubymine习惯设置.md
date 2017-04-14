@@ -137,6 +137,7 @@ Editor -> Code Style -> TypeScript -> Tabs and Indents
 
 * **Editor Tabs 编辑器标签页设置，显示正在编辑文件的路径**    
 
+https://www.jetbrains.com/help/ruby/2016.3/editor-tabs.html?search=editor%20tabs      
 ![WX20170414-151951.png](https://bitbucket.org/repo/oE6yEX/images/2174346782-WX20170414-151951.png)      
 
 1. 编辑器标签的设置，由单行显示变多行：    
