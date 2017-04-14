@@ -3,6 +3,7 @@
 ------
 
 * **RubyMine2016.3自动补全默认第一个选项配置:**http://blog.csdn.net/lj_550566181/article/details/53504208      
+* **rubymine2016官方文档英文：**https://www.jetbrains.com/help/ruby/2016.3/reference.html
 
 -----
 
