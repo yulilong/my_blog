@@ -165,4 +165,6 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> Added 
 2. git 删除行标记颜色修改：      
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> Deleted lines -> Background        
 3. git 新增行标记颜色修改：    
-preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> modified lines -> Background
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> modified lines -> Background    
+4. 行号处 背景色修改：     
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> Background
