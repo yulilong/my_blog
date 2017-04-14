@@ -126,7 +126,23 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Search Results -
 
 * 当回车后，按删除键后又回到了上一行，禁止    
 
-这个选择一下：     
+Smart Keys，这个选择一下：     
 preferences(cmd + ,) -> Editor -> General -> Smart Keys -> Backspace -> Unident: To nearest indent position          
-这里设置一下：   
-sss
+Code Style,这里设置一下：   
+Editor -> Code Style:    
+EditorConfig  -> Enable EditorConfig support把这里的对号去掉      
+根据编程语言进行相应设置：     
+Editor -> Code Style -> TypeScript -> Tabs and Indents      
+
+
+* **Editor Tabs 编辑器标签页设置，显示正在编辑文件的路径**    
+
+![WX20170414-151951.png](https://bitbucket.org/repo/oE6yEX/images/2174346782-WX20170414-151951.png)      
+
+1. 编辑器标签的设置，由单行显示变多行：    
+preferences(cmd + ,) -> Editor -> General -> Editor Tabs:     
+Tab Appearance -> Show tabs in single row(在单行显示标签), 对号去掉。      
+Tab Closing Policy(选项卡关闭策略) -> Tab limit(选项卡限制) , 里面的数字改大一点
+
+2. 显示编辑文件的路径：    
+rubymine左上角 -> View -> navigation Bar , 前面打上对号。
