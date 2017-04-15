@@ -182,4 +182,11 @@ preferences(cmd + ,) -> Editor -> Colors & Fonts -> General ->  Code -> Vertical
 
 preferences(cmd + ,) -> Editor -> General -> Code Folding：       
  -> Show code folding outline: 这个打上对号，就会显示代码折叠的提示线。     
--> Collapse by default:  这下面是默认折叠的代码块的选项，哪个不想默认折叠把前面的对号去掉就可以了。
+-> Collapse by default:  这下面是默认折叠的代码块的选项，哪个不想默认折叠把前面的对号去掉就可以了。     
+
+* **编辑器代码自动换行**     
+
+当代码一行太多的时候，如果不选择软换行，那么就会把编辑区右移，会很费劲，这时可选择软换行，在下一行接着显示这行的内容。     
+![WX20170415-152928.png](https://bitbucket.org/repo/oE6yEX/images/1573141419-WX20170415-152928.png)      
+preferences(cmd + ,) -> Editor -> General：   
+Soft Wraps -> Use soft wraps in editor , 前面打上对号，就会自动软换行。
