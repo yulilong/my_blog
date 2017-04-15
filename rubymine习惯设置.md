@@ -167,4 +167,13 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> Delete
 3. git 新增行标记颜色修改：    
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> modified lines -> Background    
 4. 行号处 背景色修改：     
-preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> Background
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> Background      
+
+* **垂直缩进线颜色设置**    
+
+![WX20170415-122542.png](https://bitbucket.org/repo/oE6yEX/images/3499247445-WX20170415-122542.png)    
+
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General ->  Code -> Vertical indent guide -> Background   
+
+
+* **haha**
