@@ -176,4 +176,10 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> Backgr
 preferences(cmd + ,) -> Editor -> Colors & Fonts -> General ->  Code -> Vertical indent guide -> Background   
 
 
-* **haha**
+* **代码折叠设置**     
+
+![WX20170415-151956.png](https://bitbucket.org/repo/oE6yEX/images/3972072235-WX20170415-151956.png)     
+
+preferences(cmd + ,) -> Editor -> General -> Code Folding：       
+ -> Show code folding outline: 这个打上对号，就会显示代码折叠的提示线。     
+-> Collapse by default:  这下面是默认折叠的代码块的选项，哪个不想默认折叠把前面的对号去掉就可以了。
