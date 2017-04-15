@@ -100,6 +100,7 @@ https://github.com/riku/Markdown-Syntax-CN
 * [ruby比较常用的gems包](https://bitbucket.org/yulilong/my_wiki/wiki/ruby%E6%AF%94%E8%BE%83%E5%B8%B8%E7%94%A8%E7%9A%84gems%E5%8C%85)        
 * [**rails中常见问题**](https://bitbucket.org/yulilong/my_wiki/wiki/rails%E4%B8%AD%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)　　Ｎ＋１问题，       
 
+* **rails 视频教学资源**https://eggman.tv/serials?adsr=rubychina&ad=4bunxlsb
 ### **rake**
 * [Ruby中任务构建工具rake的入门学习教程](https://bitbucket.org/yulilong/my_wiki/wiki/Ruby%E4%B8%AD%E4%BB%BB%E5%8A%A1%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7rake%E7%9A%84%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B)          推荐读这个，简单易懂。
 * [Ruby on Rails中的Rake教程](https://bitbucket.org/yulilong/my_wiki/wiki/%20Ruby%20on%20Rails%E4%B8%AD%E7%9A%84Rake%E6%95%99%E7%A8%8B)
