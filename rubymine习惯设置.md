@@ -185,6 +185,18 @@ preferences(cmd + ,) -> Editor -> General -> Code Folding：
  -> Show code folding outline: 这个打上对号，就会显示代码折叠的提示线。     
 -> Collapse by default:  这下面是默认折叠的代码块的选项，哪个不想默认折叠把前面的对号去掉就可以了。     
 
+* **分隔线颜色设置**    
+
+![WX20170415-173819.png](https://bitbucket.org/repo/oE6yEX/images/1434825748-WX20170415-173819.png)     
+
+1. 分隔线颜色设置：    
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Editor -> Tear line -> Foreground      
+2. 选择分隔线颜色设置：    
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Editor -> Tear line selection -> Foreground  
+3. 右边线颜色设置：     
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Editor -> Right margin     
+
+
 * **编辑器代码自动换行**     
 
 当代码一行太多的时候，如果不选择软换行，那么就会把编辑区右移，会很费劲，这时可选择软换行，在下一行接着显示这行的内容。     
