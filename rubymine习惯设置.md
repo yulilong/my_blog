@@ -178,6 +178,7 @@ preferences(cmd + ,) -> Editor -> Colors & Fonts -> General ->  Code -> Vertical
 
 * **代码折叠设置**     
 
+https://www.jetbrains.com/help/ruby/2016.1/code-folding.html#using_folding_comments        
 ![WX20170415-151956.png](https://bitbucket.org/repo/oE6yEX/images/3972072235-WX20170415-151956.png)     
 
 preferences(cmd + ,) -> Editor -> General -> Code Folding：       
