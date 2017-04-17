@@ -106,7 +106,7 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Commen
 `export class EnterpriseListShowComponent implements OnInit {`      
 1. `export class` keyword 关键字颜色设置
 (JavaScript) Editor ->  Colors & Fonts -> JavaScript -> Keyword -> Foreground  
-如果勾选了： Use inherited attributes : Language Defaults -> Keyword
+如果勾选了： Use inherited attributes ,则： Language Defaults -> Keyword        
 2. 类名字颜色设置     
 (JavaScript) Editor ->  Colors & Fonts -> JavaScript -> Class -> Foreground  
 如果勾选了： Use inherited attributes : Language Defaults -> Classes -> Class name      
