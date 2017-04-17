@@ -208,4 +208,10 @@ Soft Wraps -> Use soft wraps in editor , 前面打上对号，就会自动软换
 
 ![WX20170417-090958.png](https://bitbucket.org/repo/oE6yEX/images/239463111-WX20170417-090958.png)    
 
-preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Matched brace -> Background
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Matched brace -> Background      
+
+* **鼠标光标颜色**    
+
+![WX20170417-091628.png](https://bitbucket.org/repo/oE6yEX/images/3612788461-WX20170417-091628.png)   
+
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Editor -> Caret
