@@ -232,8 +232,14 @@ preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Text -> Fold text
 2. 折叠文本背景色：    
 preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Text -> Fold text -> Background     
 
-1. **git修改代码真实背景色**    
+* **git修改代码真实背景色**    
 
 ![WX20170417-103120.png](https://bitbucket.org/repo/oE6yEX/images/1958676848-WX20170417-103120.png)     
 
-preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Text -> Background in readonly file - Background
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Text -> Background in readonly file - Background      
+
+* **注入语言片段背景色修改**    
+
+![WX20170417-150737.png](https://bitbucket.org/repo/oE6yEX/images/660184162-WX20170417-150737.png)      
+
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Injected language fragment -> Background
