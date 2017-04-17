@@ -149,6 +149,12 @@ Tab Closing Policy(选项卡关闭策略) -> Tab limit(选项卡限制) , 里面
 2. 显示编辑文件的路径：    
 rubymine左上角 -> View -> navigation Bar , 前面打上对号。      
 
+* **工具栏显示与隐藏**    
+
+![WX20170417-104343.png](https://bitbucket.org/repo/oE6yEX/images/3547068404-WX20170417-104343.png)      
+
+rubymine左上角 -> View -> Toolbar , 前面打上对号。
+
 * **关闭rubymine代码自动保存功能**      
 https://www.jetbrains.com/help/ruby/2016.3/saving-and-reverting-changes.html      
 在编辑TypeScript代码的时候，由于自动保存导致每写一点代码，服务都会从新编译运行，因此需要关闭自动保存：     
