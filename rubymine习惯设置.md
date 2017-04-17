@@ -202,4 +202,10 @@ preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Editor -> Right m
 当代码一行太多的时候，如果不选择软换行，那么就会把编辑区右移，会很费劲，这时可选择软换行，在下一行接着显示这行的内容。     
 ![WX20170415-152928.png](https://bitbucket.org/repo/oE6yEX/images/1573141419-WX20170415-152928.png)      
 preferences(cmd + ,) -> Editor -> General：   
-Soft Wraps -> Use soft wraps in editor , 前面打上对号，就会自动软换行。
+Soft Wraps -> Use soft wraps in editor , 前面打上对号，就会自动软换行。         
+
+* **括号匹配颜色 **     
+
+![WX20170417-090958.png](https://bitbucket.org/repo/oE6yEX/images/239463111-WX20170417-090958.png)    
+
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Matched brace -> Background
