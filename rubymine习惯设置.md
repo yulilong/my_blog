@@ -242,4 +242,13 @@ preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Text -> Backgroun
 
 ![WX20170417-150737.png](https://bitbucket.org/repo/oE6yEX/images/660184162-WX20170417-150737.png)      
 
-preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Injected language fragment -> Background
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Injected language fragment -> Background       
+
+* **光标定位变量一样的 颜色**    
+
+![WX20170417-153026.png](https://bitbucket.org/repo/oE6yEX/images/2687178096-WX20170417-153026.png)     
+
+1. 光标在变量定义处：    
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Identifier under caret(write) -> Background     
+2. 变量一样其他变量的背景色：    
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Identifier under caret -> Background
