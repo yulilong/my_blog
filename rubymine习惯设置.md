@@ -224,4 +224,10 @@ preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Editor -> Caret
 
 preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Text -> Fold text -> Foreground       
 2. 折叠文本背景色：    
-preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Text -> Fold text -> Background
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Text -> Fold text -> Background     
+
+1. **git修改代码真实背景色**    
+
+![WX20170417-103120.png](https://bitbucket.org/repo/oE6yEX/images/1958676848-WX20170417-103120.png)     
+
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Text -> Background in readonly file - Background
