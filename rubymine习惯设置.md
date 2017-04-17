@@ -214,4 +214,14 @@ preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Matched b
 
 ![WX20170417-091628.png](https://bitbucket.org/repo/oE6yEX/images/3612788461-WX20170417-091628.png)   
 
-preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Editor -> Caret
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Editor -> Caret      
+
+* **折叠文本颜色 **   
+
+![WX20170417-094439.png](https://bitbucket.org/repo/oE6yEX/images/1265052123-WX20170417-094439.png)     
+
+1. 折叠文本三个点颜色：   
+
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Text -> Fold text -> Foreground       
+2. 折叠文本背景色：    
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Text -> Fold text -> Background
