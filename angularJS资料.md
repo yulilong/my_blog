@@ -2,9 +2,7 @@
 -----
 * [**angularJS开发遇见的问题**](https://bitbucket.org/yulilong/my_wiki/wiki/angularJS%E5%BC%80%E5%8F%91%E9%81%87%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98)       
 * [**Mac下angular开发环境安装**](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%E4%B8%8Bangular%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85)      
-* [**javascript一些问题**](https://bitbucket.org/yulilong/my_wiki/wiki/javascript%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98)      
-立即执行函数       
-* [**JavaScript语法**](https://bitbucket.org/yulilong/my_wiki/wiki/JavaScript%E8%AF%AD%E6%B3%95)     
+   
 
 * [**工作开发参考**](https://bitbucket.org/yulilong/my_wiki/wiki/%E5%B7%A5%E4%BD%9C%E5%BC%80%E5%8F%91%E5%8F%82%E8%80%83)这个是工作中开发的参考文档         
 
@@ -24,22 +22,13 @@ HTML 定义了网页的内容，CSS 描述了网页的布局，JavaScript 网页
 * **AngularJS2 教程**http://www.runoob.com/angularjs2/angularjs2-tutorial.html    
 * **HTML 教程- (HTML5 标准)： **  http://www.runoob.com/html/html-tutorial.html     
 * **CSS 教程： **   http://www.runoob.com/css/css-tutorial.html    
-* **JavaScript 教程： **http://www.runoob.com/js/js-tutorial.html      
 
 ----
 ### 手册网 http://www.shouce.ren/      
 * **参考手册速查 **   http://www.shouce.ren/api/index   
-* **廖雪峰 JavaScript教程** http://www.shouce.ren/api/view/a/13858      
-* **JavaScript 教程： **  http://www.shouce.ren/api/view/a/823      
-* **AngularJS教程、实例、参考手册**   http://www.shouce.ren/api/view/a/3079    
 * **CSS参考手册： **  http://www.shouce.ren/docs/css/    
 * **HTML 教程： ** http://www.shouce.ren/api/view/a/7     
 * **HTML快速参考手册：  **   http://www.shouce.ren/api/html/kuaisu/     
-
------
-### 微软文档     
-* **JavaScript 语言参考： **https://msdn.microsoft.com/zh-cn/library/d1et7k7c(v=vs.94).aspx      
-JavaScript 语言参考，  JavaScript 基础，  高级 JavaScript， JavaScript 参考，        
 
 -----
 ### w3school http://www.w3school.com.cn/       
@@ -86,4 +75,18 @@ http://www.jikexueyuan.com/course/179.html
 * **TypeScript入门**     
 http://www.imooc.com/learn/763    
 
-* **AngularJS执行流程详解** http://www.cnblogs.com/shytong/p/5011411.html
+* **AngularJS执行流程详解** http://www.cnblogs.com/shytong/p/5011411.html    
+
+----
+## JavaScript    
+
+* [**javascript一些问题**](https://bitbucket.org/yulilong/my_wiki/wiki/javascript%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98)      
+立即执行函数       
+* [**JavaScript语法**](https://bitbucket.org/yulilong/my_wiki/wiki/JavaScript%E8%AF%AD%E6%B3%95)       
+   
+* **JavaScript 教程(菜鸟教程)： **http://www.runoob.com/js/js-tutorial.html      
+* **JavaScript 教程(手册网)： **  http://www.shouce.ren/api/view/a/823      
+* **AngularJS教程、实例、参考手册(手册网)**   http://www.shouce.ren/api/view/a/3079 
+* **廖雪峰 JavaScript教程(手册网)** http://www.shouce.ren/api/view/a/13858         
+* **JavaScript 语言参考(微软文档)： **https://msdn.microsoft.com/zh-cn/library/d1et7k7c(v=vs.94).aspx      
+JavaScript 语言参考，  JavaScript 基础，  高级 JavaScript， JavaScript 参考，
