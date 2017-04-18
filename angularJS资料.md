@@ -19,9 +19,11 @@ https://angular.cn/docs/ts/latest/
 `*ngFor`、`{{hero.name}}`、`(click)`、`[hero]`和`<hero-detail>`这样的代码:     
 https://angular.cn/docs/ts/latest/guide/template-syntax.html    
 
-* **架构概览**     
+* **angular架构概览**     
 https://angular.cn/docs/ts/latest/guide/architecture.html#
 
+* **angular路由与导航**   
+https://angular.cn/docs/ts/latest/guide/router.html     
 
 * **编辑器： **         
 下载地址：    
