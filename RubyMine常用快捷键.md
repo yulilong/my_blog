@@ -1,8 +1,12 @@
 #  **一级必会**
 
-**Ctrl+Alt+L：格式化代码**     
-**Ctrl+D：复制一行**       
-**Ctrl+Y：删除一行**      
+* **Mac OS 下快捷键**
+**Ctrl+Alt+L(alt+cmd+l,)：格式化代码**     
+**Ctrl+D(cmd +d)：复制一行**       
+**Ctrl+Y(cmd+delete)：删除一行**      
+* **end, cmd + →, ctl+e: 光标移到行尾**     
+* **home, cmd + 左移键, ctl+A: 光标移到行尾**     
+* **alt + space, cmd+Y:快速查看方法定义源码**
 
 Shift+F10：运行running     
 Ctrl+Alt+R：弹出Rake      
