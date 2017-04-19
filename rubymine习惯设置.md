@@ -125,7 +125,19 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Commen
 (JavaScript) Editor ->  Colors & Fonts -> JavaScript -> Parameter:     
 Foreground, 字体颜色       
 Background, 背景色     
-如果勾选了： Use inherited attributes，则: Language Defaults -> Indentifiers -> Parameter     
+如果勾选了： Use inherited attributes，则: Language Defaults -> Indentifiers -> Parameter        
+
+* **实例变量颜色，接口颜色**    
+
+![WX20170419-113204.png](https://bitbucket.org/repo/oE6yEX/images/3310809205-WX20170419-113204.png)     
+
+1. 类实例变量颜色设置：     
+(TypeScript)Editor ->  Colors & Fonts -> TypeScript -> Instance member variable -> Foreground     
+如果勾选了： Use inherited attributes，则: JavaScript -> Instance member variable        
+(通用) Editor ->  Colors & Fonts -> Language Defaults -> Classes ->Instance field -> Foreground      
+2. 接口颜色设置：    
+(TypeScript)Editor ->  Colors & Fonts -> TypeScript -> Interface -> Foreground      
+如果勾选了： Use inherited attributes，则: Language Defaults -> Classes -> Interface name            
 
 ![WX20170413-113053.png](https://bitbucket.org/repo/oE6yEX/images/29999157-WX20170413-113053.png)      
 
