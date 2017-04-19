@@ -17,6 +17,9 @@
 * **移动光标到下一个单词(move caret to next word)： alt + 方向右键 **      
 * **移动光标到上一个单词(move caret to previous word)： alt + 方向←键 **      
 
+* **向下选中： shift + ↓**      
+* **向上选中： shift + 上**      
+
 
 Shift+F10：运行running     
 Ctrl+Alt+R：弹出Rake      
