@@ -20,6 +20,12 @@
 * **向下选中： shift + ↓**      
 * **向上选中： shift + 上**      
 
+* **编辑窗口拆分：**        
+
+![WX20170419-173115.png](https://bitbucket.org/repo/oE6yEX/images/1221986260-WX20170419-173115.png)      
+
+左上角 -> Window -> Editor Tabs -> Split Horizontally
+
 
 Shift+F10：运行running     
 Ctrl+Alt+R：弹出Rake      
