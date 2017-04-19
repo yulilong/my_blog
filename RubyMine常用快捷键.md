@@ -6,7 +6,15 @@
 **Ctrl+Y(cmd+delete)：删除一行**      
 * **end, cmd + →, ctl+e: 光标移到行尾**     
 * **home, cmd + 左移键, ctl+A: 光标移到行尾**     
-* **alt + space, cmd+Y:快速查看方法定义源码**
+* **alt + space, cmd+Y:快速查看方法定义源码**     
+
+* 移动行到上面(move line up) : alt + shit 方向键上    
+* 移动行到下面(move line down) : alt + shit 方向键下    
+
+* 移动语句到上面(move statement up) : cmd + shit 方向键上    
+* 移动语句到下面(move statement down) : cmd + shit 方向键下    
+
+
 
 Shift+F10：运行running     
 Ctrl+Alt+R：弹出Rake      
