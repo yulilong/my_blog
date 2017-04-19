@@ -14,6 +14,7 @@
 * 移动语句到上面(move statement up) : cmd + shit 方向键上    
 * 移动语句到下面(move statement down) : cmd + shit 方向键下    
 
+* **移动光标到下一个单词(move caret to next word)： alt + 方向右键 **
 
 
 Shift+F10：运行running     
