@@ -49,7 +49,11 @@ http://v3.bootcss.com/css/
 * [**javascript一些问题**](https://bitbucket.org/yulilong/my_wiki/wiki/javascript%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98)      
 立即执行函数       
 * [**JavaScript语法**](https://bitbucket.org/yulilong/my_wiki/wiki/JavaScript%E8%AF%AD%E6%B3%95)       
-   
+ 
+* [**this 的值到底是什么？**](https://zhuanlan.zhihu.com/p/23804247)      
+* [**什么是 JS 原型链？**](https://zhuanlan.zhihu.com/p/23090041?refer=study-fe)     
+* [**JS 的 new 到底是干什么的？**](https://zhuanlan.zhihu.com/p/23987456?refer=study-fe)      
+  
 * **JavaScript 教程(菜鸟教程)： **http://www.runoob.com/js/js-tutorial.html      
 * **JavaScript 教程(手册网)： **  http://www.shouce.ren/api/view/a/823      
 * **AngularJS教程、实例、参考手册(手册网)**   http://www.shouce.ren/api/view/a/3079 
