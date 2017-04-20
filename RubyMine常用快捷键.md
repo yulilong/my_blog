@@ -15,7 +15,14 @@
 * 移动语句到下面(move statement down) : cmd + shit 方向键下    
 
 * **移动光标到下一个单词(move caret to next word)： alt + 方向右键 **      
-* **移动光标到上一个单词(move caret to previous word)： alt + 方向←键 **      
+* **移动光标到上一个单词(move caret to previous word)： alt + 方向←键 **         
+
+* **添加书签(toggle bookmark): F3**        
+* **添加书签(toggle bookmark with mnemonic): alt/option + F3**        
+* **显示书签(show bookmark): cmd + F3**        
+* **跳到上一个书签(previous bookmark): cmd + ↑ **       
+* **跳到下一个书签(previous bookmark): cmd + ↓ **       
+
 
 * **向下选中： shift + ↓**      
 * **向上选中： shift + 上**      
