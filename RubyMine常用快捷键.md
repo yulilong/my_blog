@@ -20,6 +20,9 @@
 * **向下选中： shift + ↓**      
 * **向上选中： shift + 上**      
 
+* **切换大小写(toggle case): shift + cmd + U**
+
+
 * **编辑窗口拆分：**        
 
 ![WX20170419-173115.png](https://bitbucket.org/repo/oE6yEX/images/1221986260-WX20170419-173115.png)      
