@@ -167,4 +167,11 @@ http://blog.csdn.net/jfkidear/article/details/12152167
 
 * **查看各个分支当前所指的对象**     
  
-`git log --oneline --decorate`
+`git log --oneline --decorate`         
+
+#### **git 获取远程分支信息，查看远程所有分支名字**    
+
+![WX20170420-160920.png](https://bitbucket.org/repo/oE6yEX/images/986142660-WX20170420-160920.png)     
+
+1. 获取远程分支信息： `git fetch`     
+2. 查看远程所有分支名字： `git branch -a`
