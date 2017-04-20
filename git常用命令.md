@@ -193,9 +193,10 @@ http://blog.csdn.net/jfkidear/article/details/12152167
 ~ git checkout -b develop origin/develop        
 
 # 拉取远程分支的方法：
-# 
+# 亲测上面图
 # git checkout -b 本地分支名x origin/远程分支名x  #在本地新建分支x，并自动切换到该本地分支x
-# 
+# 未测试过
 # git fetch origin 远程分支名x:本地分支名x     # 在本地新建分支x，但是不会自动切换到该本地分支x，需要手动checkout 
+# 另一种方法：https://segmentfault.com/q/1010000002424900
 
 ```
