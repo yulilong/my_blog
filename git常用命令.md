@@ -190,6 +190,12 @@ http://blog.csdn.net/jfkidear/article/details/12152167
 # 显示远程所有分支名字
 ~ git branch -a
 # 提取远程新分支到本地
-~ git checkout -b develop origin/develop      
+~ git checkout -b develop origin/develop        
+
+# 拉取远程分支的方法：
+# 
+# git checkout -b 本地分支名x origin/远程分支名x  #在本地新建分支x，并自动切换到该本地分支x
+# 
+# git fetch origin 远程分支名x:本地分支名x     # 在本地新建分支x，但是不会自动切换到该本地分支x，需要手动checkout 
 
 ```
