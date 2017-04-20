@@ -157,4 +157,10 @@ http://blog.csdn.net/jfkidear/article/details/12152167
 二、`git rm + git commit -m "abc"`      
 另外，`git add .` 仅能记录添加、改动的动作，删除的动作需靠`git rm`来完成。      
 最后，`rm`删除的文件是处于`not staged`状态的，      
-也就是一种介于 “未改动” 和 “已提交过” 之间的状态。
+也就是一种介于 “未改动” 和 “已提交过” 之间的状态。     
+
+------
+
+* **提交历史、各个分支的指向以及项目的分支分叉情况**    
+
+` git log --oneline --decorate --graph --all`
