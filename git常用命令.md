@@ -163,4 +163,8 @@ http://blog.csdn.net/jfkidear/article/details/12152167
 
 * **提交历史、各个分支的指向以及项目的分支分叉情况**    
 
-` git log --oneline --decorate --graph --all`
+` git log --oneline --decorate --graph --all`     
+
+* **查看各个分支当前所指的对象**     
+ 
+`git log --oneline --decorate`
