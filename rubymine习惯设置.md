@@ -273,4 +273,11 @@ preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Injected 
 1. 光标在变量定义处：    
 preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Identifier under caret(write) -> Background     
 2. 变量一样其他变量的背景色：    
-preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Identifier under caret -> Background
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Identifier under caret -> Background                
+
+* **代码从新格式化格式设置**    
+
+![WX20170420-103323.png](https://bitbucket.org/repo/oE6yEX/images/3920393691-WX20170420-103323.png)     
+
+冒号后有一个空格，从新格式化设置：    
+preferences(cmd + ,) -> Editor -> Code Style -> TypeScript -> Spaces -> After type reference colon':'打上对号
