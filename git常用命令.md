@@ -242,4 +242,27 @@ Auto-merging index.html
 CONFLICT (content): Merge conflict in index.html
 Automatic merge failed; fix conflicts and then commit the result.
 ```     
-其中`Auto-merging`是指已经自动合并的文件， `CONFLICT (content)`是指有冲突的文件，需要解决冲突的文件。
+其中`Auto-merging`是指已经自动合并的文件， `CONFLICT (content)`是指有冲突的文件，需要解决冲突的文件。    
+打开冲突的文件，类似于：   
+```
+<<<<<<< HEAD:ningning
+<div id="footer">contact : email.support@github.com</div>
+=======
+<div id="footer">
+ please contact us at support@github.com
+</div>
+>>>>>>> master   
+```   
+ `<<<<<`  `=======` 中的是 `ningning`分支的代码，     
+`=======`  `>>>>>>` 中的是 `master`分支的代码。    
+经过对比后删除冲突部分的代码，        
+保存后，`git add` 被修改的文件。     
+使用`git commit`命令来完成合并提交：   
+
+![WX20170421-144406.png](https://bitbucket.org/repo/oE6yEX/images/913542449-WX20170421-144406.png)    
+
+1.进入commit编辑页面后，切换英文输入法，按键盘上的`I`键进入编辑commit信息。
+2.编辑好信息后，输入法切换英文， 然后按`esc`键， 再按`shift + : `, 最后按`wq`保存编辑的文件退出。
+3.上传合并的代码即可,使用`git log`命令即可查看合并的信息：   
+
+![WX20170421-173612.png](https://bitbucket.org/repo/oE6yEX/images/1127660136-WX20170421-173612.png)
