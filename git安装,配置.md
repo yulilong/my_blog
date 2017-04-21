@@ -60,6 +60,6 @@ http://yulilong:github_Personal_access_tokens@github.com
 $ git config --global credential.helper store
 ```
 
-## git命令指导 ##
+## git常用命令 ##
 
-[git命令指导](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%91%BD%E4%BB%A4%E6%8C%87%E5%AF%BC)
+[git常用命令](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4)
