@@ -47,7 +47,6 @@ $ vim ~/.git-credentials
 ```
 ```
 http://用户名:密码或token@仓库地址
-
 http://yulilong:password@192.168.102.9
 https://yulilong:password@bitbucket.org
 http://yulilong:password@bitbucket.org
