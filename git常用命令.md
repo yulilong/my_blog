@@ -207,4 +207,39 @@ http://blog.csdn.net/jfkidear/article/details/12152167
 
 [**Git 分支 - 分支的新建与合并**](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6)       
 
-现在有2个分支(master, ningning), `master`分支的代码要合并到`ningning`,
+现在有2个分支(master, ningning), `master`分支的代码要合并到`ningning`,2个分支代码都已经`git commit`过了。   
+
+* 合并命令：   
+
+```
+$ git checkout ningning
+$ git merge master   
+```
+
+*  代码没有冲突合并：    
+
+```
+# 没有冲突的信息类似于下面：
+Updating f42c576..3a0874c
+Fast-forward
+ index.html | 2 ++
+ 1 file changed, 2 insertions(+)
+
+# 或者类似于这种结果： 
+Merge made by the 'recursive' strategy.
+index.html |    1 +
+1 file changed, 1 insertion(+)
+```   
+Git 将合并的结果做了一个新的快照并且自动创建一个新的提交指向它。 
+
+* 代码有冲突合并：   
+
+![WX20170420-172823.png](https://bitbucket.org/repo/oE6yEX/images/3353411608-WX20170420-172823.png)     
+
+错误信息类似于：   
+```
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+```     
+其中`Auto-merging`是指已经自动合并的文件， `CONFLICT (content)`是指有冲突的文件，需要解决冲突的文件。
