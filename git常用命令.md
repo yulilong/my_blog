@@ -205,5 +205,6 @@ http://blog.csdn.net/jfkidear/article/details/12152167
 
 ### git 分支合并    
 
-https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6         
+[**Git 分支 - 分支的新建与合并**](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6)       
+
 现在有2个分支(master, ningning), `master`分支的代码要合并到`ningning`,
