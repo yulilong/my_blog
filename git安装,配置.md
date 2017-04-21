@@ -1,8 +1,11 @@
 ###  [**return Home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)    
 #git install
-```
+```   
+# centos7.2 linnux
 sudo yum update
 sudo yum install -y git
+# Mac OS 需要事先安装了homebrew  
+~ brew install git
 ```
 # git命令别名设置 #
 这里是为了在频繁git操作的时候，命令简化。
