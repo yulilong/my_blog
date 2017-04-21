@@ -39,8 +39,8 @@ C:\Documents and Settings\用户名，其中有一个.gitconfig的文件
 
 # github Personal access tokens
 这里是为下一步操作做准备的，如果你的仓库网站提供了token，那么设置一个读取token，没有tokens的请忽略。
-
-385f054bdcf8d95b4372c6exxxxxxxxxc0fd
+https://github.com/settings/tokens     
+`![WX20170421-105344.png](https://bitbucket.org/repo/oE6yEX/images/964748538-WX20170421-105344.png)`      
 
 #git-credentials
 
