@@ -40,7 +40,7 @@ C:\Documents and Settings\用户名，其中有一个.gitconfig的文件
 # github Personal access tokens
 这里是为下一步操作做准备的，如果你的仓库网站提供了token，那么设置一个读取token，没有tokens的请忽略。
 
-385f054bdcf8d95b4372c6e5199818388420c0fd
+385f054bdcf8d95b4372c6exxxxxxxxxc0fd
 
 #git-credentials
 
@@ -53,8 +53,8 @@ http://用户名:密码或token@仓库地址
 http://yulilong:password@192.168.102.9
 https://yulilong:password@bitbucket.org
 http://yulilong:password@bitbucket.org
-https://yulilong:385f054bdcf8d95b4372c6e5199818388420c0fd@github.com
-http://yulilong:385f054bdcf8d95b4372c6e5199818388420c0fd@github.com
+https://yulilong:5199818388420@github.com
+http://yulilong:github_Personal_access_tokens@github.com
 ```
 ```
 $ git config --global credential.helper store
