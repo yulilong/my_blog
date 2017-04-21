@@ -199,4 +199,11 @@ http://blog.csdn.net/jfkidear/article/details/12152167
 # git fetch origin 远程分支名x:本地分支名x     # 在本地新建分支x，但是不会自动切换到该本地分支x，需要手动checkout 
 # 另一种方法：https://segmentfault.com/q/1010000002424900
 
-```
+```   
+
+--------
+
+### git 分支合并    
+
+https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6         
+现在有2个分支(master, ningning), `master`分支的代码要合并到`ningning`,
