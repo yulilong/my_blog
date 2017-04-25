@@ -89,4 +89,42 @@ src/app/jasframework/admin-center/privilege-admin/enterprise-admin/enterprise-li
     }
 ```    
 p-dataTable 插件地址信息：       
-https://www.primefaces.org/primeng/#/datatable
+https://www.primefaces.org/primeng/#/datatable    
+
+### API 网关地址 配置    
+
+cloudlink-front-framework/config/webpack.dev.js    
+```
+# line 13 ~ 19
+/**
+ * Webpack Constants 
+ */
+const ENV = process.env.ENV = process.env.NODE_ENV = 'development';
+const HOST = process.env.HOST || 'localhost';
+const PORT = process.env.PORT || 3000;
+const HMR = helpers.hasProcessFlag('hot');
+
+# line 150 ~ 171
+devServer: {
+            port: METADATA.port,
+            host: METADATA.host,
+            historyApiFallback: {
+                index: '/index.html'
+            },
+            watchOptions: {
+                aggregateTimeout: 300,
+                poll: 1000
+            },
+            proxy: {
+                '/cloudlink/v1/**': {
+                    target: 'http://192.168.100.90:8050',
+                    // target: 'http://192.168.120.110:8050',
+
+                    // target: 'http://192.168.20.221:8901', //赵杨 ip
+                    // target: 'http://192.168.100.212:8050',
+                    secure: false,
+                    pathRewrite: { '^/cloudlink/v1': '' }
+                }
+            }
+        },
+```
