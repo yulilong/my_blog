@@ -260,10 +260,20 @@ Automatic merge failed; fix conflicts and then commit the result.
 保存后，使用`git add` 添加修改的文件。     
 使用`git commit`命令来完成合并提交：   
 
-![WX20170421-144406.png](https://bitbucket.org/repo/oE6yEX/images/913542449-WX20170421-144406.png)    
+`![WX20170421-144406.png](https://bitbucket.org/repo/oE6yEX/images/913542449-WX20170421-144406.png)`    
 
 1.进入commit编辑页面后，输入法切换到英文，按键盘上的`I`键进入编辑commit信息。      
 2.编辑好信息后，输入法切换到英文， 然后按`esc`键， 再按`shift + : `, 最后按`wq`保存编辑的文件退出。        
 3.上传合并的代码即可,使用`git log`命令即可查看合并的信息：         
 
-![WX20170421-173612.png](https://bitbucket.org/repo/oE6yEX/images/1127660136-WX20170421-173612.png)
+`![WX20170421-173612.png](https://bitbucket.org/repo/oE6yEX/images/1127660136-WX20170421-173612.png)`      
+
+
+### 关闭git pull产生的merge 信息     
+
+linux, 编辑 ~/.gitconfig:    
+```
+[core]
+    mergeoptions = --no-edit
+```     
+或者终端执行：`git config --global core.mergeoptions --no-edit`
