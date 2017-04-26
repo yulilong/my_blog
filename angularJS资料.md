@@ -17,7 +17,10 @@ https://angular.cn/docs/ts/latest/
 * **Angular 的模板语法**   
 
 `*ngFor`、`{{hero.name}}`、`(click)`、`[hero]`和`<hero-detail>`这样的代码:     
-https://angular.cn/docs/ts/latest/guide/template-syntax.html    
+https://angular.cn/docs/ts/latest/guide/template-syntax.html       
+
+* **angular2 HTTP 客户端**   
+https://angular.cn/docs/ts/latest/guide/server-communication.html
 
 * **angular架构概览**     
 https://angular.cn/docs/ts/latest/guide/architecture.html#
