@@ -13,7 +13,8 @@ sudo yum install -y git
 # linux,  Mac OS, window 都适用 
 git config --global user.name "you name"
 git config --global user.email you_email_addr@gmail.com
-git config --global core.editor vim
+git config --global core.editor vim              #使用VIM编辑器编辑commit信息
+git config --global core.mergeoptions --no-edit  #关闭git pull产生的merge信息
 git config --global credential.helper store
 git config --global alias.co checkout
 git config --global alias.ci commit
