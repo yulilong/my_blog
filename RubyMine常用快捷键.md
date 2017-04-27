@@ -7,6 +7,9 @@
 * **end, cmd + →, ctl+e: 光标移到行尾**     
 * **home, cmd + 左移键, ctl+A: 光标移到行尾**     
 * **alt + space, cmd+Y:快速查看方法定义源码**     
+* **替换(replace...): cmd + R ** 
+Edit -> find -> replace...
+
 
 * 移动行到上面(move line up) : alt + shit 方向键上    
 * 移动行到下面(move line down) : alt + shit 方向键下    
