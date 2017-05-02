@@ -51,7 +51,9 @@ http://v3.bootcss.com/css/
 
 * [**javascript一些问题**](https://bitbucket.org/yulilong/my_wiki/wiki/javascript%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98)      
 立即执行函数       
-* [**JavaScript语法**](https://bitbucket.org/yulilong/my_wiki/wiki/JavaScript%E8%AF%AD%E6%B3%95)       
+* [**JavaScript语法**](https://bitbucket.org/yulilong/my_wiki/wiki/JavaScript%E8%AF%AD%E6%B3%95)     
+
+* [**怎么轻松学习JavaScript**](http://www.jianshu.com/p/cba0eeba2371)       
  
 * [**this 的值到底是什么？**](https://zhuanlan.zhihu.com/p/23804247)      
 * [**什么是 JS 原型链？**](https://zhuanlan.zhihu.com/p/23090041?refer=study-fe)     
