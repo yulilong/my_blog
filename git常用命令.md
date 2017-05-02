@@ -83,11 +83,32 @@ $ git br -m 旧名字 新名字
 
 ```    
 -----------
-* git 回滚到某个commit     
-```
-# 记住最新的commit，然后在用此命令回滚到最新
-$ git reset --hard resetVersionHash //将当前branch的HEAD指针指向commit hash
+### git 回滚到某个commit     
 
+http://www.shouce.ren/api/view/a/13832
+```
+# 回滚到老的commit
+# 方法一
+# 记住最新的commit，然后在用此命令回滚
+$ git reset --hard resetVersionHash //将当前branch的HEAD指针指向commit hash    
+$ git reset --hard 3628164  //老的commit
+# 只看commit SHA1 不看作者跟时间
+~ git log --pretty=oneline   
+
+# 方法二：
+# Git必须知道当前版本是哪个版本，在Git中，用HEAD表示当前版本，也就是最新的提交3628164...882e1e0（注意我的提交ID和你的肯定不一样），上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100   
+$ git reset --hard HEAD^
+HEAD is now at ea34578 add distributed 
+
+# 回到新
+# 如果记得新commit的号码
+$ git reset --hard 3628164 # 3628164 是新的commit
+HEAD is now at 3628164 append GPL 
+# 如果不记得commit号，那么可使用如下命令查看：
+$ git reflog
+ea34578 HEAD@{0}: reset: moving to HEAD^
+3628164 HEAD@{1}: commit: append GPL
+ea34578 HEAD@{2}: commit: add distributed
 ```   
 -------  
 * git 查看改动  
