@@ -145,13 +145,13 @@ import {EnterpriseAdminModel} from "../shared/enterprise-admin.model";
 # 方法一：
 # enterprise-admin/enterprise-auth/enterprise-authed-approve/enterprise-authed-approve.component.ts 
 # 在文件中写入如下代码：
-import {EnterpriseAdminService} from "../shared/enterprise-admin.service";
+import {EnterpriseAdminService} from "../shared/enterprise-admin.service"; # 导入服务文件
 
 @Component({
     selector: "jas-enterprise-authed-approve",
     templateUrl: "./enterprise-authed-approve.component.html",
     styleUrls: ["./enterprise-authed-approve.component.css"],
-    providers:[EnterpriseAdminService]
+    providers:[EnterpriseAdminService]                               # 在这里写上服务名字
 })
 
 # 方法二：   
