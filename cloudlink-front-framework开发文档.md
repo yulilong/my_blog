@@ -127,4 +127,48 @@ devServer: {
                 }
             }
         },
+```   
+
+### 服务跟模块注册使用   
+
+![WX20170505-102149.png](https://bitbucket.org/repo/oE6yEX/images/2378097808-WX20170505-102149.png)   
+
+如上图所示，先有一个模型跟服务，需要在`enterprise-auth/enterprise-authed-approve`里面使用：    
+模型使用：   
+```
+# enterprise-admin/enterprise-auth/enterprise-authed-approve/enterprise-authed-approve.component.ts 
+# 只需要在这个文件中写如下代码即可：
+import {EnterpriseAdminModel} from "../shared/enterprise-admin.model";
+```  
+服务的使用：    
+```
+# 方法一：
+# enterprise-admin/enterprise-auth/enterprise-authed-approve/enterprise-authed-approve.component.ts 
+在文件中写入如下代码：
+import {EnterpriseAdminService} from "../shared/enterprise-admin.service";
+
+@Component({
+    selector: "jas-enterprise-authed-approve",
+    templateUrl: "./enterprise-authed-approve.component.html",
+    styleUrls: ["./enterprise-authed-approve.component.css"],
+    providers:[EnterpriseAdminService]
+})
+
+方法二：   
+# enterprise-auth/enterprise-authed-approve/enterprise-authed-approve.component.ts 
+# 在文件中写入如下代码：
+import {EnterpriseAdminService} from "../shared/enterprise-admin.service";  # 引入使用
+
+# enterprise-auth/enterprise-auth.module.ts 
+# 在文件中写入如下代码：
+import { EnterpriseAdminService } from './shared/enterprise-admin.service';
+
+@NgModule({
+    imports: [
+    ],
+    declarations: [
+    ],
+    bootstrap: [    ],
+    providers:[EnterpriseAdminService    ]  # 引入声明
+})
 ```
