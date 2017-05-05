@@ -144,7 +144,7 @@ import {EnterpriseAdminModel} from "../shared/enterprise-admin.model";
 ```
 # 方法一：
 # enterprise-admin/enterprise-auth/enterprise-authed-approve/enterprise-authed-approve.component.ts 
-在文件中写入如下代码：
+# 在文件中写入如下代码：
 import {EnterpriseAdminService} from "../shared/enterprise-admin.service";
 
 @Component({
@@ -154,7 +154,7 @@ import {EnterpriseAdminService} from "../shared/enterprise-admin.service";
     providers:[EnterpriseAdminService]
 })
 
-方法二：   
+# 方法二：   
 # enterprise-auth/enterprise-authed-approve/enterprise-authed-approve.component.ts 
 # 在文件中写入如下代码：
 import {EnterpriseAdminService} from "../shared/enterprise-admin.service";  # 引入使用
