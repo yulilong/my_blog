@@ -2,13 +2,10 @@
 -----
 * [**angularJS开发遇见的问题**](https://bitbucket.org/yulilong/my_wiki/wiki/angularJS%E5%BC%80%E5%8F%91%E9%81%87%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98)       
 * [**Mac下angular开发环境安装**](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%E4%B8%8Bangular%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85)      
-
+* [** html常用正则表达式**](https://bitbucket.org/yulilong/my_wiki/wiki/html%E5%B8%B8%E7%94%A8%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F)      
 * [**工作开发参考**](https://bitbucket.org/yulilong/my_wiki/wiki/%E5%B7%A5%E4%BD%9C%E5%BC%80%E5%8F%91%E5%8F%82%E8%80%83)这个是工作中开发的参考文档         
-
 * [**cloudlink-front-framework开发文档**](https://bitbucket.org/yulilong/my_wiki/wiki/cloudlink-front-framework%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3)       
-
 * **AngularJS执行流程详解** http://www.cnblogs.com/shytong/p/5011411.html    
-
 *  **angularJS官方文档**      
 https://angular.cn/           
 https://angular.cn/docs/ts/latest/         
