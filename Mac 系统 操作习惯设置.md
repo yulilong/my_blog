@@ -61,4 +61,14 @@ find -> 前往 -> 前往文件夹，输入路径即可：
 
 ## **把应用程序图标放在finder上**    
 
-按住 cmd键，鼠标拖动应用即可。
+按住 cmd键，鼠标拖动应用即可。   
+
+## **显示与隐藏 隐藏文件**     
+
+
+https://jingyan.baidu.com/article/d2b1d1027c6dc65c7e37d435.html     
+命令行：    
+```
+defaults write com.apple.finder AppleShowAllFiles Yes && killall Finder //显示隐藏文件
+defaults write com.apple.finder AppleShowAllFiles No && killall Finder //不显示隐藏文件
+```
