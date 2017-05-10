@@ -71,11 +71,7 @@ git checkout -b local-name origin/remote-name  #拉取远程分支到本地
 
 本地就一个master分之，远程有2个分之(maseter,develop)，把远程的develop拉取到本地：       
 
-* **git 获取远程分支信息，查看远程所有分支名字**    
-
 `![WX20170420-160920.png](https://bitbucket.org/repo/oE6yEX/images/986142660-WX20170420-160920.png)`     
-1. 获取远程分支信息： `git fetch`     
-2. 查看远程所有分支名字： `git branch -a` 
 
 `![WX20170420-162329.png](https://bitbucket.org/repo/oE6yEX/images/112289165-WX20170420-162329.png)`      
 
