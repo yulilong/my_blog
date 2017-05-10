@@ -55,7 +55,9 @@ $ git push origin --tags # 将本地所有标签一次性提交到git服务器
 --------------
 # 拉取特定分支的代码 #
 
+本地什么也没有：      
 ```
+# 本地什么也没有
 $ git clone -b 分支名  代码地址
 $ git clone -b euwe-1-rc2 https://github.com/ManageIQ/manageiq  #拉取远程特定分支的代码
 # 下载默认分支后还想拉取其他分支的代码
@@ -65,7 +67,29 @@ git remote show origin #查看远程所有分支
 git remote update
 git fetch
 git checkout -b local-name origin/remote-name  #拉取远程分支到本地
-```  
+```    
+
+本地就一个master分之，远程有2个分之(maseter,develop)，把远程的develop拉取到本地：       
+
+`![WX20170420-162329.png](https://bitbucket.org/repo/oE6yEX/images/112289165-WX20170420-162329.png)`      
+
+```
+# 本地的分支是干净的，就是没有修改的文件
+# 获取远程所有分支名字
+~ git fetch
+# 显示远程所有分支名字
+~ git branch -a
+# 提取远程新分支到本地
+~ git checkout -b develop origin/develop        
+
+# 拉取远程分支的方法：
+# 亲测上面图
+# git checkout -b 本地分支名x origin/远程分支名x  #在本地新建分支x，并自动切换到该本地分支x
+# 未测试过
+# git fetch origin 远程分支名x:本地分支名x     # 在本地新建分支x，但是不会自动切换到该本地分支x，需要手动checkout 
+# 另一种方法：https://segmentfault.com/q/1010000002424900
+
+```   
 -----------
 * 分支管理  
 ```
@@ -198,29 +222,7 @@ http://blog.csdn.net/jfkidear/article/details/12152167
 2. 查看远程所有分支名字： `git branch -a`     
 
 
-####  **git拉取远程新分支到本地**     
 
-本地就一个master分之，远程有2个分之(maseter,develop)，把远程的develop拉取到本地：       
-
-`![WX20170420-162329.png](https://bitbucket.org/repo/oE6yEX/images/112289165-WX20170420-162329.png)`      
-
-```
-# 本地的分支是干净的，就是没有修改的文件
-# 获取远程所有分支名字
-~ git fetch
-# 显示远程所有分支名字
-~ git branch -a
-# 提取远程新分支到本地
-~ git checkout -b develop origin/develop        
-
-# 拉取远程分支的方法：
-# 亲测上面图
-# git checkout -b 本地分支名x origin/远程分支名x  #在本地新建分支x，并自动切换到该本地分支x
-# 未测试过
-# git fetch origin 远程分支名x:本地分支名x     # 在本地新建分支x，但是不会自动切换到该本地分支x，需要手动checkout 
-# 另一种方法：https://segmentfault.com/q/1010000002424900
-
-```   
 
 --------
 
