@@ -162,13 +162,25 @@ import {EnterpriseAdminService} from "../shared/enterprise-admin.service";  # �
 # enterprise-auth/enterprise-auth.module.ts 
 # 在文件中写入如下代码：
 import { EnterpriseAdminService } from './shared/enterprise-admin.service';
-
 @NgModule({
     imports: [
     ],
     declarations: [
     ],
-    bootstrap: [    ],
     providers:[EnterpriseAdminService    ]  # 引入声明
+})
+
+# 方法三：在上层模块中为服务申明一个名字，在子模块中直接用这个名字调用
+# enterprise-auth/enterprise-authed-approve/enterprise-authed-approve.component.ts 
+# 在构造函数中直接引用：
+constructor(@Inject('view') private viewService,
+
+# enterprise-auth/enterprise-auth.module.ts 
+# 在文件中写入如下代码：
+mport { EnterpriseAdminService } from './shared/enterprise-admin.service';
+@NgModule({
+    providers:[
+       {provide:'view',useClass:EnterpriseAdminService} # 引入声明
+    ]  
 })
 ```
