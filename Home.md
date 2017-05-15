@@ -63,8 +63,9 @@ http://xialeizhou.com/2019/06/23/%E9%AB%98%E6%95%88macbook%E5%B7%A5%E4%BD%9C%E7%
 * [centos7 搭建samba方法](https://bitbucket.org/yulilong/my_wiki/wiki/centos7%20%E6%90%AD%E5%BB%BAsamba%E6%96%B9%E6%B3%95)
 * [ cento7 错误处理](https://bitbucket.org/yulilong/my_wiki/wiki/cento7%20%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86)  
 * [centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall](https://bitbucket.org/yulilong/my_wiki/wiki/centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall)     
-* [virtualbox虚拟机 centos7安装增强工具](https://bitbucket.org/yulilong/my_wiki/wiki/virtualbox%E8%99%9A%E6%8B%9F%E6%9C%BA%20centos7%E5%AE%89%E8%A3%85%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7)    
-
+* [virtualbox虚拟机 centos7安装增强工具](https://bitbucket.org/yulilong/my_wiki/wiki/virtualbox%E8%99%9A%E6%8B%9F%E6%9C%BA%20centos7%E5%AE%89%E8%A3%85%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7)     
+* [**vim编辑器常用命令与用法总结**](https://bitbucket.org/yulilong/my_wiki/wiki/Linux%20vi/vim%E7%BC%96%E8%BE%91%E5%99%A8%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%B8%8E%E7%94%A8%E6%B3%95%E6%80%BB%E7%BB%93)      
+  
 -------------------------------------------------------------------------------------------------   
 ### **在线工具**
 
