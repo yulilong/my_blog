@@ -102,6 +102,10 @@ http://www.imooc.com/learn/763
 ----------
 ## HTML CSS 
 
+* [**CSS 资源大全中文版**](https://github.com/jobbole/awesome-css-cn)     
+* [**JavaScript 资源大全中文版**](https://github.com/jobbole/awesome-javascript-cn)
+
+
 #### 菜鸟教程 http://www.runoob.com/    
 HTML 定义了网页的内容，CSS 描述了网页的布局，JavaScript 网页的行为      
 * **AngularJS 教程 ： **  http://www.runoob.com/angularjs/angularjs-tutorial.html    
