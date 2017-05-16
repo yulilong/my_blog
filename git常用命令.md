@@ -287,6 +287,10 @@ Automatic merge failed; fix conflicts and then commit the result.
 ### 如果冲突过多，可取消合并     
 
 ```
+# 取消自己的文件修改或取消其他的文件修改
+# https://www.zhihu.com/question/21215715
+~ git checkout --ours file 
+~ git checkout --theirs file
 # 参考链接： https://q.cnblogs.com/q/79372/
 $ git reset --hard HEAD 
 # 放弃工作区和index的改动,HEAD指针仍然指向当前的commit.
