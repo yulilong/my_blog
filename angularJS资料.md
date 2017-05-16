@@ -1,5 +1,11 @@
 ###  [**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
------
+-----    
+* angular2生产环境打包部署命令  
+
+```
+npm run build:prod
+```
+
 * [**angularJS开发遇见的问题**](https://bitbucket.org/yulilong/my_wiki/wiki/angularJS%E5%BC%80%E5%8F%91%E9%81%87%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98)       
 * [**Mac下angular开发环境安装**](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%E4%B8%8Bangular%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85)      
 * [** html常用正则表达式**](https://bitbucket.org/yulilong/my_wiki/wiki/html%E5%B8%B8%E7%94%A8%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F)      
