@@ -103,7 +103,8 @@ http://www.imooc.com/learn/763
 ## HTML CSS 
 
 * [**CSS 资源大全中文版**](https://github.com/jobbole/awesome-css-cn)     
-* [**JavaScript 资源大全中文版**](https://github.com/jobbole/awesome-javascript-cn)
+* [**JavaScript 资源大全中文版**](https://github.com/jobbole/awesome-javascript-cn)     
+* [**JavaScript深入系列、JavaScript专题系列、ES6系列、React系列**](https://github.com/mqyqingfeng/Blog)      
 
 
 #### 菜鸟教程 http://www.runoob.com/    
