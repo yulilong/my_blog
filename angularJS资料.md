@@ -39,6 +39,8 @@ https://code.visualstudio.com/docs
 
 * **AngularJS执行流程详解** http://www.cnblogs.com/shytong/p/5011411.html    
 
+* **Webpack入门** http://www.cnblogs.com/kagol/archive/2016/01/23/5152734.html
+
 -----
 ## Bootstrap   
 
