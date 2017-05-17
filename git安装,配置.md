@@ -38,17 +38,25 @@ C:\Documents and Settings\用户名，其中有一个.gitconfig的文件
 
 ---
 
-# github Personal access tokens
-这里是为下一步操作做准备的，如果你的仓库网站提供了token，那么设置一个读取token，没有tokens的请忽略。
+## git设置远程仓库账号密码(拉取、上传代码不用输入用户名密码)
+
+* **github Personal access tokens**     
+
+使用token可以不需要密码就可以读取远程仓库代码，如果你的远程仓库网站提供了账户访问token，那么设置一个读取token，没有tokens的请忽略。
 https://github.com/settings/tokens     
 `![WX20170421-105344.png](https://bitbucket.org/repo/oE6yEX/images/964748538-WX20170421-105344.png)`      
 
-#git-credentials
+* **git-credentials git读取账号密码文件**
 
-这里是为了你在拉取代码的时候不用在输入用户名密码了，但是这里会暴露你远程仓库的用户名密码，如果有token那没有问题，如果没有，呵呵你自己看着办。
+这里是为了你在拉取代码的时候不用在输入用户名密码了，
+但是这里会暴露你远程仓库的用户名密码，注意保密，如果电脑不用了记得删除这个文件。
 ```
+# 打开文件，如果没有则会自动创建文件
 $ vim ~/.git-credentials
-```
+# 编辑好文件后运行git命令来让文件生效
+$ git config --global credential.helper store
+```    
+里面文件内容：      
 ```
 http://用户名:密码或token@仓库地址
 http://yulilong:password@192.168.102.9
@@ -57,10 +65,13 @@ http://yulilong:password@bitbucket.org
 https://yulilong:5199818388420@github.com
 http://yulilong:github_Personal_access_tokens@github.com
 ```
-```
-$ git config --global credential.helper store
-```
+
+------------
+## .git文件夹详解     
+
+* 1231
+
 
 ## git常用命令 ##
 
-[git常用命令](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4)
+[git常用命令](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4)* [链接文本](链接网址)
