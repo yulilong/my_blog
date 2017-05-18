@@ -94,8 +94,8 @@ git checkout -b local-name origin/remote-name  #拉取远程分支到本地
 ```   
 -----------    
 
-## **代码已经修改又不想commit情况下，拉取远程仓库新代码
-**
+## **代码已经修改又不想commit情况下，拉取远程仓库新代码**
+
 ```
 # 把修改的代码备份一下
 ~ git diff > tmp.patch  
