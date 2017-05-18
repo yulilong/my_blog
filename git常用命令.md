@@ -92,6 +92,21 @@ git checkout -b local-name origin/remote-name  #拉取远程分支到本地
 # 另一种方法：https://segmentfault.com/q/1010000002424900
 
 ```   
+-----------    
+
+## **代码已经修改又不想commit情况下，拉取远程仓库新代码
+**
+```
+# 把修改的代码备份一下
+~ git diff > tmp.patch  
+# 放弃所有修改的代码
+~ git co .
+# 拉取代码
+~ git pull
+# 把备份的代码还原回去
+~ git apply tmp.patch
+# 注意，不要有冲突，如果拉取的代码与修改的代码重复就会冲突，小心慎重
+```
 -----------
 * 分支管理  
 ```
@@ -250,7 +265,7 @@ Git 将合并的结果做了一个新的快照并且自动创建一个新的提�
 
 * 代码有冲突合并：   
 
-![WX20170420-172823.png](https://bitbucket.org/repo/oE6yEX/images/3353411608-WX20170420-172823.png)     
+`![WX20170420-172823.png](https://bitbucket.org/repo/oE6yEX/images/3353411608-WX20170420-172823.png)`     
 
 错误信息类似于：   
 ```
