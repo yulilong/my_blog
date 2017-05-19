@@ -1,6 +1,10 @@
 #  **一级必会**
 
-* **Mac OS 下快捷键**
+* **Mac OS 下快捷键**        
+
+**行注释(Comment with Line Comment): cmd + /**     
+**块注释(Comment with block Comment): alt + cmd + /**     
+
 **Ctrl+Alt+L(alt+cmd+l,)：格式化代码(reformat code)**     
 **Ctrl+D(cmd +d)：复制一行**       
 **Ctrl+Y(cmd+delete)：删除一行**      
