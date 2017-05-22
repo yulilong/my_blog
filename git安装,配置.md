@@ -6,6 +6,12 @@ sudo yum update
 sudo yum install -y git
 # Mac OS 需要事先安装了homebrew  
 ~ brew install git
+
+# windows 下 
+# 下载客户端安装：
+https://git-for-windows.github.io/
+# 安装教程
+# https://jingyan.baidu.com/article/20095761b48041cb0721b4fc.html
 ```
 # git命令别名设置 #
 这里是为了在频繁git操作的时候，命令简化。
