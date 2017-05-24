@@ -20,7 +20,7 @@ $git config --global core.autocrlf true
 ```    
 设置为true，添加文件到git仓库时，git将其视为文本文件。他将把crlf变成lf。      
 设置为false时，line-endings将不做转换操作。文本文件保持原来的样子。      
-设置为input时，添加文件git仓库石，git把crlf编程lf。当有人Check代码时还是lf方式。因此在window操作系统下，不要使用这个设置。 
+设置为input时，添加文件git仓库石，git把crlf编程lf。当有人Check代码时还是lf方式。因此在window操作系统下，不要使用这个设置。      
 1) true:             x -> LF -> CRLF         
 2) input:            x -> LF -> LF            
 3) false:            x -> x -> x
