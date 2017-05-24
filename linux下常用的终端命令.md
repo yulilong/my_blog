@@ -138,8 +138,9 @@ $ du -sh *
 
 * **linux 压缩、解压**
 http://www.blogjava.net/jiangjf/archive/2007/07/29/133122.html      
+http://blog.csdn.net/liangzhao_jay/article/details/48052913      
 ```
-.tar
+.tar  # tar命令可以用来压缩打包单文件、多个文件、单个目录、多个目录。
    多个文件压缩打包 tar czvf my.tar.gz file1 file2 ...（file*）（也可以给file*文件mv 目录在压缩）
    单个目录压缩打包 tar czvf my.tar.gz dir1
    多个目录压缩打包 tar czvf my.tar.gz dir1 dir2
