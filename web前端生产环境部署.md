@@ -19,7 +19,7 @@ Jenkins账号密码问相关人员。
 1. 先运行`cloudlink-front-framework_Destroy` 删除旧资源。    
 2. 运行`cloudlink-front-framework` 部署。    
 
-* **修改API连接地址**    
+* **修改API连接地址(需要修改的情况下)**    
 
 1. 打开Nginx文件里面`nginx.conf`     
 
