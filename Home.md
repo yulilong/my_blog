@@ -54,6 +54,14 @@ http://xialeizhou.com/2019/06/23/%E9%AB%98%E6%95%88macbook%E5%B7%A5%E4%BD%9C%E7%
 
 
 -------------------------------------------------------------------------------------------------   
+###  **Markdown**         
+
+* [Markdown 语法说明 (简体中文版)](http://www.appinn.com/markdown/index.html)      
+https://github.com/riku/Markdown-Syntax-CN       
+* [Markdown，你只需要掌握这几个](http://www.tuicool.com/articles/fmeMbqR)    
+
+-------------------------------------------------------------------------------------------------
+
 ### **在线工具**
 
 * HTML 参考手册: http://www.w3school.com.cn/tags/  
@@ -62,14 +70,6 @@ http://xialeizhou.com/2019/06/23/%E9%AB%98%E6%95%88macbook%E5%B7%A5%E4%BD%9C%E7%
 * **在线调色板: **http://tool.chinaz.com/Tools/onlinecolor.aspx       
 * **在线颜色选择器 | RGB颜色查询对照表: **http://www.atool.org/colorpicker.php       
 * **在线编辑软件流程图: **http://asciiflow.com/        
-
--------------------------------------------------------------------------------------------------
-
-###  **Markdown**         
-
-* [Markdown 语法说明 (简体中文版)](http://www.appinn.com/markdown/index.html)      
-https://github.com/riku/Markdown-Syntax-CN       
-* [Markdown，你只需要掌握这几个](http://www.tuicool.com/articles/fmeMbqR)    
 
 -------------------------------------------------------------------------------------------------
 
