@@ -140,8 +140,10 @@ $ du -sh *
 http://www.blogjava.net/jiangjf/archive/2007/07/29/133122.html      
 ```
 .tar
-　　解包：tar zxvf FileName.tar
-　　打包：tar czvf FileName.tar DirName
+   多个文件压缩打包 tar czvf my.tar.gz file1 file2 ...（file*）（也可以给file*文件mv 目录在压缩）
+   单个目录压缩打包 tar czvf my.tar.gz dir1
+   多个目录压缩打包 tar czvf my.tar.gz dir1 dir2
+   解包至当前目录： tar xzvf my.tar.gz
 ---------------------------------------------
 .zip
 　　解压：unzip FileName.zip
