@@ -45,7 +45,7 @@ template: `
 
 文件路径： cloudlink-front-framework/src/app/core/home/home.module.ts    
 ```
-import { routing } from './home.routing';    # 加载自己的路由
+import { routing } from './home.routing';             # 加载自己的路由
 import { NgaModule } from '../../theme/nga.module';   # 加载菜单模块
 import { HomeComponent } from './home.component';     # 加载组件，这里有执行，有网页，
 ```  
@@ -95,4 +95,8 @@ const routes: Routes = [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },         # 这里匹配空，并且加上了‘dashboard’
       { path: 'jas', loadChildren: () => System.import('../../jasframework/jas/jas.module.ts'), canLoad: [AuthGuard] },
       { path: 'dashboard', loadChildren: () => System.import('../dashboard/dashboard.module'), canLoad: [AuthGuard] },
-```
+```    
+文件路径： src/app/core/dashboard/dashboard.module.ts         
+文件路径： src/app/core/dashboard/dashboard.component.ts         
+文件路径： src/app/core/dashboard/dashboard.html               
+这里没有什么，正常显示。
