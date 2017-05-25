@@ -280,4 +280,9 @@ preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Identifie
 ![WX20170420-103323.png](https://bitbucket.org/repo/oE6yEX/images/3920393691-WX20170420-103323.png)     
 
 冒号后有一个空格，从新格式化设置：    
-preferences(cmd + ,) -> Editor -> Code Style -> TypeScript -> Spaces -> After type reference colon':'打上对号
+preferences(cmd + ,) -> Editor -> Code Style -> TypeScript -> Spaces -> After type reference colon':'打上对号      
+
+* **关闭TypeScript 自动编译**   
+
+preferences(cmd + ,) -> Languages & Frameworks -> TypeScript:     
+Compiler:  Enable TypeScript Compiler 去掉前面的对号，就不会自动编译了。
