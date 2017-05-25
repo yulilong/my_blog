@@ -74,4 +74,25 @@ template: `
     </div>
     <ba-back-top position="200"></ba-back-top>
     `
+```     
+
+文件路径： src/app/core/home/home.routing.ts     
+```
+# line:6
+const routes: Routes = [
+  {
+    path: 'login',
+    loadChildren: () => System.import('../login/login.module')             # 这里是登录
+  },
+  {
+    path: 'register',
+    loadChildren: () => System.import('../register/register.module')
+  },
+  {
+    path: 'cloudlink',   # 匹配这里
+    component: HomeComponent,
+    children: [
+      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },         # 这里匹配空，并且加上了‘dashboard’
+      { path: 'jas', loadChildren: () => System.import('../../jasframework/jas/jas.module.ts'), canLoad: [AuthGuard] },
+      { path: 'dashboard', loadChildren: () => System.import('../dashboard/dashboard.module'), canLoad: [AuthGuard] },
 ```
