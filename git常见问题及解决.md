@@ -1,4 +1,14 @@
-###  CRLF和LF      
+###  不同操作系统使用git时，换行操作不同问题     
+![WX20170524-183615.png](https://bitbucket.org/repo/oE6yEX/images/2142324664-WX20170524-183615.png)     
+
+错误信息类似于：   
+```
+~ git diff > tmp.patch
+warning: LF will be replaced by CRLF in src/app/theme/components/menuItem/menuItem.component.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in config/webpack.dev.js.
+
+```
 
 *  什么是CRLF和LF    
 
