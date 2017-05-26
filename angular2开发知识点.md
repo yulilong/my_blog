@@ -190,4 +190,92 @@ mport { EnterpriseAdminService } from './shared/enterprise-admin.service';
 ---------------
 ## 模块组件注册使用      
 
-![WX20170526-135439.png](https://bitbucket.org/repo/oE6yEX/images/3381880586-WX20170526-135439.png)
+![WX20170526-135439.png](https://bitbucket.org/repo/oE6yEX/images/3381880586-WX20170526-135439.png)     
+
+如上图所示，模块`charts`需要在`enterprise-admin`下注册使用：      
+```
+# 模块的注册使用 
+
+# src/app/jasframework/enterprise-admin/charts/charts.module.ts 
+import {Charts} from './charts.component';
+import {ChartsRoutes} from './charts.routing'
+import {NgModule}      from '@angular/core';
+import {CommonModule} from '@angular/common';
+@NgModule({
+  imports: [CommonModule, ChartsRoutes],
+  declarations: [Charts],
+  bootstrap: [Charts]
+})
+export default class ChartsModule {
+}
+
+# src/app/jasframework/enterprise-admin/charts/charts.routing.ts
+import {Routes, RouterModule} from '@angular/router';
+import {Charts} from './charts.component';
+const routes:Routes = [
+  {
+    path: '',
+    component: Charts,
+    children: [ ]
+  },
+];
+export const ChartsRoutes = RouterModule.forChild(routes);
+
+# src/app/jasframework/enterprise-admin/charts/charts.component.ts
+import {Component, OnInit} from '@angular/core';
+@Component({
+  selector: 'charts',
+  templateUrl: 'charts.component.html',
+  providers: [ ]
+})
+export class Charts implements OnInit {
+  constructor() { }
+  ngOnInit() { }
+} 
+
+# src/app/jasframework/enterprise-admin/charts/charts.component.html
+<div>hello charts</div>
+
+# 注册模块使之生效   
+# 只需要在enterprise-admin的路由文件中注册这个路径就可以了
+# src/app/jasframework/enterprise-admin/enterprise-admin.routing.ts
+const routes: Routes = [
+    {
+        path: '', 
+        component: EnterpriseAdminComponent,
+        children:[{
+              path: 'charts',   # 这里是路径
+              loadChildren: ()=>System.import('./charts/charts.module.ts'), # 指导去哪里找这个模块
+          }]
+    },
+];
+```     
+
+模块比组件多了xx.module.ts与xx.routing.ts两个文件。如果删除这2个文件，那么就是组件。
+组件的加载使用：   
+```
+# 还是以charts为例，代码在上面，少了xx.module.ts与xx.routing.ts两个文件。
+
+# 注册组件使之生效   
+# 需要在enterprise-admin的路由文件中注册这个路径，在模块中也需要声明
+# src/app/jasframework/enterprise-admin/enterprise-admin.routing.ts
+import {Charts} from './charts/charts.component';  # 引入这个组件
+const routes: Routes = [
+    {
+        path: '', 
+        component: EnterpriseAdminComponent,
+        children:[{
+              path: 'charts',   # 这里是路径
+              component: Charts, # 指明组件
+          }]
+    },
+];
+
+# src/app/jasframework/enterprise-admin/enterprise-admin.module.ts
+import {Charts} from './charts/charts.component'; # 引入这个组件
+@NgModule({
+    imports:      [ CommonModule,EnterpriseAdminRoutes ],
+    declarations: [ EnterpriseAdminComponent, Charts ],   # 在这里写入Charts,这里是声明
+    bootstrap:    [ EnterpriseAdminComponent ]
+})
+```
