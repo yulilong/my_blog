@@ -188,4 +188,6 @@ mport { EnterpriseAdminService } from './shared/enterprise-admin.service';
 ```     
 
 ---------------
-## 模块组件注册使用
+## 模块组件注册使用      
+
+![WX20170526-135439.png](https://bitbucket.org/repo/oE6yEX/images/3381880586-WX20170526-135439.png)
