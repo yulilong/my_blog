@@ -91,6 +91,7 @@ src/app/jasframework/admin-center/privilege-admin/enterprise-admin/enterprise-li
 p-dataTable 插件地址信息：       
 https://www.primefaces.org/primeng/#/datatable    
 
+-----------------
 ### API 网关地址 配置    
 
 cloudlink-front-framework/config/webpack.dev.js    
@@ -129,7 +130,8 @@ devServer: {
         },
 ```   
 
-### 服务跟模块注册使用   
+------
+### 服务注册使用   
 
 ![WX20170505-102149.png](https://bitbucket.org/repo/oE6yEX/images/2378097808-WX20170505-102149.png)   
 
@@ -183,4 +185,7 @@ mport { EnterpriseAdminService } from './shared/enterprise-admin.service';
        {provide:'view',useClass:EnterpriseAdminService} # 引入声明
     ]  
 })
-```
+```     
+
+---------------
+## 模块组件注册使用
