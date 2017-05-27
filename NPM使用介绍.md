@@ -1,0 +1,26 @@
+### 常用命令    
+
+```
+~ npm install express         # 安装express到项目中，安装的是最新版本
+~ npm install express@3.0.6   # 安装express的3.0.6版本，  安装特定版本
+~ npm install <name> -g       # 将包安装到全局环境中
+~ npm install lodash --save   # save 在package.json文件的dependencies字段添加该package的名称和版本号
+~ npm i <name> -g             # 将包安装到全局环境中 i 是 install 的缩写，如果用i失败，则用install试试
+~ npm init                    # 会引导你创建一个package.json文件，包括名称、版本、作者这些信息等
+~ npm remove <name>           # 移除
+~ npm uninstall lodash        # 卸载lodash
+~ npm uninstall --save lodash # save 卸载的同时想把这个package包的信息从package.json文件的dependencies字段中也一并删除
+~ npm update <name>           # 更新
+~ npm root                    # 查看当前包的安装路径       
+~ npm ls                      # 列出当前安装的了所有包
+~ npm root                    # 查看当前包的安装路径
+~ npm help                    # 帮助，如果要单独查看install命令的帮助，可以使用的npm help install
+
+```
+
+
+### 参考链接     
+
+http://blog.csdn.net/haidaochen/article/details/8546796/       
+http://www.nodeclass.com/articles/810142     
+http://www.cnblogs.com/jiuyi/p/5353676.html
