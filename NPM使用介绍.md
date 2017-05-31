@@ -42,7 +42,7 @@ $ npm update <packageName>
 npm update命令怎么知道每个模块的最新版本呢？        
 答案是 npm 模块仓库提供了一个查询服务，叫做 registry 。以 npmjs.org 为例，它的查询服务网址是 :      
 https://registry.npmjs.org/        
-这个网址后面跟上模块名，就会得到一个 JSON 对象，里面是该模块所有版本的信息。比如，访问https://registry.npmjs.org/react， 就会看到 react 模块所有版本的信息。         
+这个网址后面跟上模块名，就会得到一个 JSON 对象，里面是该模块所有版本的信息。比如，访问https://registry.npmjs.org/react ，就会看到 react 模块所有版本的信息。         
 它跟下面命令的效果是一样的。      
 ```
 $ npm view react
