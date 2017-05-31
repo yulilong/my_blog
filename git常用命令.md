@@ -112,7 +112,21 @@ git checkout -b local-name origin/remote-name  #拉取远程分支到本地
 
 # 方法二： 
 # https://git-scm.com/book/zh/v2/Git-工具-储藏与清理
-$ git stash    # 或使用命令：`git stash save`。暂存当前状态
+~ git stash                     # 或使用命令：git stash save 暂存当前状态
+# 运行上面的命令后，工作目录就变干净了，使用git status 命令查看
+~ git stash list                # 显示已暂存列表
+stash@{0}: WIP on master: 049d078 added the index file
+stash@{1}: WIP on master: c264051 Revert "added file_size"
+
+~ git stash apply               # 将最近的储藏工作重新应用
+~ git stash apply stash@{1}     # 应用其中一个更旧的储藏
+~ git stash pop                 # 应用储藏然后立即从栈上扔掉它
+~ git stash drop stash@{0}      # 移除这个存储
+
+# 当你做了几个改动并只想提交其中的一部分，过一会儿再回来处理剩余改动时，这个功能会很有用。
+~ git stash --keep-index        # 不要储藏任何你通过 git add 命令已暂存的东西
+
+~ git stash -u                  # 指定 --include-untracked 或 -u 标记，Git 也会储藏任何创建的未跟踪文件。
 ```
 -----------
 * 分支管理  
