@@ -55,7 +55,8 @@ $ git push origin --tags # 将本地所有标签一次性提交到git服务器
 --------------
 # 拉取特定分支的代码 #
 
-本地什么也没有：      
+*  一、本地什么也没有：      
+
 ```
 # 本地什么也没有
 $ git clone -b 分支名  代码地址
@@ -69,7 +70,8 @@ git fetch
 git checkout -b local-name origin/remote-name  #拉取远程分支到本地
 ```    
 
-本地就一个master分支，远程有2个分支(master,develop)，把远程的develop拉取到本地：       
+* 二、本地就一个master分支，远程有2个分支(master,develop)，把远程的develop拉取到本地：       
+
 
 `![WX20170420-160920.png](https://bitbucket.org/repo/oE6yEX/images/986142660-WX20170420-160920.png)`     
 
