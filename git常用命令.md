@@ -327,15 +327,15 @@ Automatic merge failed; fix conflicts and then commit the result.
 ```
 # 取消自己的文件修改或取消其他的文件修改
 # https://www.zhihu.com/question/21215715
-~ git checkout --ours file 
-~ git checkout --theirs file
+# ~ git checkout --ours file  撤销自己的修改
+# ~ git checkout --theirs file 撤销他们的修改
 # 参考链接： https://q.cnblogs.com/q/79372/
-$ git reset --hard HEAD 
+~ git reset --hard HEAD 
 # 放弃工作区和index的改动,HEAD指针仍然指向当前的commit.
 # 这条命令同时还可以用来撤销还没commit的merge,其实原理就是放弃index和工作区的改动，因为没commit的改动只存在于index和工作区中。
-$ git reset --hard HEAD^ 
+~ git reset --hard HEAD^ 
 # 用来撤销已经commit的内容(等价于 git reset --hard HEAD~1) 。原理就是放弃工作区和index的改动，同时HEAD指针指向前一个commit对象。
-$ git reset --hard ORIG_HEAD # 用来撤销已经commit 的merge. 
+~ git reset --hard ORIG_HEAD # 用来撤销已经commit 的merge. 
 
 ```
 
