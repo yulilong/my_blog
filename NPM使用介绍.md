@@ -20,7 +20,7 @@
 
 ---------
 
-### 一、npm install 安装原理      
+### **一、npm install 安装原理**      
 
 npm install 命令用来安装模块到node_modules目录。     
 安装之前，npm install会先检查，node_modules目录之中是否已经存在指定模块。如果存在，就不再重新安装了，即使远程仓库已经有了一个新版本，也是如此。          
@@ -29,7 +29,7 @@ npm install 命令用来安装模块到node_modules目录。
 $ npm install <packageName> --force
 ```     
 
-### 二、npm update     
+### **二、npm update**     
 
 如果想更新已安装模块，就要用到npm update命令。       
 ```
@@ -37,7 +37,7 @@ $ npm update <packageName>
 ```
 它会先到远程仓库查询最新版本，然后查询本地版本。如果本地版本不存在，或者远程版本较新，就会安装。      
 
-### 三、registry     
+### **三、registry**     
 
 npm update命令怎么知道每个模块的最新版本呢？        
 答案是 npm 模块仓库提供了一个查询服务，叫做 registry 。以 npmjs.org 为例，它的查询服务网址是 :      
@@ -61,7 +61,7 @@ dist: {
 ```
 到这个网址下载压缩包，在本地解压，就得到了模块的源码。npm install和npm update命令，都是通过这种方式安装模块的。      
 
-### 四、缓存目录    
+### **四、缓存目录**    
 
 npm install或npm update命令，从 registry 下载压缩包之后，都存放在本地的缓存目录。         
 这个缓存目录，在 Linux 或 Mac 默认是用户主目录下的.npm目录，在 Windows 默认是%AppData%/npm-cache。通过配置命令，可以查看这个目录的具体位置。        
@@ -103,7 +103,7 @@ $ rm -rf ~/.npm/*
 $ npm cache clean
 ```
 
-### 五、模块的安装过程     
+### **五、模块的安装过程**     
 
 Node模块的安装过程是这样的:      
 ```
@@ -117,7 +117,7 @@ Node模块的安装过程是这样的:
 这种行为固然可以保证总是取得最新的代码，但有时并不是我们想要的。最大的问题是，它会极大地影响安装速度。即使某个模块的压缩包就在缓存目录中，也要去远程仓库下载，这怎么可能不慢呢？          
 另外，有些场合没有网络（比如飞机上），但是你想安装的模块，明明就在缓存目录之中，这时也无法安装。              
 
-### 六、--cache-min 参数
+### **六、--cache-min 参数**
 
 为了解决这些问题，npm 提供了一个--cache-min参数，用于从缓存目录安装模块。         
 --cache-min参数指定一个时间（单位为分钟），只有超过这个时间的模块，才会从 registry 下载。            
@@ -137,7 +137,7 @@ $ npm install --cache-min Infinity <package-name>
 npm 团队知道存在这些问题，正在重写 cache。并且，将来会提供一个--offline参数，使得 npm 可以在离线情况下使用。       
 不过，这些改进没有日程表。所以，当前使用--cache-min改进安装速度，是有问题的。          
 
-### 七、离线安装的解决方案      
+### **七、离线安装的解决方案**      
 
 社区已经为npm的离线使用，提出了几种解决方案。它们可以大大加快模块安装的速度。       
 解决方案大致分成三类。       
@@ -148,14 +148,14 @@ npm 团队知道存在这些问题，正在重写 cache。并且，将来会提�
 
 上面三个模块的用法很类似，都是在本机起一个 Registry 服务，所有npm install命令都要通过这个服务代理。      
 
-### 上文内容的网址    
+### **上文内容的网址**    
 
 http://www.ruanyifeng.com/blog/2016/01/npm-install.html      
 
 ----------
 
 
-### 参考链接     
+### **参考链接**     
 
 http://blog.csdn.net/haidaochen/article/details/8546796/       
 http://www.nodeclass.com/articles/810142     
