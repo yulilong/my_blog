@@ -146,6 +146,14 @@ npm 团队知道存在这些问题，正在重写 cache。并且，将来会提�
 * [**local-npm**](https://github.com/local-npm/local-npm)[用法](https://addyosmani.com/blog/using-npm-offline/)       
 * [**npm-lazy**](https://github.com/mixu/npm_lazy)       
 
+上面三个模块的用法很类似，都是在本机起一个 Registry 服务，所有npm install命令都要通过这个服务代理。      
+
+### 上文内容的网址    
+
+http://www.ruanyifeng.com/blog/2016/01/npm-install.html      
+
+----------
+
 
 ### 参考链接     
 
