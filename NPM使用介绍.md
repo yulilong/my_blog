@@ -15,6 +15,10 @@
 ~ npm ls                      # 列出当前安装的了所有包
 ~ npm root                    # 查看当前包的安装路径
 ~ npm help                    # 帮助，如果要单独查看install命令的帮助，可以使用的npm help install
+~ which npm                   # 确认我们现在用的npm是来自哪个目录
+~ npm --version               # 查看版本
+~ npm list                    # 列出自己项目已经安装过的模块
+~ npm search mkdir            # 搜索mkdir是否存在
 
 ```
 
