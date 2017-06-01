@@ -3,6 +3,7 @@
 
 错误信息类似于：   
 ```
+# https://git-scm.com/book/zh/v2/自定义-Git-配置-Git
 ~ git diff > tmp.patch
 warning: LF will be replaced by CRLF in src/app/theme/components/menuItem/menuItem.component.css.
 The file will have its original line endings in your working directory.
