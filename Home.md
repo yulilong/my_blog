@@ -43,7 +43,8 @@ http://xialeizhou.com/2019/06/23/%E9%AB%98%E6%95%88macbook%E5%B7%A5%E4%BD%9C%E7%
 ### **GIT**   
 * [**git安装,配置**](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%AE%89%E8%A3%85,%E9%85%8D%E7%BD%AE)
 * [**git常用命令**](https://bitbucket.org/yulilong/my_wiki/wiki/git常用命令)tag,stash, merge, diff    
-* [**git常见问题及解决**](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3)       
+* [**git常见问题及解决**](https://bitbucket.org/yulilong/my_wiki/wiki/git常见问题及解决)       
+* [**git代码冲突处理软件P4Merge**](https://bitbucket.org/yulilong/my_wiki/wiki/git代码冲突处理软件P4Merge)       
 * git教程：https://git-scm.com/book/zh/v2       
 
 ###  **rubymine**   
