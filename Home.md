@@ -11,16 +11,16 @@
 
 * [Mac 系统 操作习惯设置](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20%E7%B3%BB%E7%BB%9F%20%E6%93%8D%E4%BD%9C%E4%B9%A0%E6%83%AF%E8%AE%BE%E7%BD%AE)   
 
-* [苹果系统下常用的软件](https://bitbucket.org/yulilong/my_wiki/wiki/%E8%8B%B9%E6%9E%9C%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%B8%B8%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6)    
+* [苹果系统下常用的软件](https://bitbucket.org/yulilong/my_wiki/wiki/苹果系统下常用的软件)    
 Homebrew，CheatSheet, Office2016， pgadmin3，  caffeine, snip,go2shell, XtraFinder, iTerm 2, 有道词典, Bandwidth+流量监控    
 CHM View(.chm文件阅读器)， MagicanLite流量监控，lantern 蓝灯          
 
 * 高效macbook工作环境配置     
-http://xialeizhou.com/2019/06/23/%E9%AB%98%E6%95%88macbook%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/     
+http://xialeizhou.com/2019/06/23/高效macbook工作环境配置/     
 
 * **强迫症的 Mac 设置指南：**https://github.com/macdao/ocds-guide-to-setting-up-mac        
 
-* [**mac中常见错误以及处理方法**](https://bitbucket.org/yulilong/my_wiki/wiki/mac%E4%B8%AD%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E4%BB%A5%E5%8F%8A%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95)       
+* [**mac中常见错误以及处理方法**](https://bitbucket.org/yulilong/my_wiki/wiki/mac中常见错误以及处理方法)       
 
 * Mac 键盘快捷键     
 苹果官网快捷键文档： https://support.apple.com/zh-cn/HT201236        
