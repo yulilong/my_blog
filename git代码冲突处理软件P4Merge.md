@@ -27,8 +27,7 @@ $ sudo chmod +x /usr/local/bin/extDiff
 配置git命令支持这个软件：     
 ```
 $ git config --global merge.tool extMerge
-$ git config --global mergetool.extMerge.cmd \
-  'extMerge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"'
+$ git config --global mergetool.extMerge.cmd 'extMerge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"'
 $ git config --global mergetool.extMerge.trustExitCode false
 $ git config --global diff.external extDiff
 ```    
