@@ -37,16 +37,11 @@ git config --list
 ```     
 Linux，Mac OS：      
 Git 使用一系列配置文件来保存你自定义的行为。 它首先会查找 /etc/gitconfig 文件，该文件含有系统里每位用户及他们所拥有的仓库的配置值。 如果你传递 --system 选项给 git config，它就会读写该文件。            
-
 接下来 Git 会查找每个用户的 ~/.gitconfig 文件（或者 ~/.config/git/config 文件）。 你可以传递 --global 选项让 Git 读写该文件。           
-
 最后 Git 会查找你正在操作的版本库所对应的 Git 目录下的配置文件（.git/config）。 这个文件中的值只对该版本库有效。        
-
 以上三个层次中每层的配置（系统、全局、本地）都会覆盖掉上一层次的配置，所以 .git/config 中的值会覆盖掉 /etc/gitconfig 中所对应的值。     
-   
 windows:     
 C:\Documents and Settings\用户名，其中有一个.gitconfig的文件      
-
 在上述那个目录底下， 可发现另外一个文件.git-credentials，里面记录的就是用户名密码了。
 
 ---
