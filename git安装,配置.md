@@ -20,8 +20,11 @@ https://git-for-windows.github.io/
 # https://git-scm.com/book/zh/v2/自定义-Git-配置-Git
 git config --global user.name "you name"
 git config --global user.email you_email_addr@gmail.com
-git config --global core.editor vim              #使用VIM编辑器编辑作为默认编辑器
-git config --global core.mergeoptions --no-edit  #关闭git pull产生的merge信息
+git config --global core.editor vim                      #使用VIM编辑器编辑作为默认编辑器
+git config --global core.mergeoptions --no-edit          #关闭git pull产生的merge信息
+git config --global commit.template ~/.gitmessage.txt    # git 提交时编辑里面的模板
+# false：关闭， auto：自动，有的颜色会忽略， always：忽略掉管道和终端的不同，即在任何情况下着色输出
+git config --global color.ui false                       # 终端内容着色
 git config --global credential.helper store
 git config --global alias.co checkout
 git config --global alias.ci commit
