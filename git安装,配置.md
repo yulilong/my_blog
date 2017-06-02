@@ -1,5 +1,7 @@
 ###  [**return Home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)    
-#git install
+#git install     
+
+https://git-scm.com/book/zh/v2/起步-安装-Git         
 ```   
 # centos7.2 linnux
 sudo yum update
