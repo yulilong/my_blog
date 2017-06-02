@@ -19,6 +19,7 @@
 # https://git-scm.com/book/zh/v2/Git-基础-获取-Git-仓库
 # 进入该项目目录
 ~ git init 
+~ git remote add origin http://192.168.102.9/username/ttt.git # 添加远程仓库地址
 # 仅仅是做了一个初始化的操作，你的项目里的文件还没有被跟踪,通过 git add 命令来实现对指定文件的跟踪，然后执行 git commit 提交.
 ~ git clone https://github.com/libgit2/libgit2            # 克隆现有的仓库
 ~ git clone https://github.com/libgit2/libgit2 mylibgit   # 克隆现有的仓库,自定义本地仓库的名字
