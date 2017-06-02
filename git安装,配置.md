@@ -19,6 +19,7 @@ https://git-for-windows.github.io/
 这里是为了在频繁git操作的时候，命令简化。
 ```   
 # linux,  Mac OS, window 都适用 
+# https://git-scm.com/book/zh/v2/起步-初次运行-Git-前的配置
 # https://git-scm.com/book/zh/v2/自定义-Git-配置-Git
 git config --global user.name "you name"
 git config --global user.email you_email_addr@gmail.com
