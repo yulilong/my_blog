@@ -5,6 +5,13 @@
 * [**Git合并多个Commit(本地的)_git修改未push的最后一次commit**](https://bitbucket.org/yulilong/my_wiki/wiki/Git合并多个Commit(本地的)_git修改未push的最后一次commit注释)         
 
 
+-------------        
+## git 一些查看命令    
+
+```
+~ git help status         # 查看status命令的帮助
+```
+
 -------------
 
 * add文件后放弃某个文件的添加    
