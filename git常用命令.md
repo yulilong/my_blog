@@ -62,6 +62,7 @@ http://blog.csdn.net/wangjia55/article/details/8793577
 http://gitref.org/zh/branching/#tag       
 
 ```
+# https://git-scm.com/book/zh/v2/Git-基础-打标签
 # 列出标签 
 $ Git tag # 在控制台打印出当前仓库的所有标签
 $ git tag -l ‘v0.1.*’ # 搜索符合模式的标签
