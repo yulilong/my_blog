@@ -10,11 +10,18 @@
 
 ```
 ~ git help status              # 查看status命令的帮助
+
+# 查看状态和修改
 # https://git-scm.com/book/zh/v2/Git-基础-记录每次更新到仓库, git st -s 详细介绍
 ~ git status -s                # 状态简览,或 git status --short,得到一种更为紧凑的格式输出.
 # git diff 将通过文件补丁的格式显示具体哪些行发生了改变。
 ~ git diff filename            # 查看未暂存的修改,git diff 只显示尚未暂存的改动,已经add 的文件修改看不见，需要下面的命令
 ~ git diff --staged filename   # 或git diff --cached, 查看已暂存的将要添加到下次提交里的内容
+
+# commit 提交
+~ git commit                   # 这种方式会启动文本编辑器以便输入本次提交的说明
+~ git commit -m "提交信息"      # 将提交信息与命令放在同一行,直接提交，
+~ git commit -a -m '提交信息'   # `-a`选项，Git 就会自动把所有已经跟踪过的文件暂存起来一并提交，从而跳过`git add`步骤。
 
 ```
 
