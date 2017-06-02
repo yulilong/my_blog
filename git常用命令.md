@@ -24,6 +24,7 @@
 ~ git commit -a -m '提交信息'   # `-a`选项，Git 就会自动把所有已经跟踪过的文件暂存起来一并提交，从而跳过`git add`步骤。
 
 # 查看提交历史 https://git-scm.com/book/zh/v2/Git-基础-查看提交历史
+~ git reflog                  # 查看commit 引用日志记录信息
 ~ git log -p -2               # -p:用来显示每次提交的内容差异, -2:仅显示最近两次提交.
 ~ git log --stat              # 每次提交的简略的统计信息,列出额所有被修改过的文件、有多少文件被修改了以及被修改过的文件的哪些行被移除或是添加了。
 ~ git log --pretty=oneline    # 每个提交放在一行显示,还有 short，full 和 fuller 可以用
