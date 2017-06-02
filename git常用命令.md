@@ -43,6 +43,7 @@
 ~ git clone https://github.com/libgit2/libgit2 mylibgit   # 克隆现有的仓库,自定义本地仓库的名字
 # Git 支持多种数据传输协议,https:// 协议,git:// 协议或者使用 SSH 传输协议
 
+# https://git-scm.com/book/zh/v2/Git-基础-远程仓库的使用
 ~ git remote show origin          # 查看某一个远程仓库的更多信息
 ~ git remote rename pb paul       # 将 pb 重命名为 paul
 ~ git remote rm paul              # 移除一个远程仓库
