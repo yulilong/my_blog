@@ -2,7 +2,7 @@
 
 ---------------------------------------------------------------------------------------------------
 
-* [**Git合并多个Commit(本地的)_git修改未push的最后一次commit**](https://bitbucket.org/yulilong/my_wiki/wiki/Git%E5%90%88%E5%B9%B6%E5%A4%9A%E4%B8%AACommit(%E6%9C%AC%E5%9C%B0%E7%9A%84)_git%E4%BF%AE%E6%94%B9%E6%9C%AApush%E7%9A%84%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1commit%E6%B3%A8%E9%87%8A)         
+* [**Git合并多个Commit(本地的)_git修改未push的最后一次commit**](https://bitbucket.org/yulilong/my_wiki/wiki/Git合并多个Commit(本地的)_git修改未push的最后一次commit注释)         
 
 
 -------------
