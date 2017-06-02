@@ -13,6 +13,19 @@
 ```
 
 -------------
+# 获取 Git 仓库   
+
+```
+# https://git-scm.com/book/zh/v2/Git-基础-获取-Git-仓库
+# 进入该项目目录
+~ git init 
+# 仅仅是做了一个初始化的操作，你的项目里的文件还没有被跟踪,通过 git add 命令来实现对指定文件的跟踪，然后执行 git commit 提交.
+~ git clone https://github.com/libgit2/libgit2            # 克隆现有的仓库
+~ git clone https://github.com/libgit2/libgit2 mylibgit   # 克隆现有的仓库,自定义本地仓库的名字
+# Git 支持多种数据传输协议,https:// 协议,git:// 协议或者使用 SSH 传输协议
+```
+
+-------------
 
 * add文件后放弃某个文件的添加    
 ```
