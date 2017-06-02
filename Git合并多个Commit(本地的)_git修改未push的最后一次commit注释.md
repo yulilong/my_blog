@@ -55,7 +55,8 @@ http://yongpoliu.com/reorganize-git-local-commits/
 
 ```
 # 如果设置了 commit简写为 ci，则可以用： git ci --amend
-git commit --amend
+# https://git-scm.com/book/zh/v2/Git-基础-撤消操作
+git commit --amend  # 这个命令会将暂存区中的文件提交。 如果自上次提交以来你还未做任何修改（例如，在上次提交后马上执行了此命令），那么快照会保持不变，而你所修改的只是提交信息。
 ```        
 ![WX20170412-145019.png](https://bitbucket.org/repo/oE6yEX/images/12829341-WX20170412-145019.png)     
 
