@@ -412,5 +412,6 @@ Please, commit your changes or stash them before you can merge.
 ```
 ~ git reset --hard HEAD~1 
 ~ git push --force  ## 强制推送提交，
+~ git push -f
 ```
 ![WX20170606-132452.png](https://bitbucket.org/repo/oE6yEX/images/1783048239-WX20170606-132452.png)
