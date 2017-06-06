@@ -15,6 +15,8 @@
 
 * [**angular2开发知识点**](https://bitbucket.org/yulilong/my_wiki/wiki/angular2开发知识点)       
 
+* [**angular2网页前端执行流程**](https://bitbucket.org/yulilong/my_wiki/wiki/angular2网页前端执行流程)       
+
 * **AngularJS执行流程详解** http://www.cnblogs.com/shytong/p/5011411.html    
 
 *  **angularJS官方文档**      
