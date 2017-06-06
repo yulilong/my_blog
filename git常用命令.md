@@ -410,8 +410,15 @@ Please, commit your changes or stash them before you can merge.
 ### git删除远程仓库的一次commit提交    
 
 ```
+# 参考链接： http://zhuqingcode.github.io/git/2014/05/15/github-a-bug-commit.html
+# 方法一： 删除远程一次提交
 ~ git reset --hard HEAD~1 
-~ git push --force  ## 强制推送提交，
-~ git push -f
+~ git push --force             ## 强制推送提交，
+~ git push -f origin master    ## 强制推送提交   
+
+# 方法二： 采取revert的方法，相当于重新生成一个提交，来撤销前一次错误的commit。
+~ git revert HEAD
+~ git push origin master
+
 ```
 ![WX20170606-132452.png](https://bitbucket.org/repo/oE6yEX/images/1783048239-WX20170606-132452.png)
