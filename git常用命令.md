@@ -403,4 +403,14 @@ error: Your local changes to 'c/environ.c' would be overwritten by merge.  Abort
 Please, commit your changes or stash them before you can merge.
 ```     
 这个意思是说更新下来的内容和本地修改的内容有冲突，先提交你的改变或者先将本地修改暂时存储起来。       
-处理的方式非常简单，可使用git stash命令或者提交修改。
+处理的方式非常简单，可使用git stash命令或者提交修改。   
+
+-----------------
+
+### git删除远程仓库的一次commit提交    
+
+```
+~ git reset --hard HEAD~1 
+~ git push --force  ## 强制推送提交，
+```
+![WX20170606-132452.png](https://bitbucket.org/repo/oE6yEX/images/1783048239-WX20170606-132452.png)
