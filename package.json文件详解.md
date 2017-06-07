@@ -56,4 +56,18 @@ url和email可以任意填或不填，如果只填一个，可以直接写成一
 
 你应该为你的模块制定一个协议，让用户知道他们有何权限来使用你的模块，以及使用该模块有哪些限制。最简单的，例如你用BSD-3-Clause 或 MIT之类的协议，如下：        
 { "license" : "BSD-3-Clause" }         
-你可以在https://spdx.org/licenses/ 这个地址查阅协议列表 。
+你可以在https://spdx.org/licenses/ 这个地址查阅协议列表 。          
+
+### **和用户相关的属性: author, contributors**     
+
+"author"是一个码农， "contributors"是一个码农数组。 "person"是一个有一些描述属性的对象，如下 like this:    
+```
+author: {  
+  "name": "ijse",
+  "email": "my@ijse.cn",
+  "url": "http://www.ijser.cn"
+}
+```    
+也可以按如下格式缩写，npm会帮着转换:           
+`"Barney Rubble b@rubble.com (http://barnyrubble.tumblr.com/)"`        
+email和url属性实际上都是可以省略的。描述用户信息的还有一个"maintainers"（维护者）属性。
