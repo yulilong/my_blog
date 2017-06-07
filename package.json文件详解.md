@@ -69,5 +69,5 @@ author: {
 }
 ```    
 也可以按如下格式缩写，npm会帮着转换:           
-`"Barney Rubble b@rubble.com (http://barnyrubble.tumblr.com/)"`        
+`"author: Barney Rubble b@rubble.com (http://barnyrubble.tumblr.com/)"`        
 email和url属性实际上都是可以省略的。描述用户信息的还有一个"maintainers"（维护者）属性。
