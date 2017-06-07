@@ -29,6 +29,10 @@ case 'dev':
 # config/webpack.dev.js
 # 在这个文件中还有打包好多输入文件路径以及规则，还有启动后的网址端口，链接的API地址
 const commonConfig = require('./webpack.common.js');   # 这个文件引入了打包的文件入口
+const ENV = process.env.ENV = process.env.NODE_ENV = 'development';
+const HOST = process.env.HOST || 'localhost';   # 访问地址
+const PORT = process.env.PORT || 3000;          # 访问端口号
+
 
 # config/webpack.common.js  在这里，有打包文件的入口以及一些规则，想要知道什么意思看angular2官方网站关于webpack的介绍。
 entry: {
