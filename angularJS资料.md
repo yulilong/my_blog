@@ -22,13 +22,12 @@
 * [** html常用正则表达式**](https://bitbucket.org/yulilong/my_wiki/wiki/html常用正则表达式)      
 
 
-**angularJS官方文档**      
+* **angularJS官方文档**      
 https://angular.cn/           
-https://angular.cn/docs/ts/latest/         这个里面包含： 快速起步 开发指南   API 参考 (v2.4.5)    
+https://angular.cn/docs/ts/latest/  这个里面包含： 快速起步 开发指南   API 参考 (v2.4.5)    
  
 
 * **Angular 的模板语法**   
-
 `*ngFor`、`{{hero.name}}`、`(click)`、`[hero]`和`<hero-detail>`这样的代码: https://angular.cn/docs/ts/latest/guide/template-syntax.html       
 
 * **angular2 HTTP 客户端**   
@@ -41,10 +40,8 @@ https://angular.cn/docs/ts/latest/guide/architecture.html#
 https://angular.cn/docs/ts/latest/guide/router.html     
 
 * **编辑器： **         
-下载地址：    
-https://code.visualstudio.com     
-帮助文档：     
-https://code.visualstudio.com/docs 
+下载地址： https://code.visualstudio.com     
+帮助文档：https://code.visualstudio.com/docs 
 
 * **AngularJS执行流程详解** http://www.cnblogs.com/shytong/p/5011411.html    
 
