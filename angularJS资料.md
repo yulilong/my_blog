@@ -19,9 +19,9 @@
 ------------------
 ## angular2相关资料
 
-* [**NPM使用介绍**](https://bitbucket.org/yulilong/my_wiki/wiki/NPM%E4%BD%BF%E7%94%A8%E4%BB%8B%E7%BB%8D)     
+* [**NPM使用介绍**](https://bitbucket.org/yulilong/my_wiki/wiki/NPM使用介绍)     
 
-
+* [**package.json文件详解**](https://bitbucket.org/yulilong/my_wiki/wiki/package.json文件详解)     
 
 * **angularJS官方文档**      
 https://angular.cn/           
