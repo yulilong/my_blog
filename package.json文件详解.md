@@ -70,4 +70,9 @@ author: {
 ```    
 也可以按如下格式缩写，npm会帮着转换:           
 `"author: Barney Rubble b@rubble.com (http://barnyrubble.tumblr.com/)"`        
-email和url属性实际上都是可以省略的。描述用户信息的还有一个"maintainers"（维护者）属性。
+email和url属性实际上都是可以省略的。描述用户信息的还有一个"maintainers"（维护者）属性。       
+
+### **files**    
+
+"files"属性的值是一个数组，内容是模块下文件名或者文件夹名，如果是文件夹名，则文件夹下所有的文件也会被包含进来（除非文件被另一些配置排除了）.       
+你也可以在模块根目录下创建一个".npmignore"文件（windows下无法直接创建以"."开头的文件，使用linux命令行工具创建如git bash），写在这个文件里边的文件即便被写在files属性里边也会被排除在外，这个文件的写法".gitignore"类似。
