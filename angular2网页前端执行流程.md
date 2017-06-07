@@ -1,5 +1,18 @@
 ## 示例代码版本： http://192.168.102.9/jas-paas/cloudlink-front-framework/tree/045f4811da782c107eca72f9bdea39ebaa086a7d        
 
+-----------
+
+## 命令行运行命令启动服务    
+
+1. 打开项目目录，运行命令`npm start`, 
+2. 这个命令会进入`package.json`文件中：    
+```
+# package.json
+"scripts": {
+  "start": "npm run server:dev",
+  "server:dev": "webpack-dev-server --config config/webpack.dev.js --progress --profile --watch --content-base src/",
+}
+```
 ----------
 * 浏览器输入地址： http://localhost:3000/    
 
