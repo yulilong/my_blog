@@ -14,12 +14,13 @@
 
 * [**angular2网页前端执行流程**](https://bitbucket.org/yulilong/my_wiki/wiki/angular2网页前端执行流程)       
 
+* [** html常用正则表达式**](https://bitbucket.org/yulilong/my_wiki/wiki/html常用正则表达式)      
+
 ------------------
 ## angular2相关资料
 
 * [**NPM使用介绍**](https://bitbucket.org/yulilong/my_wiki/wiki/NPM%E4%BD%BF%E7%94%A8%E4%BB%8B%E7%BB%8D)     
 
-* [** html常用正则表达式**](https://bitbucket.org/yulilong/my_wiki/wiki/html常用正则表达式)      
 
 
 * **angularJS官方文档**      
