@@ -26,4 +26,34 @@ name属性可以有一些前缀如 e.g. `@myorg/mypackage`在npm-scope(7)的文�
 
 version必须可以被npm依赖的一个[node-semver](https://github.com/npm/node-semver)模块解析。具体规则见下面的dependencies模块      
 
-### 343333
+### **description**    
+
+一个描述，方便别人了解你的模块作用，搜索的时候也有用。      
+包的描述信息，将会在`npm search`的返回结果中显示，以帮助用户选择合适的包。     
+
+### **keywords**     
+
+一个字符串数组，方便别人搜索到本模块.    
+包的关键词信息，是一个字符串数组，同上也将显示在`npm search`的结果中。     
+
+### **homepage**     
+
+项目主页url      
+**注意:** 这个项目主页url和url属性不同，如果你填写了url属性，npm注册工具会认为你把项目发布到其他地方了，获取模块的时候不会从npm官方仓库获取，而是会重定向到url属性配置的地址。    
+
+### **bugs**    
+
+填写一个bug提交地址或者一个邮箱，被你的模块坑到的人可以通过这里吐槽，例如：     
+```
+bugs: {  
+  "url": "http://github.com/ijse/project/issues",
+  "email": "my@ijser.cn"
+}
+```    
+url和email可以任意填或不填，如果只填一个，可以直接写成一个字符串而不是对象。如果填写了url，npm bugs命令会使用这个url。     
+
+### **license**    
+
+你应该为你的模块制定一个协议，让用户知道他们有何权限来使用你的模块，以及使用该模块有哪些限制。最简单的，例如你用BSD-3-Clause 或 MIT之类的协议，如下：        
+{ "license" : "BSD-3-Clause" }         
+你可以在https://spdx.org/licenses/这个地址查阅协议列表 。
