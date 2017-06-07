@@ -1,15 +1,12 @@
 ###  [**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
 -----    
+## 工作
 
 * [**angularJS开发遇见的问题**](https://bitbucket.org/yulilong/my_wiki/wiki/angularJS%E5%BC%80%E5%8F%91%E9%81%87%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98)       
 
-* [**web前端生产环境打包部署**](https://bitbucket.org/yulilong/my_wiki/wiki/web%E5%89%8D%E7%AB%AF%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2)        
+* [**web前端生产环境打包部署**](https://bitbucket.org/yulilong/my_wiki/wiki/web前端生产环境部署)        
 
-* [**Mac下angular开发环境安装**](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%E4%B8%8Bangular%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85)      
-
-* [**NPM使用介绍**](https://bitbucket.org/yulilong/my_wiki/wiki/NPM%E4%BD%BF%E7%94%A8%E4%BB%8B%E7%BB%8D)     
-
-* [** html常用正则表达式**](https://bitbucket.org/yulilong/my_wiki/wiki/html常用正则表达式)      
+* [**Mac下angular开发环境安装**](https://bitbucket.org/yulilong/my_wiki/wiki/Mac下angular开发环境安装)      
 
 * [**工作开发参考**](https://bitbucket.org/yulilong/my_wiki/wiki/工作开发参考)这个是工作中开发的参考文档         
 
@@ -17,12 +14,18 @@
 
 * [**angular2网页前端执行流程**](https://bitbucket.org/yulilong/my_wiki/wiki/angular2网页前端执行流程)       
 
-* **AngularJS执行流程详解** http://www.cnblogs.com/shytong/p/5011411.html    
+------------------
+## angular2相关资料
 
-*  **angularJS官方文档**      
+* [**NPM使用介绍**](https://bitbucket.org/yulilong/my_wiki/wiki/NPM%E4%BD%BF%E7%94%A8%E4%BB%8B%E7%BB%8D)     
+
+* [** html常用正则表达式**](https://bitbucket.org/yulilong/my_wiki/wiki/html常用正则表达式)      
+
+
+**angularJS官方文档**      
 https://angular.cn/           
-https://angular.cn/docs/ts/latest/         
-这个里面包含： 快速起步 开发指南   API 参考 (v2.4.5)     
+https://angular.cn/docs/ts/latest/         这个里面包含： 快速起步 开发指南   API 参考 (v2.4.5)    
+ 
 
 * **Angular 的模板语法**   
 
