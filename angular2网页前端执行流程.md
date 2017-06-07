@@ -32,6 +32,13 @@ const commonConfig = require('./webpack.common.js');   # 这个文件引入了�
 const ENV = process.env.ENV = process.env.NODE_ENV = 'development';
 const HOST = process.env.HOST || 'localhost';   # 访问地址
 const PORT = process.env.PORT || 3000;          # 访问端口号
+# 开发环境下的API链接设置
+proxy: {
+        '/cloudlink/v1/**': {
+          target: 'http://192.168.100.90:8050',: false,
+          pathRewrite: { '^/cloudlink/v1': '' }
+        }
+      }
 
 
 # config/webpack.common.js  在这里，有打包文件的入口以及一些规则，想要知道什么意思看angular2官方网站关于webpack的介绍。
