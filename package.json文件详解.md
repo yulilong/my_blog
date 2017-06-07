@@ -56,4 +56,4 @@ url和email可以任意填或不填，如果只填一个，可以直接写成一
 
 你应该为你的模块制定一个协议，让用户知道他们有何权限来使用你的模块，以及使用该模块有哪些限制。最简单的，例如你用BSD-3-Clause 或 MIT之类的协议，如下：        
 { "license" : "BSD-3-Clause" }         
-你可以在https://spdx.org/licenses/这个地址查阅协议列表 。
+你可以在https://spdx.org/licenses/ 这个地址查阅协议列表 。
