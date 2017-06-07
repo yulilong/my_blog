@@ -20,4 +20,4 @@ name属性就是你的模块名称，下面是一些命名规则:
 * name属性也许会被写在require()的参数中，所以最好取个简短而语义化的值。
 * 创建一个模块前可以先到后边的网址查查name是否已经被占用. https://www.npmjs.com/      
 
-name属性可以有一些前缀如 e.g. @myorg/mypackage.在npm-scope(7)的文档中可以看到详细说明
+name属性可以有一些前缀如 e.g. `@myorg/mypackage`在npm-scope(7)的文档中可以看到详细说明
