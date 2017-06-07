@@ -4,14 +4,38 @@
 
 ## 命令行运行命令启动服务    
 
-1. 打开项目目录，运行命令`npm start`, 
+1. 在开发环境下，打开项目目录，运行命令`npm start`, 
 2. 这个命令会进入`package.json`文件中：    
 ```
 # package.json
 "scripts": {
-  "start": "npm run server:dev",
+  "start": "npm run server:dev",   # 这个就是 npm start 命令执行的脚本，这个脚本指向了下面的脚本
   "server:dev": "webpack-dev-server --config config/webpack.dev.js --progress --profile --watch --content-base src/",
+  # 这里最终是执行了webpack的打包
 }
+```
+
+3. webpack的执行顺序：    
+```
+# angular2官方网站关于webpack的介绍文档
+# https://angular.cn/docs/ts/latest/guide/webpack.html
+
+# 首先进入./webpack.config.js文件里面，
+case 'dev':
+  case 'development':
+  default:
+    module.exports = require('./config/webpack.dev')({env: 'development'}); # 开发环境，进入这个文件路径
+
+# config/webpack.dev.js
+# 在这个文件中还有打包好多输入文件路径以及规则，还有启动后的网址端口，链接的API地址
+const commonConfig = require('./webpack.common.js');   # 这个文件引入了打包的文件入口
+
+# config/webpack.common.js  在这里，有打包文件的入口以及一些规则，想要知道什么意思看angular2官方网站关于webpack的介绍。
+entry: {
+  'polyfills': './src/polyfills.browser.ts',
+  'vendor': './src/vendor.browser.ts',
+  'main': './src/main.browser.ts'                 # 这里就是程序的入口
+        },
 ```
 ----------
 * 浏览器输入地址： http://localhost:3000/    
