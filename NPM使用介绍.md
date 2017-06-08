@@ -18,6 +18,8 @@
 ~ which npm                   # 确认我们现在用的npm是来自哪个目录
 ~ npm --version               # 查看版本
 ~ npm list                    # 列出自己项目已经安装过的模块
+~ npm list --depth 1          # 列出已安装的包，深度1
+~ npm list -g --depth 0       # 全局包
 ~ npm search mkdir            # 搜索mkdir是否存在
 
 ```
