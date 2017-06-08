@@ -136,13 +136,13 @@ devServer: {
 ![WX20170505-102149.png](https://bitbucket.org/repo/oE6yEX/images/2378097808-WX20170505-102149.png)   
 
 如上图所示，先有一个模型跟服务，需要在`enterprise-auth/enterprise-authed-approve`里面使用：    
-模型使用：   
+**模型使用：**   
 ```
 # enterprise-admin/enterprise-auth/enterprise-authed-approve/enterprise-authed-approve.component.ts 
 # 只需要在这个文件中写如下代码即可：
 import {EnterpriseAdminModel} from "../shared/enterprise-admin.model";
 ```  
-服务的使用：    
+**服务的使用：**    
 ```
 # 方法一：
 # enterprise-admin/enterprise-auth/enterprise-authed-approve/enterprise-authed-approve.component.ts 
