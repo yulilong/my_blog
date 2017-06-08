@@ -144,6 +144,7 @@ import {EnterpriseAdminModel} from "../shared/enterprise-admin.model";
 ```  
 **服务的使用：**    
 ```
+# 服务的依赖注入： https://angular.cn/docs/ts/latest/guide/dependency-injection.html
 # 方法一：
 # enterprise-admin/enterprise-auth/enterprise-authed-approve/enterprise-authed-approve.component.ts 
 # 在文件中写入如下代码：
