@@ -53,7 +53,7 @@ http://jingyan.baidu.com/article/363872ecd5b8406e4aa16f5e.html
 
 ##find 进入特定目录    
 find -> 前往 -> 前往文件夹，输入路径即可：     
-![WX20170320-132530.png](https://bitbucket.org/repo/oE6yEX/images/614659939-WX20170320-132530.png)      
+`![WX20170320-132530.png](https://bitbucket.org/repo/oE6yEX/images/614659939-WX20170320-132530.png)`      
 
 ## mac 系统桌面背景图片位置    
 
@@ -71,4 +71,35 @@ https://jingyan.baidu.com/article/d2b1d1027c6dc65c7e37d435.html
 ```
 defaults write com.apple.finder AppleShowAllFiles Yes && killall Finder //显示隐藏文件
 defaults write com.apple.finder AppleShowAllFiles No && killall Finder //不显示隐藏文件
+```    
+
+## Mac下的 tree 命令 终端展示你的目录树结构    
+
+```
+find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
+```    
+
+1. 打开 bash 配置文件,把上面命令拷贝粘贴进去   
+```
+vi ~/.bash_profile
+
+#把下面命令复制到.bash_profile
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"   
+
+# 保存后执行下面命令
+source .bash_profile
+``` 
+
+直接安装tree工具：    
+```
+~ brew install tree
+
+➜  /Users/zhangzhi/code/angular-phonecat git:(master) >brew install tree
+==> Downloading http://mama.indstate.edu/users/ice/tree/src/tree-1.6.0.tgz
+Already downloaded: /Library/Caches/Homebrew/tree-1.6.0.tgz
+==> make prefix=/usr/local/Cellar/tree/1.6.0 MANDIR=/usr/local/Cellar/tree/1.6.0/share/man/man1 CC=c
+🍺  /usr/local/Cellar/tree/1.6.0: 7 files, 140K, built in 2 seconds   
+
+# 帮助查看
+~ tree --help
 ```
