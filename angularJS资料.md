@@ -16,6 +16,8 @@
 
 * [** html常用正则表达式**](https://bitbucket.org/yulilong/my_wiki/wiki/html常用正则表达式)      
 
+* [**angular2中引入jQuery插件**](https://bitbucket.org/yulilong/my_wiki/wiki/angular2中引入jQuery插件)     
+
 ------------------
 ## angular2相关资料
 
