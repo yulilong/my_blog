@@ -29,7 +29,9 @@
 https://angular.cn/           
 https://angular.cn/docs/ts/latest/  这个里面包含： 快速起步 开发指南   API 参考 (v2.4.5)    
  
-* **大漠穷秋angular2示例有视频教程** http://git.oschina.net/mumu-osc/NiceFish
+* **大漠穷秋angular2示例有视频教程** http://git.oschina.net/mumu-osc/NiceFish      
+
+* **Angular2优质学习资源收集**  https://my.oschina.net/mumu/blog/831790
 
 * **Angular 的模板语法**   
 `*ngFor`、`{{hero.name}}`、`(click)`、`[hero]`和`<hero-detail>`这样的代码: https://angular.cn/docs/ts/latest/guide/template-syntax.html       
