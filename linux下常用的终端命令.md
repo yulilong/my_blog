@@ -72,15 +72,14 @@ options选项包括：
 -u 若 destination 比 source 旧才更新 destination。
 cp命令使用范例：
 1、将文档 file1复制成file2，复制后名称被改file2
-cp -i file1 file2
-或，
 cp file1 file2
 2、将文档 file1复制到dir1目录下，复制后名称仍未file1
-cp -i file1 dir1
-或，
 cp file1 dir1
 3、将目录dir1复制到dir2目录下，复制结果目录被改名为dir2
 cp -r dir1 dir2
+# 将web92_dev目录下的node_modules目录所有文件(包括隐藏文件) 复制到 当前目录下的 node_modules 文件夹中
+cp -a /Users/dragon/web92_dev/node_modules/ ./node_modules
+
 4、将目录dir1下所有文件包括文件夹，都复制到dir2目录下
 cp -r dir1/*.* dir2
 常见错误：
