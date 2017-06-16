@@ -38,4 +38,9 @@ output: {
     filename: 'dist/[name].bundle.js',
     libraryTarget: 'amd'
 },
-```
+```     
+
+---------
+###  Angular2管理外部类型定义和处理“Duplicate identifier” TypeScript错误      
+
+https://segmentfault.com/a/1190000007560996
