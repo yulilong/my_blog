@@ -23,4 +23,19 @@
 ~ npm rebuild node-sass
 # 启动命令
 ~ npm start
+```  
+
+-----------
+
+### __WEBPACK_EXTERNAL_MODULE_XX__ is not defined
+
+解决方法：      
+```
+# https://stackoverflow.com/questions/39103483/uncaught-referenceerror-webpack-external-module-xx-is-not-defined/39105605#39105605
+
+# The solution was to set libraryTarget: 'amd' in the webpack.config.js file like so:
+output: {
+    filename: 'dist/[name].bundle.js',
+    libraryTarget: 'amd'
+},
 ```
