@@ -53,6 +53,7 @@ https://segmentfault.com/a/1190000007560996
 这个错误是由于`awesome-typescript-loader` package导致的，解决方法：    
 编辑文件`~/node_modules/awesome-typescript-loader/dist/instance.js`: 
 ```
+# https://github.com/s-panferov/awesome-typescript-loader/issues/293
 # 大约是142行
 # 替换applyDefaults 函数体内容：
 function applyDefaults(configFilePath, compilerConfig, loaderConfig) {
