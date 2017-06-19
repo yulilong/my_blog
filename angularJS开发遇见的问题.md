@@ -43,4 +43,44 @@ output: {
 ---------
 ###  Angular2管理外部类型定义和处理“Duplicate identifier” TypeScript错误      
 
-https://segmentfault.com/a/1190000007560996
+https://segmentfault.com/a/1190000007560996    
+
+-----------
+### **Module build failed: TypeError: Cannot read property 'exclude' of undefined**     
+
+![WX20170619-142138.png](https://bitbucket.org/repo/oE6yEX/images/4073388751-WX20170619-142138.png)      
+
+这个错误是由于`awesome-typescript-loader` package导致的，解决方法：    
+编辑文件`~/node_modules/awesome-typescript-loader/dist/instance.js`: 
+```
+# 大约是142行
+# 替换applyDefaults 函数体内容：
+function applyDefaults(configFilePath, compilerConfig, loaderConfig) {
+_.defaults(compilerConfig.options, {
+        sourceMap: true,
+        verbose: false,
+        skipDefaultLibCheck: true,
+        suppressOutputPathCheck: true
+    });
+
+    if (loaderConfig.transpileOnly) {
+        compilerConfig.options.isolatedModules = true;
+    }
+
+    _.defaults(compilerConfig.options, {
+        sourceRoot: compilerConfig.options.sourceMap ? process.cwd() : undefined
+    });
+
+    _.defaults(loaderConfig, {
+        sourceMap: true,
+        verbose: false,
+    });
+
+    delete compilerConfig.options.outDir;
+    delete compilerConfig.options.inlineSourceMap;
+    delete compilerConfig.options.outFile;
+    delete compilerConfig.options.out;
+    delete compilerConfig.options.noEmit;
+}
+# 从新运行命令 npm start即可解决问题
+```
