@@ -23,6 +23,23 @@
 ~ npm search mkdir            # 搜索mkdir是否存在
 
 ```
+npm 命令参数：    
+```
+-g：全局安装。
+--save：将保存配置信息至package.json（package.json是nodejs项目配置文件）；
+-dev：保存至package.json的devDependencies节点，不指定-dev将保存至dependencies节点；
+
+```
+
+-------------
+### **cnpm**
+
+1. 说明：因为npm安装插件是从国外服务器下载，受网络影响大，可能出现异常，如果npm的服务器在中国就好了，所以我们乐于分享的淘宝团队干了这事。来自官网：“这是一个完整 npmjs.org 镜像，你可以用此代替官方版本(只读)，同步频率目前为 10分钟 一次以保证尽量与官方服务同步。” 这就是cnpm.       
+2. 官方网址：http://npm.taobao.org       
+3. 安装：命令提示符执行`npm install cnpm -g --registry=https://registry.npm.taobao.org`或`npm i -g cnpm`     
+4. 安装完后最好查看其版本号cnpm -v或关闭命令提示符重新打开，安装完直接使用有可能会出现错误        
+
+5. **cnpm跟npm用法完全一致，只是在执行命令时将npm改为cnpm。**
 
 ---------
 
