@@ -49,12 +49,7 @@
 ~ git remote rm paul              # 移除一个远程仓库
 ```
 
--------------
 
-* add文件后放弃某个文件的添加    
-```
-git reset file_name
-```  
 ----------------
 # git tag — 标签相关操作   
 
