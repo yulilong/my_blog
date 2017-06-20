@@ -379,7 +379,9 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 ```
 
-### 关闭git pull产生的merge 信息     
+-------------------------
+
+### **关闭git pull产生的merge 信息**     
 
 linux, 编辑 ~/.gitconfig:    
 ```
@@ -388,6 +390,42 @@ linux, 编辑 ~/.gitconfig:
 ```     
 或者终端执行：`git config --global core.mergeoptions --no-edit`       
 
+* git pull 产生merge信息的原因    
+
+Git 作为分布式版本控制系统，所有修改操作都是基于本地的，在团队协作过程中，假设你和你的同伴在本地中分别有各自的新提交，而你的同伴先于你 push 了代码到远程分支上，所以你必须先执行 git pull 来获取同伴的提交，然后才能 push 自己的提交到远程分支。而按照 Git 的默认策略，如果远程分支和本地分支之间的提交线图有分叉的话（即不是 fast-forwarded），Git 会执行一次 merge 操作，因此产生一次没意义的提交记录，从而造成了像上图那样的混乱。       
+
+* **解决**    
+
+参考：[**洁癖者用 Git：pull --rebase 和 merge --no-ff**](http://hungyuhei.github.io/2012/08/07/better-git-commit-graph-using-pull---rebase-and-merge---no-ff.html)       
+其实在 pull 操作的时候，，使用 git pull --rebase 选项即可很好地解决上述问题。 加上 --rebase 参数的作用是，提交线图有分叉的话，Git 会 rebase 策略来代替默认的 merge 策略。 使用 rebase 策略有什么好处呢？     
+假设提交线图在执行 pull 前是这样的：    
+```
+        A---B---C  remotes/origin/master
+                /
+           D---E---F---G  master
+```     
+如果是执行`git pull` 后，提交线图会变成这样：     
+```
+A---B---C remotes/origin/master
+                /         \
+           D---E---F---G---H master
+```
+结果多出了 H 这个没必要的提交记录。如果是执行 `git pull --rebase`的话，提交线图就会变成这样：       
+```
+remotes/origin/master
+                           |
+           D---E---A---B---C---F'---G'  master
+```    
+F G 两个提交通过 rebase 方式重新拼接在 C 之后，多余的分叉去掉了，目的达到。      
+
+会把你的本地`master`分支里的每个提交(commit)取消掉，并且把它们临时 保存为补丁(patch)(这些补丁放到".git/rebase"目录中),然后把本地`master`分支更新 到最新的"origin"分支，最后把保存的这些补丁应用到本地"maser"分支上。
+
+关于`git --rebase`介绍：    
+http://gitbook.liuhui998.com/4_2.html          
+http://blog.csdn.net/hudashi/article/details/7664631/        
+
+
+---------------
 ###  git pull文件时和本地文件冲突    
 
 http://www.01happy.com/git-resolve-conflicts/     
