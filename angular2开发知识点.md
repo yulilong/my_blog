@@ -145,7 +145,7 @@ import {EnterpriseAdminModel} from "../shared/enterprise-admin.model";
 **服务的使用：**    
 ```
 # 服务的依赖注入： https://angular.cn/docs/ts/latest/guide/dependency-injection.html
-# 方法一：
+# 方法一： 直接在组件中引入使用
 # enterprise-admin/enterprise-auth/enterprise-authed-approve/enterprise-authed-approve.component.ts 
 # 在文件中写入如下代码：
 import {EnterpriseAdminService} from "../shared/enterprise-admin.service"; # 导入服务文件
@@ -156,12 +156,9 @@ import {EnterpriseAdminService} from "../shared/enterprise-admin.service"; # 导
     styleUrls: ["./enterprise-authed-approve.component.css"],
     providers:[EnterpriseAdminService]                               # 在这里写上服务名字
 })
+------------------------------------------------------------------------------------------
 
-# 方法二：   
-# enterprise-auth/enterprise-authed-approve/enterprise-authed-approve.component.ts 
-# 在文件中写入如下代码：
-import {EnterpriseAdminService} from "../shared/enterprise-admin.service";  # 引入使用
-
+# 方法二： 在组件的所在的模块中注册服务后，在组件中直接使用
 # enterprise-auth/enterprise-auth.module.ts 
 # 在文件中写入如下代码：
 import { EnterpriseAdminService } from './shared/enterprise-admin.service';
@@ -173,11 +170,12 @@ import { EnterpriseAdminService } from './shared/enterprise-admin.service';
     providers:[EnterpriseAdminService    ]  # 引入声明
 })
 
-# 方法三：在上层模块中为服务申明一个名字，在子模块中直接用这个名字调用
 # enterprise-auth/enterprise-authed-approve/enterprise-authed-approve.component.ts 
-# 在构造函数中直接引用：
-constructor(@Inject('view') private viewService,
+# 在文件中写入如下代码：
+import {EnterpriseAdminService} from "../shared/enterprise-admin.service";  # 引入使用
 
+------------------------------------------------------------------------------------------
+# 方法三：在上层模块中为服务申明一个名字，在子模块中直接用这个名字调用
 # enterprise-auth/enterprise-auth.module.ts 
 # 在文件中写入如下代码：
 mport { EnterpriseAdminService } from './shared/enterprise-admin.service';
@@ -186,6 +184,11 @@ mport { EnterpriseAdminService } from './shared/enterprise-admin.service';
        {provide:'view',useClass:EnterpriseAdminService} # 引入声明
     ]  
 })
+
+# enterprise-auth/enterprise-authed-approve/enterprise-authed-approve.component.ts 
+# 在构造函数中直接引用：
+constructor(@Inject('view') private viewService,
+
 ```     
 
 ---------------
