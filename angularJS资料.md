@@ -50,6 +50,9 @@ https://angular.cn/docs/ts/latest/  这个里面包含： 快速起步 开发指
 
 * **Webpack入门** http://www.cnblogs.com/kagol/archive/2016/01/23/5152734.html
 
+* **rxjs官方文档中文翻译(observable可观察对象)** https://www.gitbook.com/book/buctwbzs/rxjs/details       
+
+
 -----
 ## Bootstrap   
 
