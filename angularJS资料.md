@@ -52,6 +52,7 @@ https://angular.cn/docs/ts/latest/  这个里面包含： 快速起步 开发指
 
 * **rxjs官方文档中文翻译(observable可观察对象)** https://www.gitbook.com/book/buctwbzs/rxjs/details       
 
+* **Promise 对象** https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise       
 
 -----
 ## Bootstrap   
