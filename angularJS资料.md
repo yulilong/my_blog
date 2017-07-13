@@ -18,6 +18,8 @@
 
 * [**angular2中引入jQuery插件**](https://bitbucket.org/yulilong/my_wiki/wiki/angular2中引入jQuery插件)     
 
+* [**TS_JS中一些知识点**](https://bitbucket.org/yulilong/my_wiki/wiki/TS_JS中一些知识点)        
+
 ------------------
 ## angular2相关资料
 
