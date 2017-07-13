@@ -11,6 +11,7 @@
 * [**工作开发参考**](https://bitbucket.org/yulilong/my_wiki/wiki/工作开发参考)这个是工作中开发的参考文档         
 
 * [**angular2开发知识点**](https://bitbucket.org/yulilong/my_wiki/wiki/angular2开发知识点)       
+API 网关地址 配置，服务注册使用，模块组件注册使用，
 
 * [**angular2网页前端执行流程**](https://bitbucket.org/yulilong/my_wiki/wiki/angular2网页前端执行流程)       
 
