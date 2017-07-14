@@ -20,6 +20,8 @@ API 网关地址 配置，服务注册使用，模块组件注册使用，
 * [**angular2中引入jQuery插件**](https://bitbucket.org/yulilong/my_wiki/wiki/angular2中引入jQuery插件)     
 
 * [**TS_JS中一些知识点**](https://bitbucket.org/yulilong/my_wiki/wiki/TS_JS中一些知识点)        
+ 
+* [** jas前端样式规范**](https://bitbucket.org/yulilong/my_wiki/wiki/jas前端样式规范)     
 
 ------------------
 ## angular2相关资料
