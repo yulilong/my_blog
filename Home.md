@@ -13,7 +13,7 @@
 
 * [苹果系统下常用的软件](https://bitbucket.org/yulilong/my_wiki/wiki/苹果系统下常用的软件)    
 Homebrew，CheatSheet, Office2016， pgadmin3，  caffeine, snip,go2shell, XtraFinder, iTerm 2, 有道词典, Bandwidth+流量监控    
-CHM View(.chm文件阅读器)， MagicanLite流量监控，lantern 蓝灯          
+CHM View(.chm文件阅读器)， MagicanLite流量监控，lantern 蓝灯， fHash md5校验软件。          
 
 * 高效macbook工作环境配置     
 http://xialeizhou.com/2019/06/23/高效macbook工作环境配置/     
