@@ -103,5 +103,10 @@ _.defaults(compilerConfig.options, {
 
 根据提示即可解决问题。    
 
-
 ----------
+
+## **7、DI错误**    
+
+![WX20170721-181444@2x.png](https://bitbucket.org/repo/oE6yEX/images/2766100480-WX20170721-181444@2x.png)   
+
+这个错误由于使用了服务， 但是这个服务没有引入到模块中，找到服务，并把服务引入到模块中就好。
