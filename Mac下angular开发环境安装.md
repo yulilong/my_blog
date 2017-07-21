@@ -2,12 +2,15 @@
 
 ```  
 # 需要事先安装好 brew
-~ brew install node  
+~ brew install node
+# 2017-07-21 经实际安装，用 brew 安装node后，npm也已经安装好了。
 ~ brew install npm
 ~ npm -v
 ~ node -v
 ```    
-![WX20170407-111437.png](https://bitbucket.org/repo/oE6yEX/images/1655153530-WX20170407-111437.png)     
+![WX20170407-111437.png](https://bitbucket.org/repo/oE6yEX/images/1655153530-WX20170407-111437.png)  
+
+![WX20170721-150430.png](https://bitbucket.org/repo/oE6yEX/images/1247795137-WX20170721-150430.png)   
 
 * **编辑器安装 VScode免费**    
 
