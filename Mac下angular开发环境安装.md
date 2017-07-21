@@ -4,13 +4,22 @@
 # 需要事先安装好 brew
 ~ brew install node
 # 2017-07-21 经实际安装，用 brew 安装node后，npm也已经安装好了。
-~ brew install npm
+# ~ brew install npm
 ~ npm -v
 ~ node -v
 ```    
 ![WX20170407-111437.png](https://bitbucket.org/repo/oE6yEX/images/1655153530-WX20170407-111437.png)  
 
 ![WX20170721-150430.png](https://bitbucket.org/repo/oE6yEX/images/1247795137-WX20170721-150430.png)   
+
+```    
+# 使用brew安装的node版本太高了，告知angular2 里面`.sass`文件`node-sass`包不兼容
+# 卸载node最新版本
+brew uninstall node 
+# node官网： https://nodejs.org/en/download/    打开网站选择 LTS 版本的。下载mac版本的，然后店家安装
+```
+![WX20170721-164326@2x.png](https://bitbucket.org/repo/oE6yEX/images/2695786042-WX20170721-164326@2x.png)
+
 
 * **编辑器安装 VScode免费**    
 
