@@ -1,4 +1,4 @@
-### **开发环境下 `npm install` 编译进行一半就停止**    
+### **1、开发环境下 `npm install` 编译进行一半就停止**    
 
 ![WX20170407-092321.png](https://bitbucket.org/repo/oE6yEX/images/3794077934-WX20170407-092321.png)    
 
@@ -27,7 +27,7 @@
 
 -----------
 
-### __WEBPACK_EXTERNAL_MODULE_XX__ is not defined
+### 2、__WEBPACK_EXTERNAL_MODULE_XX__ is not defined
 
 解决方法：      
 ```
@@ -41,12 +41,12 @@ output: {
 ```     
 
 ---------
-###  Angular2管理外部类型定义和处理“Duplicate identifier” TypeScript错误      
+###  3、Angular2管理外部类型定义和处理“Duplicate identifier” TypeScript错误      
 
 https://segmentfault.com/a/1190000007560996    
 
 -----------
-### **Module build failed: TypeError: Cannot read property 'exclude' of undefined**     
+### *4、*Module build failed: TypeError: Cannot read property 'exclude' of undefined**     
 
 ![WX20170619-142138.png](https://bitbucket.org/repo/oE6yEX/images/4073388751-WX20170619-142138.png)      
 
@@ -84,4 +84,24 @@ _.defaults(compilerConfig.options, {
     delete compilerConfig.options.noEmit;
 }
 # 从新运行命令 npm start即可解决问题
+```   
+
+--------------
+
+## **5、Node Sass does not yet support your current environment: OS X 64-bit with Unsupported runtime**   
+
+![WX20170721-174654.png](https://bitbucket.org/repo/oE6yEX/images/3606234759-WX20170721-174654.png)   
+
 ```
+# 根据链接：https://github.com/sass/node-sass/releases/tag/v3.13.1
+可知道是node版本太高了，卸载node后，下载低版本的node即可解决问题
+```    
+
+## **6、Node Sass could not find a binding for your current environment: OS X 64-bit with Node.js 6.x**
+
+![WX20170721-174928.png](https://bitbucket.org/repo/oE6yEX/images/294361940-WX20170721-174928.png)   
+
+根据提示即可解决问题。    
+
+
+----------
