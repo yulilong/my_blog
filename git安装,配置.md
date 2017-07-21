@@ -37,6 +37,8 @@ git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --grap
 git config --global alias.type 'cat-file -t'
 git config --global alias.dump 'cat-file -p'
 git config --list
+# 查看git路径
+which git
 ```     
 Linux，Mac OS：      
 Git 使用一系列配置文件来保存你自定义的行为。     
