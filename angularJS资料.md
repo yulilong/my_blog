@@ -29,6 +29,8 @@ API 网关地址 配置，服务注册使用，模块组件注册使用，
  
 * [** jas前端样式规范**](https://bitbucket.org/yulilong/my_wiki/wiki/jas前端样式规范)     
 
+* [**前端编程规范**](https://bitbucket.org/yulilong/my_wiki/wiki/前端编程规范)      
+
 ------------------
 ## angular2相关资料
 
