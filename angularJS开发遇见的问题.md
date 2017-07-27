@@ -2,6 +2,8 @@
 
 ![WX20170407-092321.png](https://bitbucket.org/repo/oE6yEX/images/3794077934-WX20170407-092321.png)    
 
+![npm install 安装不完全](https://git.oschina.net/uploads/images/2017/0727/163429_47250b5d_1435979.png "WX20170407-092321.png")
+
 * 问题分析：   
 `npm install` 包没有安装完全，      
 * 解决方法  
