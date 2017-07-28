@@ -1,6 +1,10 @@
 ###  [**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
 -----------------------------------------------------------------------------------------
 
+Mac 官方快捷键地址： https://support.apple.com/zh-cn/HT201236         
+
+
+------------------
 * **睡眠重启关机**       
 Ctrl+Shift+Power: 关闭屏幕      
 Cmd+Opt+Power: 睡眠 (sleep)     
