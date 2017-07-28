@@ -89,6 +89,7 @@ https://github.com/riku/Markdown-Syntax-CN
 * **rubygems官网： **https://rubygems.org/      
 * **Ruby-Doc: **   http://ruby-doc.org/        
 * **Ruby开发文档: ** http://doc.rubyfans.com/     
+* **Ruby编程风格参考指南: ** https://github.com/JuanitoFatas/ruby-style-guide/blob/master/README-zhCN.md     
 * **深入透彻了解 Rails 应用部署：** http://ruby-china.org/wiki/deployment-rails       
 * **rails常量自动加载和重新加载机制：** http://guides.ruby-china.org/autoloading_and_reloading_constants.html       
 * **Rails缓存(使用缓存提升Rails应用的速度)：** http://guides.ruby-china.org/caching_with_rails.html　　       
