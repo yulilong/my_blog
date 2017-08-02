@@ -16,3 +16,7 @@
 ## ftp Received unexpected end-of-file from SFTP server   
 
 ![WX20170802-141248.png](https://bitbucket.org/repo/oE6yEX/images/2458062917-WX20170802-141248.png)
+
+https://superuser.com/questions/901992/filezilla-does-not-open-connection-putty-does       
+
+https://www.digitalocean.com/community/questions/sftp-connection-error-received-unexpected-end-of-file-from-sftp-server
