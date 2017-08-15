@@ -143,6 +143,9 @@ jQuery UI API中文文档(适用jQuery UI 1.10):  http://www.css88.com/jquery-ui
 
 * [**Mac Office2016使用设置**](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20Office2016%E4%BD%BF%E7%94%A8%E8%AE%BE%E7%BD%AE)       
 
+* [**google浏览器有用的插件**](https://bitbucket.org/yulilong/my_wiki/wiki/google浏览器有用的插件)
+
+
 
 -------------------------------------------------------------------------------------------------
 # **manageiq  providers** 
