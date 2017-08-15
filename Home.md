@@ -139,11 +139,11 @@ jQuery UI API中文文档(适用jQuery UI 1.10):  http://www.css88.com/jquery-ui
 -------------------------------------------------------------------------------------------------
 ## 其他    
 
-* [**英文字母缩写的含义**](https://bitbucket.org/yulilong/my_wiki/wiki/%E8%8B%B1%E6%96%87%E5%AD%97%E6%AF%8D%E7%BC%A9%E5%86%99%E7%9A%84%E5%90%AB%E4%B9%89)　　ORM框架         
+### [**英文字母缩写的含义**](https://bitbucket.org/yulilong/my_wiki/wiki/%E8%8B%B1%E6%96%87%E5%AD%97%E6%AF%8D%E7%BC%A9%E5%86%99%E7%9A%84%E5%90%AB%E4%B9%89)　　ORM框架         
 
-* [**Mac Office2016使用设置**](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20Office2016%E4%BD%BF%E7%94%A8%E8%AE%BE%E7%BD%AE)       
+### [**Mac Office2016使用设置**](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20Office2016%E4%BD%BF%E7%94%A8%E8%AE%BE%E7%BD%AE)       
 
-* [**google浏览器有用的插件**](https://bitbucket.org/yulilong/my_wiki/wiki/google浏览器有用的插件)
+### [**google浏览器有用的插件**](https://bitbucket.org/yulilong/my_wiki/wiki/google浏览器有用的插件)
 
 
 
