@@ -10,9 +10,9 @@
 
 * [**Mac install RVM,ruby,pqadmin3,rubymine2016**](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20install%20RVM,ruby,pqadmin3,rubymine2016)     
 
-* [**Mac 操作快捷键**](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20%E6%93%8D%E4%BD%9C%E5%BF%AB%E6%8D%B7%E9%94%AE)    
+* [**Mac快捷键和一些常用操作**](https://bitbucket.org/yulilong/my_wiki/wiki/Mac快捷键和一些常用操作)    
 
-* [Mac 系统 操作习惯设置](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20%E7%B3%BB%E7%BB%9F%20%E6%93%8D%E4%BD%9C%E4%B9%A0%E6%83%AF%E8%AE%BE%E7%BD%AE)   
+* [Mac 系统 操作习惯设置](https://bitbucket.org/yulilong/my_wiki/wiki/Mac%20%E7%B3%BB%E7%BB%9F%20%E6%93%8D%E4%BD%9C%E4%B9%A0%E6%83%AF%E8%AE%BE%E7%BD%AE)     
 
 * [苹果系统下常用的软件](https://bitbucket.org/yulilong/my_wiki/wiki/苹果系统下常用的软件)    
 Homebrew，CheatSheet, Office2016， pgadmin3，  caffeine, snip,go2shell, XtraFinder, iTerm 2, 有道词典, Bandwidth+流量监控    
