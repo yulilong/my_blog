@@ -52,7 +52,10 @@ devServer: {
 # 只需要在这个文件中写如下代码即可：
 import {EnterpriseAdminModel} from "../shared/enterprise-admin.model";
 ```  
-**服务的使用：**    
+**服务的使用：**        
+
+***注意：*** 如果服务里面又引入服务，那么在使用这个服务时，也要导入引入的服务。        
+
 ```
 # 服务的依赖注入： https://angular.cn/docs/ts/latest/guide/dependency-injection.html
 # 方法一： 直接在组件中引入使用
