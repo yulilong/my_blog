@@ -12,6 +12,9 @@
 
 把dist文件与Nginx文件放在一个文件夹里,终端进入这个文件夹，然后终端运行命令打包：   
 ```
+# 复制dist文件夹到当前目录
+~ cp -r /Users/dragon/work/cloudlink-front-framework/dist ./dist
+# 打包文件
 ~ tar czvf cloudlink-front-framework.tar dist nginx
 ```    
 ## **连接FTP上传cloudlink-front-framework.tar文件**
