@@ -90,7 +90,7 @@ cp -r dir1 dir2
 
 ```
 ```
-# 从 本地 复制到 远程:
+# 从 本地 复制到 远程: 把本地的full.tar.gz 复制到远程的 /home/root目录下
 scp /home/daisy/full.tar.gz root@172.19.2.75:/home/root 
 # 从 远程 复制到 本地:
 scp root@172.19.2.75:/home/root/full.tar.gz /home/daisy
