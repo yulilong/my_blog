@@ -129,4 +129,6 @@ nginx: [emerg] still could not bind()
 
 ## **参考链接**    
 
-* http://www.jianshu.com/p/918eb337a206
+* http://www.jianshu.com/p/918eb337a206     
+
+* http://blog.csdn.net/dracotianlong/article/details/21817097
