@@ -22,7 +22,17 @@ Max OS X使用的是 BSD版本的命令行工具，这些命令跟 Linux版本�
 
 ```
 # 搜索端口号为8080, 可以看见进程名字与ID
-lsof -i:8080
+lsof -i:8080   
+# 查看IPv4端口：(最好加 sudo)
+~ lsof -Pnl +M -i4   
+
+# 查看IPv6协议下的端口
+lsof -Pnl +M -i6
+
+~ sudo netstat antup
 ```   
 
-参考链接： http://blog.csdn.net/u011619283/article/details/53116291
+参考链接：     
+
+http://blog.csdn.net/u011619283/article/details/53116291     
+http://blog.csdn.net/winkenjiang/article/details/7588658
