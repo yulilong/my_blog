@@ -27,6 +27,8 @@ http://xialeizhou.com/2019/06/23/高效macbook工作环境配置/
 
 * [**Mac下Nginx的安装运行**](https://bitbucket.org/yulilong/my_wiki/wiki/Mac下Nginx的安装运行)      
 
+* [**Mac下一些终端命令**](https://bitbucket.org/yulilong/my_wiki/wiki/Mac下一些终端命令)      
+
 * Mac 键盘快捷键     
 苹果官网快捷键文档： https://support.apple.com/zh-cn/HT201236        
 百度经验： http://jingyan.baidu.com/article/08b6a591aac09614a909224f.html      
