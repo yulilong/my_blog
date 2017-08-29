@@ -195,4 +195,33 @@ import {Charts} from './charts/charts.component'; # 引入这个组件
     declarations: [ EnterpriseAdminComponent, Charts ],   # 在这里写入Charts,这里是声明
     bootstrap:    [ EnterpriseAdminComponent ]
 })
+``` 
+
+---------------      
+
+## **angular2 第三方插件的使用**             
+
+以 使用primeNG插件为例:https://www.primefaces.org/primeng/#/setup            
+
+* 安装插件：     
+
 ```
+npm install primeng --save
+```       
+
+* 模块中引入prime    
+
+```
+# src/app/advanced-research/advanced-research.module.ts
+import { DropdownModule } from 'primeng/primeng';
+@NgModule({
+  imports: [
+    DropdownModule,
+  ],
+  providers: [],
+  declarations: []
+})
+export default class advancedResearchModule { }
+```    
+
+* 在组件中使用插件
