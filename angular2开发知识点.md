@@ -203,13 +203,13 @@ import {Charts} from './charts/charts.component'; # 引入这个组件
 
 以 使用primeNG插件为例:https://www.primefaces.org/primeng/#/setup            
 
-* 安装插件：     
+### 1. 安装插件：     
 
 ```
 npm install primeng --save
 ```       
 
-* 模块中引入prime    
+### 2. 模块中引入prime    
 
 ```
 # src/app/advanced-research/advanced-research.module.ts
@@ -224,4 +224,4 @@ import { DropdownModule } from 'primeng/primeng';
 export default class advancedResearchModule { }
 ```    
 
-* 在组件中使用插件
+### 3. 在组件中使用插件
