@@ -1,5 +1,6 @@
 [**return Home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)       
 
+----------------
 [TOC]     
 
 ## git install     
