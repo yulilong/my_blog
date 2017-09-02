@@ -1,5 +1,8 @@
-###  [**return Home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)    
-#git install     
+[**return Home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)       
+
+[TOC]     
+
+## git install     
 
 https://git-scm.com/book/zh/v2/起步-安装-Git         
 ```   
@@ -15,7 +18,9 @@ https://git-for-windows.github.io/
 # 安装教程
 # https://jingyan.baidu.com/article/20095761b48041cb0721b4fc.html
 ```
-# git命令别名设置 #
+
+## git命令别名设置      
+
 这里是为了在频繁git操作的时候，命令简化。
 ```   
 # linux,  Mac OS, window 都适用 
