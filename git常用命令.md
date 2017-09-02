@@ -5,7 +5,10 @@
 * [**Git合并多个Commit(本地的)_git修改未push的最后一次commit**](https://bitbucket.org/yulilong/my_wiki/wiki/Git合并多个Commit(本地的)_git修改未push的最后一次commit注释)         
 
 
--------------        
+-------------           
+
+[TOC]
+
 ## git 一些查看命令    
 
 ```
@@ -28,10 +31,15 @@
 ~ git log -p -2               # -p:用来显示每次提交的内容差异, -2:仅显示最近两次提交.
 ~ git log --stat              # 每次提交的简略的统计信息,列出额所有被修改过的文件、有多少文件被修改了以及被修改过的文件的哪些行被移除或是添加了。
 ~ git log --pretty=oneline    # 每个提交放在一行显示,还有 short，full 和 fuller 可以用
+
+~ git log -p files                              # 查看某个文件的详细修改记录
+~ git log --oneline --decorate --graph --all    # 提交历史、各个分支的指向以及项目的分支分叉情况
+~ git log --oneline --decorate                 # 查看各个分支当前所指的对象
+
 ```
 
 -------------
-# 获取 Git 仓库   
+## 获取Git仓库   
 
 ```
 # https://git-scm.com/book/zh/v2/Git-基础-获取-Git-仓库
@@ -51,7 +59,7 @@
 
 
 ----------------
-# git tag — 标签相关操作   
+## git tag — 标签相关操作   
 
 http://blog.csdn.net/wangjia55/article/details/8793577  
 http://gitref.org/zh/branching/#tag       
@@ -93,9 +101,9 @@ $ git push origin --tags # 将本地所有标签一次性提交到git服务器
 2.git  checkout v0.21   此时会指向打v0.21标签时的代码状态，（但现在处于一个空的分支上）      
 3. cat  test.txt   查看某个文件        
 --------------
-# 拉取特定分支的代码 #
+## 拉取特定分支的代码
 
-*  一、本地什么也没有：      
+###  1、本地什么也没有：      
 
 ```
 # 本地什么也没有
@@ -110,7 +118,7 @@ git fetch
 git checkout -b local-name origin/remote-name  #拉取远程分支到本地
 ```    
 
-* 二、本地就一个master分支，远程有2个分支(master,develop)，把远程的develop拉取到本地：       
+### 2、本地就一个master分支，远程有2个分支(master,develop)，把远程的develop拉取到本地：       
 
 
 `![WX20170420-160920.png](https://bitbucket.org/repo/oE6yEX/images/986142660-WX20170420-160920.png)`     
@@ -136,7 +144,7 @@ git checkout -b local-name origin/remote-name  #拉取远程分支到本地
 ```   
 -----------    
 
-## **`git stash`, `git diff > tmp.patch`代码存储，代码修改记录**
+## **代码存储，代码修改记录:`git stash`, `git diff > tmp.patch`**
 
 当你在项目的一部分上已经工作一段时间后，所有东西都进入了混乱的状态，而这时你想要切换到另一个分支做一点别的事情。      
 或者是要拉取新代码，
@@ -169,9 +177,10 @@ stash@{1}: WIP on master: c264051 Revert "added file_size"
 ~ git stash --keep-index        # 不要储藏任何你通过 git add 命令已暂存的东西
 
 ~ git stash -u                  # 指定 --include-untracked 或 -u 标记，Git 也会储藏任何创建的未跟踪文件。
-```
+```    
+
 -----------
-* 分支管理  
+## 分支管理  
 ```
 $ git branch testing # 创建本地分支 
 $ git checkout testing  # 切换分支
@@ -185,9 +194,10 @@ $ git push origin :<branchName>  # 推送一个空分支到远程分支，其实
 $ git br -m 旧名字 新名字  
 # 如果想重命名远程分支，那么先重命名本地分支，然后上传，最后删除就分知名
 
-```    
+```     
+
 -----------
-### git 回滚到某个commit     
+## git 回滚到某个commit     
 
 http://www.shouce.ren/api/view/a/13832
 ```
@@ -213,9 +223,10 @@ $ git reflog
 ea34578 HEAD@{0}: reset: moving to HEAD^
 3628164 HEAD@{1}: commit: append GPL
 ea34578 HEAD@{2}: commit: add distributed
-```   
--------  
-* git 查看改动  
+```        
+
+-------    
+## git 查看改动  
 ```
 # 当修改文件但是没有提交时：
 $ git diff # 查看所有的改动
@@ -223,9 +234,10 @@ $ git diff 文件名  #查看这个文件的改动
 
 # 查看某个commit做了哪些改动
 $ git show 046bd7b5c1d134b8123f
-```    
+```        
+
 -----------
-* **git恢复删除的文件**  
+## **git恢复删除的文件**  
 ```
 # 要查看删除的文件： 
 $ git ls-files --deleted
@@ -241,10 +253,7 @@ $ git ls-files -m | xargs git checkout --
 2.如果想放弃本地的文件修改，可以使用git reset --hard FETCH_HEAD，FETCH_HEAD表示上一次成功git pull之后形成的commit点。然后git pull.
 ```    
 
-* **查看某个文件的详细修改记录：**    
-```
-$ git log -p files
-```     
+ 
 --------
 * **git放弃修改**   
 在git命令还没有 commit的时候，可以使用命令放弃文件的修改：   
@@ -286,31 +295,25 @@ http://blog.csdn.net/jfkidear/article/details/12152167
 
 ------
 
-* **提交历史、各个分支的指向以及项目的分支分叉情况**    
 
-` git log --oneline --decorate --graph --all`     
-
-* **查看各个分支当前所指的对象**     
- 
-`git log --oneline --decorate`         
 
 
 --------
 
-### git 分支合并    
+## git 分支合并    
 
 **https://git-scm.com/book/zh/v2/Git-分支-分支的新建与合并**      
 
 现在有2个分支(master, ningning), `master`分支的代码要合并到`ningning`,2个分支代码都已经`git commit`过了，如果没有commit，需要先commit，否则不能合并代码。   
 
-* 合并命令：   
+### 合并命令：   
 
 ```
 $ git checkout ningning
 $ git merge master   
 ```
 
-*  代码没有冲突合并：    
+###  代码没有冲突合并：    
 
 ```
 # 没有冲突的信息类似于下面：
@@ -326,7 +329,7 @@ index.html |    1 +
 ```   
 Git 将合并的结果做了一个新的快照并且自动创建一个新的提交指向它。 
 
-* 代码有冲突合并：   
+### 代码有冲突合并：   
 
 `![WX20170420-172823.png](https://bitbucket.org/repo/oE6yEX/images/3353411608-WX20170420-172823.png)`     
 
@@ -381,7 +384,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 -------------------------
 
-### **关闭git pull产生的merge 信息**     
+## **关闭git pull产生的merge 信息**     
 
 linux, 编辑 ~/.gitconfig:    
 ```
@@ -390,11 +393,11 @@ linux, 编辑 ~/.gitconfig:
 ```     
 或者终端执行：`git config --global core.mergeoptions --no-edit`       
 
-* git pull 产生merge信息的原因    
+### git pull 产生merge信息的原因    
 
 Git 作为分布式版本控制系统，所有修改操作都是基于本地的，在团队协作过程中，假设你和你的同伴在本地中分别有各自的新提交，而你的同伴先于你 push 了代码到远程分支上，所以你必须先执行 git pull 来获取同伴的提交，然后才能 push 自己的提交到远程分支。而按照 Git 的默认策略，如果远程分支和本地分支之间的提交线图有分叉的话（即不是 fast-forwarded），Git 会执行一次 merge 操作，因此产生一次没意义的提交记录，从而造成了像上图那样的混乱。       
 
-* **解决**    
+### **解决**    
 
 参考：[**洁癖者用 Git：pull --rebase 和 merge --no-ff**](http://hungyuhei.github.io/2012/08/07/better-git-commit-graph-using-pull---rebase-and-merge---no-ff.html)       
 其实在 pull 操作的时候，，使用 git pull --rebase 选项即可很好地解决上述问题。 加上 --rebase 参数的作用是，提交线图有分叉的话，Git 会 rebase 策略来代替默认的 merge 策略。 使用 rebase 策略有什么好处呢？     
@@ -426,7 +429,7 @@ http://blog.csdn.net/hudashi/article/details/7664631/
 
 
 ---------------
-###  git pull文件时和本地文件冲突    
+##  git pull文件时和本地文件冲突    
 
 http://www.01happy.com/git-resolve-conflicts/     
 
@@ -440,7 +443,7 @@ Please, commit your changes or stash them before you can merge.
 
 -----------------
 
-### git删除远程仓库的一次commit提交    
+## git删除远程仓库的一次commit提交    
 
 ```
 # 参考链接： http://zhuqingcode.github.io/git/2014/05/15/github-a-bug-commit.html
