@@ -1,23 +1,22 @@
-###  [**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
+[**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
 -----------------------------------------------------------------------------------------
+[TOC]    
 
-* **文件重命名**   
+
+## **文件重命名**   
 
 ```
 linux下重命名文件或文件夹的命令mv既可以重命名，又可以移动文件或文件夹.
 例子：将目录A重命名为B
 mv A B
 例子：将/a目录移动到/b下，并重命名为c
-
 mv /a /b/c
-
 其实在文本模式中要重命名文件或目录的话也是很简单的，我们只需要使用mv命令就可以了，比如说我们要将一个名为abc的文件重命名为1234就可以这样来写：mv abc 1234，但是要注意的是，如果当前目录下也有个1234的文件的话，我们的这个文件是会将它覆盖的
-
-
 ```
 
-* **查找文件find**  
+## **查找：文件，内容，统计文件**  
     
+### **find查找文件**
 ```
 $ find / -name 文件名   
 $ find / -name 'azure-armrest*' # 部分名字匹配 例如azure-armrest-0.3.9   
@@ -26,7 +25,7 @@ $ find / -name 'azure-armrest*' # 部分名字匹配 例如azure-armrest-0.3.9
 ```    
 [更多详细点这里](https://bitbucket.org/yulilong/my_wiki/wiki/%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6find)      
 
-* **Linux查找文件内容**  
+### **Linux查找文件内容**  
     
 ```
 $ grep "被查找的字符串" 文件名  # 从文件内容查找匹配指定字符串的行：
@@ -34,10 +33,11 @@ $ find / -type f -name "*.log" | xargs grep "ERROR" # 从根目录开始查找�
 ```    
 [更多详细点这里](https://bitbucket.org/yulilong/my_wiki/wiki/Linux%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9)      
 
-* **查看当前用户**      
+## **查看当前用户**      
+
 whoami    
 
-*  **linux修改文件所属用户和组**              
+##  **linux修改文件所属用户和组**              
 ```
 使用chown命令可以修改文件或目录所属的用户：
        命令：chown 用户 目录或文件名
@@ -49,7 +49,9 @@ whoami
 sudo chown yulilong -R local
 
 ```      
-* **cp  scp**       
+
+## **复制文件：cp  scp**       
+
 ```
 http://www.jb51.net/LINUXjishu/70474.html
 Linux为我们提供了两个用于文件copy的命令，一个是cp，一个是scp，但是他们略有不同。 
@@ -101,12 +103,14 @@ scp root@172.19.2.75:/home/root/full.tar.gz /home/daisy
 scp -r root@192.168.100.110:/var/www/miq/vmdb ./
 ```
 
-* **centos添加用户跟组**      
+## **centos添加用户跟组**      
+
 ```
 http://zhidao.baidu.com/link?url=YWnbBbR1fLGrWwQ9bKROr_2A_7fotpIgs2IJA0yh7-MfDDBKf3GSsB8Hab1pn0-Q8xpBnW0rSUUOhY1jIngKlX_O3-O9q2G0uIQCsANK80e
 ```
  
-* **centos7开机自动关闭网络,开启网络，有线设置**    
+## **centos7开机自动关闭网络,开启网络，有线设置**    
+
 http://jingyan.baidu.com/article/6dad5075f3d766a123e36eaa.html
 ```
 $ cd /etc/sysconfig/network-scirpts
@@ -117,7 +121,9 @@ ONBOOT=yes
 关闭
 ONBOOT=no
 ```    
-*  ***查看文件文件夹大小*** 
+
+##  ***查看文件文件夹大小*** 
+
 ```
 [root@bsso yayu]# du -h --max-depth=1 work/testing
 27M     work/testing/logs
@@ -135,7 +141,8 @@ $ du -sh *
 ```    
 ![Screenshot from 2017-03-09 09-28-19.png](https://bitbucket.org/repo/oE6yEX/images/2094033154-Screenshot%20from%202017-03-09%2009-28-19.png)       
 
-* **linux 压缩、解压**
+## **linux 压缩、解压**  
+
 http://www.blogjava.net/jiangjf/archive/2007/07/29/133122.html      
 http://blog.csdn.net/liangzhao_jay/article/details/48052913      
 ```
@@ -154,7 +161,7 @@ http://blog.csdn.net/liangzhao_jay/article/details/48052913
 　　压缩：r ar e FileName.rar
 ```
 
-* **查看当前系统版本**
+## **查看当前系统版本**
 
 ```
 $ lsb_release -a
@@ -162,16 +169,14 @@ $ cat /etc/issue
 
 ```    
 
-* **wget**    
+## **wget/curl**    
     
 http://www.cnblogs.com/dingn/p/5658442.html       
 ```
 # Linux系统中wget是一个下载文件的工具，它用在命令行下。对于Linux用户是必不可少的工具，我们经常要下载一些软件或从远程服务器恢复备份到本地服务器。
 $ wget http://place.your.url/here
 
-```
-
-* **curl**    
+```  
     
 http://www.linuxdiyf.com/linux/2800.html       
 ```
