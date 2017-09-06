@@ -126,6 +126,25 @@ addMapLayre() {
 使用这个方法好处 ：简单，方便。        
 坏处： 1. 要根据不同的图层来制作不同的弹窗模板。  2. 弹窗样式固定。
 
+### **更好的方案： 使用 arcgis 地图的 点击事件，来个性化弹窗**    
+
+参考链接：https://geonet.esri.com/message/609517#comment-609517        
+
+https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#on      
+
+```
+let _view = this.view;
+this.view.on("click", function (event) {
+  _view.hitTest(event.screenPoint).then(function (response) {
+    var graphics = response.results;
+    graphics.forEach(function (graphic) {
+       console.log(graphic);
+     });
+  });
+});
+```
+
+在这里使用view 的 on事件，当点击地图上一个点的时候，会显示这个点的信息。
 
 
 ### **添加图层的时候可以调用方法，把所有点的 信息全部得到**    
