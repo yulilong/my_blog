@@ -4,7 +4,7 @@
 
 ------------
 
-## **arcgisAPI安装**    
+## **arcgis JavaScript API安装**    
 
 arcgis API下载：  https://developers.arcgis.com/downloads/      
 
@@ -27,4 +27,121 @@ https://esrisoftware.esri.com/akdlm/software/ArcGIS_JavaScript/4.4/arcgis_js_v44
 启动服务后，在浏览器中输入网址： http://localhost:3000/library/4.4/init.js      
 如果有返货内容则说明部署成功。   
 
------------
+-----------    
+
+## **angular2中加载arcgis JS API**   
+
+angular2里面需要先安装 arcgis 的包 
+
+```
+# 介绍： https://www.npmjs.com/package/angular2-esri-loader
+npm install angular2-esri-loader esri-loader
+```
+
+在组件中加载 arcgis的 API， 加载好后就可以在其他方法中直接使用了：
+
+```
+private loadEsriModules() {
+    //来自：https://github.com/StefanNieuwenhuis/awesome-mapping-app
+    this.esriLoader.load({
+      // url: 'https://js.arcgis.com/4.4/'
+    }).then(() => {
+      this.esriLoader.loadModules([
+        'esri/Map',
+        'esri/layers/MapImageLayer',    //地图 图层服务
+        'esri/views/MapView',           //2D地图
+        'esri/views/SceneView',         //3D地图
+        //https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source
+        "esri/layers/FeatureLayer",     //提取图层服务
+        "esri/widgets/Home",            //在视图中出现一个回到原点的按钮Home
+        "esri/widgets/BasemapGallery",
+        "esri/widgets/Expand",
+        "esri/widgets/Search",//地点搜索
+        "esri/widgets/ScaleBar",//比例尺
+        "esri/core/watchUtils", //鹰眼图
+        "dojo/dom",             //鹰眼图
+      ]).then(([Map, MapImageLayer, MapView, SceneView, FeatureLayer, Home,
+                 BasemapGallery, Expand, Search, ScaleBar, watchUtils, dom]) => {
+        this.esriMap = Map;
+        this.esriMapImageLayer = MapImageLayer;
+        this.esriMapView = MapView;
+        this.esriSceneView = SceneView;
+        this.esriFeatureLayer = FeatureLayer;
+        this.esriHome = Home;
+        this.esriBasemapGallery = BasemapGallery;
+        this.esriExpand = Expand;
+        this.esriSearch = Search;
+        this.esriScaleBar = ScaleBar;
+        this.esriwatchUtils = watchUtils;
+        this.esridom = dom;
+        this.arcGisLoadFinish = true;
+      })
+    })
+  }
+```
+
+## ** arcgis加载图层 并显示图层上点的信息**   
+
+参考链接：https://developers.arcgis.com/javascript/latest/sample-code/featurelayerview-query/index.html       
+
+### **使用图层上默认的参数，来显示图层上点的信息**    
+
+```
+addMapLayre() {
+    this.view.map.removeAll();
+    let popupTemplate = {
+        title: 'Cities',
+        content: "<p> 城市: {CITY_NAME}</p>" +
+        "<p> LABEL_FLAG: {LABEL_FLAG}</p>" +
+        "<p> OBJECTID: {OBJECTID}</p>" +
+        "<p> POP: {POP}</p>" +
+        "<p> POP_CLASS: {POP_CLASS}</p>" +
+        "<p> POP_RANK: {POP_RANK}</p>"
+      };
+    for (let e of this.layerBtnListsSelect) {
+      if (e.data && e.data.url) {
+        //https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#properties-summary
+        let layer = new this.esriFeatureLayer({
+          outFields: ["*"],             //把每个点的所有属性都查询出来。
+          popupTemplate: popupTemplate, //弹窗模板
+          url: e.data.url               //图层服务地址
+        });
+        this.view.map.add(layer);  // adds the layer to the map
+        //下面注销掉的代码可以查看全部点的信息
+        // this.view.whenLayerView(layer).then(function (lyrView) {
+        //   lyrView.watch("updating", function (val) {
+        //     if (!val) {  // wait for the layer view to finish updating
+        //       lyrView.queryFeatures().then(function (results) {
+        //         console.log(results);  // prints all the client-side graphics to the console
+        //       });
+        //     }
+        //   });
+        // });
+      }
+    }
+
+  }
+```    
+
+使用这个方法好处 ：简单，方便。        
+坏处： 1. 要根据不同的图层来制作不同的弹窗模板。  2. 弹窗样式固定。
+
+
+
+### **添加图层的时候可以调用方法，把所有点的 信息全部得到**    
+
+https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#querying   
+
+```
+// returns all the graphics from the layer view
+// lyr: 创建的图层 new FeatureLayer({...})
+view.whenLayerView(lyr).then(function(lyrView){
+  lyrView.watch("updating", function(val){
+    if(!val){  // wait for the layer view to finish updating
+      lyrView.queryFeatures().then(function(results){
+        console.log(results);  // prints all the client-side graphics to the console
+      });
+    }
+  });
+});
+```
