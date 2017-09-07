@@ -144,7 +144,8 @@ this.view.on("click", function (event) {
 });
 ```
 
-在这里使用view 的 on事件，当点击地图上一个点的时候，如果这个点事图层上的点，则会出发这个事件， 如果不是，则没有有反应。
+在这里使用view 的 on事件，当点击地图上一个点的时候，如果这个点事图层上的点，则会出发这个事件， 如果不是，则没有有反应。    
+一个例子： https://developers.arcgis.com/javascript/latest/sample-code/view-hittest/index.html       
 
 
 ### **添加图层的时候可以调用方法，把所有点的 信息全部得到**    
