@@ -163,5 +163,7 @@ view.whenLayerView(lyr).then(function(lyrView){
       });
     }
   });
-});
+}); 
 ```
+
+## **arcgis**
