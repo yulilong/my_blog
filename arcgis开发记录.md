@@ -172,4 +172,14 @@ view.whenLayerView(lyr).then(function(lyrView){
 参考链接： 
 
 https://developers.arcgis.com/javascript/3/jsapi/screenpoint-amd.html        
-https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html
+https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html    
+ 
+ 
+ 
+dad
+adada
+das
+da
+da
+da
+dada
