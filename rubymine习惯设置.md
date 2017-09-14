@@ -10,11 +10,6 @@
 
 -----
 
-## **2. 设置行号**
-
-MAC OS X 系统：RubyMine | Preferences | Editor | General | Appearance       
-1. show line numbers    
-2. show whitespaces    
 
 ## 3. rubymine2016 汉化    
 
@@ -308,6 +303,15 @@ preferences(cmd + ,) -> Editor -> General -> Appearance -> show whitespaces ,点
 
 preferences(cmd + ,) -> Editor -> General -> Appearance -> Vertical indent guide ,点击选中或取消。    
 ![WX20170914-164124.png](https://bitbucket.org/repo/oE6yEX/images/1855472452-WX20170914-164124.png)    
+
+## **25. 显示/隐藏 编辑器 行号**
+
+preferences(cmd + ,) -> Editor -> General -> Appearance ->  show line numbers    
+
+## **2. 显示/隐藏 编辑器 右边距**
+
+preferences(cmd + ,) -> Editor -> General -> Appearance ->  show right margin   
+![WX20170914-183222.png](https://bitbucket.org/repo/oE6yEX/images/3218564334-WX20170914-183222.png)
 
 ## **11.垂直缩进线颜色设置**    
 
