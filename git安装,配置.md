@@ -10,6 +10,11 @@ https://git-scm.com/book/zh/v2/起步-安装-Git
 # centos7.2 linnux
 sudo yum update
 sudo yum install -y git
+
+# ubuntu 安装
+# http://www.linuxidc.com/Linux/2016-09/135527.htm
+sudo apt-get install git
+
 # Mac OS 需要事先安装了homebrew  
 ~ brew install git
 
