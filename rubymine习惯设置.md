@@ -215,12 +215,6 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> modifi
 4. 行号处 背景色修改：     
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> Background      
 
-## **11.垂直缩进线颜色设置**    
-
-![WX20170415-122542.png](https://bitbucket.org/repo/oE6yEX/images/3499247445-WX20170415-122542.png)    
-
-preferences(cmd + ,) -> Editor -> Colors & Fonts -> General ->  Code -> Vertical indent guide -> Background   
-
 
 ## **12. 代码折叠设置**     
 
@@ -308,4 +302,15 @@ Compiler:  Enable TypeScript Compiler 去掉前面的对号，就不会自动编
 ## 23. 显示/隐藏 编辑器中空格上的白点    
 
 preferences(cmd + ,) -> Editor -> General -> Appearance -> show whitespaces ,点击选中或取消。    
-![WX20170914-160550.png](https://bitbucket.org/repo/oE6yEX/images/3522210899-WX20170914-160550.png)
+![WX20170914-160550.png](https://bitbucket.org/repo/oE6yEX/images/3522210899-WX20170914-160550.png)    
+
+## 24. 显示/隐藏 编辑器 代码块垂直线    
+
+preferences(cmd + ,) -> Editor -> General -> Appearance -> Vertical indent guide ,点击选中或取消。    
+![WX20170914-164124.png](https://bitbucket.org/repo/oE6yEX/images/1855472452-WX20170914-164124.png)    
+
+## **11.垂直缩进线颜色设置**    
+
+![WX20170415-122542.png](https://bitbucket.org/repo/oE6yEX/images/3499247445-WX20170415-122542.png)    
+
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General ->  Code -> Vertical indent guide -> Background
