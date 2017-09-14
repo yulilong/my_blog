@@ -303,4 +303,9 @@ preferences(cmd + ,) -> Editor -> Code Style -> TypeScript -> Spaces -> After ty
 ## **22. 关闭TypeScript 自动编译**   
 
 preferences(cmd + ,) -> Languages & Frameworks -> TypeScript:     
-Compiler:  Enable TypeScript Compiler 去掉前面的对号，就不会自动编译了。
+Compiler:  Enable TypeScript Compiler 去掉前面的对号，就不会自动编译了。      
+
+## 23. 显示/隐藏 编辑器中空格上的白点    
+
+preferences(cmd + ,) -> Editor -> General -> Appearance -> show whitespaces ,点击选中或取消。    
+![WX20170914-160550.png](https://bitbucket.org/repo/oE6yEX/images/3522210899-WX20170914-160550.png)
