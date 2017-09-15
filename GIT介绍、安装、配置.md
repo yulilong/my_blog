@@ -89,7 +89,7 @@ C:\Documents and Settings\用户名，其中有一个.gitconfig的文件
 
 ---
 
-## git设置远程仓库账号密码(拉取、上传代码不用输入用户名密码)
+## **5. git设置远程仓库账号密码(拉取、上传代码不用输入用户名密码)**
 
 * **github Personal access tokens**     
 
@@ -118,13 +118,13 @@ http://yulilong:github_Personal_access_tokens@github.com
 ```
 
 ------------
-## .git文件夹详解     
+## **6. git文件夹详解**     
 
 * [**探索.git目录**](http://www.cnblogs.com/zhongxinWang/p/4235448.html)     
 
 * [**.git文件夹详解**](http://www.jianshu.com/p/25293009f738)     
 * [**Git 内部原理**](https://git-scm.com/book/zh/v2/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-%E5%BA%95%E5%B1%82%E5%91%BD%E4%BB%A4%E5%92%8C%E9%AB%98%E5%B1%82%E5%91%BD%E4%BB%A4)      
 
-## git常用命令 ##
+## **7. git常用命令** 
 
 [git常用命令](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4)* [链接文本](链接网址)
