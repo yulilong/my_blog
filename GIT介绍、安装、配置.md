@@ -43,39 +43,47 @@ https://git-for-windows.github.io/
 # https://jingyan.baidu.com/article/20095761b48041cb0721b4fc.html
 ```
 
-## git命令别名设置      
+## **4. GIT 配置**
+
+### 1. GIT 初始化设置、命令别名设置      
 
 这里是为了在频繁git操作的时候，命令简化。
 ```   
 # linux,  Mac OS, window 都适用 
 # https://git-scm.com/book/zh/v2/起步-初次运行-Git-前的配置
 # https://git-scm.com/book/zh/v2/自定义-Git-配置-Git
-git config --global user.name "you name"
-git config --global user.email you_email_addr@gmail.com
-git config --global core.editor vim                      #使用VIM编辑器编辑作为默认编辑器
-git config --global core.mergeoptions --no-edit          #关闭git pull产生的merge信息
+git config --global user.name "you name"                 # 设置GIT的用户名 
+git config --global user.email you_email_addr@gmail.com  # 设置GIT的邮箱
+git config --global core.editor vim                      # 使用VIM编辑器编辑作为GIT的默认编辑器
+git config --global core.mergeoptions --no-edit          # 关闭git pull产生的merge信息
 git config --global commit.template ~/.gitmessage.txt    # git 提交时编辑里面的模板
 # false：关闭， auto：自动，有的颜色会忽略， always：忽略掉管道和终端的不同，即在任何情况下着色输出
 git config --global color.ui false                       # 终端内容着色
-git config --global credential.helper store
-git config --global alias.co checkout
-git config --global alias.ci commit
-git config --global alias.st status
-git config --global alias.br branch
+git config --global credential.helper store              # 自动保存远程仓库账号密码
+git config --global alias.co checkout                    # GIT命令别名 方便操作快捷
+git config --global alias.ci commit                      # GIT命令别名 方便操作快捷
+git config --global alias.st status                      # GIT命令别名 方便操作快捷
+git config --global alias.br branch                      # GIT命令别名 方便操作快捷
 git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
-git config --global alias.type 'cat-file -t'
-git config --global alias.dump 'cat-file -p'
-git config --list
+git config --global alias.type 'cat-file -t'             # GIT命令别名 方便操作快捷
+git config --global alias.dump 'cat-file -p'             # GIT命令别名 方便操作快捷
+git config --list                                        # 查看上面的配置
 # 查看git路径
 which git
 ```     
-Linux，Mac OS：      
+
+### **2. GIT配置文件介绍**      
+
+* Linux，Mac OS         
+
 Git 使用一系列配置文件来保存你自定义的行为。     
 它首先会查找 /etc/gitconfig 文件，该文件含有系统里每位用户及他们所拥有的仓库的配置值。 如果你传递 --system 选项给 git config，它就会读写该文件。            
 接下来 Git 会查找每个用户的 ~/.gitconfig 文件（或者 ~/.config/git/config 文件）。 你可以传递 --global 选项让 Git 读写该文件。           
 最后 Git 会查找你正在操作的版本库所对应的 Git 目录下的配置文件（.git/config）。 这个文件中的值只对该版本库有效。        
 以上三个层次中每层的配置（系统、全局、本地）都会覆盖掉上一层次的配置，所以 .git/config 中的值会覆盖掉 /etc/gitconfig 中所对应的值。     
-windows:     
+
+* windows    
+     
 C:\Documents and Settings\用户名，其中有一个.gitconfig的文件      
 在上述那个目录底下， 可发现另外一个文件.git-credentials，里面记录的就是用户名密码了。
 
