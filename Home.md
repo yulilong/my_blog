@@ -48,7 +48,7 @@ http://xialeizhou.com/2019/06/23/高效macbook工作环境配置/
 * [**vim编辑器常用命令与用法总结**](https://bitbucket.org/yulilong/my_wiki/wiki/Linux%20vi/vim%E7%BC%96%E8%BE%91%E5%99%A8%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%B8%8E%E7%94%A8%E6%B3%95%E6%80%BB%E7%BB%93)      
   
 ### **GIT**   
-* [**git安装,配置**](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%AE%89%E8%A3%85,%E9%85%8D%E7%BD%AE)
+* [**GIT介绍、安装、配置**](https://bitbucket.org/yulilong/my_wiki/wiki/GIT介绍、安装、配置)
 * [**git常用命令**](https://bitbucket.org/yulilong/my_wiki/wiki/git常用命令)tag,stash, merge, diff    
 * [**git常见问题及解决**](https://bitbucket.org/yulilong/my_wiki/wiki/git常见问题及解决)       
 * [**git代码冲突处理软件P4Merge**](https://bitbucket.org/yulilong/my_wiki/wiki/git代码冲突处理软件P4Merge)       
