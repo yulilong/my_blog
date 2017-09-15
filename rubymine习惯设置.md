@@ -114,7 +114,83 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Commen
 
 ![WX20170413-104255.png](https://bitbucket.org/repo/oE6yEX/images/1403576230-WX20170413-104255.png)     
 
-### 12 `export class EnterpriseListShowComponent implements OnInit {`      
+### **12. git 新增行，修改行，删除行 颜色标记修改**       
+
+![WX20170414-174836.png](https://bitbucket.org/repo/oE6yEX/images/2490896529-WX20170414-174836.png)      
+
+1. git 修改行标记颜色修改：    
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> Added lines -> Background        
+2. git 删除行标记颜色修改：      
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> Deleted lines -> Background        
+3. git 新增行标记颜色修改：    
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> modified lines -> Background    
+4. 行号处 背景色修改：     
+preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> Background      
+
+### **13. git修改代码真实背景色**    
+
+![WX20170417-103120.png](https://bitbucket.org/repo/oE6yEX/images/1958676848-WX20170417-103120.png)     
+
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Text -> Background in readonly file - Background      
+
+
+### **14. 编辑器 分隔线颜色设置**    
+
+![WX20170415-173819.png](https://bitbucket.org/repo/oE6yEX/images/1434825748-WX20170415-173819.png)     
+
+1. 分隔线颜色设置：    
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Editor -> Tear line -> Foreground      
+2. 选择分隔线颜色设置：    
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Editor -> Tear line selection -> Foreground  
+3. 右边线颜色设置：     
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Editor -> Right margin     
+
+### **15. 垂直缩进线颜色设置**    
+
+![WX20170415-122542.png](https://bitbucket.org/repo/oE6yEX/images/3499247445-WX20170415-122542.png)    
+
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General ->  Code -> Vertical indent guide -> Background
+
+### **16. 括号匹配颜色 **     
+
+![WX20170417-090958.png](https://bitbucket.org/repo/oE6yEX/images/239463111-WX20170417-090958.png)    
+
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Matched brace -> Background      
+
+### **17. 鼠标光标颜色**    
+
+![WX20170417-091628.png](https://bitbucket.org/repo/oE6yEX/images/3612788461-WX20170417-091628.png)   
+
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Editor -> Caret      
+
+### **18. 折叠文本颜色 **   
+
+![WX20170417-094439.png](https://bitbucket.org/repo/oE6yEX/images/1265052123-WX20170417-094439.png)     
+
+1. 折叠文本三个点颜色：   
+
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Text -> Fold text -> Foreground       
+2. 折叠文本背景色：    
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Text -> Fold text -> Background     
+
+
+### **19. 注入语言片段背景色修改**    
+
+![WX20170417-150737.png](https://bitbucket.org/repo/oE6yEX/images/660184162-WX20170417-150737.png)      
+
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Injected language fragment -> Background       
+
+### **20. 光标定位变量一样的 颜色**    
+
+![WX20170417-153026.png](https://bitbucket.org/repo/oE6yEX/images/2687178096-WX20170417-153026.png)     
+
+1. 光标在变量定义处：    
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Identifier under caret(write) -> Background     
+2. 变量一样其他变量的背景色：    
+preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Identifier under caret -> Background                
+
+
+### 21 `export class EnterpriseListShowComponent implements OnInit {`      
 
 1. `export class` keyword 关键字颜色设置
 (JavaScript) Editor ->  Colors & Fonts -> JavaScript -> Keyword -> Foreground  
@@ -125,12 +201,12 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Commen
 
 ![WX20170413-110636.png](https://bitbucket.org/repo/oE6yEX/images/1937567871-WX20170413-110636.png)   
 
-### 13. 实例成员方法名颜色设置：    
+### 22. 实例成员方法名颜色设置：    
 
 (JavaScript) Editor ->  Colors & Fonts -> JavaScript -> Instance member function -> Foreground      
 如果勾选了： Use inherited attributes,则：  Language Defaults -> Classes -> Instance method     
 
-### 14. **方法参数颜色设置 Parameter**     
+### 23. **方法参数颜色设置 Parameter**     
 
 ![WX20170417-173319.png](https://bitbucket.org/repo/oE6yEX/images/1638088749-WX20170417-173319.png)     
 
@@ -140,7 +216,7 @@ Foreground, 字体颜色
 Background, 背景色     
 如果勾选了： Use inherited attributes，则: Language Defaults -> Indentifiers -> Parameter        
 
-### **15.实例变量颜色，接口颜色**    
+### **24.实例变量颜色，接口颜色**    
 
 ![WX20170419-113204.png](https://bitbucket.org/repo/oE6yEX/images/3310809205-WX20170419-113204.png)     
 
@@ -152,9 +228,10 @@ Background, 背景色
 (TypeScript)Editor ->  Colors & Fonts -> TypeScript -> Interface -> Foreground      
 如果勾选了： Use inherited attributes，则: Language Defaults -> Classes -> Interface name            
 
-![WX20170413-113053.png](https://bitbucket.org/repo/oE6yEX/images/29999157-WX20170413-113053.png)      
 
-### 16. 搜索结果的颜色背景色设置：    
+
+### 25. 搜索结果的颜色背景色设置：    
+![WX20170413-113053.png](https://bitbucket.org/repo/oE6yEX/images/29999157-WX20170413-113053.png)      
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Search Results -> Text search result     
 搜索结果字体颜色： Foreground ，搜索结果背景色： Background    
 
@@ -197,19 +274,6 @@ preferences(cmd + ,) -> Appearance & Behavior -> System Settings -> Synchrogazat
 save file on frame deactivation(鼠标光标停止的时候保存文件，好像这么理解), 把这个前面的对号去掉，就可以在编辑时不会自动保存了。   
 Synchronize file on frame or editor tab activation, 这个是否去掉暂时不知道，           
 
-## **10. git 新增行，修改行，删除行 颜色标记修改**       
-
-![WX20170414-174836.png](https://bitbucket.org/repo/oE6yEX/images/2490896529-WX20170414-174836.png)      
-
-1. git 修改行标记颜色修改：    
-preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> Added lines -> Background        
-2. git 删除行标记颜色修改：      
-preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> Deleted lines -> Background        
-3. git 新增行标记颜色修改：    
-preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> modified lines -> Background    
-4. 行号处 背景色修改：     
-preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> Background      
-
 
 ## **12. 代码折叠设置**     
 
@@ -220,16 +284,6 @@ preferences(cmd + ,) -> Editor -> General -> Code Folding：
  -> Show code folding outline: 这个打上对号，就会显示代码折叠的提示线。     
 -> Collapse by default:  这下面是默认折叠的代码块的选项，哪个不想默认折叠把前面的对号去掉就可以了。     
 
-## **13. 分隔线颜色设置**    
-
-![WX20170415-173819.png](https://bitbucket.org/repo/oE6yEX/images/1434825748-WX20170415-173819.png)     
-
-1. 分隔线颜色设置：    
-preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Editor -> Tear line -> Foreground      
-2. 选择分隔线颜色设置：    
-preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Editor -> Tear line selection -> Foreground  
-3. 右边线颜色设置：     
-preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Editor -> Right margin     
 
 
 ## **14. 编辑器代码自动换行**     
@@ -239,48 +293,6 @@ preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Editor -> Right m
 preferences(cmd + ,) -> Editor -> General：   
 Soft Wraps -> Use soft wraps in editor , 前面打上对号，就会自动软换行。         
 
-## **15. 括号匹配颜色 **     
-
-![WX20170417-090958.png](https://bitbucket.org/repo/oE6yEX/images/239463111-WX20170417-090958.png)    
-
-preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Matched brace -> Background      
-
-## **16. 鼠标光标颜色**    
-
-![WX20170417-091628.png](https://bitbucket.org/repo/oE6yEX/images/3612788461-WX20170417-091628.png)   
-
-preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Editor -> Caret      
-
-## **17. 折叠文本颜色 **   
-
-![WX20170417-094439.png](https://bitbucket.org/repo/oE6yEX/images/1265052123-WX20170417-094439.png)     
-
-1. 折叠文本三个点颜色：   
-
-preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Text -> Fold text -> Foreground       
-2. 折叠文本背景色：    
-preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Text -> Fold text -> Background     
-
-## **18. git修改代码真实背景色**    
-
-![WX20170417-103120.png](https://bitbucket.org/repo/oE6yEX/images/1958676848-WX20170417-103120.png)     
-
-preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Text -> Background in readonly file - Background      
-
-## **19. 注入语言片段背景色修改**    
-
-![WX20170417-150737.png](https://bitbucket.org/repo/oE6yEX/images/660184162-WX20170417-150737.png)      
-
-preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Injected language fragment -> Background       
-
-## **20. 光标定位变量一样的 颜色**    
-
-![WX20170417-153026.png](https://bitbucket.org/repo/oE6yEX/images/2687178096-WX20170417-153026.png)     
-
-1. 光标在变量定义处：    
-preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Identifier under caret(write) -> Background     
-2. 变量一样其他变量的背景色：    
-preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Identifier under caret -> Background                
 
 ## **21. 代码从新格式化格式设置**    
 
@@ -312,9 +324,3 @@ preferences(cmd + ,) -> Editor -> General -> Appearance ->  show line numbers
 
 preferences(cmd + ,) -> Editor -> General -> Appearance ->  show right margin   
 ![WX20170914-183222.png](https://bitbucket.org/repo/oE6yEX/images/3218564334-WX20170914-183222.png)
-
-## **11.垂直缩进线颜色设置**    
-
-![WX20170415-122542.png](https://bitbucket.org/repo/oE6yEX/images/3499247445-WX20170415-122542.png)    
-
-preferences(cmd + ,) -> Editor -> Colors & Fonts -> General ->  Code -> Vertical indent guide -> Background
