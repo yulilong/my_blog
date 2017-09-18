@@ -44,6 +44,21 @@ EditorConfig -> Enable EditorConfig support    对号去掉
 
 ![WX20170412-154746.png](https://bitbucket.org/repo/oE6yEX/images/77549440-WX20170412-154746.png)       
 
+### 整体风格颜色(主题颜色)    
+
+preferences(cmd + ,) -> Editor -> Color Scheme -> Scheme： 选择一款喜欢的主题      
+其中 default 主题是窗口是白色的，其他的有黑色的
+
+### 正则表达式颜色     
+
+preferences(cmd + ,) -> Editor -> Color Scheme -> TypeScript -> Regular expression -> foreground
+
+![WX20170918-162718.png](https://bitbucket.org/repo/oE6yEX/images/2555709427-WX20170918-162718.png)
+
+### 字符串转义 颜色设置     
+
+preferences(cmd + ,) -> Editor -> Color Scheme -> TypeScript -> valid string escape -> foreground
+
 ### 1.  输入行的背景色    
 
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Editor -> Caret row
