@@ -9,6 +9,62 @@
 
 [TOC]
 
+-------------
+
+## 一、电脑本地初始化一个仓库      
+
+### 初始化一个仓库     
+
+终端进入项目目录，输入：     
+
+```   
+$ git init  
+```
+
+该命令将创建一个名为 .git 的子目录，这个子目录含有你初始化的 Git 仓库中所有的必须文件，这些文件是 Git 仓库的骨干。     
+详细介绍； https://git-scm.com/book/zh/v2/Git-基础-获取-Git-仓库    
+
+![WX20170919-101803.png](https://bitbucket.org/repo/oE6yEX/images/39724407-WX20170919-101803.png)
+
+### 远程网站建立一个仓库     
+
+目前我一直的git网站仓库：    
+
+* 码云      
+
+https://gitee.com/        
+共有仓库、私有仓库都免费使用， 国内访问速度快。
+
+* github       
+
+https://github.com/       
+共有仓库免费使用， 私有仓库收费， 有时候访问速度慢。    
+
+* Bitbucket    
+
+https://bitbucket.org/        
+共有仓库、私有仓库都免费使用， 但是免费的最多只能有5个用户对仓库进行读写，超过的就需要付费。     
+访问速度有事很慢。
+
+* gitlab     
+
+公司自建的git服务器，随意使用。     
+
+创建仓库都差不多，在网站中点击新建仓库，然后选择仓库的类型(公有、私有)，然后点击创建即可。
+
+
+### 添加远程仓库        
+  
+https://git-scm.com/book/zh/v2/Git-基础-远程仓库的使用     
+
+```
+$ git add *.c                              # 添加项目中的所有扩展名为.c 的文件
+$ git add LICENSE                          # 添加 许可协议文件
+$ git commit -m 'initial project version'  # 做一个提交
+```
+
+
+
 ## git 一些查看命令    
 
 ```
