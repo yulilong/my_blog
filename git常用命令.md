@@ -104,11 +104,105 @@ $ git clone https://github.com/libgit2/libgit2 mylibgit
 关于克隆远程仓库命令详细介绍：https://git-scm.com/book/zh/v2/Git-基础-获取-Git-仓库      
 
 
+## 三、记录每次更新到仓库     
 
+### 1. 工作目录中文件的状态介绍    
 
+工作目录下每个文件只有两种状态：       
 
+* 已跟踪     
 
+指那些被纳入了版本控制的文件，在上一次快照中有它们的记录，在工作一段时间后，它们的状态可能处于未修改，已修改或已放入暂存区。      
+初次克隆某个仓库的时候，工作目录中的所有文件都属于已跟踪文件，并处于未修改状态。         
+git会自动管理`已跟踪`的文件，记录文件处于什么状态中。      
 
+* 未跟踪    
+
+工作目录中除已跟踪文件以外的所有其它文件都属于未跟踪文件，它们既不存在于上次快照的记录中，也没有放入暂存区。     
+git不会去管理这些文件。       
+
+### 2. 检查当前文件状态`git status`     
+
+使用`git status`命令可以查看文件处于什么状态，例如：      
+
+```
+$ git status
+On branch P02                                   // 告诉你当前是哪个分之下
+Your branch is up-to-date with 'origin/P02'.    // 当前分之是从哪个仓库更新的
+Changes to be committed:                        // 已暂存状态
+  (use "git reset HEAD <file>..." to unstage)   // 使用这个命令可回退到Changes not staged for commit:
+
+	modified:   fileName.ts
+
+Changes not staged for commit:                  // 已跟踪文件的内容发生了变化
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   test.txt
+
+Untracked files:                                // 未跟踪的文件
+  (use "git add <file>..." to include in what will be committed)
+
+	src/library/
+
+```    
+
+在`git status`命令输出的信息中：     
+
+* Changes to be committed        
+
+已暂存状态        
+如果此时提交，那么该文件此时此刻的版本将被留存在历史记录中。       
+
+* Changes not staged for commit         
+
+已跟踪文件的内容发生了变化，但还没有放到暂存区。     
+
+* Untracked files     
+
+未跟踪的文件，意味着 Git 在之前的快照（提交）中没有这些文件；      
+Git 不会自动将之纳入跟踪范围，除非你明明白白地告诉它“我需要跟踪该文件”，     
+这样的处理让你不必担心将生成的二进制文件或其它不想被跟踪的文件包含进来。   
+
+### 3. 改变文件的状态    
+
+* git add     
+
+`git add`命令是个多功能命令：可以用它开始跟踪新文件，或者把已跟踪的文件放到暂存区，        
+还能用于合并时把有冲突的文件标记为已解决状态等。        
+将这个命令理解为“添加内容到下一次提交中”而不是“将一个文件添加到项目中”要更加合适。     
+例子：    
+src/test.txt文件是一个未跟踪文件，可使用`git add`命令开始跟踪：    
+
+```
+$ git add src/test.txt    //指定单个文件添加
+$ git add src/*           //指定src目录下所有文件都添加
+```     
+
+* 撤消对文件的修改`git checkout -- <file>`      
+
+如果你并不想保留对 CONTRIBUTING.md 文件的修改,      
+将它还原成上次提交时的样子（或者刚克隆完的样子，或者刚把它放入工作目录时的样子）    
+可使用如下命令：    
+
+```
+git checkout -- CONTRIBUTING.md
+```   
+
+注：     
+你需要知道 git checkout -- [file] 是一个危险的命令，这很重要。      
+你对那个文件做的任何修改都会消失 - 你只是拷贝了另一个文件来覆盖它。        
+除非你确实清楚不想要那个文件了，否则不要使用这个命令。
+
+* 取消暂存的文件`git reset HEAD <file>`     
+
+如果你在提交代码的时候，不想提交一些文件，可使用该命令把文件从暂存中回退到已修改的文件中。   
+
+```
+git reset HEAD CONTRIBUTING.md     
+```    
+
+关于撤销操作的详细介绍： https://git-scm.com/book/zh/v2/Git-基础-撤消操作
 
 ---------------------
 ```
