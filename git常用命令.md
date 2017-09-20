@@ -13,7 +13,7 @@
 
 ## 一、电脑本地初始化一个仓库      
 
-### 初始化一个仓库     
+### 1. 初始化一个仓库     
 
 终端进入项目目录，输入：     
 
@@ -26,7 +26,7 @@ $ git init
 
 ![WX20170919-101803.png](https://bitbucket.org/repo/oE6yEX/images/39724407-WX20170919-101803.png)
 
-### 远程网站建立一个仓库     
+### 2. 远程网站建立一个仓库     
 
 目前我一直的git网站仓库：    
 
@@ -53,9 +53,34 @@ https://bitbucket.org/
 创建仓库都差不多，在网站中点击新建仓库，然后选择仓库的类型(公有、私有)，然后点击创建即可。
 
 
-### 添加远程仓库        
-  
-https://git-scm.com/book/zh/v2/Git-基础-远程仓库的使用     
+### 3. 添加远程仓库            
+
+* 添加仓库     
+
+本地git初始化后，此时还没有添加远程仓库地址，需要添加一个远程仓库地址才能上传代码到服务器。      
+可在终端中运行`git remote add <shortname> <url>` 添加一个新的远程 Git 仓库。       
+`shortname`是`url`的简写，当上传代码的时候，可用这个简写代替`url`地址。     
+命令详细介绍：https://git-scm.com/book/zh/v2/Git-基础-远程仓库的使用        
+
+```
+$ git remote add pb https://github.com/paulboone/ticgit
+```      
+
+* 查看本地git的远程仓库地址     
+
+当添加好远程仓库后，可以使用命令来查看添加的仓库是否正确。    
+
+``` 
+# 列出你指定的每一个远程服务器的简写
+$ git remote
+origin  
+
+# 指定选项 -v，会显示需要读写远程仓库使用的 Git 保存的简写与其对应的 URL。
+$ git remote -v
+origin	https://github.com/schacon/ticgit (fetch)
+origin	https://github.com/schacon/ticgit (push)
+```
+
 
 ```
 $ git add *.c                              # 添加项目中的所有扩展名为.c 的文件
