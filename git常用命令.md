@@ -106,7 +106,7 @@ $ git clone https://github.com/libgit2/libgit2 mylibgit
 
 ## 三、记录每次更新到仓库     
 
-### 1. 工作目录中文件的状态介绍    
+### 1. 文件状态介绍(已跟踪/未跟踪)    
 
 工作目录下每个文件只有两种状态：       
 
