@@ -30,24 +30,20 @@ $ git init
 
 目前我一直的git网站仓库：    
 
-* 码云      
-
+码云:           
 https://gitee.com/        
 共有仓库、私有仓库都免费使用， 国内访问速度快。
 
-* github       
-
+github:       
 https://github.com/       
 共有仓库免费使用， 私有仓库收费， 有时候访问速度慢。    
 
-* Bitbucket    
-
+Bitbucket:    
 https://bitbucket.org/        
 共有仓库、私有仓库都免费使用， 但是免费的最多只能有5个用户对仓库进行读写，超过的就需要付费。     
 访问速度有时很慢。
 
-* gitlab     
-
+gitlab:     
 公司自建的git服务器，随意使用。     
 
 创建仓库都差不多，在网站中点击新建仓库，然后选择仓库的类型(公有、私有)，然后点击创建即可。
@@ -55,7 +51,7 @@ https://bitbucket.org/
 
 ### 3. 添加远程仓库            
 
-* 添加仓库     
+#### 添加仓库`git remote add <shortname> <url>`     
 
 本地git初始化后，此时还没有添加远程仓库地址，需要添加一个远程仓库地址才能上传代码到服务器。      
 可在终端中运行`git remote add <shortname> <url>` 添加一个新的远程 Git 仓库。       
@@ -66,7 +62,7 @@ https://bitbucket.org/
 $ git remote add pb https://github.com/paulboone/ticgit
 ```      
 
-* 查看本地git的远程仓库地址     
+#### 查看本地git的远程仓库地址`git remote -v`     
 
 当添加好远程仓库后，可以使用命令来查看添加的仓库是否正确。    
 
@@ -110,14 +106,12 @@ $ git clone https://github.com/libgit2/libgit2 mylibgit
 
 工作目录下每个文件只有两种状态：       
 
-* 已跟踪     
-
+已跟踪:     
 指那些被纳入了版本控制的文件，在上一次快照中有它们的记录，在工作一段时间后，它们的状态可能处于未修改，已修改或已放入暂存区。      
 初次克隆某个仓库的时候，工作目录中的所有文件都属于已跟踪文件，并处于未修改状态。         
 git会自动管理`已跟踪`的文件，记录文件处于什么状态中。      
 
-* 未跟踪    
-
+未跟踪:    
 工作目录中除已跟踪文件以外的所有其它文件都属于未跟踪文件，它们既不存在于上次快照的记录中，也没有放入暂存区。     
 git不会去管理这些文件。       
 
@@ -149,22 +143,19 @@ Untracked files:                                // 未跟踪的文件
 
 在`git status`命令输出的信息中：     
 
-* Changes to be committed        
-
+Changes to be committed:        
 已暂存状态        
 如果此时提交，那么该文件此时此刻的版本将被留存在历史记录中。       
 
-* Changes not staged for commit         
-
+Changes not staged for commit:         
 已跟踪文件的内容发生了变化，但还没有放到暂存区。     
 
-* Untracked files     
-
+Untracked files:     
 未跟踪的文件，意味着 Git 在之前的快照（提交）中没有这些文件；      
 Git 不会自动将之纳入跟踪范围，除非你明明白白地告诉它“我需要跟踪该文件”，     
 这样的处理让你不必担心将生成的二进制文件或其它不想被跟踪的文件包含进来。       
 
-* `status`命令紧凑格式输出    
+### 3. `git status -s`紧凑格式输出    
 
 使用`git status -s`命令或`git status --short`命令，你将得到一种更为紧凑的格式输出。
 
@@ -177,9 +168,9 @@ M  lib/simplegit.rb    // 出现在靠左边的 M 表示该文件被修改了并
 ?? LICENSE.txt         // 新添加的未跟踪文件前面有 ?? 标记
 ```
 
-### 3. 改变文件的状态    
+### 4. 改变文件的状态    
 
-* git add     
+#### git add     
 
 `git add`命令是个多功能命令：可以用它开始跟踪新文件，或者把已跟踪的文件放到暂存区，        
 还能用于合并时把有冲突的文件标记为已解决状态等。        
@@ -192,7 +183,7 @@ $ git add src/test.txt    //指定单个文件添加
 $ git add src/*           //指定src目录下所有文件都添加
 ```     
 
-* 撤消对文件的修改`git checkout -- <file>`      
+#### 撤消对文件的修改`git checkout -- <file>`      
 
 如果你并不想保留对 CONTRIBUTING.md 文件的修改,      
 将它还原成上次提交时的样子（或者刚克隆完的样子，或者刚把它放入工作目录时的样子）    
@@ -207,7 +198,7 @@ git checkout -- CONTRIBUTING.md
 你对那个文件做的任何修改都会消失 - 你只是拷贝了另一个文件来覆盖它。        
 除非你确实清楚不想要那个文件了，否则不要使用这个命令。
 
-* 取消暂存的文件`git reset HEAD <file>`     
+#### 取消暂存的文件`git reset HEAD <file>`     
 
 如果你在提交代码的时候，不想提交一些文件，可使用该命令把文件从暂存中回退到已修改的文件中。   
 
