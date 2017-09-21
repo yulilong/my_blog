@@ -237,7 +237,50 @@ doc/*.txt
 doc/**/*.pdf
 ```
 
-http://git-scm.com/docs/gitignore
+GitHub 有一个十分详细的针对数十种项目及语言的 .gitignore 文件列表:      
+https://github.com/github/gitignore   
+
+这部分详细介绍： https://git-scm.com/book/zh/v2/Git-基础-记录每次更新到仓库     
+
+
+### 6. 查看代码修改详细内容      
+
+如果你想知道文件具体修改了什么，可以用`git diff`命令。    
+
+#### git diff   
+
+`git diff`命令查看修改之后还没有暂存起来的变化内容。也就是`git status`命令输出信息中，      
+`Changes not staged for commit:`下面的文件， 例如：      
+
+```
+$ git diff         //查看所有详细修改
+$ git diff 1.txt   //只查看 1.txt文件的 详细修改   
+
+//输出信息如下   
+//git格式的diff,进行比较的是，a版本的f1（即变动前）和b版本的f1（即变动后）。
+diff --git a/.gitignore b/.gitignore  
+//表示两个版本的git哈希值（index区域的6f8a38c对象，与工作目录区域的449b072对象进行比较），
+//最后的六位数字是对象的模式（普通文件，644权限）。 
+index e722882..f98470c 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -3,7 +3,6 @@
+
+ *~
+ *.sw[mnpcod]
+-.DS_Store
+ *.log
+ *.tmp
+ *.tmp.*
+@@ -30,6 +29,7 @@ plugins/ios.json
+ www/
+ $RECYCLE.BIN/
++# 仅在Mac电脑下的用来存储这个文件夹的显示属性的，对项目没用
+ .DS_Store
+ Thumbs.db
+(END)
+
+```
 
 ---------------------
 ```
