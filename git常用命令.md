@@ -227,17 +227,13 @@ git reset HEAD CONTRIBUTING.md
 *.a
 # 但是要跟踪lib.a，即使你上面忽略了 .a文件
 !lib.a
-
 # 仅忽略当前目录的TODO文件夹， 不是subdir/TODO 
 /TODO
-
-# ignore all files in the build/ directory
+# 忽略build /目录中的所有文件
 build/
-
-# ignore doc/notes.txt, but not doc/server/arch.txt
+# 忽略doc / notes.txt，而不是doc / server / arch.txt
 doc/*.txt
-
-# ignore all .pdf files in the doc/ directory
+# 忽略doc 目录中的所有.pdf文件
 doc/**/*.pdf
 ```
 
