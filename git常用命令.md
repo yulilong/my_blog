@@ -162,7 +162,7 @@ Git 不会自动将之纳入跟踪范围，除非你明明白白地告诉它“�
 ```
 $ git status -s           
  M README              // 出现在右边的 M 表示该文件被修改了但是还没放入暂存区
-MM Rakefile            // 左右M都有
+MM Rakefile            // 文件已经放入暂存区，但是又修改过了，在已修改中也存在
 A  lib/git.rb          // 新添加到暂存区中的文件前面有 A 标记
 M  lib/simplegit.rb    // 出现在靠左边的 M 表示该文件被修改了并放入了暂存区
 ?? LICENSE.txt         // 新添加的未跟踪文件前面有 ?? 标记
@@ -206,7 +206,42 @@ git checkout -- CONTRIBUTING.md
 git reset HEAD CONTRIBUTING.md     
 ```    
 
-关于撤销操作的详细介绍： https://git-scm.com/book/zh/v2/Git-基础-撤消操作
+关于撤销操作的详细介绍： https://git-scm.com/book/zh/v2/Git-基础-撤消操作       
+
+### 5.忽略文件 .gitignore       
+
+一般我们总会有些文件无需纳入 Git 的管理，也不希望它们总出现在未跟踪文件列表。      
+通常都是些自动生成的文件，比如日志文件，或者编译过程中创建的临时文件等。       
+在这种情况下，我们可以在项目根目录创建一个名为 .gitignore 的文件，列出要忽略的文件模式。    
+
+文件 .gitignore 的格式规范如下：    
+1. 所有空行或者以 ＃ 开头的行都会被 Git 忽略。       
+2. 可以使用标准的 glob 模式匹配。    
+3. 匹配模式可以以（/）开头防止递归。     
+4. 匹配模式可以以（/）结尾指定目录。     
+5. 要忽略指定模式以外的文件或目录，可以在模式前加上惊叹号（!）取反。       
+
+一个 .gitignore 文件的例子：      
+```
+# 忽略所有后缀为 .a 的文件
+*.a
+# 但是要跟踪lib.a，即使你上面忽略了 .a文件
+!lib.a
+
+# 仅忽略当前目录的TODO文件夹， 不是subdir/TODO 
+/TODO
+
+# ignore all files in the build/ directory
+build/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+# ignore all .pdf files in the doc/ directory
+doc/**/*.pdf
+```
+
+http://git-scm.com/docs/gitignore
 
 ---------------------
 ```
