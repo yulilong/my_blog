@@ -65,7 +65,7 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Editor -> Caret 
 
 ### 2.  代码编辑区背景色     
 
-preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Test -> Default test -> background     
+preferences(cmd + ,) -> Editor ->  Colors Scheme -> General -> Text -> Default test -> background     
 
 ### 3. 行号的颜色设置    
 
