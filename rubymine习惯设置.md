@@ -67,9 +67,13 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Editor -> Caret 
 
 preferences(cmd + ,) -> Editor ->  Colors Scheme -> General -> Text -> Default test -> background     
 
-### 3. 行号的颜色设置    
+### 3. 行号字的颜色设置    
 
-preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Code -> Line number    
+preferences(cmd + ,) -> Editor ->  Colors Scheme -> General -> Code -> Line number    
+
+### 行号背景色设置      
+
+preferences(cmd + ,) -> Editor ->  Colors Scheme -> General -> Editor -> Gutter background    
 
 ![WX20170412-160435.png](https://bitbucket.org/repo/oE6yEX/images/450904385-WX20170412-160435.png)     
 
