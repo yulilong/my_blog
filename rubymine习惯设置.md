@@ -137,13 +137,22 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Commen
 
 ![WX20170414-174836.png](https://bitbucket.org/repo/oE6yEX/images/2490896529-WX20170414-174836.png)      
 
-1. git 修改行标记颜色修改：    
+2016版的：      
+1. git 新增行标记颜色修改：    
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> Added lines -> Background        
 2. git 删除行标记颜色修改：      
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> Deleted lines -> Background        
-3. git 新增行标记颜色修改：    
+3. git 修改行标记颜色修改：    
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> modified lines -> Background    
     
+2017版的：   
+1. git 新增行标记颜色修改：    
+preferences(cmd + ,) -> Editor ->  Colors Scheme -> VCS -> Editor Gutter -> Added lines -> Background        
+2. git 删除行标记颜色修改：      
+preferences(cmd + ,) -> Editor ->  Colors Scheme -> VCS -> Editor Gutter -> Deleted lines -> Background        
+3. git 修改行标记颜色修改：    
+preferences(cmd + ,) -> Editor ->  Colors Scheme -> VCS -> Editor Gutter -> modified lines -> Background  
+
 ### **13. git diff 弹窗 真实背景色**    
 
 ![WX20170417-103120.png](https://bitbucket.org/repo/oE6yEX/images/1958676848-WX20170417-103120.png)     
