@@ -299,7 +299,28 @@ index e722882..f98470c 100644          //②
 
 ### 7. 把代码纳入版本控制中： 提交更新 `git commit`     
 
+当所有需要提交的代码都放到暂存区后，就可以提交代码了：   
 
+```
+$ git commit
+```   
+
+这种方式会启动文本编辑器以便输入本次提交的说明。     
+一般都是 vim 或 emacs。使用 git config --global core.editor 命令设定你喜欢的编辑软件。    
+编辑器会显示类似下面的文本信息（本例选用 Vim 的屏显方式展示）：     
+
+```
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#	new file:   README
+#	modified:   CONTRIBUTING.md
+#
+~
+~
+".git/COMMIT_EDITMSG" 9L, 283C
+```
 
 
 
