@@ -341,7 +341,8 @@ $ git commit
 4. 费用AA。
 
 ```
-关于VIM编辑器使用教程： 
+关于VIM编辑器使用教程： [**vim编辑器常用命令与用法总结**](https://bitbucket.org/yulilong/my_wiki/wiki/vim编辑器常用命令与用法总结)    
+
 
 
 
