@@ -352,7 +352,37 @@ $ git commit
 在 commit 命令后添加 -m 选项，将提交信息与命令放在同一行，如下所示：     
 
 ```
+$ git ci -m "测试提交"
+[master f949399] 测试提交
+ 1 file changed, 1 insertion(+)
+```    
 
+从输出的信息中可以看见：      
+当前是在哪个分支（master）提交的，本次提交的完整 SHA-1 校验和是什么（f949399），     
+以及在本次提交中，有多少文件修订过，多少行添加和删改过。     
+
+***注意：***       
+提交时记录的是放在暂存区域的快照。 任何还未暂存的仍然保持已修改状态，可以在下次提交时纳入版本管理。       
+每一次运行提交操作，都是对你项目作一次快照，以后可以回到这个状态，或者进行比较。     
+
+#### commit命令的其他的用法： -a选项,提交所有修改过的文件（已暂存，已修改）      
+
+有时候把修改的提交到暂存区，然后在提交代码比较繁琐， GIT提供了一种`-a`选项，在提交代码的时候，      
+跳过暂存区，把所有已经跟踪的文件暂存起来一并提交，从而跳过`git add`步骤，例如：    
+
+```
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+    modified:   CONTRIBUTING.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+$ git commit -a -m 'added new benchmarks'
+[master 83e38c7] added new benchmarks
+ 1 file changed, 5 insertions(+), 0 deletions(-)
 ```
 
 ---------------------
