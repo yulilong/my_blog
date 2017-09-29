@@ -380,10 +380,16 @@ Changes not staged for commit:
     modified:   CONTRIBUTING.md
 
 no changes added to commit (use "git add" and/or "git commit -a")
+
 $ git commit -a -m 'added new benchmarks'
 [master 83e38c7] added new benchmarks
  1 file changed, 5 insertions(+), 0 deletions(-)
 ```
+
+从输出信息中可以看到：提交之前不再需要 git add 文件“CONTRIBUTING.md”了。       
+
+关于`git commit`命令详解：https://git-scm.com/book/zh/v2/Git-基础-记录每次更新到仓库
+
 
 ---------------------
 ```
