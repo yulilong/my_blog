@@ -13,7 +13,7 @@
 
 ## 一、电脑本地初始化一个仓库      
 
-### 1. 初始化一个仓库     
+### 1. 初始化一个仓库: `git init`     
 
 终端进入项目目录，输入：     
 
@@ -397,6 +397,28 @@ $ git add *.c                              # 添加项目中的所有扩展名�
 $ git add LICENSE                          # 添加 许可协议文件
 $ git commit -m 'initial project version'  # 做一个提交
 ```
+
+## 查看提交历史: git log       
+
+在提交了若干更新，又或者克隆了某个项目之后，你也许想回顾下提交历史。 完成这个任务最简单而又有效的工具是 git log 命令：    
+
+```
+$ git log
+commit ca82a6dff817ec66f44342007202690a93763949    // 提交的 SHA-1 校验和
+Author: Scott Chacon <schacon@gee-mail.com>        // 作者的名字和电子邮件地址
+Date:   Mon Mar 17 21:52:11 2008 -0700             // 提交时间
+
+    changed the version number                     // 提交说明
+
+commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+Author: Scott Chacon <schacon@gee-mail.com>
+Date:   Sat Mar 15 16:40:33 2008 -0700
+
+    removed unnecessary test
+```
+
+默认不用任何参数的话，git log 会按提交时间列出所有的更新，最近的更新排在最上面。    
+
 
 
 
