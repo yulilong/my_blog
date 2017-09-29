@@ -419,8 +419,21 @@ Date:   Sat Mar 15 16:40:33 2008 -0700
 
 默认不用任何参数的话，git log 会按提交时间列出所有的更新，最近的更新排在最上面。    
 
+### git log 的常用选项: -stat, -p, --name-status, 
 
+```
+$ git log -p               // 按补丁格式显示每个更新之间的差异。    
+$ git log --stat           // 显示每次更新的文件修改统计信息。
+$ git log --shortstat      // 只显示 --stat 中最后的行数修改添加移除统计。
+$ git log --name-only      // 仅在提交信息后显示已修改的文件清单。
+$ git log --name-status    // 显示新增、修改、删除的文件清单。     
+$ git log --abbrev-commit  // 仅显示 SHA-1 的前几个字符，而非所有的 40 个字符。
+$ git log --relative-date  // 使用较短的相对时间显示（比如，“2 weeks ago”）。
+$ git log --graph          // 显示 分支合并历史。   
+$ git log --pretty=oneline // 用一行显示信息
+// 使用其他格式显示历史提交信息。可用的选项包括 oneline，short，full，fuller 和 format（后跟指定格式）。
 
+```
 
 ## git 一些查看命令    
 
