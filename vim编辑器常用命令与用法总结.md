@@ -102,7 +102,7 @@ $ vim ~/.vimrc
 
 # 然后编辑这个文件，常用的配置如下：
 "双引号后面的内容为注释
-set ts=2      " 设置tab为2个空格
+set ts=4      " 设置tab为4个空格
 set expandtab " TAB替换为空格
 %retab!       " 加!是用于处理非空白字符之后的TAB，即所有的TAB，若不加!，则只处理行首的TAB。
 set nu "显示行号
