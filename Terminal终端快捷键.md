@@ -7,12 +7,12 @@ Ctrl+k	    # 删除此处至末尾的所有内容
 Ctrl+u	    # 删除此处至开始的所有内容
 Ctrl+w	    # 删除此处到左边的单词
 Ctrl+c	    # 终止进程/命令
+Ctrl+l	    # 相当于clear，即清屏
 # 上面的命令在 Mac上的终端也适用
 -----------------------
 Ctrl+d	    # 删除当前字符
 Ctrl+h	    # 删除当前字符前一个字符
 Ctrl+y	    # 粘贴由Ctrl+u， Ctrl+d， Ctrl+w删除的单词
-Ctrl+l	    # 相当于clear，即清屏
 Ctrl+r	    # 查找历史命令
 Ctrl+b	    # 向回移动光标
 Ctrl+f	    # 向前移动光标
