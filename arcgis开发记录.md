@@ -6,11 +6,15 @@
 
 ## **arcgis JavaScript API安装**    
 
-arcgis API下载：  https://developers.arcgis.com/downloads/      
+### 1. arcgisAPI下载地址：https://developers.arcgis.com/downloads/      
 
-https://esrisoftware.esri.com/akdlm/software/ArcGIS_JavaScript/4.4/arcgis_js_v44_api.zip?downloadID=7209648462&type=sms&agolUsername=NA&receiptId=downloads.arcgis.com&__gdb__=1502951400_100810443d32051c7c6c539c381ad892&ext=.zip       
+1. 打开网站后选择‘ArcGIS API for JavaScript’，如果不要最新版则点击后面的‘All versions’，选择一个自己需要的版本。     
+2. [**4.4版本的下载地址**](https://esrisoftware.esri.com/akdlm/software/ArcGIS_JavaScript/4.4/arcgis_js_v44_api.zip?downloadID=7209648462&type=sms&agolUsername=NA&receiptId=downloads.arcgis.com&__gdb__=1502951400_100810443d32051c7c6c539c381ad892&ext=.zip)     
 
-*  下载好后，把解压后的文件中 library目录拷贝到 angular2的src目录下(与index.html同级)，
+       
+### 2. 修改下载的API文件内容    
+
+1. 下载好后，把解压后的文件中 library目录拷贝到 angular2的src目录下(与index.html同级)，
 
 * 打开文件library/4.4/dojo/dojo.js     
 
