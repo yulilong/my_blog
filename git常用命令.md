@@ -13,7 +13,7 @@
 
 ## 一、电脑本地初始化一个仓库      
 
-### 1. 初始化一个仓库: `git init`     
+### 1. git init: 初始化一个电脑上本地仓库     
 
 终端进入项目目录，输入：     
 
@@ -26,9 +26,9 @@ $ git init
 
 ![WX20170919-101803.png](https://bitbucket.org/repo/oE6yEX/images/39724407-WX20170919-101803.png)
 
-### 2. 远程网站建立一个仓库     
+### 2. 创建远程仓库： 存放代码    
 
-目前我一直的git网站仓库：    
+目前我知道的git网站仓库：    
 
 码云:           
 https://gitee.com/        
@@ -49,9 +49,9 @@ gitlab:
 创建仓库都差不多，在网站中点击新建仓库，然后选择仓库的类型(公有、私有)，然后点击创建即可。
 
 
-### 3. 添加远程仓库            
+### 3. 本地Git添加远程仓库地址            
 
-#### 添加仓库`git remote add <shortname> <url>`     
+#### `git remote add <shortname> <url>`： 添加仓库     
 
 本地git初始化后，此时还没有添加远程仓库地址，需要添加一个远程仓库地址才能上传代码到服务器。      
 可在终端中运行`git remote add <shortname> <url>` 添加一个新的远程 Git 仓库。       
@@ -62,7 +62,7 @@ gitlab:
 $ git remote add pb https://github.com/paulboone/ticgit
 ```      
 
-#### 查看本地git的远程仓库地址`git remote -v`     
+#### `git remote -v`：查看本地git的远程仓库地址     
 
 当添加好远程仓库后，可以使用命令来查看添加的仓库是否正确。    
 
@@ -77,8 +77,9 @@ origin	https://github.com/schacon/ticgit (fetch)
 origin	https://github.com/schacon/ticgit (push)
 ```
 
-## 二、从网站上克隆一个仓库       
+## 二、git clone [url]：从网站上克隆一个仓库       
 
+如果本地没有代码，远程仓库有代码，则需要从远程仓库克隆代码。
 克隆仓库的命令格式是 `git clone [url]` 。 比如，要克隆 Git 的可链接库 libgit2，可以用下面的命令：     
 
 ```
@@ -112,22 +113,22 @@ $ git clone https://github.com/libgit2/libgit2 mylibgit
 初次克隆某个仓库的时候，工作目录中的所有文件都属于已跟踪文件，并处于未修改状态。         
 git会自动管理`已跟踪`的文件，记录文件处于什么状态中。      
 
-##### 已跟踪的2中状态：已暂存     
+##### 已跟踪的两种状态：已暂存(Changes to be committed)     
 
 文件在这个状态下的，说明已经准备好把文件提交了，可以把这次代码变动记录保存在历史记录中。     
 这个状态为GIT可以提交的内容。      
 
-##### 已跟踪的2中状态：已修改      
+##### 已跟踪的两种状态：已修改(Changes not staged for commit)      
 
 这状态下的文件， git只是知道修改了那些内容，但是并不会在提交代码的时候把这部分内容提交上去。    
 如果需要提交这部分代码需要使用命令`git add` 把文件添加到 已暂存中，然后提交代码。      
 
-#### 未跟踪    
+#### 未跟踪(Untracked files)    
 
 工作目录中除已跟踪文件以外的所有其它文件都属于未跟踪文件，它们既不存在于上次快照的记录中，也没有放入暂存区。     
 git不会去管理这些文件。       
 
-### 2. 查看当前文件状态`git status`     
+### 2. `git status`: 查看当前文件状态     
 
 使用`git status`命令可以查看文件处于什么状态，例如：      
 
@@ -195,7 +196,7 @@ $ git add src/test.txt    //指定单个文件添加
 $ git add src/*           //指定src目录下所有文件都添加
 ```     
 
-#### 撤消对文件的修改`git checkout -- <file>`      
+#### `git checkout -- <file>`： 撤消对文件的修改      
 
 如果你并不想保留对 CONTRIBUTING.md 文件的修改,      
 将它还原成上次提交时的样子（或者刚克隆完的样子，或者刚把它放入工作目录时的样子）    
@@ -210,7 +211,7 @@ git checkout -- CONTRIBUTING.md
 你对那个文件做的任何修改都会消失 - 你只是拷贝了另一个文件来覆盖它。        
 除非你确实清楚不想要那个文件了，否则不要使用这个命令。
 
-#### 取消暂存的文件`git reset HEAD <file>`     
+#### `git reset HEAD <file>`：取消暂存的文件     
 
 如果你在提交代码的时候，不想提交一些文件，可使用该命令把文件从暂存中回退到已修改的文件中。   
 
@@ -220,7 +221,7 @@ git reset HEAD CONTRIBUTING.md
 
 关于撤销操作的详细介绍： https://git-scm.com/book/zh/v2/Git-基础-撤消操作       
 
-### 5.某些文件不需要版本控制： 忽略文件 .gitignore       
+### 5. .gitignore：忽略文件，不纳入GIT版本控制        
 
 一般我们总会有些文件无需纳入 Git 的管理，也不希望它们总出现在未跟踪文件列表。      
 通常都是些自动生成的文件，比如日志文件，或者编译过程中创建的临时文件等。       
