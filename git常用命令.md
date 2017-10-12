@@ -77,6 +77,50 @@ origin	https://github.com/schacon/ticgit (fetch)
 origin	https://github.com/schacon/ticgit (push)
 ```
 
+#### git remote show [remote-name] ：查看远程仓库详细信息   
+
+如果想要查看某一个远程仓库的更多信息，可以使用 git remote show [remote-name] 命令。     
+如果想以一个特定的缩写名运行这个命令，例如 origin，会得到像下面类似的信息：    
+
+```
+$ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/schacon/ticgit
+  Push  URL: https://github.com/schacon/ticgit
+  HEAD branch: master
+  Remote branches:
+    master                               tracked
+    dev-branch                           tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+```
+
+#### 远程仓库的重命名与移除    
+
+如果想要重命名引用的名字可以运行 git remote rename 去修改一个远程仓库的简写名。     
+例如，想要将 pb 重命名为 paul，可以用 git remote rename 这样做：    
+
+```
+$ git remote rename pb paul
+$ git remote
+origin
+paul
+``` 
+
+这同样也会修改你的远程分支名字。 那些过去引用 pb/master 的现在会引用 paul/master。    
+
+如果因为一些原因想要移除一个远程仓库  - 可以使用 git remote rm ：   
+
+```
+$ git remote rm paul
+$ git remote
+origin
+```   
+
+[***关于远程仓库详细介绍***](https://git-scm.com/book/zh/v2/Git-基础-远程仓库的使用)    
+ 
 ## 二、git clone [url]：从网站上克隆一个仓库       
 
 如果本地没有代码，远程仓库有代码，则需要从远程仓库克隆代码。
@@ -427,7 +471,7 @@ $ git push                   // 上传本地所有分支代码到远程对应的
 当你和其他人在同一时间克隆，他们先推送到上游然后你再推送到上游，你的推送就会毫无疑问地被拒绝。      
 你必须先将他们的工作拉取下来并将其合并进你的工作后才能推送。       
 
-## 查看提交历史: git log       
+## 四、 查看提交历史: git log       
 
 在提交了若干更新，又或者克隆了某个项目之后，你也许想回顾下提交历史。 完成这个任务最简单而又有效的工具是 git log 命令：    
 
