@@ -413,11 +413,14 @@ $ git commit -a -m 'added new benchmarks'
 关于`git commit`命令详解：https://git-scm.com/book/zh/v2/Git-基础-记录每次更新到仓库
 
 
----------------------
+### 8. git push： 把本地的跟新推送到远程仓库服务器上    
+
+当在本地开发完毕，需要把代码提交到服务器时，可使用`it push [remote-name] [branch-name]`命令。    
+你想要将 master 分支推送到 origin 服务器时：    
+
 ```
-$ git add *.c                              # 添加项目中的所有扩展名为.c 的文件
-$ git add LICENSE                          # 添加 许可协议文件
-$ git commit -m 'initial project version'  # 做一个提交
+$ git push origin master     // 把更新上传到 origin服务器的 master分之上。
+$ git push                   // 把所有更新推到所有服务器上
 ```
 
 ## 查看提交历史: git log       
