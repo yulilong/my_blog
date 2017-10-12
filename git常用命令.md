@@ -256,11 +256,11 @@ https://github.com/github/gitignore
 这部分详细介绍： https://git-scm.com/book/zh/v2/Git-基础-记录每次更新到仓库     
 
 
-### 6. 查看代码修改详细内容      
+### 6. git diff: 查看代码修改详细内容      
 
 如果你想知道文件具体修改了什么，可以用`git diff`命令。    
 
-#### git diff   
+#### Ⅰ. git diff： 查看尚未暂存的文件修改记录   
 
 `git diff`命令查看修改之后还没有暂存起来的变化内容。也就是`git status`命令输出信息中，      
 `Changes not staged for commit:`下面的文件， 例如：      
@@ -297,6 +297,27 @@ index e722882..f98470c 100644          //②
 ⑥ 以空格开头表示没有修改 
 ⑦ 以`+`开头便是增加的代码
 
+[git diff输出结果介绍](http://www.ruanyifeng.com/blog/2012/08/how_to_read_diff.html)     
+
+#### Ⅱ. git diff --staged： 查看以暂存文件修改记录     
+
+查看已暂存的将要添加到下次提交里的内容可是使用命令`git diff --staged`(GIT版本1.6.1以上)。
+也可以使用`git diff --cached`命令。    
+
+```
+git diff --staged        // 查看所有已暂存文件的修改记录
+git diff --staged t.txt  // 只查看1.txt文件 已暂存的修改记录
+```
+
+#### Ⅲ. git diff 的其他用法: --stat HEAD SHA1    
+
+```
+~ git diff --stat         // 查看简单的diff结果，只查看修改的文件名、修改了多少内容
+~ git diff HEAD           // 查看所有修改记录(已暂存、已修改)：显示工作版本(Working tree)和HEAD的差别
+~ git diff topic master   // 直接将两个分支上最新的提交做diff
+~ git diff HEAD^ HEAD     // 比较上次提交commit和上上次提交
+~ git diff SHA1 SHA2      // 比较两个历史版本之间的差异
+```
 
 ### 7. 把代码纳入版本控制中： 提交更新 `git commit`     
 
