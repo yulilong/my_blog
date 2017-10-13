@@ -495,6 +495,8 @@ Date:   Sat Mar 15 16:40:33 2008 -0700
 ### git log 的常用选项: -stat, -p, --name-status, --pretty=oneline, --abbrev-commit  
 
 ```
+$ git log 1.txt            //查看 1.txt文件的历史修改记录。
+$ git log -n               //只查看前n次修改记录，例如查看前2次的记录： git log -2
 $ git log -p               // 按补丁格式显示每个更新之间的差异。    
 $ git log --stat           // 显示每次更新的文件修改统计信息。
 $ git log --shortstat      // 只显示 --stat 中最后的行数修改添加移除统计。
