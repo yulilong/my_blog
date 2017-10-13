@@ -492,7 +492,7 @@ Date:   Sat Mar 15 16:40:33 2008 -0700
 
 默认不用任何参数的话，git log 会按提交时间列出所有的更新，最近的更新排在最上面。    
 
-### git log 的常用选项: -stat, -p, --name-status, 
+### git log 的常用选项: -stat, -p, --name-status, --pretty=oneline, --abbrev-commit  
 
 ```
 $ git log -p               // 按补丁格式显示每个更新之间的差异。    
@@ -506,7 +506,9 @@ $ git log --graph          // 显示 分支合并历史。
 $ git log --pretty=oneline // 用一行显示信息
 // 使用其他格式显示历史提交信息。可用的选项包括 oneline，short，full，fuller 和 format（后跟指定格式）。
 
-```
+```   
+
+[***关于git log命令详解***](https://git-scm.com/book/zh/v2/Git-基础-查看提交历史)     
 
 ## git 一些查看命令    
 
