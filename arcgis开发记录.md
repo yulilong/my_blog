@@ -12,7 +12,7 @@
 2. [**4.4版本的下载地址**](https://esrisoftware.esri.com/akdlm/software/ArcGIS_JavaScript/4.4/arcgis_js_v44_api.zip?downloadID=7209648462&type=sms&agolUsername=NA&receiptId=downloads.arcgis.com&__gdb__=1502951400_100810443d32051c7c6c539c381ad892&ext=.zip)     
 
        
-### 2. 修改下载的API文件内容    
+### 2. 4.4版本API：本地配置    
 
 1. 下载好后，把解压后的文件中 library目录拷贝到 angular2的src目录下(与index.html同级)，
 
@@ -24,6 +24,18 @@
 * 打开文件library/4.4/init.js      
 
 搜索内容 `https://[HOSTNAME_AND_PATH_TO_JSAPI]dojo`  把这个字符串替换成 `http://localhost:3000/library/4.4/dojo`   
+保存后退出。   
+
+### 3. 3.18版本修改方法       
+
+* 打开文件library/4.4/dojo/dojo.js     
+
+搜索内容 `[HOSTNAME_AND_PATH_TO_JSAPI]`  把这个字符串替换成 `localhost:3000/library/4.4/dojo`   
+保存后退出。     
+
+* 打开文件library/4.4/init.js      
+
+搜索内容 `[HOSTNAME_AND_PATH_TO_JSAPI]`  把这个字符串替换成 `localhost:3000/library/4.4/dojo`   
 保存后退出。   
 
 * 测试API是否成功    
@@ -179,11 +191,5 @@ https://developers.arcgis.com/javascript/3/jsapi/screenpoint-amd.html
 https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html    
  
  
- 
-dad
-adada
-das
-da
-da
-da
-dada
+
+### 没毛病
