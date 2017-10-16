@@ -18,6 +18,10 @@
 
 * 打开文件library/4.4/dojo/dojo.js     
 
+```
+baseUrl:"http://localhost:3000/library/4.4/dojo",hasCache:{"config-deferredInstrumentation":0,"config-selectorEngine":"acme",
+```
+
 搜索内容 `https://[HOSTNAME_AND_PATH_TO_JSAPI]dojo`  把这个字符串替换成 `http://localhost:3000/library/4.4/dojo`   
 保存后退出。     
 
@@ -29,6 +33,10 @@
 ### 3. 3.18版本修改方法       
 
 * 打开文件library/4.4/dojo/dojo.js     
+
+```
+baseUrl:((location.protocol === 'http:' || location.protocol === 'https:') ? location.protocol : 'http:') + '//' + "localhost:3000/library/3.18/dojo",hasCache:{"config-selectorEngine":"acme",
+```
 
 搜索内容 `[HOSTNAME_AND_PATH_TO_JSAPI]`  把这个字符串替换成 `localhost:3000/library/4.4/dojo`   
 保存后退出。     
