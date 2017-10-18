@@ -19,8 +19,6 @@
 * [**angular2开发知识点**](https://bitbucket.org/yulilong/my_wiki/wiki/angular2开发知识点)       
 API 网关地址 配置，服务注册使用，模块组件注册使用，
 
-* [**arcgis开发记录**](https://bitbucket.org/yulilong/my_wiki/wiki/arcgis开发记录)       
-
 * [**angular2网页前端执行流程**](https://bitbucket.org/yulilong/my_wiki/wiki/angular2网页前端执行流程)       
 
 * [** html常用正则表达式**](https://bitbucket.org/yulilong/my_wiki/wiki/html常用正则表达式)      
@@ -33,7 +31,14 @@ API 网关地址 配置，服务注册使用，模块组件注册使用，
 
 * [**前端编程规范**](https://bitbucket.org/yulilong/my_wiki/wiki/前端编程规范)      
 
-* [**码云前端文档**](http://git.oschina.net/open-code-web/web-doc/wikis/Home)
+* [**码云前端文档**](http://git.oschina.net/open-code-web/web-doc/wikis/Home)      
+
+----------------
+## angular2下arcgis开发    
+
+* [**arcgis开发记录**](https://bitbucket.org/yulilong/my_wiki/wiki/arcgis开发记录)       
+
+* [**aangular下arcgis开发遇见的问题**](https://bitbucket.org/yulilong/my_wiki/wiki/angular下arcgis开发遇见的问题)       
 
 ------------------
 ## angular2相关资料
