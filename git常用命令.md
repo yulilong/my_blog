@@ -578,6 +578,80 @@ git tag -s v1.5 -m 'my signed 1.5 tag'
 $ git tag v1.4-lw
 ```    
 
+#### ③ `git tag -a v1.2 9fceb02`：对某个历史提交打标签(后期打标签)    
+
+如果你在项目版本发布的时候忙忘记打标签，你可以在之后补上标签。      
+要在那个提交上打标签，你需要在命令的末尾指定提交的校验和（或部分校验和）:    
+
+```
+git tag -a v1.2 9fceb02    
+```
+
+### 3. 把创建的标签推送到服务器上：`git push origin [tagname]`   
+
+默认情况下，`git push`命令并不会传送标签到远程仓库服务器上。 在创建完标签后你必须显式地推送标签到共享服务器上。     
+
+```
+$ git push origin v1.5
+
+Counting objects: 14, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (14/14), 2.05 KiB | 0 bytes/s, done.
+Total 14 (delta 3), reused 0 (delta 0)
+To git@github.com:schacon/simplegit.git
+ * [new tag]         v1.5 -> v1.5
+```     
+
+如果想要一次性推送很多标签，也可以使用带有`--tags`选项的`git push`命令。      
+这将会把所有不在远程仓库服务器上的标签全部传送到服务器。    
+
+```
+$ git push origin --tags
+Counting objects: 1, done.
+Writing objects: 100% (1/1), 160 bytes | 0 bytes/s, done.
+Total 1 (delta 0), reused 0 (delta 0)
+To git@github.com:schacon/simplegit.git
+ * [new tag]         v1.4 -> v1.4
+ * [new tag]         v1.4-lw -> v1.4-lw
+```    
+
+现在，当其他人从仓库中克隆或拉取，他们也能得到你的那些标签。    
+
+### 4. 检出标签: 代码变成标签的样子   
+
+在 Git 中你并不能真的检出一个标签，因为它们并不能像分支一样来回移动。      
+如果你想要工作目录与仓库中特定的标签版本完全一样，      
+可以使用`git checkout -b [branchname] [tagname]`在特定的标签上创建一个新分支：  
+
+```
+$ git checkout -b version2 v2.0.0
+Switched to a new branch 'version2'
+```   
+
+
+### 5. 删除标签   
+
+#### ① `git tag -d v1.0`:删除本地标签   
+
+```
+$ git tag -d v1.0  
+Deleted tag 'v1.0' (was 2ffea56)
+```   
+
+#### ② `git push origin :refs/tags/v0.1`:删除服务器标签   
+
+```
+$ git push origin :refs/tags/v0.1
+To http://192.168.95.95/user/test.git
+ - [deleted]         v0.1
+```
+
+如果服务器的标签删除后，本地的也需要自己删除。
+
+[***关于git tag详解***](https://git-scm.com/book/zh/v2/Git-基础-打标签)     
+
+
 ## git 一些查看命令    
 
 ```
