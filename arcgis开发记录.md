@@ -40,11 +40,14 @@ baseUrl:((location.protocol === 'http:' || location.protocol === 'https:') ? loc
 
 搜索内容 `[HOSTNAME_AND_PATH_TO_JSAPI]`  把这个字符串替换成 `localhost:3000/library/4.4/dojo`   
 保存后退出。     
+***注意：***一定不要加`http://`      
+
 
 * 打开文件library/4.4/init.js      
 
 搜索内容 `[HOSTNAME_AND_PATH_TO_JSAPI]`  把这个字符串替换成 `localhost:3000/library/4.4/dojo`   
 保存后退出。   
+***注意：***一定不要加`http://`      
 
 * 测试API是否成功    
 
