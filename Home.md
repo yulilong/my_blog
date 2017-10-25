@@ -50,7 +50,7 @@ http://xialeizhou.com/2019/06/23/高效macbook工作环境配置/
   
 ### **GIT**   
 * [**GIT介绍、安装、配置**](https://bitbucket.org/yulilong/my_wiki/wiki/GIT介绍、安装、配置)
-* [**git常用命令**](https://bitbucket.org/yulilong/my_wiki/wiki/git常用命令)tag,stash, merge, diff    
+* [**git使用教程**](https://bitbucket.org/yulilong/my_wiki/wiki/git使用教程)tag,stash, merge, diff    
 * [**git常见问题及解决**](https://bitbucket.org/yulilong/my_wiki/wiki/git常见问题及解决)       
 * [**git代码冲突处理软件P4Merge**](https://bitbucket.org/yulilong/my_wiki/wiki/git代码冲突处理软件P4Merge)       
 * git教程：https://git-scm.com/book/zh/v2       
