@@ -670,7 +670,7 @@ Git 的分支，其实本质上仅仅是指向提交对象的可变指针。 Git
 2. master分支始终要保证可发布的状态，用dev分支和bug分支进行开发和错误调试，这样能够保证主干代码的干净、可发布。     
 3. 自己开发测试或者修复BUG等等，可以避免代码的丢失。
 
-### 2. 分支的创建、切换、删除：    
+### 2. 本地分支的创建、切换、删除：    
 
 #### ① 创建分支：`git branch testing`   
 
@@ -691,8 +691,77 @@ $ git branch testing
 $ git checkout testing 
 ```    
 
-#### ③ 创建并且换：``
+#### ③ 创建并且换：`git checkout -b testing`     
 
+```
+$ git checkout -b testing
+Switched to a new branch "testing"
+```    
+
+这个命令会创建一个分支并切换到新分支中去， 实际上他是上面2条命令的简化版。
+
+
+#### ④ 删除分支：`git branch -d testing`      
+
+*删除一个分支的时候，你不能在要删除的分支中，要切换到别的分支中，否则会报错。*      
+如果要删除 testing分支，可以使用带 -d 选项的 git branch 命令来删除分支：    
+
+```
+$ git br -d testing
+Deleted branch testing (was 4baf2a3).
+```   
+
+### 3. 远程仓库分支的新建与删除
+
+#### ①远程仓库分支的新建： `git push origin testing`   
+
+如果想把本地的新分支推送到远程仓库，可使用 `git push [远程仓库名] [分支名]`：    
+
+```
+$ git br -a
+
+  testing
+* master
+  remotes/origin/master
+
+$ git push origin testing
+
+Total 0 (delta 0), reused 0 (delta 0)
+To http://192.168.132.55/user/test.git
+ * [new branch]      testing -> testing
+```      
+
+#### ② 删除远程仓库的无用分支：`git push origin --delete testing`      
+
+如果远程仓库某个分支无用了，想要删除，可以运行带有 --delete 选项的 git push 命令来删除一个远程分支：    
+
+```
+git push origin --delete testing
+To http://192.168.132.55/user/test.git
+ - [deleted]         testing
+```
+
+
+
+
+
+
+
+
+
+
+------------------
+------------------
+------------------
+------------------
+------------------
+------------------
+------------------
+------------------
+------------------
+------------------
+------------------
+------------------
 
 ## git 一些查看命令    
 
