@@ -279,10 +279,6 @@ Editor -> Code Style -> TypeScript -> Tabs and Indents
 https://www.jetbrains.com/help/ruby/2016.3/editor-tabs.html?search=editor%20tabs      
 ![WX20170414-151951.png](https://bitbucket.org/repo/oE6yEX/images/2174346782-WX20170414-151951.png)      
 
-1. 编辑器标签的设置，由单行显示变多行：    
-preferences(cmd + ,) -> Editor -> General -> Editor Tabs:     
-Tab Appearance -> Show tabs in single row(在单行显示标签), 对号去掉。      
-Tab Closing Policy(选项卡关闭策略) -> Tab limit(选项卡限制) , 里面的数字改大一点
 
 2. 显示编辑文件的路径：    
 rubymine左上角 -> View -> navigation Bar , 前面打上对号。      
@@ -349,4 +345,15 @@ preferences(cmd + ,) -> Editor -> General -> Appearance ->  show line numbers
 ## **2. 显示/隐藏 编辑器 右边距**
 
 preferences(cmd + ,) -> Editor -> General -> Appearance ->  show right margin   
-![WX20170914-183222.png](https://bitbucket.org/repo/oE6yEX/images/3218564334-WX20170914-183222.png)
+![WX20170914-183222.png](https://bitbucket.org/repo/oE6yEX/images/3218564334-WX20170914-183222.png)  
+
+##  编辑器标签的设置，由单行显示变多行(打开的文件名)：    
+
+preferences(cmd + ,) -> Editor -> General -> Editor Tabs:     
+Tab Appearance -> Show tabs in single row(在单行显示标签), 对号去掉。      
+Tab Closing Policy(选项卡关闭策略) -> Tab limit(选项卡限制) , 里面的数字改大一点    
+
+## 编辑过的文件名标记星号，知道修改了什么文件    
+
+preferences(cmd + ,) -> Editor -> General -> Editor Tabs:     
+Tab Appearance -> Mark modified tabs with asterisk (标记修改过的标签为星号)，打上对号。
