@@ -4,7 +4,7 @@
 
 * [**Git合并多个Commit(本地的)_git修改未push的最后一次commit**](https://bitbucket.org/yulilong/my_wiki/wiki/Git合并多个Commit(本地的)_git修改未push的最后一次commit注释)         
 
-
+[说明文字](#jump)
 -------------           
 
 [TOC]
@@ -1221,4 +1221,6 @@ Please, commit your changes or stash them before you can merge.
 ~ git push origin master
 
 ```
-![WX20170606-132452.png](https://bitbucket.org/repo/oE6yEX/images/1783048239-WX20170606-132452.png)
+![WX20170606-132452.png](https://bitbucket.org/repo/oE6yEX/images/1783048239-WX20170606-132452.png)     
+
+<span id = "jump">跳转到这里：</span>
