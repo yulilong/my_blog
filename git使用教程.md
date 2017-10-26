@@ -4,7 +4,8 @@
 
 * [**Git合并多个Commit(本地的)_git修改未push的最后一次commit**](https://bitbucket.org/yulilong/my_wiki/wiki/Git合并多个Commit(本地的)_git修改未push的最后一次commit注释)         
 
-[说明文字](#jump)
+[测试连接](git使用教程#三、记录每次更新到仓库)
+
 -------------           
 
 [TOC]
