@@ -1,4 +1,4 @@
-[**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
+[**return home**](Home)     
 
 -------  
 目录结构    
@@ -8,44 +8,44 @@
 -----    
 ## 工作
 
-* [**angularJS开发遇见的问题**](https://bitbucket.org/yulilong/my_wiki/wiki/angularJS%E5%BC%80%E5%8F%91%E9%81%87%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98)       
+* [**angularJS开发遇见的问题**](angularJS%E5%BC%80%E5%8F%91%E9%81%87%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98)       
 
-* [**web前端生产环境打包部署**](https://bitbucket.org/yulilong/my_wiki/wiki/web前端生产环境部署)        
+* [**web前端生产环境打包部署**](web前端生产环境部署)        
 
-* [**Mac下angular开发环境安装**](https://bitbucket.org/yulilong/my_wiki/wiki/Mac下angular开发环境安装)      
+* [**Mac下angular开发环境安装**](Mac下angular开发环境安装)      
 
-* [**工作开发参考**](https://bitbucket.org/yulilong/my_wiki/wiki/工作开发参考)这个是工作中开发的参考文档         
+* [**工作开发参考**](工作开发参考)这个是工作中开发的参考文档         
 
-* [**angular2开发知识点**](https://bitbucket.org/yulilong/my_wiki/wiki/angular2开发知识点)       
+* [**angular2开发知识点**](angular2开发知识点)       
 API 网关地址 配置，服务注册使用，模块组件注册使用，
 
-* [**angular2网页前端执行流程**](https://bitbucket.org/yulilong/my_wiki/wiki/angular2网页前端执行流程)       
+* [**angular2网页前端执行流程**](angular2网页前端执行流程)       
 
-* [** html常用正则表达式**](https://bitbucket.org/yulilong/my_wiki/wiki/html常用正则表达式)      
+* [** html常用正则表达式**](html常用正则表达式)      
 
-* [**angular2中引入jQuery插件**](https://bitbucket.org/yulilong/my_wiki/wiki/angular2中引入jQuery插件)     
+* [**angular2中引入jQuery插件**](angular2中引入jQuery插件)     
 
-* [**TS_JS中一些知识点**](https://bitbucket.org/yulilong/my_wiki/wiki/TS_JS中一些知识点)        
+* [**TS_JS中一些知识点**](TS_JS中一些知识点)        
  
-* [** jas前端样式规范**](https://bitbucket.org/yulilong/my_wiki/wiki/jas前端样式规范)     
+* [** jas前端样式规范**](jas前端样式规范)     
 
-* [**前端编程规范**](https://bitbucket.org/yulilong/my_wiki/wiki/前端编程规范)      
+* [**前端编程规范**](前端编程规范)      
 
 * [**码云前端文档**](http://git.oschina.net/open-code-web/web-doc/wikis/Home)      
 
 ----------------
 ## angular2下arcgis开发    
 
-* [**arcgis开发记录**](https://bitbucket.org/yulilong/my_wiki/wiki/arcgis开发记录)       
+* [**arcgis开发记录**](arcgis开发记录)       
 
-* [**aangular下arcgis开发遇见的问题**](https://bitbucket.org/yulilong/my_wiki/wiki/angular下arcgis开发遇见的问题)       
+* [**aangular下arcgis开发遇见的问题**](angular下arcgis开发遇见的问题)       
 
 ------------------
 ## angular2相关资料
 
-* [**NPM使用介绍**](https://bitbucket.org/yulilong/my_wiki/wiki/NPM使用介绍)     
+* [**NPM使用介绍**](NPM使用介绍)     
 
-* [**package.json文件详解**](https://bitbucket.org/yulilong/my_wiki/wiki/package.json文件详解)     
+* [**package.json文件详解**](package.json文件详解)     
 
 * **angularJS官方文档**      
 https://angular.cn/           
@@ -89,9 +89,9 @@ http://v3.bootcss.com/css/
 ----
 ## JavaScript    
 
-* [**javascript一些问题**](https://bitbucket.org/yulilong/my_wiki/wiki/javascript%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98)      
+* [**javascript一些问题**](javascript%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98)      
 立即执行函数       
-* [**JavaScript语法**](https://bitbucket.org/yulilong/my_wiki/wiki/JavaScript%E8%AF%AD%E6%B3%95)     
+* [**JavaScript语法**](JavaScript%E8%AF%AD%E6%B3%95)     
 
 * [**怎么轻松学习JavaScript**](http://www.jianshu.com/p/cba0eeba2371)       
  

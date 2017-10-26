@@ -1,4 +1,4 @@
-###  [**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
+###  [**return home**](Home)     
 -----
 
 * **manageIQ官方安装文档**    

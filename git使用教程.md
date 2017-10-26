@@ -1,8 +1,8 @@
-[**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
+[**return home**](Home)     
 
 ---------------------------------------------------------------------------------------------------
 
-* [**Git合并多个Commit(本地的)_git修改未push的最后一次commit**](https://bitbucket.org/yulilong/my_wiki/wiki/Git合并多个Commit(本地的)_git修改未push的最后一次commit注释)         
+* [**Git合并多个Commit(本地的)_git修改未push的最后一次commit**](Git合并多个Commit(本地的)_git修改未push的最后一次commit注释)         
 
 [测试连接](git使用教程#markdown-header-iii-git-diff-stat-head-sha1)
 
@@ -421,7 +421,7 @@ $ git commit
 4. 费用AA。
 ```     
 
-关于VIM编辑器使用教程： [**vim编辑器常用命令与用法总结**](https://bitbucket.org/yulilong/my_wiki/wiki/vim编辑器常用命令与用法总结)    
+关于VIM编辑器使用教程： [**vim编辑器常用命令与用法总结**](vim编辑器常用命令与用法总结)    
 
 #### commit命令的其他的用法： -m选项，提交信息简写
 

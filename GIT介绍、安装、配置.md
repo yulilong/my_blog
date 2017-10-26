@@ -1,4 +1,4 @@
-[**return Home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)       
+[**return Home**](Home)       
 
 ----------------
 [TOC]     

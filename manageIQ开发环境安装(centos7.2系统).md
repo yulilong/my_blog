@@ -1,4 +1,4 @@
-###  [**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
+###  [**return home**](Home)     
 -----
 ## 以下所有操作都不能在root用户操作，要用你登陆电脑的用户来操作 ##
 
@@ -27,7 +27,7 @@ $ git --version
 ```
 如果出来版本号则说明已经安装了，如果没有安装请看如下教程安装：  
 
-* [git安装,配置](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%AE%89%E8%A3%85,%E9%85%8D%E7%BD%AE)  
+* [git安装,配置](git%E5%AE%89%E8%A3%85,%E9%85%8D%E7%BD%AE)  
 
 这里面描写了git的安装、git命令的别名、以及拉取代码时自动验证用户名密码设置。
 
@@ -183,7 +183,7 @@ bash-4.2$ psql -c "CREATE ROLE root SUPERUSER LOGIN PASSWORD 'smartvm'"
 ## rvm,ruby,gems,rails,pqadmin3,rubymine,isntall ##  
 这里是rails开发的必要插件，具体安装看如下**链接**：  
 
-* [***centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall***](https://bitbucket.org/yulilong/my_wiki/wiki/centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall)
+* [***centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall***](centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall)
 
 
 ## clone ManageIQ 代码 ##
