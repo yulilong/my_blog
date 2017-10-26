@@ -85,4 +85,22 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 ```
 ~ git push -u github master -f
+```      
+
+
+## 由于Mac电脑升级导致 git不能用   
+
+使用git的时候出现类似下面的信息：   
+
 ```
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+```
+
+
+解决方法,终端下输入下面命令：   
+
+```
+xcode-select --install
+```  
+
+需要安装一会就可以了。
