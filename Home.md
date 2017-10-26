@@ -3,7 +3,7 @@
 --------
 ## angularJS 
 
-* [**angularJS资料**](https://bitbucket.org/yulilong/my_wiki/wiki/angularJS%E8%B5%84%E6%96%99)     
+* [**angularJS资料**](angularJS%E8%B5%84%E6%96%99)     
 * [**HTML,CSS常用元素**](https://bitbucket.org/yulilong/my_wiki/wiki/HTML,CSS%E5%B8%B8%E7%94%A8%E5%85%83%E7%B4%A0)        
 
 ##**Mac OS **  
