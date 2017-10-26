@@ -3,7 +3,8 @@
 [TOC]
 
 --------------------------
-##  不同操作系统使用git时，换行操作不同问题     
+##  不同操作系统使用git时，CRLF的处理换行问题   
+     
 ![WX20170524-183615.png](https://bitbucket.org/repo/oE6yEX/images/2142324664-WX20170524-183615.png)     
 
 错误信息类似于：   
@@ -16,7 +17,7 @@ warning: LF will be replaced by CRLF in config/webpack.dev.js.
 
 ```
 
-*  什么是CRLF和LF    
+###  1. 什么是CRLF和LF    
 
 CRLF 是 carriage return line feed的缩写。中文意思是回车换行。      
 LF是line feed的缩写，中文意思是换行。      
@@ -27,7 +28,7 @@ CRLF表示句尾使用回车换行两个字符(即我们常在Windows编程时�
 LF表示表示句尾，只使用换行.        
 CR表示只使用回车.        
 
-* 在Git中如何转换？     
+### 2. 在Git中设置自动转换     
 
 在Git通过下面的命令配置:      
 ```
@@ -62,23 +63,26 @@ git config --global core.safecrlf warn
 
 ```  
 
-* 参考链接    
+-------------    
 
-http://itindex.net/detail/49247-crlf-lf?utm_source=tuicool&utm_medium=referral       
-http://www.cnblogs.com/flying_bat/archive/2013/09/16/3324769.html         
-crlf导致的git错误：      
-http://blog.chinaunix.net/uid-8052635-id-4427001.html
-```
-在使用git的过程中，如果我们的项目是跨平台开发的
-那么CRLF的处理也许会成为一个很头疼的事情，有可能会出以下的莫名其妙的问题：
-我们的某个开发人员在linux上提交的一个文件
-当从windows上pull下来后，没做任何的修改，查看其status，它的状态已经是modifed了
-即使你使用git checkout -f来恢复改文件，它的状态仍然是modified，真是郁闷…
-后来，才发现就是CRLF惹的祸  
-# 解决  
-在Linux上设置autocrlf为input，这样，Git在提交时把CRLF转换成LF，签出时不转换
-对于从Windows上直接拷到Linux上的文件，首先把它转换成linux格式后，再进行提交
+## 多个仓库相同代码推送被拒绝     
+
+当添加一个仓库后，推送文件上去不允许,错误信息类似于：    
 
 ```
+git push github master 
+To https://github.com/user/my_wiki.wiki.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/user/my_wiki.wiki.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```    
 
--------------
+如果远程仓库的代码没用了，不要了，则可以选择强推代码解决问题：    
+
+```
+~ git push -u github master -f
+```
