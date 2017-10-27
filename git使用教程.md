@@ -858,6 +858,26 @@ Automatic merge failed; fix conflicts and then commit the result.
 Auto-merging是指已经自动合并的文件， 
 CONFLICT (content)是指有冲突的文件，需要解决冲突的文件。 
 
+打开有冲突的文件，冲突部分代码类似于下面：    
+
+```
+<<<<<<< HEAD:ningning
+<div id="footer">contact : email.support@github.com</div>
+=======
+<div id="footer">
+ please contact us at support@github.com
+</div>
+>>>>>>> master  
+```   
+
+<<<<< ======= 中的是 ningning分支的代码。      
+======= >>>>>> 中的是 master分支的代码。       
+经过对比后删除冲突部分的代码， 并把 <<< ====  >>>> 所在行全部删除。     
+保存后，使用`git add`添加修改的文件。 
+使用`git commit`命令来完成合并提交：
+`![WX20170421-144406.png](https://bitbucket.org/repo/oE6yEX/images/913542449-WX20170421-144406.png)`      
+`![WX20170421-173612.png](https://bitbucket.org/repo/oE6yEX/images/1127660136-WX20170421-173612.png)`      
+
 
 
 
