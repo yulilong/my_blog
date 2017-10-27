@@ -150,8 +150,66 @@ $ git clone https://github.com/libgit2/libgit2 mylibgit
 
 关于克隆远程仓库命令详细介绍：https://git-scm.com/book/zh/v2/Git-基础-获取-Git-仓库      
 
-### 2. 直接拉取特定分之的代码：        
+### 2. 直接拉取特定分之的代码：`git clone -b [分支名]  [代码地址]`        
 
+如果不想克隆默认分之的代码， 也可以克隆特定分之的代码：   
+
+```
+$ git  clone http://192.168.102.9/jas-paas/cloudlink-front-framework.git
+Cloning into 'cloudlink-front-framework'...
+remote: Counting objects: 14436, done.
+remote: Compressing objects: 100% (3072/3072), done.
+remote: Total 14436 (delta 11224), reused 14226 (delta 11075)
+Receiving objects: 100% (14436/14436), 17.93 MiB | 4.98 MiB/s, done.
+Resolving deltas: 100% (11224/11224), done.
+```   
+
+### 3. 直接拉取特定标签(tag)的代码：`git clone -b [标签名]  [代码地址]`      
+
+git允许直接克隆特定分之的代码，不过克隆好后，项目里没有分之，需要自己创建一个分支：   
+
+```
+$ git clone -b V2.2 http://192.168.102.9/jas-paas/cloudlink-front-framework.git
+Cloning into 'cloudlink-front-framework'...
+remote: Counting objects: 14436, done.
+remote: Compressing objects: 100% (3072/3072), done.
+remote: Total 14436 (delta 11224), reused 14226 (delta 11075)
+Receiving objects: 100% (14436/14436), 17.93 MiB | 4.70 MiB/s, done.
+Resolving deltas: 100% (11224/11224), done.
+Note: checking out 'eeea534cdae1f82c48c7b0de8f9993b54ffa065d'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+```
+
+从信息中就可以看见，克隆特定标签的项目后，是没有分之的，需要进入项目目录后，使用命令创建一个分支：  
+
+```
+$ git checkout -b V2.2
+```   
+
+### 4. 如果已经拉取了代码，还需要拉取其他分支代码：`git checkout -b [分支名] [远程仓库名]/[分支名]`   
+
+![WX20170420-160920.png](https://bitbucket.org/repo/oE6yEX/images/986142660-WX20170420-160920.png)      
+![WX20170420-162329.png](https://bitbucket.org/repo/oE6yEX/images/112289165-WX20170420-162329.png)     
+
+例如，本地就一个master分支，远程有2个分支(master,develop)，把远程的develop拉取到本地：     
+
+```
+# 本地的分支是干净的，也就是没有修改的文件
+# 获取远程所有分支名字
+~ git fetch
+# 显示远程所有分支名字
+~ git branch -a
+# 提取远程新分支到本地
+~ git checkout -b develop origin/develop       
+```
 
 ----------------
 
