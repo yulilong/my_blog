@@ -809,9 +809,43 @@ To http://192.168.132.55/user/test.git
  - [deleted]         testing
 ```
 
+### 4. 分支合并：`git merge`
 
+如果一个分支的功能开发完毕了，需要把开发的内容合并的其他分支中去，则需要使用 git的 merge命令。       
+例如， 现在有2个分支(master, ningning), master分支的代码要合并到ningning,2个分支代码都已经git commit过了。    
+如果没有commit，需要先commit，否则不能合并代码。   
 
+#### ① 合并命令：`git merge [分支名]`     
 
+```
+// 切换到需要添加新功能的分支上
+$ git checkout ningning
+// 把 master分支上的代码合并到ningning分支上
+$ git merge master
+```
+
+#### ② 合并很完美，直接合并成功的提示     
+
+如果合并成功了则输出的信息类似于下面：   
+
+```
+$ git merge master 
+Updating f42c576..3a0874c
+Fast-forward
+ index.html | 2 ++
+ 1 file changed, 2 insertions(+)   
+
+// 或者下面的输出信息
+Merge made by the 'recursive' strategy.
+index.html |    1 +
+1 file changed, 1 insertion(+)
+```
+
+> Git 将合并的结果做了一个新的快照并且自动创建一个新的提交指向它。
+
+#### ③ 合并过程中代码有冲突     
+
+`![WX20170420-172823.png](https://bitbucket.org/repo/oE6yEX/images/3353411608-WX20170420-172823.png)`    
 
 
 
