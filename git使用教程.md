@@ -841,13 +841,22 @@ index.html |    1 +
 1 file changed, 1 insertion(+)
 ```
 
-> Git 将合并的结果做了一个新的快照并且自动创建一个新的提交指向它。
+Git 将合并的结果做了一个新的快照并且自动创建一个新的提交指向它。
 
-#### ③ 合并过程中代码有冲突     
+#### ③ 合并过程中代码有冲突，解决冲突     
 
 `![WX20170420-172823.png](https://bitbucket.org/repo/oE6yEX/images/3353411608-WX20170420-172823.png)`    
 
+错误信息类似于：   
 
+```
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+Auto-merging是指已经自动合并的文件， 
+CONFLICT (content)是指有冲突的文件，需要解决冲突的文件。 
 
 
 
