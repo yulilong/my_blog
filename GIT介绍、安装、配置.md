@@ -83,8 +83,10 @@ Git 使用一系列配置文件来保存你自定义的行为。
 以上三个层次中每层的配置（系统、全局、本地）都会覆盖掉上一层次的配置，所以 .git/config 中的值会覆盖掉 /etc/gitconfig 中所对应的值。     
 
 * windows    
-     
-C:\Documents and Settings\用户名，其中有一个.gitconfig的文件      
+    
+windows7系统：   C:\Documents and Settings\用户名，其中有一个.gitconfig的文件。      
+windows8系统： C盘 -> 用户(Users) -> 用户名 文件夹下，有个.gitconfig的文件。         
+
 在上述那个目录底下， 可发现另外一个文件.git-credentials，里面记录的就是用户名密码了。
 
 ---
