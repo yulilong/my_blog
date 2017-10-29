@@ -1,6 +1,3 @@
-[TOC]
-
---------
 ## angularJS 
 
 * [**angularJS资料**](angularJS%E8%B5%84%E6%96%99)     
