@@ -116,4 +116,23 @@ Already downloaded: /Library/Caches/Homebrew/tree-1.6.0.tgz
 
 ### 2. 删除无用的图标    
 
-搜狗输入法中有一个语音输入，导致在右上角有个 话筒的图标， 可在 搜狗输入法设置里把语音输入取消即可。
+搜狗输入法中有一个语音输入，导致在右上角有个 话筒的图标， 可在 搜狗输入法设置里把语音输入取消即可。     
+
+
+## Mac 下完全删除garageband音乐创作软件   
+
+garageband是Mac下的制作音乐的软件，如果不用可以删除，需要的时候在下载。
+删除软件后在磁盘管理还能看见这个软件的一些占用的空间，经过在网上查找资料，可用如下方法彻底删除。      
+
+终端下运行如下命令：     
+
+```
+rm -rf /Library/Application\ Support/GarageBand
+rm -rf /Library/Application\ Support/Logic
+rm -rf /Library/Audio/Apple\ Loops
+```   
+
+Macintosh HD/Applications/GarageBand.app (1.16GB)       
+Macintosh HD/Library/Application Support/GarageBand (995MB)       
+Macintosh HD/Library/Application Support/Logic (880MB)        
+Macintosh HD/Library/Audio/Apple Loops (up to 10GB)*xx
