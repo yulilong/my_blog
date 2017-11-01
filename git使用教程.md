@@ -122,8 +122,7 @@ origin
 
 [***关于远程仓库详细介绍***](https://git-scm.com/book/zh/v2/Git-基础-远程仓库的使用)    
 
-# 高级用法
- 
+
 ## 二、从远程仓库(服务器)获取代码：本地什么也没有，拉取代码       
 
 ### 1. 获取默认分之代码：`git clone [URL]`     
@@ -911,6 +910,231 @@ HEAD is now at 9e791f3 提交信息
 ```
 $ git reset --hard HEAD^ 
 ```
+
+------------------
+
+------------------
+
+------------------
+
+# GIT的高级用法（平时用的很少，了解就好）     
+
+------------------
+
+------------------
+
+------------------
+
+## GIT工具： 储藏与清理    
+
+###  1. `git stash` : 修改的代码暂存起来，是工作目录变干净，方便切换分支等做一些其他事情     
+
+当你的工作已经做了一段时间后，所开发的功能还没有完成， 而这时候你想要切换分支做一点别的事情。    
+但你又不想应为过一会就回到这一点而为做了一半工作就创建一次提交，这个时候你就可以使用`git stash`命令。   
+`git stash`命令会处理工作目录的脏的状态，即修改的跟踪文件与暂存的改动。然后将未完成的修改保存到一个栈上，    
+而你可以在任何时候重新应用这些改动。     
+
+#### ① 把代码储藏起来： `git stash`    
+
+```
+$ git status
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   lib/simplegit.rb
+
+//储藏代码
+$ git stash
+Saved working directory and index state \
+  "WIP on master: 049d078 added the index file"
+HEAD is now at 049d078 added the index file
+(To restore them type "git stash apply")
+
+$ git status
+# On branch master
+nothing to commit, working directory clean
+```
+
+上面使用了`git stash` 储藏了代码，这时候在看工作目录就变成干净了，这个时候你就可以做别的事情了。
+还可以使用`git stash save`命令，与 `git stash` 是一样的。
+
+#### ② 查看储藏的代码： `git stash list`     
+ 
+要查看储藏的东西，可以使用`git stash list`命令：     
+
+```
+$ git stash list
+stash@{0}: WIP on master: 049d078 added the index file
+stash@{1}: WIP on master: c264051 Revert "added file_size"
+stash@{2}: WIP on master: 21d80a5 added number to log
+```
+
+最新的是stash@{0}  
+
+#### ③ 把储藏的代码取出来： `git stash apply`       
+
+如果想把储藏的代码应用回来，可使用`git stash apply`命令，如果不指定一个储藏，Git 认为指定的是最近的储藏。     
+如果想要应用其中一个更旧的储藏，可以通过名字指定它，像这样：`git stash apply stash@{2}`。   
+
+```
+$ git stash apply --index
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#
+#      modified:   index.html
+#      modified:   lib/simplegit.rb
+#
+```
+#####  `git stash apply --index`    
+
+文件的改动被重新应用了,但是之前已修改未暂存的文件却没有回到原来的位置，想要完全回到之前的样子，    
+必须使用`--index`选项来运行`git stash apply`命令，来尝试重新应用暂存的修改。       
+如果已经那样做了，那么你将回到原来的位置：    
+
+```
+$ git stash apply --index
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#      modified:   index.html
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#
+#      modified:   lib/simplegit.rb
+#
+```
+
+#### ④ 删除储藏堆栈上的某个储藏：`git stash drop stash@{0}`     
+
+使用`git stash apply` 命令只会尝试应用暂存的工作 ，在堆栈上还有它。     
+可以运行`git stash drop`加上将要移除的储藏的名字来移除它：   
+
+```
+$ git stash list
+stash@{0}: WIP on master: 049d078 added the index file
+stash@{1}: WIP on master: c264051 Revert "added file_size"
+stash@{2}: WIP on master: 21d80a5 added number to log
+$ git stash drop stash@{0}
+Dropped stash@{0} (364e91f3f268f0900bc3ee613f9f733e82aaed43)
+```
+
+#### ⑤ 应用储藏然后立即从栈上扔掉它：`git stash pop`    
+
+这个命令只会应用最新的，然后丢掉它。   
+
+####  `git stash --keep-index`: 不要储藏任何你通过 git add 命令已暂存的东西    
+
+当你做了几个改动并只想提交其中的一部分，过一会儿再回来处理剩余改动时，这个功能会很有用。
+
+```
+$ git status -s
+M  index.html
+ M lib/simplegit.rb
+
+$ git stash --keep-index
+Saved working directory and index state WIP on master: 1b65b17 added the index file
+HEAD is now at 1b65b17 added the index file
+
+$ git status -s
+M  index.html
+```
+
+#### `git stash -u`: 把任何创建的未跟踪文件也储藏   
+
+默认情况下，`git stash`只会储藏已经在索引中的文件。      
+如果指定 `--include-untracked`或`-u`标记，Git 也会储藏任何创建的未跟踪文件。   
+
+```
+$ git status -s
+M  index.html
+ M lib/simplegit.rb
+?? new-file.txt
+
+$ git stash -u
+Saved working directory and index state WIP on master: 1b65b17 added the index file
+HEAD is now at 1b65b17 added the index file
+
+$ git status -s
+$
+```
+
+#### 从储藏创建一个分支:解决应用储藏冲突问题   
+
+如果储藏了一些工作，将它留在那儿了一会儿，然后继续在储藏的分支上工作，在重新应用工作时可能会有问题。     
+如果应用尝试修改刚刚修改的文件，你会得到一个合并冲突并不得不解决它。      
+如果想要一个轻松的方式来再次测试储藏的改动，可以运行`git stash branch`创建一个新分支，    
+检出储藏工作时所在的提交，重新在那应用工作，然后在应用成功后扔掉储藏：    
+
+```
+$ git stash branch testchanges
+Switched to a new branch "testchanges"
+# On branch testchanges
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#      modified:   index.html
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#
+#      modified:   lib/simplegit.rb
+#
+Dropped refs/stash@{0} (f0dfc4d5dc332d1cee34a634182e168c4efc3359)
+```  
+
+### 清理工作目录
+
+有时候你想清除工作目录一些无用的文件，或是为了运行一个干净的构建而移除之前构建的残留。      
+这个时候你可以使用`git clean`命令。 它被设计为从工作目录中移除未被追踪的文件。        
+如果你改变主意了，你也不一定能找回来那些文件的内容。     
+一个更安全的选项是运行 git stash --all 来移除每一样东西并存放在栈中。
+
+#### `git clean -f -d`:移除工作目录中所有未追踪的文件以及空的子目录      
+
+`-d` 是 目录的意思。   
+`-f` 意味着 强制 或 “确定移除”。     
+
+```
+$ git clean -f -d
+Removing 5.txt
+Removing tttt/
+```
+
+#### `git clean -f -d -n`: 做一次演习然后告诉你 将要 移除什么    
+
+
+#### `git clean -f -d -x`: 移除.gitiignore文件中忽略的文件   
+
+默认情况下，git clean 命令只会移除没有忽略的未跟踪文件。     
+任何与 .gitiignore 或其他忽略文件中的模式匹配的文件都不会被移除。     
+如果你也想要移除那些文件，例如为了做一次完全干净的构建而移除所有由构建生成的 .o 文件，    
+可以给 clean 命令增加一个 -x 选项。   
+
+```
+$ git status -s
+ M lib/simplegit.rb
+?? build.TMP
+?? tmp/
+
+$ git clean -n -d
+Would remove build.TMP
+Would remove tmp/
+
+$ git clean -n -d -x
+Would remove build.TMP
+Would remove test.o
+Would remove tmp/
+```  
+
 
 ------------------
 
