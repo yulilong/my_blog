@@ -1302,6 +1302,38 @@ $ git rebase --abort
  29 #   new file:   5.txt
 ```
 
+编辑好合并的提交信息后保存，可看见如下输出信息：     
+
+```
+[detached HEAD 83d65c7] 三次合并提交的测试，成功了。
+ Date: Thu Nov 2 11:25:59 2017 +0800
+ 3 files changed, 7 insertions(+)
+ create mode 100644 4.txt
+ create mode 100644 5.txt
+Successfully rebased and updated refs/heads/dev.
+```   
+
+最后把合并的记录强推到服务器中去：   
+
+```
+git push -f
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 596 bytes | 596.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+To http://192.168.102.9/yulilong/test.git
+ + 3fa2e1a...83d65c7 dev -> dev (forced update)
+```
+
+服务器合并提交前：   
+
+![WX20171102-160409.png](https://bitbucket.org/repo/oE6yEX/images/166159277-WX20171102-160409.png)     
+
+服务器合并后：    
+
+![WX20171102-162752.png](https://bitbucket.org/repo/oE6yEX/images/2400122312-WX20171102-162752.png)      
+
 
 
 ------------------
