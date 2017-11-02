@@ -1186,6 +1186,123 @@ To http://192.168.102.9/yulilong/test.git
 #### ④ gitlab服务器强推被拒绝： 仓库 -> 设置 -> 保护分支： 把被保护的分支去掉即可解决问题   
 
 
+### 2. 使用git rebase合并多次commit       
+
+使用`git log` 查看一下历史：   
+
+```
+$ git log 
+
+commit 3fa2e1a951ff823fbec625a96049e27ef35a85b8 (HEAD -> dev, origin/dev)
+Author: yulilong <yulilong222q@outlook.com>
+Date:   Thu Nov 2 11:29:00 2017 +0800
+
+    合并提交测试3号,测试修改最后一次提交。在测试一下。
+
+commit f526876def0b80676bfcf52937f78052e2d63955
+Author: yulilong <yulilong222q@outlook.com>
+Date:   Thu Nov 2 11:27:20 2017 +0800
+
+    合并提交测试2号
+
+commit 4d2b6ce4d5154c0b739e552e679bb7f4ce05fb2c
+Author: yulilong <yulilong222q@outlook.com>
+Date:   Thu Nov 2 11:25:59 2017 +0800
+
+    合并提交测试一号
+
+commit 9e791f38f4d5f472a371a8c147f37670185582f8
+Author: yulilong <yulilong222q@outlook.com>
+Date:   Mon Oct 30 10:22:02 2017 +0800
+
+    这是dev分支上的合并提交测试
+
+commit 4baf2a319c0de8f46630ba85db11cc4aebd1d2cd
+Author: yulilong <yulilong222q@outlook.com>
+Date:   Fri Sep 29 10:20:08 2017 +0800
+
+    这是测试-a -m命令提交记录
+```
+
+如果想要合并最后三次的提交，可使用`git rebase -i HEAD~3`或`git rebase -i 9e791f38f4d`命令来压缩.    
+该命令执行后，会弹出一个编辑窗口，3次提交的commit倒序排列，最上面的是最早的提交，最下面的是最近一次提交。      
+
+```
+  1 pick 4d2b6ce 合并提交测试一号
+  2 pick f526876 合并提交测试2号
+  3 pick 3fa2e1a 合并提交测试3号,测试修改最后一次提交。在测试一下。
+  4 
+  5 # Rebase 9e791f3..3fa2e1a onto 9e791f3 (3 commands)
+  6 #
+  7 # Commands:
+  8 # p, pick = use commit
+  9 # r, reword = use commit, but edit the commit message
+ 10 # e, edit = use commit, but stop for amending
+ 11 # s, squash = use commit, but meld into previous commit
+ 12 # f, fixup = like "squash", but discard this commit's log message
+ 13 # x, exec = run command (the rest of the line) using shell
+ 14 # d, drop = remove commit
+ 15 #
+ 16 # These lines can be re-ordered; they are executed from top to bottom.
+ 17 #
+ 18 # If you remove a line here THAT COMMIT WILL BE LOST.
+ 19 #
+ 20 # However, if you remove everything, the rebase will be aborted.
+ 21 #
+ 22 # Note that empty commits are commented out
+```
+ 
+修改第二行、第三行的第一个单词pick为squash(这些命令什么意思下面的注释有说明)。     
+然后保存退出，git会压缩提交历史，    
+如果有冲突，需要修改，修改的时候要注意，保留最新的历史，不然我们的修改就丢弃了。    
+修改以后要记得敲下面的命令：    
+
+```
+$ git add .  
+# git rebase --continue  
+```
+
+如果你想放弃这次压缩的话，执行以下命令：    
+
+```
+$ git rebase --abort 
+```  
+
+如果没有冲突，或者冲突已经解决，则会出现如下的编辑窗口：      
+
+```
+  1 # This is a combination of 3 commits.
+  2 # This is the 1st commit message:
+  3 
+  4 合并提交测试一号
+  5 
+  6 # This is the commit message #2:
+  7 
+  8 合并提交测试2号
+  9 
+ 10 # This is the commit message #3:
+ 11 
+ 12 合并提交测试3号,测试修改最后一次提交。在测试一下。
+ 13      
+ 14 # Please enter the commit message for your changes. Lines starting
+ 15 # with '#' will be ignored, and an empty message aborts the commit.
+ 16 #   
+ 17 # Date:      Thu Nov 2 11:25:59 2017 +0800
+ 18 #        
+ 19 # interactive rebase in progress; onto 9e791f3
+ 20 # Last commands done (3 commands done):
+ 21 #    squash f526876 合并提交测试2号
+ 22 #    squash 3fa2e1a 合并提交测试3号,测试修改最后一次提交。在测试一下。
+ 23 # No commands remaining.
+ 24 # You are currently rebasing branch 'dev' on '9e791f3'.
+ 25 #
+ 26 # Changes to be committed:
+ 27 #   modified:   1.txt
+ 28 #   new file:   4.txt
+ 29 #   new file:   5.txt
+```
+
+
 
 ------------------
 
