@@ -1334,6 +1334,15 @@ To http://192.168.102.9/yulilong/test.git
 
 ![WX20171102-162752.png](https://bitbucket.org/repo/oE6yEX/images/2400122312-WX20171102-162752.png)      
 
+参考链接：http://blog.csdn.net/yangcs2009/article/details/47166361    
+
+
+### 3. 把一个文件从提交历史中彻底删除：`git filter-branch --tree-filter 'rm -f passwords.txt' HEAD`       
+
+有些人不经思考使用git add .，意外地提交了一个巨大的二进制文件，你想将它从所有地方删除。      
+也许你不小心提交了一个包含密码的文件，而你想让你的项目开源。filter-branch大概会是你用来清理整个历史的工具。   
+
+
 
 
 ------------------
