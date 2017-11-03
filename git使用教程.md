@@ -1337,7 +1337,7 @@ To http://192.168.102.9/yulilong/test.git
 参考链接：http://blog.csdn.net/yangcs2009/article/details/47166361    
 
 
-### 3. 把一个文件从提交历史中彻底删除：`git filter-branch --tree-filter 'rm -f passwords.txt' HEAD`       
+### 3. 把一个文件从提交历史中彻底删除：`git filter-branch --tree-filter 'rm -f 1.txt' HEAD`       
 
 有些人不经思考使用git add .，意外地提交了一个巨大的二进制文件，你想将它从所有地方删除。      
 也许你不小心提交了一个包含密码的文件，而你想让你的项目开源。filter-branch大概会是你用来清理整个历史的工具。   
@@ -1369,7 +1369,59 @@ $ git reset --hard refs/original/refs/heads/dev
 HEAD is now at 83d65c7 三次合并提交的测试，成功了。
 ```
 
+#### 把删除后的项目提交到服务器：`git push origin +[分支名]`, 注意：一旦运行此命令，删除的文件不能找回   
 
+```
+$ git push origin +dev         
+
+Counting objects: 14, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (14/14), 1.40 KiB | 1.40 MiB/s, done.
+Total 14 (delta 1), reused 0 (delta 0)
+To http://192.168.102.110/user/test.git
+ + 83d65c7...4b4da80 dev -> dev (forced update)
+```   
+
+注意，分支名字前面的`+`号一定不能忘记，否则会报如下错误：     
+
+```
+To http://192.168.102.110/user/test.git
+ ! [rejected]        dev -> dev (non-fast-forward)
+error: failed to push some refs to 'http://192.168.102.110/user/test.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+
+推送之前要把服务器的分支保护去掉，否则会报如下错误：     
+
+```
+remote: GitLab: You are not allowed to force push code to a protected branch on this project.
+To http://192.168.102.110/user/test.git
+ ! [remote rejected] dev -> dev (pre-receive hook declined)
+error: failed to push some refs to 'http://192.168.102.110/user/test.git'
+```    
+
+#### 删除一堆类似文件：`git filter-branch --tree-filter "find * -type f -name '*~' -delete" HEAD`    
+
+
+### 全局性地更换电子邮件地址   
+
+```
+$ git filter-branch --commit-filter '
+        if [ "$GIT_AUTHOR_EMAIL" = "schacon@localhost" ];
+        then
+                GIT_AUTHOR_NAME="Scott Chacon";
+                GIT_AUTHOR_EMAIL="schacon@example.com";
+                git commit-tree "$@";
+        else
+                git commit-tree "$@";
+        fi' HEAD
+``` 
+
+参考链接： https://git-scm.com/book/zh/v2/Git-工具-重写历史
 
 ------------------
 
