@@ -1347,9 +1347,22 @@ To http://192.168.102.9/yulilong/test.git
 $ git filter-branch -f --tree-filter 'rm -f 1.txt' HEAD 
 Rewrite 83d65c7b098e0ec1f14d9a332187632b49d2ad9f (5/5) (0 seconds passed, remaining 0 predicted)    
 Ref 'refs/heads/dev' was rewritten
-```  
+```     
 
-如果后悔删除了，可使用如下命令恢复：   
+如果执行命令的时候提示如下错误，删除 .git/refs/original/ 目录,或使用`-f`命令强制覆盖：  
+
+```
+$ git filter-branch -f --tree-filter 'rm -f 1.txt' HEAD 
+Cannot create a new backup.
+A previous backup already exists in refs/original/
+Force overwriting the backup with -f   
+
+git filter-branch -f --tree-filter 'rm -f 1.txt' HEAD 
+Rewrite 83d65c7b098e0ec1f14d9a332187632b49d2ad9f (5/5) (0 seconds passed, remaining 0 predicted)    
+Ref 'refs/heads/dev' was rewritten
+```
+
+#### 如果后悔删除了，可使用如下命令恢复：`git reset --hard refs/original/refs/heads/[分支名]`   
 
 ```
 $ git reset --hard refs/original/refs/heads/dev
