@@ -1341,7 +1341,20 @@ To http://192.168.102.9/yulilong/test.git
 
 有些人不经思考使用git add .，意外地提交了一个巨大的二进制文件，你想将它从所有地方删除。      
 也许你不小心提交了一个包含密码的文件，而你想让你的项目开源。filter-branch大概会是你用来清理整个历史的工具。   
+如果想要从整个历史总删除1.txt文件，你可以在`filter-branch`上使用`--tree-filte`r选项：   
 
+```
+$ git filter-branch -f --tree-filter 'rm -f 1.txt' HEAD 
+Rewrite 83d65c7b098e0ec1f14d9a332187632b49d2ad9f (5/5) (0 seconds passed, remaining 0 predicted)    
+Ref 'refs/heads/dev' was rewritten
+```  
+
+如果后悔删除了，可使用如下命令恢复：   
+
+```
+$ git reset --hard refs/original/refs/heads/dev
+HEAD is now at 83d65c7 三次合并提交的测试，成功了。
+```
 
 
 
