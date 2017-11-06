@@ -203,4 +203,12 @@ public value: any;
 </div>
 ```
 
-`？.`是angular提供的安全导航操作符，用来保护出现在属性路径中的null和undefined值
+`？.`是angular提供的安全导航操作符，用来保护出现在属性路径中的null和undefined值    
+
+
+## 浏览器不识别大写地址，如`big-Data`，  
+
+如在浏览器中输入`http://localhost:3000/#/big-Data`， Google浏览器会先把`big-data`,然后去匹配路径，    
+导致angular路由 无法匹配转到了默认路径上，
+
+所以最好不要有大写字母存在。
