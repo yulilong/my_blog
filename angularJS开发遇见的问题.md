@@ -1,7 +1,9 @@
-### **1、开发环境下 `npm install` 编译进行一半就停止**    
+[TOC]
 
-![WX20170407-092321.png](https://bitbucket.org/repo/oE6yEX/images/3794077934-WX20170407-092321.png)    
+--------------
+## **1、开发环境下 `npm install` 编译进行一半就停止**    
 
+![npm install 安装不完全](https://git.oschina.net/uploads/images/2017/0727/163429_47250b5d_1435979.png "WX20170407-092321.png")
 
 * 问题分析：   
 `npm install` 包没有安装完全，      
@@ -28,13 +30,13 @@
 
 -----------
 
-### 2、__WEBPACK_EXTERNAL_MODULE_XX__ is not defined
+##  **2、 __WEBPACK_EXTERNAL_MODULE_XX__ is not defined** 
 
 解决方法：      
+https://stackoverflow.com/questions/39103483/uncaught-referenceerror-webpack-external-module-xx-is-not-defined/39105605#39105605          
+The solution was to set libraryTarget: 'amd' in the webpack.config.js file like so:        
 ```
-# https://stackoverflow.com/questions/39103483/uncaught-referenceerror-webpack-external-module-xx-is-not-defined/39105605#39105605
 
-# The solution was to set libraryTarget: 'amd' in the webpack.config.js file like so:
 output: {
     filename: 'dist/[name].bundle.js',
     libraryTarget: 'amd'
@@ -42,21 +44,22 @@ output: {
 ```     
 
 ---------
-###  3、Angular2管理外部类型定义和处理“Duplicate identifier” TypeScript错误      
+##  **3、Angular2管理外部类型定义和处理“Duplicate identifier” TypeScript错误**      
 
 https://segmentfault.com/a/1190000007560996    
 
 -----------
-### *4、*Module build failed: TypeError: Cannot read property 'exclude' of undefined**     
+## **4、Module build failed: TypeError: Cannot read property 'exclude' of undefined**     
 
-![WX20170619-142138.png](https://bitbucket.org/repo/oE6yEX/images/4073388751-WX20170619-142138.png)      
+  
+![错误图片](https://git.oschina.net/uploads/images/2017/0727/164019_97c78bd8_1435979.png "WX20170619-142138.png")
 
 这个错误是由于`awesome-typescript-loader` package导致的，解决方法：    
-编辑文件`~/node_modules/awesome-typescript-loader/dist/instance.js`: 
+编辑文件`~/node_modules/awesome-typescript-loader/dist/instance.js`:    
+https://github.com/s-panferov/awesome-typescript-loader/issues/293        
+大约是142行，替换applyDefaults 函数体内容：      
+
 ```
-# https://github.com/s-panferov/awesome-typescript-loader/issues/293
-# 大约是142行
-# 替换applyDefaults 函数体内容：
 function applyDefaults(configFilePath, compilerConfig, loaderConfig) {
 _.defaults(compilerConfig.options, {
         sourceMap: true,
@@ -84,30 +87,120 @@ _.defaults(compilerConfig.options, {
     delete compilerConfig.options.out;
     delete compilerConfig.options.noEmit;
 }
-# 从新运行命令 npm start即可解决问题
-```   
+```     
+保存后，从新运行命令 npm start即可解决问题。      
 
 --------------
 
-## **5、Node Sass does not yet support your current environment: OS X 64-bit with Unsupported runtime**   
+##  **5、Node Sass does not yet support your current environment: OS X 64-bit with Unsupported runtime**     
 
-![WX20170721-174654.png](https://bitbucket.org/repo/oE6yEX/images/3606234759-WX20170721-174654.png)   
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0727/164751_57184ea9_1435979.png "WX20170721-174654.png")        
+
+根据链接：https://github.com/sass/node-sass/releases/tag/v3.13.1          
+可知道是node版本太高了，卸载node后，下载低版本的node即可解决问题。      
+
+------------
+##  **6、Node Sass could not find a binding for your current environment: OS X 64-bit with Node.js 6.x**    
+
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0727/170926_0fdc6f9f_1435979.png "WX20170721-174928.png")      
+
+根据错误提示,终端运行`npm rebuild node-sass`即可解决这个问题。      
+
+------------
+## **7、DI错误**      
+
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0728/094058_21ba4ca1_1435979.png "WX20170721-181444@2x.png")    
+
+这个错误由于使用了服务， 但是这个服务没有引入到模块中，找到服务，并把服务引入到模块中就好。    
+
+------------- 
+##  **8. error：cannot find defined file ‘jquery’**   
+
+运行`npm start`时报错，错误信息：        
+```
+@types\fullcalendar\index.d.ts
+cannot find type definition file for 'jquery',
+Module ''*'' has no exported member 'Duration'
+Module ''*'' has no exported member 'Moment'
 
 ```
-# 根据链接：https://github.com/sass/node-sass/releases/tag/v3.13.1
-可知道是node版本太高了，卸载node后，下载低版本的node即可解决问题
-```    
 
-## **6、Node Sass could not find a binding for your current environment: OS X 64-bit with Node.js 6.x**
+解决方案：  在tsconfig.json 文件中 添加下面语句：          
 
-![WX20170721-174928.png](https://bitbucket.org/repo/oE6yEX/images/294361940-WX20170721-174928.png)   
+```
+"typeRoots": [
+            "node_modules/@types"
+        ],
+```
 
-根据提示即可解决问题。    
+------------
+##  **9. Error: No NgModule metadata found for '[object Object]'**      
 
-----------
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0724/095045_4cce0018_1449381.png "default.png")
 
-## **7、DI错误**    
 
-![WX20170721-181444@2x.png](https://bitbucket.org/repo/oE6yEX/images/2766100480-WX20170721-181444@2x.png)   
+* 错误原因    
 
-这个错误由于使用了服务， 但是这个服务没有引入到模块中，找到服务，并把服务引入到模块中就好。
+在添加新模块的时候，模块类名 前面没有加`default`关键字，如：   
+
+```
+export class UserDetailModule { }
+```
+
+* 解决方法    
+
+在模块类名前面加上关键字`default`：    
+    
+```
+export default class UserDetailModule { }
+```
+
+-----------------
+##  **10. TypeError: Cannot read property 'split' of undefined** 
+
+![代码错误](https://git.oschina.net/uploads/images/2017/0724/095021_871aeab8_1449381.png "代码错误.png")
+
+* 错误原因：  
+
+使用split方法的元素是个undefined;
+
+* 解决方法    
+
+在使用split方法前，先判断元素是否为空。
+
+-----------------
+
+## 11. 模板语法绑定错误
+
+![模板语法报错信息](https://git.oschina.net/uploads/images/2017/0724/094526_4838110d_1449381.png "模板语法error.png")
+
+错误代码Html文件         
+```
+<div>
+  <span>{{value.text}}</span>
+</div>
+```
+
+ts文件     
+
+```
+public value: any;
+```
+
+正确写法：
+
+```
+<div>
+  <span>{{value?.text}}</span>
+</div>
+```
+
+或者
+
+```
+<div *ngIf="value">
+  <span>{{value.text}}</span>
+</div>
+```
+
+`？.`是angular提供的安全导航操作符，用来保护出现在属性路径中的null和undefined值
