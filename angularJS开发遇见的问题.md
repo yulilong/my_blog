@@ -206,9 +206,15 @@ public value: any;
 `？.`是angular提供的安全导航操作符，用来保护出现在属性路径中的null和undefined值    
 
 
-## 浏览器不识别大写地址，如`big-Data`，  
+## 12. 浏览器不识别大写地址，如`big-Data`，  
 
 如在浏览器中输入`http://localhost:3000/#/big-Data`， Google浏览器会先把`big-data`,然后去匹配路径，    
 导致angular路由 无法匹配转到了默认路径上，
 
-所以最好不要有大写字母存在。
+所以最好不要有大写字母存在。    
+
+## 13. Refused to display 'URL' in a frame because it set 'X-Frame-Options' to 'sameorigin'    
+
+触发原因：页面的返回头被设置 X-Frame-Options SAMEORIGIN ，只能被同源的iframe 引用。跨域名的iframe 没法显示了。      
+
+这个在angular中， 本地开发中webpack中配置代理， 服务器中 Nginx中配置代理即可解决问题。
