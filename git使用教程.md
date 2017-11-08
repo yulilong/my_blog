@@ -1536,7 +1536,7 @@ Working Directory（工作目录），最后，你就有了自己的工作目录
 
 ## git重置`git reset`，代码回退操作介绍   
 
-### 只移动HEAD(相当于取消上一次提交)：`git reset --soft HEAD~`或 `git reset --soft 99ad0ec`   
+### 1. 只移动HEAD(相当于取消上一次提交)：`git reset --soft HEAD~`或 `git reset --soft 99ad0ec`   
 
 `reset`做的第一件事是移动`HEAD`的指向。`reset`移动`HEAD`指向的分支。     
 `reset --soft`本质上是撤销了上一次`git commit`命令。 当你在运行`git commit`时，`Git`会创建一个新的提交，      
@@ -1544,10 +1544,26 @@ Working Directory（工作目录），最后，你就有了自己的工作目录
 其实就是把该分支移动回原来的位置，而不会改变索引和工作目录。       
 现在你可以更新索引并再次运行`git commit`来完成`git commit --amend`所要做的事情了。      
 
-### 移动HEAD，更新index： `git reset HEAD~` 或`git reset --mixed HEAD~`   
+### 2. 移动HEAD，更新index： `git reset HEAD~` 或`git reset --mixed HEAD~`   
 
 它依然会撤销一上次 提交，但还会 取消暂存 所有的东西。 于是，我们回滚到了所有`git add`和`git commit`的命令执行之前。   
 
+### 3. 移动HEAD，更新index,更新工作目录（working Directory）: `git reset --hard HEAD~`    
+
+必须注意，`--hard`标记是`reset`命令唯一的危险用法，它也是`Git`会真正地销毁数据的仅有的几个操作之一。       
+其他任何形式的`reset`调用都可以轻松撤消，但是`--hard`选项不能，因为它强制覆盖了工作目录中的文件。      
+在这种特殊情况下，我们的`Git`数据库中的一个提交内还留有该文件的`v3`版本，我们可以通过`reflog`来找回它。     
+但是若该文件还未提交，`Git`仍会覆盖它从而导致无法恢复。   
+
+`reset`命令会以特定的顺序重写这三棵树，在你指定以下选项时停止：    
+
+1. 移动 HEAD 分支的指向 （若指定了 --soft，则到此停止）
+
+2. 使索引看起来像 HEAD （若未指定 --hard，则到此停止）
+
+3. 使工作目录看起来像索引
+
+### 4. 使用`git reflog`命令来查看所有已经提交过的commit    
 
 
 
