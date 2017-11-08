@@ -103,4 +103,25 @@ xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools
 xcode-select --install
 ```  
 
-需要安装一会就可以了。
+需要安装一会就可以了。     
+
+## git使用vi编辑器时候报错：Swap file "./.git/.COMMIT_EDITMSG.swp" already exists!       
+
+非正常关闭vi编辑器时会生成一个.swp文件。     
+使用vi，经常可以看到swp这个文件,那这个文件是怎么产生的呢，当你打开一个文件，     
+vi就会生成这么一个.(filename)swp文件 以备不测（不测下面讨论），如果你正常退出，那么这个这个swp文件将会自动删除 。   
+swp文件的来历，当你强行关闭vi时，比如电源突然断掉或者你使用了Ctrl+ZZ，vi自动生成一个.swp文件，     
+下次你再编辑时，就会出现一些提示。    
+
+比如你正在使用`vi`编辑`file.txt`文件，然后强制关闭终端，这个时候就会产生`.file.txt.swp`文件。  
+当再次使用`vi`打开`file.txt`文件就会出现提示， 这个时候可使用下面的命令来恢复未保存的操作：   
+
+```
+vi -r file.txt 
+```   
+
+这个时候保存中断之前的操作后，`.swp`文件不会自动删除，需要自己手动删除： 
+
+```
+rm .file.txt.swp
+```
