@@ -1563,7 +1563,19 @@ Working Directory（工作目录），最后，你就有了自己的工作目录
 
 3. 使工作目录看起来像索引
 
-### 4. 使用`git reflog`命令来查看所有已经提交过的commit    
+### 4. 使用`git reflog`命令来查看所有已经提交过的commit       
+
+### 5. 通过路径来重置：`git reset file.txt`     
+
+假如我们运行`git reset file.txt`（这其实是`git reset --mixed HEAD file.txt`的简写形式，     
+因为你既没有指定一个提交的`SHA-1`或分支，也没有指定`--soft`或`--hard`），它会：    
+
+ 1. 移动`HEAD`分支的指向 （已跳过）       
+
+ 2. 让索引看起来像`HEAD`（到此处停止）
+
+所以它本质上只是将`file.txt`从`HEAD`复制到索引中。       
+
 
 
 
