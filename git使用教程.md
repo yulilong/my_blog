@@ -1575,6 +1575,42 @@ Working Directory（工作目录），最后，你就有了自己的工作目录
  2. 让索引看起来像`HEAD`（到此处停止）
 
 所以它本质上只是将`file.txt`从`HEAD`复制到索引中。       
+它还有***取消暂存文件***的实际效果。
+我们可以不让Git从HEAD拉取数据，而是通过具体指定一个提交来拉取该文件的对应版本。       
+我们只需运行类似于`git reset eb43bf file.txt`的命令即可。     
+
+## `git checkout` 介绍    
+
+### 切换分支：`git checkout [分支名]`   
+
+运行`git checkout [branch]`与运行`git reset --hard [branch]`非常相似，     
+它会更新所有三棵树使其看起来像 [branch]，不过有两点重要的区别。    
+
+首先不同于`reset --hard`，`checkout`对工作目录是安全的，它会通过检查来确保不会将已更改的文件弄丢。      
+其实它还更聪明一些。它会在工作目录中先试着简单合并一下，这样所有`还未修改过的`文件都会被更新。      
+而`reset --hard`则会不做检查就全面地替换所有东西。
+
+第二个重要的区别是如何更新`HEAD`。`reset`会移动`HEAD`分支的指向，而`checkout`只会移动`HEAD`自身来指向另一个分支。   
+
+例如，假设我们有`master`和`develop`分支，它们分别指向不同的提交；我们现在在`develop`上（所以`HEAD`指向它）。       
+如果我们运行`git reset master`，那么`develop`自身现在会和`master`指向同一个提交。       
+而如果我们运行`git checkout master`的话，`develop`不会移动，`HEAD`自身会移动。 现在`HEAD`将会指向`master`。
+
+所以，虽然在这两种情况下我们都移动`HEAD`使其指向了提交 A，但_做法_是非常不同的。      
+reset 会移动`HEAD`分支的指向，而`checkout`则移动`HEAD`自身。      
+
+### 放弃index与working Directory的改动：`git checkout [分支名] file.txt`   
+
+该命令不会移动HEAD，只会把HEAD中的代码恢复到index中，同时把工作目录文件也恢复到HEAD中代码的样子。  
+
+### 值放弃修改working Directory 工作目录中的修改：`git checkout file.txt`放弃单个修改或使用`git checkout .`放弃所有修改   
+
+这个命令只会放弃工作目录中的修改，已经提交到index中的修改则不会改动。    
+
+[***reset\checkout命令详细介绍***](https://git-scm.com/book/zh/v2/Git-工具-重置揭密)     
+
+
+
 
 
 
