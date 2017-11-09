@@ -42,8 +42,8 @@ http://www.sdifenzhou.com/rubymine201612.html
 
 ## **rubymine 2017安装**
 
-1. 官网现在最新安装包：  https://www.jetbrains.com/ruby/download/#section=mac     
-2. 下载完成安装包后，双击打开，将左侧拖拽至右侧应用程序，默认安装。      
+1. 在官网现下载最新安装包：  https://www.jetbrains.com/ruby/download/#section=mac     
+2. 下载完成安装包后，安装程序（双击打开，将左侧拖拽至右侧应用程序，默认安装）。      
 3. 打开软件，在注册中选择‘License server’， 在 ‘License server address’ 中输入：`http://xidea.online`,然后点击Activate即可顺利破解！
 
 --------------------
