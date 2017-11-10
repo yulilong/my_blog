@@ -141,7 +141,7 @@ Macintosh HD/Library/Audio/Apple Loops (up to 10GB)*xx
 
 .DS_Store是Mac OS保存文件夹的自定义属性的隐藏文件，如文件的图标位置或背景色，相当于Windows的desktop.ini。     
 
-### 禁止 .DS_Store 生成   
+### 1. 禁止 .DS_Store 生成   
 
 打开 “终端” ，复制黏贴下面的命令，回车执行，重启Mac即可生效。    
 
@@ -149,7 +149,7 @@ Macintosh HD/Library/Audio/Apple Loops (up to 10GB)*xx
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 ```    
 
-### 1. 恢复 .DS_Store 生成    
+### 2. 恢复 .DS_Store 生成    
 
 终端输入下面命令： 
 
@@ -157,7 +157,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 defaults delete com.apple.desktopservices DSDontWriteNetworkStores
 ```
 
-### 2. 删除所有的 .DS_Store 文件     
+### 3. 删除所有的 .DS_Store 文件     
 
 在terminal中输入以下代码，可以删除所有.DS_Store文件      
 
@@ -165,7 +165,7 @@ defaults delete com.apple.desktopservices DSDontWriteNetworkStores
 sudo find / -name ".DS_Store" -depth -exec rm {} \;
 ```
 
-### 3. 上面命令不管用，安装 App 解决 .DS_Store 污染问题     
+### 4. 上面命令不管用，安装 App 解决 .DS_Store 污染问题     
 
 安装 Asepsis (https://asepsis.binaryage.com/) 可以解决这个问题，不过该 App 目前不开发了。      
 ASEPSIS 会把所有的.DS_Store重定向到 /usr/local/.dscage 内。
