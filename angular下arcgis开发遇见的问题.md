@@ -25,4 +25,7 @@ __zone_symbol__message
 "Error handling service request : Could not find a service with the name 'MapServer/ChinaOnlineStreetColor' in the configured clusters. Service may be stopped or ArcGIS Server may not be running."
 ```    
 
-经查找，这个是地图服务发生错误，导致不能读取地图了，
+经查找，这个是地图服务发生错误，导致不能读取地图了，   
+
+
+## angular中，arcgis JA API 3.18版本中，画线没有提示信息了
