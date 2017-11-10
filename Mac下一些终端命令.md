@@ -41,15 +41,18 @@ http://blog.csdn.net/winkenjiang/article/details/7588658
 
 ## 终端使用代理     
 
-### 在终端中直接运行命令    
+### 终端临时使用代理，只对这个终端有效，关闭后失效：
 
 ```
-export http_proxy=http://proxyAddress:port
+export http_proxy=http://proxyAddress:port  
+
+export http_proxy="http://127.0.0.1:1080"
+export https_proxy="http://127.0.0.1:1080"
 ```  
 
 这个办法的好处是简单直接，并且影响面很小（只对当前终端有效）。      
 
-### 把代理服务器地址写入shell配置文件.bashrc或者.zshrc     
+### 终端永久使用代理： 把代理服务器地址写入shell配置文件.bashrc或者.zshrc     
 
 直接在.bashrc或者.zshrc添加下面内容:    
 
