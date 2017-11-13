@@ -168,4 +168,80 @@ sudo find / -name ".DS_Store" -depth -exec rm {} \;
 ### 4. 上面命令不管用，安装 App 解决 .DS_Store 污染问题     
 
 安装 Asepsis (https://asepsis.binaryage.com/) 可以解决这个问题，不过该 App 目前不开发了。      
-ASEPSIS 会把所有的.DS_Store重定向到 /usr/local/.dscage 内。
+ASEPSIS 会把所有的.DS_Store重定向到 /usr/local/.dscage 内。    
+
+
+## Mac 了解应用安装后占用的磁盘空间   
+
+https://segmentfault.com/a/1190000005035742     
+
+### App最喜欢的几个目录    
+
+Mac和Windows操作系统有一个很大的不同，大部分App是没有安装程序的，一般下载下来就是一个dmg文件，     
+解开之后直接将App拖到应用程序目录下就可以了，所以给人感觉卸载也就是将App拖到废纸篓然后清空。     
+如果真这样做就大错特错，即使一个最简单的App都会在下面几个目录中或多或少留下纪念，这些目录一般有：   
+
+```
+~/Library
+~/Library/Application Support
+~/Library/Application Support/CrashReporter
+~/Library/Caches
+~/Library/Containers
+~/Library/LaunchAgents
+~/Library/Preferences
+~/Library/PreferencePanes
+```   
+
+如果一个程序是通过pkg方式安装，或者是在第一次运行时请求管理员权限，那一般还会在如下几个目录中留点纪念：    
+
+```
+/Library
+/Library/Application Support
+/Library/Extensions
+/Library/LaunchAgents
+/Library/LaunchDaemons
+/Library/PreferencePanes
+/Library/Preferences
+```
+
+以上都还是只是列出了部分，不同的App由于需要还会在其他目录中安装一些文件，比如字处理软件一般会在/Library/Fonts下面安装字体，  
+有些扩展组件会放在/Library/ScriptingAdditions下面。     
+
+### ~/Library/Application Support    
+
+这个目录可以说是App最重要的文件目录，一些App本身并不大，但是需要的支持组件和内容非常多，     
+特别是采用第三方插件和缓存网络内容的软件，例如我用的Dash，本身的大小只有24MB左右，但是由于经常浏览资料，     
+所以缓存了很多网络内容，使得它的Support目录达到了1.37GB！可想而知，如果只是将App扔到废纸篓，几乎不会节省任何空间。    
+
+### ~/Library/Preferences     
+
+这个目录下保存的是App设置，一般来说，稍微有点规模的软件都有自己的配置信息，放在这里的文件虽然占空间不多，      
+但是清理掉还是有好处的，例如有些App不能正常工作，即使卸载重装也不行，往往就是配置文件出错了，     
+把这里清理掉之后再重装就会有比较好的效果。     
+
+
+### ~/Library/Containers     
+
+这个目录对于App Store上下载的软件来说，是最重要的一个目录，由于Apple的限制，AppStore的软件都在沙箱中运行，     
+每个软件在沙箱都有自己的一个完整空间，对于App来说，它以为自己在一个正常的目录系统中运行，但实际上不是，      
+操作系统重定位了读写位置到沙箱之中。      
+要是卸载软件的时候，只是简单的在Launchpad中点一下叉来删除，那不知道又有多少空间莫名其妙地消失了，     
+我曾经用这种方式卸载了网易云音乐，结果后来才发现，整整417MB的空间不见了……      
+
+### ~/Library/LaunchAgents    
+
+Mac上的随机启动方式之一，熟悉OS X操作系统的同学应该立刻想到了launchctl，这里就是存放启动配置文件的地方，     
+大部分App只会往这里写启动信息，请神容易送神难，要送神，只有用第三方工具或是自己手动清理了，     
+还有，LaunchAgents 和 LaunchDaemons 是有一些区别的，两者虽然都是随机启动，     
+ 
+
+
+
+
+
+
+
+
+------------------
+
+-----------------
