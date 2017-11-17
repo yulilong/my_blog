@@ -23,7 +23,7 @@ API 网关地址 配置，服务注册使用，模块组件注册使用，
 
 * [** html常用正则表达式**](html常用正则表达式)      
 
-* [**angular2中引入jQuery插件**](angular2中引入jQuery插件)     
+* [**angular2中引入插件**](angular2中引入插件) jQuery,  easyui        
 
 * [**TS_JS中一些知识点**](TS_JS中一些知识点)        
  
