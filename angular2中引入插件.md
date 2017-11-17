@@ -1,4 +1,8 @@
-### 安装jQuery插件   
+[TOC]
+
+## angular中引入jQuery
+
+### 1. 安装jQuery插件   
 
 ```
 ~ npm i jquery
@@ -12,7 +16,7 @@ cloudlink-front-framework@0.1.0 /Users/yulilong/work/cloudlink-front-framework
 └── UNMET PEER DEPENDENCY rxjs@5.0.0-beta.12
 ```    
 
-### 在index.html中引用jquery    
+### 2. 在index.html中引用jquery    
 
 src/index.html     
 ```
@@ -26,7 +30,7 @@ src/index.html
 </head>
 ```     
 
-### 在组件app.component.ts中添加jQuery功能    
+### 3. 在组件app.component.ts中添加jQuery功能    
 
 src/app/jasframework/enterprise-admin/app-enterprise/enterprise-list/enterprise-list-show-view/enterprise-list-show-view.component.ts       
 ```
@@ -51,6 +55,37 @@ src/app/jasframework/enterprise-admin/app-enterprise/enterprise-list/enterprise-
 <div id="title" class="title11"></div>
 ```   
 
-###  参考链接    
+###  4. 参考链接    
 
-http://www.jb51.net/article/105123.htm
+http://www.jb51.net/article/105123.htm      
+
+
+-----------  
+
+## angular2中引入 easyui   
+
+### 1. 参考链接   
+
+angular中引入easyUI教程： http://jeasyui.com/download/a07.php     
+angular中使用easyUI教程： http://www.jeasyui.com/demo-angular/main/index.php?sort=desc    
+
+### 2. 引入easyUI   
+
+1. 下载easyUIangular组件： http://jeasyui.com/download/downloads/angular-easyui-0.7.zip     
+2. 解压后把`components`文件复制到用的文件中。    
+3. 把`themes`文件放到asset文件夹下，
+4. 在index文件中引入样式：   
+
+```
+<link rel="stylesheet" type="text/css" href="assets/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="assets/themes/angular.css">
+<link rel="stylesheet" type="text/css" href="assets/themes/icon.css">
+```
+
+或者直接在组件样式(app.component.css )中引入：  
+
+```
+@import 'easyui/themes/material/easyui.css';
+@import 'easyui/themes/angular.css';
+@import 'easyui/themes/icon.css';
+```
