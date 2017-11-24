@@ -68,6 +68,7 @@ http://www.jb51.net/article/105123.htm
 
 angular中引入easyUI教程： http://jeasyui.com/download/a07.php     
 angular中使用easyUI教程： http://www.jeasyui.com/demo-angular/main/index.php?sort=desc    
+EasyUI for Angular 简评： http://www.zisuzz.com/topic/29/easyui-for-angular-简评
 
 ### 2. 引入easyUI   
 
