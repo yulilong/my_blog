@@ -43,6 +43,38 @@ mac 默认安装了openssh。
 不是所有 Mac 上的工作都需要使用大型应用程式，有些简单的工作不妨让 [tiger] 上的新功能 Dashboard 来为您完成。只要按下一个键，半透明的 Dashboard 就会浮现在电脑桌面上，供您快速取用多种有趣又实用的迷你应用程式 widget。需要加减乘除吗？交给“计算机”widget 吧！想知道心爱的人所坐的班机飞到哪了吗？请看看 Flight Tracker widget。办公室没有窗户让您一窥外头的情况吗？打开 Weather widget 就知道现在窗外是什么天气。     
 http://jingyan.baidu.com/article/066074d6910570c3c21cb0d9.html       
 
+## **Mac 隐藏docker中的应用图标**   
+
+终端下进入应用程序的目录中，使用`sudo vi`命令打开`Info.plist`
+
+```
+// 进入APP目录
+cd /Applications/
+// 查看目录下安装的软件
+ls
+// 假设你的软件名字是 YouAppName
+cd YouAppName/Contents
+// 编辑配置文件
+vim Info.plist
+// 进入VIM编辑器
+```
+
+进入编辑器之后，找到<dict>的部分节点，插入下面红框内的内容 :   
+
+```
+<key>LSUIElement</key>
+<true/>
+```
+
+保存之后，退出相关程序，再次打开，DOCK栏上就没有这个软件的图标了。
+
+![WX20171128-154651.png](https://bitbucket.org/repo/oE6yEX/images/3052016934-WX20171128-154651.png)    
+
+
+参考链接:http://blog.csdn.net/fungleo/article/details/52262315         
+
+
+
 ## **mac应用程序所在目录**   
 
 硬盘名称(如macintoch HD) /Applications 硬盘点开就能看到一个叫应用程序的文件夹，直接安装或拖拽过去就可以了，   
