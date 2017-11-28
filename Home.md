@@ -9,7 +9,9 @@
 
 * [**Mac快捷键和一些常用操作**](Mac快捷键和一些常用操作)    
 
-* [Mac 系统 操作习惯设置](Mac%20%E7%B3%BB%E7%BB%9F%20%E6%93%8D%E4%BD%9C%E4%B9%A0%E6%83%AF%E8%AE%BE%E7%BD%AE)     
+* [Mac 系统 操作习惯设置](Mac系统操作习惯设置)     
+鼠标滚轮方向，关闭开机声音，关闭自动更新app Store，隐藏docker中的应用图标，find进入特定目录，系统桌面背景图片位置，     
+把应用程序图标放在finder上，显示与隐藏 隐藏文件，Mac下的 tree 命令 终端展示你的目录树结构， 右上角顶级菜单中图标管理     
 
 * [苹果系统下常用的软件](苹果系统下常用的软件)    
 Homebrew，CheatSheet, Office2016， pgadmin3，  caffeine, snip,go2shell, XtraFinder, iTerm 2, 有道词典, Bandwidth+流量监控    
