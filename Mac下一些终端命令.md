@@ -69,4 +69,14 @@ export https_proxy="http://127.0.0.1:1080"
 
 localhost就是一个域名，域名默认指向 127.0.0.1，两者是一样的。     
 然后ESC后:wq保存文件，接着在终端中执行source ~/.bashrc        
-或者退出当前终端再起一个终端。 这个办法的好处是把代理服务器永久保存了，下次就可以直接用了。
+或者退出当前终端再起一个终端。 这个办法的好处是把代理服务器永久保存了，下次就可以直接用了。    
+
+## 终端进入名称带空格的目录   
+
+可使用`\ ` `' '` `" "` 将空格转义就可以了。
+
+```
+1. cd Appications/Android\ Studio.app/sdk 
+2. cd Appications/Android' 'Studio.app/sdk
+3. cd Appications/Android" "Studio.app/sdk
+```
