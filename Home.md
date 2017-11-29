@@ -26,7 +26,9 @@ http://xialeizhou.com/2019/06/23/高效macbook工作环境配置/
 
 * [**Mac下Nginx的安装运行**](Mac下Nginx的安装运行)      
 
-* [**Mac下一些终端命令**](Mac下一些终端命令)      终端配置代理
+* [**Mac下一些终端命令**](Mac下一些终端命令)      终端配置代理      
+
+* [**ac下sublime编辑器设置**](ac下sublime编辑器设置)      
 
 * Mac 键盘快捷键     
 苹果官网快捷键文档： https://support.apple.com/zh-cn/HT201236        
