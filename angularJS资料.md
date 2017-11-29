@@ -56,8 +56,6 @@ https://angular.cn/docs/ts/latest/  这个里面包含： 快速起步 开发指
 
 * **Angular2优质学习资源收集**  https://my.oschina.net/mumu/blog/831790
 
-
-
 * **编辑器： **         
 下载地址： https://code.visualstudio.com     
 帮助文档：https://code.visualstudio.com/docs 
@@ -70,6 +68,13 @@ https://angular.cn/docs/ts/latest/  这个里面包含： 快速起步 开发指
 
 * **Promise 对象** https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise       
 
+------
+## angular4   
+
+* [**angular-CLI中一些问题**](angular-CLI中一些问题)        
+
+
+ 
 -----
 ## Bootstrap   
 
