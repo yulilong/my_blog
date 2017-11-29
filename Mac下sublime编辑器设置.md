@@ -30,9 +30,22 @@ import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe0
 
 ### 4. 包的安装路径:`/Users/dragon/Library/Application Support/Sublime Text 3/Installed Packages`    
 
+## **三、删除插件、更新插件**   
 
+### 1. 使用快捷键`shift + command + p`或 `Sublime Text -> Preferences -> Package Control`打开Package Control   
 
-## **三、一些包插件**   
+### 2. 删除插件
+
+#### ①. 在Package Control 中 输入`Remove Package`选择`Package Cont:Remove Package`    
+
+#### ②，在里面选择需要的删除插件名字，点击即可删除
+
+### 3. 更新插件 
+
+#### ① 在Package Control 中 输入`upgrade packages`选择`Package Cont:Upgrade/Overwrite All Packages`    
+  
+
+## **四、一些包插件**   
 
 ```
 Typescript Syntax: 
