@@ -30,14 +30,19 @@ import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe0
 
 ## **三、一些包插件**   
 
-### Typescript Syntax: typescript语法  
+```
+Typescript Syntax: 
+typescript语法  
 
-### SublimeLinter：代码校验插件，支持 HTML、CSS、JS、PHP、Java、C++ 等16种语言；
+SublimeLinter：代码校验插件，支持 HTML、CSS、JS、PHP、Java、C++ 等16种语言；
 
-### Alignment：代码对齐插件；
+Alignment：代码对齐插件；
 
-### Git：整合 Git 功能的插件；
+Git：整合 Git 功能的插件；
 
-### BracketHighlighter： 括号高亮匹配
+BracketHighlighter： 括号高亮匹配
+```
 
-###
+
+
+### dddddddddd
