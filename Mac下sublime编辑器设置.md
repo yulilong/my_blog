@@ -28,6 +28,10 @@ import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe0
 
 ### 3. 输入需要安装的包名，在出来的选项中找到包，点击后，会自动安装，安装进度看sublime左下角的进度提示   
 
+### 4. 包的安装路径:`/Users/dragon/Library/Application Support/Sublime Text 3/Installed Packages`    
+
+
+
 ## **三、一些包插件**   
 
 ```
