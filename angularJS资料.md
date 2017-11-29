@@ -56,14 +56,7 @@ https://angular.cn/docs/ts/latest/  这个里面包含： 快速起步 开发指
 
 * **Angular2优质学习资源收集**  https://my.oschina.net/mumu/blog/831790
 
-* **Angular 的模板语法**   
-`*ngFor`、`{{hero.name}}`、`(click)`、`[hero]`和`<hero-detail>`这样的代码: https://angular.cn/docs/ts/latest/guide/template-syntax.html       
 
-* **angular2 HTTP 客户端** https://angular.cn/docs/ts/latest/guide/server-communication.html
-
-* **angular架构概览**  https://angular.cn/docs/ts/latest/guide/architecture.html#
-
-* **angular路由与导航** https://angular.cn/docs/ts/latest/guide/router.html     
 
 * **编辑器： **         
 下载地址： https://code.visualstudio.com     
