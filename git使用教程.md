@@ -564,13 +564,13 @@ Date:   Sat Mar 15 16:40:33 2008 -0700
 
 #### `git log --name-only`: 只显示修改的文件名，没有其他信息
 
+#### `git log --pretty=oneline`: 用一行显示信息    
+
 ```
 $ git log 1.txt            //查看 1.txt文件的历史修改记录。
 $ git log -n               //只查看前n次修改记录，例如查看前2次的记录： git log -2
-$ git log -p               // 按补丁格式显示每个更新之间的差异。    
-$ git log --stat           // 显示每次更新的文件修改统计信息。
+$ git log -p               // 按补丁格式显示每个更新之间的差异。  
 $ git log --shortstat      // 只显示 --stat 中最后的行数修改添加移除统计。
-$ git log --name-only      // 仅在提交信息后显示已修改的文件清单。
 $ git log --name-status    // 显示新增、修改、删除的文件清单。     
 $ git log --abbrev-commit  // 仅显示 SHA-1 的前几个字符，而非所有的 40 个字符。
 $ git log --relative-date  // 使用较短的相对时间显示（比如，“2 weeks ago”）。
