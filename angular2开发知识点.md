@@ -197,8 +197,93 @@ import {Charts} from './charts/charts.component'; # 引入这个组件
 })
 ``` 
 
----------------      
+---------------    
+## 四、html中style类动态绑定   
 
+### 1. 单个类绑定：[class.class-name]   
+
+单个style类绑定介绍：https://angular.cn/guide/template-syntax#css-类绑定    
+由class前缀，一个点 (.)和 CSS 类的名字组成， 其中后两部分是可选的。形如：[class.class-name]。     
+
+```
+// 不使用style类绑定的代码：
+<!-- standard class attribute setting  -->
+<div class="bad curly special">Bad curly special</div>    
+
+// 使用style绑定
+<!-- reset/override all class names with a binding  -->
+<div class="bad curly special" [class]="badCurly">Bad curly</div>
+```
+
+当模板表达式的求值结果是真值时，Angular 会添加这个类，反之则移除它。     
+
+### 2. 多个类的绑定：[ngClass]="{'selected':status === '','saveable': this.canSave,}"
+
+参考链接：https://angular.cn/guide/template-syntax#ngclass-指令    
+用`ngClass`绑定到一个key:value 形式的控制对象。这个对象中的每个 key 都是一个 CSS 类名，     
+如果它的 value 是true，这个类就会被加上，否则就会被移除。    
+
+```
+// component.ts
+currentClasses: {};
+setCurrentClasses() {
+  // CSS classes: added/removed per current state of component properties
+  this.currentClasses =  {
+    'saveable': this.canSave,
+    'modified': !this.isUnchanged,
+    'special':  this.isSpecial
+  };
+}
+
+// component.thml
+<div [ngClass]="currentClasses">This div is initially saveable, unchanged, and special</div>
+```
+
+### 3. 单个内联样式绑定：[style.color]="isSpecial ? 'red': 'green'"     
+
+https://angular.cn/guide/template-syntax#样式绑定           
+单个内联样式绑定由style前缀，一个点 (.)和 CSS 样式的属性名组成。 形如：[style.style-property]。     
+
+```
+<button [style.color]="isSpecial ? 'red': 'green'">Red</button>
+<button [style.background-color]="canSave ? 'cyan': 'grey'" >Save</button>
+```
+
+有些样式绑定中的样式带有单位。在这里，以根据条件用 “em” 和 “%” 来设置字体大小的单位。   
+
+```
+<button [style.font-size.em]="isSpecial ? 3 : 1" >Big</button>
+<button [style.font-size.%]="!isSpecial ? 150 : 50" >Small</button>
+```
+
+### 4. 多个内联样式绑定：[ngStyle]="currentStyles"    
+
+https://angular.cn/guide/template-syntax#ngstyle-指令     
+NgStyle需要绑定到一个 key:value 控制对象。 对象的每个 key 是样式名，它的 value 是能用于这个样式的任何值。      
+下面的列子会根据另外三个属性的状态把组件的currentStyles属性设置为一个定义了三个样式的对象：    
+
+```
+// src/app/app.component.ts
+currentStyles: {};
+setCurrentStyles() {
+  // CSS styles: set per current state of component properties
+  this.currentStyles = {
+    'font-style':  this.canSave      ? 'italic' : 'normal',
+    'font-weight': !this.isUnchanged ? 'bold'   : 'normal',
+    'font-size':   this.isSpecial    ? '24px'   : '12px'
+  };
+}
+
+// src/app/app.component.html
+<div [ngStyle]="currentStyles">
+  This div is initially italic, normal weight, and extra large (24px).
+</div>
+```
+
+你既可以在初始化时调用setCurrentStyles()，也可以在所依赖的属性变化时调用。
+
+    
+------------
 ## **angular2 第三方插件的使用**             
 
 以 使用primeNG插件为例:https://www.primefaces.org/primeng/#/setup            
