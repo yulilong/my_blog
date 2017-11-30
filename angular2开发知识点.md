@@ -2,7 +2,7 @@
 
 [TOC]
 
-## API 网关地址 配置    
+## 一、API 网关地址 配置    
 
 cloudlink-front-framework/config/webpack.dev.js    
 ```
@@ -41,7 +41,7 @@ devServer: {
 ```   
 
 ------
-## 服务注册使用   
+## 二、服务注册使用   
 
 ![WX20170505-102149.png](https://bitbucket.org/repo/oE6yEX/images/2378097808-WX20170505-102149.png)   
 
@@ -105,7 +105,7 @@ constructor(@Inject('view') private viewService,
 ```     
 
 ---------------
-## 模块组件注册使用      
+## 三、模块组件注册使用      
 
 ![WX20170526-135439.png](https://bitbucket.org/repo/oE6yEX/images/3381880586-WX20170526-135439.png)     
 
