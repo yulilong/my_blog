@@ -200,7 +200,7 @@ import {Charts} from './charts/charts.component'; # 引入这个组件
 ---------------    
 ## 四、html中style类动态绑定   
 
-### 1. 单个类绑定：[class.class-name]   
+### 1. 单个类的绑定：[class.class-name]   
 
 单个style类绑定介绍：https://angular.cn/guide/template-syntax#css-类绑定    
 由class前缀，一个点 (.)和 CSS 类的名字组成， 其中后两部分是可选的。形如：[class.class-name]。     
