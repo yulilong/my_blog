@@ -200,7 +200,7 @@ import {Charts} from './charts/charts.component'; # 引入这个组件
 ---------------    
 ## 四、html中style类动态绑定   
 
-### 1. 单个类的绑定：[class.class-name]   
+### 1. 单个类的绑定：[class.special]="isSpecial"   
 
 单个style类绑定介绍：https://angular.cn/guide/template-syntax#css-类绑定    
 由class前缀，一个点 (.)和 CSS 类的名字组成， 其中后两部分是可选的。形如：[class.class-name]。     
@@ -210,9 +210,13 @@ import {Charts} from './charts/charts.component'; # 引入这个组件
 <!-- standard class attribute setting  -->
 <div class="bad curly special">Bad curly special</div>    
 
-// 使用style绑定
+// 当badCurly 有值的时候，会清除所有样式类
 <!-- reset/override all class names with a binding  -->
 <div class="bad curly special" [class]="badCurly">Bad curly</div>
+
+// 使用style绑定
+<!-- toggle the "special" class on/off with a property -->
+<div [class.special]="isSpecial">The class binding is special</div>
 ```
 
 当模板表达式的求值结果是真值时，Angular 会添加这个类，反之则移除它。     
