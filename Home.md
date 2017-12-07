@@ -28,6 +28,8 @@ http://xialeizhou.com/2019/06/23/高效macbook工作环境配置/
 
 * [**Mac下一些终端命令**](Mac下一些终端命令)      终端配置代理      
 
+* [**Mac Office2016使用设置**](Mac%20Office2016使用设置)      阅读视图     
+
 * [**Mac下sublime编辑器设置**](Mac下sublime编辑器设置)        
 
 * Mac 键盘快捷键     
