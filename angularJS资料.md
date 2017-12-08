@@ -3,8 +3,15 @@
 -------  
 目录结构    
 
-[TOC]
+[TOC]    
 
+------
+## angular4   
+
+* [**angular-CLI中一些问题**](angular-CLI中一些问题)        
+
+
+ 
 -----    
 ## 工作
 
@@ -68,13 +75,7 @@ https://angular.cn/docs/ts/latest/  这个里面包含： 快速起步 开发指
 
 * **Promise 对象** https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise       
 
-------
-## angular4   
 
-* [**angular-CLI中一些问题**](angular-CLI中一些问题)        
-
-
- 
 -----
 ## Bootstrap   
 
