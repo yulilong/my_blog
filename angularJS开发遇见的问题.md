@@ -217,4 +217,13 @@ public value: any;
 
 触发原因：页面的返回头被设置 X-Frame-Options SAMEORIGIN ，只能被同源的iframe 引用。跨域名的iframe 没法显示了。      
 
-这个在angular中， 本地开发中webpack中配置代理， 服务器中 Nginx中配置代理即可解决问题。
+这个在angular中， 本地开发中webpack中配置代理， 服务器中 Nginx中配置代理即可解决问题。    
+
+
+## 13. cnpm安装报错：Install fail! Error: EACCES: permission denied,      
+
+使用速度命令安装：`sudo cnpm i`    
+
+## 14. ng serve:Error: Cannot find module 'color-convert'   
+
+使用npm命令安装这个缺少的包：`sudo cnpm i color-convert`
