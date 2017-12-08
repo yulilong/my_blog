@@ -1,5 +1,15 @@
 [TOC]   
 
+## 将ng设置成使用cnpm 
+
+```
+ng set --global packageManager=cnpm
+```   
+
+http://www.jianshu.com/p/fea407503beb?mType=Group       
+
+-----------------------------
+
 ## **npm install 生成的package-lock.json是什么文件？有什么用？**   
 
 ```
