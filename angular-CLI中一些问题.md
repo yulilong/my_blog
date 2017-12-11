@@ -22,4 +22,21 @@ regardless of intermediate dependency updates.
 详细内容，请自行查阅官方文档：https://docs.npmjs.com/files/package-lock.json
 
 链接：https://www.zhihu.com/question/62331583/answer/197691747
+```   
+
+## 更换npm的源地址   
+
+npm本来的源地址：   
+
 ```
+npm config get registry 
+https://registry.npmjs.org/
+```   
+
+更换npm的源地址:  
+
+```
+npm config set registry https://registry.npm.taobao.org  
+```
+
+参考链接：http://blog.csdn.net/v2810769/article/details/52585662
