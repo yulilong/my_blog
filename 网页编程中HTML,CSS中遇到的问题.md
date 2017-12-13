@@ -52,4 +52,17 @@ CSS文档中对`margin`的定义:
 
 5、为父元素或子元素声明绝对定位
 
-6、为父元素应用overflow：hidden属性（推荐）
+6、为父元素应用overflow：hidden属性（推荐）       
+
+---------------
+
+## html输入框回车响应事件方法：onkeydown="if(event.keyCode==13) {console.log('111111')}"     
+
+
+
+
+
+
+--------
+
+-------
