@@ -58,6 +58,7 @@ CSS文档中对`margin`的定义:
 
 ## html输入框回车响应事件方法：onkeydown="if(event.keyCode==13) {console.log('111111')}"     
 
+### angular中回车事件（版本2/4/5）：<input #box (keyup.enter)="onEnter(box.value)">
 
 
 
