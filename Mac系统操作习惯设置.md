@@ -108,6 +108,12 @@ defaults write com.apple.finder AppleShowAllFiles Yes && killall Finder //显示
 defaults write com.apple.finder AppleShowAllFiles No && killall Finder //不显示隐藏文件
 ```    
 
+## 屏幕右上角的用户名去掉    
+
+系统偏好设置－－用户与群组－－左侧菜单栏选择登陆选项－－右侧“将快速用户切换菜单显示为...”左边的勾去掉就行了
+
+system preferences -> user and groups -> login options，有一条show fast user switching menu as，有三个选项可以设置。不想要勾掉就好了     
+
 ## Mac下的 tree 命令 终端展示你的目录树结构    
 
 ```
