@@ -31,6 +31,8 @@ http://xialeizhou.com/2019/06/23/高效macbook工作环境配置/
 
 * [**Mac Office2016使用设置**](Mac%20Office2016使用设置)      阅读视图     
 
+* [**Mac下移动硬盘分区用做TimeMachine的备份**](Mac下移动硬盘分区用做TimeMachine的备份)     
+
 * [**Mac下sublime编辑器设置**](Mac下sublime编辑器设置)        
 
 * Mac 键盘快捷键     
