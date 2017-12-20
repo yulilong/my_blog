@@ -1,3 +1,5 @@
+[TOC]
+
 ## **1. install RVM**   
  
 1.未装homebrew先装homebrew，否则报错：     
