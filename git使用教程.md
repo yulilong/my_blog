@@ -4,6 +4,8 @@
 
 * [**Git合并多个Commit(本地的)_git修改未push的最后一次commit**](Git合并多个Commit(本地的)_git修改未push的最后一次commit注释)         
 
+* [**廖雪峰git教程**](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)         
+
 [测试连接](git使用教程#markdown-header-iii-git-diff-stat-head-sha1)
 
 -------------           
