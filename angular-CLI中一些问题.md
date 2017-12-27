@@ -36,7 +36,10 @@ https://registry.npmjs.org/
 更换npm的源地址:  
 
 ```
+// 淘宝源
 npm config set registry https://registry.npm.taobao.org  
+// 自己本来的源
+npm config set registry https://registry.npmjs.org/
 ```
 
 参考链接：http://blog.csdn.net/v2810769/article/details/52585662
