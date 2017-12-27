@@ -184,7 +184,7 @@ http://www.ruanyifeng.com/blog/2016/01/npm-install.html
 ----------
 ## 更换npm的源地址 加快国内安装速度     
 
-npm本来的源地址：   
+查看npm包的源地址（包下载地址）：   
 
 ```
 npm config get registry 
