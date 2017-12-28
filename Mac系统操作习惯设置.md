@@ -282,7 +282,14 @@ Mac上的随机启动方式之一，熟悉OS X操作系统的同学应该立刻�
 
 
 
+## 腾讯视频.app应用下载的视频存放位置
 
+/Users/*****(用户名文件）/Library/Containers/com.tencent.tenvideo/Data/Library/Application Support/Download/video        
+
+里面视频是被分开截的，所以要用腾讯的播放器才能看，其他mac下播放器离线缓存视频同理只能用对应的播放器看。      
+其他播放器（优酷、iqiyi等）路径也在Containers对应的播放器文件目录的/Data/Library/Application Support/Download/video里（也是被截成的片段）
+
+删除视频的时候注意看看这里是否也被删除了。
 
 
 
