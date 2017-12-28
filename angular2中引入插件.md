@@ -89,4 +89,48 @@ EasyUI for Angular 简评： http://www.zisuzz.com/topic/29/easyui-for-angular-�
 @import 'easyui/themes/material/easyui.css';
 @import 'easyui/themes/angular.css';
 @import 'easyui/themes/icon.css';
+```   
+
+## 引入ngx-img: 图片上传插件
+
+npm网站地址：https://www.npmjs.com/package/ngx-img      
+源码地址：   https://github.com/harryy2510/ngx-img      
+demo展示地址：https://harryy2510.github.io/ngx-img/home    
+
+### 1. 安装使用 
+
 ```
+// 安装
+npm install --save ngx-img    
+
+// 如果是在根模块中引入
+import { NgxImgModule } from 'ngx-img';
+ 
+@NgModule({
+  declarations: [AppComponent, ...],
+  imports: [NgxImgModule.forRoot(), ...],  
+  bootstrap: [AppComponent]
+})
+export class AppModule {
+}
+
+// 不在根模块，在其他模块引入
+import { NgxImgModule } from 'ngx-img';
+ 
+@NgModule({
+  declarations: [OtherComponent, ...],
+  imports: [NgxImgModule, ...], 
+})
+export class OtherModule {
+}
+
+// 使用方法看demo ：https://harryy2510.github.io/ngx-img/home
+
+```   
+
+### 2. 直接把源码模块复制到自己的项目中去    
+
+如果第一种方法报错，那么说明使用npm安装使用不适用你（本人就是失败），那么可以去github源码上把这个模块复制到自己的项目下。     
+https://github.com/harryy2510/ngx-img/blob/master/src/module/ngx-img.module.ts     
+目前项目源码是上面链接的模块，`git clone` 项目后，把这个模块复制到自己项目中，引入模块，写上示例代码，然后运行。   
+此时会报错，以为缺少一个包`cropperjs`，使用`npm install cropperjs --save`安装后，即可成功使用。
