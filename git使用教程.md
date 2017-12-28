@@ -100,7 +100,7 @@ $ git remote show origin
     master pushes to master (up to date)
 ```
 
-#### 远程仓库的重命名与移除    
+#### 远程仓库的重命名、移除、修改地址    
 
 如果想要重命名引用的名字可以运行 git remote rename 去修改一个远程仓库的简写名。     
 例如，想要将 pb 重命名为 paul，可以用 git remote rename 这样做：    
@@ -121,6 +121,12 @@ $ git remote rm paul
 $ git remote
 origin
 ```   
+
+修改地址： 
+
+```
+git remote set-url origin www.baidu.com
+```
 
 [***关于远程仓库详细介绍***](https://git-scm.com/book/zh/v2/Git-基础-远程仓库的使用)    
 
