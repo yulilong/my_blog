@@ -58,8 +58,6 @@ Alignment：代码对齐插件；
 Git：整合 Git 功能的插件；
 
 BracketHighlighter： 括号高亮匹配
+
+emmet:  HTML 中使用CSS样式语法，然后使用 tab键直接生成对应html元素
 ```
-
-
-
-### dddddddddd
