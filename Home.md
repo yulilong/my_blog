@@ -34,6 +34,7 @@ http://xialeizhou.com/2019/06/23/高效macbook工作环境配置/
 * [**Mac下移动硬盘分区用做TimeMachine的备份**](Mac下移动硬盘分区用做TimeMachine的备份)     
 
 * [**Mac下sublime编辑器设置**](Mac下sublime编辑器设置)        
+* [**Mac下vscode编辑器设置**](Mac下vscode编辑器设置)        
 
 * Mac 键盘快捷键     
 苹果官网快捷键文档： https://support.apple.com/zh-cn/HT201236        
