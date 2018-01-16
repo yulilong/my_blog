@@ -137,4 +137,6 @@ git config --global core.quotepath false
 
 core.quotepath设为false的话，就不会对0x80以上的字符进行quote。中文显示正常。      
 
-![](https://bitbucket.org/repo/oE6yEX/images/2932686307-WX20180116-170256@2x.png)
+![](https://bitbucket.org/repo/oE6yEX/images/2932686307-WX20180116-170256@2x.png)    
+
+参考链接： http://blog.csdn.net/tyro_java/article/details/53439537
