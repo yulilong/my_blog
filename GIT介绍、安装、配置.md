@@ -67,6 +67,7 @@ git config --global alias.br branch                      # GIT命令别名 方�
 git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
 git config --global alias.type 'cat-file -t'             # GIT命令别名 方便操作快捷
 git config --global alias.dump 'cat-file -p'             # GIT命令别名 方便操作快捷
+git config --global core.quotepath false                 # 关闭对0x80以上的字符进行quote， 解决git的中文乱码问题。
 git config --list                                        # 查看上面的配置
 # 查看git路径
 which git
