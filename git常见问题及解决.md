@@ -124,4 +124,17 @@ vi -r file.txt
 
 ```
 rm .file.txt.swp
+```    
+
+## Git中文乱码的问题    
+
+在使用git命令的时候，如果文件名是中文的，就会出现如`\200\273\347\273\223.png`的乱码。
+解决方法，在终端中输入如下命令：   
+
 ```
+git config --global core.quotepath false
+```   
+
+core.quotepath设为false的话，就不会对0x80以上的字符进行quote。中文显示正常。      
+
+![](https://bitbucket.org/repo/oE6yEX/images/2932686307-WX20180116-170256@2x.png)
