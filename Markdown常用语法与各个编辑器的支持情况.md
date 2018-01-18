@@ -18,6 +18,7 @@ md文档最下面写明脚注：
 [^footnote2]: 这是另一个 *注脚* 的 **文本**。
 
 ```    
+### 编辑器支持情况 
 
 支持的网站：     
 bitbucket、https://www.zybuluo.com  、      
@@ -49,4 +50,9 @@ https://github.com
 | --------   | -----:  | :----:  |
 | 计算机     | \$1600 |   5     |
 | 手机        |   \$12   |   12   |
-| 管线        |    \$1    |  234  |
+| 管线        |    \$1    |  234  |     
+
+### 编辑器支持情况   
+
+支持的网站：    
+bitbucket、github、https://www.zybuluo.com、VSCODE、
