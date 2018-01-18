@@ -52,7 +52,26 @@ https://github.com ， 码云网站wiki不行。
 | 手机        |   \$12   |   12   |
 | 管线        |    \$1    |  234  |     
 
-### 编辑器支持情况   
+### 支持的情况：bitbucket、github、https://www.zybuluo.com、VSCODE、   
 
-支持的网站：    
-bitbucket、github、https://www.zybuluo.com、VSCODE、
+## html语法的支持   
+
+### HTML的表格   
+
+```
+<table>
+    <tr>
+        <th rowspan="2">值班人员</th>
+        <th>星期一</th>
+        <th>星期二</th>
+        <th>星期三</th>
+    </tr>
+    <tr>
+        <td>李强</td>
+        <td>张明</td>
+        <td>王平</td>
+    </tr>
+</table>
+```   
+
+#### 支持的编辑器： github、码云、www.zybuluo.com
