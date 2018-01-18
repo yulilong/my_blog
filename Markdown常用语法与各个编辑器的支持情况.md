@@ -24,7 +24,7 @@ md文档最下面写明脚注：
 bitbucket、https://www.zybuluo.com  、      
 
 不支持的网站：   
-https://github.com     
+https://github.com ， 码云网站wiki不行。        
 
 
 ## 表格    
