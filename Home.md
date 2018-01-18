@@ -85,7 +85,7 @@ https://github.com/riku/Markdown-Syntax-CN
 ### **在线工具**
 
 * HTML 参考手册: http://www.w3school.com.cn/tags/  
-* HTML 在线效果测试: http://www.w3school.com.cn/tiy/t.asp?f=html_div_test      
+* HTML 在线效果测试: http://www.w3school.com.cn/tiy/t.asp      
 * 在线正则表达式测试: http://tool.oschina.net/regex/#      
 * **在线调色板: **http://tool.chinaz.com/Tools/onlinecolor.aspx       
 * **在线颜色选择器 | RGB颜色查询对照表: **http://www.atool.org/colorpicker.php       
