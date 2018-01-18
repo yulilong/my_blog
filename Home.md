@@ -78,6 +78,7 @@ https://github.com/riku/Markdown-Syntax-CN
 
 * [Cmd Markdown 简明语法手册](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown)       
 
+* [Markdown常用语法与各个编辑器的支持情况](Markdown常用语法与各个编辑器的支持情况)    
 -------------------------------------------------------------------------------------------------
 
 ### **在线工具**
