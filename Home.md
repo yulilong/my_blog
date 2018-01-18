@@ -91,6 +91,7 @@ https://github.com/riku/Markdown-Syntax-CN
 * **在线颜色选择器 | RGB颜色查询对照表: **http://www.atool.org/colorpicker.php       
 * **在线编辑软件流程图: **http://asciiflow.com/        
 * **免费，快速，在线文件转换无须安装任何软件: **http://cn.office-converter.com       
+* **jQuery cdn 在线连接: **https://code.jquery.com/       
        
 -------------------------------------------------------------------------------------------------
 
