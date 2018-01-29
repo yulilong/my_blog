@@ -64,6 +64,7 @@ git config --list                                        # 查看上面的配置
 // 必要的配置
 git config --global core.editor vim                      # 使用VIM编辑器编辑作为GIT的默认编辑器
 git config --global credential.helper store              # 存储credential(凭证)，自动保存远程仓库账号密码
+// https://git-scm.com/book/zh/v2/Git-工具-凭证存储
 git config --global core.quotepath false                 # 关闭对0x80以上的字符进行quote， 解决git的中文乱码问题。
 git config --global core.autocrlf true                   # 自动转换LF和CRLF(不同操作系统换行不同问题)。
 // git命令使用别名简化
