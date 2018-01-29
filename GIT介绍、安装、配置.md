@@ -54,12 +54,19 @@ https://git-for-windows.github.io/
 # https://git-scm.com/book/zh/v2/自定义-Git-配置-Git
 git config --global user.name "you name"                 # 设置GIT的用户名 
 git config --global user.email you_email_addr@gmail.com  # 设置GIT的邮箱
-git config --global core.editor vim                      # 使用VIM编辑器编辑作为GIT的默认编辑器
+
 git config --global core.mergeoptions --no-edit          # 关闭git pull产生的merge信息
 git config --global commit.template ~/.gitmessage.txt    # git 提交时编辑里面的模板
 # false：关闭， auto：自动，有的颜色会忽略， always：忽略掉管道和终端的不同，即在任何情况下着色输出
 git config --global color.ui false                       # 终端内容着色
-git config --global credential.helper store              # 自动保存远程仓库账号密码
+git config --list                                        # 查看上面的配置
+
+// 必要的配置
+git config --global core.editor vim                      # 使用VIM编辑器编辑作为GIT的默认编辑器
+git config --global credential.helper store              # 存储credential(凭证)，自动保存远程仓库账号密码
+git config --global core.quotepath false                 # 关闭对0x80以上的字符进行quote， 解决git的中文乱码问题。
+git config --global core.autocrlf true                   # 自动转换LF和CRLF(不同操作系统换行不同问题)。
+// git命令使用别名简化
 git config --global alias.co checkout                    # GIT命令别名 方便操作快捷
 git config --global alias.ci commit                      # GIT命令别名 方便操作快捷
 git config --global alias.st status                      # GIT命令别名 方便操作快捷
@@ -67,8 +74,7 @@ git config --global alias.br branch                      # GIT命令别名 方�
 git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
 git config --global alias.type 'cat-file -t'             # GIT命令别名 方便操作快捷
 git config --global alias.dump 'cat-file -p'             # GIT命令别名 方便操作快捷
-git config --global core.quotepath false                 # 关闭对0x80以上的字符进行quote， 解决git的中文乱码问题。
-git config --list                                        # 查看上面的配置
+
 # 查看git路径
 which git
 ```     
