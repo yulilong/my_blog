@@ -1,5 +1,7 @@
 ## VUE.JS  
 
+* [VUE开发遇见的问题](VUE开发遇见的问题)        
+
 ## angular2 
 
 * [**angularJS资料**](angularJS%E8%B5%84%E6%96%99)     
