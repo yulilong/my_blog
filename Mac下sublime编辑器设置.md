@@ -61,3 +61,5 @@ BracketHighlighter： 括号高亮匹配
 
 emmet:  HTML 中使用CSS样式语法，然后使用 tab键直接生成对应html元素
 ```
+
+### Vue Syntax Highlight : VUE语法高亮，并且智能提示
