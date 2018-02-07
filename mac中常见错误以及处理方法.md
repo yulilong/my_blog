@@ -1,4 +1,6 @@
-* **The GitHub credentials in the macOS keychain may be invalid.**     
+[TOC]
+
+## **The GitHub credentials in the macOS keychain may be invalid.**     
 
 错误信息：     
 ![WX20170321-102001.png](https://bitbucket.org/repo/oE6yEX/images/3700229192-WX20170321-102001.png)      
@@ -20,3 +22,8 @@
 https://superuser.com/questions/901992/filezilla-does-not-open-connection-putty-does       
 
 https://www.digitalocean.com/community/questions/sftp-connection-error-received-unexpected-end-of-file-from-sftp-server
+
+
+## 键盘大小写切换灯不亮，但是可以切换大小写    
+
+可能是QQ音乐播放器导致的，退出QQ音乐就好了。
