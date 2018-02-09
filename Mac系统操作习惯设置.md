@@ -90,12 +90,12 @@ http://jingyan.baidu.com/article/363872ecd5b8406e4aa16f5e.html
 
 右键移动硬盘，最下面的 `共享与权限`，点开，把锁打开，然后把当前的用户添加上就可以写入的时候不用输入管理员密码了。
 
-`![QQ20171220-001025.png](https://bitbucket.org/repo/oE6yEX/images/1853902689-QQ20171220-001025.png)`
+`![](https://bitbucket.org/repo/oE6yEX/images/1853902689-QQ20171220-001025.png)`
 
 ## finder 进入特定目录    
 finder左上角的菜单中
 finder -> 前往(go) -> 前往文件夹(go to folder)，输入路径即可：     
-`![WX20170320-132530.png](https://bitbucket.org/repo/oE6yEX/images/614659939-WX20170320-132530.png)`      
+`![](https://bitbucket.org/repo/oE6yEX/images/614659939-WX20170320-132530.png)`      
 
 ## finder中标题栏显示全路径
 
@@ -107,7 +107,7 @@ finder -> 前往(go) -> 前往文件夹(go to folder)，输入路径即可：
 // finder中标题栏只显示文件夹名字
 ~ defaults delete com.apple.finder _FXShowPosixPathInTitle;killall Finder
 ```   
-![WX20180209.png](https://bitbucket.org/repo/oE6yEX/images/3179645349-WX20180209.png)
+`![](https://bitbucket.org/repo/oE6yEX/images/3179645349-WX20180209.png)`    
 
 ## mac 系统桌面背景图片位置    
 
