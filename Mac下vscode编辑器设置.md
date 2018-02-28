@@ -28,7 +28,7 @@ vscode菜单： Code -> Preferences -> Settings(快捷键command + ，)，打开
   "[typescript]": {
     "editor.tabSize": 2
   },
-```    
+```
 
 ## 快捷键设置   
 
@@ -52,4 +52,6 @@ vscode菜单： Code -> Preferences -> Keyboard Shortcuts , 打开快捷键界�
 
 ## vscode的一些插件    
 
-### Beautify ：代码格式化插件
+### Beautify ：代码格式化插件      
+
+### GitLens supercharges : 显示每行代码GIT的提交记录
