@@ -4,9 +4,9 @@
 
 ## angular2 
 
-### [**angularJS资料**](angularJS%E8%B5%84%E6%96%99)
+### [**angularJS资料**](angularJS资料)
 
-* [**HTML,CSS常用元素**](HTML,CSS%E5%B8%B8%E7%94%A8%E5%85%83%E7%B4%A0)        
+* [**HTML,CSS常用元素**](HTML,CSS常用元素)        
 
 ## **Mac OS**  
 
@@ -18,10 +18,11 @@
 鼠标滚轮方向，关闭开机声音，关闭自动更新app Store，隐藏docker中的应用图标，find进入特定目录，系统桌面背景图片位置，     
 把应用程序图标放在finder上，显示与隐藏 隐藏文件，Mac下的 tree 命令 终端展示你的目录树结构， 右上角顶级菜单中图标管理     
 
-* [苹果系统下常用的软件](苹果系统下常用的软件)    
-Homebrew，CheatSheet, Office2016， pgadmin3，  caffeine, snip,go2shell, XtraFinder, iTerm 2, 有道词典, Bandwidth+流量监控    
-CHM View(.chm文件阅读器)， MagicanLite流量监控，lantern 蓝灯， fHash md5校验软件， MagicPrefs， Paintbrush         
-解压工具（7z）      
+* [Mac下常用的软件](Mac下常用的软件)    
+
+  Homebrew，CheatSheet, Office2016， pgadmin3，  caffeine, snip,go2shell, XtraFinder, iTerm 2, 有道词典, Bandwidth+流量监控    
+  CHM View(.chm文件阅读器)， MagicanLite流量监控，lantern 蓝灯， fHash md5校验软件， MagicPrefs， Paintbrush         
+  解压工具（7z）      
 
 * 高效macbook工作环境配置     
 http://xialeizhou.com/2019/06/23/高效macbook工作环境配置/     
@@ -39,6 +40,7 @@ http://xialeizhou.com/2019/06/23/高效macbook工作环境配置/
 * [**Mac下移动硬盘分区用做TimeMachine的备份**](Mac下移动硬盘分区用做TimeMachine的备份)     
 
 * [**Mac下sublime编辑器设置**](Mac下sublime编辑器设置)        
+
 * [**Mac下vscode编辑器设置**](Mac下vscode编辑器设置)        
 
 * Mac 键盘快捷键     
@@ -50,11 +52,12 @@ http://xialeizhou.com/2019/06/23/高效macbook工作环境配置/
 ## **centos7**       
 
 * [centos7_VNC_install](centos7_VNC_install)
-* [linux下常用的终端命令](linux%E4%B8%8B%E5%B8%B8%E7%94%A8%E7%9A%84%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4)find，mv,cp,scp, grep, chown, 查看文件大小，压缩、解压     
-* [centos7下习惯设置](centos7%E4%B8%8B%E4%B9%A0%E6%83%AF%E8%AE%BE%E7%BD%AE)      
-* [ linux下常用软件](linux%E4%B8%8B%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6)       
-* [centos7 搭建samba方法](centos7%20%E6%90%AD%E5%BB%BAsamba%E6%96%B9%E6%B3%95)
-* [ cento7 错误处理](cento7%20%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86)  
+* [linux下常用的终端命令](linux下常用的终端命令)        
+find，mv,cp,scp, grep, chown, 查看文件大小，压缩、解压     
+* [centos7下习惯设置](centos7下习惯设置)      
+* [ linux下常用软件](linux下常用软件)       
+* [centos7搭建samba方法](centos7搭建samba方法)
+* [cento7错误处理](cento7错误处理)  
 * [centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall](centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall)     
 * [virtualbox虚拟机 centos7安装增强工具](virtualbox虚拟机%20centos7安装增强工具)     
 * [**vim编辑器常用命令与用法总结**](vim编辑器常用命令与用法总结)      
@@ -69,8 +72,8 @@ http://xialeizhou.com/2019/06/23/高效macbook工作环境配置/
 
 ###  **rubymine**   
 
-* [RubyMine常用快捷键](RubyMine%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE)    
-* [rubymine习惯设置](rubymine%E4%B9%A0%E6%83%AF%E8%AE%BE%E7%BD%AE)    
+* [RubyMine常用快捷键](RubyMine常用快捷键)    
+* [rubymine习惯设置](rubymine习惯设置)    
 关闭自动保存，编辑栏标签多分多行显示，编辑区的颜色设置，汉化,git修改颜色设置，代码折叠， 代码自动换行          
 
 
@@ -113,18 +116,18 @@ https://github.com/riku/Markdown-Syntax-CN
 * **深入透彻了解 Rails 应用部署：** http://ruby-china.org/wiki/deployment-rails       
 * **rails常量自动加载和重新加载机制：** http://guides.ruby-china.org/autoloading_and_reloading_constants.html       
 * **Rails缓存(使用缓存提升Rails应用的速度)：** http://guides.ruby-china.org/caching_with_rails.html　　       
-* [ruby_or_rails_错误解决](ruby_or_rails_%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3)
-* [ruby中语法、知识](ruby%E4%B8%AD%E8%AF%AD%E6%B3%95%E3%80%81%E7%9F%A5%E8%AF%86)  
-* [ruby比较常用的gems包](ruby%E6%AF%94%E8%BE%83%E5%B8%B8%E7%94%A8%E7%9A%84gems%E5%8C%85)        
-* [**rails中常见问题**](rails%E4%B8%AD%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)　　Ｎ＋１问题，       
+* [ruby_or_rails_错误解决](ruby_or_rails_错误解决)
+* [ruby中语法、知识](ruby中语法、知识)  
+* [ruby比较常用的gems包](ruby比较常用的gems包)        
+* [**rails中常见问题**](rails中常见问题)　　Ｎ＋１问题，       
 
 * **rails 视频教学资源**https://eggman.tv/serials?adsr=rubychina&ad=4bunxlsb      
 
 ### **rake**
 
-* [Ruby中任务构建工具rake的入门学习教程](Ruby%E4%B8%AD%E4%BB%BB%E5%8A%A1%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7rake%E7%9A%84%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B)          推荐读这个，简单易懂。
-* [Ruby on Rails中的Rake教程](%20Ruby%20on%20Rails%E4%B8%AD%E7%9A%84Rake%E6%95%99%E7%A8%8B)
-* [Ruby中的Rake任务详述](Ruby%E4%B8%AD%E7%9A%84Rake%E4%BB%BB%E5%8A%A1%E8%AF%A6%E8%BF%B0)
+* [Ruby中任务构建工具rake的入门学习教程](Ruby中任务构建工具rake的入门学习教程)          推荐读这个，简单易懂。
+* [Ruby on Rails中的Rake教程](Ruby on Rails中的Rake教程)
+* [Ruby中的Rake任务详述](Ruby中的Rake任务详述)
 
 
 ###**rails -> view**

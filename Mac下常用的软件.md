@@ -4,7 +4,7 @@
 
 ------------
 ## **1. Homebrew**    
-    
+
 ```  
 # Mac下包管理工具，官方称之为 The missing package manager for OS X 。   
 # 官网：https://brew.sh/index.html
@@ -36,7 +36,7 @@ $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste
 ~ brew cask uninstall chrome
 ```
 ![WX20170721-111738.png](https://bitbucket.org/repo/oE6yEX/images/415143452-WX20170721-111738.png)
-     
+​     
 ## **3. 替换系统默认Shell — Oh My ZSH!**    
 
 Bash作为大多数系统默认安装的Shell，大家都多少有所接触，Zsh和Bash类似都是一个Shell，但是Zsh更注重用户体验和与人的交互，OS X默认也安装好了Zsh，然而你想自己从头开始配置一个顺手的Zsh是比较浪费时间的，有人已经帮我们配置好了，这个流行的Zsh配置叫—Oh My ZSH!，直观的效果如下图所示，代码开源在[github](https://github.com/robbyrussell/oh-my-zsh)。  
@@ -52,7 +52,7 @@ Bash作为大多数系统默认安装的Shell，大家都多少有所接触，Zs
 # 此时还没有酷炫的效果，需要安装插件
 # 安装Oh My ZSH!
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```     
+```
 ![WX20170321-135916.png](https://bitbucket.org/repo/oE6yEX/images/1240552958-WX20170321-135916.png)   
 
 ![QQ20170721-105153.png](https://bitbucket.org/repo/oE6yEX/images/2431801281-QQ20170721-105153.png)      
@@ -65,7 +65,7 @@ SizeUp快速移动软件窗口在屏幕之间，可以在一个屏幕中上下�
 # 使用brew cask安装
 ~ brew cask install sizeup
 # SizeUp需要你的授权才能控制窗口， 打开‘系统与偏好设置’ -> ‘安全与隐私’ -> '隐私' -> '辅助功能'，把sizeup前面打上对号。
-```  
+```
 ![WX20170721-112621.png](https://bitbucket.org/repo/oE6yEX/images/1315141818-WX20170721-112621.png)
 
 ## **5. 快速切换和打开应用程序 — Manico** 
@@ -76,7 +76,7 @@ Manico 是一个为 OS X 设计的快速的 App 启动和切换工具
 # manico网站：https://manico.im/
 # 使用brew cask安装,也可以去网站上下载后安装
 ~ brew cask install manico
-``` 
+```
 
 ![WX20170721-135907.png](https://bitbucket.org/repo/oE6yEX/images/4229082922-WX20170721-135907.png)    
 
@@ -133,7 +133,7 @@ Caskroom/versions/pgadmin3
 Caskroom/cask/caffeine
 ➜  ~ brew cask install caffeine     
 # 还可以网站下载后安装：http://lightheadsw.com/caffeine/
-```    
+```
 ![WX20170321-093214.png](https://bitbucket.org/repo/oE6yEX/images/2083412284-WX20170321-093214.png)      
 
 ## **13. 好用的截屏工具-Snip**     
@@ -146,7 +146,7 @@ esniper
 Caskroom/cask/snip                       Caskroom/cask/snippets
 Caskroom/cask/snippet-edit
 ~ brew cask install snip
-```    
+```
 ![WX20170321-094805.png](https://bitbucket.org/repo/oE6yEX/images/3290402285-WX20170321-094805.png)        
 
 ## **14. go2shell  快速进入Shell**      
@@ -168,10 +168,10 @@ Caskroom/cask/go2shell
 ➜  ~ brew cask uninstall go2shell
 # 配置文件
 ➜  ~ open -a Go2Shell --args config
-```     
+```
 ![WX20170321-103534.png](https://bitbucket.org/repo/oE6yEX/images/2256324488-WX20170321-103534.png)   
 ![WX20170321-145452.png](https://bitbucket.org/repo/oE6yEX/images/1982697557-WX20170321-145452.png) 
-   
+
 
 ## **15. 增强资源管理器 — XtraFinder**     
 
@@ -188,7 +188,7 @@ MacBook自带的资源管理器(Finder)已经可以满足一般的需要，但�
 Caskroom/cask/xtrafinder
 ➜  ~ brew cask install xtrafinder
 ➜  ~ brew cask uninstall xtrafinder
-```    
+```
 ![WX20170321-104704.png](https://bitbucket.org/repo/oE6yEX/images/2821437663-WX20170321-104704.png)      
 
 ## **16. 替换系统默认终端 — iTerm 2**      
@@ -295,7 +295,7 @@ http://www.sublimetext.com/
 ```
 ~ brew search expect
 ~ brew install expect
-```     
+```
 
 ## **文件恢复软件TestDisk **    
 
@@ -330,12 +330,24 @@ Downloading https://homebrew.bintray.com/bottles/p7zip-16.02.high_sierra.bot
 
 // 解压命令 解压 演讲稿.7z 
 7z e 演讲稿.7z 
-```   
+```
 
-## 好用的Markdown编辑显示工具   
+## typora: Markdown编辑器   
 
 https://www.typora.io/     
 这个 Mac、Windows 都有，可以显示编辑软件，下载相应版本后安装就可以了。  
 
 这个编辑器的好处是可以显示 `[TOC]`目录结构在左边，方便预览查看。     
-详细介绍： https://www.jianshu.com/p/5256ecc06eec
+详细介绍： https://www.jianshu.com/p/5256ecc06eec       
+
+## PS6 安装     
+
+软件下载： 
+https://pan.baidu.com/s/1boZWCzH       
+https://pan.baidu.com/s/1boZWCzH     
+
+* 安装     
+
+1. 断开网络。     
+2. 双击安装程序，选择试用(try)，然后点击安装。    
+3. 在应用程序文件夹里面找到PS6，右键显示包内容(show package content), 然后找到contents/framework文件夹，把amtlib.framework文件拷贝到里面，OK。
