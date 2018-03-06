@@ -351,3 +351,5 @@ https://pan.baidu.com/s/1boZWCzH
 1. 断开网络。     
 2. 双击安装程序，选择试用(try)，然后点击安装。    
 3. 在应用程序文件夹里面找到PS6，右键显示包内容(show package content), 然后找到contents/framework文件夹，把amtlib.framework文件拷贝到里面，OK。
+
+参考链接： https://www.jianshu.com/p/097353202b66      

@@ -49,6 +49,9 @@ vscode菜单： Code -> Preferences -> Keyboard Shortcuts , 打开快捷键界�
 在搜索框中输入：`delete`, 找到`Delete Line`删除一行，修改为自己的快捷键：`command + delete`，    
 默认的快捷键：`shift + command + K`.   
 
+### 将选择添加到下一个查找匹配项(Add Selection To Next Find Match)      
+在快捷键页面搜索框中输入：`Add Selection To Next`(将选择添加到下一个)        
+事件的默认快捷键：`cmd + D`
 
 ## vscode的一些插件    
 
