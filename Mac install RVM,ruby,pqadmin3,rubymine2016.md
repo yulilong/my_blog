@@ -22,7 +22,9 @@ $ rvm -v
 # 如果出现邦本则说明安装成功
 ```
 
-## **2. 安装 rubymine ruby编辑器**      
+![](https://bitbucket.org/repo/oE6yEX/images/2698900278-WX20180319-012130.png)
+
+## 2. 安装 rubymine ruby编辑器      
 
 ## **rubymine 2017安装**
 
@@ -39,7 +41,7 @@ $ rvm -v
 Caskroom/versions/pgadmin3
 ~ brew install Caskroom/versions/pgadmin3
 ```
-![WX20170308-104055.png](https://bitbucket.org/repo/oE6yEX/images/3516961668-WX20170308-104055.png)     
+![](https://bitbucket.org/repo/oE6yEX/images/3516961668-WX20170308-104055.png)     
 
 
 * 修改数据库配置文件，允许连接
