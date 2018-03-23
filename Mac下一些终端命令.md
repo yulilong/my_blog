@@ -1,4 +1,4 @@
-[TOC]   
+[TOC]
 
 ## 介绍   
 
@@ -6,7 +6,48 @@ macos的很多用户都是做it相关的人，类unix系统带来了很多方面
 
 Max OS X使用的是 BSD版本的命令行工具，这些命令跟 Linux版本是有些不同的，然而它们都遵循 POSIX 标准。    
 
-资料：  http://blog.csdn.net/orangleliu/article/details/47357339
+资料：  http://blog.csdn.net/orangleliu/article/details/47357339      
+
+## 终端快捷键
+
+```
+control + L			// 终端清屏，相当于 clear命令
+```
+
+
+
+
+
+## 终端光标做操快捷键
+
+Mac Terminal终端和Linux上终端光标的快捷键操作是一样的，都是来自Emacs这个神级的编辑器,跟VIM不一样。
+
+```
+Ctrl + a        光标移动到行首（Ahead of line），相当于通常的Home键
+Ctrl + e        光标移动到行尾（End of line）
+Alt+← 或 ESC+B：左移一个单词；
+Alt+→ 或 ESC+F：右移一个单词；
+Ctrl + d        删除一个字符，相当于通常的Delete键（命令行若无所有字符，则相当于exit；处理多行标准输入时也表示eof）
+Ctrl + h        退格删除一个字符，相当于通常的Backspace键
+Ctrl + u        删除光标之前到行首的字符
+Ctrl + k        删除光标之前到行尾的字符
+Ctrl + c        取消当前行输入的命令，相当于Ctrl + Break
+Ctrl + f        光标向前(Forward)移动一个字符位置
+Ctrl + b        光标往回(Backward)移动一个字符位置
+Ctrl + l        清屏，相当于执行clear命令
+Ctrl + p        调出命令历史中的前一条（Previous）命令，相当于通常的上箭头
+Ctrl + n        调出命令历史中的下一条（Next）命令，相当于通常的上箭头
+Ctrl + r        显示：号提示，根据用户输入查找相关历史命令（reverse-i-search）
+
+次常用快捷键：
+Alt + f         光标向前（Forward）移动到下一个单词
+Alt + b         光标往回（Backward）移动到前一个单词
+Ctrl + w        删除从光标位置前到当前所处单词（Word）的开头
+Alt + d         删除从光标位置到当前所处单词的末尾
+Ctrl + y        粘贴最后一次被删除的单词
+```
+
+
 
 
 ## **查看进程**    
@@ -16,7 +57,7 @@ Max OS X使用的是 BSD版本的命令行工具，这些命令跟 Linux版本�
 ~ ps aux|grep 进程名字
 # 动态显示进程
 ~ top
-```  
+```
 
 ## **查看端口号**   
 
@@ -30,7 +71,7 @@ lsof -i:8080
 lsof -Pnl +M -i6
 
 ~ sudo netstat antup
-```   
+```
 
 参考链接：     
 
@@ -48,7 +89,7 @@ export http_proxy=http://proxyAddress:port
 
 export http_proxy="http://127.0.0.1:1080"
 export https_proxy="http://127.0.0.1:1080"
-```  
+```
 
 这个办法的好处是简单直接，并且影响面很小（只对当前终端有效）。      
 
