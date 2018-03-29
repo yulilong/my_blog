@@ -13,7 +13,7 @@
 
 ```
 import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
-```  
+```
 
 ### 3. 检查是否安装成功：`Sublime Text -> Preferences -> Package Control`    
 
@@ -43,7 +43,7 @@ import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe0
 ### 3. 更新插件 
 
 #### ① 在Package Control 中 输入`upgrade packages`选择`Package Cont:Upgrade/Overwrite All Packages`    
-  
+
 
 ## **四、一些包插件**   
 
@@ -63,3 +63,64 @@ emmet:  HTML 中使用CSS样式语法，然后使用 tab键直接生成对应htm
 ```
 
 ### Vue Syntax Highlight : VUE语法高亮，并且智能提示
+
+
+
+## 五、sublime快捷键
+
+
+
+```
+cmd + K cmd + B   		//显示隐藏侧边栏 (文件目录)
+```
+
+
+
+## 六、修改sublime默认快捷键
+
+参考链接： https://blog.csdn.net/xuchao2015/article/details/52556927        
+
+打开sublime，左上角：sublime Text -> Preferences -> Key Bindings, 打开修改快捷键文件。
+
+文件左边内容类似于：
+
+```
+[
+	{ "keys": ["super+shift+n"], "command": "new_window" },
+	{ "keys": ["super+shift+w"], "command": "close_window" },
+	{ "keys": ["super+o"], "command": "prompt_open" },
+	{ "keys": ["super+shift+t"], "command": "reopen_last_file" },		
+]
+```
+
+keys里面是快捷键，command里面是快捷键说明。
+
+```
+up
+down
+right
+left
+insert
+home
+end
+pageup
+pagedown
+backspace
+delete
+tab
+enter
+shift
+ctrl
+alt
+super (这个就是win键, mac上是commond键)
+```
+
+找到需要修改的快捷键，然后在右边修改：
+
+```
+[
+	//{ "keys": ["super+shift+d"], "command": "duplicate_line" },
+	{ "keys": ["super+d"], "command": "duplicate_line" },
+]
+```
+

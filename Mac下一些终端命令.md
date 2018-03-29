@@ -12,6 +12,7 @@ Max OS X使用的是 BSD版本的命令行工具，这些命令跟 Linux版本�
 
 ```
 control + L			// 终端清屏，相当于 clear命令
+open 文件名		// 使用默认程序打开文件 如 open . 使用finder打开该目录
 ```
 
 
