@@ -283,6 +283,16 @@ http://bbs.feng.com/read-htm-tid-445826.html
 
 ***注意：这个软件会是系统的快速移动鼠标以定位鼠标位置***         
 
+
+
+## duet 扩展屏软件
+
+https://www.duetdisplay.com/
+
+**Duet Display** 就可以把 iPad 或 iPhone 变成你电脑的第二台显示器！相对于通过「网络[远程](https://www.iplaysoft.com/tag/%E8%BF%9C%E7%A8%8B)控制」实现屏幕扩展的同类 APP，Duet 通过 [USB](https://www.iplaysoft.com/tag/usb) 数据线传输画面，无论清晰度、稳定性还是流畅度都完胜。即使开启 Retina 视网膜分辨率，仍能保持 60 FPS 低延迟不卡顿，实际体验相当好     
+
+**DuetDisplay** 电脑端支持 [macOS](https://www.iplaysoft.com/macos-sierra.html) 和 Windows，也就是说，无论是 PC 台式机、笔记本还是 [Macbook](https://www.iplaysoft.com/go/mac)、iMac 等设备通通都能用它来扩展[桌面](https://www.iplaysoft.com/tag/%E6%A1%8C%E9%9D%A2)！而且不仅仅是显示内容，Duet 还可以让这块 “扩展屏幕” 增加「触摸和手势操作」、支持 [Apple Pencil](https://www.iplaysoft.com/go/applepencil) 数字笔、以及增加 TouchBar 等特性的支持。
+
 ## **sublime text 3** 
 
 http://www.sublimetext.com/     
