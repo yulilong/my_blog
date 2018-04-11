@@ -116,7 +116,8 @@ super (这个就是win键, mac上是commond键)
 ```
 [
 	//{ "keys": ["super+shift+d"], "command": "duplicate_line" },
-	{ "keys": ["super+d"], "command": "duplicate_line" },
+	{ "keys": ["super+d"], "command": "duplicate_line" },	// 复制一行
+	 { "keys": ["ctrl+alt+l"], "command": "reindent" },  	// 格式化代码
 ]
 ```
 

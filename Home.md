@@ -28,7 +28,7 @@
 * [Mac下常用的软件](Mac下常用的软件)    
 
   Homebrew，CheatSheet, Office2016， pgadmin3，  caffeine, snip,go2shell, XtraFinder, iTerm 2, 有道词典, Bandwidth+流量监控    
-  CHM View(.chm文件阅读器)， MagicanLite流量监控，lantern 蓝灯， fHash md5校验软件， MagicPrefs， Paintbrush         
+  CHM View(.chm文件阅读器)， MagicanLite流量监控，lantern 蓝灯， fHash md5校验软件， MagicPrefs， Paintbrush    Hostbuddy     
   解压工具（7z）      
 
 * 高效macbook工作环境配置     

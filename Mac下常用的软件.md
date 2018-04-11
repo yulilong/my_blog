@@ -3,7 +3,7 @@
 [TOC]
 
 ------------
-## **1. Homebrew**    
+## 1. Homebrew    
 
 ```  
 # Mac下包管理工具，官方称之为 The missing package manager for OS X 。   
@@ -18,7 +18,7 @@ $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste
 ```
 `![WX20170721-110833.png](https://bitbucket.org/repo/oE6yEX/images/2928716488-WX20170721-110833.png)`
 
-## **2. Homebrew Cask**    
+## 2. Homebrew Cask    
 `brew cask` 允许你使用命令行安装 OS X 应用。比如你可以这样安装 Chrome： `brew cask install google-chrome` 。还有 Evernote、Skype、Sublime Text、VirtualBox 等都可以用 `brew cask` 安装。      
 `brew-cask` 是社区驱动的，如果你发现 `brew cask` 上的应用不是最新版本，或者缺少你某个应用，你可以自己提交 pull request。  
 应用也可以通过 App Store 安装，而且有些应用只能通过 App Store 安装，比如 Xcode 等一些 Apple 的应用。App Store 没有对应的命令行工具，还需要 Apple ID。倒是更新起来很方便。     
@@ -37,7 +37,7 @@ $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste
 ```
 ![WX20170721-111738.png](https://bitbucket.org/repo/oE6yEX/images/415143452-WX20170721-111738.png)
 ​     
-## **3. 替换系统默认Shell — Oh My ZSH!**    
+## 3. 替换系统默认Shell — Oh My ZSH!    
 
 Bash作为大多数系统默认安装的Shell，大家都多少有所接触，Zsh和Bash类似都是一个Shell，但是Zsh更注重用户体验和与人的交互，OS X默认也安装好了Zsh，然而你想自己从头开始配置一个顺手的Zsh是比较浪费时间的，有人已经帮我们配置好了，这个流行的Zsh配置叫—Oh My ZSH!，直观的效果如下图所示，代码开源在[github](https://github.com/robbyrussell/oh-my-zsh)。  
 ```
@@ -57,7 +57,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 ![QQ20170721-105153.png](https://bitbucket.org/repo/oE6yEX/images/2431801281-QQ20170721-105153.png)      
 
-## **4. 窗口管理软件 – SizeUp**  
+## 4. 窗口管理软件 – SizeUp  
 
 SizeUp快速移动软件窗口在屏幕之间，可以在一个屏幕中上下左右移动，也可以在2个显示器之间移动，该软件可以永久免费试用。    
 ```
@@ -68,7 +68,7 @@ SizeUp快速移动软件窗口在屏幕之间，可以在一个屏幕中上下�
 ```
 ![WX20170721-112621.png](https://bitbucket.org/repo/oE6yEX/images/1315141818-WX20170721-112621.png)
 
-## **5. 快速切换和打开应用程序 — Manico** 
+## 5. 快速切换和打开应用程序 — Manico 
 
 MacBook系统默认设置了一个快捷键来显示当前运行中的应用程序，同时按下tab + command.     
 Manico 是一个为 OS X 设计的快速的 App 启动和切换工具    
@@ -83,38 +83,38 @@ Manico 是一个为 OS X 设计的快速的 App 启动和切换工具
 
 
 --------------------------
-## **6. FileZilla**    
+## 6. FileZilla    
 
 这个软件可以连接远程电脑并且可以上传下载文件，并且在线编辑文件。这个软件在Windows，Linux，Mac OS 都有客户端，下载地址：    
 https://filezilla-project.org/download.php?type=client     
 
-##  **7. keyCue**     
+##  7. keyCue     
 
 安装后，只要按住cmd键，就可以显示当前所有可用快捷键，放开后恢复，非常方便。效率生活必备。     
 http://www.yxdown.com/soft/247108.html      
 注册码： KC-FMO-032015-S-426-631227-819538-50    
 
-## **8. CheatSheet**   
+## 8. CheatSheet   
 CheatSheet 能够显示当前程序的快捷键列表，默认的快捷键是长按 ⌘ 。     
 安装：    
 sh    
 brew cask install cheatsheet    
 ![WX20170224-105425.png](https://bitbucket.org/repo/oE6yEX/images/1600589099-WX20170224-105425.png)     
 
-## **9. IINA视频播放器**  
+## 9. IINA视频播放器  
 https://lhc70000.github.io/iina/     
 https://github.com/lhc70000/iina    
 终端： brew cask install iina    
 ![WX20170224-162357.png](https://bitbucket.org/repo/oE6yEX/images/2666330251-WX20170224-162357.png)       
 
-## **10. Office 2016 for Mac**     
+## 10. Office 2016 for Mac     
 http://bbs.feng.com/read-htm-tid-10868252.html      
 安装完后不要打开office软件，打开破解补丁.dmg，里面有把蓝色的钥匙，双击，出现一把黑色的锁，点击，输入系统密码，OK~搞定Office 2016 for Mac破解版（含破解补丁）     
 百度盘下载链接: https://pan.baidu.com/s/1c1HIrks 密码: r9kh    
 http://jingyan.baidu.com/article/ce09321b7478072bff858f03.html          
 pc6下载：http://www.pc6.com/mac/137931.html
 
-##  **11. install gadmin3**    
+##  11. install gadmin3    
 
 ```
 #终端，已经安装了brew ，cask
@@ -124,7 +124,7 @@ Caskroom/versions/pgadmin3
 ```
 ![WX20170308-104055.png](https://bitbucket.org/repo/oE6yEX/images/3516961668-WX20170308-104055.png)          
 
-## **12. caffeine 防止mac电脑休眠软件**    
+## 12. caffeine 防止mac电脑休眠软件    
 ```
 #终端，已经安装了brew ，cask
 ➜  ~ brew search caffeine
@@ -134,7 +134,7 @@ Caskroom/cask/caffeine
 ```
 ![WX20170321-093214.png](https://bitbucket.org/repo/oE6yEX/images/2083412284-WX20170321-093214.png)      
 
-## **13. 好用的截屏工具-Snip**     
+## 13. 好用的截屏工具-Snip     
 
 使用过QQ的朋友肯定用过上面的自带截图功能,非常好用, 支持添加圈,点,箭头甚至文字, 只要打开QQ, 任何时候都可以通过Ctrl+Command+a来截图, 但是本人平时不太常使用QQ, 截屏功能又非常常用，怎么办呢? 腾讯很贴心地把QQ里的截图功能完整地拆了出来, 成了一个新的App–Snip.      
 
@@ -147,7 +147,7 @@ Caskroom/cask/snippet-edit
 ```
 ![WX20170321-094805.png](https://bitbucket.org/repo/oE6yEX/images/3290402285-WX20170321-094805.png)        
 
-## **14. go2shell  快速进入Shell**      
+## 14. go2shell  快速进入Shell      
 
 go2shell是一个对开发者来说非常有用的app, 使用它可以在Finder里快速进入shell环境. 
 
@@ -171,7 +171,7 @@ Caskroom/cask/go2shell
 ![WX20170321-145452.png](https://bitbucket.org/repo/oE6yEX/images/1982697557-WX20170321-145452.png) 
 
 
-## **15. 增强资源管理器 — XtraFinder**     
+## 15. 增强资源管理器 — XtraFinder     
 
 MacBook自带的资源管理器(Finder)已经可以满足一般的需要，但是当你有大量文件维护操作后，你就需要一个更强大的Finder。XtraFinder完全集成到Finder里面，你根本感觉不出它是一个第三方的应用程序，同时还提供很多增强特性，比如：
 
@@ -189,7 +189,7 @@ Caskroom/cask/xtrafinder
 ```
 ![WX20170321-104704.png](https://bitbucket.org/repo/oE6yEX/images/2821437663-WX20170321-104704.png)      
 
-## **16. 替换系统默认终端 — iTerm 2**      
+## 16. 替换系统默认终端 — iTerm 2      
 
 如果你经常使用终端，那么推荐你使用iTerm 2来替代系统自带的终端。关于iTerm 2的特性，请[**看这里**](https://www.iterm2.com/features.html)。      
 iterm2的介绍：    
@@ -213,7 +213,7 @@ https://www.iterm2.com/features.html
 
 ![WX20170321-142838.png](https://bitbucket.org/repo/oE6yEX/images/2978167639-WX20170321-142838.png)       
 
-## **17. 有道词典Mac版本** 
+## 17. 有道词典Mac版本 
 
 官网下载：http://cidian.youdao.com/index-mac.html        
 取词方便，打开后，可使用快捷键唤起界面进行查词(alt + cmd + X)      
@@ -222,36 +222,36 @@ https://www.iterm2.com/features.html
 
 https://shauninman.com/archive/2016/10/20/day_o_2_mac_menu_bar_clock      
 
-## **18. Bandwidth+ Mac上免费流量监测软件**     
+## 18. Bandwidth+ Mac上免费流量监测软件     
 
 款可以实时查看网络流量的小软件，支持对 Mac 连接的无线 Wi-Fi 以及移动热点上下行流量进行实时监控记载，而且还能对网络流量进行定额记录，就在 Menubar 下可以看到流量的消耗，并且能够以天为单位将每个网络流量记录导出称 csv 文件。     
 
 1. 在 `App Store`  中搜索 `Bandwidth+`, 点击安装。    
 `![WX20170401-152107.png](https://bitbucket.org/repo/oE6yEX/images/2529262879-WX20170401-152107.png)`      
 
-## **19. MagicanLite 流量监控，CPU,内存使用 温度监控**    
+## 19. MagicanLite 流量监控，CPU,内存使用 温度监控    
 
 http://www.magicansoft.com.cn/       
 这款软件免费，可以监控流量， cup的使用率温度，GPU温度， 内存的使用率等。      
 1. 在 `App Store`  中搜索 `MagicanLite`, 点击安装。     
 ![WX20170408-165708.png](https://bitbucket.org/repo/oE6yEX/images/2542034185-WX20170408-165708.png)
 
-## **20. CHM View  .chm格式文件阅读器**    
+## 20. CHM View  .chm格式文件阅读器    
 
 免费的.chm文件阅读器。  
 1. 在 `App Store`  中搜索 `CHM View`, 点击安装。    
 ![WX20170407-152237.png](https://bitbucket.org/repo/oE6yEX/images/2353688331-WX20170407-152237.png)      
 
-## **21. Foxmail 邮件客户端**    
+## 21. Foxmail 邮件客户端   
 
 http://www.foxmail.com/mac/        
 
-## **22. lantern 蓝灯翻墙软件**     
+## 22. lantern 蓝灯翻墙软件     
 https://github.com/getlantern/forum        
 https://www.getlantern.org/    
 点击下载安装就好， 每月免费500MB流量。     
 
-## **23. paintbrush 类似Windows画图板的软件**    
+## 23. paintbrush 类似Windows画图板的软件    
 
 http://mac.brothersoft.com/paintbrush-download.html     
 http://mac.brothersoft.com/paintbrush.html      
@@ -264,26 +264,38 @@ http://mac.brothersoft.com/paintbrush-download.html
 链接: https://pan.baidu.com/s/1miObeac 密码: qikg
 
 -------------
-## **24. fHash 计算 MD5、SHA1文件校验软件**
+## 24. fHash 计算 MD5、SHA1文件校验软件
 
 https://itunes.apple.com/cn/app/fhash/id1055555711?l=en&mt=12     
 app Store 软件中搜索`fHash` 安装即可。    
 
 
 
-## **25. Kill Mouse Accel 关闭mac下鼠标加速**
+## 25. Kill Mouse Accel 关闭mac下鼠标加速
 
 用于罗技等无线鼠标卡顿解决的小插件。
 移的越快，鼠标移动距离就越大，这就是鼠标加速度。  
 http://bbs.feng.com/read-htm-tid-445826.html        
 
-## **26. MagicPrefs 苹果鼠标的多手势辅助软件**  
+## 26. MagicPrefs 苹果鼠标的多手势辅助软件  
 
 下载地址： http://magicprefs.com/    
 
 ***注意：这个软件会是系统的快速移动鼠标以定位鼠标位置***         
 
 
+
+## 27. Hostbuddy修改host地址的软件
+
+[官网地址](https://clickontyler.com/hostbuddy/)
+
+Hostbuddy 是Mac里最简单的方法来管理和更新的 /etc/hosts 文件。添加新条目，打开和关闭现有的通过一次单击。这是完美的临时和生产服务器间进行切换，或只是为了测试你的新网站在上线之前。
+
+快速而无需使用命令行添加主机条目
+打开/关闭主机组通过一次单击
+不会覆盖现有的 /etc/hosts 文件
+与 VirtualHostX 兼容
+自动刷新 DNS 缓存
 
 ## duet 扩展屏软件
 
@@ -293,19 +305,19 @@ https://www.duetdisplay.com/
 
 **DuetDisplay** 电脑端支持 [macOS](https://www.iplaysoft.com/macos-sierra.html) 和 Windows，也就是说，无论是 PC 台式机、笔记本还是 [Macbook](https://www.iplaysoft.com/go/mac)、iMac 等设备通通都能用它来扩展[桌面](https://www.iplaysoft.com/tag/%E6%A1%8C%E9%9D%A2)！而且不仅仅是显示内容，Duet 还可以让这块 “扩展屏幕” 增加「触摸和手势操作」、支持 [Apple Pencil](https://www.iplaysoft.com/go/applepencil) 数字笔、以及增加 TouchBar 等特性的支持。
 
-## **sublime text 3** 
+## sublime text 3 
 
 http://www.sublimetext.com/     
 官网下载后直接安装      
 
-## **expect 可以与终端交互的脚本语言**    
+## expect 可以与终端交互的脚本语言    
 
 ```
 ~ brew search expect
 ~ brew install expect
 ```
 
-## **文件恢复软件TestDisk **    
+## 文件恢复软件TestDisk     
 
 http://www.cgsecurity.org/wiki/下载_TestDisk    
 下载 Mac OS X Intel  的版本。       
@@ -318,7 +330,7 @@ http://www.cgsecurity.org/wiki/下载_TestDisk
 6.   按C键开始恢复。
 
 
-## **Mac下 罗技G602无线鼠标驱动下载**   
+## Mac下 罗技G602无线鼠标驱动下载   
 
 http://support.logitech.com.cn/zh_cn/product/g602-wireless-gaming-mouse#imagegallery     
 
