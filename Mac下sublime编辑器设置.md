@@ -36,12 +36,31 @@ import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe0
 2. 删除插件
    1. 在Package Control 中 输入`Remove Package`选择`Package Cont:Remove Package`   
    2. 在里面选择需要的删除插件名字，点击即可删除
-
 3. 更新插件 
     在Package Control 中 输入`upgrade packages`选择`Package Cont:Upgrade/Overwrite All Packages`    
 
 
-## **4、一些包插件**   
+## 4、查看已经安装了哪些插件
+
+1. 使用快捷键`shift + command + p`打开Package Control
+2. 输入package，选择list packages
+3. 在显示的列表中就是已经安装的package了
+
+在Mac中sublime插件的存放位置：
+
+```
+// 第一个
+/Users/[用户名]/Library/Application Support/Sublime Text 3/Installed Packages
+
+// 第二个
+/Users/[用户名]/Library/Application Support/Sublime Text 3/Packages
+// 如：里面的插件 Terminal
+/Users/[用户名]/Library/Application Support/Sublime Text 3/Packages/Terminal
+```
+
+
+
+## 5、一些包插件   
 
 ```
 Typescript Syntax: 
@@ -59,10 +78,15 @@ emmet:  HTML 中使用CSS样式语法，然后使用 tab键直接生成对应htm
 ```
 
 ### Vue Syntax Highlight : VUE语法高亮，并且智能提示
+### Terminal：直接在sublime里面打开终端插件
+
+安装好插件后， 在sublime上选择一个文件，右键 -> Open Terminal Here，即可在终端打开这个文件。
+
+Mac系统中，该命令的快捷键：`shift+command+t`.
 
 
 
-## 5、sublime快捷键
+## 6、sublime快捷键
 
 
 
@@ -72,7 +96,7 @@ cmd + K cmd + B   		//显示隐藏侧边栏 (文件目录)
 
 
 
-## 6、修改sublime默认快捷键
+## 7、修改sublime默认快捷键
 
 参考链接： https://blog.csdn.net/xuchao2015/article/details/52556927        
 
@@ -123,7 +147,7 @@ super (这个就是win键, mac上是commond键)
 
 
 
-## 7、编辑中一些快捷操作
+## 8、编辑中一些快捷操作
 
 - 从编辑器中打开finder，
 
