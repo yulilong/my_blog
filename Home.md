@@ -127,13 +127,13 @@ https://github.com/riku/Markdown-Syntax-CN
 * [ruby中语法、知识](ruby中语法、知识)  
 * [ruby比较常用的gems包](ruby比较常用的gems包)        
 * [**rails中常见问题**](rails中常见问题)　　Ｎ＋１问题，       
-
 * **rails 视频教学资源**https://eggman.tv/serials?adsr=rubychina&ad=4bunxlsb      
+* [ruby面试题](ruby面试题)
 
 ### **rake**
 
 * [Ruby中任务构建工具rake的入门学习教程](Ruby中任务构建工具rake的入门学习教程)          推荐读这个，简单易懂。
-* [Ruby on Rails中的Rake教程](Ruby on Rails中的Rake教程)
+* [ruby on Rails中的Rake教程](ruby on Rails中的Rake教程)
 * [Ruby中的Rake任务详述](Ruby中的Rake任务详述)
 
 
