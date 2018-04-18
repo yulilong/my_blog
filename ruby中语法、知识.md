@@ -26,7 +26,7 @@ p method
 p method.source_location
 #<Method: ManageIQ::Providers::Aliyun::CloudManager::Vm(ActiveRecord::Base)#_run_validate_callbacks>
 # ["/home/yulilong/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb", 749
-```    
+```
 
 * **检查一个变量是否已经定义**    
 可以用defined?，如果未定义会返回字符串"nil"，否则返回该变量的定义类型。如下面的例子:    
@@ -43,7 +43,7 @@ irb(main):011:0> defined? String
 => "constant"
 irb(main):012:0> defined? 1
 => "expression"
-```   
+```
 
 * **p caller 可以查看是谁调用了你**
 
@@ -73,7 +73,7 @@ obj.class   # => MyClass
 obj.instance_variables  # => []
 obj.my_method
 obj.instance_variables  # => [:@v]
-```     
+```
 
 * **.class的使用**   
 因为类也是一种对象，因此所有对象的特性也是类具有的特性。比如，(Class) 有自己的类，这个类就是——Class，举个例子，假如一个字符串可以通过 str#class 获得它的类 String ，那么 String 作为一个对象也可以通过 String#class 获知它自己的类。比如下面的代码:  
@@ -83,33 +83,49 @@ String.class    # => Class
 Class.class     # => Class
 ```
 
-* **类方法的定义：**
+### 类方法的定义
 
-```
+```ruby
 class HelloWorld
   def greet
   end
 end
 
-# class << 类名 ～ end
-class << HelloWorld
-  def hello
-  end
-end 
+# 1.在class <<类名 ~end 这个特殊的类定义中，以定义实例方法的形式来定义类方法
+class << HelloMethod
+    def SayHello(name)
+        puts "#{name} say hello"
+    end
+end
+HelloMethod.SayHello("Bob")
 
-# class << self ~ end
-class HelloWorld
+#2.在class上下文中使用self时，引用的对象是该类本身，因此可以使用class << self ~ end来定义
+class ClassMethod
   class << self
-    def hello
+    def Hello(name)
+      puts "#{name} say hello!"
     end
   end
 end
+ClassMethod.Hello("Bob")
 
-# def 类名.方法名 ~ end
-class << HelloWorld
-  def HelloWorld.hello
+#3.使用def 类名.方法名 ~end 这样的形式来定义类方法
+class ClassMethod
+    def ClassMethod.SayHello(name)
+        puts "#{name} say hello"
+    end
+end
+ClassMethod.SayHello("Ruby")
+
+#4.同样类似第二种方法一样使用self
+class ClassMethod
+  def self.SayHello(name)
+    puts "#{name} say hello"
   end
-end 
+end
+ClassMethod.SayHello("Bob")
+
+# 参考链接：https://www.jianshu.com/p/ae6e78602586
 ```
 * **ruby 中super和super()的区别**      
 http://blog.csdn.net/autumn20080101/article/details/8146310
@@ -214,13 +230,13 @@ false.blank?  #=> true
 1.blank?      #=> false
 [].blank?     #=> true
 [1].blank?    #=> false
-```    
+```
 * alias设置别名     
 ```
 alias 别名  原名  #直接使用方法名
 alias :别名 :原名 #使用符号名
 除了为方法设置别名外，在重定义以存在的方法时，为了能用别名调用原来的方法，也需要用alias
-```      
+```
 
 ----
 #### **ruby中的布尔值**     
