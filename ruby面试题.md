@@ -360,8 +360,247 @@ Ruby中的元编程，是可以在运行时动态地操作语言结构（如类�
 
 
 
+## rails 
+
+### active record
+
+#### 创建、查询、修改、删除
+
+```ruby
+class Product < ApplicationRecord
+end
+# 创建
+# create 方法会创建一个新记录，并将其存入数据库：
+user = User.create(name: "David", occupation: "Code Artist")
+# new 方法实例化一个新对象，但不保存：
+user = User.new
+user.name = "David"
+
+# 读取
+users = User.all	# 返回所有用户组成的集合
+user = User.first	# 返回第一个用户
+david = User.find_by(name: 'David')		# 返回第一个名为 David 的用户
+# 查找所有名为 David，职业为 Code Artists 的用户，而且按照 created_at 反向排列
+users = User.where(name: 'David', occupation: 'Code Artist').order(created_at: :desc)
+
+# 更新
+user.name = 'Dave'
+user.save			# 
+user.update(name: 'Dave')
+
+# 删除
+user.destroy
+# https://ruby-china.github.io/rails-guides/active_record_basics.html#create
+
+```
+
+上面的代码会创建 `Product` 模型，对应于数据库中的 `products` 表。同时，`products` 表中的字段也映射到 `Product` 模型实例的属性上。
+
+#### 关联模型
+
+关联原因： 操作两个有关系的表时简化操作。
+
+如果两个表有关联，比如一个作者表，一个图书表，一个作者对应多本书，如果此时删除一个作者前要先把作者对应的书删除，然后在删除作者。但是关联后，只需要在模型中删除作者语句即可，删除书的动作active_record会自动完成。
+
+- belongs_to:一对一关系
+
+  `belongs_to` 关联创建两个模型之间一对一的关系，声明所在的模型实例属于另一个模型的实例。
+
+  写belongs_to的模型里的一条记录相对于另一个表里有唯一一条记录，叫一对一。
+
+  例如有作者和图书两个模型，而且每本书只能指定给一位作者，在图书表中写上：
+
+  ```
+  class Book < ApplicationRecord
+    belongs_to :author
+  end
+  ```
+
+- has_one：一对一关系
+
+  `has_one` 关联也建立两个模型之间的一对一关系，但语义和结果有点不一样。这种关联表示模型的实例包含或拥有另一个模型的实例。例如，应用中每个供应商只有一个账户，可以这么定义供应商模型：
+
+  ```
+  class Supplier < ApplicationRecord
+    has_one :account
+  end
+  ```
+
+  has_one与belongs_to的选择：
+
+  ​
+
+- has_many ：一对多
+
+  `has_many` 关联表示模型的实例有零个或多个另一模型的实例。例如，对应用中的作者和图书模型来说，作者模型可以这样声明：
+
+  ```
+  class Author < ApplicationRecord
+    has_many :books
+  end
+  ```
+
+- `:through`: 通过第三张表来关联
+
+  `has_many :through`
+
+  这种关联表示一个模型的实例可以借由第三个模型，拥有零个和多个另一模型的实例。例如，在医疗锻炼中，病人要和医生约定练习时间。这中间的关联声明如下：
+
+  ```ruby
+  class Physician < ApplicationRecord
+    has_many :appointments
+    has_many :patients, through: :appointments
+  end
+  class Appointment < ApplicationRecord
+    belongs_to :physician
+    belongs_to :patient
+  end
+  class Patient < ApplicationRecord
+    has_many :appointments
+    has_many :physicians, through: :appointments
+  end
+  ```
+
+  `has_one :through`
+
+  这种关联表示一个模型通过第三个模型拥有另一模型的实例。例如，每个供应商只有一个账户，而且每个账户都有一个账户历史，那么可以这么定义模型：
+
+  ```
+
+  class Supplier < ApplicationRecord
+    has_one :account
+    has_one :account_history, through: :account
+  end
+   
+  class Account < ApplicationRecord
+    belongs_to :supplier
+    has_one :account_history
+  end
+   
+  class AccountHistory < ApplicationRecord
+    belongs_to :account
+  end
+  ```
+
+- has_and_belongs_to_many
+
+  直接建立两个模型之间的多对多关系，不借由第三个模型。例如，应用中有装配体和零件两个模型，每个装配体有多个零件，每个零件又可用于多个装配体，这时可以按照下面的方式定义模型：
+
+  ```ruby
+  class Assembly < ApplicationRecord
+    has_and_belongs_to_many :parts
+  end
+   
+  class Part < ApplicationRecord
+    has_and_belongs_to_many :assemblies
+  end
+  ```
 
 
+参考资料： https://ruby-china.github.io/rails-guides/association_basics.html
+
+
+
+#### 查询接口
+
+- 检索对象
+
+  ```ruby
+  find	# 检索指定主键对应的对象，没有记录find方法抛出 ActiveRecord::RecordNotFound 异常。
+  client = Client.find(10)	# 查找主键（ID）为 10 的客户
+
+  take	# 检索一条记录而不考虑排序，没有记录take方法返回 nil，而不抛出异常。
+  client = Client.take	# SELECT * FROM clients LIMIT 1
+
+  first 	# 默认查找按主键排序的第一条记录。如果没有记录，first 方法返回 nil，而不抛出异常
+  client = Client.first	# SELECT * FROM clients ORDER BY clients.id ASC LIMIT 1
+
+  last	# 默认查找按主键排序的最后一条记录。没有记录last方法返回nil，而不抛出异常。
+  client = Client.last	# SELECT * FROM clients ORDER BY clients.id DESC LIMIT 1
+  client = Client.last(3) # 返回不超过指定数量的查询结果。
+  client = Client.order(:first_name).last # 返回按照指定属性排序的最后一条记录。
+  client = Client.last!	# 和 last 方法类似,区别是没有记录会抛出 ActiveRecord::RecordNotFound 异常。
+
+  find_by	# 查找匹配指定条件的第一条记录。
+  Client.find_by first_name: 'Lifo'	# Client.where(first_name: 'Lifo').take
+
+  find_each 	# 批量检索记录，每条记录传入块，
+  User.find_each do |user|
+    NewsMailer.weekly(user).deliver_now
+  end
+
+  ```
+
+- 条件查询
+
+  `where` 方法用于指明限制返回记录所使用的条件，相当于 SQL 语句的 `WHERE` 部分。条件可以使用字符串、数组或散列指定。
+
+  ```ruby
+  纯字符串条件:容易受到 SQL 注入攻击的风险。
+  Client.where("orders_count = '2'")	# 查找所有 orders_count 字段的值为 2 的客户记录。
+
+  数组条件: 后面的参数会替换前面的问号(？)
+  Client.where("orders_count = ?", params[:orders])
+  Client.where("orders_count = ? AND locked = ?", params[:orders], false)
+
+  条件中的占位符
+  Client.where("created_at >= :start_date AND created_at <= :end_date",
+    {start_date: params[:start_date], end_date: params[:end_date]})
+
+  散列条件
+  Client.where(locked: true)	# SELECT * FROM clients WHERE (clients.locked = 1)
+
+  NOT 条件：先调用没有参数的 where 方法，然后马上链式调用 not 方法，就可以生成这个查询。
+  Client.where.not(locked: true)	# SELECT * FROM clients WHERE (clients.locked != 1)
+
+  ```
+
+- 排序
+
+  ```ruby
+  按 created_at 字段的升序方式取回记录：
+  Client.order(:created_at)
+
+  还可以使用 ASC（升序） 或 DESC（降序） 指定排序方式：
+  Client.order(created_at: :desc)
+  Client.order(created_at: :asc)
+  Client.order(orders_count: :asc, created_at: :desc)
+
+  ```
+
+  ​
+
+### 数据库基本操作
+
+1. **插入数据**
+
+   ```
+   insert into <tablename> (field1,field2,field3..) values (value1,value2,value3);
+   ```
+
+2. **查询**
+
+   ```
+   select * from <tablename>;
+   select  <*/filed> select from <tablename> where <field>=<key>;
+   select <*/field> form <tablename> where <field> like '%value%';	// 模糊查询
+   ```
+
+3. **删除（Delete）**
+
+   ```
+   delete from <tablename> where <条件（和查询时条件类似）>
+   ```
+
+4. **更新（update)**
+
+   ```
+   update <tablename> set <field>=<value> where <条件(和查询时类似）>;
+   ```
+
+参考链接：https://blog.csdn.net/yuanmxiang/article/details/51683232
+
+https://www.cnblogs.com/daxueshan/p/6687521.html
 
 
 
