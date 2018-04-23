@@ -297,6 +297,14 @@ Hostbuddy 是Mac里最简单的方法来管理和更新的 /etc/hosts 文件。�
 与 VirtualHostX 兼容
 自动刷新 DNS 缓存
 
+
+
+## 28. FOLX 5Downloader for Mac
+
+https://mac.eltima.com/download-manager.html
+
+mac 下下载工具，有免费版。
+
 ## duet 扩展屏软件
 
 https://www.duetdisplay.com/
