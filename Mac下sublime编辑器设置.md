@@ -1,6 +1,6 @@
 [TOC]
 
-## **1、安装Package Control**    
+## 1、安装Package Control    
 
 在安装之前需要自导sublime的版本，打开finder，按快捷键`shift + command + .`显示隐藏文件，选择用户下的资源库，    
 选择`Application Support` 文件夹，在里面找到`sublime Text 3` 文件夹，看名字就只到是哪个版本的了。    
@@ -20,7 +20,7 @@ import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe0
 点击Preferences。如果安装成功了，Package Settings 、Package Control会出现在菜单里了。   
 安装参考链接：https://jingyan.baidu.com/article/455a99508b7ccda1662778e0.html    
 
-## **2、sublime 使用Package Control安装插件**
+## 2、sublime 使用Package Control安装插件
 
 1. 使用快捷键`shift + command + p`或 `Sublime Text -> Preferences -> Package Control`打开Package Control     
 
@@ -30,7 +30,7 @@ import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe0
 
 4. 包的安装路径:`/Users/dragon/Library/Application Support/Sublime Text 3/Installed Packages`    
 
-## **3、删除插件、更新插件**   
+## 3、删除插件、更新插件   
 
 1. 使用快捷键`shift + command + p`或 `Sublime Text -> Preferences -> Package Control`打开Package Control   
 2. 删除插件
@@ -152,3 +152,39 @@ super (这个就是win键, mac上是commond键)
 - 从编辑器中打开finder，
 
   编辑器打开一个文件，在编辑区右键 -> Reveal in Finder,即可在finder中显示这个文件。
+
+
+
+## 9、sublime设置可以执行JS文件
+
+1. 需要安装JS运行环境nodejs
+
+   如果没有安装nodejs，需要安装[nodejs](http://nodejs.org/)    [nodejs中文网](http://nodejs.cn/)
+
+2. 在sublime中一次打开：Tools > Build System > New Build System...或者中文工具>编译系统>新编译系统 ，粘贴下面代码：
+
+   ```
+   {  
+       "cmd": ["node", "$file"],  
+       "selector": "source.js"  
+   }
+   ```
+
+3. 保存文件名为：`Node.sublime-build`, 
+
+   ```
+   // 该文件在Mac下的路径
+   /Users/用户名/Library/Application Support/Sublime Text 3/Packages/User
+
+   // 如果需要修改，可再次打开这个文件修改。
+   cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+   ```
+
+4. 新建js文件，直接ctrl+b，就可以在控制台输出结果了，停止运行使用`ctrl + c`
+
+参考资料：
+
+[Sublime Text内运行javascript(ES6)](https://segmentfault.com/a/1190000002291126)
+
+[在sublime text3里面直接运行js CSDN](https://blog.csdn.net/tangxiujiang/article/details/78757468)
+
