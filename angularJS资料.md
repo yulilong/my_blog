@@ -1,9 +1,9 @@
 [**return home**](Home)     
 
--------  
+-------
 目录结构    
 
-[TOC]    
+[TOC]
 
 ------
 ## angular4   
@@ -13,8 +13,8 @@
 
 * [**网页编程中HTML,CSS中遇到的问题**](网页编程中HTML,CSS中遇到的问题)        
 
- 
------    
+
+-----
 ## 工作
 
 * [**angularJS开发遇见的问题**](angularJS%E5%BC%80%E5%8F%91%E9%81%87%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98)       
@@ -36,7 +36,7 @@ API 网关地址 配置，服务注册使用，模块组件注册使用，CSS样
 jQuery,  easyui， ngx-img: 图片上传插件        
 
 * [**TS_JS中一些知识点**](TS_JS中一些知识点)        
- 
+
 * [** jas前端样式规范**](jas前端样式规范)     
 
 * [**前端编程规范**](前端编程规范)      
@@ -54,27 +54,19 @@ jQuery,  easyui， ngx-img: 图片上传插件
 ## angular2相关资料
 
 * [**NPM使用介绍**](NPM使用介绍)     
-
+* [NPM安装包常见问题](NPM安装包常见问题)
 * [**package.json文件详解**](package.json文件详解)     
-
 * **angularJS官方文档**      
-https://angular.cn/           
-https://angular.cn/docs/ts/latest/  这个里面包含： 快速起步 开发指南   API 参考 (v2.4.5)    
- 
+  https://angular.cn/           
+  https://angular.cn/docs/ts/latest/  这个里面包含： 快速起步 开发指南   API 参考 (v2.4.5)    
 * **大漠穷秋angular2示例有视频教程** http://git.oschina.net/mumu-osc/NiceFish      
-
 * **Angular2优质学习资源收集**  https://my.oschina.net/mumu/blog/831790
-
 * **编辑器： **         
-下载地址： https://code.visualstudio.com     
-帮助文档：https://code.visualstudio.com/docs 
-
+  下载地址： https://code.visualstudio.com     
+  帮助文档：https://code.visualstudio.com/docs 
 * **AngularJS执行流程详解** http://www.cnblogs.com/shytong/p/5011411.html    
-
 * **Webpack入门** http://www.cnblogs.com/kagol/archive/2016/01/23/5152734.html
-
 * **rxjs官方文档中文翻译(observable可观察对象)** https://www.gitbook.com/book/buctwbzs/rxjs/details       
-
 * **Promise 对象** https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise       
 
 
@@ -96,7 +88,7 @@ http://v3.bootcss.com/css/
 * [**JavaScript语法**](JavaScript%E8%AF%AD%E6%B3%95)     
 
 * [**怎么轻松学习JavaScript**](http://www.jianshu.com/p/cba0eeba2371)       
- 
+
 * [**this 的值到底是什么？**](https://zhuanlan.zhihu.com/p/23804247)      
 * [**什么是 JS 原型链？**](https://zhuanlan.zhihu.com/p/23090041?refer=study-fe)     
 * [**JS 的 new 到底是干什么的？**](https://zhuanlan.zhihu.com/p/23987456?refer=study-fe)      
@@ -134,7 +126,6 @@ http://www.imooc.com/learn/763
  http://babeljs.io/          
 
 30分钟掌握ES6/ES2015核心内容 : http://www.jianshu.com/p/ebfeb687eb70    
- 
 
 ----------
 ## HTML CSS 
@@ -160,6 +151,6 @@ HTML 定义了网页的内容，CSS 描述了网页的布局，JavaScript 网页
 #### w3school http://www.w3school.com.cn/       
 * **HTML 参考手册：**http://www.w3school.com.cn/tags/index.asp       
 * **CSS 参考手册：**http://www.w3school.com.cn/cssref/index.asp      
-   
+  
 * **Web API 接口： **https://developer.mozilla.org/zh-CN/docs/Web/API       
 * **CSS参考手册： **  http://css.doyoe.com/
