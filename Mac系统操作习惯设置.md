@@ -196,7 +196,17 @@ defaults write com.apple.finder AppleShowAllFiles No && killall Finder //不显�
 
 System Preferences -> Keyboard -> Text:     Capitalize words automatically(去掉前面的对号即可)
 
+### 15、使用Mail绑定outlook邮箱
 
+1. 打开Mail， 左上角菜单中， mail -> add account(邮件 -> 添加账户)
+2. 选择 Exchange > 继续
+3. 输入Exchange账户的名称、电子邮件地址和密码 > 登陆
+4. 选择想要使用此账户Mac应用程序
+5. 单击完成
+
+如果邮件程序不能自动设置您的帐户，请稍等几分钟或几小时，然后重复这些步骤。如果重复步骤之后，邮件仍不能自动设置帐户，请参阅本文中的[我还需了解哪些信息？](https://support.office.com/zh-cn/article/%E5%9C%A8-Mac-OS-X-%E9%82%AE%E4%BB%B6%E4%B8%AD%E8%AE%BE%E7%BD%AE%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6-de372dc4-9648-4044-a76c-e8a60e178d54#__toc325987771)。
+
+[mac 支持](https://support.office.com/zh-cn/article/%E5%9C%A8-Mac-OS-X-%E9%82%AE%E4%BB%B6%E4%B8%AD%E8%AE%BE%E7%BD%AE%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6-de372dc4-9648-4044-a76c-e8a60e178d54)
 
 ---------
 
