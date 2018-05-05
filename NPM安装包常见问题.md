@@ -25,4 +25,5 @@
    npm config set registry https://registry.npmjs.org/
    ```
 
-   ​
+   这个问题有的时候会发生，有时没问题，看人品了。
+
