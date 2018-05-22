@@ -3,13 +3,14 @@
 [TOC]
 
 
-## 常用命令    
+## 1. 常用命令    
 
 ```
 ~ npm install express         // 安装express到项目中，安装的是最新版本
 ~ npm install express@3.0.6   // 安装express的3.0.6版本，  安装特定版本
 ~ npm install <name> -g       // 将包安装到全局环境中
 ~ npm install lodash --save   // save 在package.json文件的dependencies字段添加该package的名称和版本号
+~ npm install lodash --save-dev   // 在package.json文件的devDependencies字段添加该package的名称和版本号
 ~ npm i <name> -g             // 将包安装到全局环境中 i 是 install 的缩写，如果用i失败，则用install试试
 ~ npm init                    // 会引导你创建一个package.json文件，包括名称、版本、作者这些信息等
 ~ npm remove <name>           // 移除
@@ -37,7 +38,7 @@ npm 命令参数：
 ```
 
 -------------
-## **cnpm 介绍**
+## 2. cnpm 介绍
 
 1. 说明：因为npm安装插件是从国外服务器下载，受网络影响大，可能出现异常，如果npm的服务器在中国就好了，所以我们乐于分享的淘宝团队干了这事。来自官网：“这是一个完整 npmjs.org 镜像，你可以用此代替官方版本(只读)，同步频率目前为 10分钟 一次以保证尽量与官方服务同步。” 这就是cnpm.       
 2. 官方网址：http://npm.taobao.org       
@@ -47,7 +48,7 @@ npm 命令参数：
 5. **cnpm跟npm用法完全一致，只是在执行命令时将npm改为cnpm。**
 
 ---------
-## npm一些命令介绍
+## 3. npm一些命令介绍
 
 ### **一、npm install 安装原理**      
 
@@ -56,7 +57,7 @@ npm install 命令用来安装模块到node_modules目录。
 如果你希望，一个模块不管是否安装过，npm 都要强制重新安装，可以使用-f或--force参数。
 ```
 $ npm install <packageName> --force
-```     
+```
 
 ### **二、npm update**     
 
@@ -97,13 +98,13 @@ npm install或npm update命令，从 registry 下载压缩包之后，都存放�
 ```
 $ npm config get cache
 $HOME/.npm
-```   
+```
 你最好浏览一下这个目录。     
 ```
 $ ls ~/.npm 
 # 或者
 $ npm cache ls
-```    
+```
 你会看到里面存放着大量的模块，储存结构是{cache}/{name}/{version}。        
 ```
 $ npm cache ls react
@@ -123,7 +124,7 @@ $ npm cache ls react
   },
   "_etag":"\"7S37I0775YLURCFIO8N85FO0F\""
 }
-```   
+```
 对于一些不是很关键的操作（比如npm search或npm view），npm会先查看.cache.json里面的模块最近更新时间，跟当前时间的差距，是不是在可接受的范围之内。如果是的，就不再向远程仓库发出请求，而是直接返回.cache.json的数据。       
 .npm目录保存着大量文件，清空它的命令如下。         
 ```
@@ -140,7 +141,7 @@ Node模块的安装过程是这样的:
 2. npm 向 registry 查询模块压缩包的网址
 3. 下载压缩包，存放在~/.npm目录
 4. 解压压缩包到当前项目的node_modules目录
-```  
+```
 注意，一个模块安装以后，本地其实保存了两份。一份是~/.npm目录下的压缩包，另一份是node_modules目录下解压后的代码。        
 但是，运行npm install的时候，只会检查node_modules目录，而不会检查~/.npm目录。也就是说，如果一个模块在～/.npm下有压缩包，但是没有安装在node_modules目录中，npm 依然会从远程仓库下载一次新的压缩包。        
 这种行为固然可以保证总是取得最新的代码，但有时并不是我们想要的。最大的问题是，它会极大地影响安装速度。即使某个模块的压缩包就在缓存目录中，也要去远程仓库下载，这怎么可能不慢呢？          
@@ -157,7 +158,7 @@ $ npm install --cache-min 9999999 <package-name>
 它还有另一种写法:    
 ```
 $ npm install --cache-min Infinity <package-name>
-```    
+```
 但是，这并不等于离线模式，这时仍然需要网络连接。因为现在的--cache-min实现有一些问题。         
 ```
 （1）如果指定模块不在缓存目录，那么 npm 会连接 registry，下载最新版本。这没有问题，但是如果指定模块在缓存目录之中，npm 也会连接 registry，发出指定模块的 etag ，服务器返回状态码304，表示不需要重新下载压缩包。
@@ -182,14 +183,14 @@ npm 团队知道存在这些问题，正在重写 cache。并且，将来会提�
 http://www.ruanyifeng.com/blog/2016/01/npm-install.html      
 
 ----------
-## 更换npm的源地址 加快国内安装速度     
+## 4. 更换npm的源地址 加快国内安装速度     
 
 查看npm包的源地址（包下载地址）：   
 
 ```
 npm config get registry 
 https://registry.npmjs.org/
-```   
+```
 
 更换npm的源地址:  
 
@@ -201,6 +202,29 @@ npm config set registry https://registry.npmjs.org/
 ```
 
 参考链接：http://blog.csdn.net/v2810769/article/details/52585662
+
+## 5. npm的其他配置
+
+1. 运行 `npm config set loglevel http`，让你知道 npm 发的每一个请求
+
+2. 运行 `npm config set progress false`，关闭那个无聊的进度条
+
+3. 运行 `npm config set registry https://registry.npm.taobao.org/` ， 从淘宝的服务器下载各种包。不过这会让你在运行 `npm adduser` 的时候出问题，想要恢复成原样，只需要运行 `npm config delete registry` 即可。
+
+4. 运行`npm config get`
+
+5. 运行 `touch ~/.bashrc; echo 'export PHANTOMJS_CDNURL="http://npm.taobao.org/mirrors/phantomjs"' >> ~/.bashrc` 让 npm 从淘宝下载 phantomjs
+
+6. 运行 `touch ~/.bashrc; echo 'export SASS_BINARY_SITE="https://npm.taobao.org/mirrors/node-sass"' >> ~/.bashrc` 让 npm 从淘宝下载 SASS
+
+7. 运行 `source ~/.bashrc`,应用上面的设置
+
+   
+
+
+
+
+
 
 
 ## 参考链接     
