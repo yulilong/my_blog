@@ -36,3 +36,36 @@
 
    还有一种情况，使用淘宝源： 使用公司网络安装失败，但是使用自己网络则安装成功。
 
+### 2. listen EADDRINUSE 服务端口被占用报错
+
+```
+npm start
+
+> webpack-dev-server --config ./config/webpack.config.dev.js
+
+events.js:160
+      throw er; // Unhandled 'error' event
+      ^
+Error: listen EADDRINUSE 127.0.0.1:8080
+    at Object.exports._errnoException (util.js:1018:11)
+    at exports._exceptionWithHostPort (util.js:1041:20)
+    at Server._listen2 (net.js:1258:14)
+    at listen (net.js:1294:10)
+```
+
+当使用`npm start`启动一个web开发服务时，显示上面错误，经查找是端口(8080)被占用了。
+
+解决方法：
+
+1. 换一个端口，重新运行即可。
+2. 找到被占用的端口，关掉占用的端口，重新运行即可。
+
+```
+// 查看是哪个进程占用的端口
+~ sudo lsof -n -P | grep :8080
+
+node      6534             dragon   14u     IPv4 0x3cf6bb332552824d        0t0        TCP 127.0.0.1:8080 (LISTEN)
+// 关闭这个服务
+kill -9 6534
+```
+
