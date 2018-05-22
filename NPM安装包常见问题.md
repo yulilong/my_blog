@@ -14,15 +14,22 @@
        at PassThrough.Writable.end (_stream_writable.js:477:10)
    ```
 
-   后来查看安装源是淘宝的，后改设置npmjs的源，但是此时由于被墙无法安装，架上梯子后顺利安装，没有报错
+   后来查看安装源是淘宝的，换源可以解决这个问题：
+
+   设置npmjs的源(可能需要VPN)，如果https不行就换成http的。
 
    ```
    // 查看安装源
    npm config get registry 	
-   https://registry.npm.taobao.org/
-
+   
    // 设置npm自己的源
    npm config set registry https://registry.npmjs.org/
+   npm config set registry http://registry.npmjs.org/
+   
+   // 设置为淘宝源
+   npm config set registry https://registry.npm.taobao.org/
+   npm config set registry http://registry.npm.taobao.org/
+   
    ```
 
    这个问题有的时候会发生，有时没问题，看人品了。
