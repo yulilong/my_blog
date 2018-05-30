@@ -92,6 +92,10 @@ Mac系统中，该命令的快捷键：`shift+command+t`.
 
 ```
 cmd + K cmd + B   		//显示隐藏侧边栏 (文件目录)
+// View -> layout -> 
+option + cmd + 1	// 编辑器与单屏显示编辑
+option + cmd + 2	// 分2屏显示编辑
+option + shift + cmd + 2	// 分2个水平屏编辑
 ```
 
 
