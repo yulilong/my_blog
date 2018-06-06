@@ -79,11 +79,30 @@ vscode菜单： Code -> Preferences -> Keyboard Shortcuts , 打开快捷键界�
 
 “Document This”是一个Visual Studio代码扩展，可自动为TypeScript和JavaScript文件生成详细的JSDoc注释。
 
+### 3.6 vscode-icons:资源树目录加上图标
+
+[vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
+
+安装手使用：
+
+- `Linux` & `Windows` `=>` File > Preferences > File Icon Theme > VSCode Icons.
+- `MacOS` `=>` Code > Preferences > File Icon Theme > VSCode Icons.
+
+### 3.7 Auto Rename Tag:修改标签名称的时候自动修改结束标签
+
+Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结束标签，节省一半时间，提升效率，非常棒！
+
+[Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+
 
 
 ### 其他插件资料：
 
 https://zhuanlan.zhihu.com/p/27905838
+
+[vscode 插件推荐 - 献给所有前端工程师  segmentfaul](https://segmentfault.com/a/1190000006697219)
+
+
 
 
 
