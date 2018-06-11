@@ -30,6 +30,26 @@ vscode菜单： Code -> Preferences -> Settings(快捷键command + ，)，打开
   },
 ```
 
+### 1.2 关闭文件预览
+
+单击文件名的缘故，这个是“预览模式”，所以再单击其他文件时，会覆盖当前打开的文件。
+
+预览模式是现在各类编辑器的默认功能，如果你实在不喜欢，可以关掉的,给你配置`settings.json`里加一条：
+
+```
+"workbench.editor.enablePreview": false,
+```
+
+### 1.3 react中可以使用emmet
+
+在配置文件中加入下面代码：
+
+```
+"emmet.syntaxProfiles": { "javascript": "jsx" },
+```
+
+
+
 ## 2. 快捷键设置   
 
 打开快捷键页面：     
