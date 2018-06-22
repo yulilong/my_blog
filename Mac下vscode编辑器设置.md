@@ -48,6 +48,17 @@ vscode菜单： Code -> Preferences -> Settings(快捷键command + ，)，打开
 "emmet.syntaxProfiles": { "javascript": "jsx" },
 ```
 
+### 1.4 关闭右侧缩略图（预览面板）
+
+设置里面搜索 "editor.minimap.enabled"，设置为false即可。
+
+配置文件中：
+
+```
+// Controls if the minimap is shown 关闭右侧缩略图（预览面板）
+"editor.minimap.enabled": false,
+```
+
 
 
 ## 2. 快捷键设置   
