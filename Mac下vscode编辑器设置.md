@@ -90,6 +90,10 @@ vscode菜单： Code -> Preferences -> Keyboard Shortcuts , 打开快捷键界�
 
 它可以让你的html，javascript,json,CSS,Sacc 和 html 代码变得非常好看的格式
 
+### Beautify css/sass/scss/less CSS格式化插件
+
+该插件安装后，可以格式化css/sass/scss/less后缀的CSS文件， 使用VSCODE默认的格式化快捷键即可实现快速格式化
+
 ### 3.2 GitLens supercharges : 显示每行代码GIT的提交记录
 
 ### 3.3 CSS Peek：追踪至样式表中 CSS 类和 ids 定义的地方
