@@ -4,7 +4,7 @@
 
 --------------------------
 ##  不同操作系统使用git时，CRLF的处理换行问题   
-     
+
 ![WX20170524-183615.png](https://bitbucket.org/repo/oE6yEX/images/2142324664-WX20170524-183615.png)     
 
 错误信息类似于：   
@@ -34,7 +34,7 @@ CR表示只使用回车.
 ```
 $git config --global core.autocrlf true
 # Configure Git on Windows to properly handle line endings
-```    
+```
 设置为true，添加文件到git仓库时，git将其视为文本文件。他将把crlf变成lf。      
 设置为false时，line-endings将不做转换操作。文本文件保持原来的样子。      
 设置为input时，添加文件git仓库石，git把crlf编程lf。当有人Check代码时还是lf方式。因此在window操作系统下，不要使用这个设置。      
@@ -61,9 +61,9 @@ git config --global core.safecrlf false    # 设置这个命令会把警告取�
 #提交包含混合换行符的文件时给出警告
 git config --global core.safecrlf warn
 
-```  
+```
 
--------------    
+-------------
 
 ## 多个仓库相同代码推送被拒绝     
 
@@ -79,13 +79,13 @@ hint: not have locally. This is usually caused by another repository pushing
 hint: to the same ref. You may want to first integrate the remote changes
 hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-```    
+```
 
 如果远程仓库的代码没用了，不要了，则可以选择强推代码解决问题：    
 
 ```
 ~ git push -u github master -f
-```      
+```
 
 
 ## 由于Mac电脑升级导致 git不能用   
@@ -101,7 +101,7 @@ xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools
 
 ```
 xcode-select --install
-```  
+```
 
 需要安装一会就可以了。     
 
@@ -118,13 +118,13 @@ swp文件的来历，当你强行关闭vi时，比如电源突然断掉或者你
 
 ```
 vi -r file.txt 
-```   
+```
 
 这个时候保存中断之前的操作后，`.swp`文件不会自动删除，需要自己手动删除： 
 
 ```
 rm .file.txt.swp
-```    
+```
 
 ## Git中文乱码的问题    
 
@@ -133,10 +133,19 @@ rm .file.txt.swp
 
 ```
 git config --global core.quotepath false
-```   
+```
 
 core.quotepath设为false的话，就不会对0x80以上的字符进行quote。中文显示正常。      
 
 ![](https://bitbucket.org/repo/oE6yEX/images/2932686307-WX20180116-170256@2x.png)    
 
 参考链接： http://blog.csdn.net/tyro_java/article/details/53439537
+
+## GIT不识别大小写文件夹解决
+
+在mac电脑下，git仓库中有文件夹首字母大写，修改成首字母小写后，git没有识别出文件夹的修改， 可使用如下命令设置为大小写敏感：
+
+```
+git config core.ignorecase false
+```
+
