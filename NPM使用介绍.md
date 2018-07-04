@@ -203,23 +203,23 @@ npm config set registry https://registry.npmjs.org/
 
 参考链接：http://blog.csdn.net/v2810769/article/details/52585662
 
-## 5. npm的其他配置
+## 5. npm的其他配置:关闭进度条，看见每一个请求
 
-1. 运行 `npm config set loglevel http`，让你知道 npm 发的每一个请求
+### 5.1 运行 npm config set loglevel http 让你知道 npm 发的每一个请求
 
-2. 运行 `npm config set progress false`，关闭那个无聊的进度条
+### 5.2 运行 npm config set progress false 关闭那个无聊的进度条
 
-3. 运行 `npm config set registry https://registry.npm.taobao.org/` ， 从淘宝的服务器下载各种包。不过这会让你在运行 `npm adduser` 的时候出问题，想要恢复成原样，只需要运行 `npm config delete registry` 即可。
+1. 运行 `npm config set registry https://registry.npm.taobao.org/` ， 从淘宝的服务器下载各种包。不过这会让你在运行 `npm adduser` 的时候出问题，想要恢复成原样，只需要运行 `npm config delete registry` 即可。
 
-4. 运行`npm config get`
+2. 运行`npm config get`
 
-5. 运行 `touch ~/.bashrc; echo 'export PHANTOMJS_CDNURL="http://npm.taobao.org/mirrors/phantomjs"' >> ~/.bashrc` 让 npm 从淘宝下载 phantomjs
+3. 运行 `touch ~/.bashrc; echo 'export PHANTOMJS_CDNURL="http://npm.taobao.org/mirrors/phantomjs"' >> ~/.bashrc` 让 npm 从淘宝下载 phantomjs
 
-6. 运行 `touch ~/.bashrc; echo 'export SASS_BINARY_SITE="https://npm.taobao.org/mirrors/node-sass"' >> ~/.bashrc` 让 npm 从淘宝下载 SASS
+4. 运行 `touch ~/.bashrc; echo 'export SASS_BINARY_SITE="https://npm.taobao.org/mirrors/node-sass"' >> ~/.bashrc` 让 npm 从淘宝下载 SASS
 
-7. 运行 `source ~/.bashrc`,应用上面的设置
+5. 运行 `source ~/.bashrc`,应用上面的设置
 
-   
+    
 
 
 

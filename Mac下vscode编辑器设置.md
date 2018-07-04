@@ -70,10 +70,14 @@ vscode菜单： Code -> Preferences -> Keyboard Shortcuts , 打开快捷键界�
 
 在搜索框中输入： `copy`, 找到`Copy Line Down`向下复制一行快捷键，修改为自己习惯的快捷键：`command + D`。       
 
-### 2.2 格式化代码快捷键： control + alt + L 
+### 2.2 格式化代码快捷键： option + cmd + L 
 
 在搜索框中输入：`format`, 找到`Format Document`格式化文档，修改为自己的快捷键：`control + alt + L`，    
 默认的快捷键：`shift + alt + F`.      
+
+### 格式化选中的代码快捷键：cmd + L
+
+在搜索框中输入： formatSelection(格式化选定代码)， 可以修改成自己的快捷键
 
 ### 2.3 删除一行快捷键： command + delete   
 
@@ -83,6 +87,26 @@ vscode菜单： Code -> Preferences -> Keyboard Shortcuts , 打开快捷键界�
 ### 2.4 将选择添加到下一个查找匹配项(Add Selection To Next Find Match)      
 在快捷键页面搜索框中输入：`Add Selection To Next`(将选择添加到下一个)        
 事件的默认快捷键：`cmd + D`
+
+### 切换编辑器组布局(垂直/水平): option + cmd + 数字零
+
+关键字：toggleEditorGroupLayout
+
+### 当前行向上移动一行： option + 向上箭头 
+
+关键字 ： moveLinesUpAction   
+
+### 当前行向下移动一行： option + 向下箭头
+
+关键字： moveLinesDownAction
+
+### 当前行缩进： cmd + ]
+
+indentLines
+
+### 减少行缩进： cmd + [
+
+outdentLines
 
 ## 3. vscode的一些插件    
 
@@ -97,6 +121,8 @@ vscode菜单： Code -> Preferences -> Keyboard Shortcuts , 打开快捷键界�
 https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifier
 
 ### 3.2 GitLens supercharges : 显示每行代码GIT的提交记录
+
+这个插件安装好后在编辑器右上角会有几个按钮 (其中有一个类似git的图标)
 
 ### 3.3 CSS Peek：追踪至样式表中 CSS 类和 ids 定义的地方
 
@@ -130,6 +156,16 @@ https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifi
 Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结束标签，节省一半时间，提升效率，非常棒！
 
 [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+
+### open native terminal : 在右键菜单中添加打开终端
+
+这个插件可以很方便的直接在VSCODE中打开终端操作
+
+[open native terminal](https://marketplace.visualstudio.com/items?itemName=alexeyvax.vscode-open-native-terminal)
+
+### 3.8 VUE框架相关的插件
+
+#### 3.8.1 vetur：语法高亮插件
 
 
 
