@@ -63,8 +63,23 @@ vscode菜单： Code -> Preferences -> Settings(快捷键command + ，)，打开
 
 ## 2. 快捷键设置   
 
-打开快捷键页面：     
-vscode菜单： Code -> Preferences -> Keyboard Shortcuts , 打开快捷键界面。   
+### 打开快捷键界面和快速找到想要修改的快捷键
+
+
+
+- 打开快捷键页面：     
+
+  vscode菜单： Code -> Preferences -> Keyboard Shortcuts , 打开快捷键界面。   
+
+- 快速找到要修改的快捷键
+
+  在搜索中输入相关关键词
+
+- 查看快捷键是否已经被占用
+
+  在搜索中输入快捷键： 比如想要查看'cmd + /'快捷键是否已经被占用，则在搜索框中输入：`"cmd + /"` 如果有结果就说明该快捷键已经被占用了
+
+  shift、control(ctrl)、option(alt)、command(cmd)
 
 ### 2.1 复制一行快捷键自定义：command + D    
 
@@ -162,6 +177,40 @@ Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结�
 这个插件可以很方便的直接在VSCODE中打开终端操作
 
 [open native terminal](https://marketplace.visualstudio.com/items?itemName=alexeyvax.vscode-open-native-terminal)
+
+
+
+### console-snippets: console.log快捷插件
+
+[console-snippets](https://marketplace.visualstudio.com/items?itemName=amandeepmittal.console-snippets)
+
+- `cl` or `clog` console.log()
+- `cwarn` console.warn()
+- `cdir` console.dir()
+- `ci` console.info()
+- `cerr` console.error()
+- `cg` console.group()
+- `cge` console.groupEnd()
+
+
+
+### Turbo Console Log: 选中变量快捷添加console.log
+
+[Turbo Console Log ](https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log)
+
+使用方法： 1，选中变量， 2 按快捷键： `control + option + i`
+
+- 注释掉有插件创建的console： `control + option + q`
+- 取消注释插件创建的console：`control + option + u`
+- 删除由插件创建的console: `control + option + d`
+
+注：此插件的创建console与我自己的快捷键冲突了，可打开vscode的快捷键设置，
+
+然后搜索：Turbo Console Log ， 就会出现此插件相关的快捷键，选择冲突的快捷键修改别的快捷。
+
+
+
+
 
 ### 3.8 VUE框架相关的插件
 
