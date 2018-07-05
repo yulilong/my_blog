@@ -167,6 +167,12 @@ Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结�
 
 #### 3.8.1 vetur：语法高亮插件
 
+#### 3.8.2 Vue VSCode Snippets: vue模板 
+
+安装此插件后，在.vue文件中 输入vbase然后按tab键可以快速生成一个vue项目的模板。其他的请看文档
+
+[Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets)
+
 
 
 ### 其他插件资料：
