@@ -157,6 +157,13 @@ https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifi
 
 “Document This”是一个Visual Studio代码扩展，可自动为TypeScript和JavaScript文件生成详细的JSDoc注释。
 
+[Document This](https://marketplace.visualstudio.com/items?itemName=joelday.docthis)
+
+使用方法：
+
+1. 鼠标光标放在方法名前面。
+2. 按快捷键 `Ctrl+Alt+D`再按一次`Ctrl+Alt+D`，即可生成注释文档
+
 ### 3.6 vscode-icons:资源树目录加上图标
 
 [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
@@ -207,8 +214,6 @@ Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结�
 注：此插件的创建console与我自己的快捷键冲突了，可打开vscode的快捷键设置，
 
 然后搜索：Turbo Console Log ， 就会出现此插件相关的快捷键，选择冲突的快捷键修改别的快捷。
-
-
 
 
 
