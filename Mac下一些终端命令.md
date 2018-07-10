@@ -50,6 +50,85 @@ Ctrl + y        粘贴最后一次被删除的单词
 
 
 
+## 处理窗口和标签页快捷键
+
+| 操作                           | 快捷键                     |
+| ------------------------------ | -------------------------- |
+| 新建窗口                       | Command-N                  |
+| 使用相同命令新建窗口           | Control-Command-N          |
+| 新建标签页                     | Command-T                  |
+| 使用相同命令新建标签页         | Control-Command-T          |
+| 显示或隐藏标签页栏             | Shift-Command-T            |
+| 显示所有标签页或退出标签页概览 | Shift-Command-反斜杠 (\)   |
+| 新建命令                       | Shift-Command-N            |
+| 新建远程连接                   | Shift-Command-K            |
+| 显示或隐藏检查器               | Command-I                  |
+| 编辑标题                       | Shift-Command-I            |
+| 编辑背景颜色                   | Option-Command-I           |
+| 放大字体                       | Command-加号键 (+)         |
+| 缩小字体                       | Command-减号键 (–)         |
+| 下一个窗口                     | Command-重音符键 (`)       |
+| 上一个窗口                     | Command-Shift-波浪符号 (~) |
+| 下一个标签页                   | Control-Tab                |
+| 上一个标签页                   | Control-Shift-Tab          |
+| 将窗口拆分为两个面板           | Command-D                  |
+| 关闭拆分面板                   | Shift-Command-D            |
+| 关闭标签页                     | Command-W                  |
+| 关闭窗口                       | Shift-Command-W            |
+| 关闭其他标签页                 | Option-Command-W           |
+| 全部关闭                       | Option-Shift-Command-W     |
+| 滚动到顶部                     | Command-Home               |
+| 滚动到底部                     | Command-End                |
+| 上一页                         | Command-Page Up            |
+| 下一页                         | Command-Page Down          |
+| 上一行                         | Option-Command-Page Up     |
+| 下一行                         | Option-Command-Page Down   |
+
+
+
+```
+新建窗口				Command-N
+使用相同命令新建窗口		Control-Command-N
+新建标签页				Command-T
+使用相同命令新建标签页		Control-Command-T
+显示或隐藏标签页栏			Shift-Command-T
+显示所有标签页或退出标签页概览	Shift-Command-反斜杠 (\)
+新建命令					Shift-Command-N
+新建远程连接				Shift-Command-K
+显示或隐藏检查器			Command-I
+编辑标题					Shift-Command-I
+编辑背景颜色					Option-Command-I
+放大字体					Command-加号键 (+)
+缩小字体					Command-减号键 (–)
+下一个窗口					Command-重音符键 (`)
+上一个窗口					Command-Shift-波浪符号 (~)
+下一个标签页					Control-Tab
+上一个标签页					Control-Shift-Tab
+将窗口拆分为两个面板				Command-D
+关闭拆分面板					Shift-Command-D
+关闭标签页					Command-W
+关闭窗口					Shift-Command-W
+关闭其他标签页				Option-Command-W
+全部关闭				Option-Shift-Command-W
+滚动到顶部	Command-Home
+滚动到底部
+Command-End
+上一页
+Command-Page Up
+下一页
+Command-Page Down
+上一行
+Option-Command-Page Up
+下一行
+Option-Command-Page Down
+```
+
+
+
+
+
+
+
 
 ## **查看进程**    
 
@@ -122,3 +201,11 @@ localhost就是一个域名，域名默认指向 127.0.0.1，两者是一样的�
 2. cd Appications/Android' 'Studio.app/sdk
 3. cd Appications/Android" "Studio.app/sdk
 ```
+
+
+
+
+## 参考资料
+
+[“终端”键盘快捷键](https://support.apple.com/zh-cn/guide/terminal/trmlshtcts/mac)
+
