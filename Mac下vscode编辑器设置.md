@@ -67,6 +67,27 @@ vscode菜单： Code -> Preferences -> Settings(快捷键command + ，)，打开
 
 还可以点击编辑器右上角的拆分按钮，默认垂直拆分， 键盘按住`alt`键，然后点击此时可水平拆分。
 
+
+
+### 1.6 前端vue相关配置
+
+#### 1.6.1 设置.vue文件HTML模板中emmet支持vue特有的标签
+
+Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件。 
+
+```
+  // 2018-07-17 设置VUE在.vue的模板HTML中vue标签也可以使用emmet 
+  // 启用后，按下 TAB 键，将展开 Emmet 缩写。
+  "emmet.triggerExpansionOnTab": true,
+  // vscode 1.25.1版本以后不写下面的配置也会生效，旧版本可能需要
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "vue": "html"
+  },
+```
+
+
+
 ## 2. 快捷键设置   
 
 ### 打开快捷键界面和快速找到想要修改的快捷键
