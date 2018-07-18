@@ -1,4 +1,5 @@
-###  [**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
+[TOC]
+
 -----------------------------------------------------------------------------------------
 
 Mac 官方快捷键地址： https://support.apple.com/zh-cn/HT201236         
