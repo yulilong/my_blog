@@ -305,6 +305,36 @@ https://mac.eltima.com/download-manager.html
 
 mac 下下载工具，有免费版。
 
+## 29. Charles 抓包工具 
+
+[Charles](http://www.charlesproxy.com/) 是在 Mac 下常用的网络封包截取工具，在做 [移动开发](http://lib.csdn.net/base/wechat)时，我们为了调试与服务器端的网络通讯协议，常常需要截取网络封包来分析。
+
+Charles 通过将自己设置成系统的网络访问代理服务器，使得所有的网络访问请求都通过它来完成，从而实现了网络封包的截取和分析。
+
+除了在做[移动开发](http://lib.csdn.net/base/android)中调试端口外，Charles 也可以用于分析第三方应用的通讯协议。配合 Charles 的 SSL 功能，Charles 还可以分析 Https 协议。
+
+ 使用注意事项：
+
+1. 如果没有抓取到数据，尝试关闭代理或浏览器的代理。
+
+2. 选择菜单中的 “Proxy” –> “Mac OS X Proxy” 来将 Charles 设置成系统代理
+
+3. “Proxy” –> “Proxy Settings” -> "macOS" 要把 里面选项都勾选上
+
+   Enable macOS proxy
+
+   ​	Use HTTP proxy
+
+   Enable macOS proxy on launch
+
+   如果不勾选上面选项，则不能抓取到包
+
+   
+
+使用教程： https://www.cnblogs.com/mawenqiangios/p/8270238.html
+
+
+
 ## duet 扩展屏软件
 
 https://www.duetdisplay.com/
