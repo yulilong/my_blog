@@ -32,7 +32,8 @@
   解压工具（7z）      
 
 * 高效macbook工作环境配置     
-http://xialeizhou.com/2019/06/23/高效macbook工作环境配置/     
+
+  http://xialeizhou.com/2019/06/23/高效macbook工作环境配置/
 
 * **强迫症的 Mac 设置指南：**https://github.com/macdao/ocds-guide-to-setting-up-mac        
 
@@ -41,6 +42,8 @@ http://xialeizhou.com/2019/06/23/高效macbook工作环境配置/
 * [**Mac下Nginx的安装运行**](Mac下Nginx的安装运行)      
 
 * [**Mac下一些终端命令**](Mac下一些终端命令)      终端配置代理      
+
+* [Mac下Iterm2终端使用快捷键](Mac下Iterm2使用及快捷键)
 
 * [**Mac Office2016使用设置**](Mac%20Office2016使用设置)      阅读视图     
 
@@ -51,8 +54,8 @@ http://xialeizhou.com/2019/06/23/高效macbook工作环境配置/
 * [**Mac下vscode编辑器设置**](Mac下vscode编辑器设置)        
 
 * Mac 键盘快捷键     
-苹果官网快捷键文档： https://support.apple.com/zh-cn/HT201236        
-百度经验： http://jingyan.baidu.com/article/08b6a591aac09614a909224f.html      
+  苹果官网快捷键文档： https://support.apple.com/zh-cn/HT201236        
+  百度经验： http://jingyan.baidu.com/article/08b6a591aac09614a909224f.html      
 
 ---------------------------------------------------------------------------------------------------------
 
@@ -82,7 +85,6 @@ find，mv,cp,scp, grep, chown, 查看文件大小，压缩、解压
 * [RubyMine常用快捷键](RubyMine常用快捷键)    
 * [rubymine习惯设置](rubymine习惯设置)    
 关闭自动保存，编辑栏标签多分多行显示，编辑区的颜色设置，汉化,git修改颜色设置，代码折叠， 代码自动换行          
-
 
 -------------------------------------------------------------------------------------------------
 ###  **Markdown**         
@@ -165,7 +167,6 @@ jQuery UI API中文文档(适用jQuery UI 1.10):  http://www.css88.com/jquery-ui
 
 * [rvm 实用指南](http://ruby-china.org/topics/576)
 
-
 -------------------------------------------------------------------------------------------------
 ## 其他    
 
@@ -206,7 +207,6 @@ jQuery UI API中文文档(适用jQuery UI 1.10):  http://www.css88.com/jquery-ui
 
 ## 阿里云应用部署文档
 * [阿里云应用部署文档](%20%E9%98%BF%E9%87%8C%E4%BA%91%E5%BA%94%E7%94%A8%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3)
-
 
 -------------------------------------------------------------------------------------------------
 
