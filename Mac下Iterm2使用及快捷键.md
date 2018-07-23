@@ -1,6 +1,6 @@
 [TOC]
 
-### 1. 光标控制
+## 1. 光标控制
 
 ctrl + a: 到行首
 
@@ -26,9 +26,9 @@ ctrl + t: 交换光标处文本
 
 ⌘ + r:清屏，其实是滚到新的一屏，并没有清空。ctrl + l 也可以做到。
 
- 
 
-### 2. 窗口面板管理：一个窗口分割
+## 2. 终端操作快捷键
+### 2.1 窗口面板管理：一个窗口分割
 
 垂直分割: Command + D
 
@@ -39,7 +39,7 @@ ctrl + t: 交换光标处文本
 - 关闭panel：⌘ + w
 - 最大化Tab中的pane，隐藏本Tab中的其他pane：⌘+ shift +enter , 再次还原
 
-### 3. 新建Tab标签页
+### 2.2 新建Tab标签页
 
 - 新建标签页: Command + T
 - 关闭标签页: Command + W
@@ -52,7 +52,7 @@ ctrl + t: 交换光标处文本
 
 
 
-### 4. 多个窗口操作
+### 2.3 多个窗口操作
 
 - 新建窗口：command + N
 - 关闭窗口： command + w
@@ -62,7 +62,7 @@ ctrl + t: 交换光标处文本
 
  
 
-### 5. 其他功能
+### 2.4 其他功能
 
 - 支持自定义全局快捷键用于显示和隐藏iTerm2 Preference -> Keys －> Show/hide iTerm2 with a system-wide hotkey 打上勾之后
 - 进入和退出全屏: Command + Enter
@@ -71,21 +71,17 @@ ctrl + t: 交换光标处文本
 - 开启和关闭背景半透明: Command + u
 - 清屏（重置当前终端）: Command + r
 
-
-
-### 粘贴历史
+#### 2.4.1 粘贴历史
 
 使用Command + Shift + h 可以呼出粘贴历史，支持模糊检索。还可以设置将粘贴历史保存在磁盘上（Preferences -> General）
 
- ### 即时回放
+#### 2.4.2 即时回放 
 
 使用Command + Opt + b 打开即时回放，按Esc退出。即时回放可以记录终端输出的状态，让你“穿越时间”查看终端内容。默认每个会话最多储存4MB的内容，可以在设置中更改（Preferences -> Genernal -> Instant Replay）。
 
+### 2.5 自定义快捷键设置
 
-
-### iTerm2快捷键设置
-
-### 1. 设置光标按照单词快速移动设置
+#### 2.5.1设置光标按照单词快速移动 
 
 iTerm2之后，发现option+←和option+→这两组快捷键并不能实现光标按照单词快速移动，
 
@@ -100,13 +96,57 @@ iTerm2之后，发现option+←和option+→这两组快捷键并不能实现光
 
 
 
-### 参考资料
+## 3. 个性化的设置
+
+### 3.1 设置无分栏边框
+
+preference->appearance：
+
+取消：Show per-pane title bar with split panes
+
+勾选：Hide scrollbars
+
+### 3.2 终端显示边框
+
+preference->appearance：
+
+勾选：Show border around window
+
+### 3.2 显示、隐藏终端快捷键
+
+Preferences -> Keys -> Hotkey:
+
+勾选： Show/hide iTerm2 with a system-wide hotkey
+
+然后在下面的Hotkey里面填上F12，
+
+这个F12可能被系统占用了，这修改系统的快捷键，或更换别的快捷键。
+
+### 3.3 鼠标移动切换窗口
+
+当一个终端打开了多个窗口，可以设置鼠标移动窗口时获取焦点
+
+Preferences -> Pointer:
+
+勾选：Focus follows mouse
+
+### 3.4 设置光标形状
+
+Preferences -> Profiles -> Profile Name -> Text -> Cursor
+
+选择一个自己喜欢的样式
+
+
+
+## 参考资料
 
 [iterm2使用快捷键](https://www.jianshu.com/p/da7728a8a4d7)
 
 [关于iTerm2 你不知道的一些事](https://www.jianshu.com/p/3436bcb17a03)
 
 [Mac下iTerm2光标按照单词快速移动设置](https://blog.csdn.net/skyyws/article/details/78480132?locationNum=4&fps=1)
+
+[打造有情怀的 iTerm2 终端](https://www.jianshu.com/p/83c38271b09c)
 
 
 
