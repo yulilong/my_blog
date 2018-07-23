@@ -150,9 +150,19 @@ indentLines
 
 outdentLines
 
-## 3. vscode的一些插件    
 
-### 3.1 Beautify ：代码变得非常好看的格式      
+
+## 3. vscode一些快捷操作
+
+### 3.1 变量重命名：选中后按F2
+
+可以选中后按F2，输入新的名字，回车，会发现所有的文件都修改过了。
+
+
+
+## 4. vscode的一些插件    
+
+### 4.1 Beautify ：代码变得非常好看的格式      
 
 它可以让你的html，javascript,json,CSS,Sacc 和 html 代码变得非常好看的格式
 
@@ -162,11 +172,11 @@ outdentLines
 
 https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifier
 
-### 3.2 GitLens supercharges : 显示每行代码GIT的提交记录
+### 4.2 GitLens supercharges : 显示每行代码GIT的提交记录
 
 这个插件安装好后在编辑器右上角会有几个按钮 (其中有一个类似git的图标)
 
-### 3.3 CSS Peek：追踪至样式表中 CSS 类和 ids 定义的地方
+### 4.3 CSS Peek：追踪至样式表中 CSS 类和 ids 定义的地方
 
 使用此插件，你可以追踪至样式表中 CSS 类和 ids 定义的地方。当你在 HTML 文件中右键单击选择器时，选择“ Go to Definition 和 Peek definition ”选项，它便会给你发送样式设置的 CSS 代码。
 
@@ -174,13 +184,13 @@ https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifi
 
 
 
-### 3.4 color info: css中颜色的其他写法
+### 4.4 color info: css中颜色的其他写法
 
 这个便捷的插件，将为你提供你在 CSS 中使用颜色的相关信息。你只需在颜色上悬停光标，就可以预览色块中色彩模型的（HEX、 RGB、HSL 和 CMYK）相关信息了。
 
 [color info](https://marketplace.visualstudio.com/items?itemName=bierner.color-info)
 
-### 3.5 Document This：自动为TSc和JS文件生成详细的JSDoc注释
+### 4.5 Document This：自动为TSc和JS文件生成详细的JSDoc注释
 
 “Document This”是一个Visual Studio代码扩展，可自动为TypeScript和JavaScript文件生成详细的JSDoc注释。
 
@@ -191,7 +201,7 @@ https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifi
 1. 鼠标光标放在方法名前面。
 2. 按快捷键 `Ctrl+Alt+D`再按一次`Ctrl+Alt+D`，即可生成注释文档
 
-### 3.6 vscode-icons:资源树目录加上图标
+### 4.6 vscode-icons:资源树目录加上图标
 
 [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
 
@@ -200,7 +210,7 @@ https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifi
 - `Linux` & `Windows` `=>` File > Preferences > File Icon Theme > VSCode Icons.
 - `MacOS` `=>` Code > Preferences > File Icon Theme > VSCode Icons.
 
-### 3.7 Auto Rename Tag:修改标签名称的时候自动修改结束标签
+### 4.7 Auto Rename Tag:修改标签名称的时候自动修改结束标签
 
 Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结束标签，节省一半时间，提升效率，非常棒！
 
@@ -244,11 +254,11 @@ Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结�
 
 
 
-### 3.8 VUE框架相关的插件
+### 4.8 VUE框架相关的插件
 
-#### 3.8.1 vetur：语法高亮插件
+#### 4.8.1 vetur：语法高亮插件
 
-#### 3.8.2 Vue VSCode Snippets: vue模板 
+#### 4.8.2 Vue VSCode Snippets: vue模板 
 
 安装此插件后，在.vue文件中 输入vbase然后按tab键可以快速生成一个vue项目的模板。其他的请看文档
 
