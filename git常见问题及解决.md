@@ -151,7 +151,7 @@ git config core.ignorecase false
 
 ## 7. 同一个文件跟踪两次
 
-由于修改了文件名，仅仅是文件名首字母大小写修改了，然后就导致git同时把这一个文件跟踪了两次：
+由于修改了文件名，仅仅是文件名首字母大小写修改了，然后就导致git同时把这一个文件跟踪了两次，比如我修改了文件夹名字，由Settings 改成 settings,导致文件夹下的文件重复出现：
 
 ```
 modified:   src/views/Settings/TagSet/TagDialog.jsx
@@ -161,14 +161,14 @@ modified:   src/views/settings/TagSet/TagDialog.jsx
 此时可使用`git rm --cached`来取消对重命名之前的文件跟踪
 
 ```
-git rm --cached src/views/settings/TagSet/TagDialog.jsx
-rm 'src/views/settings/TagSet/TagDialog.jsx'
+git rm --cached src/views/Settings/TagSet/TagDialog.jsx
+rm 'src/views/Settings/TagSet/TagDialog.jsx'
 ```
 
 取消跟踪后，使用`git status`查看，就会发现这个文件自动添加到删除中了：
 
 ```
-~ git rm --cached src/views/Settings/TagSet/TagDialog.jsx
+~ git rm --cached src/views/Settings/TagSet/TaDialog.jsx
 rm 'src/views/Settings/TagSet/TagDialog.jsx'
 
 ~ git status
