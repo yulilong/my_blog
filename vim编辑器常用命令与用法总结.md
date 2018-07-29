@@ -25,7 +25,7 @@ Linux世界几乎所有的配置文件都是以纯文本形式存在的，而在
 |                      <--------------------------+  其 他 额 外 的 功 能   |
 |                      |         [ESC]            |                       |
 +----------------------+                          +-----------------------+
-```  
+```
 
 ## **（四）一般模式常用操作**    
 
@@ -160,3 +160,15 @@ setlocal foldlevel=1 " 设置折叠层数为
 
 http://www.cnblogs.com/jiayongji/p/5771444.html      
 http://www.cnblogs.com/wangj08/archive/2013/03/13/2957309.html
+
+
+
+编写
+
+https://blog.csdn.net/qq_38597315/article/details/80627439
+
+https://lzw.me/a/vim-shortcut.html
+
+https://blog.csdn.net/ljx_5489464/article/details/50896080
+
+https://blog.csdn.net/xyw_blog/article/details/15550149

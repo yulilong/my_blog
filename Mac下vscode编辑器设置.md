@@ -216,7 +216,7 @@ Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结�
 
 [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 
-### open native terminal : 在右键菜单中添加打开终端
+### 4.8 open native terminal : 在右键菜单中添加打开终端
 
 这个插件可以很方便的直接在VSCODE中打开终端操作
 
@@ -224,7 +224,7 @@ Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结�
 
 
 
-### console-snippets: console.log快捷插件
+### 4.9 console-snippets: console.log快捷插件
 
 [console-snippets](https://marketplace.visualstudio.com/items?itemName=amandeepmittal.console-snippets)
 
@@ -238,7 +238,7 @@ Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结�
 
 
 
-### Turbo Console Log: 选中变量快捷添加console.log
+### 4.10 Turbo Console Log: 选中变量快捷添加console.log
 
 [Turbo Console Log ](https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log)
 
@@ -252,21 +252,23 @@ Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结�
 
 然后搜索：Turbo Console Log ， 就会出现此插件相关的快捷键，选择冲突的快捷键修改别的快捷。
 
+### 4.11 Vim：让vscode像vim中一样使用命令
+
+[Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
 
-### 4.8 VUE框架相关的插件
 
-#### 4.8.1 vetur：语法高亮插件
+## 5. VUE框架相关的插件
 
-#### 4.8.2 Vue VSCode Snippets: vue模板 
+### 5.1 vetur：语法高亮插件
+
+### 5.2 Vue VSCode Snippets: vue模板 
 
 安装此插件后，在.vue文件中 输入vbase然后按tab键可以快速生成一个vue项目的模板。其他的请看文档
 
 [Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets)
 
-
-
-### 其他插件资料：
+##  其他插件资料
 
 https://zhuanlan.zhihu.com/p/27905838
 
