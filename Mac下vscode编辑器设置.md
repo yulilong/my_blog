@@ -268,6 +268,30 @@ Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结�
 
 [Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets)
 
+## 6. 使用vscode遇到的问题
+
+### 6.1 html文件使用快捷键注释不对
+
+当在HTML文件中，使用注释快捷键`cmd + /`，时注释的代码是下面这样子的：
+
+```
+{# <p></p> #}
+```
+
+这个是错误的。
+
+1、首先查看编辑器右下角看看是不是HTML格式的，然后在看看配置等。
+
+2、经过我的查找是由于使用了插件导致的，插件名字：`TWIG pack`,禁用这个插件后，再次使用快捷键注释就好了：
+
+```html
+<!-- <p></p> -->
+```
+
+
+
+
+
 ##  其他插件资料
 
 https://zhuanlan.zhihu.com/p/27905838
