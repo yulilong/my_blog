@@ -258,6 +258,30 @@ Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结�
 
 
 
+### 4.12 Bookmarks：添加标签，快速定位标记的代码
+
+ Visual Studio中的Bookmark能加速代码导航能力。可能有一些代码，需要频繁的相互切换。通常你可能是滚动页面，找到该代码块的。Visual Studio已经提供了通过使用快捷键，非常快速地移动到指定的代码段。这就是代码的书签功能。
+
+[bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+
+可设置快捷键，打开快捷键页面（code -> Preferences -> keyboards ShortCuts）
+
+在里面输入`bookmarks`就能看见相关的快捷键设置:
+
+`option + cmd + k`:开启关闭标签
+
+`option + cmd + L`:跳到下一个标签
+
+`option + cmd + k`:跳到上一个标签
+
+还可以在编辑器左边有个书签图标，可以点击在里面管理添加的书签。
+
+可以选一个文件，然后右键店家clear清理所有标记的标签。
+
+
+
+
+
 ## 5. VUE框架相关的插件
 
 ### 5.1 vetur：语法高亮插件
