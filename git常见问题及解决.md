@@ -184,3 +184,32 @@ Changes to be committed:
 	modified:   src/views/settings/TagSet/TagDialog.jsx
 ```
 
+## 8. gitlab保护分支，导致本地`git push -f`报错
+
+产生原因：服务器提交了错误或者无用的代码，本地回滚代码，然后把代码强推到服务器上，由于gitlab上有分支保护导致代码推送失败：
+
+```
+git push origin master -f
+Total 0 (delta 0), reused 0 (delta 0)
+remote: GitLab: You are not allowed to force push code to a protected branch on this project.
+To http://git.baijiahulian.com/yunying/bi-fe.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'http://git.baijiahulian.com/yunying/bi-fe.git'
+```
+
+- 在gitlab上查看保护的分支
+
+  在gitlab上打开项目，点击`Repository`, 然后点击`Branches`,就能看见所有分支，在分支名字后面有个绿色的`protected`就是保护分支。
+
+- 关闭gitlab上的保护分支(需要项目的master或者Owner)
+
+  点击项目右上角(用户logo下面)的小齿轮，选择`Protected Branches`,在打开的页面里面就能看见保护的分支了，然后点击保护分支右边的`Unprotect`,就能删除对这个分支的保护了。
+
+- 开启gitlab上的保护分支(需要项目的master或者Owner)
+
+  点击项目右上角(用户logo下面)的小齿轮，选择`Protected Branches`, 在`Protect a branch`中输入分支名字，选择对应权限，然后点击`Protect`，就会立刻添加一个保护分支了。
+
+
+
+
+

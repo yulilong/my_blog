@@ -12,6 +12,8 @@ vscode菜单： Code -> Preferences -> Settings(快捷键command + ，)，打开
 ```
 // 一个制表符等于的空格数。该设置在 `editor.detectIndentation` 启用时根据文件内容进行重写。
   "editor.tabSize": 2,
+  // 关闭根据文件类型自动设置tabsize的选项， 2018-08-30，如果不设置上面的可能失效
+  "editor.detectIndentation": false,
 // 设置tab键的空格数量为2
 "[html]": {
     "editor.tabSize": 2
