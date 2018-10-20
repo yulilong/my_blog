@@ -32,7 +32,20 @@ vscode菜单： Code -> Preferences -> Settings(快捷键command + ，)，打开
   },
 ```
 
-### 1.2 关闭文件预览
+### 1.2 设置代码格式化缩进为2个空格
+
+```
+// 一个tab为2个空格
+"editor.tabSize": 2,
+// 2018-10-20 关闭检测缩进，设置后代码格式化时就会自动变成2个空格了
+"editor.detectIndentation": false,
+// 按tab键会变成插入空格
+"editor.insertSpaces": true,
+```
+
+https://blog.csdn.net/example440982/article/details/81543096?utm_source=blogxgwz1
+
+### 1.3 关闭文件预览
 
 单击文件名的缘故，这个是“预览模式”，所以再单击其他文件时，会覆盖当前打开的文件。
 
@@ -42,7 +55,7 @@ vscode菜单： Code -> Preferences -> Settings(快捷键command + ，)，打开
 "workbench.editor.enablePreview": false,
 ```
 
-### 1.3 react中可以使用emmet
+### 1.4 react中可以使用emmet
 
 在配置文件中加入下面代码：
 
@@ -50,7 +63,7 @@ vscode菜单： Code -> Preferences -> Settings(快捷键command + ，)，打开
 "emmet.syntaxProfiles": { "javascript": "jsx" },
 ```
 
-### 1.4 关闭右侧缩略图（预览面板）
+### 1.5 关闭右侧缩略图（预览面板）
 
 设置里面搜索 "editor.minimap.enabled"，设置为false即可。
 
@@ -63,7 +76,7 @@ vscode菜单： Code -> Preferences -> Settings(快捷键command + ，)，打开
 
 
 
-### 1.5 编辑区域面板拆分
+### 1.6 编辑区域面板拆分
 
 右上角 View -> Editor Layout -> 即可选择编辑区域拆分
 
@@ -71,9 +84,9 @@ vscode菜单： Code -> Preferences -> Settings(快捷键command + ，)，打开
 
 
 
-### 1.6 前端vue相关配置
+### 1.7 前端vue相关配置
 
-#### 1.6.1 设置.vue文件HTML模板中emmet支持vue特有的标签
+#### 1.7.1 设置.vue文件HTML模板中emmet支持vue特有的标签
 
 Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件。 
 
