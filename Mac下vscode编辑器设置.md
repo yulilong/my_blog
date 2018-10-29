@@ -293,7 +293,11 @@ Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结�
 
 可以选一个文件，然后右键店家clear清理所有标记的标签。
 
+### 4.13 Bracket Pair Colorizer:代码的各种括号呈现不同的颜色
 
+[Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+
+让代码的各种括号呈现不同的颜色。
 
 
 
