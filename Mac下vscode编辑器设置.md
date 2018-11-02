@@ -181,7 +181,7 @@ outdentLines
 
 它可以让你的html，javascript,json,CSS,Sacc 和 html 代码变得非常好看的格式
 
-### Beautify css/sass/scss/less CSS格式化插件
+#### 4.1.1 Beautify css/sass/scss/less CSS格式化插件
 
 该插件安装后，可以格式化css/sass/scss/less后缀的CSS文件， 使用VSCODE默认的格式化快捷键即可实现快速格式化
 
@@ -301,6 +301,24 @@ Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结�
 
 
 
+### 4.14 ESLint: JavaScript代码格式化检查插件
+
+[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+https://github.com/Microsoft/vscode-eslint
+
+注意：
+
+如果在配置文件中写了：
+
+```
+"eslint.autoFixOnSave": true,
+```
+
+那么在保存文件的时候，会自动把代码格式化成符合eslint风格的代码，比如把`var`变量自动变成`let`
+
+
+
 ## 5. VUE框架相关的插件
 
 ### 5.1 vetur：语法高亮插件
@@ -331,7 +349,20 @@ Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结�
 <!-- <p></p> -->
 ```
 
+### 6.2 保存时，自动把var变量改成了let
 
+在打开代码文件时，修改后，保存后，发现编辑器把var变量自动改成了let，导致旧浏览器出现了兼容性问题。
+
+经过查询：
+
+1. 安装了eslint插件
+2. 在配置文件里面配置了`"eslint.autoFixOnSave": true,`
+
+安装了eslint插件并配置了参数后， 在保存文件的时候，就会自动把不符合eslint格式的代码自动改成符合eslint要求的代码，所以就把var改成了let，导致了旧浏览器出现了兼容性问题。
+
+解决方法：
+
+在配置文件中注销或删除配置：`"eslint.autoFixOnSave": true,`即可。
 
 
 
