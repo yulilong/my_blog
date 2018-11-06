@@ -4,12 +4,12 @@
 [TOC]
 
 -----------------
-## **1. GIT介绍**
+## 1. GIT介绍
 
 git是一个分布式版本控制软件，与常用的版本控制工具如CVS、Subversion不同，支持离线开发，离线存储。强大的分支功能，适合多个独立开发者协作。速度块。           
 如果拥有CVS或者SVN的使用背景，那么更熟悉的方法是客户端-服务器端模式，所有的文件仓库(repository)都是存放在服务器上的，用户需要在本地安装客户端去服务器上的项目中获取旧版本，提交新版本。GIT抛弃了这种模式，当用户从远端GIT仓库下载一个工程(project)时，这个工程的所有文件，包括版本历史，文件改动都会下载下来，这时 候本地GIT就演变成了一个服务器，所有的提交(check-in)、提出(check-out)都会在这个本地服务器上执行，当你确定一项修改之后，可 以再和远端仓库进行合并和同步(merge)。所以，GIT的安装和配置步骤无论在本机还是服务器上都是完全一样的。
 
-## **2. 使用GIT的好处**
+## 2. 使用GIT的好处
 
 * 更顺畅的工作流程，开发过程中，完全可以离线操作     
 * 快速，Git分布式架构使得本地仓库包含所有的历史版本信息，你可以在不同的版之间快速切换       
@@ -21,7 +21,7 @@ git是一个分布式版本控制软件，与常用的版本控制工具如CVS�
 
 参考链接： http://blog.csdn.net/fyx708711/article/details/52606252
 
-## **3. GIT 安装**    
+## 3. GIT 安装    
 
 https://git-scm.com/book/zh/v2/起步-安装-Git         
 ```   
@@ -43,9 +43,9 @@ https://git-for-windows.github.io/
 # https://jingyan.baidu.com/article/20095761b48041cb0721b4fc.html
 ```
 
-## **4. GIT 配置**
+## 4. GIT 配置
 
-### 1. GIT 初始化设置、命令别名设置      
+### 4.1 GIT 初始化设置、命令别名设置      
 
 这里是为了在频繁git操作的时候，命令简化。
 ```   
@@ -81,7 +81,80 @@ git config --global alias.dump 'cat-file -p'             # GIT命令别名 方�
 which git
 ```
 
-### **2. GIT配置文件介绍**      
+
+
+### 4.2 如果终端安装了oh-my-zsh，会带一堆git命令别名
+
+Mac 用户和 Linux 用户通过在您的终端中运行以下命令来安装oh-my-zsh：
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+oh-my-zsh带的git命令别名：
+
+```
+g - git
+gst - git status
+gl - git pull
+gup - git pull --rebase
+gp - git push
+gd - git diff
+gdc - git diff --cached
+gdv - git diff -w "$@" | view
+gc - git commit -v
+gc! - git commit -v --amend
+gca - git commit -v -a
+gca! - git commit -v -a --amend
+gcmsg - git commit -m
+gco - git checkout
+gcm - git checkout master
+gr - git remote
+grv - git remote -v
+grmv - git remote rename
+grrm - git remote remove
+gsetr - git remote set-url
+grup - git remote update
+grbi - git rebase -i
+grbc - git rebase --continue
+grba - git rebase --abort
+gb - git branch
+gba - git branch -a
+gcount - git shortlog -sn
+gcl - git config --list
+gcp - git cherry-pick
+glg - git log --stat --max-count=10
+glgg - git log --graph --max-count=10
+glgga - git log --graph --decorate --all
+glo - git log --oneline --decorate --color
+glog - git log --oneline --decorate --color --graph
+gss - git status -s
+ga - git add
+gm - git merge
+grh - git reset HEAD
+grhh - git reset HEAD --hard
+gclean - git reset --hard && git clean -dfx
+gwc - git whatchanged -p --abbrev-commit --pretty=medium
+gsts - git stash show --text
+gsta - git stash
+gstp - git stash pop
+gstd - git stash drop
+ggpull - git pull origin $(current_branch)
+ggpur - git pull --rebase origin $(current_branch)
+ggpush - git push origin $(current_branch)
+ggpnp - git pull origin $(current_branch) && git push origin $(current_branch)
+glp - _git_log_prettily
+```
+
+参考资料：
+
+https://segmentfault.com/a/1190000007145316
+
+https://www.hinjin.com/2018/04/13/%E5%A6%82%E4%BD%95%E5%8A%A0%E5%BF%AB%E4%BD%A0%E7%9A%84git%E6%93%8D%E4%BD%9C%EF%BC%9F/
+
+
+
+### 4.3 GIT配置文件介绍      
 
 * Linux，Mac OS         
 
@@ -93,6 +166,7 @@ Git 使用一系列配置文件来保存你自定义的行为。
 
 * windows    
   
+
 windows7系统：   C:\Documents and Settings\用户名，其中有一个.gitconfig的文件。      
 windows8系统： C盘 -> 用户(Users) -> 用户名 文件夹下，有个.gitconfig的文件。         
 
@@ -100,7 +174,7 @@ windows8系统： C盘 -> 用户(Users) -> 用户名 文件夹下，有个.gitco
 
 ---
 
-## **5. git设置远程仓库账号密码(拉取、上传代码不用输入用户名密码)**
+## 5. git设置远程仓库账号密码(拉取、上传代码不用输入用户名密码)
 
 * **github Personal access tokens**     
 
@@ -129,13 +203,13 @@ http://yulilong:github_Personal_access_tokens@github.com
 ```
 
 ------------
-## **6. git文件夹详解**     
+## 6. git文件夹详解     
 
 * [**探索.git目录**](http://www.cnblogs.com/zhongxinWang/p/4235448.html)     
 
 * [**.git文件夹详解**](http://www.jianshu.com/p/25293009f738)     
 * [**Git 内部原理**](https://git-scm.com/book/zh/v2/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-%E5%BA%95%E5%B1%82%E5%91%BD%E4%BB%A4%E5%92%8C%E9%AB%98%E5%B1%82%E5%91%BD%E4%BB%A4)      
 
-## **7. git常用命令** 
+## 7. git常用命令 
 
 [git常用命令](https://bitbucket.org/yulilong/my_wiki/wiki/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4)* [链接文本](链接网址)
