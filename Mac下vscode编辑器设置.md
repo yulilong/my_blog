@@ -101,6 +101,29 @@ Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件。
   },
 ```
 
+### 1.8 关闭点击对应文件是，资源管理器自动定位到该文件
+
+Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件
+
+```
+// 控制资源管理器是否应在打开文件时自动进行显示并选择。
+  "explorer.autoReveal": false,
+```
+
+### 1.9 标题栏显示文档全路径
+
+Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件：
+
+```
+"window.title": "${activeEditorLong}${separator}${rootName}"
+```
+
+activeEditorMedium:相对于工作区文件夹的文件路径 (如 myFolder/myFile.txt)。
+
+activeEditorLong:文件的完整路径 (如 /Users/Development/myProject/myFolder/myFile.txt)。
+
+
+
 
 
 ## 2. 快捷键设置   
