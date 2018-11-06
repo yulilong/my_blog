@@ -47,7 +47,7 @@ Bash作为大多数系统默认安装的Shell，大家都多少有所接触，Zs
 ~ chsh -s /bin/zsh
 # 切换Zsh为Shell， 成功后需要重启终端
 ~ chsh -s /bin/bash  
-# zsh配置环境变量：
+# 查看zsh配置的环境变量：
 ~ cat ~/.zshrc
 # 此时还没有酷炫的效果，需要安装插件
 # 安装Oh My ZSH!
@@ -55,7 +55,9 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 ```
 ![WX20170321-135916.png](https://bitbucket.org/repo/oE6yEX/images/1240552958-WX20170321-135916.png)   
 
-![QQ20170721-105153.png](https://bitbucket.org/repo/oE6yEX/images/2431801281-QQ20170721-105153.png)      
+![QQ20170721-105153.png](https://bitbucket.org/repo/oE6yEX/images/2431801281-QQ20170721-105153.png)
+
+https://www.jianshu.com/p/d194d29e488c
 
 ## 4. 窗口管理软件 – SizeUp  
 
@@ -329,7 +331,6 @@ Charles 通过将自己设置成系统的网络访问代理服务器，使得所
 
    如果不勾选上面选项，则不能抓取到包
 
-   
 
 使用教程： https://www.cnblogs.com/mawenqiangios/p/8270238.html
 
