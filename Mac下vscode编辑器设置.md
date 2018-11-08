@@ -122,7 +122,24 @@ activeEditorMedium:相对于工作区文件夹的文件路径 (如 myFolder/myFi
 
 activeEditorLong:文件的完整路径 (如 /Users/Development/myProject/myFolder/myFile.txt)。
 
+### 1.10 关闭编辑器的预览，免得打开新文件胡替换老的文件
 
+Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件：
+
+```
+// 控制打开的编辑器是否显示为预览。预览编辑器可以重新使用，直到将其保留(例如，双击或编辑)。
+"workbench.editor.enablePreview": false,
+```
+
+### 1.11 设置鼠标双击才打开文件
+
+Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件：
+
+```
+"workbench.list.openMode": "doubleClick",
+```
+
+如果想改回单击打开文件，可改回参数：`singleClick`, 设置双击打开文件后，预览模式就不需要在设置了。
 
 
 
