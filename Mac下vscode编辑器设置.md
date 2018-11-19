@@ -141,7 +141,9 @@ Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件：
 
 如果想改回单击打开文件，可改回参数：`singleClick`, 设置双击打开文件后，预览模式就不需要在设置了。
 
+### 1.12 编辑器tab标签下面显示打开文件的导航
 
+View -> toggle breadcrumbs
 
 ## 2. 快捷键设置   
 
