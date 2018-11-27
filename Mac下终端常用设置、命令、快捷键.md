@@ -228,6 +228,14 @@ localhost就是一个域名，域名默认指向 127.0.0.1，两者是一样的�
 
 
 
+### 4.5 终端刷新DNS缓存
+
+```
+sudo killall -HUP mDNSResponder
+```
+
+
+
 
 ## 参考资料
 
