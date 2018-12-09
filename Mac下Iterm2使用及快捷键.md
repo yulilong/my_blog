@@ -136,7 +136,19 @@ Preferences -> Profiles -> Profile Name -> Text -> Cursor
 
 选择一个自己喜欢的样式
 
+### 3.5 新窗口打开的路径跟当前终端的路径一直
 
+Preferences -> Profiles -> General -> Working Directory ->  reuse previous session's directory
+
+
+
+### 3.6 新窗口在电脑获取焦点的窗口生成
+
+Preferences -> Profiles -> General -> Window -> Settings for New Windows -> Screen 
+
+选择：No Preference
+
+或者选择：Screen with Cursor（在鼠标的窗口）
 
 ## 参考资料
 
