@@ -62,3 +62,41 @@ ps -ef|grep nginx
 
 配置目录：/etc/nginx/nginx.conf
 
+终端打开配置文件：
+
+```
+vi /etc/nginx/nginx.conf
+```
+
+
+
+```
+user www-data;
+worker_processes auto;
+pid /run/nginx.pid;
+
+events {
+	worker_connections 768;
+	# multi_accept on;
+}
+
+http {
+	server {
+		listen		80;	#port
+		server_name	47.104.24.148 www.dragon.com dragon.com;
+		location / {
+			root	/website/dist;
+			index	index.html index.htm;
+		}
+	}
+}
+```
+
+配置主要是在http里面的 server，其中参数：
+
+- listen：监听的端口
+- server_name：监听的服务名字，以空格间隔
+- location：访问服务的路径
+
+保存后终端域名命令`nginx -s reload`重启Nginx来生效命令
+
