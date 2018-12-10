@@ -145,6 +145,21 @@ Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件：
 
 View -> toggle breadcrumbs
 
+### 1.13 编辑器文字超出了编辑器可视区域，是否自动在下一行显示
+
+Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件：
+
+```
+// Controls how lines should wrap.
+//  - off: Lines will never wrap.
+//  - on: Lines will wrap at the viewport width.
+//  - wordWrapColumn: Lines will wrap at `editor.wordWrapColumn`.
+//  - bounded: Lines will wrap at the minimum of viewport and `editor.wordWrapColumn`.
+"editor.wordWrap": "off",
+```
+
+
+
 ## 2. 快捷键设置   
 
 ### 打开快捷键界面和快速找到想要修改的快捷键
