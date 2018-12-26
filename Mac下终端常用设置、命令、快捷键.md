@@ -236,6 +236,91 @@ sudo killall -HUP mDNSResponder
 
 
 
+## 5. 终端一些命令安装
+
+### 5.1 wget安装
+
+wget是unix上一个发送网络请求的命令工具，不过mac本身并没有，mac自带的是curl，都是发送网络请求，但是两者之间肯定存在一些差异。一般来说，wget主要专注于下载文件，curl长项在于web交互、调试网页等。
+
+需要使用**homebrew**进行安装，如果没安装请先安装这个
+
+终端安装wget命令：
+
+```
+brew install wget --with-libressl
+
+==> Installing dependencies for wget: libunistring, libidn2 and openssl
+==> Installing wget dependency: libunistring
+==> Downloading https://homebrew.bintray.com/bottles/libunistring-0.9.10.high_si
+######################################################################## 100.0%
+==> Pouring libunistring-0.9.10.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/libunistring/0.9.10: 54 files, 4.4MB
+==> Installing wget dependency: libidn2
+==> Downloading https://homebrew.bintray.com/bottles/libidn2-2.0.5.high_sierra.b
+######################################################################## 100.0%
+==> Pouring libidn2-2.0.5.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/libidn2/2.0.5: 68 files, 668.6KB
+==> Installing wget dependency: openssl
+==> Downloading https://homebrew.bintray.com/bottles/openssl-1.0.2q.high_sierra.
+######################################################################## 100.0%
+==> Pouring openssl-1.0.2q.high_sierra.bottle.tar.gz
+==> Caveats
+A CA file has been bootstrapped using certificates from the SystemRoots
+keychain. To add additional certificates (e.g. the certificates added in
+the System keychain), place .pem files in
+  /usr/local/etc/openssl/certs
+
+and run
+  /usr/local/opt/openssl/bin/c_rehash
+
+openssl is keg-only, which means it was not symlinked into /usr/local,
+because Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries.
+
+If you need to have openssl first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find openssl you may need to set:
+  export LDFLAGS="-L/usr/local/opt/openssl/lib"
+  export CPPFLAGS="-I/usr/local/opt/openssl/include"
+
+==> Summary
+🍺  /usr/local/Cellar/openssl/1.0.2q: 1,794 files, 12.1MB
+Warning: wget: this formula has no --with-libressl option so it will be ignored!
+==> Installing wget
+==> Downloading https://homebrew.bintray.com/bottles/wget-1.20.high_sierra.bottl
+######################################################################## 100.0%
+==> Pouring wget-1.20.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/wget/1.20: 50 files, 3.9MB
+==> Caveats
+==> openssl
+A CA file has been bootstrapped using certificates from the SystemRoots
+keychain. To add additional certificates (e.g. the certificates added in
+the System keychain), place .pem files in
+  /usr/local/etc/openssl/certs
+
+and run
+  /usr/local/opt/openssl/bin/c_rehash
+
+openssl is keg-only, which means it was not symlinked into /usr/local,
+because Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries.
+
+If you need to have openssl first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find openssl you may need to set:
+  export LDFLAGS="-L/usr/local/opt/openssl/lib"
+  export CPPFLAGS="-I/usr/local/opt/openssl/include"
+
+➜  ~ 
+
+~ wget --version
+GNU Wget 1.20 built on darwin17.7.0.
+```
+
+参考资料：https://www.jianshu.com/p/f6b290710262
+
+
+
 
 ## 参考资料
 
