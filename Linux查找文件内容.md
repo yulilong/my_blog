@@ -34,3 +34,31 @@ find . -name "*.in" | xargs grep "thermcontact"
 ```
 
 http://blog.chinaunix.net/uid-25266990-id-199887.html
+
+
+
+### shell命令搞定某个文件夹下java代码行数的统计
+
+```
+find . -name "*.java"|xargs wc -l|grep "total"|awk '{print $1}'  
+find . -name "*.java"|xargs cat|wc -l    #Output:37634  
+```
+
+上面的两句效果一样，只不过第二种是先利用cat将多个java文件的内容合并输出了。然后再统计。
+
+不过两个都有共同的毛病——连文件里面的空行都给统计进去算作一行了。
+
+去除空行版:
+
+```
+find . -name "*.java"|xargs cat|grep -v ^$|wc -l
+```
+
+去除注释版:
+
+```
+# exclude the lines begin with //  
+find . -name "*.java"|xargs cat|grep -v -e ^$ -e ^\s*\/\/.*$|wc -l
+```
+
+参考链接：https://blog.csdn.net/yhhwatl/article/details/52623879
