@@ -209,6 +209,161 @@ error: failed to push some refs to 'http://git.baijiahulian.com/yunying/bi-fe.gi
 
   点击项目右上角(用户logo下面)的小齿轮，选择`Protected Branches`, 在`Protect a branch`中输入分支名字，选择对应权限，然后点击`Protect`，就会立刻添加一个保护分支了。
 
+## 9. 代码回滚到以前的版本
+
+改完代码匆忙提交,上线发现有问题,怎么办? 赶紧回滚.
+
+改完代码测试也没有问题,但是上线发现你的修改影响了之前运行正常的代码报错,必须回滚.
+
+回滚分两种情况
+
+### 9.1 代码还没有push到远程仓库，回滚使用`git reset`
+
+当代码还在本地仓库，在add、commit后发现代码有问题，想回退到以前的提交点，此时可用reset命令：
+
+```
+git reset option 历史提交点
+```
+
+- option：reset的操作选项可用命令有：
+
+  > `--hard`: 移动HEAD，更新index,更新工作目录（working Directory）
+  >
+  > `--mixed`: 移动HEAD，更新index, 此选项是reset的默认选项，也就是不写option默认就是此操作。
+  >
+  > `--soft`: 只移动HEAD,
+
+- 历史提交点: commit标识代码， 也就是`git log`命令中的一串字符串，如:d42a68c81， 通常前8位以上就可以
+
+`reset`命令会以特定的顺序重写这三棵树，在你指定以下选项时停止：    
+
+1. 移动 HEAD 分支的指向 （若指定了 --soft，则到此停止）
+2. 使索引看起来像 HEAD （若未指定 --hard，则到此停止）
+3. 使工作目录看起来像索引
+
+使用例子：
+
+```
+git reset --hard 9e53f30b7ab56e
+
+HEAD is now at 9e53f30 开始页面：添加提交按钮。
+```
+
+此时所有历史commit记录可使用`git reflog`来查找：
+
+```
+git reflog
+
+26c5d5a (HEAD -> test, origin/test) HEAD@{0}: reset: moving to 26c5d5a
+9e53f30 HEAD@{1}: reset: moving to 9e53f30b7ab56e
+26c5d5a (HEAD -> test, origin/test) HEAD@{2}: commit: 添加测试包
+9e53f30 HEAD@{3}: commit: 提交信息
+```
+
+如果回退错了，可使用上面命令把最早的提交在回退回来。
+
+### 9.2 代码已经push到远程仓库
+
+#### 9.2.1 代码刚push，还没有扩散
+
+代码刚push，还没有被其他开发人员拉取，或者还没有用于自动部署工具拉取(如Jenkins)。
+
+此时使用`git reset` 回退后，然后使用`git push -f` 来强推代码到仓库即可：
+
+```
+git reset --hard 9e53f30b7
+HEAD is now at 9e53f30 开始页面：添加提交按钮。
+```
+
+```
+git push -f
+
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create merge request for tt:
+remote:   http://git.github.com/finance-system/zi-fe/merge_requests/new?merge_request%5Bsource_branch%5D=tt
+remote:
+To http://git.github.com/finance-system/zi-fe.git
+ + 26c5d5a...54ebaf8 tt -> tt (forced update)
+```
+
+注意，如果推送的分支是保护分支(gitlab仓库有保护分支设置)，那么只能是master权限才能强推代码，或暂时把保护分支关闭才能正确推送代码。
+
+#### 9.2.2 代码已经被其他开发拉取或已经被自动部署工具拉取了
+
+由于此时代码已扩散了，如果在使用reset回退然后强推则会导致被人在拉取你代码的时候导致冲突，拉取失败。
+
+此时可使用`git revert`来回退了：
+
+git revert用于反转提交,执行evert命令时要求工作树必须是干净的.
+
+git revert用一个新提交来消除一个历史提交所做的任何修改.
+
+revert 之后你的本地代码会回滚到指定的历史版本,这时你再 git push 既可以把线上的代码更新.(这里不会像reset造成冲突的问题)
+
+revert 使用,需要先找到你想回滚版本唯一的commit标识代码：
+
+```
+git revert 26c5d5a7ce5b
+
+[tttt 5774123] Revert "哈勃包名更改测试。"
+3 files changed, 3 insertions(+), 5 deletions(-)
+```
+
+`git revert 26c5d5a7ce5b`命令会回把`26c5d5a7ce5b`的提交回退，并生成一次提交记录。
+
+如果想一次revert多个提交点：
+
+```
+git revert 2c71073d2..b688116bde
+```
+
+注意：
+
+2c71073d2 ：是旧提交点，也就是比 b688116bde提交时间早
+
+提交点是两个点之间的，每一个提交都会生成已给提交记录。
+
+使用`2c71073d2..b688116bde`其实比单独一个`2c71073d2`是一样的，如果回退5个提交，则会出现5次提交记录。
+
+#### 9.2.3 代码已经扩散，麻烦别人删除分支，然后从新拉取代码
+
+如果别人已经拉取你的分支代码了，还可以然他删除这个分支，然后从新拉取代码。
+
+1. 本地使用`git reset`回退到一个历史版本中。
+
+2. 使用`git push -f`强推到服务器仓库。
+
+3. 别人要做如下操作：
+
+   ```
+   git checkout master  	// 切换到其他分支
+   git branch -d tt		// 删除有问题的分支
+   git fetch -a			// 提取所有git信息到本地
+   git checkout tt			// 此时你的新分支代码就没问题了
+   git pull
+   ```
+
+4. 如果是Jenkins构建的，可在Jenkins配置里面的脚本先执行下面代码：
+
+   ```
+   git checkout master && git branch -d $branch && git fetch -a && git checkout $branch && git pull"
+   ```
+
+   `$branch`是Jenkins里面的分支名字变量。
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
