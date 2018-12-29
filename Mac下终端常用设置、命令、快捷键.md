@@ -319,7 +319,24 @@ GNU Wget 1.20 built on darwin17.7.0.
 
 参考资料：https://www.jianshu.com/p/f6b290710262
 
+### 5.2 tree命令安装
 
+tree命令用来在终端下显示目录树结构，在Mac下默认是没有安装该命令的。
+
+需要使用终端使用brew命令来安装tree：
+
+```
+brew install tree
+
+==> Downloading http://mama.indstate.edu/users/ice/tree/src/tree-1.7.0.tgz
+Already downloaded: /Library/Caches/Homebrew/tree-1.7.0.tgz
+==> make prefix=/usr/local/Cellar/tree/1.7.0 MANDIR=/usr/local/Cellar/tree/1.7.0/share/man/man1 CC=c
+🍺  /usr/local/Cellar/tree/1.7.0: 7 files, 140K, built in 2 seconds
+```
+
+安装后可使用`tree --help`来查看使用帮助。
+
+在使用过程中，如果目录中有中文文件，会显示乱码，可使用`tree -N`命令来解决。
 
 
 ## 参考资料
