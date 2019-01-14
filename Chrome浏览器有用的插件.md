@@ -73,3 +73,10 @@ http://www.pc6.com/infoview/Article_115189.html
 
 使用：点击图标，会弹出一个新窗口，里面会显示浏览器打开的所有tabs。
 
+### 8. 页面去除广告
+
+安装：chrome应用商店中搜索`广告终结者`， 点击安装。
+
+[广告终结者](https://chrome.google.com/webstore/detail/%E5%B9%BF%E5%91%8A%E7%BB%88%E7%BB%93%E8%80%85/fpdnjdlbdmifoocedhkighhlbchbiikl?utm_source=chrome-ntp-icon)
+
+其他去广告的插件：https://www.jianshu.com/p/ecfd133ee48e
