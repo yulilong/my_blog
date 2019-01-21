@@ -352,7 +352,69 @@ git revert 2c71073d2..b688116bde
 
    `$branch`是Jenkins里面的分支名字变量。
 
+## 10. 使用git log统计你在项目中的工作量
 
+### 10.1 按提交记录时间段来统计
+
+此方法统计从提交的开始时间到结束这一段时间所有的提交代码
+
+```
+git log --since=2018-01-01 --until=2018-12-31 --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }'
+
+added lines: 36874, removed lines: 12214, total lines: 24660
+```
+
+上面的git命令按照`2018-01-01`到`2018-12-31`这段时间来统计你的代码提交量
+
+### 10.2 按照提交用户名来统计
+
+此方法可以统计项目中，该用户的工作量
+
+```
+git log --author="username" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -
+
+added lines: 29146, removed lines: 7457, total lines: 21689
+```
+
+注意把`username`改成真正的用户名。
+
+### 10.3 按照用户名和时间段来统计
+
+此方法过滤一段时间内，某个用户的代码量
+
+```
+git log --author="username" --since=2018-10-01 --until=2018-12-31 --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -
+
+added lines: 2068, removed lines: 953, total lines: 1115
+```
+
+注意把`username`改成真正的用户名。
+
+### 10.4其他的统计方法
+
+查看仓库提交者排名前 5
+
+```
+git log --pretty='%aN' | sort | uniq -c | sort -k1 -n -r | head -n 5
+```
+
+贡献值统计
+
+```
+git log --pretty='%aN' | sort -u | wc -l
+```
+
+提交数统计
+
+```
+git log --oneline | wc -l
+```
+
+添加或修改的代码行数：
+
+```
+git log --stat|perl -ne 'END { print $c } $c += $1 if /(\d+) insertions/'
+```
 
 
 
