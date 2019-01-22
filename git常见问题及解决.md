@@ -371,7 +371,7 @@ added lines: 36874, removed lines: 12214, total lines: 24660
 此方法可以统计项目中，该用户的工作量
 
 ```
-git log --author="username" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -
+git log --author="username" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }'
 
 added lines: 29146, removed lines: 7457, total lines: 21689
 ```
@@ -383,7 +383,7 @@ added lines: 29146, removed lines: 7457, total lines: 21689
 此方法过滤一段时间内，某个用户的代码量
 
 ```
-git log --author="username" --since=2018-10-01 --until=2018-12-31 --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -
+git log --author="username" --since=2018-10-01 --until=2018-12-31 --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }'
 
 added lines: 2068, removed lines: 953, total lines: 1115
 ```
