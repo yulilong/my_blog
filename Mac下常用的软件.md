@@ -416,3 +416,13 @@ https://pan.baidu.com/s/1boZWCzH
 3. 在应用程序文件夹里面找到PS6，右键显示包内容(show package content), 然后找到contents/framework文件夹，把amtlib.framework文件拷贝到里面，OK。
 
 参考链接： https://www.jianshu.com/p/097353202b66      
+
+
+
+## gif截图工具：Gifox
+
+下载地址：https://gifox.io/， 也可以在 App Store中搜索`Gifox`来下载。
+
+该软件是收费的，不过有免费版的，经过使用，发现免费版最多录制10秒，不知道是不是由于是免费的原因。
+
+还可以使用QQ的截图，里面有录屏然后转成gif就可以。
