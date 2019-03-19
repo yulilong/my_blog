@@ -374,7 +374,15 @@ https://github.com/Microsoft/vscode-eslint
 
 那么在保存文件的时候，会自动把代码格式化成符合eslint风格的代码，比如把`var`变量自动变成`let`
 
+### 4.15 对 webpack 别名路径或者自定义别名路径进行快速跳转的插件
 
+[Jump To Alias File](https://marketplace.visualstudio.com/items?itemName=wanfu.jump-to-alias-file)
+
+https://github.com/wanfu920/jumpToAliasFile
+
+可以对 webpack 别名路径或者自定义别名路径进行快速跳转的插件.
+
+默认webpack配置的alias可自动识别  如果没识别 可以在setting.json里配置webpeckConfigPath或者jumpToAliasFile.alias
 
 ## 5. VUE框架相关的插件
 
