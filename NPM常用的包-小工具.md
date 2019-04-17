@@ -34,3 +34,9 @@ http-server
 http-server [path] [options]
 ```
 
+## 3. 多个CSS类名合并
+
+https://www.npmjs.com/package/classnames
+
+可以根据不同的条件拼接成不同的字符串，主要用于有多个样式类时，根据不同的类显示不同的样式类。
+
