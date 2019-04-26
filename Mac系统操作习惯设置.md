@@ -53,6 +53,9 @@ defaults delete com.apple.desktopservices DSDontWriteNetworkStores
 
 ```
 sudo find / -name ".DS_Store" -depth -exec rm {} \;
+
+# 命令在10.14.2系统中，已经失效
+sudo find / -name .DS_Store -exec rm {} +
 ```
 
 - 3.4. 上面命令不管用，安装 App 解决 .DS_Store 污染问题
@@ -63,6 +66,50 @@ ASEPSIS 会把所有的.DS_Store重定向到 /usr/local/.dscage 内。
 ### 4、把应用程序图标放在finder上
 
 按住 cmd键，鼠标拖动应用即可。   
+
+### 5、一次性修改finder文件夹显示选项
+
+由于修改了Mac屏幕的分辨率，在打开finder查看文件的时候发现文件图标和文件名大小不合适了，需要修改。
+
+在当前finder文件夹下，右上角的View -> show view options, 或者直接使用快捷键`cmd + J`来直接打开，在打开的界面中：
+
+> Icon Size: 此选项是设置文件图标的大小，可选择适应的大小
+>
+> Text Size:此选项是设置文件名字体大小的，选择对应的大小
+>
+> Use as Defaults: （可能是）如果勾选了此选项则字文件夹及子文件夹内容都会应用此选项
+
+此设置只在当前目录设置有效。如果想要所有目录都生效，则使用如下方式：
+
+1、打开finder，连续使用快捷键`Command + ↑方向箭头上`，直到目录不在动为止，把目录切换到顶级目录(磁盘图标)，不要选择任何文件。
+
+2、按`Command + J`或者点击工具栏的小齿轮，打开“查看显示选项(show view options)”；
+
+3、在显示选项内调整好自己想要的效果，图标大小、文件名字体大小等。
+
+4、打开终端，输入如下命令：
+
+```
+sudo find / -name .DS_Store -exec rm {} +
+```
+
+注意此命令在MacOS 10.14.2系统版本中，已经失效。可试一下如下命令：
+
+```
+sudo find / -name ".DS_Store" -depth -exec rm {} \;
+```
+
+此命令目的是删除所有文件夹下的`.DS_Store`文件，此文件会记录文件夹选项。
+
+5、等待第 4 步完成后，点击屏幕左上角的小苹果图标选择“强制退出(Force Quit)”；
+
+6、在强制退出应用程序窗口中选择“Finder”后点击“重新开启”即可完成。
+
+参考资料：https://bbs.feng.com/mobile-news-read-0-688186.html
+
+
+
+
 
 ## 二、Mac系统相关
 
@@ -263,7 +310,7 @@ ShadowSocks 默认使用的是 adblock plus 的引擎，要想自己添加规则
 
   [ShadowSocks 自定义规则](http://honglu.me/2015/06/26/ShadowSocks%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A7%84%E5%88%99/)
 
-  ​
+  
 
 
 ## ssh远程连接mac   

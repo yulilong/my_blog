@@ -15,6 +15,12 @@ http://javascript.ruanyifeng.com/introduction/intro.html#toc10
 
 如`<div id="app">123</div>`，可直接输入`app`即可查看该标签的dom
 
+#### 2.1 页面跳转后，输出的console记录保留
+
+点击右边齿轮图标，然后选择`preserve log`
+
+然后在切换页面后，所有输出的log记录都会保留。
+
 ### 3. 利用开发者工具截取页面
 
 #### 3.1 截取整个页面：Capture full size screenshot
