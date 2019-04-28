@@ -80,3 +80,6 @@ http://www.pc6.com/infoview/Article_115189.html
 [广告终结者](https://chrome.google.com/webstore/detail/%E5%B9%BF%E5%91%8A%E7%BB%88%E7%BB%93%E8%80%85/fpdnjdlbdmifoocedhkighhlbchbiikl?utm_source=chrome-ntp-icon)
 
 其他去广告的插件：https://www.jianshu.com/p/ecfd133ee48e
+
+[AdGuard 广告拦截器](<https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg?utm_source=chrome-ntp-icon>)
+
