@@ -83,3 +83,8 @@ http://www.pc6.com/infoview/Article_115189.html
 
 [AdGuard 广告拦截器](<https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg?utm_source=chrome-ntp-icon>)
 
+### 9. Qlearly 空白页管理tab标签和书签
+
+[Qlearly - Tab and Bookmark Manager](https://chrome.google.com/webstore/detail/qlearly-tab-and-bookmark/aicaflgmmblfaneodjfhkilgplnpjmig?utm_source=chrome-ntp-icon)
+
+方便的管理当前打开的tab标签页面，可以一键保存打开的tab页面，还可以管理特殊的标签。
