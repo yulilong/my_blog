@@ -736,6 +736,8 @@ Deleted tag 'v1.0' (was 2ffea56)
 
 #### ② `git push origin :refs/tags/v0.1`:删除服务器标签   
 
+推送一个空tag到远程tag，就可以删除同名的tag：
+
 ```
 $ git push origin :refs/tags/v0.1
 To http://192.168.95.95/user/test.git
@@ -743,6 +745,14 @@ To http://192.168.95.95/user/test.git
 ```
 
 如果服务器的标签删除后，本地的也需要自己删除。
+
+或者使用这种形式：
+
+```
+git push origin --delete tag <tagname>
+```
+
+
 
 [***关于git tag详解***](https://git-scm.com/book/zh/v2/Git-基础-打标签)     
 
