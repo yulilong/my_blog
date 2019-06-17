@@ -384,6 +384,12 @@ https://github.com/wanfu920/jumpToAliasFile
 
 默认webpack配置的alias可自动识别  如果没识别 可以在setting.json里配置webpeckConfigPath或者jumpToAliasFile.alias
 
+### 4.16 计算引入包的大小
+
+[Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
+
+插件会在代码import一个包后计算该包的大小
+
 ## 5. VUE框架相关的插件
 
 ### 5.1 vetur：语法高亮插件
