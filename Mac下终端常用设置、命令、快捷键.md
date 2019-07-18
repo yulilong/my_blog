@@ -96,7 +96,7 @@ la -al
 
 ```
 // 终端使用 code . 命令使用vscode打开当前目录
-alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bi    n/code'
+alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code'
 ```
 
 4、重启终端后，终端打开一个项目文件，使用`code .`即可使用vscode打开项目。
