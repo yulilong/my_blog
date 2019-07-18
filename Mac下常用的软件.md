@@ -37,6 +37,7 @@ $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste
 ```
 ![WX20170721-111738.png](https://bitbucket.org/repo/oE6yEX/images/415143452-WX20170721-111738.png)
 ​     
+
 ## 3. 替换系统默认Shell — Oh My ZSH!    
 
 Bash作为大多数系统默认安装的Shell，大家都多少有所接触，Zsh和Bash类似都是一个Shell，但是Zsh更注重用户体验和与人的交互，OS X默认也安装好了Zsh，然而你想自己从头开始配置一个顺手的Zsh是比较浪费时间的，有人已经帮我们配置好了，这个流行的Zsh配置叫—Oh My ZSH!，直观的效果如下图所示，代码开源在[github](https://github.com/robbyrussell/oh-my-zsh)。  
@@ -52,12 +53,33 @@ Bash作为大多数系统默认安装的Shell，大家都多少有所接触，Zs
 # 此时还没有酷炫的效果，需要安装插件
 # 安装Oh My ZSH!
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# 卸载Oh My ZSH，注意：卸载后，.zshrc文件还在
+uninstall_oh_my_zsh
 ```
 ![WX20170321-135916.png](https://bitbucket.org/repo/oE6yEX/images/1240552958-WX20170321-135916.png)   
 
 ![QQ20170721-105153.png](https://bitbucket.org/repo/oE6yEX/images/2431801281-QQ20170721-105153.png)
 
 https://www.jianshu.com/p/d194d29e488c
+
+遇到的问题解决：
+
+在安装好后，打开终端出现
+
+```
+执行.sh脚本，异常/bin/sh^M: bad interpreter: No such file or directory
+```
+
+注意，提示中出现了`^m`符号，这是不同系统编码格式引起的，^M在Linux/Unix中是非常常见的，也就是我们在Win中见过的\r回车符号，可使用vim编辑器打开脚本文件，在命令行模式下，输入下面命令来删除^M:
+
+```
+:%s/\r//g
+:wq
+```
+
+这句命令的意思是：％指匹配整个文件，s是指置换的意思，\r代表^M（或者可以使用Ctrl+V Ctrl +M来输入^M，即也可以使用命令:/s^M$//g来达到同样的目的），M后面的$代表匹配行尾的内容，最后的g表示每行中匹配的内容都要进行替换
+
+Unix系统里，每行结尾只有**“<换行>”，即"\n"**；Windows系统里面，每行结尾是“**<回车><换行>”，即“\r\n”**；Mac系统里，每行结尾是**“<回车>”，即"\r"**；。一个直接后果是，Unix/Mac系统下的文件在Windows里打开的话，所有文字会变成一行；而Windows里的文件在Unix/Mac下打开的话，在每行的结尾可能会多出一个^M符号。
 
 ## 4. 窗口管理软件 – SizeUp  
 
