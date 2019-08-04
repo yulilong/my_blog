@@ -36,6 +36,11 @@ echo ''
 echo "执行命令：git push -f https://github.com/yulilong/my_blog.git master:gh-pages"
 git push -f https://github.com/yulilong/my_blog.git master:gh-pages
 
+echo ''
+echo "执行命令：git push -f https://gitee.com/dragon-li/my-wiki master:gh-pages"
+echo ''
+git push -f https://gitee.com/dragon-li/my-wiki master:gh-pages
+
 # 返回到上一次的工作目录
 echo ''
 echo "回到刚才工作目录"
