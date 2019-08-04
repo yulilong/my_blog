@@ -10,20 +10,27 @@
         "-sharing",
         "-lunr",
         "-search",
-        "search-pro@^2.0.2",
-        "expandable-chapters@^0.2.0",
+        "-highlight",
+        "search-pro@2.0.2",
+        "expandable-chapters@0.2.0",
         "chapter-fold@0.0.4",
         "edit-link@^2.0.2",
-        "tbfed-pagefooter",
-        "lightbox@^1.1.0",
+        "tbfed-pagefooter@0.0.1",
+        "lightbox@1.1.0",
         "favicon@0.0.2",
-        "splitter@^0.0.8",
-        "-highlight",
-        "prism@^2.4.0",
-        "github@^2.0.0",
-        "sectionx@^3.1.0"
+        "splitter@0.0.8",
+        "prism@2.4.0",
+        "github@2.0.0",
+        "sectionx@3.1.0",
+        "anchor-navigation-ex",
+        "page-treeview",
+        "back-to-top-button"
     ],
     "pluginsConfig": {
+        "anchor-navigation-ex": {
+            "showLevel": false,
+            "showGoTop": false
+        },
         "favicon": {
             "shortcut": "asset/img/favicon.ico",
             "bookmark": "asset/img/favicon.ico",
