@@ -24,18 +24,6 @@
         "sectionx@^3.1.0"
     ],
     "pluginsConfig": {
-        "edit-link": {
-            "base": "//github.com/yulilong/my_blog/edit/master",
-            "label": "编辑此页面"
-        },
-        "tbfed-pagefooter": {
-            "copyright":"",
-            "modify_label": "该文件最后修改时间：",
-            "modify_format": "YYYY-MM-DD HH:mm:ss"
-        },
-        "theme-default": {
-            "showLevel": true
-        },
         "favicon": {
             "shortcut": "asset/img/favicon.ico",
             "bookmark": "asset/img/favicon.ico",
@@ -44,6 +32,18 @@
                 "120x120": "asset/img/favicon.ico",
                 "180x180": "asset/img/favicon.ico"
             }
+        },
+        "edit-link": {
+            "base": "//github.com/yulilong/my_blog/edit/master",
+            "label": "编辑此页面"
+        },
+        "tbfed-pagefooter": {
+            "copyright":"",
+            "modify_label": "文件最后修改时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "theme-default": {
+            "showLevel": true
         },
         "prism": {
             "css": [
