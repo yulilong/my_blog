@@ -33,3 +33,18 @@
     * [Terminal终端快捷键](doc/linux/010-Terminal终端快捷键.md)
     * [VIM编辑器常用命令与用法总结](doc/linux/011-VIM编辑器常用命令与用法总结.md)
     * [virtualbox虚拟机、centos7安装增强工具](doc/linux/012-virtualbox虚拟机、centos7安装增强工具.md)
+
+--------------
+## 其他
+
+- ruby、rails
+
+* angular
+    * [angularJS资料](doc/angular/001-angularJS资料.md)
+    * [angularJS开发遇见的问题](doc/angular/002-angularJS开发遇见的问题.md)
+    * [arcgis开发记录](doc/angular/003-arcgis开发记录.md)
+    * [angular2开发知识点](doc/angular/004-angular2开发知识点.md)
+    * [angular2网页前端执行流程](doc/angular/005-angular2网页前端执行流程.md)
+    * [angular2中引入插件](doc/angular/006-angular2中引入插件.md)
+    * [angular-CLI中一些问题](doc/angular/007-angular-CLI中一些问题.md)
+    * [angular下arcgis开发遇见的问题](doc/angular/008-angular下arcgis开发遇见的问题.md)
