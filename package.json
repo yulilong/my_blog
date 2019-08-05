@@ -24,7 +24,6 @@
     "dependencies": {
         "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
         "gitbook-plugin-back-to-top-button": "^0.1.4",
-        "gitbook-plugin-chapter-fold": "0.0.4",
         "gitbook-plugin-edit-link": "^2.0.2",
         "gitbook-plugin-expandable-chapters": "^0.2.0",
         "gitbook-plugin-favicon": "0.0.2",
