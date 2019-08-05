@@ -32,7 +32,6 @@
         "gitbook-plugin-page-treeview": "^3.0.1",
         "gitbook-plugin-prism": "^2.4.0",
         "gitbook-plugin-search-pro": "^2.0.2",
-        "gitbook-plugin-sectionx": "^3.1.0",
         "gitbook-plugin-splitter": "0.0.8",
         "gitbook-plugin-tbfed-pagefooter": "0.0.1"
     }

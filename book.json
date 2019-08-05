@@ -20,7 +20,6 @@
         "splitter@0.0.8",
         "prism@2.4.0",
         "github@2.0.0",
-        "sectionx@3.1.0",
         "anchor-navigation-ex",
         "page-treeview",
         "back-to-top-button"
@@ -58,9 +57,6 @@
         },
         "github": {
             "url": "https://github.com/yulilong/my_blog"
-        },
-        "sectionx": {
-            "tag": "b"
         }
     }
 }
