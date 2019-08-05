@@ -13,6 +13,12 @@ echo "执行命令：cd ./_book"
 echo ''
 cd ./_book
 
+# 发布到自定义域名
+echo ''
+echo "把域名放到CNAME文件中"
+echo 'dragonli.net' > CNAME
+echo ''
+
 # 初始化一个仓库，仅仅是做了一个初始化的操作，项目里的文件还没有被跟踪
 echo ''
 echo "执行命令：git init"
