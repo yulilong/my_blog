@@ -70,6 +70,23 @@
     * [RubyMine常用快捷键](doc/ruby/014-RubyMine常用快捷键.md)
     * [rubymine习惯设置](doc/ruby/015-rubymine习惯设置.md)
 
+* manageIQ
+    * [manageIQ开发环境安装centos](doc/manageiq/001-manageIQ开发环境安装centos.md)
+    * [manageIQ开发环境安装Mac](doc/manageiq/002-manageIQ开发环境安装Mac.md)
+    * [manageIQ代码结构、框架、执行流程分析](doc/manageiq/003-manageIQ代码结构、框架、执行流程分析.md)
+    * [manageIQ汉化](doc/manageiq/004-manageIQ汉化.md)
+    * [manageIQ网页部分功能代码实现](doc/manageiq/005-manageIQ网页部分功能代码实现.md)
+    * [新建提供者](doc/manageiq/006-新建提供者.md)
+    * [manageiq各种云平台provide资料](doc/manageiq/007-manageiq各种云平台provide资料.md)
+    * [manageIQ服务部署](doc/manageiq/008-manageIQ服务部署.md)
+    * [manageIQ网页图标、图片、网页导航栏风格修改](doc/manageiq/009-manageIQ网页图标、图片、网页导航栏风格修改.md)
+    * [开发manageiq遇见的问题、错误解决](doc/manageiq/010-开发manageiq遇见的问题、错误解决.md)
+    * azure
+        * [azure获取TenantID、SubscriptionID、ClientID、ClientKey](doc/manageiq/azure/001-azure获取TenantID、SubscriptionID、ClientID、ClientKey.md)
+        * [azure开发连接的国内网站](doc/manageiq/azure/002-azure开发连接的国内网站.md)
+        * [azure-armrest中链接作用](doc/manageiq/azure/003-azure-armrest中链接作用.md)
+        * [azure使用虚拟机生成私有镜像](doc/manageiq/azure/004-azure使用虚拟机生成私有镜像.md)
+
 --------------
 ## 其他
 
