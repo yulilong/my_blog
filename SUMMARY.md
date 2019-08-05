@@ -81,6 +81,7 @@
     * [manageIQ服务部署](doc/manageiq/008-manageIQ服务部署.md)
     * [manageIQ网页图标、图片、网页导航栏风格修改](doc/manageiq/009-manageIQ网页图标、图片、网页导航栏风格修改.md)
     * [开发manageiq遇见的问题、错误解决](doc/manageiq/010-开发manageiq遇见的问题、错误解决.md)
+    * [添加新的Providers代码开发](doc/manageiq/011-添加新的Providers代码开发.md)
     * azure
         * [azure获取TenantID、SubscriptionID、ClientID、ClientKey](doc/manageiq/azure/001-azure获取TenantID、SubscriptionID、ClientID、ClientKey.md)
         * [azure开发连接的国内网站](doc/manageiq/azure/002-azure开发连接的国内网站.md)

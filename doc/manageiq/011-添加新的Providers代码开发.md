@@ -1,8 +1,7 @@
-###  [**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
-# 添加一个新的providers代码目录 #
+# 添加一个新的providers代码目录
 
 
-## 添加页面validate按钮可用设置 ##
+## 添加页面validate按钮可用设置
 
 manageiq/app/assets/javascripts/controllers/ems_common/ems_common_form_controller.js  
 
