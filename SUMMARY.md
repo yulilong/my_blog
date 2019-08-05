@@ -42,6 +42,19 @@
     * [NPM安装包常见问题](doc/npm/002-NPM安装包常见问题.md)
     * [package.json文件详解](doc/npm/003-package.json文件详解.md)
     * [NPM常用的包](doc/npm/004-NPM常用的包.md)
+* 其他
+    * [Chrome浏览器开发者工具使用](doc/other/001-Chrome浏览器开发者工具使用.md)
+    * [Chrome浏览器有用的插件](doc/other/002-Chrome浏览器有用的插件.md)
+    * [gitbook入门教程](doc/other/003-gitbook入门教程.md)
+    * [常用正则表达式](doc/other/004-常用正则表达式.md)
+    * [HTTP方法详解](doc/other/005-HTTP方法详解.md)
+    * [Markdown常用语法与编辑器支持情况](doc/other/006-Markdown常用语法与编辑器支持情况.md)
+    * [VS2010编译器设置](doc/other/007-VS2010编译器设置.md)
+    * [VS2010开发控制台程序遇到的问题](doc/other/008-VS2010开发控制台程序遇到的问题.md)
+    * [阻止定向广告](doc/other/009-阻止定向广告.md)
+    * [英文字母缩写的含义](doc/other/010-英文字母缩写的含义.md)
+    * [VUE开发遇见的问题](doc/other/011-VUE开发遇见的问题.md)
+
 ---------------
 * angular
     * [angularJS资料](doc/angular/001-angularJS资料.md)
@@ -71,6 +84,7 @@
     * [ruby面试题](doc/ruby/013-ruby面试题.md)
     * [RubyMine常用快捷键](doc/ruby/014-RubyMine常用快捷键.md)
     * [rubymine习惯设置](doc/ruby/015-rubymine习惯设置.md)
+    * [haml语法符号的含义](doc/ruby/016-haml语法符号的含义.md)
 
 * manageIQ
     * [manageIQ开发环境安装centos](doc/manageiq/001-manageIQ开发环境安装centos.md)
@@ -90,6 +104,4 @@
         * [azure-armrest中链接作用](doc/manageiq/azure/003-azure-armrest中链接作用.md)
         * [azure使用虚拟机生成私有镜像](doc/manageiq/azure/004-azure使用虚拟机生成私有镜像.md)
 
---------------
-## 其他
 
