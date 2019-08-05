@@ -52,6 +52,8 @@
     * [angular2中引入插件](doc/angular/006-angular2中引入插件.md)
     * [angular-CLI中一些问题](doc/angular/007-angular-CLI中一些问题.md)
     * [angular下arcgis开发遇见的问题](doc/angular/008-angular下arcgis开发遇见的问题.md)
+    * [angular编程规范](doc/angular/009-angular编程规范.md)
+    * [TS_JS中一些知识点](doc/angular/010-TS_JS中一些知识点.md)
 
 - ruby、rails
     * [ruby中语法知识](doc/ruby/001-ruby中语法知识.md)
