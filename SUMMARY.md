@@ -1,4 +1,5 @@
 * [说明](introduction.md)
+* [项目目录](SUMMARY.md)
 * git
     * [GIT介绍、安装、配置](doc/git/GIT介绍、安装、配置.md)
     * [git使用教程](doc/git/git使用教程.md)
