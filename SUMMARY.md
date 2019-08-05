@@ -35,6 +35,12 @@
     * [Terminal终端快捷键](doc/linux/010-Terminal终端快捷键.md)
     * [VIM编辑器常用命令与用法总结](doc/linux/011-VIM编辑器常用命令与用法总结.md)
     * [virtualbox虚拟机、centos7安装增强工具](doc/linux/012-virtualbox虚拟机、centos7安装增强工具.md)
+
+* npm
+    * [NPM使用介绍](doc/npm/001-NPM使用介绍.md)
+    * [NPM安装包常见问题](doc/npm/002-NPM安装包常见问题.md)
+    * [package.json文件详解](doc/npm/003-package.json文件详解.md)
+    * [NPM常用的包](doc/npm/004-NPM常用的包.md)
 ---------------
 * angular
     * [angularJS资料](doc/angular/001-angularJS资料.md)
