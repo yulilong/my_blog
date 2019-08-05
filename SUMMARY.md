@@ -1,10 +1,11 @@
 * [说明](introduction.md)
 * [项目目录](SUMMARY.md)
 * git
-    * [GIT介绍、安装、配置](doc/git/GIT介绍、安装、配置.md)
-    * [git使用教程](doc/git/git使用教程.md)
-    * [git常见问题及解决](doc/git/git常见问题及解决.md)
-    * [合并多个Commit](doc/git/合并多个Commit.md)
+    * [GIT介绍、安装、配置](doc/git/001-GIT介绍、安装、配置.md)
+    * [git使用教程](doc/git/002-git使用教程.md)
+    * [git常见问题及解决](doc/git/003-git常见问题及解决.md)
+    * [合并多个Commit](doc/git/004-合并多个Commit.md)
+    * [git代码冲突处理软件P4Merge](doc/git/005-git代码冲突处理软件P4Merge.md)
 
 * Mac
     * [Mac下常用的软件](doc/mac/001-Mac下常用的软件.md)
