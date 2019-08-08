@@ -104,5 +104,9 @@
         * [azure开发连接的国内网站](doc/manageiq/azure/002-azure开发连接的国内网站.md)
         * [azure-armrest中链接作用](doc/manageiq/azure/003-azure-armrest中链接作用.md)
         * [azure使用虚拟机生成私有镜像](doc/manageiq/azure/004-azure使用虚拟机生成私有镜像.md)
+    
+* 面试
+
+    * [JS](doc/面试题/js.md)
 
 
