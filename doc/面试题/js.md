@@ -100,3 +100,67 @@ console.log('Fifteen is ' + (a + b) + ' and\nnot ' + (2 * a + b) + '.');
 // not 20."
 ```
 
+## 4. 手写函数防抖和函数节流
+
+防抖和节流的作用都是防止函数多次调用。区别在于，假设一个用户一直触发这个函数，且每次触发函数的间隔小于wait，防抖的情况下只会调用一次，而节流的 情况会每隔一定时间（参数wait）调用函数。
+
+### 4.1 函数防抖
+
+防抖（用户连续点击，点击间隔小于0.5秒，那么用户停止点击后才执行）：
+
+```js
+function debounce(fn, delay){
+     let timerId = null
+     return function(){
+         const context = this
+         if(timerId){window.clearTimeout(timerId)}
+         timerId = setTimeout(()=>{
+             fn.apply(context, arguments)
+             timerId = null
+         },delay)
+     }
+ }
+ const debounced = debounce(()=>console.log('hi'))
+ debounced()
+ debounced()
+```
+
+### 4.2 函数节流
+
+节流（函数执行一次后，有冷却时间）：
+
+```js
+function throttle(fn, delay){
+     let canUse = true
+     return function(){
+         if(canUse){
+             fn.apply(this, arguments)
+             canUse = false
+             setTimeout(()=>{canUse = true}, delay)
+         }
+     }
+ }
+
+ const throttled = throttle(()=>console.log('hi'))
+ throttled()
+ throttled()
+```
+
+## 5. 这段代码里的 this 是什么？
+
+1. fn()
+   this => window/global， 函数里的this就是外面的this
+2. obj.fn()
+   this => obj
+3. fn.call(xx)
+   this => xx
+4. fn.apply(xx)
+   this => xx
+5. fn.bind(xx)
+   this => xx
+6. new Fn()
+   this => 新的对象
+7. fn = ()=> {}
+   this => 外面的 this
+
+关于this的具体讲解：https://zhuanlan.zhihu.com/p/23804247
