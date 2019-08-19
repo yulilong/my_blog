@@ -148,6 +148,16 @@ Preferences -> Profiles -> General -> Window -> Settings for New Windows -> Scre
 
 或者选择：Screen with Cursor（在鼠标的窗口）
 
+### 3.7 设置开机启动不显示界面
+
+1、打开系统设置(System Perferences) -> 用户与群组(User & groups) -> 登陆项(Login Items)， 点击加号，然后去应用程序里面找到Iterm2添加到启动项里面。
+2、启动iterm2程序，打开一个窗口，然后手动点击关闭按钮，确保电脑右上角苹果图标右边是iTerm2,然后
+按【Command】+【Shift】+【S】，保存名为No Window
+3、打开一个iterm2终端界面，然后按`cmd + ,`打开iterm的设置界面，选择`Arrangements`，点击刚才保存的`No Window`， 然后点击`Set Default`。
+4、在iterm的设置界面选择`General`, 在`Startup`中选择`Open Default Window Arrangement`。
+
+参考资料：https://blog.csdn.net/weixin_34023863/article/details/85958226
+
 ## 参考资料
 
 [iterm2使用快捷键](https://www.jianshu.com/p/da7728a8a4d7)
