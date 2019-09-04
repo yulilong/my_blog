@@ -158,7 +158,13 @@ Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件：
 "editor.wordWrap": "off",
 ```
 
+### 1.14 修改vscode上终端的字体大小
 
+1、使用`cmd + ,`打开设置页面，或者屏幕左上角 code -> 首选项 -> 设置。
+
+2、搜索终端，或者 功能 -> 终端。
+
+3、找到`Integrated: Font Size`，控制终端的字号，设置成自己想要的字体大小即可。
 
 ## 2. 快捷键设置   
 
