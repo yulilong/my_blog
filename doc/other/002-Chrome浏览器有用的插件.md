@@ -1,4 +1,3 @@
-***目录***
 
 [TOC]
 
@@ -88,3 +87,28 @@ http://www.pc6.com/infoview/Article_115189.html
 [Qlearly - Tab and Bookmark Manager](https://chrome.google.com/webstore/detail/qlearly-tab-and-bookmark/aicaflgmmblfaneodjfhkilgplnpjmig?utm_source=chrome-ntp-icon)
 
 方便的管理当前打开的tab标签页面，可以一键保存打开的tab页面，还可以管理特殊的标签。
+
+### 10. 截取整个网页
+
+Chrome浏览器自带截取整个页面的工具：
+
+打开开发者工具(Mac：cmd + option + I，Windows：F12) 
+
+打开命令面板： Mac：shift + cmd + P, windows:Ctrl + Shift + P
+
+输入截图命令：输入capture,会看到三个命令，
+
+- capture full size screenshot:截图整个网页图片
+- capture node screenshot：截取当前节点的图片
+- capture area screenshot: 截取鼠标选择的区域
+
+但是自带的工具有的页面不能截取全部页面。
+
+[Full Page Screen Capture](https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl?utm_source=chrome-ntp-icon)
+
+Full Page Screen Capture插件可以解决截取全部页面图片的问题。安装好后，只需要点击就可截取网页全部内容，然后选择保存图片或者保存文PDF格式。
+
+
+
+
+
