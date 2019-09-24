@@ -396,6 +396,18 @@ https://github.com/wanfu920/jumpToAliasFile
 
 插件会在代码import一个包后计算该包的大小
 
+### 4.17 设置tab强调色
+
+[Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
+
+插件安装好后，会修改vscode编辑器主题色，可以修改回原先的主题色。
+
+修改打开标签页下划线颜色：
+
+打开命令面板(cmd + shift + P)，输入`Material`，选择`Material Theme: Set accent color`，然后从出现的列表中选择一个颜色，它将更改选项卡的下划线颜色。
+
+
+
 ## 5. VUE框架相关的插件
 
 ### 5.1 vetur：语法高亮插件
