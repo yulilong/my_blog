@@ -168,9 +168,7 @@ Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件：
 
 ## 2. 快捷键设置   
 
-### 打开快捷键界面和快速找到想要修改的快捷键
-
-
+打开快捷键界面和快速找到想要修改的快捷键
 
 - 打开快捷键页面：     
 
@@ -195,38 +193,42 @@ Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件：
 在搜索框中输入：`format`, 找到`Format Document`格式化文档，修改为自己的快捷键：`control + alt + L`，    
 默认的快捷键：`shift + alt + F`.      
 
-### 格式化选中的代码快捷键：cmd + L
+### 2.3 格式化选中的代码快捷键：cmd + L
 
 在搜索框中输入： formatSelection(格式化选定代码)， 可以修改成自己的快捷键
 
-### 2.3 删除一行快捷键： command + delete   
+### 2.4 删除一行快捷键： command + delete   
 
 在搜索框中输入：`delete`, 找到`Delete Line`删除一行，修改为自己的快捷键：`command + delete`，    
 默认的快捷键：`shift + command + K`.   
 
-### 2.4 将选择添加到下一个查找匹配项(Add Selection To Next Find Match)      
+### 2.5 将选择添加到下一个查找匹配项(Add Selection To Next Find Match)      
 在快捷键页面搜索框中输入：`Add Selection To Next`(将选择添加到下一个)        
 事件的默认快捷键：`cmd + D`
 
-### 切换编辑器组布局(垂直/水平): option + cmd + 数字零
+### 2.6 切换编辑器组布局(垂直/水平): option + cmd + 数字零
 
 关键字：toggleEditorGroupLayout
 
-### 当前行向上移动一行： option + 向上箭头 
+### 2.7 当前行向上移动一行： option + 向上箭头 
 
 关键字 ： moveLinesUpAction   
 
-### 当前行向下移动一行： option + 向下箭头
+### 2.8 当前行向下移动一行： option + 向下箭头
 
 关键字： moveLinesDownAction
 
-### 当前行缩进： cmd + ]
+### 2.9 当前行缩进
 
-indentLines
+关键字：indentLines
 
-### 减少行缩进： cmd + [
+设置的快捷键: `cmd + ]`
 
-outdentLines
+### 2.10 减少行缩进
+
+关键字：outdentLines
+
+设置的快捷键： `cmd + [`
 
 
 
