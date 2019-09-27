@@ -406,7 +406,13 @@ https://github.com/wanfu920/jumpToAliasFile
 
 打开命令面板(cmd + shift + P)，输入`Material`，选择`Material Theme: Set accent color`，然后从出现的列表中选择一个颜色，它将更改选项卡的下划线颜色。
 
+### 4.18 代码缩进着色
 
+[indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+
+安装此插件后，代码的每级缩进都会有不同的颜色，便于区分代码块。
+
+安装此插件即可，不需要进行任何配置。你也可以自己修改缩进的颜色，看介绍文档配置。
 
 ## 5. VUE框架相关的插件
 
