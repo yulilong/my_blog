@@ -202,3 +202,45 @@ var newArr = Array.from(new Set(arr));
 console.log(newArr);
 ```
 
+## 7. 实现继承
+
+ES5实现：
+
+```javascript
+function Animal(color){
+     this.color = color
+ }
+ Animal.prototype.move = function(){} // 动物可以动
+ function Dog(color, name){
+     Animal.call(this, color) // 或者 Animal.apply(this, arguments)
+     this.name = name
+ }
+ // 下面三行实现 Dog.prototype.__proto__ = Animal.prototype
+ function temp(){}
+ temp.prototye = Animal.prototype
+ Dog.prototype = new temp()
+
+ Dog.prototype.constuctor = Dog // 这行看不懂就算了，面试官也不问
+ Dog.prototype.say = function(){ console.log('汪')}
+
+ var dog = new Dog('黄色','阿黄');
+```
+
+ES6实现：
+
+```javascript
+class Animal{
+     constructor(color){
+         this.color = color
+     }
+     move(){}
+ }
+ class Dog extends Animal{
+     constructor(color, name){
+         super(color)
+         this.name = name
+     }
+     say(){}
+ }
+```
+
