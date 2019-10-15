@@ -164,3 +164,41 @@ function throttle(fn, delay){
    this => 外面的 this
 
 关于this的具体讲解：https://zhuanlan.zhihu.com/p/23804247
+
+## 6. 数组去重
+
+遍历数组法：
+
+```javascript
+var arr = [2, 2, 3, 4, 5, 3, 5, 7];
+for (var i = 0, newArr = [], len = arr.length; i < len; i++) {
+  if (newArr.indexOf(arr[i]) === -1) {
+    newArr.push(arr[i]);
+  }
+}
+console.log(newArr);
+```
+
+数组下标判断法：
+
+```javascript
+var arr = [2, 2, 3, 4, 5, 3, 5, 7];
+for (var i = 1, newArr = [arr[0]], len = arr.length; i < len; i++){
+    if (arr.indexOf(arr[i]) == i) {
+        newArr.push(arr[i]);
+    }
+}
+console.log(newArr);
+```
+
+ES6简化版：
+
+```javascript
+var arr = [2, 2, 3, 4, 5, 3, 5, 7, 7, 7, 7, 8, 8];
+var newArr = [...new Set(arr)]; 
+console.log(newArr);
+
+var newArr = Array.from(new Set(arr));
+console.log(newArr);
+```
+
