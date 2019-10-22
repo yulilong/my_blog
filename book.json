@@ -3,9 +3,6 @@
     "author" : "yu",
     "description" : "我的blog",
     "language" : "zh-hans",
-    "structure": {
-        "readme": "introduction.md"
-    },
     "plugins": [
         "-sharing",
         "-lunr",
