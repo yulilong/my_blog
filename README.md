@@ -24,6 +24,8 @@ github pages地址：https://yulilong.github.io/my_blog/
 
 [gitbook使用教程](https://segmentfault.com/a/1190000017960359#articleHeader6)
 
+本地电脑编辑器推荐使用：https://typora.io/（打不开尝试科学上网）。
+
 ### 2.1 本地开发
 
 需要本地电脑里面有终端和nodejs，如果没有请自行查找安装，nodejs官网：http://nodejs.cn/ 

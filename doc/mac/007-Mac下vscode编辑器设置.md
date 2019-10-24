@@ -242,6 +242,12 @@ Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件：
 
 ## 4. vscode的一些插件    
 
+### 4.0 适用于 VS Code 的中文（简体）语言包
+
+[Chinese (Simplified) Language Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans)
+
+安装后，在 `locale.json` 中添加 `"locale": "zh-cn"`，即可载入中文（简体）语言包。要修改 `locale.json`，你可以同时按下 `Ctrl+Shift+P` 打开**命令面板**，之后输入 "config" 筛选可用命令列表，最后选择**配置语言**命令。请参阅[文档](https://go.microsoft.com/fwlink/?LinkId=761051)并获取更多信息。
+
 ### 4.1 Beautify ：代码变得非常好看的格式      
 
 它可以让你的html，javascript,json,CSS,Sacc 和 html 代码变得非常好看的格式
