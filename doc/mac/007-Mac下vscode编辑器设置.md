@@ -422,6 +422,18 @@ https://github.com/wanfu920/jumpToAliasFile
 
 安装此插件即可，不需要进行任何配置。你也可以自己修改缩进的颜色，看介绍文档配置。
 
+### 4.19 Settings Sync: 同步vscode设置及扩展配置
+
+[Settings Sync](https://segmentfault.com/a/1190000020894066)
+
+实现同步的功能主要依赖于VSCode插件[“Settings Sync”](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync&ssr=false#overview)。它是基于 GitHub Tokens 和 GitHub Gist 功能实现，可以一键轻松实现上传下载跨多台机器同步设置、代码片段、主题、文件图标、启动、键绑定、工作区和扩展。
+
+配置存在：https://gist.github.com/   
+
+
+
+https://segmentfault.com/a/1190000020894066
+
 ## 5. VUE框架相关的插件
 
 ### 5.1 vetur：语法高亮插件
