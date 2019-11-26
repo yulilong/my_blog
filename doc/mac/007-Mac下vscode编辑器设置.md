@@ -166,6 +166,24 @@ Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件：
 
 3、找到`Integrated: Font Size`，控制终端的字号，设置成自己想要的字体大小即可。
 
+### 1.15 添加代码片段snippets
+
+https://www.jianshu.com/p/1f1132df1def
+
+https://segmentfault.com/a/1190000018457312
+
+```
+File > Preferences (Code > Preferences on macOS)` 中选择 `User Snippets
+```
+
+windows系统: File > Preferences > User Snippets，
+
+Mac系统：Code > Preferences > User Snippets
+
+在出现的弹窗中，选择`New Global Snippets file`新建一个全局的代码，或者选择一个已经存在的代码片段继续编辑
+
+
+
 ## 2. 快捷键设置   
 
 打开快捷键界面和快速找到想要修改的快捷键
