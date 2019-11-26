@@ -51,3 +51,7 @@ git push -f https://gitee.com/dragon-li/my-wiki master:gh-pages
 echo ''
 echo "回到刚才工作目录"
 cd -
+
+echo ""
+echo "打开码云 Gitee Pages 服务，手动更新服务"
+open https://gitee.com/dragon-li/my-wiki/pages
