@@ -45,6 +45,16 @@ vscode菜单： Code -> Preferences -> Settings(快捷键command + ，)，打开
 
 https://blog.csdn.net/example440982/article/details/81543096?utm_source=blogxgwz1
 
+#### 1.2.1 设置当前文件缩进
+
+https://blog.csdn.net/qq_34446663/article/details/88184680
+
+1、点击文件右下角的`Tab Size:`，会出现一个选择框。
+
+2、点击`Indent Using Tabs`
+
+3、根据需求，选择自己需要的缩进
+
 ### 1.3 关闭文件预览
 
 单击文件名的缘故，这个是“预览模式”，所以再单击其他文件时，会覆盖当前打开的文件。
