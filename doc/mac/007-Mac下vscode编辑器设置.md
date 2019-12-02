@@ -192,6 +192,12 @@ Mac系统：Code > Preferences > User Snippets
 
 在出现的弹窗中，选择`New Global Snippets file`新建一个全局的代码，或者选择一个已经存在的代码片段继续编辑
 
+vscode代码片段存放路径
+
+`/Users/用户名/Library/Application Support/Code/User/snippets/tt.code-snippets`
+
+例如：`/Users/dragon/Library/Application Support/Code/User/snippets/tt.code-snippets`
+
 
 
 ## 2. 快捷键设置   
