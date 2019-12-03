@@ -6,7 +6,6 @@
     * [git常见问题及解决](doc/git/003-git常见问题及解决.md)
     * [合并多个Commit](doc/git/004-合并多个Commit.md)
     * [git代码冲突处理软件P4Merge](doc/git/005-git代码冲突处理软件P4Merge.md)
-
 * Mac
     * [Mac下常用的软件](doc/mac/001-Mac下常用的软件.md)
     * [Mac系统操作习惯设置](doc/mac/002-Mac系统操作习惯设置.md)
@@ -22,7 +21,6 @@
     * [Mac下移动硬盘分区用做TimeMachine的备份](doc/mac/012-Mac下移动硬盘分区用做TimeMachine的备份.md)
     * [Mac下angular开发环境安装](doc/mac/013-Mac下angular开发环境安装.md)
     * [Mac-install-RVM,ruby,pqadmin3,rubymine2016](doc/mac/014-Mac-install-RVM,ruby,pqadmin3,rubymine2016.md)
-    
 * linux
     * [linux下常用的终端命令](doc/linux/001-linux下常用的终端命令.md)
     * [linux下常用软件](doc/linux/002-linux下常用软件.md)
@@ -37,7 +35,6 @@
     * [Terminal终端快捷键](doc/linux/010-Terminal终端快捷键.md)
     * [VIM编辑器常用命令与用法总结](doc/linux/011-VIM编辑器常用命令与用法总结.md)
     * [virtualbox虚拟机、centos7安装增强工具](doc/linux/012-virtualbox虚拟机、centos7安装增强工具.md)
-
 * npm
     * [NPM使用介绍](doc/npm/001-NPM使用介绍.md)
     * [NPM安装包常见问题](doc/npm/002-NPM安装包常见问题.md)
@@ -55,6 +52,9 @@
     * [阻止定向广告](doc/other/009-阻止定向广告.md)
     * [英文字母缩写的含义](doc/other/010-英文字母缩写的含义.md)
     * [VUE开发遇见的问题](doc/other/011-VUE开发遇见的问题.md)
+* 工作相关
+    - [工作常用代码片段](doc/work/001-工作常用代码片段.md)
+    - [开发注意事项](doc/work/002-开发注意事项.md)
 
 ---------------
 * angular
