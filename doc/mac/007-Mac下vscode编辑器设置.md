@@ -7,13 +7,27 @@
 打开配置文件：    
 vscode菜单： Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件。 
 
-### 1.1 设置一个tab键为两个空格
+### 1.1 设置格式化缩进为2个空格
 
 ```
-// 一个制表符等于的空格数。该设置在 `editor.detectIndentation` 启用时根据文件内容进行重写。
-  "editor.tabSize": 2,
-  // 关闭根据文件类型自动设置tabsize的选项， 2018-08-30，如果不设置上面的可能失效
-  "editor.detectIndentation": false,
+// 一个tab为2个空格
+// 如果设置了editor.detectIndentation = true 则会根据根据文件内容进行重写。
+"editor.tabSize": 2,
+// 2018-10-20 关闭检测缩进，设置后代码格式化时就会自动变成2个空格了
+"editor.detectIndentation": false,
+// 按tab键会变成插入空格
+"editor.insertSpaces": true,
+```
+
+
+
+### 1.2 设置一类文件tab键为两个空格
+
+
+
+```
+ // 2018-10-20 关闭检测缩进，设置后代码格式化时就会自动变成2个空格了
+ "editor.detectIndentation": false,
 // 设置tab键的空格数量为2
 "[html]": {
     "editor.tabSize": 2
@@ -32,16 +46,6 @@ vscode菜单： Code -> Preferences -> Settings(快捷键command + ，)，打开
   },
 ```
 
-### 1.2 设置代码格式化缩进为2个空格
-
-```
-// 一个tab为2个空格
-"editor.tabSize": 2,
-// 2018-10-20 关闭检测缩进，设置后代码格式化时就会自动变成2个空格了
-"editor.detectIndentation": false,
-// 按tab键会变成插入空格
-"editor.insertSpaces": true,
-```
 
 https://blog.csdn.net/example440982/article/details/81543096?utm_source=blogxgwz1
 
