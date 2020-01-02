@@ -38,7 +38,7 @@
     * [virtualbox虚拟机、centos7安装增强工具](doc/linux/012-virtualbox虚拟机、centos7安装增强工具.md)
 * npm
     * [NPM使用介绍](doc/npm/001-NPM使用介绍.md)
-    * [NPM安装包常见问题](doc/npm/002-NPM安装包常见问题.md)
+    * [NPM常见问题](doc/npm/002-NPM常见问题.md)
     * [package.json文件详解](doc/npm/003-package.json文件详解.md)
     * [NPM常用的包](doc/npm/004-NPM常用的包.md)
 * 其他
