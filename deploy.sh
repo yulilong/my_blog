@@ -37,21 +37,23 @@ echo "执行命令：commit -m 'deploy'"
 echo ''
 git commit -m 'deploy'
 
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
-echo ''
-echo "执行命令：git push -f https://github.com/yulilong/my_blog.git master:gh-pages"
-git push -f https://github.com/yulilong/my_blog.git master:gh-pages
-
+# 发布到码云网站
 echo ''
 echo "执行命令：git push -f https://gitee.com/dragon-li/my-wiki master:gh-pages"
 echo ''
 git push -f https://gitee.com/dragon-li/my-wiki master:gh-pages
 
+echo ""
+echo "打开码云 Gitee Pages 服务，手动更新服务"
+open https://gitee.com/dragon-li/my-wiki/pages
+
+# 发布到github网站: https://<USERNAME>.github.io/<REPO>
+echo ''
+echo "执行命令：git push -f https://github.com/yulilong/my_blog.git master:gh-pages"
+git push -f https://github.com/yulilong/my_blog.git master:gh-pages
+
+
 # 返回到上一次的工作目录
 echo ''
 echo "回到刚才工作目录"
 cd -
-
-echo ""
-echo "打开码云 Gitee Pages 服务，手动更新服务"
-open https://gitee.com/dragon-li/my-wiki/pages
