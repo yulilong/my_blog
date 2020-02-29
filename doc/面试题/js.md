@@ -191,6 +191,21 @@ for (var i = 1, newArr = [arr[0]], len = arr.length; i < len; i++){
 console.log(newArr);
 ```
 
+数组是对象，根据对象某个属性去重
+
+```js
+var arr = [{name: 'jack'}, {name: 'jack'}, {name: 'tom'}, {name: 'tom'}]
+var newArr = []
+arr.forEach((item) => {
+  if (newArr.every(e => e.name !== item.name)) {
+    newArr.push(item)
+  }
+})
+console.log('newArr: ', newArr)
+```
+
+
+
 ES6简化版：
 
 ```javascript
