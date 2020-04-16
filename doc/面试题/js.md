@@ -259,3 +259,89 @@ class Animal{
  }
 ```
 
+## 8. typeof和instanceof区别
+
+关于typeof
+
+`typeof`一元运算符，用来获取一个变量或者表达式的类型，typeof一般只能返回如下几个结果：
+
+number,boolean,string,function（函数）,object（NULL,数组，对象）,undefined。
+
+```js
+ var a = [34,4,3,54],
+     b = 34,
+     c = 'adsfas',
+     d = function(){console.log('我是函数')},
+     e = true,
+     f = null,
+     g;
+
+console.log(typeof(a));//object
+console.log(typeof(b));//number
+console.log(typeof(c));//string
+console.log(typeof(d));//function
+console.log(typeof(e));//boolean
+console.log(typeof(f));//object
+console.log(typeof(g));//undefined
+```
+
+
+
+关于instanceof
+
+>   语法：object instanceof constructor
+>
+>   说明：`instanceof` 运算符用来检测 `constructor.prototype `是否存在于参数 `object` 的原型链上
+>
+>   参数说明：
+>
+>   object：某个实例对象，如果不是对象则返回false
+>
+>   constructor：某个构造函数，如果不是函数则抛出typeError
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/instanceof
+
+instance中文翻译为实例，因此instanceof判断该对象是谁的实例，同时我们也就知道instanceof是对象运算符。
+
+这里的实例就牵扯到了对象的继承，它的判断就是根据原型链进行搜寻，在对象obj1的原型链上如果存在另一个对象obj2的原型属性，那么表达式（obj1 instanceof obj2）返回值为true；否则返回false。
+
+```js
+var a = new Array();
+var b = new Object();
+var c = new RegExp();
+var d = function(){};
+var e = new d();
+var f = new String();
+
+console.log(a instanceof Array); // true
+console.log(a instanceof Object); // true
+
+console.log(b instanceof Object); // true
+
+console.log(c instanceof RegExp); // true
+console.log(c instanceof Object); // true
+
+console.log(d instanceof Function); // true
+console.log(d instanceof Object); // true
+console.log(e instanceof d); // true
+
+console.log(f instanceof String);
+// 左边不是对象，返回false
+console.log('12313' instanceof String) // false
+// 右边不是构造函数，报错
+console.log(f instanceof f)
+// Uncaught TypeError: Right-hand side of 'instanceof' is not an object
+```
+
+两者的区别：
+
+-   typeof判断所有变量的类型，返回值有number，boolean，string，function，object，undefined。
+
+-   typeof对于丰富的对象实例，只能返回"Object"字符串。
+
+-   instanceof用来判断对象，代码形式为obj1 instanceof obj2（obj1是否是obj2的实例），obj2必须为对象，否则会报错！其返回值为布尔值。
+
+-   instanceof可以对不同的对象实例进行判断，判断方法是根据对象的原型链依次向下查询，如果obj2的原型属性存在obj1的原型链上，（obj1 instanceof obj2）值为true。
+
+
+
