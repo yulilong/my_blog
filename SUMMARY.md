@@ -7,6 +7,7 @@
     * [合并多个Commit](doc/git/004-合并多个Commit.md)
     * [git代码冲突处理软件P4Merge](doc/git/005-git代码冲突处理软件P4Merge.md)
     * [git内部原理揭秘](doc/git/006-git内部原理揭秘.md)
+    * [动图展示10大Git命令](doc/git/007-动图展示10大Git命令.md)
 * Mac
     * [Mac下常用的软件](doc/mac/001-Mac下常用的软件.md)
     * [Mac系统操作习惯设置](doc/mac/002-Mac系统操作习惯设置.md)
