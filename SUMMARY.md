@@ -42,6 +42,7 @@
     * [NPM常见问题](doc/npm/002-NPM常见问题.md)
     * [package.json文件详解](doc/npm/003-package.json文件详解.md)
     * [NPM常用的包](doc/npm/004-NPM常用的包.md)
+    * [node环境常见问题](doc/npm/005-node环境常见问题.md)
 * 其他
     * [Chrome浏览器开发者工具使用](doc/other/001-Chrome浏览器开发者工具使用.md)
     * [Chrome浏览器有用的插件](doc/other/002-Chrome浏览器有用的插件.md)
