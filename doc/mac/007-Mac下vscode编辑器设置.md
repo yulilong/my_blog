@@ -202,6 +202,44 @@ vscode代码片段存放路径
 
 例如：`/Users/dragon/Library/Application Support/Code/User/snippets/tt.code-snippets`
 
+### 1.16 编辑代码后自动保存
+
+vscode版本：1.46.0
+
+打开vscode配置文件：code -> preferences -> settings(或者快捷键`cmd + ,`)
+
+![](./img/002-vscode.png)
+
+在setting里面，`Flies: Auto Save` 选择一下。
+
+### 1.17 代码保存后自动格式化
+
+在`settings.json`文件里面添加如下：
+
+```js
+// "editor.formatOnType": true,
+// 写这一个就可以
+"editor.formatOnSave": true
+```
+
+https://www.cnblogs.com/hellofangfang/p/9266752.html
+
+### 1.18 代码保存后自动格式化成ESLint规范形式
+
+如果安装了eslint插件，保存代码后，可设置自动格式化成符合eslint规范的代码，在配置文件中添加：
+
+```json
+// eslint 保存代码时自动格式化符合eslint规范 2020-06-12
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+```
+
+注意：这个配置随着eslint产检版本升级可能会变化，需要去github上查看：
+
+https://github.com/Microsoft/vscode-eslint
+
 
 
 ## 2. 快捷键设置   
@@ -420,8 +458,11 @@ https://github.com/Microsoft/vscode-eslint
 
 如果在配置文件中写了：
 
-```
-"eslint.autoFixOnSave": true,
+```json
+"editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+}
 ```
 
 那么在保存文件的时候，会自动把代码格式化成符合eslint风格的代码，比如把`var`变量自动变成`let`
