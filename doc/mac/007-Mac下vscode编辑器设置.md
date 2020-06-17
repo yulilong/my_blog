@@ -316,29 +316,126 @@ https://github.com/Microsoft/vscode-eslint
 
 
 
-## 4. vscode的一些插件    
+## 4. vscode的一些插件
 
-### 4.0 适用于 VS Code 的中文（简体）语言包
+### 4.1 ESLint: JavaScript代码格式化检查插件
+
+[ESLint 插件](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)，
+插件github地址：https://github.com/Microsoft/vscode-eslint
+
+eslint中文官网：http://eslint.cn/
+
+airbnb规范地址：https://github.com/lin-123/javascript
+
+如果想要在保存文件的时候，会自动把代码格式化成符合eslint风格的代码，比如把`var`变量自动变成`let`，需要在配置文件中写了如下配置：
+
+```json
+"editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+}
+```
+
+注意，这个配置项会随着eslint插件版本升级而改变，需要查看插件的文档来做对应修改。
+
+这个插件生效需要项目里面有eslint配置文件，如：`.eslintrc.js`:
+
+```js
+module.exports = {
+	parser: 'babel-eslint',
+    // 规定了代码检查使用哪个规范，如airbnb
+    extends: ['airbnb', 'prettier', 'plugin:compat/recommended'],
+}
+```
+
+如果不想代码检查某个文件，那么在配置文件里面忽略：`.eslintignore`：
+
+```
+/scripts
+/config
+```
+
+一般在package.json文件里面也安装了对应包，用于命令行检查：
+
+```json
+"eslint": "^5.16.0",
+"eslint-config-airbnb": "^17.1.0",
+"eslint-config-prettier": "^4.3.0",
+"eslint-plugin-babel": "^5.3.0",
+"eslint-plugin-compat": "^3.1.1",
+"eslint-plugin-import": "^2.17.3",
+"eslint-plugin-jsx-a11y": "^6.2.1",
+"eslint-plugin-markdown": "^1.0.0",
+"eslint-plugin-react": "^7.13.0",
+```
+
+### 4.2 stylelint：CSS代码规范检查插件
+
+[stylelint 插件地址](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+
+插件github地址：https://github.com/stylelint/vscode-stylelint
+
+stylelint官网：https://stylelint.io/
+
+stylelint规范地址：https://stylelint.io/user-guide/rules/list
+
+中文介绍：https://segmentfault.com/a/1190000017335655
+
+注意：这个插件有好几个同名的插件，选择图标跟stylelint官网一样的图标插件。
+
+这个插件生效需要项目里面有stylelint的配置文件，如`.stylelintrc.json` 
+
+```json
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-css-modules",
+    "stylelint-config-rational-order",
+    "stylelint-config-prettier"
+  ],
+  "plugins": ["stylelint-order", "stylelint-declaration-block-no-ignored-properties"],
+  "rules": {
+    "no-descending-specificity": null,
+    "plugin/declaration-block-no-ignored-properties": true
+  }
+}
+```
+
+一般在package.json文件里面也安装了对应包，用于命令行检查：
+
+```json
+"stylelint": "^10.0.1",
+"stylelint-config-css-modules": "^1.4.0",
+"stylelint-config-prettier": "^5.2.0",
+"stylelint-config-rational-order": "^0.1.2",
+"stylelint-config-standard": "^18.3.0",
+"stylelint-declaration-block-no-ignored-properties": "^2.1.0",
+"stylelint-order": "^3.0.0",
+```
+
+
+
+### 4.3 适用于 VS Code 的中文（简体）语言包
 
 [Chinese (Simplified) Language Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans)
 
 安装后，在 `locale.json` 中添加 `"locale": "zh-cn"`，即可载入中文（简体）语言包。要修改 `locale.json`，你可以同时按下 `Ctrl+Shift+P` 打开**命令面板**，之后输入 "config" 筛选可用命令列表，最后选择**配置语言**命令。请参阅[文档](https://go.microsoft.com/fwlink/?LinkId=761051)并获取更多信息。
 
-### 4.1 Beautify ：代码变得非常好看的格式      
+### 4.4 Beautify ：代码变得非常好看的格式      
 
 它可以让你的html，javascript,json,CSS,Sacc 和 html 代码变得非常好看的格式
 
-#### 4.1.1 Beautify css/sass/scss/less CSS格式化插件
+#### 4.4.1 Beautify css/sass/scss/less CSS格式化插件
 
 该插件安装后，可以格式化css/sass/scss/less后缀的CSS文件， 使用VSCODE默认的格式化快捷键即可实现快速格式化
 
 https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifier
 
-### 4.2 GitLens supercharges : 显示每行代码GIT的提交记录
+### 4.5 GitLens supercharges : 显示每行代码GIT的提交记录
 
 这个插件安装好后在编辑器右上角会有几个按钮 (其中有一个类似git的图标)
 
-### 4.3 CSS Peek：追踪至样式表中 CSS 类和 ids 定义的地方
+### 4.6 CSS Peek：追踪至样式表中 CSS 类和 ids 定义的地方
 
 使用此插件，你可以追踪至样式表中 CSS 类和 ids 定义的地方。当你在 HTML 文件中右键单击选择器时，选择“ Go to Definition 和 Peek definition ”选项，它便会给你发送样式设置的 CSS 代码。
 
@@ -346,13 +443,13 @@ https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifi
 
 
 
-### 4.4 color info: css中颜色的其他写法
+### 4.7 color info: css中颜色的其他写法
 
 这个便捷的插件，将为你提供你在 CSS 中使用颜色的相关信息。你只需在颜色上悬停光标，就可以预览色块中色彩模型的（HEX、 RGB、HSL 和 CMYK）相关信息了。
 
 [color info](https://marketplace.visualstudio.com/items?itemName=bierner.color-info)
 
-### 4.5 Document This：自动为TSc和JS文件生成详细的JSDoc注释
+### 4.8 Document This：自动为TSc和JS文件生成详细的JSDoc注释
 
 “Document This”是一个Visual Studio代码扩展，可自动为TypeScript和JavaScript文件生成详细的JSDoc注释。
 
@@ -363,7 +460,7 @@ https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifi
 1. 鼠标光标放在方法名前面。
 2. 按快捷键 `Ctrl+Alt+D`再按一次`Ctrl+Alt+D`，即可生成注释文档
 
-### 4.6 vscode-icons:资源树目录加上图标
+### 4.9 vscode-icons:资源树目录加上图标
 
 [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
 
@@ -372,13 +469,13 @@ https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifi
 - `Linux` & `Windows` `=>` File > Preferences > File Icon Theme > VSCode Icons.
 - `MacOS` `=>` Code > Preferences > File Icon Theme > VSCode Icons.
 
-### 4.7 Auto Rename Tag:修改标签名称的时候自动修改结束标签
+### 4.10 Auto Rename Tag:修改标签名称的时候自动修改结束标签
 
 Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结束标签，节省一半时间，提升效率，非常棒！
 
 [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 
-### 4.8 open native terminal : 在右键菜单中添加打开终端
+### 4.11 open native terminal : 在右键菜单中添加打开终端
 
 这个插件可以很方便的直接在VSCODE中打开终端操作
 
@@ -386,7 +483,7 @@ Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结�
 
 
 
-### 4.9 console-snippets: console.log快捷插件
+### 4.12 console-snippets: console.log快捷插件
 
 [console-snippets](https://marketplace.visualstudio.com/items?itemName=amandeepmittal.console-snippets)
 
@@ -400,7 +497,7 @@ Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结�
 
 
 
-### 4.10 Turbo Console Log: 选中变量快捷添加console.log
+### 4.13 Turbo Console Log: 选中变量快捷添加console.log
 
 [Turbo Console Log ](https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log)
 
@@ -414,13 +511,13 @@ Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结�
 
 然后搜索：Turbo Console Log ， 就会出现此插件相关的快捷键，选择冲突的快捷键修改别的快捷。
 
-### 4.11 Vim：让vscode像vim中一样使用命令
+### 4.14 Vim：让vscode像vim中一样使用命令
 
 [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
 
 
-### 4.12 Bookmarks：添加标签，快速定位标记的代码
+### 4.15 Bookmarks：添加标签，快速定位标记的代码
 
  Visual Studio中的Bookmark能加速代码导航能力。可能有一些代码，需要频繁的相互切换。通常你可能是滚动页面，找到该代码块的。Visual Studio已经提供了通过使用快捷键，非常快速地移动到指定的代码段。这就是代码的书签功能。
 
@@ -440,7 +537,7 @@ Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结�
 
 可以选一个文件，然后右键店家clear清理所有标记的标签。
 
-### 4.13 Bracket Pair Colorizer:代码的各种括号呈现不同的颜色
+### 4.16 Bracket Pair Colorizer:代码的各种括号呈现不同的颜色
 
 [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
 
@@ -448,26 +545,9 @@ Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结�
 
 
 
-### 4.14 ESLint: JavaScript代码格式化检查插件
 
-[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-https://github.com/Microsoft/vscode-eslint
-
-注意：
-
-如果在配置文件中写了：
-
-```json
-"editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.fixAll.eslint": true
-}
-```
-
-那么在保存文件的时候，会自动把代码格式化成符合eslint风格的代码，比如把`var`变量自动变成`let`
-
-### 4.15 对 webpack 别名路径或者自定义别名路径进行快速跳转的插件
+### 4.17 对 webpack 别名路径或者自定义别名路径进行快速跳转的插件
 
 [Jump To Alias File](https://marketplace.visualstudio.com/items?itemName=wanfu.jump-to-alias-file)
 
@@ -477,13 +557,13 @@ https://github.com/wanfu920/jumpToAliasFile
 
 默认webpack配置的alias可自动识别  如果没识别 可以在setting.json里配置webpeckConfigPath或者jumpToAliasFile.alias
 
-### 4.16 计算引入包的大小
+### 4.18 计算引入包的大小
 
 [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
 
 插件会在代码import一个包后计算该包的大小
 
-### 4.17 设置tab强调色
+### 4.19 设置tab强调色
 
 [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
 
@@ -493,7 +573,7 @@ https://github.com/wanfu920/jumpToAliasFile
 
 打开命令面板(cmd + shift + P)，输入`Material`，选择`Material Theme: Set accent color`，然后从出现的列表中选择一个颜色，它将更改选项卡的下划线颜色。
 
-### 4.18 代码缩进着色
+### 4.20 代码缩进着色
 
 [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
 
@@ -501,7 +581,7 @@ https://github.com/wanfu920/jumpToAliasFile
 
 安装此插件即可，不需要进行任何配置。你也可以自己修改缩进的颜色，看介绍文档配置。
 
-### 4.19 Settings Sync: 同步vscode设置及扩展配置
+### 4.21 Settings Sync: 同步vscode设置及扩展配置
 
 [Settings Sync](https://segmentfault.com/a/1190000020894066)
 
@@ -509,7 +589,7 @@ https://github.com/wanfu920/jumpToAliasFile
 
 配置存在：https://gist.github.com/   
 
-
+### 4.22 【图文教程】同步你的VSCode设置及扩展插件，换机不用愁
 
 https://segmentfault.com/a/1190000020894066
 
