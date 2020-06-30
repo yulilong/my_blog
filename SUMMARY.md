@@ -37,6 +37,7 @@
     * [Terminal终端快捷键](doc/linux/010-Terminal终端快捷键.md)
     * [VIM编辑器常用命令与用法总结](doc/linux/011-VIM编辑器常用命令与用法总结.md)
     * [virtualbox虚拟机、centos7安装增强工具](doc/linux/012-virtualbox虚拟机、centos7安装增强工具.md)
+    * [linux下ssh配置](doc/linux/013-linux下ssh配置.md)
 * npm
     * [NPM使用介绍](doc/npm/001-NPM使用介绍.md)
     * [NPM常见问题](doc/npm/002-NPM常见问题.md)
