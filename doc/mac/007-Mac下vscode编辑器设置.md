@@ -475,6 +475,14 @@ Auto Rename Tag，非常实用！要修改标签名称的时候自动修改结�
 
 [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 
+### 4.10 自动关闭标签：Auto Close Tag
+
+[Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+
+自动重命名成对的HTML/XML标记，与Visual Studio IDE相同。用这个插件可以告别每次改变标签的时候要重复修改头部和尾部标签。特别是标签内内容非常多的时候，要改确实很费劲的。
+
+
+
 ### 4.11 open native terminal : 在右键菜单中添加打开终端
 
 这个插件可以很方便的直接在VSCODE中打开终端操作
@@ -589,7 +597,41 @@ https://github.com/wanfu920/jumpToAliasFile
 
 配置存在：https://gist.github.com/   
 
-### 4.22 【图文教程】同步你的VSCode设置及扩展插件，换机不用愁
+### 4.22 路径只能提示：Path Intellisense
+
+[Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+
+加入此插件让我们在应用文件（例如图片）时，有智能的路径提示。
+
+### 4.23 html中css类补全：HTML CSS Support
+
+[HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+
+补充了VSCode中缺少的CSS支持。类属性补全、ID属性补全和全文件搜索CSS和SCSS提示等。
+
+### 4.24 代码翻译：翻译(英汉词典)
+
+[翻译(英汉词典)](https://marketplace.visualstudio.com/items?itemName=CodeInChinese.EnglishChineseDictionary)
+
+英语不是很好的童鞋，在写代码的时候经常会使用“某道翻译”，但是其实对于代码来说，很多时候我们会用`驼峰`、`小驼峰`、`下划线`等等写法来写变量名、属性名、类名和方法名的。这种写法想使用“某道翻译”在编辑器中悬浮翻译就是不可能了。
+
+找了很久我为大家找到一个非常好用的一个插件可以解决这个问题！
+
+>   本地77万词条英汉词典，不依赖任何在线翻译API，无查询次数限制。可翻译驼峰和下划线命名，及对整个文件中的标识符批量翻译。
+
+安装好后，在vscode底部的状态栏中会出现翻译
+
+### 4.25 英文单词拼写错误检查：Code Spell Checker
+
+[Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+
+一个基本的拼写检查器，可以检测驼峰写法。这个拼写检查程序的目标是帮助捕获常见的拼写错误。在编写代码的时候，我们都是用英文单词，很多时候我们都会写错单词的可能性。用错了单词其实对于维护性是有一定的影响的。
+
+使用有意义的单词做为方法名、类名和变量名会给自己代码更多的意义和含义。当自己或者别人去查看代码时更容易懂其中的用意。但是如果我们拼错了单词，有些时候就无法理解这个单词是什么意思了。
+
+所以这个插件对我们来说非常实用，就算是老外都非常多人在使用它。（目前有100多万下载量）
+
+### 4.26 同步你的VSCode设置及扩展插件，换机不用愁
 
 https://segmentfault.com/a/1190000020894066
 

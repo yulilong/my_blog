@@ -54,9 +54,13 @@ nginx -s reload
 
 sudo systemctl restart nginx
 
-### 15 查看Nginx服务
+### 1.5 查看Nginx服务
 
 ps -ef|grep nginx
+
+### 1.6 查看nginx配置是否正确
+
+nginx -t
 
 ## 2. 配置
 
