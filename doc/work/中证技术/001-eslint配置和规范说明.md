@@ -383,3 +383,36 @@ User文件夹下组件有的没有放在文件夹下
 
 
 ![](./img/020-eslint.png)
+
+
+
+## 6. 一些可以关闭的eslint规则
+
+### 6.1 func-names
+
+此规则规定函数必须要有明细，不允许有匿名函数，但是有的地方不需要函数名，比如函数组件：
+
+```jsx
+import React from 'react';
+// import {  } from 'antd';
+// import './index.less';
+
+const RecentVisits = function ({ 
+  data,
+}) {
+  console.log('data: ', data);
+  return (
+    <div className="recent-visits">
+      具体内容
+    </div>
+  )
+}
+export default RecentVisits;
+```
+
+### 6.2 react/jsx-filename-extension
+
+`'react/jsx-filename-extension': [1, { extensions: ['.js'] }]`
+
+此条规则规定了，在jsx文件中，不允许有jsx语法。这个是不合理的。jsx文件中就需要有jsx语法的。
+
