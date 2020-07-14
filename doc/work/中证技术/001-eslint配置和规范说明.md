@@ -196,6 +196,14 @@ react规范：https://github.com/lin-123/javascript/tree/cn/react
 
 2、如果下次可能会用到，或者以后可能会用到，可以把这个变量注释掉。
 
+#### 4.1.1 import 一个库或方法，没有用的时候要删除或注释
+
+经过对项目打包优化发现，如果import一个库有，即使没有在代码中使用，但是打包后，还是把import的库打包进了项目中，因此，为了优化考虑，也要把不用的删除或注释掉。
+
+
+
+
+
 ### 4.2 代码要正确的缩进,包括JSX中标签
 
 ![](./img/005-eslint.png)
@@ -307,6 +315,37 @@ src/pages/User/RegisterLegalStepForm/Step1.js
 2、行内样式优先级较高，如果在样式文件也有对应样式声明，会导致文件中无效，从而产生隐藏bug。
 
 ![](./img/019-eslint.png)
+
+
+
+### 4.14 html中类名使用"ant-tabs"不要使用style.antTabs
+
+不建议使用如下形式：
+
+```jsx
+<div className={styles.empty}>
+  <div className={styles.emptyImg}>
+    <img alt="暂无数据" src={empty} style={{ height: '100%', verticalAlign: 'middle', borderStyle: 'none' }} />
+  </div>
+  <p className="ant-empty-description">暂无数据</p>
+</div>
+```
+
+src/pages/Dashboard/Workplace.js
+
+如果为了避免命名冲突，可在组件中根HTML标签使用style.father形式，然后其他使用正常形式：
+
+```less
+.father {
+  :global {
+    .recent-visits {
+      height: 50px;
+    }
+  }
+}
+```
+
+
 
 
 
