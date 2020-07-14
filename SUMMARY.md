@@ -58,6 +58,7 @@
     * [VUE开发遇见的问题](doc/other/011-VUE开发遇见的问题.md)
 * 工作相关
     * [eslint配置和规范说明](doc/work/中证技术/001-eslint配置和规范说明.md)
+    * [portal前端打包大小优化](doc/work/中证技术/002-portal前端打包大小.md)
     
 
 ---------------
