@@ -50,7 +50,7 @@
     * [gitbook入门教程](doc/other/003-gitbook入门教程.md)
     * [常用正则表达式](doc/other/004-常用正则表达式.md)
     * [HTTP方法详解](doc/other/005-HTTP方法详解.md)
-    * [Markdown常用语法与编辑器支持情况](doc/other/006-Markdown常用语法与编辑器支持情况.md)
+    * [Markdown常用语法](doc/other/006-Markdown常用语法.md)
     * [VS2010编译器设置](doc/other/007-VS2010编译器设置.md)
     * [VS2010开发控制台程序遇到的问题](doc/other/008-VS2010开发控制台程序遇到的问题.md)
     * [阻止定向广告](doc/other/009-阻止定向广告.md)
