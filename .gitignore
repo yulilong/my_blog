@@ -1,7 +1,11 @@
 # 忽略gitbook生成的项目目录
 _book
 
+# 依赖包
 node_modules
 
+# vscode编辑器配置文件
+.vscode
 
+# Mac 系统带的
 .DS_Store
