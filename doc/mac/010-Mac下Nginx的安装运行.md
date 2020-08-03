@@ -5,9 +5,29 @@
 打开终端
 ```
 ~ brew install nginx
-```   
+```
 
-![WX20170823-173425.png](https://bitbucket.org/repo/oE6yEX/images/348587153-WX20170823-173425.png)     
+![](./img/003-nginx.png)
+
+安装好后，默认HTML文件存放路径：
+
+```
+/usr/local/var/www
+```
+
+这个路径重定向到了:
+
+```
+/usr/local/Cellar/nginx/1.12.1/html
+```
+
+nginx的安装路径：
+
+```
+/usr/local/Cellar/nginx/1.12.1
+```
+
+
 
 ## **二. 配置Nginx配置文件**  
 
@@ -56,7 +76,7 @@ http {
         }
     }
 }
-```    
+```
 
 保存后从新加载配置文件： `nginx -s reload`    
 
@@ -79,22 +99,22 @@ http {
 ~ nginx -c filename # 指定配置文件
 ~ nginx -h          # 帮助    
 ~ nginx -t          # 测试配置是否有语法错误 
-```     
+```
 
-![WX20170823-181635.png](https://bitbucket.org/repo/oE6yEX/images/434387835-WX20170823-181635.png)     
+![](./img/004-nginx.png)
 
-### **2. 使用brew services 命令**   
+### **2. 使用brew services 命令**
 
 ```
 # brew services [-v|--verbose] [list | run | start | stop | restart | cleanup] [...]
 ~ brew services start nginx    # 启动Nginx服务
 ~ brew services stop nginx     # 停止Nginx服务
 ~ brew services restart nginx  # 重启Nginx服务
-```   
+```
 
-![WX20170823-183044.png](https://bitbucket.org/repo/oE6yEX/images/3097671139-WX20170823-183044.png)     
+![](./img/005-nginx.png)
 
-## **四. Nginx一些常见错误**   
+## **四. Nginx一些常见错误**
 
 * **1. 重启nginx 报错**   
 
@@ -102,7 +122,7 @@ http {
 ~ sudo nginx -s reload
 
 nginx: [error] open() "/usr/local/var/run/nginx.pid" failed (2: No such file or directory)
-```   
+```
 
 出现该问题的原因是没有nginx.pid 这个文件,    
 
@@ -110,7 +130,7 @@ nginx: [error] open() "/usr/local/var/run/nginx.pid" failed (2: No such file or 
 
 
 * **2. 启动nginx报错**   
-     
+  
 ```
 ~ nginx
 
@@ -120,7 +140,7 @@ nginx: [emerg] bind() to 0.0.0.0:80 failed (48: Address already in use)
 nginx: [emerg] bind() to 0.0.0.0:80 failed (48: Address already in use)
 nginx: [emerg] bind() to 0.0.0.0:80 failed (48: Address already in use)
 nginx: [emerg] still could not bind()
-```    
+```
 
 出现该问题的原因是/usr/local/var/run/nginx.pid  文件已经存在，也就是说nginx已经启动了，再次执行启动nginx，就会出现这种问题了，接口被占用了      
 
