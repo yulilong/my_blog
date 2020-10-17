@@ -240,6 +240,14 @@ https://www.cnblogs.com/hellofangfang/p/9266752.html
 
 https://github.com/Microsoft/vscode-eslint
 
+### 1.19 设置自定义代码片段在提示的最上面
+
+在设置中搜索到editor.snippetSuggestions这个设置，其中有四个选项top、bottom、inline、none四个选项，选择top即可。
+
+默认的选项是：inline
+
+![](./img/009-mac.png)
+
 
 
 ## 2. 快捷键设置   
