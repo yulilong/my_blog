@@ -1,11 +1,11 @@
-### **下载安装**    
+### **下载安装**
 
 下载地址：https://www.perforce.com/downloads/helix-visual-client-p4v      
 下载教程：http://blog.csdn.net/wirelessqa/article/details/9035215      
 这里下载之前需要注册。   
 `![WX20170601-134653.png](https://bitbucket.org/repo/oE6yEX/images/1135708659-WX20170601-134653.png)`     
 
- ###  **配置脚本**     
+###  **配置脚本**
 
 编写一个全局包装脚本来运行你的命令。 我们会使用 Mac 上的路径来指定该脚本的位置，在其他系统上，它将是 p4merge 二进制文件所在的目录。 创建一个名为 extMerge 的脚本包装 merge 命令，让它把参数转发给 p4merge 二进制文件：         
 ```
@@ -31,7 +31,7 @@ $ git config --global merge.tool extMerge
 $ git config --global mergetool.extMerge.cmd 'extMerge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"'
 $ git config --global mergetool.extMerge.trustExitCode false
 $ git config --global diff.external extDiff
-```     
+```
 或编辑你的 ~/.gitconfig 文件，添加以下各行：    
 ```
 # 上面终端命令跟下面的做法是一样的

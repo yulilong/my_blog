@@ -1,17 +1,19 @@
 [TOC]
 
+##  1. 合并多个Commit
+
 这个合并只能是本地git仓库的操作，服务器仓库则不行。    
 
 * 如图所示，有三个commit需要合并：       
 
-![WX20170412-135621.png](https://bitbucket.org/repo/oE6yEX/images/3362892446-WX20170412-135621.png)     
+![](./img/026-merge.png)     
 
 使用命令：     
 ``` 
 # -i 的参数是不需要合并的 commit 的 hash 值，为第四个提交的 commit， 接着我们就进入到 vi 的编辑模式
 ~git rebase -i 568361540e8cd90d1
 ```
-![WX20170412-140743.png](https://bitbucket.org/repo/oE6yEX/images/1832541917-WX20170412-140743.png)
+![](./img/027-merge.png)
 
 可以看到其中分为两个部分，上方未注释的部分是填写要执行的指令，而下方注释的部分则是指令的提示说明。指令部分中由前方的命令名称、commit hash 和 commit message 组成。     
 当前我们只要知道 pick 和 squash 这两个命令即可：     
@@ -28,12 +30,13 @@ exec：执行其他shell命令
 
 我们将 1b45fb6 这个 commit 前方的命令改成 squash 或 s，然后输入:wq以保存并退出       
 这时我们会看到 commit message 的编辑界面：      
-![WX20170412-132924.png](https://bitbucket.org/repo/oE6yEX/images/1443189753-WX20170412-132924.png)     
+
+![](./img/028-merge.png)     
 
 其中, 非注释部分就是两次的 commit message, 你要做的就是将这两个修改成新的 commit message。      
 输入wq保存并推出, 再次输入git log查看 commit 历史信息，你会发现这两个 commit 已经合并了。      
 
-![WX20170412-143544.png](https://bitbucket.org/repo/oE6yEX/images/1624539404-WX20170412-143544.png)    
+![](./img/029-merge.png)    
 
 **注意事项：**如果这个过程中有操作错误，可以使用 git rebase --abort来撤销修改，回到没有开始操作合并之前的状态。     
 
@@ -50,7 +53,7 @@ http://yongpoliu.com/reorganize-git-local-commits/
 
 -----------
 
-## git修改未push的最后一次commit注释     
+## 2. git修改未push的最后一次commit注释
 
 其commit提供了一个--amend参数，可以修改最后一次提交的信息.但是如果你已经push过了，那么其历史最后一次，永远也不能修改了。   
 
@@ -60,7 +63,7 @@ http://yongpoliu.com/reorganize-git-local-commits/
 # https://git-scm.com/book/zh/v2/Git-基础-撤消操作
 git commit --amend  # 这个命令会将暂存区中的文件提交。 如果自上次提交以来你还未做任何修改（例如，在上次提交后马上执行了此命令），那么快照会保持不变，而你所修改的只是提交信息。
 ```
-![WX20170412-145019.png](https://bitbucket.org/repo/oE6yEX/images/12829341-WX20170412-145019.png)     
+![](./img/030-merge.png)     
 
 参考链接：     
 http://blog.csdn.net/taget/article/details/7045046
