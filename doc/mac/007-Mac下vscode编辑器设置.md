@@ -688,6 +688,22 @@ https://segmentfault.com/a/1190000020894066
 
 在配置文件中注销或删除配置：`"eslint.autoFixOnSave": true,`即可。
 
+### 6.2 vue代码格式化方式不对
+
+经过查找，发现`.vue`文件代码格式化时使用了[Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)形式，经过过查找，发现可使用Prettier来格式化代码，可以安装[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)插件，然后在vscode编辑器会提示使用哪种工具来格式化代码，此时要选择Prettier，如果不小心还是选择了Vetur，那么可找到这个插件，然后先禁用掉，然后回到代码中，在格式化，编辑器会从新然呢选择格式化工具，此时可再次选择Prettier。
+
+Prettier支持配置文件，在项目根目录下，`.prettierrc.js`:
+
+```js
+module.exports = {
+  "semi":false,
+  "singleQuote": true,
+  "printWidth": 80
+}
+```
+
+那么格式化会按照这个配置文件来做。
+
 
 
 ##  其他插件资料
