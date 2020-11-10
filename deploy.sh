@@ -16,7 +16,7 @@ cd ./_book
 # 发布到自定义域名
 echo ''
 echo "把域名放到CNAME文件中"
-echo 'dragonli.net' > CNAME
+echo 'yu66.vip' > CNAME
 echo ''
 
 # 初始化一个仓库，仅仅是做了一个初始化的操作，项目里的文件还没有被跟踪

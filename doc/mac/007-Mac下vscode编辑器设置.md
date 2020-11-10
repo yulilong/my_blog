@@ -474,8 +474,8 @@ https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifi
 
 安装手使用：
 
-- `Linux` & `Windows` `=>` File > Preferences > File Icon Theme > VSCode Icons.
-- `MacOS` `=>` Code > Preferences > File Icon Theme > VSCode Icons.
+- Linux & Windows => File > Preferences > File Icon Theme > VSCode Icons.
+- MacOS => Code > Preferences > File Icon Theme > VSCode Icons.
 
 ### 4.10 Auto Rename Tag:修改标签名称的时候自动修改结束标签
 
