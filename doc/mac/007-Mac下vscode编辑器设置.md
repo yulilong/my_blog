@@ -2,7 +2,7 @@
 
 [TOC]
 
-## 1. 配置设置    
+## 1. 配置设置
 
 打开配置文件：    
 vscode菜单： Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件。 
@@ -647,7 +647,7 @@ https://segmentfault.com/a/1190000020894066
 
 ### 5.1 vetur：语法高亮插件
 
-### 5.2 Vue VSCode Snippets: vue模板 
+### 5.2 Vue VSCode Snippets: vue模板
 
 安装此插件后，在.vue文件中 输入vbase然后按tab键可以快速生成一个vue项目的模板。其他的请看文档
 
@@ -688,7 +688,7 @@ https://segmentfault.com/a/1190000020894066
 
 在配置文件中注销或删除配置：`"eslint.autoFixOnSave": true,`即可。
 
-### 6.2 vue代码格式化方式不对
+### 6.3 vue代码格式化方式不对
 
 经过查找，发现`.vue`文件代码格式化时使用了[Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)形式，经过过查找，发现可使用Prettier来格式化代码，可以安装[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)插件，然后在vscode编辑器会提示使用哪种工具来格式化代码，此时要选择Prettier，如果不小心还是选择了Vetur，那么可找到这个插件，然后先禁用掉，然后回到代码中，在格式化，编辑器会从新然呢选择格式化工具，此时可再次选择Prettier。
 
@@ -703,6 +703,32 @@ module.exports = {
 ```
 
 那么格式化会按照这个配置文件来做。
+
+### 6.3 vue使用iView时标签报错 Parsing error: x-invalid-end-tag
+
+```html
+<Input class="cs-law-input"><span slot="append">法规</span></Input>
+```
+
+当使用iview中的Input标签时，报`Parsing error: x-invalid-end-tag.eslint-plugin-vue` 错误。
+
+原因： iView将标签渲染为原生html标签时，由于这些标签是自闭合的，所以有end标签会报错。
+
+解决方案：
+
+修改eslint配置文件，添加一行：
+
+```js
+'vue/no-parsing-error': [2, { 'x-invalid-end-tag': false }],
+```
+
+如果还不行，尝试下面修改：
+
+这是vetur中eslint的问题，在vscode菜单中，文件->首选项->设置， 找到 “vetur.validation.template”: true 将其改为false，就可关闭eslint的检查，错误消失。
+
+参考资料：[vscode 解决 iview 报错](https://blog.csdn.net/jiaqingge/article/details/80498536?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control)
+
+
 
 
 
