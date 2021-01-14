@@ -36,6 +36,9 @@
 | 合并当前行 | control + J |
 | 整个项目搜索内容 | command + shift + F |
 | 创建分屏快捷键 | command + \ |
+| 批量替换当前文件中所有匹配的文本 | command + F2 |
+| 复制光标向上或向下批量添加内容 | option + command + 上下箭头 |
+| 切换tab显示 | option + command + 左右箭头 |
 
 ## 3. 基本编辑
 
