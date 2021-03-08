@@ -30,11 +30,13 @@ https://code.visualstudio.com/
 
 -   获取离线插件包
 
-    在线搜索插件：`https://marketplace.visualstudio.com/vscode`，或者在vscode插件中，找到找到插件，然后点击插件名字会直接跳转到插件的网址。
+    在线搜索插件：`https://marketplace.visualstudio.com/vscode`，或者在vscode插件中，找到插件，然后点击插件名字会直接跳转到插件的网址。
 
     在出现的插件页面中，点击`Download Extension` 按钮，下载离线包，
 
     ![](./img/001-vsocde.png)
+
+    
 
 -   安装插件包
 
