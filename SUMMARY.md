@@ -39,12 +39,12 @@
     * [VIM编辑器常用命令与用法总结](doc/linux/011-VIM编辑器常用命令与用法总结.md)
     * [virtualbox虚拟机、centos7安装增强工具](doc/linux/012-virtualbox虚拟机、centos7安装增强工具.md)
     * [linux下ssh配置](doc/linux/013-linux下ssh配置.md)
-* npm
-    * [NPM使用介绍](doc/npm/001-NPM使用介绍.md)
-    * [NPM常见问题](doc/npm/002-NPM常见问题.md)
-    * [package.json文件详解](doc/npm/003-package.json文件详解.md)
-    * [NPM常用的包](doc/npm/004-NPM常用的包.md)
-    * [node环境常见问题](doc/npm/005-node环境常见问题.md)
+* npm yarn node
+    * [NPM使用介绍](doc/npm-yarn-node/001-NPM使用介绍.md)
+    * [NPM常见问题](doc/npm-yarn-node/002-NPM常见问题.md)
+    * [package.json文件详解](doc/npm-yarn-node/003-package.json文件详解.md)
+    * [NPM常用的包](doc/npm-yarn-node/004-NPM常用的包.md)
+    * [node环境常见问题](doc/npm-yarn-node/005-node环境常见问题.md)
 * 其他
     * [Chrome浏览器开发者工具使用](doc/other/001-Chrome浏览器开发者工具使用.md)
     * [Chrome浏览器有用的插件](doc/other/002-Chrome浏览器有用的插件.md)
