@@ -46,6 +46,8 @@
     * [NPM常用的包](doc/npm-yarn-node/004-NPM常用的包.md)
     * [node环境常见问题](doc/npm-yarn-node/005-node环境常见问题.md)
     * [yarn说明](doc/npm-yarn-node/006-yarn说明.md)
+* window下开发说明
+    * [windows下前端开发环境安装](doc/windows/001-windows下前端开发环境安装.md)
 * 其他
     * [Chrome浏览器开发者工具使用](doc/other/001-Chrome浏览器开发者工具使用.md)
     * [Chrome浏览器有用的插件](doc/other/002-Chrome浏览器有用的插件.md)
