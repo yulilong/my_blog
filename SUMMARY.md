@@ -3,12 +3,12 @@
 * git
     * [GIT介绍、安装、配置](doc/git/001-GIT介绍、安装、配置.md)
     * [git使用教程](doc/git/002-git使用教程.md)
-    * [git常见问题及解决](doc/git/003-git常见问题及解决.md)
-    * [合并多个Commit](doc/git/004-合并多个Commit.md)
-    * [git代码冲突处理软件P4Merge](doc/git/005-git代码冲突处理软件P4Merge.md)
-    * [git内部原理揭秘](doc/git/006-git内部原理揭秘.md)
-    * [动图展示10大Git命令](doc/git/007-动图展示10大Git命令.md)
-    * [在错误的分支开发了代码](doc/git/008-在错误的分支开发了代码.md)
+    * [git常见问题及解决](doc/git/004-git常见问题及解决.md)
+    * [合并多个Commit](doc/git/005-合并多个Commit.md)
+    * [git代码冲突处理软件P4Merge](doc/git/006-git代码冲突处理软件P4Merge.md)
+    * [git内部原理揭秘](doc/git/007-git内部原理揭秘.md)
+    * [动图展示10大Git命令](doc/git/008-动图展示10大Git命令.md)
+    * [在错误的分支开发了代码](doc/git/009-在错误的分支开发了代码.md)
 * Mac
     * [Mac下常用的软件](doc/mac/001-Mac下常用的软件.md)
     * [Mac系统操作习惯设置](doc/mac/002-Mac系统操作习惯设置.md)
