@@ -3,6 +3,7 @@
 * git
     * [GIT介绍、安装、配置](doc/git/001-GIT介绍、安装、配置.md)
     * [git使用教程](doc/git/002-git使用教程.md)
+    * [git使用教程-高级](doc/git/003-git使用教程-高级.md)
     * [git常见问题及解决](doc/git/004-git常见问题及解决.md)
     * [合并多个Commit](doc/git/005-合并多个Commit.md)
     * [git代码冲突处理软件P4Merge](doc/git/006-git代码冲突处理软件P4Merge.md)
