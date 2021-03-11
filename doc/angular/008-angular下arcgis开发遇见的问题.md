@@ -2,11 +2,11 @@
 
 [TOC]    
 
--------------   
+-------------
 
-## 地图加载后不完全：  arcgis自己的样式没有加载上    
+## 地图加载后不完全：  arcgis自己的样式没有加载上
 
-![WX20171018-143914@2x.png](https://bitbucket.org/repo/oE6yEX/images/2647111525-WX20171018-143914@2x.png)     
+![](./img/003-angular.png)
 
 如上图所示，arcgis地图加载不完全，经过排查，是由于没有加载arcgis自己的CSS样式，把CSS加载上就好了。 
 
@@ -23,7 +23,7 @@ dojo.io.script error Error {__zone_symbol__error: Error
 __zone_symbol__message
 :
 "Error handling service request : Could not find a service with the name 'MapServer/ChinaOnlineStreetColor' in the configured clusters. Service may be stopped or ArcGIS Server may not be running."
-```    
+```
 
 经查找，这个是地图服务发生错误，导致不能读取地图了，   
 
@@ -40,9 +40,9 @@ __zone_symbol__message
 }
 ```
 
-## 地图中出现白线，样式出错导致的（arcgis3.18版本API）   
+## 地图中出现白线，样式出错导致的（arcgis3.18版本API）
 
-![WX20171113-160337@2x.png](https://bitbucket.org/repo/oE6yEX/images/3986387644-WX20171113-160337@2x.png)    
+![](./img/004-angular.png)    
 
 
 如上图所示在地图中出现了一条白线，经过查找，在显示地图的块中，对DIV块进行了宽高的拉伸,     

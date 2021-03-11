@@ -38,12 +38,12 @@ devServer: {
                 }
             }
         },
-```   
+```
 
 ------
-## 二、服务注册使用   
+## 二、服务注册使用
 
-![WX20170505-102149.png](https://bitbucket.org/repo/oE6yEX/images/2378097808-WX20170505-102149.png)   
+![](./img/001-angular.png)   
 
 如上图所示，先有一个模型跟服务，需要在`enterprise-auth/enterprise-authed-approve`里面使用：    
 **模型使用：**   
@@ -51,7 +51,7 @@ devServer: {
 # enterprise-admin/enterprise-auth/enterprise-authed-approve/enterprise-authed-approve.component.ts 
 # 只需要在这个文件中写如下代码即可：
 import {EnterpriseAdminModel} from "../shared/enterprise-admin.model";
-```  
+```
 **服务的使用：**        
 
 ***注意：*** 如果服务里面又引入服务，那么在使用这个服务时，也要导入引入的服务。        
@@ -102,12 +102,12 @@ mport { EnterpriseAdminService } from './shared/enterprise-admin.service';
 # 在构造函数中直接引用：
 constructor(@Inject('view') private viewService,
 
-```     
+```
 
 ---------------
-## 三、模块组件注册使用      
+## 三、模块组件注册使用
 
-![WX20170526-135439.png](https://bitbucket.org/repo/oE6yEX/images/3381880586-WX20170526-135439.png)     
+![](./img/002-angular.png)     
 
 如上图所示，模块`charts`需要在`enterprise-admin`下注册使用：      
 ```
@@ -166,7 +166,7 @@ const routes: Routes = [
           }]
     },
 ];
-```     
+```
 
 模块比组件多了xx.module.ts与xx.routing.ts两个文件。如果删除这2个文件，那么就是组件。
 组件的加载使用：   
@@ -195,9 +195,9 @@ import {Charts} from './charts/charts.component'; # 引入这个组件
     declarations: [ EnterpriseAdminComponent, Charts ],   # 在这里写入Charts,这里是声明
     bootstrap:    [ EnterpriseAdminComponent ]
 })
-``` 
+```
 
----------------    
+---------------
 ## 四、html中style类动态绑定   
 
 ### 1. 单个类的绑定：[class.special]="isSpecial"   
@@ -286,7 +286,7 @@ setCurrentStyles() {
 
 你既可以在初始化时调用setCurrentStyles()，也可以在所依赖的属性变化时调用。
 
-    
+
 ------------
 ## **angular2 第三方插件的使用**             
 
@@ -296,7 +296,7 @@ setCurrentStyles() {
 
 ```
 npm install primeng --save
-```       
+```
 
 ### 2. 模块中引入prime    
 
@@ -311,7 +311,7 @@ import { DropdownModule } from 'primeng/primeng';
   declarations: []
 })
 export default class advancedResearchModule { }
-```    
+```
 
 ### 3. 在组件中使用插件     
 
