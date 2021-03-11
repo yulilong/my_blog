@@ -1,11 +1,14 @@
-* **virtualBox语言设置**    
+[TOC]
+
+## 1. virtualBox语言设置
 
 virtualbox -> file -> perferences -> language ->选择对应的语言 -> OK     
 virtualbox -> 管理 -> 全局设定 -> 语言 -> 选择相应的语言 -> OK     
 
 
 
-# 设置终端启动快捷键
+## 2. 设置终端启动快捷键
+
 http://www.centoscn.com/CentOS/config/2015/0330/5044.html
 ```
 1. 首先打开Applications,选择System Tools
@@ -20,7 +23,8 @@ Command:  /usr/bin/gnome-terminal (Terminal 程序的路径）
 ```
 在virtualbox虚拟机中，如果鼠标指针出不来， 按键盘上右边的 alt+ctrl。
 
-# 添加virtualbox 增强工具
+## 3. 添加virtualbox 增强工具
+
 http://www.tuicool.com/articles/VRbq2em
 ```
 $ sudo yum update
@@ -30,7 +34,8 @@ $ reboot
 2.进入到虚拟机中运行这个镜像自动安装。
 ```
 
-# 设置共享文件夹
+## 4. 设置共享文件夹
+
 http://www.cnblogs.com/zqifa/p/linux-virtualbox-1.html
 http://www.cnblogs.com/jenry/archive/2013/09/06/3305062.html
 ```
@@ -71,6 +76,6 @@ $ VBoxManage modifyhd a0f06f66-f696-41dc-827a-e79bee50f65b   --resize 51200
 # 操作成功后该虚拟的硬盘即增加了50G，但要注意了，此50G空间还没有分配.
 
 
-```     
+```
 
-![WX20170308-165624.png](https://bitbucket.org/repo/oE6yEX/images/3806856555-WX20170308-165624.png)
+![](./img/009-linux.png)

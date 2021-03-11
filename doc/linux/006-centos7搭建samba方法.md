@@ -1,4 +1,7 @@
-## centos 部署samba
+[TOC]
+
+## 1. centos 部署samba
+
 ```
 1.安装Samba
 # yum -y install samba samba-client samba-common
@@ -51,7 +54,8 @@
 //设置好win7的ip与centos7在同一网段内，开始--运行--输入\\服务器IP 即可看到共享文件了
 ```
 
-## centos7 连接服务器
+## 2. centos7 连接服务器
+
 ```
 1.查看samba服务器有那些文件夹
 $ smbclient -L 192.168.1.44 -U myself

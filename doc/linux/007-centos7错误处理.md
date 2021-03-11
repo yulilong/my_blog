@@ -1,5 +1,13 @@
-* **SSH不能连接并提示REMOTE HOST IDENTIFICATION HAS CHANGED解决**     
+[TOC]
+
+
+
+## 1. SSH
+
+### 1.1 SSH不能连接并提示REMOTE HOST IDENTIFICATION HAS CHANGED解决
+
 错误信息：     
+
 ```
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @    WARNING: REMOTE HOST IDENTIFICATION HASCHANGED!     @
@@ -12,14 +20,14 @@ RSA host keyfor 192.168.0.252 has changed and you have requested strict checking
 Host keyverification failed.
 rsync:connection unexpectedly closed (0 bytes received so far) [sender]
 rsync error:error in rsync protocol data stream (code 12) at io.c(359)
-```   
+```
 
 的解决办法：    
 vi /root/.ssh/known_hosts     
 找到要连接的主机的ip，把它的那行所有信息删除（就是一行）     
 http://www.linuxidc.com/Linux/2012-07/64941.htm      
 
-* **ssh: connect to host 192.168.123.123 port 22: Connection refused**
+### 1.2 ssh: connect to host 192.168.123.123 port 22: Connection refused
 
 1.linux中打开终端    
 ```
@@ -29,8 +37,8 @@ $ sudo systemctl restart sshd
 # 一般来说到这里就可以，如果不行请查找别的方法，
 ```
 
-
 ## 1.dnf -y install memcached Failed to open:
+
 ```
 http://stackoverflow.com/questions/32541196/i-attempted-to-enable-the-epel-repo-on-my-fedora-22-machine-and-i-broke-it-now
 
@@ -48,7 +56,8 @@ dnf clean all dnf install epel-release
 如果删除了/etc/yum.repos.d/epel* ，那么一旦dnf命令安装失败，然后用yum安装，那么就要恢复删除的这些选项。
 可先给yum.repos.d 文件夹做一个备份，如果dnf安装失败，则用yum安装，这个时候恢复这个文件夹。
 ```
-#2. tar uncompress xxx.tar.xz
+## 2. tar uncompress xxx.tar.xz
+
 ```
 tar xf archive.tar.xz
 tar xf archive.tar.gz
@@ -79,7 +88,8 @@ $ rar x vpsyou.rar  //解压 vpsyou.rar 到当前目录
 $ rar vpsyou.rar ./vpsyou.com/   //将 vpsyou.com 目录打包为vpsyou.rar
 ```
 
-# 3. sudo dnf -y install nodejs ,error :no package matched: nodejs
+## 3. sudo dnf -y install nodejs ,error :no package matched: nodejs
+
 ```
 1. 去官网下载安装
 https://nodejs.org/
@@ -97,13 +107,15 @@ sudo make install
 node --version
 如果出现了版本号，则说明安装成功了。
 ```
-# 4. sudo dnf -y install npm 如果安装失败
+## 4. sudo dnf -y install npm 如果安装失败
+
 ```
 尝试是使用yum安装，
 $ sudo yum -y install npm
 如果yum也提示没有，那么更新yum源
 ```
-#sudo yum update
+## 5. sudo yum update
+
 ```
 error info:
 警告：/var/cache/yum/x86_64/7/elrepo-kernel/packages/python-perf-4.8.4-1.el7.elrepo.x86_64.rpm: 头V4 DSA/SHA1 Signature, 密钥 ID baadae52: NOKEY
@@ -118,7 +130,7 @@ $ rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 
 ```
 
-# 6. 在安装好manageiq 跟rvm后 重起后输入密码后重新输入错误
+## 6. 在安装好manageiq 跟rvm后 重起后输入密码后重新输入错误
 
 * bashrc 脚本被清除了
 原本：
@@ -165,8 +177,7 @@ source /opt/rh/rh-postgresql94/enable
 ```
 还有 .bsahrc里面的内容也不能少                 
 
-
-## centos gnome 桌面崩溃    
+## 7. centos gnome 桌面崩溃
 
 1. 键盘按 control + alt + F2
 2. root登陆后，切换到个人用户

@@ -18,7 +18,7 @@
 
 `chmod 400 [.pem私钥文件在本地机上的存储路径]`，例如：
 
-```
+```bash
 chmod 400 ~/.ssh/ecs.pem
 ```
 
@@ -26,7 +26,7 @@ chmod 400 ~/.ssh/ecs.pem
 
 `ssh -i [.pem私钥文件在本地机上的存储路径] root@[公网IP地址]`，例如：
 
-```
+```bash
 ssh -i ~/.ssh/ecs.pem root@10.10.xx.xxx
 ```
 
@@ -52,13 +52,13 @@ ssh -i ~/.ssh/ecs.pem root@10.10.xx.xxx
 
 4.  运行命令连接至实例。
 
-    ```
+    ```bash
     ssh [ECS实例的名称]
     ```
 
     示例如下：
 
-    ```
+    ```bash
     ssh ecs
     ```
 

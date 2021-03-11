@@ -1,8 +1,8 @@
-###  [**return Home**](Home)   
------- 
-# 注意：要按照顺序安装      
+[TOC]
 
-#rvm isntall
+***注意：要按照顺序安装***
+
+##  1. rvm isntall
 
 https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-on-centos-6-with-rvm  
 * rvm install:
@@ -51,7 +51,7 @@ $ gem install rails
 $ rails -v
 如果出现版本，那么说明安装成功。
 ```
-# 安装 pqadmin3
+## 2. 安装 pqadmin3
 
 这里首先需要系统中已经安装了postgres，如果没有安装请先安装。  
 * 查看linux中postgres 版本
@@ -77,8 +77,8 @@ http://www.voidcn.com/blog/houzhizhen/article/p-4388378.html
 $ wget http://ftp.riken.jp/Linux/fedora/epel/6/x86_64/epel-release-6-8.noarch.rpm
 $ sudo rpm -ivh epel-release-6-8.noarch.rpm
 $ sudo yum install pgadmin3
-```     
-![WX20170308-105307.png](https://bitbucket.org/repo/oE6yEX/images/3537175084-WX20170308-105307.png)
+```
+![](./img/008-centos.png)
 
 * 修改数据库配置文件，允许连接
 ```
@@ -107,22 +107,26 @@ $ sudo systemctl restart rh-postgresql94-postgresql
 $ lsof -i:5432
 ```
 
-# install rubymine 
-## 如果公司对版权有要求，请公司购买激活码，这时候请安装最新版。官网地址：https://www.jetbrains.com/ruby/
-```
-1. rubymine 最好是7.1.4版本的，这个网络上有激活码，此方法不建议。
+## 3.  install rubymine
 
-个人网盘下载：
-链接: https://pan.baidu.com/s/1o8PgQ50 密码: mk2q
+***注意*** ：如果公司对版权有要求，请公司购买激活码，这时候请安装最新版。官网地址：https://www.jetbrains.com/ruby/
 
+1、rubymine 最好是7.1.4版本的，这个网络上有激活码，此方法不建议。
 
-2.下载后解压，进入bin目录，运行里面的rubymine.sh 即可安装。
-使用中的问题：
-3.rubymine安装后找不到ruby解释器位置：
+2、个人网盘下载：链接: https://pan.baidu.com/s/1o8PgQ50 密码: mk2q
+
+3、下载后解压，进入bin目录，运行里面的rubymine.sh 即可安装。
+
+4、rubymine安装后找不到ruby解释器位置：
+
 http://stackoverflow.com/questions/17950288/rubymine-cant-find-sdk-where-is-it
+
+```
 * Windows - d:\dev\Ruby19\bin\ruby.exe
 * Mac Brew - /usr/local/Cellar/ruby/2.0.0-p247/bin/ruby
 * Ruby Version Manager - /Users/<user>/.rvm/rubies/ruby-1.9.3-p327/bin/ruby
 * Linux/Mac Default - /usr/bin/ruby
-
 ```
+
+
+

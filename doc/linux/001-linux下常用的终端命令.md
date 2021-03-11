@@ -1,15 +1,13 @@
-[**return home**](https://bitbucket.org/yulilong/my_wiki/wiki/Home)     
------------------------------------------------------------------------------------------
 [TOC]    
 
-## MV移动文件、重命名文件
+## 1. MV移动文件、重命名文件
 
-### 移动文件：mv [选项] 源文件或目录 目标文件或目录   
+### 1.1 移动文件：mv [选项] 源文件或目录 目标文件或目录
 
 参考链接：   
 https://www.cnblogs.com/piaozhe116/p/6084214.html     
 
-### **文件重命名**   
+### 1.2 文件重命名
 
 ```
 linux下重命名文件或文件夹的命令mv既可以重命名，又可以移动文件或文件夹.
@@ -20,30 +18,32 @@ mv /a /b/c
 其实在文本模式中要重命名文件或目录的话也是很简单的，我们只需要使用mv命令就可以了，比如说我们要将一个名为abc的文件重命名为1234就可以这样来写：mv abc 1234，但是要注意的是，如果当前目录下也有个1234的文件的话，我们的这个文件是会将它覆盖的
 ```
 
-## **查找：文件，内容，统计文件**  
-    
-### **find查找文件**
-```
+## 2. 查找：文件，内容，统计文件
+
+### 2.1 find查找文件
+
+```bash
 $ find / -name 文件名   
 $ find / -name 'azure-armrest*' # 部分名字匹配 例如azure-armrest-0.3.9   
 # find ver1.d ver2.d -name '*.c' -print    查找ver1.d,ver2.d *.c文件并打印      
 # find . -type d -print 从当前目录查找，仅查找目录，找到后，打印路径名。可用于打印目录结构。
-```    
+```
 [更多详细点这里](https://bitbucket.org/yulilong/my_wiki/wiki/%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6find)      
 
-### **Linux查找文件内容**  
-    
-```
+### 2.2 Linux查找文件内容
+
+```bash
 $ grep "被查找的字符串" 文件名  # 从文件内容查找匹配指定字符串的行：
 $ find / -type f -name "*.log" | xargs grep "ERROR" # 从根目录开始查找所有扩展名为.log的文本文件，并找出包含”ERROR”的行
-```    
+```
 [更多详细点这里](https://bitbucket.org/yulilong/my_wiki/wiki/Linux%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9)      
 
-## **查看当前用户**      
+## 3. 查看当前用户
 
 whoami    
 
-##  **linux修改文件所属用户和组**              
+##  4. linux修改文件所属用户和组
+
 ```
 使用chown命令可以修改文件或目录所属的用户：
        命令：chown 用户 目录或文件名
@@ -54,11 +54,11 @@ whoami
 如果需要修改目录及子目录的权限则需要加 -R
 sudo chown yulilong -R local
 
-```      
-
-## **复制文件：cp  scp**       
-
 ```
+
+## 5. 复制文件：cp  scp
+
+```bash
 http://www.jb51.net/LINUXjishu/70474.html
 Linux为我们提供了两个用于文件copy的命令，一个是cp，一个是scp，但是他们略有不同。 
 cp --- 主要是用于在同一台电脑上，在不同的目录之间来回copy文件 
@@ -97,7 +97,7 @@ cp -r dir1 dir2
 
 
 ```
-```
+```bash
 # 从 本地 复制到 远程: 把本地的full.tar.gz 复制到远程的 /home/root目录下
 scp /home/daisy/full.tar.gz root@172.19.2.75:/home/root 
 # 从 远程 复制到 本地:
@@ -109,16 +109,14 @@ scp root@172.19.2.75:/home/root/full.tar.gz /home/daisy
 scp -r root@192.168.100.110:/var/www/miq/vmdb ./
 ```
 
-## **centos添加用户跟组**      
+## 6. centos添加用户跟组
 
-```
 http://zhidao.baidu.com/link?url=YWnbBbR1fLGrWwQ9bKROr_2A_7fotpIgs2IJA0yh7-MfDDBKf3GSsB8Hab1pn0-Q8xpBnW0rSUUOhY1jIngKlX_O3-O9q2G0uIQCsANK80e
-```
- 
-## **centos7开机自动关闭网络,开启网络，有线设置**    
+
+## 7. centos7开机自动关闭网络,开启网络，有线设置
 
 http://jingyan.baidu.com/article/6dad5075f3d766a123e36eaa.html
-```
+```bash
 $ cd /etc/sysconfig/network-scirpts
 $ ls
 $sudo vi ifcfg-eth0
@@ -126,11 +124,11 @@ $sudo vi ifcfg-eth0
 ONBOOT=yes
 关闭
 ONBOOT=no
-```    
-
-##  ***查看文件文件夹大小*** 
-
 ```
+
+##  8. 查看文件文件夹大小*
+
+```bash
 [root@bsso yayu]# du -h --max-depth=1 work/testing
 27M     work/testing/logs
 35M     work/testing
@@ -144,13 +142,14 @@ $ df -h
 $ du -sh foo
 # 查看当前目录以下搜索文件和子目录大小:
 $ du -sh *
-```    
-![Screenshot from 2017-03-09 09-28-19.png](https://bitbucket.org/repo/oE6yEX/images/2094033154-Screenshot%20from%202017-03-09%2009-28-19.png)       
+```
+![](./img/002-linux.png)       
 
-## **linux 压缩、解压**  
+## 9. linux 压缩、解压
 
 http://www.blogjava.net/jiangjf/archive/2007/07/29/133122.html      
 http://blog.csdn.net/liangzhao_jay/article/details/48052913      
+
 ```
 .tar  # tar命令可以用来压缩打包单文件、多个文件、单个目录、多个目录。
    多个文件压缩打包 tar czvf my.tar.gz file1 file2 ...（file*）（也可以给file*文件mv 目录在压缩）
@@ -167,25 +166,24 @@ http://blog.csdn.net/liangzhao_jay/article/details/48052913
 　　压缩：r ar e FileName.rar
 ```
 
-## **查看当前系统版本**
+## 10. 查看当前系统版本
 
-```
+```bash
 $ lsb_release -a
 $ cat /etc/issue
-
-```    
-
-## **wget/curl**    
-    
-http://www.cnblogs.com/dingn/p/5658442.html       
 ```
+
+## 11. wget/curl
+
+http://www.cnblogs.com/dingn/p/5658442.html       
+```bash
 # Linux系统中wget是一个下载文件的工具，它用在命令行下。对于Linux用户是必不可少的工具，我们经常要下载一些软件或从远程服务器恢复备份到本地服务器。
 $ wget http://place.your.url/here
 
-```  
-    
-http://www.linuxdiyf.com/linux/2800.html       
 ```
+
+http://www.linuxdiyf.com/linux/2800.html       
+```bash
 # 在Linux中curl是一个利用URL规则在命令行下工作的文件传输工具，可以说是一款很强大的http命令行工具。它支持文件的上传和下载，是综合传输工具，但按传统，习惯称url为下载工具。
 $ curl www.baidu.com  # 会把百度网页元素语言显示出来
 
