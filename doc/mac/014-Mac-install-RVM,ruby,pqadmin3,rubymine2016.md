@@ -1,6 +1,6 @@
 [TOC]
 
-## **1. install RVM**   
+## 1. install RVM
 
 1.未装homebrew先装homebrew，否则报错：     
 ```
@@ -22,26 +22,24 @@ $ rvm -v
 # 如果出现邦本则说明安装成功
 ```
 
-![](https://bitbucket.org/repo/oE6yEX/images/2698900278-WX20180319-012130.png)
+![](./img/041-mac.png)
 
-## 2. 安装 rubymine ruby编辑器      
-
-## **rubymine 2017安装**
+## 2. rubymine 2017安装
 
 1. 在官网下载最新安装包：  https://www.jetbrains.com/ruby/download/#section=mac     
 2. 下载完成安装包后，安装程序（双击打开，将左侧拖拽至右侧应用程序，默认安装）。      
 3. 打开软件，在注册中选择‘License server’， 在 ‘License server address’ 中输入：`http://xidea.online`,然后点击Activate即可
 
 --------------------
-## **Mac install pgadmin3**    
+## 3. Mac install pgadmin3
 
 ```
 #终端，已经安装了brew ，cask
 ~ brew search pgadmin3
 Caskroom/versions/pgadmin3
-~ brew install Caskroom/versions/pgadmin3
+~ brew install Caskroom/versions/pgadmin3 
 ```
-![](https://bitbucket.org/repo/oE6yEX/images/3516961668-WX20170308-104055.png)     
+![](./img/042-mac.png)
 
 
 * 修改数据库配置文件，允许连接

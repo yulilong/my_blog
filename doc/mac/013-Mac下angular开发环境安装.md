@@ -1,16 +1,16 @@
-* **install node, install npm**   
+[TOC]
 
-```  
+## 1. install node
+
+```  bash
 # 需要事先安装好 brew
 ~ brew install node
-# 2017-07-21 经实际安装，用 brew 安装node后，npm也已经安装好了。
-# ~ brew install npm
 ~ npm -v
 ~ node -v
-```    
-![WX20170407-111437.png](https://bitbucket.org/repo/oE6yEX/images/1655153530-WX20170407-111437.png)  
+```
+![](./img/037-mac.png)  
 
-![WX20170721-150430.png](https://bitbucket.org/repo/oE6yEX/images/1247795137-WX20170721-150430.png)   
+![](./img/038-mac.png)   
 
 ```    
 # 使用brew安装的node版本太高了，告知angular2 里面`.sass`文件`node-sass`包不兼容
@@ -18,10 +18,11 @@
 brew uninstall node 
 # node官网： https://nodejs.org/en/download/    打开网站选择 LTS 版本的。下载mac版本的，然后店家安装
 ```
-![WX20170721-164326@2x.png](https://bitbucket.org/repo/oE6yEX/images/2695786042-WX20170721-164326@2x.png)
+![](./img/039-mac.png)
 
 
-* **编辑器安装 VScode免费**    
+
+## 2. 编辑器安装 VScode免费
 
 下载地址： 
 https://code.visualstudio.com/  
@@ -55,4 +56,4 @@ JavaScript snippets for Dynamics 365/CRM 2011/2013/2015/2016 : https://marketpla
 JS-CSS-HTML Formatter : https://marketplace.visualstudio.com/items?itemName=lonefy.vscode-JS-CSS-HTML-formatter    
 JSFiddle Like Syntax Theme : https://marketplace.visualstudio.com/items?itemName=davidmart.theme-jsfiddle-like-syntax-vscode       
 
-![WX20170407-140316.png](https://bitbucket.org/repo/oE6yEX/images/3552433634-WX20170407-140316.png)
+![](./img/040-mac.png)
