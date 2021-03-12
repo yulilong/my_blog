@@ -1,4 +1,6 @@
-#  **一级必会**
+[TOC]
+
+##  一级必会
 
 * **Mac OS 下快捷键**        
 
@@ -39,7 +41,7 @@ Edit -> find -> replace...
 
 * **编辑窗口拆分：**        
 
-![WX20170419-173115.png](https://bitbucket.org/repo/oE6yEX/images/1221986260-WX20170419-173115.png)      
+![](./img/002-ruby.png)      
 
 左上角 -> Window -> Editor Tabs -> Split Horizontally
 
@@ -62,8 +64,8 @@ Ctrl+D：复制一行
 Ctrl+Y：删除一行   
 Shift+Alt+N：在Controller,Model,View间跳转   
 Shift+Alt+F10：运行，Dubug     
-   
-#  **二级进阶**
+
+##  二级进阶
 
 Alt+Home：显示导航条     
 Alt+F1：在不同视图中切换 (Project, Structure, etc.).      
@@ -76,8 +78,7 @@ Ctrl+N，Ctrl+Shift+N，Ctrl+Shift+Alt+N：通过名字查找类，文件，符�
 Ctrl+Shift+T：To surround a block of code          
 Ctrl+Alt+D：显示Model关系图，即ER图。View | Show Model Dependency Diagram         
 
-
-#  **三级耍酷**
+##  三级耍酷
 
 * a.界面调整    
 Esc：从任何界面返回到编辑器      
@@ -97,8 +98,7 @@ Ctrl++，Ctrl+-：展开或收缩代码
 Ctrl+Shift++，Ctrl+Shift+-：全部展开或收缩代码     
 Ctrl+~：切换主题，配色等(一般默认会被输入法占用)     
 
-
-# **更改快捷键**
+## 更改快捷键
 
 示例：把代码提示快捷键由Alt+Space改为Ctrl+Alt+/     
 

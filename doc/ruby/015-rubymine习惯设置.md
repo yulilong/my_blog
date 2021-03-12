@@ -1,17 +1,13 @@
-***目录***     
-
 [TOC]
 
-------
-## **1. 其他的习惯设置**
+## 1. 其他的习惯设置
 
 * **RubyMine2016.3自动补全默认第一个选项配置:**http://blog.csdn.net/lj_550566181/article/details/53504208      
 * **rubymine2016官方文档英文：**https://www.jetbrains.com/help/ruby/2016.3/reference.html
 
 -----
 
-
-## 3. rubymine2016 汉化    
+## 3. rubymine2016 汉化
 
 参考链接：  http://www.jb51.net/softs/516343.html     
 
@@ -19,7 +15,8 @@
 下载链接：  https://pan.baidu.com/s/1c2ou9w8 密码: kqjh     
 **RubyMine 2016汉化包使用方法：**        
 解压后，里面有个文件`resources_cn.jar`,把这个文件复制到`/Applications/RubyMine.app/Contents/lib`中      
-![WX20170412-152939.png](https://bitbucket.org/repo/oE6yEX/images/661412829-WX20170412-152939.png)    
+
+![](./img/003-ruby.png)    
 
 如果没有`resources_cn.jar`,怎按照下面的步骤来制作`resources_cn.jar`：     
 1、链接: https://pan.baidu.com/s/1pLlWpSn 密码: yptn   下载汉化包       
@@ -40,26 +37,26 @@ EditorConfig -> Enable EditorConfig support    对号去掉
 (TypeScript) Editor -> Code Style -> TypeScript -> Tabs and Indents        
 
 -----------------
-## 5. rubymine 颜色设置    
+## 5. rubymine 颜色设置
 
-![WX20170412-154746.png](https://bitbucket.org/repo/oE6yEX/images/77549440-WX20170412-154746.png)       
+![](./img/004-ruby.png)       
 
-### 整体风格颜色(主题颜色)    
+### 整体风格颜色(主题颜色)
 
 preferences(cmd + ,) -> Editor -> Color Scheme -> Scheme： 选择一款喜欢的主题      
 其中 default 主题是窗口是白色的，其他的有黑色的
 
-### 正则表达式颜色     
+### 正则表达式颜色
 
 preferences(cmd + ,) -> Editor -> Color Scheme -> TypeScript -> Regular expression -> foreground
 
-![WX20170918-162718.png](https://bitbucket.org/repo/oE6yEX/images/2555709427-WX20170918-162718.png)
+![](./img/005-ruby.png)
 
-### 字符串转义 颜色设置     
+### 字符串转义 颜色设置
 
 preferences(cmd + ,) -> Editor -> Color Scheme -> TypeScript -> valid string escape -> foreground
 
-### 1.  输入行的背景色    
+### 1.  输入行的背景色
 
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Editor -> Caret row
 
@@ -75,9 +72,9 @@ preferences(cmd + ,) -> Editor ->  Colors Scheme -> General -> Code -> Line numb
 
 preferences(cmd + ,) -> Editor ->  Colors Scheme -> General -> Editor -> Gutter background    
 
-![WX20170412-160435.png](https://bitbucket.org/repo/oE6yEX/images/450904385-WX20170412-160435.png)     
+![](./img/006-ruby.png)     
 
-### 4. 鼠标选择区域前景色(字体颜色)     
+### 4. 鼠标选择区域前景色(字体颜色)
 
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Editor -> Selection background      
 
@@ -85,16 +82,16 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Editor -> Select
 
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Editor -> Selection foreground       
 
-![WX20170412-180743.png](https://bitbucket.org/repo/oE6yEX/images/2747762884-WX20170412-180743.png)       
+![](./img/007-ruby.png)       
 
-### 6. 字符串的颜色设置    
+### 6. 字符串的颜色设置
 
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> String -> String text -> Foreground    
 这是通用的设置，如果想某种语言字符串颜色特定 以ruby语言为例：    
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Ruby -> String -> Foreground     
 如果勾选了 `Use inherited attributes`则会使用上面的设置，在这里也告诉了此处默认的设置位置`String -> String text` of Language Defaults    
 
-![WX20170412-182734.png](https://bitbucket.org/repo/oE6yEX/images/1064908234-WX20170412-182734.png)       
+![](./img/008-ruby.png)       
 
 ### 7. HTML代码`<div  class=  "line">   &times;    </div    >`      
 
@@ -108,7 +105,7 @@ Foreground 字体颜色，  Background 背景色
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Markup -> Tag ->    
 Foreground `<`颜色，  Background 背景色     
 
-![WX20170412-190325.png](https://bitbucket.org/repo/oE6yEX/images/3615565469-WX20170412-190325.png)      
+![](./img/009-ruby.png)      
 
 ### 8. `<div><span>企业信息管理dsdsddddd</span></div>`        
 1. div span 字体的颜色设置      
@@ -116,9 +113,9 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Keywor
 2. 没有被任何符号包含(企业信息管理ds)的字体颜色 设置         
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Text -> Default text -> Foreground       
 
-![WX20170413-094349.png](https://bitbucket.org/repo/oE6yEX/images/869757487-WX20170413-094349.png)     
+![](./img/010-ruby.png)  
 
-### 9. 局部变量颜色设置       
+### 9. 局部变量颜色设置
 
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Identifiers -> Local variable -> Foreground    
 其他语言个性化设置(JavaScript)： Editor ->  Colors & Fonts -> JavaScript -> Local variable -> Foreground     
@@ -131,11 +128,11 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Number
 
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> Language Defaults -> Comments -> Line comment -> Foreground      
 
-![WX20170413-104255.png](https://bitbucket.org/repo/oE6yEX/images/1403576230-WX20170413-104255.png)     
+![](./img/011-ruby.png)     
 
-### **12. git 新增行，修改行，删除行 颜色标记修改**       
+### **12. git 新增行，修改行，删除行 颜色标记修改**
 
-![WX20170414-174836.png](https://bitbucket.org/repo/oE6yEX/images/2490896529-WX20170414-174836.png)      
+![](./img/012-ruby.png)      
 
 2016版的：      
 1. git 新增行标记颜色修改：    
@@ -144,7 +141,8 @@ preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> Added 
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> Deleted lines -> Background        
 3. git 修改行标记颜色修改：    
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Gutter -> modified lines -> Background    
-    
+  
+
 2017版的：   
 1. git 新增行标记颜色修改：    
 preferences(cmd + ,) -> Editor ->  Colors Scheme -> VCS -> Editor Gutter -> Added lines -> Background        
@@ -153,16 +151,15 @@ preferences(cmd + ,) -> Editor ->  Colors Scheme -> VCS -> Editor Gutter -> Dele
 3. git 修改行标记颜色修改：    
 preferences(cmd + ,) -> Editor ->  Colors Scheme -> VCS -> Editor Gutter -> modified lines -> Background  
 
-### **13. git diff 弹窗 真实背景色**    
+### **13. git diff 弹窗 真实背景色**
 
-![WX20170417-103120.png](https://bitbucket.org/repo/oE6yEX/images/1958676848-WX20170417-103120.png)     
+![](./img/013-ruby.png)     
 
 preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Text -> Background in readonly file - Background      
 
+### **14. 编辑器 分隔线颜色设置**
 
-### **14. 编辑器 分隔线颜色设置**    
-
-![WX20170415-173819.png](https://bitbucket.org/repo/oE6yEX/images/1434825748-WX20170415-173819.png)     
+![](./img/014-ruby.png)     
 
 1. 分隔线颜色设置：    
 preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Editor -> Tear line -> Foreground      
@@ -173,25 +170,27 @@ preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Editor -> Right m
 
 ### **15. 垂直缩进线颜色设置**    
 
-![WX20170415-122542.png](https://bitbucket.org/repo/oE6yEX/images/3499247445-WX20170415-122542.png)    
+
+
+![](./img/015-ruby.png)    
 
 preferences(cmd + ,) -> Editor -> Colors & Fonts -> General ->  Code -> Vertical indent guide -> Background
 
-### **16. 括号匹配颜色 **     
+### **16. 括号匹配颜色 **
 
-![WX20170417-090958.png](https://bitbucket.org/repo/oE6yEX/images/239463111-WX20170417-090958.png)    
+![](./img/016-ruby.png)    
 
 preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Matched brace -> Background      
 
-### **17. 鼠标光标颜色**    
+### **17. 鼠标光标颜色**
 
-![WX20170417-091628.png](https://bitbucket.org/repo/oE6yEX/images/3612788461-WX20170417-091628.png)   
+![](./img/017-ruby.png)   
 
 preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Editor -> Caret      
 
-### **18. 折叠文本颜色 **   
+### **18. 折叠文本颜色 **
 
-![WX20170417-094439.png](https://bitbucket.org/repo/oE6yEX/images/1265052123-WX20170417-094439.png)     
+![](./img/018-ruby.png)     
 
 1. 折叠文本三个点颜色：   
 
@@ -199,16 +198,15 @@ preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Text -> Fold text
 2. 折叠文本背景色：    
 preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Text -> Fold text -> Background     
 
+### **19. 注入语言片段背景色修改**
 
-### **19. 注入语言片段背景色修改**    
-
-![WX20170417-150737.png](https://bitbucket.org/repo/oE6yEX/images/660184162-WX20170417-150737.png)      
+![](./img/019-ruby.png)      
 
 preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Injected language fragment -> Background       
 
-### **20. 光标定位变量一样的 颜色**    
+### **20. 光标定位变量一样的 颜色**
 
-![WX20170417-153026.png](https://bitbucket.org/repo/oE6yEX/images/2687178096-WX20170417-153026.png)     
+![](./img/020-ruby.png)     
 
 1. 光标在变量定义处：    
 preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Identifier under caret(write) -> Background     
@@ -225,16 +223,16 @@ preferences(cmd + ,) -> Editor -> Colors & Fonts -> General -> Code -> Identifie
 (JavaScript) Editor ->  Colors & Fonts -> JavaScript -> Class -> Foreground  
 如果勾选了： Use inherited attributes : Language Defaults -> Classes -> Class name      
 
-![WX20170413-110636.png](https://bitbucket.org/repo/oE6yEX/images/1937567871-WX20170413-110636.png)   
+![](./img/021-ruby.png)   
 
 ### 22. 实例成员方法名颜色设置：    
 
 (JavaScript) Editor ->  Colors & Fonts -> JavaScript -> Instance member function -> Foreground      
 如果勾选了： Use inherited attributes,则：  Language Defaults -> Classes -> Instance method     
 
-### 23. **方法参数颜色设置 Parameter**     
+### 23. **方法参数颜色设置 Parameter**
 
-![WX20170417-173319.png](https://bitbucket.org/repo/oE6yEX/images/1638088749-WX20170417-173319.png)     
+![](./img/022-ruby.png)     
 
 1. 方法参数颜色设置：    
 (JavaScript) Editor ->  Colors & Fonts -> JavaScript -> Parameter:     
@@ -242,9 +240,9 @@ Foreground, 字体颜色
 Background, 背景色     
 如果勾选了： Use inherited attributes，则: Language Defaults -> Indentifiers -> Parameter        
 
-### **24.实例变量颜色，接口颜色**    
+### **24.实例变量颜色，接口颜色**
 
-![WX20170419-113204.png](https://bitbucket.org/repo/oE6yEX/images/3310809205-WX20170419-113204.png)     
+![](./img/023-ruby.png)     
 
 1. 类实例变量颜色设置：     
 (TypeScript)Editor ->  Colors & Fonts -> TypeScript -> Instance member variable -> Foreground     
@@ -256,8 +254,9 @@ Background, 背景色
 
 
 
-### 25. 搜索结果的颜色背景色设置：    
-![WX20170413-113053.png](https://bitbucket.org/repo/oE6yEX/images/29999157-WX20170413-113053.png)      
+### 25. 搜索结果的颜色背景色设置：
+
+![](./img/024-ruby.png)      
 preferences(cmd + ,) -> Editor ->  Colors & Fonts -> General -> Search Results -> Text search result     
 搜索结果字体颜色： Foreground ，搜索结果背景色： Background    
 
@@ -277,15 +276,16 @@ Editor -> Code Style -> TypeScript -> Tabs and Indents
 ## **7. Editor Tabs 编辑器标签页设置，显示正在编辑文件的路径**    
 
 https://www.jetbrains.com/help/ruby/2016.3/editor-tabs.html?search=editor%20tabs      
-![WX20170414-151951.png](https://bitbucket.org/repo/oE6yEX/images/2174346782-WX20170414-151951.png)      
+
+![](./img/025-ruby.png)      
 
 
 2. 显示编辑文件的路径：    
 rubymine左上角 -> View -> navigation Bar , 前面打上对号。      
 
-## **8.工具栏显示与隐藏**    
+## **8.工具栏显示与隐藏**
 
-![WX20170417-104343.png](https://bitbucket.org/repo/oE6yEX/images/3547068404-WX20170417-104343.png)      
+![](./img/026-ruby.png)      
 
 rubymine左上角 -> View -> Toolbar , 前面打上对号。
 
@@ -300,7 +300,8 @@ Synchronize file on frame or editor tab activation, 这个是否去掉暂时不�
 ## **12. 代码折叠设置**     
 
 https://www.jetbrains.com/help/ruby/2016.1/code-folding.html#using_folding_comments        
-![WX20170415-151956.png](https://bitbucket.org/repo/oE6yEX/images/3972072235-WX20170415-151956.png)     
+
+![](./img/027-ruby.png)     
 
 preferences(cmd + ,) -> Editor -> General -> Code Folding：       
  -> Show code folding outline: 这个打上对号，就会显示代码折叠的提示线。     
@@ -311,19 +312,19 @@ preferences(cmd + ,) -> Editor -> General -> Code Folding：
 ## **14. 编辑器代码自动换行**     
 
 当代码一行太多的时候，如果不选择软换行，那么就会把编辑区右移，会很费劲，这时可选择软换行，在下一行接着显示这行的内容。     
-![WX20170415-152928.png](https://bitbucket.org/repo/oE6yEX/images/1573141419-WX20170415-152928.png)      
+
+![](./img/028-ruby.png)      
 preferences(cmd + ,) -> Editor -> General：   
 Soft Wraps -> Use soft wraps in editor , 前面打上对号，就会自动软换行。         
 
+## **21. 代码从新格式化格式设置**
 
-## **21. 代码从新格式化格式设置**    
-
-![WX20170420-103323.png](https://bitbucket.org/repo/oE6yEX/images/3920393691-WX20170420-103323.png)     
+![](./img/029-ruby.png)     
 
 冒号后有一个空格，从新格式化设置：    
 preferences(cmd + ,) -> Editor -> Code Style -> TypeScript -> Spaces -> After type reference colon':'打上对号      
 
-## **22. 关闭TypeScript 自动编译**   
+## **22. 关闭TypeScript 自动编译**
 
 preferences(cmd + ,) -> Languages & Frameworks -> TypeScript:     
 Compiler:  Enable TypeScript Compiler 去掉前面的对号，就不会自动编译了。      
@@ -331,12 +332,14 @@ Compiler:  Enable TypeScript Compiler 去掉前面的对号，就不会自动编
 ## 23. 显示/隐藏 编辑器中空格上的白点    
 
 preferences(cmd + ,) -> Editor -> General -> Appearance -> show whitespaces ,点击选中或取消。    
-![WX20170914-160550.png](https://bitbucket.org/repo/oE6yEX/images/3522210899-WX20170914-160550.png)    
+
+![](./img/030-ruby.png)    
 
 ## 24. 显示/隐藏 编辑器 代码块垂直线    
 
 preferences(cmd + ,) -> Editor -> General -> Appearance -> Vertical indent guide ,点击选中或取消。    
-![WX20170914-164124.png](https://bitbucket.org/repo/oE6yEX/images/1855472452-WX20170914-164124.png)    
+
+![](./img/031-ruby.png)    
 
 ## **25. 显示/隐藏 编辑器 行号**
 
@@ -345,7 +348,8 @@ preferences(cmd + ,) -> Editor -> General -> Appearance ->  show line numbers
 ## **2. 显示/隐藏 编辑器 右边距**
 
 preferences(cmd + ,) -> Editor -> General -> Appearance ->  show right margin   
-![WX20170914-183222.png](https://bitbucket.org/repo/oE6yEX/images/3218564334-WX20170914-183222.png)  
+
+![](./img/032-ruby.png)  
 
 ##  编辑器标签的设置，由单行显示变多行(打开的文件名)：    
 
