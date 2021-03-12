@@ -1,5 +1,3 @@
-###  [**return home**](Home)     
------
 
 * **manageIQ官方安装文档**    
 http://manageiq.org/docs/guides/developer_setup    
@@ -10,7 +8,7 @@ Mac 安装在中间
 ```
 # https://brew.sh/
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```   
+```
 
 * **Install Packages**     
 
@@ -20,7 +18,7 @@ brew install memcached
 brew install postgresql
 brew install cmake
 brew install node
-```   
+```
 
 * **Install the Bower package manager**     
 
@@ -38,7 +36,7 @@ ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 # Create the ManageIQ superuser
 psql -d postgres -c "CREATE ROLE root SUPERUSER LOGIN PASSWORD 'smartvm'"
-```    
+```
 
 * **Start memcached**    
 
@@ -54,13 +52,12 @@ Memcached基于一个存储键/值对的hashmap。其守护进程（daemon ）�
 但是客户端可以用任何语言来编写，并通过memcached协议与守护进程通信。
 ```
 
-![WX20170301-154521.png](https://bitbucket.org/repo/oE6yEX/images/2025153199-WX20170301-154521.png)
-     
-  
-![WX20170301-153348.png](https://bitbucket.org/repo/oE6yEX/images/3408132826-WX20170301-153348.png)      
+![](./img/002-manageiq.png)     
 
-![WX20170301-153734.png](https://bitbucket.org/repo/oE6yEX/images/755488350-WX20170301-153734.png)    
+![](./img/003-manageiq.png)      
 
-![WX20170301-154802.png](https://bitbucket.org/repo/oE6yEX/images/2730176671-WX20170301-154802.png)     
+![](./img/004-manageiq.png)    
 
-![WX20170301-155126.png](https://bitbucket.org/repo/oE6yEX/images/1236129641-WX20170301-155126.png)
+![](./img/005-manageiq.png)     
+
+![](./img/006-manageiq.png)

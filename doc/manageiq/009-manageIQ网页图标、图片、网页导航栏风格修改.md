@@ -1,17 +1,20 @@
-* **代码版本**   
-https://github.com/ManageIQ/manageiq/tree/euwe-1       
------        
+[TOC]
 
-## 修改后的生产环境需要从新编译js文件     
+
+
+代码版本
+https://github.com/ManageIQ/manageiq/tree/euwe-1       
+
+修改后的生产环境需要从新编译js文件
 
 ```
 ###### 下面命令不管用再用： bin/update
 $ bin/rails evm:compile_assets
 ```
 
-## **1.登录首页图标的修改**   
+## 1. 登录首页图标的修改
 
-![WX20170302-145333.png](https://bitbucket.org/repo/oE6yEX/images/450901201-WX20170302-145333.png)    
+![](./img/017-manageiq.png)    
 
 * 1.查找相关信息
 打开网站后，网页右键-->inspect(检查) --> select an element in the page to inspect it -->    
@@ -37,7 +40,7 @@ $ find ./ -name "login-screen-logo*" #查找图标信息
 ./public/assets/login-screen-logo-cd43380036fc96964823fd8d6d7486fe9bcfcce1498daf0c41d8bc94385511da.png
 
 ./public/self_service/images/login-screen-logo.png
-```        
+```
 
 * **用户名上面的图片(manageIQ)修改**  
 
@@ -58,7 +61,7 @@ $ find ./ -name "brand*" #查找图标(manageIQ)位置
 ./public/self_service/img/brand.svg
 ./vendor/assets/bower_components/patternfly-sass/assets/images/patternfly/brand-alt.svg
 ./vendor/assets/bower_components/patternfly-sass/assets/images/patternfly/brand.svg
-```     
+```
 
 * **网页标题(title)更改**      
 
@@ -74,7 +77,7 @@ https://github.com/ManageIQ/manageiq/blob/euwe-1/app/helpers/application_helper.
 #最后，这里就是标题定义处，这个有几种语言(汉语，英语等)，别的代码版本不是这个路径，不过还是local这个目录里面，
 # 别的版本只要找这个local目录就好了，例如：/var/www/miq/vmdb/config/locales
 manageIQ/locale
-```     
+```
 
 2.修改标题    
 https://github.com/ManageIQ/manageiq/blob/euwe-1/locale/zh_CN.yml      
@@ -95,16 +98,18 @@ zh-CN:
     copyright: "Copyright (c) 2017 JasCloud。由中盈安信赞助。"
     support_website: "www.jasgroup.cn"
     support_website_text: "www.jasgroup.cn"
-```   
+```
 en.yml, es.yml, fr.yml, ja.yml 也需要做相应修改。     
 修改好后需要重启服务。
 
-## **2.登录页面的中间部分的背景色修改**     
-![WX20170314-111146.png](https://bitbucket.org/repo/oE6yEX/images/4151897052-WX20170314-111146.png)     
+## 2. 登录页面的中间部分的背景色修改
+
+![](./img/018-manageiq.png)     
 
 文件位置：   
 app/assets/stylesheets/login.scss
 app/assets/stylesheets/main.scss       
+
 ```    
 # app/assets/stylesheets/login.scss 
 &.login-pf {
@@ -123,13 +128,16 @@ $login-bg-color: #083c5a; # 大约是在28行附近
 $img-bg-login:  "bg-login.png"; # 左上角的图片 图片位置：app/assets/images/bg-login.png
 $img-bg-login-2: "bg-login-2.png";#  右下角的图片
 
-```     
+```
 
-## **3.登陆后页面上部(header)导航栏的背景色**    
-![WX20170314-140348.png](https://bitbucket.org/repo/oE6yEX/images/843502405-WX20170314-140348.png)      
+## 3. 登陆后页面上部(header)导航栏的背景色
+
+![](./img/019-manageiq.png) 
+
 文件位置：   
 app/assets/stylesheets/header_background.scss       
 app/assets/stylesheets/main.scss       
+
 ```
 # app/assets/stylesheets/header_background.scss     
 .navbar-pf-vertical {
@@ -143,12 +151,14 @@ app/assets/stylesheets/main.scss
 $navbar-pf-alt-bg-color: #0c69a5; //大约在第9行 sets backgound color of navigation bar
 # 上面的图片设置：
 $img-bg-navbar: "navbar.png"; //大约在第11行 sets a custom background image in the header
-```        
+```
 
-## **4.登录后右上角 关于(about)页面的风格设置**    
-![WX20170314-155928.png](https://bitbucket.org/repo/oE6yEX/images/1203226833-WX20170314-155928.png)       
+## 4. 登录后右上角 关于(about)页面的风格设置
+
+![](./img/020-manageiq.png)       
 文件位置：    
 app/assets/stylesheets/about_modal_background.scss       
+
 ```
 #app/assets/stylesheets/about_modal_background.scss
 .about-modal-pf {
@@ -159,10 +169,11 @@ app/assets/stylesheets/about_modal_background.scss
 # app/assets/stylesheets/main.scss
 $modal-about-pf-bg-img:  "bg-modal-about-pf.png"; // sets background image of 'About' modal
 $modal-about-pf-bg-color:   #083c5a; // sets background color of 'About' modal
-```       
+```
 
-## 登陆后，垂直导航栏的颜色设置     
-![WX20170320-141604.png](https://bitbucket.org/repo/oE6yEX/images/1840381616-WX20170320-141604.png)       
+## 5. 登陆后，垂直导航栏的颜色设置
+
+![](./img/021-manageiq.png)       
 
 这个导航栏的风格是第三方插件：  
 ```
@@ -172,7 +183,7 @@ group :ui_dependencies do # Added to Bundler.require in config/application.rb
   gem "patternfly-sass",  "~>3.12.0"   # 这个是垂直导航栏的风格，大约95行附近
   ·········
 end
-```       
+```
 垂直导航栏颜色设置源码：    
 https://github.com/patternfly/patternfly-sass/blob/v3.12.0/assets/stylesheets/patternfly/_vertical-nav.scss         
 

@@ -1,27 +1,35 @@
-# 概述（overview）
+[TOC]
+
+## 1. 概述
 
   由于manageiq是使用rails编写的，所以manageiq的源代码目录结构是标准的rails的目录结构，rails开发语言是ruby，框架是mvc模式的。
 
-## manageiq代码的目录结构 ##
+## 2. manageiq代码的目录结构
 
-1. 首先了解一下标准的rails目录结构，如下图：  
-![rails_dir_schema.png](https://bitbucket.org/repo/oE6yEX/images/3712103408-rails_dir_schema.png)
+1、首先了解一下标准的rails目录结构，如下图：  
 
-2. ManageIQ的代码目录结构:  
+![](./img/007-manageiq.png)
+
+2、ManageIQ的代码目录结构:  
 ManageIQ is a Rails application with the following standard layout:  
-![manageiq_standard layout.png](https://bitbucket.org/repo/oE6yEX/images/3132918759-manageiq_standard%20layout.png)
+
+![](./img/008-manageiq.png)
 
 详细介绍请看manageiq的官方文档介绍：  
 http://manageiq.org/docs/guides/architecture/source_code_layout
 
-## rais 程序架构、执行流程 ##
+## 3. rais 程序架构、执行流程
+
   Rails 采用了“模型-视图-控制器”（简称 MVC）架构模式。这种模式把应用中的数据（例如用户信息）与显示数据的代码分开，这是图形用户界面（Graphical User Interface，简称 GUI）常用的架构方式。 
 MVC 架构图解：  
-![mvc_schematic.png](https://bitbucket.org/repo/oE6yEX/images/1877671212-mvc_schematic.png)  
+
+![](./img/009-manageiq.png)  
+
 与 Rails 应用交互时，浏览器发出一个请求（request），Web 服务器收到请求之后将其传给 Rails 应用的控制器，决定下一步做什么。某些情况下，控制器会立即渲染视图（view），生成 HTML，然后发送给浏览器。在动态网站中，更常见的是控制器与模型（model）交互。模型是一个 Ruby 对象，表示网站中的一个元素（例如一个用户），并且负责与数据库通信。与模型交互后，控制器再渲染视图，把生成的 HTML 返回给浏览器。  
 
 程序执行流程：  
-![mvc_detailed.png](https://bitbucket.org/repo/oE6yEX/images/805720112-mvc_detailed.png)  
+
+![](./img/010-manageiq.png)  
 
 *  图中各步的说明如下：  
 1. 浏览器向 /users 发送请求；  
@@ -37,9 +45,10 @@ MVC 架构图解：
 [Ruby on Rails 教程](https://railstutorial-china.org/book/)  
 [Ruby on Rails 指南](http://guides.ruby-china.org/)  
 
-## manageiq代码执行过程展示 ##
+## 4. manageiq代码执行过程展示
 
-### 看过上面的介绍后，如果想要了解manageiq的代码可根据如下方法来查找：   
+看过上面的介绍后，如果想要了解manageiq的代码可根据如下方法来查找：
+
 * 浏览器发送一个链接请求，  
 * 去config/routes.rb里面， 根据链接来确定这个请求由哪个controller的action来处理， 这里找到了controller。  
 * cotroller调用model来处理请求，然后调用view来对结果进行渲染， 这里找到了model与view。  
@@ -47,7 +56,7 @@ MVC 架构图解：
 
 根据上面的执行流程，如果想知道manageiq某一个网页的代码，以及修改某一部分，就可以按照上面的过程来查找。  
 
-# manageiq登陆过程分析  
+## 5. manageiq登陆过程分析
 
 * 启动服务
 
@@ -58,7 +67,7 @@ rails server
 * 浏览器输入地址：http://localhost:3000
 
 此时浏览器已经向rails服务发送了请求，请求的是默认地址。 
- 
+
 * 去路由中需要默认地址负责处理的controller
 
 路由文件位置：  
@@ -87,7 +96,8 @@ https://github.com/ManageIQ/manageiq/blob/darga-4/app/views/dashboard/login.html
 https://github.com/ManageIQ/manageiq/blob/darga-4/app/views/dashboard/login.html.haml#L91 
 
 如下图所示：  
-![Firefox_Screenshot_2016-11-12T09-35-36.372Z.png](https://bitbucket.org/repo/oE6yEX/images/2111170952-Firefox_Screenshot_2016-11-12T09-35-36.372Z.png)  
+
+![](./img/011-manageiq.png)  
 
 当在浏览器中输入用户名、密码后点击 login 按钮后，如上图 1、2、3 过程所示，会从新回到 controller里面去验证用户名密码。
 
@@ -100,7 +110,7 @@ page.redirect_to(validation.url)
 
 * 登陆过程结束，此时进入到了网站页面。
 
-# providers 部分代码启动流程
+## 7. providers 部分代码启动流程
 
 服务启动后，选择 Compute -> Clouds -> Providers, 此时网页链接： http://localhost:3000/ems_cloud/show_list ，然后在齿轮图标那里选择 Add a New Cloud Provider，这里就是添加aliyun代码的部分了，此时网页链接：http://localhost:3000/ems_cloud/new   
 
@@ -131,8 +141,7 @@ https://github.com/ManageIQ/manageiq/blob/darga-4/app/views/shared/views/ems_com
 
 * view处理结束后把结果返回给网页，这次请求将结束。
 
-
-## rails是如何加载的 ##
+## 8. rails是如何加载的
 
 http://blog.csdn.net/cloudcraft/article/details/7654118  
 https://ruby-china.org/topics/23588  

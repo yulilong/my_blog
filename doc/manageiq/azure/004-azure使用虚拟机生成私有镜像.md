@@ -1,4 +1,6 @@
-## **overview**   
+[TOC]
+
+## 1. overview
 
 * **这么做的目的**     
 
@@ -13,11 +15,12 @@
 
 * **生成的私有镜像在存储账户中**
 
-## **开始生成私有镜像**     
+## 2. 开始生成私有镜像
 
 * **1.创建虚拟机后关机**    
-https://portal.azure.cn， 打开这个网站后选择虚拟机(Virtual machines) -> 新加一个虚拟机(add) -> 选择需要的镜像后下一步(create)，配置好CPU，内存大小，等资源信息后，生成虚拟机，稍等一会，虚拟机生成成功后，进入这个虚拟机中，选择停止这个虚拟机。  
-![create_virtual.png](https://bitbucket.org/repo/oE6yEX/images/2531739198-create_virtual.png)      
+  https://portal.azure.cn， 打开这个网站后选择虚拟机(Virtual machines) -> 新加一个虚拟机(add) -> 选择需要的镜像后下一步(create)，配置好CPU，内存大小，等资源信息后，生成虚拟机，稍等一会，虚拟机生成成功后，进入这个虚拟机中，选择停止这个虚拟机。  
+
+  ![](./img/002-azure.png)      
 
 * **2.通用化**     
 对一台ARM的windows虚拟机执行sysprep【linux waagent -deprovision】，成功配置后，从管理门户关机以便释放资源  
@@ -27,9 +30,9 @@ linux虚拟机初始化：
 ```
 $ sudo su -
 $ waagent -deprovision
-```   
-![init.png](https://bitbucket.org/repo/oE6yEX/images/3636706195-init.png)
-  
+```
+![](./img/003-azure.png)
+
 
 * **3.powershell login azure**     
 
@@ -43,7 +46,7 @@ TenantId              : exxxxxxd-xxx8-4xxx-xxx0-xxxxxxxxxx48
 SubscriptionId        : 4xxxxxxa-xxx8-4xxx-xxxc-xxxxxxxxxx48
 SubscriptionName      : Windows Azure 企业
 CurrentStorageAccount :
-```      
+```
 * **4.对该虚拟机执行Generalized标记**      
 
 ```
@@ -56,7 +59,7 @@ Status      :
 StartTime   :
 EndTime     :
 Error       :
-```      
+```
 执行完以上步骤，该虚拟机就无法启动了.     
 
 * **5.开始生成镜像**   
@@ -79,23 +82,23 @@ Status      : Succeeded
 StartTime   : 2017/2/8 星期三 16:36:33
 EndTime     : 2017/2/8 星期三 16:36:33
 Error       :
-```    
+```
 
 * **6.删除虚拟机，然后跑路**      
 
 -------------------------------------------------------------------------------------------
 
-## **通过私有镜像来创建虚拟机**    
+## 3. 通过私有镜像来创建虚拟机
 
 下面没有实际操作，有问题找微软客服。
 
 * **执行完以上操作后，源虚拟机使用的存储账号中出现一下container，里面包含操作系统vhd文件及json文件【可用于后期部署，该json文件中没有对nic的定义。后期需要进行定义】**     
 
-![viewfile.png](https://bitbucket.org/repo/oE6yEX/images/3618722865-viewfile.png)
+![](./img/004-azure.png)
 
 * **使用刚刚的json模板及镜像vhd文件进行创建，并且成功创建**
 
-![viewfile_1.png](https://bitbucket.org/repo/oE6yEX/images/2343757804-viewfile_1.png)      
+![](./img/005-azure.png)      
 
 * **后期对json文件中的以下信息进行修改，再通过该镜像成功创建第二台虚拟机**    
 
