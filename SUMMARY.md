@@ -11,6 +11,7 @@
     * [动图展示10大Git命令](doc/git/008-动图展示10大Git命令.md)
     * [在错误的分支开发了代码](doc/git/009-在错误的分支开发了代码.md)
     * [git daemon命令开启git服务器](doc/git/010-git-daemon命令开启git服务器.md)
+    * [使用Gitblit软件开启git服务器](doc/git/011-使用Gitblit软件开启git服务器.md)
 * Mac
     * [Mac下常用的软件](doc/mac/001-Mac下常用的软件.md)
     * [Mac系统操作习惯设置](doc/mac/002-Mac系统操作习惯设置.md)
