@@ -8,10 +8,6 @@
 
 ## 1. 之前的项目包大小
 
-
-
-集成环境：http://neris-hsit.csrc.gov.cn/portal/workplace
-
 ![](./img/021-build.png)
 
 
