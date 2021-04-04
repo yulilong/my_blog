@@ -32,11 +32,13 @@ github pages地址：https://yulilong.github.io/my_blog/
 
 1、代码克隆到本地电脑。
 
-2、在终端使用`npm install`命令安装gitbook插件。
+2、终端使用`npm install gitbook-cli -g` 命令安装 gitbook-cli工具，已经安装请忽略。
 
-3、终端使用`npm start`命令启动本地开发服务。
+3、在终端使用`npm install`命令安装gitbook插件。
 
-4、在浏览器中输入`http://localhost:4000/`地址查看项目。
+4、终端使用`npm start`命令启动本地开发服务。
+
+5、在浏览器中输入`http://localhost:4000/`地址查看项目。
 
 ### 2.2 服务部署
 
