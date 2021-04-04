@@ -39,3 +39,47 @@ node --experimental-modules my-app.mjs
 经过我的测试，这个`node --experimental-modules`是可以的，只不过测试文件后缀名要修改成`.mjs`
 
 参考资料: https://www.cnblogs.com/weiqinl/p/9152219.html
+
+## 2. node版本太高，导致gitbook报错
+
+2021-04-04
+
+由于使用新电脑，初次安装node后，再安装好gitbook-cli工具后，再命令行中执行gitbook命令报错：
+
+```bash
+gitbook build .
+/usr/local/lib/node_modules/gitbook-cli/node_modules/npm/node_modules/graceful-fs/polyfills.js:287
+      if (cb) cb.apply(this, arguments)
+                 ^
+
+TypeError: cb.apply is not a function
+    at /usr/local/lib/node_modules/gitbook-cli/node_modules/npm/node_modules/graceful-fs/polyfills.js:287:18
+    at FSReqCallback.oncomplete (fs.js:184:5)
+```
+
+经过搜索，看到一个相关解决文档：https://blog.csdn.net/weixin_42349568/article/details/108414441
+
+发现这个是由于node版本太高导致。
+
+我的node版本：
+
+```bash
+node -v
+v14.16.0
+```
+
+需要使用n工具来切换工具：
+
+```bash
+npm install -g n
+sudo n v10.21.0
+```
+
+经过把node版本切换到`v10.21.0`后，在执行gitbook命令发现没有问题了，问题得到解决。
+
+
+
+
+
+
+
