@@ -702,7 +702,7 @@ module.exports = {
 
 那么格式化会按照这个配置文件来做。
 
-### 6.3 vue使用iView时标签报错 Parsing error: x-invalid-end-tag
+### 6.4 vue使用iView时标签报错 Parsing error: x-invalid-end-tag
 
 ```html
 <Input class="cs-law-input"><span slot="append">法规</span></Input>
@@ -726,7 +726,22 @@ module.exports = {
 
 参考资料：[vscode 解决 iview 报错](https://blog.csdn.net/jiaqingge/article/details/80498536?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control)
 
+### 6.5 Could not create temporary directory: Permission denied
 
+当点击vscode的`Check for Updates`选项来升级软件时，在编辑器的右下角出现了提示：
+
+```bash
+Could not create temporary directory: Permission denied
+```
+
+发现由于没有权限，导致升级失败，经过查找使用如下命令删除两个vscode的临时文件即可：
+
+```bash
+sudo rm -Rf ~/Library/Caches/com.microsoft.VSCode.ShipIt
+sudo rm -Rf ~/Library/Caches/com.microsoft.VSCodeInsiders.ShipIt
+```
+
+在输入管理员密码后，在执行更新就发现没问题了。
 
 
 
