@@ -603,13 +603,13 @@ https://github.com/wanfu920/jumpToAliasFile
 
 配置存在：https://gist.github.com/   
 
-### 4.22 路径只能提示：Path Intellisense
+### 4.22 Path Intellisense:路径只能提示
 
 [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 
 加入此插件让我们在应用文件（例如图片）时，有智能的路径提示。
 
-### 4.23 html中css类补全：HTML CSS Support
+### 4.23 HTML CSS Support: html中css类补全
 
 [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
 
@@ -627,7 +627,7 @@ https://github.com/wanfu920/jumpToAliasFile
 
 安装好后，在vscode底部的状态栏中会出现翻译
 
-### 4.25 英文单词拼写错误检查：Code Spell Checker
+### 4.25 Code Spell Checker:英文单词拼写错误检查
 
 [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 
