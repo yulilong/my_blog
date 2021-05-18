@@ -6,7 +6,6 @@
     * [git教程-高级](doc/git/003-git教程-高级.md)
     * [git常用功能使用介绍](doc/git/004-git常用功能使用介绍.md)
     * [git常见问题及解决](doc/git/005-git常见问题及解决.md)
-    * [合并多个Commit](doc/git/005-合并多个Commit.md)
     * [git代码冲突处理软件P4Merge](doc/git/006-git代码冲突处理软件P4Merge.md)
     * [git内部原理揭秘](doc/git/007-git内部原理揭秘.md)
     * [动图展示10大Git命令](doc/git/008-动图展示10大Git命令.md)
