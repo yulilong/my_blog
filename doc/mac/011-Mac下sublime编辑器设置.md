@@ -48,19 +48,19 @@ import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe0
 
 在Mac中sublime插件的存放位置：
 
-```
-// 第一个
+```bash
+# 第一个
 /Users/[用户名]/Library/Application Support/Sublime Text 3/Installed Packages
 
-// 第二个
+# 第二个
 /Users/[用户名]/Library/Application Support/Sublime Text 3/Packages
-// 如：里面的插件 Terminal
+# 如：里面的插件 Terminal
 /Users/[用户名]/Library/Application Support/Sublime Text 3/Packages/Terminal
 ```
 
 
 
-## 5、一些包插件   
+## 5、一些包插件
 
 ```
 Typescript Syntax: 
@@ -108,7 +108,7 @@ option + shift + cmd + 2	// 分2个水平屏编辑
 
 文件左边内容类似于：
 
-```
+```js
 [
 	{ "keys": ["super+shift+n"], "command": "new_window" },
 	{ "keys": ["super+shift+w"], "command": "close_window" },
@@ -141,11 +141,11 @@ super (这个就是win键, mac上是commond键)
 
 找到需要修改的快捷键，然后在右边修改：
 
-```
+```js
 [
-	//{ "keys": ["super+shift+d"], "command": "duplicate_line" },
+	// { "keys": ["super+shift+d"], "command": "duplicate_line" },
 	{ "keys": ["super+d"], "command": "duplicate_line" },	// 复制一行
-	 { "keys": ["ctrl+alt+l"], "command": "reindent" },  	// 格式化代码
+	{ "keys": ["ctrl+alt+l"], "command": "reindent" },  	// 格式化代码
 ]
 ```
 
@@ -167,7 +167,7 @@ super (这个就是win键, mac上是commond键)
 
 2. 在sublime中一次打开：Tools > Build System > New Build System...或者中文工具>编译系统>新编译系统 ，粘贴下面代码：
 
-   ```
+   ```js
    {  
        "cmd": ["node", "$file"],  
        "selector": "source.js"  
@@ -176,11 +176,11 @@ super (这个就是win键, mac上是commond键)
 
 3. 保存文件名为：`Node.sublime-build`, 
 
-   ```
-   // 该文件在Mac下的路径
+   ```bash
+   # 该文件在Mac下的路径
    /Users/用户名/Library/Application Support/Sublime Text 3/Packages/User
 
-   // 如果需要修改，可再次打开这个文件修改。
+   # 如果需要修改，可再次打开这个文件修改。
    cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
    ```
 

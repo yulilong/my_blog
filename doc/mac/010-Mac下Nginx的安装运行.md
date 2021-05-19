@@ -116,7 +116,7 @@ http {
 
 ## **四. Nginx一些常见错误**
 
-* **1. 重启nginx 报错**   
+**1、重启nginx 报错**   
 
 ```bash
 ~ sudo nginx -s reload
@@ -128,8 +128,8 @@ nginx: [error] open() "/usr/local/var/run/nginx.pid" failed (2: No such file or 
 
 ***解决方法：重启一下Nginx就好了。***   
 
+**2、启动nginx报错**   
 
-* **2. 启动nginx报错**   
 ```bash
 ~ nginx
 

@@ -32,7 +32,6 @@ $ rvm -v
 2. 下载完成安装包后，安装程序（双击打开，将左侧拖拽至右侧应用程序，默认安装）。      
 3. 打开软件，在注册中选择‘License server’， 在 ‘License server address’ 中输入：`http://xidea.online`,然后点击Activate即可
 
---------------------
 ## 3. Mac install pgadmin3
 
 ```bash
@@ -43,8 +42,8 @@ Caskroom/versions/pgadmin3
 ```
 ![](./img/042-mac.png)
 
+修改数据库配置文件，允许连接
 
-* 修改数据库配置文件，允许连接
 ```bash
 ~ vi /usr/local/var/postgres/pg_hba.conf
 ```
@@ -55,7 +54,7 @@ host    all             all             127.0.0.1/32            ident
 # IPv6 local connections:
 host    all             all             ::1/128                 ident
 ```
-**把ident修改为 trust** 
+把ident修改为 trust
 
 并在下面添加一行：
 ```bash
