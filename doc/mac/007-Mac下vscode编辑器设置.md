@@ -7,7 +7,7 @@ vscode菜单： Code -> Preferences -> Settings(快捷键command + ，)，打开
 
 ### 1.1 设置格式化缩进为2个空格
 
-```
+```js
 // 一个tab为2个空格
 // 如果设置了editor.detectIndentation = true 则会根据根据文件内容进行重写。
 "editor.tabSize": 2,
@@ -17,13 +17,9 @@ vscode菜单： Code -> Preferences -> Settings(快捷键command + ，)，打开
 "editor.insertSpaces": true,
 ```
 
-
-
 ### 1.2 设置一类文件tab键为两个空格
 
-
-
-```
+```json
  // 2018-10-20 关闭检测缩进，设置后代码格式化时就会自动变成2个空格了
  "editor.detectIndentation": false,
 // 设置tab键的空格数量为2
@@ -63,7 +59,7 @@ https://blog.csdn.net/qq_34446663/article/details/88184680
 
 预览模式是现在各类编辑器的默认功能，如果你实在不喜欢，可以关掉的,给你配置`settings.json`里加一条：
 
-```
+```json
 "workbench.editor.enablePreview": false,
 ```
 
@@ -71,7 +67,7 @@ https://blog.csdn.net/qq_34446663/article/details/88184680
 
 在配置文件中加入下面代码：
 
-```
+```json
 "emmet.syntaxProfiles": { "javascript": "jsx" },
 ```
 
@@ -81,7 +77,7 @@ https://blog.csdn.net/qq_34446663/article/details/88184680
 
 配置文件中：
 
-```
+```json
 // Controls if the minimap is shown 关闭右侧缩略图（预览面板）
 "editor.minimap.enabled": false,
 ```
@@ -102,7 +98,7 @@ https://blog.csdn.net/qq_34446663/article/details/88184680
 
 Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件。 
 
-```
+```json
   // 2018-07-17 设置VUE在.vue的模板HTML中vue标签也可以使用emmet 
   // 启用后，按下 TAB 键，将展开 Emmet 缩写。
   "emmet.triggerExpansionOnTab": true,
@@ -117,7 +113,7 @@ Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件。
 
 Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件
 
-```
+```json
 // 控制资源管理器是否应在打开文件时自动进行显示并选择。
   "explorer.autoReveal": false,
 ```
@@ -126,7 +122,7 @@ Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件
 
 Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件：
 
-```
+```json
 "window.title": "${activeEditorLong}${separator}${rootName}"
 ```
 
@@ -138,7 +134,7 @@ activeEditorLong:文件的完整路径 (如 /Users/Development/myProject/myFolde
 
 Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件：
 
-```
+```json
 // 控制打开的编辑器是否显示为预览。预览编辑器可以重新使用，直到将其保留(例如，双击或编辑)。
 "workbench.editor.enablePreview": false,
 ```
@@ -147,7 +143,7 @@ Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件：
 
 Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件：
 
-```
+```json
 "workbench.list.openMode": "doubleClick",
 ```
 
@@ -161,7 +157,7 @@ View -> toggle breadcrumbs
 
 Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件：
 
-```
+```json
 // Controls how lines should wrap.
 //  - off: Lines will never wrap.
 //  - on: Lines will wrap at the viewport width.
@@ -183,10 +179,6 @@ Code -> Preferences -> Settings(快捷键command + ，)，打开配置文件：
 https://www.jianshu.com/p/1f1132df1def
 
 https://segmentfault.com/a/1190000018457312
-
-```
-File > Preferences (Code > Preferences on macOS)` 中选择 `User Snippets
-```
 
 windows系统: File > Preferences > User Snippets，
 
@@ -214,7 +206,7 @@ vscode版本：1.46.0
 
 在`settings.json`文件里面添加如下：
 
-```js
+```json
 // "editor.formatOnType": true,
 // 写这一个就可以
 "editor.formatOnSave": true

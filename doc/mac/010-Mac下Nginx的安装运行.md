@@ -3,7 +3,7 @@
 ## **一. 安装Nginx**   
 
 打开终端
-```
+```bash
 ~ brew install nginx
 ```
 
@@ -11,19 +11,19 @@
 
 安装好后，默认HTML文件存放路径：
 
-```
+```bash
 /usr/local/var/www
 ```
 
 这个路径重定向到了:
 
-```
+```bash
 /usr/local/Cellar/nginx/1.12.1/html
 ```
 
 nginx的安装路径：
 
-```
+```bash
 /usr/local/Cellar/nginx/1.12.1
 ```
 
@@ -34,7 +34,7 @@ nginx的安装路径：
 根据安装的提示，配置文件的路径：`/usr/local/etc/nginx/nginx.conf`     
 打开文件编辑里面的内容：      
 
-```
+```bash
 user  nginx;
 worker_processes  1;
 
@@ -84,7 +84,7 @@ http {
 
 ### **1. Nginx自己的命令**   
 
-```
+```bash
 # 打开终端运行命令
 ~ nginx             # 启动Nginx
 # 执行该命令之后，nginx 会在 /usr/local/var/run/ 路径下创建一个名为nginx.pid 的文件
@@ -105,7 +105,7 @@ http {
 
 ### **2. 使用brew services 命令**
 
-```
+```bash
 # brew services [-v|--verbose] [list | run | start | stop | restart | cleanup] [...]
 ~ brew services start nginx    # 启动Nginx服务
 ~ brew services stop nginx     # 停止Nginx服务
@@ -118,7 +118,7 @@ http {
 
 * **1. 重启nginx 报错**   
 
-```
+```bash
 ~ sudo nginx -s reload
 
 nginx: [error] open() "/usr/local/var/run/nginx.pid" failed (2: No such file or directory)
@@ -130,8 +130,7 @@ nginx: [error] open() "/usr/local/var/run/nginx.pid" failed (2: No such file or 
 
 
 * **2. 启动nginx报错**   
-  
-```
+```bash
 ~ nginx
 
 nginx: [emerg] bind() to 0.0.0.0:80 failed (48: Address already in use)

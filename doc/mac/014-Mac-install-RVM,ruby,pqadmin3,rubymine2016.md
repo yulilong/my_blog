@@ -3,17 +3,19 @@
 ## 1. install RVM
 
 1.未装homebrew先装homebrew，否则报错：     
-```
+```bash
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 如果有安装homebrew，但是在后面的ruby安装过程中出现如下错误,        
 有可能是你更新mac系统造成的，我是通过卸载重装homebrew来解决这个问题的.       
-```
+
+```bash
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 2.安装rvm    
-```
+
+```bash
 $ curl -L https://get.rvm.io | bash -s stable
 # 启用RVM
 $ source ~/.rvm/scripts/rvm   
@@ -33,8 +35,8 @@ $ rvm -v
 --------------------
 ## 3. Mac install pgadmin3
 
-```
-#终端，已经安装了brew ，cask
+```bash
+# 终端，已经安装了brew ，cask
 ~ brew search pgadmin3
 Caskroom/versions/pgadmin3
 ~ brew install Caskroom/versions/pgadmin3 
@@ -43,11 +45,11 @@ Caskroom/versions/pgadmin3
 
 
 * 修改数据库配置文件，允许连接
-```
+```bash
 ~ vi /usr/local/var/postgres/pg_hba.conf
 ```
 找到下面的内容：
-```
+```bash
 # IPv4 local connections:
 host    all             all             127.0.0.1/32            ident
 # IPv6 local connections:
@@ -56,19 +58,20 @@ host    all             all             ::1/128                 ident
 **把ident修改为 trust** 
 
 并在下面添加一行：
-```
+```bash
 host	all 		all 		192.168.0.0/24 		trust
 ```
 
 保存后重起数据库：
-```
+```bash
 # 没试过，
 ~ pg_ctl start -D /usr/local/var/postgres/data -l /usr/local/var/log/postgres/log.log
 # 停止的话把后面的start换成stop即可。 如果不想每次都指定数据目录，可以创建保存该地址的环境变量PGDATA
 # export PGDATA=/usr/local/var/postgres/data
 ```
-* 查看数据库的运行：
-```
+查看数据库的运行：
+
+```bash
 # 亲测有效
 $ lsof -i:5432
 ```

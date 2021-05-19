@@ -12,7 +12,7 @@
 
 ![](./img/038-mac.png)   
 
-```    
+```    bash
 # 使用brew安装的node版本太高了，告知angular2 里面`.sass`文件`node-sass`包不兼容
 # 卸载node最新版本
 brew uninstall node 
