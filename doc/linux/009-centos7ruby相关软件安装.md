@@ -6,7 +6,7 @@
 
 https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-on-centos-6-with-rvm  
 * rvm install:
-```
+```bash
 $ sudo yum update
 $ sudo yum install curl
 $ curl -L get.rvm.io | bash -s stable
@@ -20,7 +20,7 @@ $ rvm -v
 如果出现版本，那么说明安装成功。
 ```
 * ruby install:
-```
+```bash
 $ rvm list known
 选一个版本
 $ rvm install 2.3.0
@@ -40,26 +40,26 @@ ps:
 ```
 
 * Install RubyGems:
-```
+```bash
 $ rvm rubygems current
 $ gem -v
-如果出现版本，那么说明安装成功。
+# 如果出现版本，那么说明安装成功。
 ```
 * Install Rails
-```
+```bash
 $ gem install rails
 $ rails -v
-如果出现版本，那么说明安装成功。
+# 如果出现版本，那么说明安装成功。
 ```
 ## 2. 安装 pqadmin3
 
 这里首先需要系统中已经安装了postgres，如果没有安装请先安装。  
 * 查看linux中postgres 版本
-```
+```bash
 $ psql --version
 ```
 PostgreSQL是以加州大学伯克利分校计算机系开发的 POSTGRES，现在已经更名为PostgreSQL，版本 4.2为基础的对象关系型数据库管理系统（ORDBMS）。PostgreSQL支持大部分 SQL标准并且提供了许多其他现代特性：复杂查询、外键、触发器、视图、事务完整性、MVCC。同样，PostgreSQL 可以用许多方法扩展，比如， 通过增加新的数据类型、函数、操作符、聚集函数、索引。免费使用、修改、和分发 PostgreSQL，不管是私用、商用、还是学术研究使用。
-```
+```bash
 $ su postgres
 bash-4.2$ psql
 postgres=# \du
@@ -73,7 +73,7 @@ $ sudo passwd postgres
 * centos7.2安装 pgadmin3       
 https://yum.postgresql.org/       
 http://www.voidcn.com/blog/houzhizhen/article/p-4388378.html        
-```
+```bash
 $ wget http://ftp.riken.jp/Linux/fedora/epel/6/x86_64/epel-release-6-8.noarch.rpm
 $ sudo rpm -ivh epel-release-6-8.noarch.rpm
 $ sudo yum install pgadmin3
@@ -81,7 +81,7 @@ $ sudo yum install pgadmin3
 ![](./img/008-centos.png)
 
 * 修改数据库配置文件，允许连接
-```
+```bash
 $ sudo vi /var/opt/rh/rh-postgresql94/lib/pgsql/data/pg_hba.conf
 ```
 找到下面的内容：

@@ -20,7 +20,7 @@ gimp 2.6 用图像窗口菜单    窗口→可停靠对话框→工具选项
 * install     
 http://bckong.blog.51cto.com/5092126/1575904/     
 http://www.centoscn.com/image-text/install/2015/0624/5734.html       
-```
+```bash
 sudo yum install http://puias.math.ias.edu/data/puias/6/x86_64/os/Addons/stardict-3.0.1-22.puias6.x86_64.rpm    
 ```
 * 词典的离线字典下載    

@@ -20,7 +20,7 @@ http://www.metsky.com/archives/818.html
 
 * **安装VNCServer**    
 
-```
+```bash
 # 试试服务器装了 VNC 没
 $ rpm -q tigervnc tigervnc-server
 # 如出现not installed说明没有安装 
@@ -34,7 +34,7 @@ $ yum install tigervnc tigervnc-server
 
 * **配置NVC**     
 
-```
+```bash
 # 将/lib/systemd/system/vncserver@.service文件复制一份
 $ cp /lib/systemd/system/vncserver@.service /etc/systemd/system/vncserver@:1.service
 # 编辑刚刚我们复制得新文件，将文件中得<USER>修改成 VNC Client连接的账号
@@ -44,7 +44,7 @@ $ sudo vi /etc/systemd/system/vncserver@:1.service
 
 * **设置VNCServer开机自启动**      
 
-```
+```bash
 # 切换到root账号，开启VNCServer并设置开机自启
 $ systemctl start vncserver@:1.service
 $ systemctl enable vncserver@:1.service
@@ -53,7 +53,7 @@ $ systemctl enable vncserver@:1.service
 * **设置防火墙**     
 
 最后，需要配置一下防火墙，允许VNC客户端连接VNC server。VNC server监听的端口从5900开始，display :1的监听5901，display :2监听5902，以此类推。CentOs的防火墙缺省是不允许连接这些端口的，所以需要使用下面的步骤打开防火墙（需要root权限)：    
-```
+```bash
 # centos 默认使用的防火墙
 $ firewall-cmd --permanent --add-service="vnc-server" --zone="public"
 $ firewall-cmd --reload
@@ -62,7 +62,7 @@ $ firewall-cmd --reload
 
 * **开启VNCServer**       
 
-```
+```bash
 $ vncserver
 ```
 
@@ -78,7 +78,7 @@ $ vncserver
 
 ## 3. VNC调试参考
 
-```  
+```  bash
 # 查看所有端口，5900 5901 5902 是vnc所用的
 $ netstat -ntlp  
 1.查看VNC进程情况（如果有VNC启动窗口，列表中可看到）：

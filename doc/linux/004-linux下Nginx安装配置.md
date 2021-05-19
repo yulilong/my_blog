@@ -6,13 +6,13 @@
 
 通过命令 apt-get install 安装软件，通过安装 nginx 示例如下：
 
-```
+```bash
 $ apt-get install nginx
 ```
 
 如果安装时遇到下面错误：
 
-```
+```bash
 E: Unable to locate package nginx
 ```
 
@@ -20,7 +20,7 @@ E: Unable to locate package nginx
 
 软件安装完成后，通过通过 *dpkg -L* 列出软件包所在的目录，及该软件包中的所有文件：
 
-```
+```bash
 $ dpkg -L nginx
 /.
 /usr
@@ -68,13 +68,13 @@ nginx -t
 
 终端打开配置文件：
 
-```
+```bash
 vi /etc/nginx/nginx.conf
 ```
 
 
 
-```
+```bash
 user www-data;
 worker_processes auto;
 pid /run/nginx.pid;
@@ -124,7 +124,7 @@ https://help.aliyun.com/document_detail/25471.html?spm=5176.11065259.1996646101.
 
 导致网站显示不正确。经过查找资料，需要配置nginx的mime.types参数：
 
-```
+```bash
 http {
 	include /etc/nginx/mime.types;
 	default_type application/octet-stream;

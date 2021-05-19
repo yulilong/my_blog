@@ -30,7 +30,7 @@ http://www.linuxidc.com/Linux/2012-07/64941.htm
 ### 1.2 ssh: connect to host 192.168.123.123 port 22: Connection refused
 
 1.linux中打开终端    
-```
+```bash
 $ netstat -ntlp  # 查看所有端口，如果里面没有22端口则尝试重启ssh
 # 重启ssh
 $ sudo systemctl restart sshd
