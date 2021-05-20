@@ -46,7 +46,7 @@ version必须可以被npm依赖的一个[node-semver](https://github.com/npm/nod
 ## 5. bugs
 
 填写一个bug提交地址或者一个邮箱，被你的模块坑到的人可以通过这里吐槽，例如：     
-```
+```json
 bugs: {  
   "url": "http://github.com/ijse/project/issues",
   "email": "my@ijser.cn"
@@ -63,7 +63,7 @@ url和email可以任意填或不填，如果只填一个，可以直接写成一
 ## 7. 和用户相关的属性: author, contributors
 
 "author"是一个码农， "contributors"是一个码农数组。 "person"是一个有一些描述属性的对象，如下 like this:    
-```
+```json
 author: {  
   "name": "ijse",
   "email": "my@ijse.cn",
@@ -87,23 +87,27 @@ main属性指定了程序的主入口文件。意思是，如果你的模块被�
 ## 10. bin
 
 很多模块有一个或多个需要配置到PATH路径下的可执行模块，npm让这个工作变得十分简单（实际上npm本身也是通过bin属性安装为一个可执行命令的）,如果要用npm的这个功能，在package.json里边配置一个bin属性。bin属性是一个已命令名称为key，本地文件名称为value的map如下：     
-```
+```json
 { "bin" : { "myapp" : "./cli.js" } }
 ```
 模块安装的时候，若是全局安装，则npm会为bin中配置的文件在bin目录下创建一个软连接（对于windows系统，默认会在C:\Users\username\AppData\Roaming\npm目录下），若是局部安装，则会在项目内的./node_modules/.bin/目录下创建一个软链接。
 因此，按上面的例子，当你安装myapp的时候，npm就会为cli.js在/usr/local/bin/myapp路径创建一个软链接。
 如果你的模块只有一个可执行文件，并且它的命令名称和模块名称一样，你可以只写一个字符串来代替上面那种配置，例如：   
 
-```
-{ "name": "my-program"
-, "version": "1.2.5"
-, "bin": "./path/to/program" }
+```json
+{
+  "name": "my-program", 
+ 	"version": "1.2.5",
+  "bin": "./path/to/program"
+}
 ```
 作用和如下写法相同:     
-```
-{ "name": "my-program"
-, "version": "1.2.5"
-, "bin" : { "my-program" : "./path/to/program" } }
+```json
+{
+  "name": "my-program",
+  "version": "1.2.5",
+  "bin" : { "my-program" : "./path/to/program" } 
+}
 ```
 
 ## 11. man
@@ -111,32 +115,35 @@ main属性指定了程序的主入口文件。意思是，如果你的模块被�
 制定一个或通过数组制定一些文件来让linux下的man命令查找文档地址。        
 如果只有一个文件被指定的话，安装后直接使用man+模块名称，而不管man指定的文件的实际名称。例如:      
 
-```
-{ "name" : "foo"
-, "version" : "1.2.3"
-, "description" : "A packaged foo fooer for fooing foos"
-, "main" : "foo.js"
-, "man" : "./man/doc.1"
+```json
+{
+  "name" : "foo",
+  "version" : "1.2.3",
+  "description" : "A packaged foo fooer for fooing foos",
+  "main" : "foo.js",
+  "man" : "./man/doc.1",
 }
 ```
 通过man foo命令会得到 ./man/doc.1 文件的内容。       
 如果man文件名称不是以模块名称开头的，安装的时候会给加上模块名称前缀。因此，下面这段配置：      
-```
-{ "name" : "foo"
-, "version" : "1.2.3"
-, "description" : "A packaged foo fooer for fooing foos"
-, "main" : "foo.js"
-, "man" : [ "./man/foo.1", "./man/bar.1" ]
+```json
+{
+  "name" : "foo",
+  "version" : "1.2.3",
+  "description" : "A packaged foo fooer for fooing foos",
+  "main" : "foo.js",
+  "man" : [ "./man/foo.1", "./man/bar.1" ],
 }
 ```
 会创建一些文件来作为man foo和man foo-bar命令的结果。       
 man文件必须以数字结尾，或者如果被压缩了，以.gz结尾。数字表示文件将被安装到man的哪个部分。         
-```
-{ "name" : "foo"
-, "version" : "1.2.3"
-, "description" : "A packaged foo fooer for fooing foos"
-, "main" : "foo.js"
-, "man" : [ "./man/foo.1", "./man/foo.2" ]
+```json
+{
+  "name" : "foo",
+  "version" : "1.2.3",
+  "description" : "A packaged foo fooer for fooing foos",
+  "main" : "foo.js",
+  "man" : [ "./man/foo.1", "./man/foo.2" ],
 }
 ```
 会创建 man foo 和 man 2 foo 两条命令。    
@@ -154,18 +161,18 @@ directories.example: 放一些示例脚本，或许某一天会有用 - -！
 ## 13. repository
 
 指定一个代码存放地址，对想要为你的项目贡献代码的人有帮助。像这样：
-```
-"repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/npm/npm.git"
-  }
-"repository" :
-  { "type" : "svn"
-  , "url" : "https://v8.googlecode.com/svn/trunk/"
-  }
+```json
+"repository" : { 
+  "type" : "git",
+  "url" : "https://github.com/npm/npm.git",
+}
+"repository" : {
+  "type" : "svn",
+  "url" : "https://v8.googlecode.com/svn/trunk/",
+}
 ```
 若你的模块放在GitHub, GitHub gist, Bitbucket, or GitLab的仓库里，npm install的时候可以使用缩写标记来完成：     
-```
+```json
 "repository": "npm/npm"
 "repository": "gist:11081aaa281"
 "repository": "bitbucket:example/repo"
@@ -184,9 +191,11 @@ scripts属性是一个对象，里边指定了项目的生命周期个各个环�
 `http.createServer(...).listen(process.env.npm_package_config_port)`        
 可以通过npm config set foo:port 80来修改config。详见 https://docs.npmjs.com/misc/config       
 
-```
-{ "name" : "foo"
-, "config" : { "port" : "8080" } }
+```json
+{
+  "name" : "foo",
+  "config" : { "port" : "8080" },
+}
 ```
 
 ## 16. dependencies
@@ -196,8 +205,8 @@ dependencies也可以被指定为一个git地址或者一个压缩包地址。
 不要把测试工具或transpilers写到dependencies中。 下面是一些写法，详见 https://docs.npmjs.com/misc/semver          
 
 * version 精确匹配版本
-* >version 必须大于某个版本
-* >=version 大于等于
+* version 必须大于某个版本
+* =version 大于等于
 * <version 小于
 * <=versionversion 小于
 * ~version "约等于"，具体规则详见semver文档
@@ -214,20 +223,21 @@ dependencies也可以被指定为一个git地址或者一个压缩包地址。
 * path/path/path 见下面本地模块的说明
 
 下面的写法都是可以的:     
-```
-{ "dependencies" :
-  { "foo" : "1.0.0 - 2.9999.9999"
-  , "bar" : ">=1.0.2 <2.1.2"
-  , "baz" : ">1.0.2 <=2.3.4"
-  , "boo" : "2.0.1"
-  , "qux" : "<1.0.0 || >=2.3.1 <2.4.5 || >=2.5.2 <3.0.0"
-  , "asd" : "http://asdf.com/asdf.tar.gz"
-  , "til" : "~1.2"
-  , "elf" : "~1.2.3"
-  , "two" : "2.x"
-  , "thr" : "3.3.x"
-  , "lat" : "latest"
-  , "dyl" : "file:../dyl"
+```json
+{
+  "dependencies" : { 
+    "foo" : "1.0.0 - 2.9999.9999",
+    "bar" : ">=1.0.2 <2.1.2",
+    "baz" : ">1.0.2 <=2.3.4",
+    "boo" : "2.0.1",
+    "qux" : "<1.0.0 || >=2.3.1 <2.4.5 || >=2.5.2 <3.0.0",
+    "asd" : "http://asdf.com/asdf.tar.gz",
+    "til" : "~1.2",
+    "elf" : "~1.2.3",
+    "two" : "2.x",
+    "thr" : "3.3.x",
+    "lat" : "latest",
+    "dyl" : "file:../dyl",
   }
 }
 ```
@@ -239,7 +249,7 @@ dependencies也可以被指定为一个git地址或者一个压缩包地址。
 ## 18. Git URLs as Dependencies
 
 Git url可以像下面一样:     
-```
+```json
 git://github.com/user/project.git#commit-ish
 git+ssh://user@hostname:project.git#commit-ish
 git+ssh://user@hostname/project.git#commit-ish
@@ -251,7 +261,7 @@ commit-ish 可以是任意标签，哈希值，或者可以检出的分支，默
 ## 19. GitHub URLs
 
 支持github的 username/modulename 的写法，#后边可以加后缀写明分支hash或标签：      
-```
+```json
 {
   "name": "foo",
   "version": "0.0.0",
@@ -265,14 +275,14 @@ commit-ish 可以是任意标签，哈希值，或者可以检出的分支，默
 ## 20. Local Paths
 
 npm2.0.0版本以上可以提供一个本地路径来安装一个本地的模块，通过npm install xxx --save 来安装，格式如下：     
-```
+```bash
 ../foo/bar
 ~/foo/bar
 ./foo/bar
 /foo/bar
 ```
 package.json 生成的相对路径如下:     
-```
+```json
 {
   "name": "baz",
   "dependencies": {
@@ -289,8 +299,9 @@ package.json 生成的相对路径如下:
 这些模块会在npm link或者npm install的时候被安装，也可以像其他npm配置一样被管理，详见npm的config文档。       
 对于一些跨平台的构建任务，例如把CoffeeScript编译成JavaScript，就可以通过在package.json的script属性里边配置prepublish脚本来完成这个任务，然后需要依赖的coffee-script模块就写在devDependencies属性种。例如:       
 
-```
-{ "name": "ethopia-waza",
+```json
+{
+  "name": "ethopia-waza",
   "description": "a delightfully fruity coffee varietal",
   "version": "1.2.3",
   "devDependencies": {
@@ -307,7 +318,7 @@ prepublish脚本会在发布之前运行，因此用户在使用之前就不用�
 ## 22. peerDependencies
 
 有时候做一些插件开发，比如grunt等工具的插件，它们往往是在grunt的某个版本的基础上开发的，而在他们的代码中并不会出现require("grunt")这样的依赖，dependencies配置里边也不会写上grunt的依赖，为了说明此模块只能作为插件跑在宿主的某个版本范围下，可以配置peerDependencies：      
-```
+```json
 {
   "name": "tea-latte",
   "version": "1.3.5",
@@ -330,7 +341,7 @@ prepublish脚本会在发布之前运行，因此用户在使用之前就不用�
 如果一个依赖模块可以被使用， 同时你也希望在该模块找不到或无法获取时npm继续运行，你可以把这个模块依赖放到optionalDependencies配置中。这个配置的写法和dependencies的写法一样，不同的是这里边写的模块安装失败不会导致npm install失败。       
 当然，这种模块就需要你自己在代码中处理模块确实的情况了，例如：         
 
-```
+```js
 try {
   var foo = require('foo')
   var fooVersion = require('foo/package.json').version

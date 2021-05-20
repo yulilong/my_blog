@@ -8,7 +8,7 @@
 
 在我学习ES6的import语法的时候，在自己电脑的node环境下模拟运行import，发现node环境不支持import语法，报如下错误：
 
-```
+```bash
 (function (exports, require, module, __filename, __dirname) { import pp from './a'
                                                               ^^^^^^
 SyntaxError: Unexpected token import
@@ -29,10 +29,10 @@ SyntaxError: Unexpected token import
 可以使用`--experimental-modules`实验模块标志来启用加载ECMAScript Modules的特性。
 而且作为ES模块加载的文件名，必须以`.mjs`后缀结尾
 
-```
+```bash
 node --experimental-modules my-app.mjs
 
-// 此种方法，在输出的时候会出现如下提示，表示是个实验模块，到时候可能会修改。
+# 此种方法，在输出的时候会出现如下提示，表示是个实验模块，到时候可能会修改。
 (node:16208) ExperimentalWarning: The ESM module loader is experimental.
 ```
 
