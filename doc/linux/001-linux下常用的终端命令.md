@@ -157,14 +157,52 @@ http://blog.csdn.net/liangzhao_jay/article/details/48052913
    多个目录压缩打包 tar czvf my.tar.gz dir1 dir2
    解包至当前目录： tar xzvf my.tar.gz
 ---------------------------------------------
-.zip
-　　解压：unzip FileName.zip
-　　压缩：zip FileName.zip DirName
----------------------------------------------
 .rar
 　　解压：rar a FileName.rar
 　　压缩：r ar e FileName.rar
 ```
+
+### 9.1 zip压缩、解压
+
+将一个文件夹所有文件打包成一个压缩文件：
+
+```bash
+# 显示压缩过程
+zip -r -o dist.zip dist/
+# 不显示压缩过程
+zip -r -o -q dist.zip dist/
+# 创建加密zip包，此命令需要在终端输入2次密码
+zip -r -e -o password.zip dist/
+
+# 让压缩包在window系统上也能用
+zip -r -o -q -l dist.zip dist/
+```
+
+上面的命令会将dist文件夹所有文件都打包到dist.zip中，其中指令参数：
+
+```
+-r：递归处理，将指定目录下的所有文件和子目录一并处理
+-o：以压缩文件内拥有最新更改时间的文件为准，将压缩文件的更改时间设成和该文件相同
+-q：不显示压缩过程
+-e：使用加密压缩，需要输入2次密码
+-l：压缩文件时，把LF字符置换成LF+CR字符。 LF(Linux 中的换行), CR+LF(Carriage-Return+Line-Feed：windows 上的回车加换行)
+-ll：压缩文件时，把LF+CR字符置换成LF字符。
+```
+
+解压使用如下命令：
+
+```bash
+# 默认会显示解压内容
+unzip dist.zip
+# 不显示解压过程
+unzip -q dist.zip
+# -d 参数将文件解压到特定文件夹中
+unzip -q dist.zip -d portal
+```
+
+
+
+
 
 ## 10. 查看当前系统版本
 
