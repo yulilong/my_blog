@@ -8,19 +8,9 @@
 
 关于Gitblit：
 
-Gitblit是一个开放源代码的纯Java堆栈，用于管理，查看和服务Git存储库。
-它主要是为希望托管集中存储库的小型工作组设计的工具。
+Gitblit是一个开放源代码的纯Java堆栈，用于管理，查看和服务Git存储库。它主要是为希望托管集中存储库的小型工作组设计的工具。
 
-本教程基于Mac电脑来搭建的，Windows系统的电脑的类似，具体可以看这个Windows系统版本的教程：
-
-[Window系统下搭建GIT本地服务器](https://www.huaweicloud.com/articles/9e213c053d55e491d9059ed6c7b0413d.html)
-
-注：
-
-其实在网上还找到了使用`git daemon`命令启动服务的，经过尝试， 在自己的电脑中 拉取、上传代码没有问题，但是局域网中其他电脑只能拉取代码，不能上传代码。
-代码仓库中已经加入了：`git config receive.denyCurrentBranch ignore` 配置。
-
-启动服务的命令：`git daemon --reuseaddr --base-path=. --export-all --verbose --enable=receive-pack`
+注：其实在网上还找到了使用`git daemon`命令启动服务的，经过尝试， 在自己的电脑中 拉取、上传代码没有问题，但是局域网中其他电脑只能拉取代码，不能上传代码。代码仓库中已经加入了：`git config receive.denyCurrentBranch ignore` 配置。启动服务的命令：`git daemon --reuseaddr --base-path=. --export-all --verbose --enable=receive-pack`
 
 所以在网上又找到了这个软件，经过尝试这个软件是有效的。
 
@@ -46,7 +36,9 @@ Java(TM) SE Runtime Environment (build 1.8.0_231-b11)
 Java HotSpot(TM) 64-Bit Server VM (build 25.231-b11, mixed mode)
 ```
 
-## 2. 下载安装Gitblit
+## 2. Mac系统操作
+
+### 2.1 下载Gitblit、配置参数
 
 官网下载地址：http://gitblit.github.io/gitblit/ 
 
@@ -70,7 +62,7 @@ git.repositoriesFolder的值是一个绝对路径，这个路径指向一个文�
 
 文件修改完成后，保存即可。
 
-## 3. 启动服务
+### 2.2 启动服务
 
 在`gitblit-1.9.1`文件夹中，有一个`gitblit.sh`脚本文件，终端执行此文件，就可以启动服务：
 
@@ -102,7 +94,7 @@ git.repositoriesFolder的值是一个绝对路径，这个路径指向一个文�
 
 2、终端使用`ifconfig`命令，在输出的信息中找到`en0`里面的地址。
 
-### 3.1 终止服务：停止脚本即可
+### 2.3 终止服务：停止脚本即可
 
 如果要停止服务，终端停止执行脚本即可。停止后，刷新访问地址，可以看见网页无法打开了。
 
@@ -117,6 +109,48 @@ git.repositoriesFolder的值是一个绝对路径，这个路径指向一个文�
 2021-03-28 22:29:10 [INFO ] SSH Daemon stopping...
 2021-03-28 22:29:10 [INFO ] Stopped o.e.j.w.WebAppContext@fd0e5b6{/,file:/Users/user/gitblit-1.9.1/data/temp/webapp/,UNAVAILABLE}{file:/Users/suer/gitblit-1.9.1/gitblit.jar}
 ```
+
+## 3. window系统操作
+
+[Window系统下搭建GIT本地服务器](https://www.huaweicloud.com/articles/9e213c053d55e491d9059ed6c7b0413d.html)
+
+### 3.1 下载Gitblit、配置参数
+
+官网下载地址：http://gitblit.github.io/gitblit/
+
+打开网站后，选择window版本的下载，下载后，解压。然后放到一个文件夹中，比如放在E盘根目录下。
+
+在解压的文件夹中`gitblit-1.9.1`的`data`文件夹中，找到`defaults.properties`文件，使用编辑器打开，并编辑如下内容：
+
+```bash
+# 大约30行，git服务器的文件夹地址，这个文件夹用来存放git仓库，绝对地址
+git.repositoriesFolder = E:/gitblit-1.9.1/gitRepository
+
+# 大约2069行，配置浏览器访问的端口
+server.httpPort = 7070
+```
+
+文件修改完成后，保存即可。
+
+### 3.2 启动服务
+
+在`gitblit-1.9.1`文件根目录中找到`gitblit.cmd`文件，在终端软件中运行这个文件：
+
+```bash
+./gitblit.cmd
+
+2021-03-28 20:11:38 [INFO ]
+```
+
+执行脚本后，终端出现上面的输出信息表示启动成功。
+
+本地电脑通过：`http://127.0.0.1:7070/` 访问，局域网中通过这台电脑的内网地址加端口访问。
+
+windows系统查看ip，在终端中输入`ipconfig`来查看。
+
+### 3.3 终止服务：停止脚本即可
+
+在终端使用`control + C`快捷键来终止脚本的运行。
 
 
 
