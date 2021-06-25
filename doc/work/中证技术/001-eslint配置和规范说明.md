@@ -73,7 +73,11 @@ module.exports = {
 }
 ```
 
-具体配置规则：http://eslint.cn/docs/user-guide/configuring
+具体配置文件配置方法：http://eslint.cn/docs/user-guide/configuring
+
+eslint rules 的详细规则：http://eslint.cn/docs/rules/
+
+vue的eslint rules规则：https://eslint.vuejs.org/rules/
 
 
 
