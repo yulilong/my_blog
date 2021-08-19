@@ -42,7 +42,7 @@ git remote set-url origin https://oauth2:ghp_GjguOh******ThzKZm@github.com/user/
 
 ## 2. 使用ssh方式
 
-在 Linux/macOS 系统中，一般都会自带ssh，下面以Mac系统为例。
+在 Linux/macOS 系统中，一般都会自带ssh。windows下的[git终端](https://git-scm.com/)里有ssh。
 
 1、终端打开`~/.ssh`文件夹，使用`ll`命令查看文件，查看是否存在`id_rsa`和`id_rsa.pub`文件。如果没有这两个文件，终端使用`ssh-keygen -o`名称生成一个秘钥和公钥:
 
@@ -61,7 +61,7 @@ d0:82:24:8e:d7:f1:bb:9b:33:53:96:93:49:da:9b:e3 schacon@mylaptop.local
 
 如果上面命令报错，尝试使用`ssh-keygen -t rsa -C 'user@gmail.com'`
 
-2、终端使用`cat id_rsa.pub`命令查看公钥内容，复制显示的内容：
+2、打开生成的秘钥所在文件夹，终端使用`cat id_rsa.pub`命令查看公钥内容，复制显示的内容：
 
 ```bash
 ~ cat id_rsa.pub
