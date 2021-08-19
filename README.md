@@ -24,7 +24,7 @@ github pages地址：https://yulilong.github.io/my_blog/
 
 [gitbook使用教程](https://segmentfault.com/a/1190000017960359#articleHeader6)
 
-本地电脑编辑器推荐使用(打不开尝试科学上网)：https://typora.io/
+本地电脑编辑器推荐使用：https://typora.io/
 
 ### 2.1 本地开发
 
