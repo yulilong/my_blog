@@ -735,6 +735,20 @@ sudo rm -Rf ~/Library/Caches/com.microsoft.VSCodeInsiders.ShipIt
 
 在输入管理员密码后，在执行更新就发现没问题了。
 
+### 6.6 安装离线插件失败，有兼容性问题
+
+当安装离线插件的时候，会报如下错误：
+
+![](./img/044-mac-vscode.png)
+
+```bash
+Unable to install extension 'eamodio.gitlens'as it is not compatible with VS Code '1.52.1'.
+```
+
+经过尝试，安装插件的历史版本也会报同样的错误。
+
+解决方法：卸载vscode，安装最新版本的vscode软件后，在安装离线插件就能成功安装了。
+
 
 
 ##  其他插件资料
