@@ -32,9 +32,7 @@ https://code.visualstudio.com/
 
     在线搜索插件：`https://marketplace.visualstudio.com/vscode`，或者在vscode插件中，找到插件，然后点击插件名字会直接跳转到插件的网址。
 
-    在出现的插件页面中，点击`Download Extension` 按钮，下载离线包，
-
-    ![](./img/001-vsocde.png)
+    在出现的插件页面中，点击`Download Extension` 按钮，下载离线包。
 
     
 
@@ -47,8 +45,6 @@ https://code.visualstudio.com/
     3、在出现的弹窗中，选择`Install from VSIX...`选项。
 
     4、在出现的弹窗中，选择插件离线包所在的目录，选择需要安装的插件，然后点击`install`按钮进行安装。
-    
-    ![](./img/002-vscode.png)
     
     
 

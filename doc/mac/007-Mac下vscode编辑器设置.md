@@ -316,6 +316,32 @@ https://github.com/Microsoft/vscode-eslint
 
 ## 4. vscode的一些插件
 
+### 安装离线插件
+
+由于有的电脑环境不能连接互联网，可以通过安装离线包方式安装插件。
+
+- 获取离线插件包
+
+  在线搜索插件：`https://marketplace.visualstudio.com/vscode`，或者在vscode插件中，找到插件，然后点击插件名字会直接跳转到插件的网址。
+
+  在出现的插件页面中，点击`Download Extension` 按钮，下载离线包：
+
+  <img src="./img/045-mac-vscode.png" style="zoom: 25%;" />
+
+- 安装离线插件
+
+  1、打开vscode编辑器，点击插件部分。
+
+  2、在搜索框右边的上面有三个点，点击。
+
+  3、在出现的弹窗中，选择`Install from VSIX...`选项。
+
+  4、在出现的弹窗中，选择插件离线包所在的目录，选择需要安装的插件，然后点击`install`按钮进行安装。
+
+  <img src="./img/046-mac-vscode.png" style="zoom: 33%;" />
+
+
+
 ### 4.1 ESLint: JavaScript代码格式化检查插件
 
 [ESLint 插件](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)，
