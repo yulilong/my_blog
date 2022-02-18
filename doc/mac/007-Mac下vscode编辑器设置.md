@@ -775,7 +775,19 @@ Unable to install extension 'eamodio.gitlens'as it is not compatible with VS Cod
 
 解决方法：卸载vscode，安装最新版本的vscode软件后，在安装离线插件就能成功安装了。
 
+### 6.7 Prettier格式化vue中html代码问题
 
+ 在使用Prettier格式化vue中的html代码的时候，标签结束符号会单独到一行中，经过查找资料，发现需要在Prettier配置文件中添加：
+
+```js
+module.exports = {
+  // "singleQuote": true, // 字符串使用 单引号
+  "printWidth": 100, // 每行最多 100个字符
+  "htmlWhitespaceSensitivity": "ignore" // 解决html中元素标签结束标志(>)单独一行问题
+}
+```
+
+https://zhuanlan.zhihu.com/p/64627216
 
 ##  其他插件资料
 
