@@ -4,7 +4,7 @@
 
 # windows下前端开发环境安装
 
-## 1. 终端
+## 1. Cmder 终端使用
 
 [使用Cmder替换cmd，让开发更高效](https://www.jianshu.com/p/5b7c985240a7)
 
@@ -13,6 +13,14 @@ https://cmder.net/
 打开网址后，选择`Download Full`版本点击，点击后会跳转到[github](https://github.com/cmderdev/cmder/releases/tag/v1.3.17)网站中，选择[cmder.zip](https://github.com/cmderdev/cmder/releases/download/v1.3.17/cmder.zip)下载。
 
 下载好后，解压，把文件放到一个地方，然后把`Cmder.exe`发送一个桌面快捷方式，然后点击这个图表即可打开使用。
+
+### 1.1 cmder进入指定目录
+
+首先直接进入到指定磁盘,然后在进入到指定目录
+
+![](./img/001-window.png)
+
+
 
 ## 2. nodejs环境安装
 
