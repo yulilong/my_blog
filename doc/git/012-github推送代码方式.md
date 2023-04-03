@@ -102,6 +102,44 @@ git remote set-url origin git@github.com:user/my_blog.git
 
 
 
+## 3. 使用ssh遇到的问题
+
+### 3.1 WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!
+
+当使用ssh方式推送代码到github时候，终端报如下错误：
+
+```bash
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the RSA key sent by the remote host is
+SHA256:uNiVztksCsDhcc0u9e8BujQXVUpKZIDTMczCvj3tD2s.
+Please contact your system administrator.
+Add correct host key in /Users/dragon/.ssh/known_hosts to get rid of this message.
+Offending RSA key in /Users/dragon/.ssh/known_hosts:6
+RSA host key for github.com has changed and you have requested strict checking.
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+
+原因分析：
+
+It is also possible that a host key has just been changed.
+
+我之前对ssh服务器重装了系统，导致所有与原系统建立过ssh连接的系统都无法再建立连接，因为在于原系统建立首次连接时，双方相互记录了对方的公钥（ssh基于非对称密钥技术），在ssh服务主机重装系统后，公钥改变了，任以旧版本公钥的主机自然是无法与新系统连接的。
+
+解决方案：
+
+打开`~/.ssh/known_hosts`, 找到`github`部分，删除这行，保存。然后后再次建立新的连接，即可获得新的公钥。
+
+如果不确定文件里面内容是哪个，可以在备份这个文件后，直接删除，然后从新建立链接即可。
+
 
 
 
