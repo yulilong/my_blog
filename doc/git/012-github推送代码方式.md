@@ -140,7 +140,30 @@ It is also possible that a host key has just been changed.
 
 如果不确定文件里面内容是哪个，可以在备份这个文件后，直接删除，然后从新建立链接即可。
 
+### 3.2 git push报错：ssh: connect to host github.com port 22: Operation timed out
 
+当往github网站推送代码的时候，报如下错误：
+
+```bash
+ssh: connect to host github.com port 22: Operation timed out
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+
+解决办法：
+
+打开`~/.ssh/config`文件，在文件下面追加如下代码：
+
+```bash
+# 2024-01-18解决github推送报错问题
+Host github.com
+ Hostname ssh.github.com
+ Port 443
+```
+
+保存文件后，推送项目就不会报错了
 
 
 
