@@ -508,9 +508,86 @@ gitbook插件可以解决一些网站不太方便的地方，如侧边栏导航�
 
 
 
+## 6. 开发遇到的问题
+
+### 6.1 prismjs插件报错
+
+当启动本地服务的时候，会报错：
+
+```bash
+Failed to load prism syntax: ttt
+Error: Cannot find module 'prismjs/components/prism-ttt.js'
+Require stack:
+- /Users/dragon/tmp/wiki/node_modules/gitbook-plugin-prism/index.js
+```
+
+![](./img/015-gitbook.png)
+
+产生问题原因：markdown文件中，代码块标记的语言prismjs插件找不到这种语言，无法进行高亮。
+
+解决方法：markdown文件中代码块标记语言要写正确，复制过来的代码块要注意编辑器自动标记的语言是否存在、正确。
 
 
 
+### 6.2 gitbook 命令失败：TypeError: cb.apply is not a function
+
+当执行`gitbook build .`进行项目打包的时候报错：
+
+```bash
+/usr/local/lib/node_modules/gitbook-cli/node_modules/npm/node_modules/graceful-fs/polyfills.js:287
+      if (cb) cb.apply(this, arguments)
+                 ^
+TypeError: cb.apply is not a function
+```
+
+![](./img/016-gitbook.png)
+
+问题原因：node版本太高了，gitbook工具不支持这么高的node版本。
+
+gitbook版本：
+
+```bash
+~ gitbook -V
+CLI version: 2.3.2
+GitBook version: 3.2.3
+```
+
+解决方案：
+
+1、降低node版本即可。可以的版本：8.16.0、8.12.0、6.11.1。网络上有的说10.X版本也没问题。可以使用node版本管理工具切换。
+
+2、修改报错的文件，node版本不需要降级。
+
+使用编辑器打开报错的文件，找到报错的地方`cb.apply(this, arguments)`，大约在287行
+
+```js
+// /usr/local/lib/node_modules/gitbook-cli/node_modules/npm/node_modules/graceful-fs/polyfills.js
+function statFix (orig) {
+  if (!orig) return orig
+  // Older versions of Node erroneously returned signed integers for
+  // uid + gid.
+  return function (target, cb) {
+    return orig.call(fs, target, function (er, stats) {
+      if (!stats) return cb.apply(this, arguments)
+      if (stats.uid < 0) stats.uid += 0x100000000
+      if (stats.gid < 0) stats.gid += 0x100000000
+      if (cb) cb.apply(this, arguments) // 大约是287
+    })
+  }
+}
+```
+
+在这个文件的第62-64行调用了这个函数，把这三行代码注释掉就可以：
+
+```js
+fs.stat = statFix(fs.stat)
+fs.fstat = statFix(fs.fstat)
+fs.lstat = statFix(fs.lstat)
+```
+
+![](./img/016-gitbook.png)
+
+然后再次运行`gitbook build .` 就没问题了。
 
 
 
