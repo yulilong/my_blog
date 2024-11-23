@@ -150,13 +150,25 @@ Preferences -> Profiles -> General -> Window -> Settings for New Windows -> Scre
 
 ### 3.7 设置开机启动不显示界面
 
-1、打开系统设置(System Perferences) -> 用户与群组(User & groups) -> 登陆项(Login Items)， 点击加号，然后去应用程序里面找到Iterm2添加到启动项里面。
+1、打开系统设置(System Perferences) -> 通用 -> 登陆项(Login Items)，登录时打开-> 点击加号，然后去应用程序里面找到Iterm2添加到启动项里面。
 2、启动iterm2程序，打开一个窗口，然后手动点击关闭按钮，确保电脑右上角苹果图标右边是iTerm2,然后
 按【Command】+【Shift】+【S】，保存名为No Window
 3、打开一个iterm2终端界面，然后按`cmd + ,`打开iterm的设置界面，选择`Arrangements`，点击刚才保存的`No Window`， 然后点击`Set Default`。
 4、在iterm的设置界面选择`General`, 在`Startup`中选择`Open Default Window Arrangement`。
 
 参考资料：https://blog.csdn.net/weixin_34023863/article/details/85958226
+
+## 4. iterm2软件版本更新
+
+由于我本人mac系统升级(10.14升级到13.7.1)，导致iterm2软件出现了一些问题，比如：终端半透明效果没有了，查看终端内容上下滚动的时候部分内容消失了。因此需要升级软件版本来解决这些问题
+
+1、官网下载软件：https://iterm2.com/ 打开页面后，直接点击`Download`按钮下载软件。
+
+2、软件下载下载后，是一个压缩包，解压缩。
+
+3、完全退出iterm2软件，然后双击解压的软件，软件会提示是否移动到应用文件夹。移动成功后会自动打开软件，此时就是最新的软件了。
+
+更新后软件设置都是之前一样的，没有变动。出现的问题都会修复。
 
 ## 参考资料
 
