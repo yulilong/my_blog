@@ -561,7 +561,7 @@ GitBook version: 3.2.3
 使用编辑器打开报错的文件，找到报错的地方`cb.apply(this, arguments)`，大约在287行
 
 ```js
-// /usr/local/lib/node_modules/gitbook-cli/node_modules/npm/node_modules/graceful-fs/polyfills.js
+// 文件：/usr/local/lib/node_modules/gitbook-cli/node_modules/npm/node_modules/graceful-fs/polyfills.js
 function statFix (orig) {
   if (!orig) return orig
   // Older versions of Node erroneously returned signed integers for
@@ -585,11 +585,11 @@ fs.fstat = statFix(fs.fstat)
 fs.lstat = statFix(fs.lstat)
 ```
 
-![](./img/016-gitbook.png)
+![](./img/017-gitbook.png)
 
 然后再次运行`gitbook build .` 就没问题了。
 
-
+参考资料：https://mizeri.github.io/2021/04/24/gitbook-cbapply-not-a-function/
 
 
 
