@@ -659,6 +659,14 @@ https://github.com/wanfu920/jumpToAliasFile
 
 https://segmentfault.com/a/1190000020894066
 
+### 4.27 AI编程工具：TONGYI Lingma
+
+通义灵码最全使用指南：https://developer.aliyun.com/article/1605527
+
+在vscode插件里面搜索：TONGYI Lingma。点击下载后，需要登陆账号，登陆阿里云的账号就可以
+
+
+
 ## 5. VUE框架相关的插件
 
 ### 5.1 vetur：语法高亮插件
