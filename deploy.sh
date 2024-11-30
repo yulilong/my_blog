@@ -48,9 +48,9 @@ echo "执行命令：git push -f https://gitee.com/dragon-li/my-wiki front-end:g
 echo ''
 git push -f https://gitee.com/dragon-li/my-wiki front-end:gh-pages
 
-echo ""
-echo "打开码云 Gitee Pages 服务，手动更新服务"
-open https://gitee.com/dragon-li/my-wiki/pages
+# echo ""
+# echo "打开码云 Gitee Pages 服务，手动更新服务"
+# open https://gitee.com/dragon-li/my-wiki/pages
 
 
 # 发布到github网站: https://<USERNAME>.github.io/<REPO>
