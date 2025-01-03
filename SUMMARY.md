@@ -9,7 +9,6 @@
     * [git代码冲突处理软件P4Merge](doc/git/006-git代码冲突处理软件P4Merge.md)
     * [git内部原理揭秘](doc/git/007-git内部原理揭秘.md)
     * [动图展示10大Git命令](doc/git/008-动图展示10大Git命令.md)
-    * [在错误的分支开发了代码](doc/git/009-在错误的分支开发了代码.md)
     * [git daemon命令开启git服务器](doc/git/010-git-daemon命令开启git服务器.md)
     * [使用Gitblit软件开启git服务器](doc/git/011-使用Gitblit软件开启git服务器.md)
     * [github推送代码方式](doc/git/012-github推送代码方式.md)
