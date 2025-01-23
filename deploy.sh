@@ -2,9 +2,15 @@
 
 echo '开始执行命令：'
 
-echo '1、生成静态文件'
+echo '代码推送到github仓库：git push'
+git push
+
+echo '代码推送到码云仓库：git push mayun'
+git push mayun
+
+# 生成静态文件
+echo '1、项目开始打包生成html文件'
 echo '执行命令：gitbook build .'
-echo ''
 gitbook build .
 
 echo '2、进入生成的文件夹'
@@ -17,22 +23,17 @@ echo '创建 CNAME 文件，并写入 yu66.vip值'
 echo 'yu66.vip' > CNAME
 echo ''
 
-echo '4、初始化一个仓库'
-echo "执行命令：git init"
+echo '4、初始化一个仓库：git init'
 git init
 
-echo '5、添加所有文件到git'
-echo "执行命令：git add -A"
-echo ''
+echo '5、添加所有文件到git：git add -A'
 git add -A
 
-echo '6、提交文件'
-echo "执行命令：commit -m 'deploy'"
-echo ''
+echo "6、提交commit：commit -m 'deploy'"
 git commit -m 'deploy'
 
 # git init命令生成的默认分支名字：旧版本是master，新版本(2.39.3)是main
-echo '7、新建一个 front-end 分支，解决git init命令生成的默认分支名字不确定问题'
+echo "7、创建一个新分支front-end，解决新分支名字不确定问题"
 echo "执行命令：git checkout -b front-end"
 git checkout -b front-end
 
@@ -48,7 +49,7 @@ git checkout -b front-end
 
 
 # 发布到github网站: https://<USERNAME>.github.io/<REPO>
-echo '资源文件提交到github上，用于GitHub Pages 服务'
+echo '资源文件提交到github仓库的gh-pages分支，用于GitHub Pages 服务'
 echo "执行命令：git push -f git@github.com:yulilong/my_blog.git front-end:gh-pages"
 git push -f git@github.com:yulilong/my_blog.git front-end:gh-pages
 
