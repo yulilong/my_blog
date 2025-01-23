@@ -1,0 +1,2819 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ruby面试题 · 我的blog</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="yu">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="014-RubyMine常用快捷键.html" />
+    
+    
+    <link rel="prev" href="012-ruby_or_rails_错误解决.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../../asset/img/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../asset/img/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../asset/img/favicon.ico'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../../asset/img/favicon.ico">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../asset/img/favicon.ico">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../SUMMARY.html">
+            
+                <a href="../../SUMMARY.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    项目目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.</b>
+                    
+                    git
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../git/001-git介绍、安装、配置.html">
+            
+                <a href="../git/001-git介绍、安装、配置.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    git介绍、安装、配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../git/002-git教程.html">
+            
+                <a href="../git/002-git教程.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    git教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../git/003-git教程-高级.html">
+            
+                <a href="../git/003-git教程-高级.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    git教程-高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../git/004-git常用功能使用介绍.html">
+            
+                <a href="../git/004-git常用功能使用介绍.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    git常用功能使用介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../git/005-git常见问题及解决.html">
+            
+                <a href="../git/005-git常见问题及解决.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    git常见问题及解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../git/006-git代码冲突处理软件P4Merge.html">
+            
+                <a href="../git/006-git代码冲突处理软件P4Merge.html">
+            
+                    
+                        <b>1.3.6.</b>
+                    
+                    git代码冲突处理软件P4Merge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../git/007-git内部原理揭秘.html">
+            
+                <a href="../git/007-git内部原理揭秘.html">
+            
+                    
+                        <b>1.3.7.</b>
+                    
+                    git内部原理揭秘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../git/008-动图展示10大Git命令.html">
+            
+                <a href="../git/008-动图展示10大Git命令.html">
+            
+                    
+                        <b>1.3.8.</b>
+                    
+                    动图展示10大Git命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../git/009-git忽略文件方法.html">
+            
+                <a href="../git/009-git忽略文件方法.html">
+            
+                    
+                        <b>1.3.9.</b>
+                    
+                    git忽略文件方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../git/010-git-daemon命令开启git服务器.html">
+            
+                <a href="../git/010-git-daemon命令开启git服务器.html">
+            
+                    
+                        <b>1.3.10.</b>
+                    
+                    git daemon命令开启git服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../git/011-使用Gitblit软件开启git服务器.html">
+            
+                <a href="../git/011-使用Gitblit软件开启git服务器.html">
+            
+                    
+                        <b>1.3.11.</b>
+                    
+                    使用Gitblit软件开启git服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../git/012-github推送代码方式.html">
+            
+                <a href="../git/012-github推送代码方式.html">
+            
+                    
+                        <b>1.3.12.</b>
+                    
+                    github推送代码方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                        <b>1.4.</b>
+                    
+                    Mac
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../mac/001-Mac下常用的软件.html">
+            
+                <a href="../mac/001-Mac下常用的软件.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    Mac下常用的软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../mac/002-Mac系统操作习惯设置.html">
+            
+                <a href="../mac/002-Mac系统操作习惯设置.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    Mac系统操作习惯设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../mac/003-Mac快捷键和一些常用操作.html">
+            
+                <a href="../mac/003-Mac快捷键和一些常用操作.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    Mac快捷键和一些常用操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../mac/004-Mac下终端常用设置、命令、快捷键.html">
+            
+                <a href="../mac/004-Mac下终端常用设置、命令、快捷键.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    Mac下终端常用设置、命令、快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../mac/005-Mac下Iterm2使用及快捷键.html">
+            
+                <a href="../mac/005-Mac下Iterm2使用及快捷键.html">
+            
+                    
+                        <b>1.4.5.</b>
+                    
+                    Mac下Iterm2使用及快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../mac/006-Mac中常见错误以及处理方法.html">
+            
+                <a href="../mac/006-Mac中常见错误以及处理方法.html">
+            
+                    
+                        <b>1.4.6.</b>
+                    
+                    Mac中常见错误以及处理方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../mac/007-Mac下vscode编辑器设置.html">
+            
+                <a href="../mac/007-Mac下vscode编辑器设置.html">
+            
+                    
+                        <b>1.4.7.</b>
+                    
+                    Mac下vscode编辑器设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../mac/008-Mac下vscode快捷键.html">
+            
+                <a href="../mac/008-Mac下vscode快捷键.html">
+            
+                    
+                        <b>1.4.8.</b>
+                    
+                    Mac下vscode快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../mac/009-Mac-Office2016使用设置.html">
+            
+                <a href="../mac/009-Mac-Office2016使用设置.html">
+            
+                    
+                        <b>1.4.9.</b>
+                    
+                    Mac-Office2016使用设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../mac/010-Mac下Nginx的安装运行.html">
+            
+                <a href="../mac/010-Mac下Nginx的安装运行.html">
+            
+                    
+                        <b>1.4.10.</b>
+                    
+                    Mac下Nginx的安装运行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../mac/011-Mac下sublime编辑器设置.html">
+            
+                <a href="../mac/011-Mac下sublime编辑器设置.html">
+            
+                    
+                        <b>1.4.11.</b>
+                    
+                    Mac下sublime编辑器设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../mac/012-Mac下移动硬盘分区用做TimeMachine的备份.html">
+            
+                <a href="../mac/012-Mac下移动硬盘分区用做TimeMachine的备份.html">
+            
+                    
+                        <b>1.4.12.</b>
+                    
+                    Mac下移动硬盘分区用做TimeMachine的备份
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../mac/013-Mac下angular开发环境安装.html">
+            
+                <a href="../mac/013-Mac下angular开发环境安装.html">
+            
+                    
+                        <b>1.4.13.</b>
+                    
+                    Mac下angular开发环境安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="../mac/014-Mac-install-RVM,ruby,pqadmin3,rubymine2016.html">
+            
+                <a href="../mac/014-Mac-install-RVM,ruby,pqadmin3,rubymine2016.html">
+            
+                    
+                        <b>1.4.14.</b>
+                    
+                    Mac-install-RVM,ruby,pqadmin3,rubymine2016
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                        <b>1.5.</b>
+                    
+                    linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../linux/001-linux下常用的终端命令.html">
+            
+                <a href="../linux/001-linux下常用的终端命令.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    linux下常用的终端命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../linux/002-linux下常用软件.html">
+            
+                <a href="../linux/002-linux下常用软件.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    linux下常用软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../linux/003-Linux查找文件内容.html">
+            
+                <a href="../linux/003-Linux查找文件内容.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    Linux查找文件内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../linux/003-find命令详解.html">
+            
+                <a href="../linux/003-find命令详解.html">
+            
+                    
+                        <b>1.5.4.</b>
+                    
+                    find命令详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../linux/004-linux下Nginx安装配置.html">
+            
+                <a href="../linux/004-linux下Nginx安装配置.html">
+            
+                    
+                        <b>1.5.5.</b>
+                    
+                    linux下Nginx安装配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../linux/005-centos7下习惯设置.html">
+            
+                <a href="../linux/005-centos7下习惯设置.html">
+            
+                    
+                        <b>1.5.6.</b>
+                    
+                    centos7下习惯设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../linux/006-centos7搭建samba方法.html">
+            
+                <a href="../linux/006-centos7搭建samba方法.html">
+            
+                    
+                        <b>1.5.7.</b>
+                    
+                    centos7搭建samba方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../linux/007-centos7错误处理.html">
+            
+                <a href="../linux/007-centos7错误处理.html">
+            
+                    
+                        <b>1.5.8.</b>
+                    
+                    centos7错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../linux/008-centos7_VNC_install.html">
+            
+                <a href="../linux/008-centos7_VNC_install.html">
+            
+                    
+                        <b>1.5.9.</b>
+                    
+                    centos7_VNC_install
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../linux/009-centos7ruby相关软件安装.html">
+            
+                <a href="../linux/009-centos7ruby相关软件安装.html">
+            
+                    
+                        <b>1.5.10.</b>
+                    
+                    centos7ruby相关软件安装l
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../linux/010-Terminal终端快捷键.html">
+            
+                <a href="../linux/010-Terminal终端快捷键.html">
+            
+                    
+                        <b>1.5.11.</b>
+                    
+                    Terminal终端快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../linux/011-VIM编辑器常用命令与用法总结.html">
+            
+                <a href="../linux/011-VIM编辑器常用命令与用法总结.html">
+            
+                    
+                        <b>1.5.12.</b>
+                    
+                    VIM编辑器常用命令与用法总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="../linux/012-virtualbox虚拟机、centos7安装增强工具.html">
+            
+                <a href="../linux/012-virtualbox虚拟机、centos7安装增强工具.html">
+            
+                    
+                        <b>1.5.13.</b>
+                    
+                    virtualbox虚拟机、centos7安装增强工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="../linux/013-linux下ssh配置.html">
+            
+                <a href="../linux/013-linux下ssh配置.html">
+            
+                    
+                        <b>1.5.14.</b>
+                    
+                    linux下ssh配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                        <b>1.6.</b>
+                    
+                    npm yarn node
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../npm-yarn-node/001-NPM使用介绍.html">
+            
+                <a href="../npm-yarn-node/001-NPM使用介绍.html">
+            
+                    
+                        <b>1.6.1.</b>
+                    
+                    NPM使用介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../npm-yarn-node/002-NPM常见问题.html">
+            
+                <a href="../npm-yarn-node/002-NPM常见问题.html">
+            
+                    
+                        <b>1.6.2.</b>
+                    
+                    NPM常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../npm-yarn-node/003-package.json文件详解.html">
+            
+                <a href="../npm-yarn-node/003-package.json文件详解.html">
+            
+                    
+                        <b>1.6.3.</b>
+                    
+                    package.json文件详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../npm-yarn-node/004-NPM常用的包.html">
+            
+                <a href="../npm-yarn-node/004-NPM常用的包.html">
+            
+                    
+                        <b>1.6.4.</b>
+                    
+                    NPM常用的包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../npm-yarn-node/005-node环境常见问题.html">
+            
+                <a href="../npm-yarn-node/005-node环境常见问题.html">
+            
+                    
+                        <b>1.6.5.</b>
+                    
+                    node环境常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../npm-yarn-node/006-yarn说明.html">
+            
+                <a href="../npm-yarn-node/006-yarn说明.html">
+            
+                    
+                        <b>1.6.6.</b>
+                    
+                    yarn说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                        <b>1.7.</b>
+                    
+                    window下开发说明
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../windows/001-windows下前端开发环境安装.html">
+            
+                <a href="../windows/001-windows下前端开发环境安装.html">
+            
+                    
+                        <b>1.7.1.</b>
+                    
+                    windows下前端开发环境安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../windows/002-windows常见问题.html">
+            
+                <a href="../windows/002-windows常见问题.html">
+            
+                    
+                        <b>1.7.2.</b>
+                    
+                    windows常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                        <b>1.8.</b>
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../other/001-Chrome浏览器开发者工具使用.html">
+            
+                <a href="../other/001-Chrome浏览器开发者工具使用.html">
+            
+                    
+                        <b>1.8.1.</b>
+                    
+                    Chrome浏览器开发者工具使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../other/002-Chrome浏览器有用的插件.html">
+            
+                <a href="../other/002-Chrome浏览器有用的插件.html">
+            
+                    
+                        <b>1.8.2.</b>
+                    
+                    Chrome浏览器有用的插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../other/003-gitbook入门教程.html">
+            
+                <a href="../other/003-gitbook入门教程.html">
+            
+                    
+                        <b>1.8.3.</b>
+                    
+                    gitbook入门教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../other/004-常用正则表达式.html">
+            
+                <a href="../other/004-常用正则表达式.html">
+            
+                    
+                        <b>1.8.4.</b>
+                    
+                    常用正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../other/005-HTTP方法详解.html">
+            
+                <a href="../other/005-HTTP方法详解.html">
+            
+                    
+                        <b>1.8.5.</b>
+                    
+                    HTTP方法详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../other/006-Markdown常用语法.html">
+            
+                <a href="../other/006-Markdown常用语法.html">
+            
+                    
+                        <b>1.8.6.</b>
+                    
+                    Markdown常用语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../other/007-VS2010编译器设置.html">
+            
+                <a href="../other/007-VS2010编译器设置.html">
+            
+                    
+                        <b>1.8.7.</b>
+                    
+                    VS2010编译器设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../other/008-VS2010开发控制台程序遇到的问题.html">
+            
+                <a href="../other/008-VS2010开发控制台程序遇到的问题.html">
+            
+                    
+                        <b>1.8.8.</b>
+                    
+                    VS2010开发控制台程序遇到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../other/009-阻止定向广告.html">
+            
+                <a href="../other/009-阻止定向广告.html">
+            
+                    
+                        <b>1.8.9.</b>
+                    
+                    阻止定向广告
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../other/010-英文字母缩写的含义.html">
+            
+                <a href="../other/010-英文字母缩写的含义.html">
+            
+                    
+                        <b>1.8.10.</b>
+                    
+                    英文字母缩写的含义
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                        <b>1.9.</b>
+                    
+                    工作相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../work/中证/001-eslint配置和规范说明.html">
+            
+                <a href="../work/中证/001-eslint配置和规范说明.html">
+            
+                    
+                        <b>1.9.1.</b>
+                    
+                    eslint配置和规范说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../work/中证/002-前端打包大小优化.html">
+            
+                <a href="../work/中证/002-前端打包大小优化.html">
+            
+                    
+                        <b>1.9.2.</b>
+                    
+                    前端打包大小优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                        <b>2.1.</b>
+                    
+                    angular
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../angular/001-angularJS资料.html">
+            
+                <a href="../angular/001-angularJS资料.html">
+            
+                    
+                        <b>2.1.1.</b>
+                    
+                    angularJS资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../angular/002-angularJS开发遇见的问题.html">
+            
+                <a href="../angular/002-angularJS开发遇见的问题.html">
+            
+                    
+                        <b>2.1.2.</b>
+                    
+                    angularJS开发遇见的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../angular/003-arcgis开发记录.html">
+            
+                <a href="../angular/003-arcgis开发记录.html">
+            
+                    
+                        <b>2.1.3.</b>
+                    
+                    arcgis开发记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../angular/004-angular2开发知识点.html">
+            
+                <a href="../angular/004-angular2开发知识点.html">
+            
+                    
+                        <b>2.1.4.</b>
+                    
+                    angular2开发知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../angular/005-angular2网页前端执行流程.html">
+            
+                <a href="../angular/005-angular2网页前端执行流程.html">
+            
+                    
+                        <b>2.1.5.</b>
+                    
+                    angular2网页前端执行流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../angular/006-angular2中引入插件.html">
+            
+                <a href="../angular/006-angular2中引入插件.html">
+            
+                    
+                        <b>2.1.6.</b>
+                    
+                    angular2中引入插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../angular/007-angular-CLI中一些问题.html">
+            
+                <a href="../angular/007-angular-CLI中一些问题.html">
+            
+                    
+                        <b>2.1.7.</b>
+                    
+                    angular-CLI中一些问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../angular/008-angular下arcgis开发遇见的问题.html">
+            
+                <a href="../angular/008-angular下arcgis开发遇见的问题.html">
+            
+                    
+                        <b>2.1.8.</b>
+                    
+                    angular下arcgis开发遇见的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../angular/009-angular编程规范.html">
+            
+                <a href="../angular/009-angular编程规范.html">
+            
+                    
+                        <b>2.1.9.</b>
+                    
+                    angular编程规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../angular/010-TS_JS中一些知识点.html">
+            
+                <a href="../angular/010-TS_JS中一些知识点.html">
+            
+                    
+                        <b>2.1.10.</b>
+                    
+                    TS_JS中一些知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                        <b>2.2.</b>
+                    
+                    ruby、rails
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="001-ruby中语法知识.html">
+            
+                <a href="001-ruby中语法知识.html">
+            
+                    
+                        <b>2.2.1.</b>
+                    
+                    ruby中语法知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="002-include和extend以及模块中ClassMethods.html">
+            
+                <a href="002-include和extend以及模块中ClassMethods.html">
+            
+                    
+                        <b>2.2.2.</b>
+                    
+                    include和extend以及模块中ClassMethods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="003-require,load,include,extend的显著区别.html">
+            
+                <a href="003-require,load,include,extend的显著区别.html">
+            
+                    
+                        <b>2.2.3.</b>
+                    
+                    require,load,include,extend的显著区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="004-Object、Class、Module之间关系.html">
+            
+                <a href="004-Object、Class、Module之间关系.html">
+            
+                    
+                        <b>2.2.4.</b>
+                    
+                    Object、Class、Module之间关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="005-rails中常见问题.html">
+            
+                <a href="005-rails中常见问题.html">
+            
+                    
+                        <b>2.2.5.</b>
+                    
+                    rails中常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="006-ruby比较常用的gems包.html">
+            
+                <a href="006-ruby比较常用的gems包.html">
+            
+                    
+                        <b>2.2.6.</b>
+                    
+                    ruby比较常用的gems包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="007-ruby_gems命令.html">
+            
+                <a href="007-ruby_gems命令.html">
+            
+                    
+                        <b>2.2.7.</b>
+                    
+                    ruby_gems命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="008-国内RubyGems镜像.html">
+            
+                <a href="008-国内RubyGems镜像.html">
+            
+                    
+                        <b>2.2.8.</b>
+                    
+                    国内RubyGems镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9" data-path="009-Ruby中任务构建工具rake的入门学习教程.html">
+            
+                <a href="009-Ruby中任务构建工具rake的入门学习教程.html">
+            
+                    
+                        <b>2.2.9.</b>
+                    
+                    Ruby中任务构建工具rake的入门学习教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.10" data-path="010-Ruby中的Rake任务详述.html">
+            
+                <a href="010-Ruby中的Rake任务详述.html">
+            
+                    
+                        <b>2.2.10.</b>
+                    
+                    Ruby中的Rake任务详述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.11" data-path="011-ruby_on_Rails中的Rake教程.html">
+            
+                <a href="011-ruby_on_Rails中的Rake教程.html">
+            
+                    
+                        <b>2.2.11.</b>
+                    
+                    ruby_on_Rails中的Rake教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.12" data-path="012-ruby_or_rails_错误解决.html">
+            
+                <a href="012-ruby_or_rails_错误解决.html">
+            
+                    
+                        <b>2.2.12.</b>
+                    
+                    rubyor_rails错误解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2.13" data-path="013-ruby面试题.html">
+            
+                <a href="013-ruby面试题.html">
+            
+                    
+                        <b>2.2.13.</b>
+                    
+                    ruby面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.14" data-path="014-RubyMine常用快捷键.html">
+            
+                <a href="014-RubyMine常用快捷键.html">
+            
+                    
+                        <b>2.2.14.</b>
+                    
+                    RubyMine常用快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.15" data-path="015-rubymine习惯设置.html">
+            
+                <a href="015-rubymine习惯设置.html">
+            
+                    
+                        <b>2.2.15.</b>
+                    
+                    rubymine习惯设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.16" data-path="016-haml语法符号的含义.html">
+            
+                <a href="016-haml语法符号的含义.html">
+            
+                    
+                        <b>2.2.16.</b>
+                    
+                    haml语法符号的含义
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <span>
+            
+                    
+                        <b>2.3.</b>
+                    
+                    manageIQ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../manageiq/001-manageIQ开发环境安装centos.html">
+            
+                <a href="../manageiq/001-manageIQ开发环境安装centos.html">
+            
+                    
+                        <b>2.3.1.</b>
+                    
+                    manageIQ开发环境安装centos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../manageiq/002-manageIQ开发环境安装Mac.html">
+            
+                <a href="../manageiq/002-manageIQ开发环境安装Mac.html">
+            
+                    
+                        <b>2.3.2.</b>
+                    
+                    manageIQ开发环境安装Mac
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../manageiq/003-manageIQ代码结构、框架、执行流程分析.html">
+            
+                <a href="../manageiq/003-manageIQ代码结构、框架、执行流程分析.html">
+            
+                    
+                        <b>2.3.3.</b>
+                    
+                    manageIQ代码结构、框架、执行流程分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../manageiq/004-manageIQ汉化.html">
+            
+                <a href="../manageiq/004-manageIQ汉化.html">
+            
+                    
+                        <b>2.3.4.</b>
+                    
+                    manageIQ汉化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="../manageiq/005-manageIQ网页部分功能代码实现.html">
+            
+                <a href="../manageiq/005-manageIQ网页部分功能代码实现.html">
+            
+                    
+                        <b>2.3.5.</b>
+                    
+                    manageIQ网页部分功能代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="../manageiq/006-新建提供者.html">
+            
+                <a href="../manageiq/006-新建提供者.html">
+            
+                    
+                        <b>2.3.6.</b>
+                    
+                    新建提供者
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="../manageiq/007-manageiq各种云平台provide资料.html">
+            
+                <a href="../manageiq/007-manageiq各种云平台provide资料.html">
+            
+                    
+                        <b>2.3.7.</b>
+                    
+                    manageiq各种云平台provide资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="../manageiq/008-manageIQ服务部署.html">
+            
+                <a href="../manageiq/008-manageIQ服务部署.html">
+            
+                    
+                        <b>2.3.8.</b>
+                    
+                    manageIQ服务部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="../manageiq/009-manageIQ网页图标、图片、网页导航栏风格修改.html">
+            
+                <a href="../manageiq/009-manageIQ网页图标、图片、网页导航栏风格修改.html">
+            
+                    
+                        <b>2.3.9.</b>
+                    
+                    manageIQ网页图标、图片、网页导航栏风格修改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.10" data-path="../manageiq/010-开发manageiq遇见的问题、错误解决.html">
+            
+                <a href="../manageiq/010-开发manageiq遇见的问题、错误解决.html">
+            
+                    
+                        <b>2.3.10.</b>
+                    
+                    开发manageiq遇见的问题、错误解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.11" data-path="../manageiq/011-添加新的Providers代码开发.html">
+            
+                <a href="../manageiq/011-添加新的Providers代码开发.html">
+            
+                    
+                        <b>2.3.11.</b>
+                    
+                    添加新的Providers代码开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.12" data-path="../manageiq/012-centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall.html">
+            
+                <a href="../manageiq/012-centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall.html">
+            
+                    
+                        <b>2.3.12.</b>
+                    
+                    centos7,rvm,ruby,gems,rails,pqadmin3,rubymine,isntall
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.13" >
+            
+                <span>
+            
+                    
+                        <b>2.3.13.</b>
+                    
+                    azure
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.13.1" data-path="../manageiq/azure/001-azure获取TenantID、SubscriptionID、ClientID、ClientKey.html">
+            
+                <a href="../manageiq/azure/001-azure获取TenantID、SubscriptionID、ClientID、ClientKey.html">
+            
+                    
+                        <b>2.3.13.1.</b>
+                    
+                    azure获取TenantID、SubscriptionID、ClientID、ClientKey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.13.2" data-path="../manageiq/azure/002-azure开发连接的国内网站.html">
+            
+                <a href="../manageiq/azure/002-azure开发连接的国内网站.html">
+            
+                    
+                        <b>2.3.13.2.</b>
+                    
+                    azure开发连接的国内网站
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.13.3" data-path="../manageiq/azure/003-azure-armrest中链接作用.html">
+            
+                <a href="../manageiq/azure/003-azure-armrest中链接作用.html">
+            
+                    
+                        <b>2.3.13.3.</b>
+                    
+                    azure-armrest中链接作用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.13.4" data-path="../manageiq/azure/004-azure使用虚拟机生成私有镜像.html">
+            
+                <a href="../manageiq/azure/004-azure使用虚拟机生成私有镜像.html">
+            
+                    
+                        <b>2.3.13.4.</b>
+                    
+                    azure使用虚拟机生成私有镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+                <span>
+            
+                    
+                        <b>2.4.</b>
+                    
+                    面试
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../面试题/001-js.html">
+            
+                <a href="../面试题/001-js.html">
+            
+                    
+                        <b>2.4.1.</b>
+                    
+                    JS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../面试题/002-css.html">
+            
+                <a href="../面试题/002-css.html">
+            
+                    
+                        <b>2.4.2.</b>
+                    
+                    CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../面试题/003-面试问过的问题.html">
+            
+                <a href="../面试题/003-面试问过的问题.html">
+            
+                    
+                        <b>2.4.3.</b>
+                    
+                    问过的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../面试题/004-JavaScript中各种源码实现.html">
+            
+                <a href="../面试题/004-JavaScript中各种源码实现.html">
+            
+                    
+                        <b>2.4.4.</b>
+                    
+                    JavaScript中各种源码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../面试题/005-面试资料.html">
+            
+                <a href="../面试题/005-面试资料.html">
+            
+                    
+                        <b>2.4.5.</b>
+                    
+                    面试资料整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../面试题/006-JS答过的笔试题.html">
+            
+                <a href="../面试题/006-JS答过的笔试题.html">
+            
+                    
+                        <b>2.4.6.</b>
+                    
+                    JS答过的笔试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../面试题/007-CSS答过的笔试题.html">
+            
+                <a href="../面试题/007-CSS答过的笔试题.html">
+            
+                    
+                        <b>2.4.7.</b>
+                    
+                    CSS答过的笔试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="../面试题/008-7个简单棘手的JS问题.html">
+            
+                <a href="../面试题/008-7个简单棘手的JS问题.html">
+            
+                    
+                        <b>2.4.8.</b>
+                    
+                    7个简单棘手的JS问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="../面试题/009-浏览器http相关问题.html">
+            
+                <a href="../面试题/009-浏览器http相关问题.html">
+            
+                    
+                        <b>2.4.9.</b>
+                    
+                    浏览器http相关问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="../面试题/010-这些前端基础题你能答对几道.html">
+            
+                <a href="../面试题/010-这些前端基础题你能答对几道.html">
+            
+                    
+                        <b>2.4.10.</b>
+                    
+                    这些前端基础题你能答对几道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.11" data-path="../面试题/011-后端一次性丢给你10万条数据-怎么处理显示.html">
+            
+                <a href="../面试题/011-后端一次性丢给你10万条数据-怎么处理显示.html">
+            
+                    
+                        <b>2.4.11.</b>
+                    
+                    后端一次性丢给你10万条数据-怎么处理显示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.12" data-path="../面试题/012-说说你对options请求的理解.html">
+            
+                <a href="../面试题/012-说说你对options请求的理解.html">
+            
+                    
+                        <b>2.4.12.</b>
+                    
+                    说说你对options请求的理解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ruby面试题</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#ruby-&#x57FA;&#x7840;"><b></b>ruby &#x57FA;&#x7840;</a></li><ul><li><span class="title-icon "></span><a href="#1&#x3001;each&#x3001;map&#x3001;collect&#x7684;&#x533A;&#x522B;"><b></b>1&#x3001;each&#x3001;map&#x3001;collect&#x7684;&#x533A;&#x522B;</a></li><li><span class="title-icon "></span><a href="#2&#x3001;block-lambda-proc-&#x7684;&#x533A;&#x522B;"><b></b>2&#x3001;Block, lambda, Proc &#x7684;&#x533A;&#x522B;</a></li><li><span class="title-icon "></span><a href="#ruby&#x4E2D;&#x95ED;&#x5305;"><b></b>ruby&#x4E2D;&#x95ED;&#x5305;</a></li><li><span class="title-icon "></span><a href="#3&#x3001;alias-&#x7684;&#x7528;&#x6CD5;-alias-&#x4E0E;-aliasmethod-&#x7684;&#x533A;&#x522B;"><b></b>3&#x3001;alias &#x7684;&#x7528;&#x6CD5;, alias &#x4E0E; alias_method &#x7684;&#x533A;&#x522B;</a></li><li><span class="title-icon "></span><a href="#4&#x3001;ruby&#x7684;&#x5BF9;&#x8C61;&#x4F53;&#x7CFB;"><b></b>4&#x3001;Ruby&#x7684;&#x5BF9;&#x8C61;&#x4F53;&#x7CFB;</a></li><li><span class="title-icon "></span><a href="#5&#x3001;-include-extend-load-require-&#x7684;&#x4F7F;&#x7528;&#x533A;&#x522B;"><b></b>5&#x3001; Include, Extend, Load, Require &#x7684;&#x4F7F;&#x7528;&#x533A;&#x522B;</a></li><li><span class="title-icon "></span><a href="#6&#x3001;yield&#x3001;yield-self"><b></b>6&#x3001;yield&#x3001;yield self</a></li><li><span class="title-icon "></span><a href="#7&#x3001;-ruby&#x4E2D;&#x7684;&#x5143;&#x7F16;&#x7A0B;"><b></b>7&#x3001; Ruby&#x4E2D;&#x7684;&#x5143;&#x7F16;&#x7A0B;</a></li><li><span class="title-icon "></span><a href="#8&#x3001;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#xFF0C;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x7C7B;&#x53D8;&#x91CF;&#xFF0C;symbol"><b></b>8&#x3001;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#xFF0C;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x7C7B;&#x53D8;&#x91CF;&#xFF0C;Symbol</a></li><li><span class="title-icon "></span><a href="#9&#x3001;ruby&#x7684;&#x7279;&#x70B9;"><b></b>9&#x3001;ruby&#x7684;&#x7279;&#x70B9;</a></li></ul><li><span class="title-icon "></span><a href="#rails"><b></b>rails</a></li><ul><li><span class="title-icon "></span><a href="#active-record"><b></b>active record</a></li><li><span class="title-icon "></span><a href="#&#x6570;&#x636E;&#x5E93;&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><b></b>&#x6570;&#x636E;&#x5E93;&#x57FA;&#x672C;&#x64CD;&#x4F5C;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5176;&#x4ED6;&#x9762;&#x8BD5;&#x9898;"><b></b>&#x5176;&#x4ED6;&#x9762;&#x8BD5;&#x9898;</a></li></ul></ul></div><div class="treeview__container"><div class="treeview__container-title"><span class="treeview__main-title">Treeview</span><span class="treeview__copyright">Copyright &#xA9; aleen42 all right reserved, powered by <a href="https://github.com/aleen42" target="_blank">aleen42</a></span></div><ul>
+<li><div><a href="#ruby-&#x57FA;&#x7840;">ruby &#x57FA;&#x7840;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#1&#x3001;each&#x3001;map&#x3001;collect&#x7684;&#x533A;&#x522B;">1&#x3001;each&#x3001;map&#x3001;collect&#x7684;&#x533A;&#x522B;</a><i></i></div></li>
+<li><div><a href="#2&#x3001;block-lambda-proc-&#x7684;&#x533A;&#x522B;">2&#x3001;Block, lambda, Proc &#x7684;&#x533A;&#x522B;</a><i></i></div></li>
+<li><div><a href="#ruby&#x4E2D;&#x95ED;&#x5305;">ruby&#x4E2D;&#x95ED;&#x5305;</a><i></i></div></li>
+<li><div><a href="#3&#x3001;alias-&#x7684;&#x7528;&#x6CD5;-alias-&#x4E0E;-aliasmethod-&#x7684;&#x533A;&#x522B;">3&#x3001;alias &#x7684;&#x7528;&#x6CD5;, alias &#x4E0E; alias_method &#x7684;&#x533A;&#x522B;</a><i></i></div></li>
+<li><div><a href="#4&#x3001;ruby&#x7684;&#x5BF9;&#x8C61;&#x4F53;&#x7CFB;">4&#x3001;Ruby&#x7684;&#x5BF9;&#x8C61;&#x4F53;&#x7CFB;</a><i></i></div></li>
+<li><div><a href="#5&#x3001;-include-extend-load-require-&#x7684;&#x4F7F;&#x7528;&#x533A;&#x522B;">5&#x3001; Include, Extend, Load, Require &#x7684;&#x4F7F;&#x7528;&#x533A;&#x522B;</a><i></i></div></li>
+<li><div><a href="#6&#x3001;yield&#x3001;yield-self">6&#x3001;yield&#x3001;yield self</a><i></i></div></li>
+<li><div><a href="#7&#x3001;-ruby&#x4E2D;&#x7684;&#x5143;&#x7F16;&#x7A0B;">7&#x3001; Ruby&#x4E2D;&#x7684;&#x5143;&#x7F16;&#x7A0B;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#71-&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x3001;&#x65B9;&#x6CD5;&#x3001;&#x7C7B;">7.1 &#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x3001;&#x65B9;&#x6CD5;&#x3001;&#x7C7B;</a><i></i></div></li>
+<li><div><a href="#72-send&#x3001;eval&#x3001;respondto">7.2 send&#x3001;eval&#x3001;respond_to?</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#8&#x3001;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#xFF0C;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x7C7B;&#x53D8;&#x91CF;&#xFF0C;symbol">8&#x3001;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#xFF0C;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x7C7B;&#x53D8;&#x91CF;&#xFF0C;Symbol</a><i></i></div></li>
+<li><div><a href="#9&#x3001;ruby&#x7684;&#x7279;&#x70B9;">9&#x3001;ruby&#x7684;&#x7279;&#x70B9;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#rails">rails </a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#active-record">active record</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x521B;&#x5EFA;&#x3001;&#x67E5;&#x8BE2;&#x3001;&#x4FEE;&#x6539;&#x3001;&#x5220;&#x9664;">&#x521B;&#x5EFA;&#x3001;&#x67E5;&#x8BE2;&#x3001;&#x4FEE;&#x6539;&#x3001;&#x5220;&#x9664;</a><i></i></div></li>
+<li><div><a href="#&#x5173;&#x8054;&#x6A21;&#x578B;">&#x5173;&#x8054;&#x6A21;&#x578B;</a><i></i></div></li>
+<li><div><a href="#&#x67E5;&#x8BE2;&#x63A5;&#x53E3;">&#x67E5;&#x8BE2;&#x63A5;&#x53E3;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x6570;&#x636E;&#x5E93;&#x57FA;&#x672C;&#x64CD;&#x4F5C;">&#x6570;&#x636E;&#x5E93;&#x57FA;&#x672C;&#x64CD;&#x4F5C;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x5176;&#x4ED6;&#x9762;&#x8BD5;&#x9898;">&#x5176;&#x4ED6;&#x9762;&#x8BD5;&#x9898;</a><i></i></div></li>
+</ul>
+</div>
+
+<h2 id="ruby-&#x57FA;&#x7840;"><a name="ruby-&#x57FA;&#x7840;" class="anchor-navigation-ex-anchor" href="#ruby-&#x57FA;&#x7840;"><i class="fa fa-link" aria-hidden="true"></i></a>ruby &#x57FA;&#x7840;</h2>
+<h3 id="1&#x3001;each&#x3001;map&#x3001;collect&#x7684;&#x533A;&#x522B;"><a name="1&#x3001;each&#x3001;map&#x3001;collect&#x7684;&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#1&#x3001;each&#x3001;map&#x3001;collect&#x7684;&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;each&#x3001;map&#x3001;collect&#x7684;&#x533A;&#x522B;</h3>
+<p>each: &#x4EC5;&#x904D;&#x5386;&#x6570;&#x7EC4;&#xFF0C;&#x5E76;&#x505A;&#x76F8;&#x5E94;&#x64CD;&#x4F5C;&#xFF0C;&#x6570;&#x7EC4;&#x672C;&#x8EAB;&#x4E0D;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x3002;</p>
+<p>map:&#x904D;&#x5386;&#x6570;&#x7EC4;&#xFF0C;&#x5E76;&#x505A;&#x76F8;&#x5E94;&#x64CD;&#x4F5C;&#x540E;&#xFF0C;&#x8FD4;&#x56DE;&#x65B0;&#x6570;&#x7EC4;(&#x5904;&#x7406;)&#xFF0C;&#x539F;&#x6570;&#x7EC4;&#x4E0D;&#x53D8;&#x3002;</p>
+<p>collect: &#x8DDF;map&#x4F5C;&#x7528;&#x4E00;&#x6837;&#x3002;</p>
+<p><code>collect!</code> <code>map!</code>: &#x591A;&#x4E86;&#x4E00;&#x4E2A;&#x4F5C;&#x7528;&#xFF0C;&#x6539;&#x53D8;&#x539F;&#x6570;&#x7EC4;&#x3002;</p>
+<pre class="language-"><code class="lang-ruby"><span class="token operator">/</span><span class="token operator">/</span> &#x7EC8;&#x7AEF;&#x6253;&#x5F00; irb
+<span class="token operator">/</span><span class="token operator">/</span> <span class="token keyword">each</span>
+a <span class="token operator">=</span> <span class="token punctuation">[</span> <span class="token string-literal"><span class="token string">&quot;a&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;b&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;c&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;d&quot;</span></span> <span class="token punctuation">]</span>
+b <span class="token operator">=</span> a<span class="token punctuation">.</span><span class="token keyword">each</span> <span class="token punctuation">{</span> <span class="token operator">|</span>x<span class="token operator">|</span> x <span class="token operator">+</span> <span class="token string-literal"><span class="token string">&quot;!&quot;</span></span> <span class="token punctuation">}</span>     <span class="token operator">/</span><span class="token operator">/</span> a <span class="token operator">==</span> b <span class="token operator">==</span> <span class="token punctuation">[</span> <span class="token string-literal"><span class="token string">&quot;a&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;b&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;c&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;d&quot;</span></span> <span class="token punctuation">]</span>
+
+<span class="token operator">/</span><span class="token operator">/</span> map map<span class="token operator">!</span>
+a <span class="token operator">=</span> <span class="token punctuation">[</span> <span class="token string-literal"><span class="token string">&quot;a&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;b&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;c&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;d&quot;</span></span> <span class="token punctuation">]</span>
+b <span class="token operator">=</span> a<span class="token punctuation">.</span>map <span class="token punctuation">{</span> <span class="token operator">|</span>x<span class="token operator">|</span> x <span class="token operator">+</span> <span class="token string-literal"><span class="token string">&quot;!&quot;</span></span> <span class="token punctuation">}</span>    
+a    <span class="token operator">/</span><span class="token operator">/</span> <span class="token punctuation">[</span><span class="token string-literal"><span class="token string">&quot;a&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;b&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;c&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;d&quot;</span></span><span class="token punctuation">]</span>
+b    <span class="token operator">/</span><span class="token operator">/</span> <span class="token punctuation">[</span><span class="token string-literal"><span class="token string">&quot;a!&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;b!&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;c!&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;d!&quot;</span></span><span class="token punctuation">]</span>
+c <span class="token operator">=</span> a<span class="token punctuation">.</span>map<span class="token operator">!</span> <span class="token punctuation">{</span> <span class="token operator">|</span>x<span class="token operator">|</span> x <span class="token operator">+</span> <span class="token string-literal"><span class="token string">&quot;!&quot;</span></span> <span class="token punctuation">}</span>
+a    <span class="token operator">/</span><span class="token operator">/</span> <span class="token punctuation">[</span><span class="token string-literal"><span class="token string">&quot;a!&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;b!&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;c!&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;d!&quot;</span></span><span class="token punctuation">]</span>
+c    <span class="token operator">/</span><span class="token operator">/</span> <span class="token punctuation">[</span><span class="token string-literal"><span class="token string">&quot;a!&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;b!&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;c!&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;d!&quot;</span></span><span class="token punctuation">]</span>
+
+<span class="token operator">/</span><span class="token operator">/</span> collect collect<span class="token operator">!</span>
+a <span class="token operator">=</span> <span class="token punctuation">[</span> <span class="token string-literal"><span class="token string">&quot;a&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;b&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;c&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;d&quot;</span></span> <span class="token punctuation">]</span>
+b <span class="token operator">=</span> a<span class="token punctuation">.</span>collect <span class="token punctuation">{</span> <span class="token operator">|</span>x<span class="token operator">|</span> x <span class="token operator">+</span> <span class="token string-literal"><span class="token string">&quot;!&quot;</span></span> <span class="token punctuation">}</span>    
+a    <span class="token operator">/</span><span class="token operator">/</span> <span class="token punctuation">[</span><span class="token string-literal"><span class="token string">&quot;a&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;b&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;c&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;d&quot;</span></span><span class="token punctuation">]</span>
+b    <span class="token operator">/</span><span class="token operator">/</span> <span class="token punctuation">[</span><span class="token string-literal"><span class="token string">&quot;a!&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;b!&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;c!&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;d!&quot;</span></span><span class="token punctuation">]</span>
+c <span class="token operator">=</span> a<span class="token punctuation">.</span>collect<span class="token operator">!</span> <span class="token punctuation">{</span> <span class="token operator">|</span>x<span class="token operator">|</span> x <span class="token operator">+</span> <span class="token string-literal"><span class="token string">&quot;!&quot;</span></span> <span class="token punctuation">}</span>
+a    <span class="token operator">/</span><span class="token operator">/</span> <span class="token punctuation">[</span><span class="token string-literal"><span class="token string">&quot;a!&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;b!&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;c!&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;d!&quot;</span></span><span class="token punctuation">]</span>
+c    <span class="token operator">/</span><span class="token operator">/</span> <span class="token punctuation">[</span><span class="token string-literal"><span class="token string">&quot;a!&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;b!&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;c!&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;d!&quot;</span></span><span class="token punctuation">]</span>
+</code></pre>
+<h3 id="2&#x3001;block-lambda-proc-&#x7684;&#x533A;&#x522B;"><a name="2&#x3001;block-lambda-proc-&#x7684;&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#2&#x3001;block-lambda-proc-&#x7684;&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;Block, lambda, Proc &#x7684;&#x533A;&#x522B;</h3>
+<ol>
+<li><p>proc&#x548C;lambda&#x90FD;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x800C;block&#x4E0D;&#x662F;</p>
+</li>
+<li><p>block&#x662F;proc&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;proc&#x53EF;&#x4EE5;&#x91CD;&#x590D;&#x4F7F;&#x7528;&#xFF0C;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;block&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;proc</p>
+<pre class="language-"><code class="lang-ruby"><span class="token comment"># &#x8BF4;&#x660E;block&#x662F;proc&#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;</span>
+<span class="token keyword">def</span> <span class="token method-definition"><span class="token function">what_am_i</span></span><span class="token punctuation">(</span><span class="token operator">&amp;</span>block<span class="token punctuation">)</span>                                                                                 
+    block<span class="token punctuation">.</span><span class="token keyword">class</span>
+<span class="token class-name">end</span>
+puts what_am_i <span class="token punctuation">{</span><span class="token punctuation">}</span>  <span class="token comment"># =&lt; Proc</span>
+
+<span class="token keyword">def</span> <span class="token method-definition"><span class="token function">multiple_procs</span></span><span class="token punctuation">(</span>proc1<span class="token punctuation">,</span> proc2<span class="token punctuation">)</span>
+  proc1<span class="token punctuation">.</span>call
+  proc2<span class="token punctuation">.</span>call
+<span class="token keyword">end</span>
+a <span class="token operator">=</span> <span class="token class-name">Proc</span><span class="token punctuation">.</span><span class="token keyword">new</span> <span class="token punctuation">{</span> puts <span class="token string-literal"><span class="token string">&quot;First proc&quot;</span></span> <span class="token punctuation">}</span>
+b <span class="token operator">=</span> <span class="token class-name">Proc</span><span class="token punctuation">.</span><span class="token keyword">new</span> <span class="token punctuation">{</span> puts <span class="token string-literal"><span class="token string">&quot;Second proc&quot;</span></span> <span class="token punctuation">}</span>
+multiple_procs<span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span>
+</code></pre>
+</li>
+<li><p>lambda&#x4F1A;&#x68C0;&#x67E5;&#x53C2;&#x6570;&#x4E2A;&#x6570;&#xFF0C;proc&#x4E0D;&#x4F1A;&#x3002;</p>
+<pre class="language-"><code class="lang-ruby">lam <span class="token operator">=</span> lambda <span class="token punctuation">{</span> <span class="token operator">|</span>x<span class="token operator">|</span> puts x <span class="token punctuation">}</span>    <span class="token comment"># creates a lambda that takes 1 argument</span>
+lam<span class="token punctuation">.</span>call<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>                    <span class="token comment"># prints out 2</span>
+lam<span class="token punctuation">.</span>call                       <span class="token comment"># ArgumentError: wrong number of arguments</span>
+lam<span class="token punctuation">.</span>call<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span> 
+pro <span class="token operator">=</span> <span class="token class-name">Proc</span><span class="token punctuation">.</span><span class="token keyword">new</span> <span class="token punctuation">{</span> <span class="token operator">|</span>x<span class="token operator">|</span> puts x <span class="token punctuation">}</span> <span class="token comment"># creates a proc that takes 1 argument</span>
+pro<span class="token punctuation">.</span>call<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>                   <span class="token comment"># 2</span>
+pro<span class="token punctuation">.</span>call                      <span class="token comment"># returns nil</span>
+pro<span class="token punctuation">.</span>call<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span>                 <span class="token comment"># 1</span>
+</code></pre>
+</li>
+<li><p>lambda&#x548C;proc&#x5BF9;&#x4E8E;return&#x5904;&#x7406;&#x65B9;&#x5F0F;&#x4E0D;&#x540C;</p>
+<p>lambda&#xFF1A;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x8C03;&#x7528;lambda&#xFF0C;lambda&#x91CC;return&#x540E;&#x8FD4;&#x56DE;&#x51FD;&#x6570;&#x63A5;&#x7740;&#x6267;&#x884C;&#x3002;</p>
+<p>proc: &#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x8C03;&#x7528;proc&#xFF0C;proc&#x91CC;return&#x540E;&#xFF0C; &#x51FD;&#x6570;&#x4E5F;&#x4F1A;return&#x3002;</p>
+<pre class="language-"><code class="lang-ruby"><span class="token keyword">def</span> <span class="token method-definition"><span class="token function">lambda_test</span></span>
+  lam <span class="token operator">=</span> lambda <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token punctuation">}</span>
+  lam<span class="token punctuation">.</span>call
+  puts <span class="token string-literal"><span class="token string">&quot;Hello world&quot;</span></span>
+<span class="token keyword">end</span>
+lambda_test
+<span class="token keyword">def</span> <span class="token method-definition"><span class="token function">proc_test</span></span>
+  proc <span class="token operator">=</span> <span class="token class-name">Proc</span><span class="token punctuation">.</span><span class="token keyword">new</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token punctuation">}</span>
+  proc<span class="token punctuation">.</span>call
+  puts <span class="token string-literal"><span class="token string">&quot;Hello world&quot;</span></span>
+<span class="token keyword">end</span>
+proc_test
+</code></pre>
+</li>
+</ol>
+<p>&#x53C2;&#x8003;&#x8D44;&#x6599;&#xFF1A;</p>
+<p><a href="http://awaxman11.github.io/blog/2013/08/05/what-is-the-difference-between-a-block/" target="_blank">What Is the Difference Between a Block, a Proc, and a Lambda in Ruby?</a></p>
+<p><a href="https://my.oschina.net/gschen/blog/325546" target="_blank">&#x6D45;&#x8C08;Ruby&#x4E2D;&#x7684;block, proc, lambda, method object&#x7684;&#x533A;&#x522B;</a></p>
+<h3 id="ruby&#x4E2D;&#x95ED;&#x5305;"><a name="ruby&#x4E2D;&#x95ED;&#x5305;" class="anchor-navigation-ex-anchor" href="#ruby&#x4E2D;&#x95ED;&#x5305;"><i class="fa fa-link" aria-hidden="true"></i></a>ruby&#x4E2D;&#x95ED;&#x5305;</h3>
+<p>&#x5728;Ruby&#x91CC;&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4EE3;&#x7801;&#x5757;&#xFF0C;&#x800C;&#x8BE5;&#x4EE3;&#x7801;&#x5757;&#x83B7;&#x5F97;&#x4E86;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x5219;&#x8FD9;&#x4E9B;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x5C06;&#x5728;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x540E;&#x4F9D;&#x7136;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x3002;</p>
+<pre class="language-"><code>def show(name)
+    count = 1;
+    return proc do |value|
+        puts count +=1;
+        puts name + &apos;&#x6211;&#x662F;&#x95ED;&#x5305;&apos; + value
+    end
+end
+
+sh = show(&quot;ruby&quot;)
+sh.call(&apos;213&apos;)
+sh.call(&apos;kkk&apos;)
+</code></pre><p>&#x53C2;&#x8003;&#xFF1A;</p>
+<p><a href="https://blog.csdn.net/dazhi_100/article/details/36696933" target="_blank">Ruby&#x7684;4&#x79CD;&#x95ED;&#x5305;&#xFF1A;blocks, Procs, lambdas &#x548C; Methods</a></p>
+<h3 id="3&#x3001;alias-&#x7684;&#x7528;&#x6CD5;-alias-&#x4E0E;-aliasmethod-&#x7684;&#x533A;&#x522B;"><a name="3&#x3001;alias-&#x7684;&#x7528;&#x6CD5;-alias-&#x4E0E;-aliasmethod-&#x7684;&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#3&#x3001;alias-&#x7684;&#x7528;&#x6CD5;-alias-&#x4E0E;-aliasmethod-&#x7684;&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;alias &#x7684;&#x7528;&#x6CD5;, alias &#x4E0E; alias_method &#x7684;&#x533A;&#x522B;</h3>
+<p>alias: &#x7ED9;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#x65B9;&#x6CD5;&#x6216;&#x53D8;&#x91CF;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x522B;&#x540D;&#xFF0C;&#x5728;&#x91CD;&#x65B0;&#x5B9A;&#x4E49;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x522B;&#x540D;&#x6765;&#x8C03;&#x7528;&#x539F;&#x6765;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>alias_method: &#x548C;alias&#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x53EA;&#x80FD;&#x7ED9;&#x65B9;&#x6CD5;&#x8D77;&#x522B;&#x540D;&#xFF0C;&#x662F;Module&#x7684;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x3002;</p>
+<pre class="language-"><code class="lang-ruby"><span class="token keyword">class</span> <span class="token class-name">Demo</span> 
+  <span class="token keyword">def</span> <span class="token method-definition"><span class="token function">hello</span></span>
+    puts <span class="token string-literal"><span class="token string">&quot;old_hell0&quot;</span></span>
+  <span class="token keyword">end</span>
+  <span class="token comment"># &#x7ED9;hello&#x65B9;&#x6CD5;&#x53D6;&#x522B;&#x540D;</span>
+  <span class="token comment"># alias old_hello hello</span>
+  alias_method <span class="token symbol">:old_hello</span><span class="token punctuation">,</span> <span class="token symbol">:hello</span>
+  <span class="token keyword">def</span> <span class="token method-definition"><span class="token function">hello</span></span>
+    puts <span class="token string-literal"><span class="token string">&quot;new_hello&quot;</span></span>
+  <span class="token keyword">end</span>
+<span class="token keyword">end</span>
+obj <span class="token operator">=</span> <span class="token class-name">Demo</span><span class="token punctuation">.</span><span class="token keyword">new</span>
+obj<span class="token punctuation">.</span>hello
+obj<span class="token punctuation">.</span>old_hello
+</code></pre>
+<p>&#x53C2;&#x8003;&#xFF1A;</p>
+<p> <a href="https://www.cnblogs.com/smallbottle/p/3968704.html" target="_blank">https://www.cnblogs.com/smallbottle/p/3968704.html</a></p>
+<p><a href="https://ruby-china.org/topics/27747" target="_blank">https://ruby-china.org/topics/27747</a></p>
+<h3 id="4&#x3001;ruby&#x7684;&#x5BF9;&#x8C61;&#x4F53;&#x7CFB;"><a name="4&#x3001;ruby&#x7684;&#x5BF9;&#x8C61;&#x4F53;&#x7CFB;" class="anchor-navigation-ex-anchor" href="#4&#x3001;ruby&#x7684;&#x5BF9;&#x8C61;&#x4F53;&#x7CFB;"><i class="fa fa-link" aria-hidden="true"></i></a>4&#x3001;Ruby&#x7684;&#x5BF9;&#x8C61;&#x4F53;&#x7CFB;</h3>
+<pre class="language-"><code>                   +------------+
+                   | BasicObject|
+                   +------------+
+                        ^
+                        |superclass
+                        |
+                   +----+-----+   superclass-----------+
+                   |  Object  | ^----------|   Module  |
+                   +----+-----+------+     +-+---------+
+                        ^            |       ^
+                        |superclass  |       |Superclass
+                        |            |       |
++---------+           +-+-------+    +---&gt; +-+-------+
+| &apos;hello&apos; |  class    | String  | class    | Class   |
+|         +----------&gt;+         +---------&gt;+         +------&gt;
++---------+           +---------+          +----+----+      |
+                                                ^           |
+                                                |  class    |
+                                                &lt;-----------+
+</code></pre><p><code>![](https://img-blog.csdn.net/20160413232121267?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)</code></p>
+<pre class="language-"><code class="lang-ruby"><span class="token string-literal"><span class="token string">&apos;hello&apos;</span></span><span class="token punctuation">.</span><span class="token keyword">class</span>        <span class="token comment"># String</span>
+<span class="token builtin">String</span><span class="token punctuation">.</span><span class="token keyword">class</span>        <span class="token comment"># Class</span>
+<span class="token builtin">String</span><span class="token punctuation">.</span>superclass    <span class="token comment"># Object</span>
+<span class="token builtin">Class</span><span class="token punctuation">.</span><span class="token keyword">class</span>            <span class="token comment"># Class</span>
+<span class="token builtin">Class</span><span class="token punctuation">.</span>superclass    <span class="token comment"># Module</span>
+<span class="token builtin">Module</span><span class="token punctuation">.</span><span class="token keyword">class</span>        <span class="token comment"># Class</span>
+<span class="token builtin">Module</span><span class="token punctuation">.</span>superclass    <span class="token comment"># Object</span>
+<span class="token builtin">Object</span><span class="token punctuation">.</span><span class="token keyword">class</span>        <span class="token comment"># Object</span>
+<span class="token builtin">Object</span><span class="token punctuation">.</span>superclass    <span class="token comment"># BasicObject</span>
+BasicObject<span class="token punctuation">.</span><span class="token keyword">class</span>    <span class="token comment"># Class</span>
+BasicObject<span class="token punctuation">.</span>superclass    <span class="token comment"># nil</span>
+</code></pre>
+<p>Module&#x662F;Class&#x7684;&#x7236;&#x7C7B;&#xFF0C;Class&#x548C;Module&#x7684;&#x5DEE;&#x522B;&#x662F;Class&#x662F;&#x4E00;&#x4E2A;&#x589E;&#x5F3A;&#x7684;Module&#xFF0C;&#x5B83;&#x6BD4;Module&#x591A;&#x4E86;&#x4E00;&#x4E2A;new&#xFF0C;allocate&#x65B9;&#x6CD5;&#xFF0C;&#x9664;&#x4E86;&#x8FD9;&#x4E00;&#x4E2A;&#x533A;&#x522B;&#xFF0C;&#x5F53;&#x7136;&#x8FD9;&#x4E2A;&#x533A;&#x522B;&#x7279;&#x522B;&#x91CD;&#x8981;&#xFF0C;Class&#x548C;Module&#x57FA;&#x672C;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
+<p>&#x53C2;&#x8003;&#xFF1A; <a href="https://blog.csdn.net/feigeswjtu/article/details/51040006" target="_blank">https://blog.csdn.net/feigeswjtu/article/details/51040006</a></p>
+<h3 id="5&#x3001;-include-extend-load-require-&#x7684;&#x4F7F;&#x7528;&#x533A;&#x522B;"><a name="5&#x3001;-include-extend-load-require-&#x7684;&#x4F7F;&#x7528;&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#5&#x3001;-include-extend-load-require-&#x7684;&#x4F7F;&#x7528;&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a>5&#x3001; Include, Extend, Load, Require &#x7684;&#x4F7F;&#x7528;&#x533A;&#x522B;</h3>
+<ul>
+<li>include&#x548C;extend&#x7528;&#x4E8E;&#x5728;&#x7C7B;&#x4E2D;&#x5F15;&#x5165;&#x6A21;&#x5757;&#xFF0C;&#x533A;&#x522B;&#xFF1A;</li>
+</ul>
+<blockquote>
+<p>include&#xFF1A;&#x628A;&#x6A21;&#x5757;&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x4F5C;&#x4E3A;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;</p>
+<p>extend: &#x628A;&#x6A21;&#x5757;&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x4F5C;&#x4E3A;&#x7C7B;&#x7684;&#x7C7B;&#x65B9;&#x6CD5;</p>
+</blockquote>
+<pre class="language-"><code class="lang-ruby"><span class="token keyword">module</span> <span class="token class-name">A</span>
+    <span class="token keyword">def</span> <span class="token method-definition"><span class="token function">class_type</span></span>
+        puts <span class="token string-literal"><span class="token string">&quot;This class is of type:</span><span class="token interpolation"><span class="token delimiter punctuation">#{</span><span class="token content"><span class="token keyword">self</span><span class="token punctuation">.</span><span class="token keyword">class</span></span><span class="token delimiter punctuation">}</span></span><span class="token string">&quot;</span></span>
+    <span class="token keyword">end</span>
+<span class="token keyword">end</span>
+<span class="token keyword">class</span> <span class="token class-name">B</span> <span class="token keyword">extend</span> <span class="token constant">A</span> <span class="token keyword">end</span>
+<span class="token keyword">class</span> <span class="token class-name">C</span> <span class="token keyword">include</span> <span class="token constant">A</span> <span class="token keyword">end</span>
+<span class="token constant">B</span><span class="token punctuation">.</span>class_type
+<span class="token class-name">C</span><span class="token punctuation">.</span><span class="token keyword">new</span><span class="token punctuation">.</span>class_type
+</code></pre>
+<ul>
+<li><p>require&#x3001;load&#x7528;&#x4E8E;&#x52A0;&#x8F7D;&#x5E93;&#xFF0C;&#x5982;<code>.rb</code>&#x6587;&#x4EF6;&#xFF0C;&#x533A;&#x522B;&#xFF1A;</p>
+<blockquote>
+<p>require: &#x52A0;&#x8F7D;&#x4E00;&#x4E2A;&#x5E93;&#xFF0C;&#x5E76;&#x4E14;&#x53EA;&#x52A0;&#x8F7D;&#x4E00;&#x6B21;&#xFF0C;&#x5982;&#x679C;&#x591A;&#x6B21;&#x52A0;&#x8F7D;&#x4F1A;&#x8FD4;&#x56DE;false&#x3002;&#x6587;&#x4EF6;&#x4E0D;&#x9700;&#x8981;&#x6269;&#x5C55;&#x540D;</p>
+<p>load: &#x52A0;&#x8F7D;&#x4E00;&#x4E2A;&#x5E93;&#xFF0C;&#x53EF;&#x591A;&#x6B21;&#x52A0;&#x8F7D;&#x3002;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;&#x3002;</p>
+</blockquote>
+<pre class="language-"><code class="lang-ruby"><span class="token comment"># &#x5728;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E2D;&#x6709;&#x4E00;&#x4E2A; two.rb&#x6587;&#x4EF6;</span>
+<span class="token keyword">require</span> <span class="token string-literal"><span class="token string">&apos;./two&apos;</span></span><span class="token punctuation">;</span>
+load <span class="token string-literal"><span class="token string">&apos;./two.rb&apos;</span></span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+</ul>
+<h3 id="6&#x3001;yield&#x3001;yield-self"><a name="6&#x3001;yield&#x3001;yield-self" class="anchor-navigation-ex-anchor" href="#6&#x3001;yield&#x3001;yield-self"><i class="fa fa-link" aria-hidden="true"></i></a>6&#x3001;yield&#x3001;yield self</h3>
+<p>&#x6240;&#x6709;&#x7684;&#x65B9;&#x6CD5;(methods)&#x90FD;&#x4F1A;&#x9690;&#x5F0F;&#x7684;&#x5E26;&#x4E00;&#x4E2A;&#x5757;(block)&#x53C2;&#x6570;&#x3002;</p>
+<ul>
+<li><p>yield&#x7528;&#x6765;&#x6267;&#x884C;&#x5757;&#x53C2;&#x6570;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;call()&#x65B9;&#x6CD5;&#x6267;&#x884C;&#x3002;</p>
+<p>yield &#x76F8;&#x5F53;&#x4E8E;&#x662F; block.call() &#x65B9;&#x6CD5;&#x7684;&#x8C03;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x53C2;&#x6570;&#x4E2A;&#x6570;&#x4E5F;&#x9700;&#x8981;&#x5BF9;&#x5E94;, method &#x5B9A;&#x4E49;&#x4E2D; &amp;block &#x53C2;&#x6570;&#x5FC5;&#x987B;&#x5728;&#x6700;&#x540E;</p>
+<pre class="language-"><code class="lang-ruby"><span class="token keyword">def</span> <span class="token method-definition"><span class="token function">foo1</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">yield</span> <span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span>     <span class="token comment"># &#x8FD9;&#x91CC;&#x7684; 1 2 3 &#x5C31;&#x662F;&#x4F20;&#x9012;&#x7684;&#x53C2;&#x6570;</span>
+<span class="token keyword">end</span>
+<span class="token keyword">def</span> <span class="token method-definition"><span class="token function">foo2</span></span><span class="token punctuation">(</span>time<span class="token punctuation">,</span> <span class="token operator">&amp;</span>block<span class="token punctuation">)</span>
+    <span class="token keyword">yield</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span>
+    block<span class="token punctuation">.</span>call<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span>  
+    puts time
+<span class="token keyword">end</span>
+foo1 <span class="token punctuation">{</span><span class="token operator">|</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>z<span class="token operator">|</span> puts z<span class="token punctuation">}</span>    <span class="token comment"># =&gt; 3</span>
+foo2<span class="token punctuation">(</span><span class="token string-literal"><span class="token string">&apos;2018&apos;</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token operator">|</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>z<span class="token operator">|</span> puts z<span class="token punctuation">}</span>    <span class="token comment"># =&gt; 3 7 2018</span>
+</code></pre>
+</li>
+<li><p>yield self</p>
+<p>&#x5728;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;self &#x8868;&#x793A;&#x662F;&#x4E00;&#x4E2A;&#x5F53;&#x524D;&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;&#x3002;</p>
+<p><code>yield self if block_given?</code> &#x76F8;&#x5F53;&#x4E8E;&#x5982;&#x679C;&#x6709;&#x5757;&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x4E2A;&#x8C03;&#x7528;&#x5FEB;&#x53C2;&#x6570;&#xFF0C;&#x53C2;&#x6570;&#x662F;&#x81EA;&#x5DF1;&#x3002;</p>
+<pre class="language-"><code class="lang-ruby"><span class="token keyword">def</span> <span class="token method-definition"><span class="token function">foo</span></span><span class="token punctuation">(</span><span class="token operator">&amp;</span>block<span class="token punctuation">)</span>
+    puts <span class="token keyword">self</span>
+    <span class="token keyword">yield</span> <span class="token keyword">self</span> <span class="token keyword">if</span> block_given<span class="token operator">?</span>
+    <span class="token keyword">yield</span> <span class="token string-literal"><span class="token string">&quot;AAAAAAAAA&quot;</span></span>
+<span class="token keyword">end</span>
+foo <span class="token punctuation">{</span><span class="token operator">|</span>x<span class="token operator">|</span> puts x<span class="token punctuation">}</span>
+foo
+</code></pre>
+</li>
+</ul>
+<p>&#x53C2;&#x8003;&#x94FE;&#x63A5;&#xFF1A;<a href="https://www.cnblogs.com/licongyu/p/5522027.html" target="_blank">https://www.cnblogs.com/licongyu/p/5522027.html</a></p>
+<h3 id="7&#x3001;-ruby&#x4E2D;&#x7684;&#x5143;&#x7F16;&#x7A0B;"><a name="7&#x3001;-ruby&#x4E2D;&#x7684;&#x5143;&#x7F16;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#7&#x3001;-ruby&#x4E2D;&#x7684;&#x5143;&#x7F16;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>7&#x3001; Ruby&#x4E2D;&#x7684;&#x5143;&#x7F16;&#x7A0B;</h3>
+<p>Ruby&#x4E2D;&#x7684;&#x5143;&#x7F16;&#x7A0B;&#xFF0C;&#x662F;&#x53EF;&#x4EE5;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x52A8;&#x6001;&#x5730;&#x64CD;&#x4F5C;&#x8BED;&#x8A00;&#x7ED3;&#x6784;&#xFF08;&#x5982;&#x7C7B;&#x3001;&#x6A21;&#x5757;&#x3001;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x7B49;&#xFF09;&#x7684;&#x6280;&#x672F;&#x3002;&#x4F60;&#x751A;&#x81F3;&#x4E8E;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x7528;&#x91CD;&#x542F;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x76F4;&#x63A5;&#x952E;&#x5165;&#x4E00;&#x6BB5;&#x65B0;&#x7684;Ruby&#x4EE3;&#x7801;&#xFF0C;&#x5E76;&#x6267;&#x884C;&#x5B83;&#x3002;</p>
+<p>&#x3000;&#x3000;Ruby&#x7684;&#x5143;&#x7F16;&#x7A0B;&#xFF0C;&#x4E5F;&#x5177;&#x6709;&#x201C;&#x5229;&#x7528;&#x4EE3;&#x7801;&#x6765;&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x201D;&#x7684;&#x4F5C;&#x7528;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5E38;&#x89C1;&#x7684;<code>attr_accessor</code>&#x7B49;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x5982;&#x6B64;&#x3002;</p>
+<h4 id="71-&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x3001;&#x65B9;&#x6CD5;&#x3001;&#x7C7B;"><a name="71-&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x3001;&#x65B9;&#x6CD5;&#x3001;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#71-&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x3001;&#x65B9;&#x6CD5;&#x3001;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>7.1 &#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x3001;&#x65B9;&#x6CD5;&#x3001;&#x7C7B;</h4>
+<ul>
+<li>&#x540C;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x53EF;&#x4EE5;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#xFF0C;&#x56E0;&#x4E3A;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x53EA;&#x6709;&#x4F7F;&#x7528;&#x7684;&#x65F6;&#x5019;&#x624D;&#x4F1A;&#x88AB;&#x5EFA;&#x7ACB;&#x3002;</li>
+<li>&#x533F;&#x540D;&#x7C7B;&#xFF1A;&#x5BF9;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x5BF9;&#x8C61;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;&#x662F;&#xFF0C;ruby&#x4F1A;&#x63D2;&#x5165;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x533F;&#x540D;&#x7C7B;&#x6765;&#x5BB9;&#x7EB3;&#x65B0;&#x5EFA;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x533F;&#x540D;&#x7C7B;&#x4E0D;&#x53EF;&#x89C1;&#x3002;</li>
+<li><code>def initialize(*args)</code>: &#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x53C2;&#x6570;&#x4E0D;&#x540C;&#x6267;&#x884C;&#x4E0D;&#x540C;&#x7684;&#x64CD;&#x4F5C;</li>
+</ul>
+<h4 id="72-send&#x3001;eval&#x3001;respondto"><a name="72-send&#x3001;eval&#x3001;respondto" class="anchor-navigation-ex-anchor" href="#72-send&#x3001;eval&#x3001;respondto"><i class="fa fa-link" aria-hidden="true"></i></a>7.2 send&#x3001;eval&#x3001;respond_to?</h4>
+<ul>
+<li><p>send</p>
+<blockquote>
+<p><code>send</code>&#x662F;<code>Object</code>&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x65B9;&#x6CD5;&#x540D;&#xFF0C;&#x540E;&#x9762;&#x662F;&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;</p>
+<p>&#x4F7F;&#x7528;<code>send</code>&#x65B9;&#x6CD5;&#xFF0C;&#x4F60;&#x6240;&#x60F3;&#x8981;&#x8C03;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x5C31;&#x987A;&#x7406;&#x6210;&#x7AE0;&#x7684;&#x53D8;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684;&#x53C2;&#x6570;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x76F4;&#x81F3;&#x6700;&#x540E;&#x4E00;&#x523B;&#x81EA;&#x7531;&#x51B3;&#x5B9A;&#x5230;&#x5E95;&#x8C03;&#x7528;&#x54EA;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+</blockquote>
+<pre class="language-"><code class="lang-ruby"><span class="token keyword">class</span> <span class="token class-name">Rubyist</span>
+  <span class="token keyword">def</span> <span class="token method-definition"><span class="token function">welcome</span></span><span class="token punctuation">(</span><span class="token operator">*</span>args<span class="token punctuation">)</span>
+    <span class="token string-literal"><span class="token string">&quot;Welcome &quot;</span></span> <span class="token operator">+</span> args<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token string-literal"><span class="token string">&apos; &apos;</span></span><span class="token punctuation">)</span>
+  <span class="token keyword">end</span>
+<span class="token keyword">end</span>
+obj <span class="token operator">=</span> <span class="token class-name">Rubyist</span><span class="token punctuation">.</span><span class="token keyword">new</span>
+puts<span class="token punctuation">(</span>obj<span class="token punctuation">.</span>send<span class="token punctuation">(</span><span class="token symbol">:welcome</span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;hello&quot;</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">&quot;world&quot;</span></span><span class="token punctuation">)</span><span class="token punctuation">)</span> 
+eval<span class="token punctuation">(</span><span class="token string-literal"><span class="token string">&quot;obj.welcome(&apos;123&apos;)&quot;</span></span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+<li><p>eval</p>
+<blockquote>
+<p>&#x7528;&#x4E8E;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x793A;&#x7684;&#x4EE3;&#x7801;,<code>eval</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x8BA1;&#x7B97;&#x591A;&#x884C;&#x4EE3;&#x7801;&#xFF0C;&#x4F7F;&#x5F97;&#x5C06;&#x6574;&#x4E2A;&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#x5D4C;&#x5165;&#x5230;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x5E76;&#x6267;&#x884C;&#x6210;&#x4E3A;&#x4E86;&#x53EF;&#x80FD;&#x3002;<code>eval</code>&#x65B9;&#x6CD5;&#x5F88;&#x6162;&#xFF0C;&#x5728;&#x6267;&#x884C;&#x5B57;&#x7B26;&#x4E32;&#x524D;&#x6700;&#x597D;&#x5BF9;&#x5176;&#x9884;&#x5148;&#x6C42;&#x503C;&#x3002;</p>
+</blockquote>
+<pre class="language-"><code>str = &quot;Hello&quot;
+puts eval(&quot;str + &apos; world&apos;&quot;) # =&gt; &quot;Hello world&quot;
+</code></pre></li>
+<li><p>respond_to?</p>
+<blockquote>
+<p>&#x6240;&#x6709;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x6709;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x4F7F;&#x7528;<code>respond_to?</code>&#x65B9;&#x6CD5;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x786E;&#x5B9A;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x80FD;&#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+</blockquote>
+<pre class="language-"><code class="lang-ruby">obj <span class="token operator">=</span> <span class="token class-name">Object</span><span class="token punctuation">.</span><span class="token keyword">new</span>
+<span class="token keyword">if</span> obj<span class="token punctuation">.</span>respond_to<span class="token operator">?</span><span class="token punctuation">(</span><span class="token symbol">:program</span><span class="token punctuation">)</span>
+  obj<span class="token punctuation">.</span>program
+<span class="token keyword">else</span>
+  puts <span class="token string-literal"><span class="token string">&quot;Sorry, the object doesn&apos;t understand the &apos;program&apos; message.&quot;</span></span>
+<span class="token keyword">end</span>
+</code></pre>
+<p>&#x53C2;&#x8003;&#x8D44;&#x6599;&#xFF1A;<a href="http://deathking.github.io/metaprogramming-in-ruby/chapter04.html" target="_blank">http://deathking.github.io/metaprogramming-in-ruby/chapter04.html</a></p>
+</li>
+</ul>
+<p>&#x53C2;&#x8003;&#x8D44;&#x6599;&#xFF1A;</p>
+<p><a href="http://deathking.github.io/metaprogramming-in-ruby/" target="_blank">Ruby&#x4E2D;&#x7684;&#x5143;&#x7F16;&#x7A0B;</a></p>
+<h3 id="8&#x3001;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#xFF0C;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x7C7B;&#x53D8;&#x91CF;&#xFF0C;symbol"><a name="8&#x3001;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#xFF0C;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x7C7B;&#x53D8;&#x91CF;&#xFF0C;symbol" class="anchor-navigation-ex-anchor" href="#8&#x3001;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#xFF0C;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x7C7B;&#x53D8;&#x91CF;&#xFF0C;symbol"><i class="fa fa-link" aria-hidden="true"></i></a>8&#x3001;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#xFF0C;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x7C7B;&#x53D8;&#x91CF;&#xFF0C;Symbol</h3>
+<table>
+<thead>
+<tr>
+<th>&#x683C;&#x5F0F;</th>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x4F5C;&#x7528;&#x8303;&#x56F4;</th>
+<th>&#x4E3E;&#x4F8B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$</code>&#x5F00;&#x5934;</td>
+<td>&#x5168;&#x5C40;&#x53D8;&#x91CF;</td>
+<td>&#x4ECE;&#x5B9A;&#x4E49;&#x5230;&#x7A0B;&#x5E8F;&#x7ED3;&#x675F;</td>
+<td><code>$name</code></td>
+</tr>
+<tr>
+<td><code>@</code>&#x5F00;&#x5934;</td>
+<td>&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;</td>
+<td>self</td>
+<td><code>@name</code></td>
+</tr>
+<tr>
+<td><code>@@</code>&#x5F00;&#x5934;</td>
+<td>&#x7C7B;&#x53D8;&#x91CF;</td>
+<td>&#x5185;&#x90E8;&#x76F4;&#x63A5;&#x7528;&#xFF0C;&#x5916;&#x90E8;&#x7528;<code>&#x7C7B;&#x540D;::&#x53D8;&#x91CF;&#x540D;</code></td>
+<td><code>@@name</code></td>
+</tr>
+<tr>
+<td><code>[a-z_]</code>&#x5F00;&#x5934;</td>
+<td>&#x5C40;&#x90E8;&#x53D8;&#x91CF;</td>
+<td>&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x3001;&#x6A21;&#x5757;&#x3001;&#x65B9;&#x6CD5;&#x5185;&#x90E8;&#xFF0C;&#x5728;&#x7C7B;&#x3001;&#x6A21;&#x5757;&#x3001;&#x65B9;&#x6CD5;&#x95F4;&#x4E0D;&#x80FD;&#x5171;&#x4EAB;</td>
+<td><code>name</code></td>
+</tr>
+<tr>
+<td><code>[A-Z]</code></td>
+<td>&#x5E38;&#x91CF;</td>
+<td>&#x5185;&#x90E8;&#x3001;&#x5916;&#x90E8;&#x5747;&#x53EF;&#xFF0C;&#x5916;&#x90E8;&#x8BBF;&#x95EE;<code>&#x7C7B;&#x540D;::&#x5E38;&#x91CF;&#x540D;</code></td>
+<td><code>NAME</code></td>
+</tr>
+<tr>
+<td><code>:</code>&#x5F00;&#x5934;</td>
+<td>Symbol</td>
+<td>&#x5185;&#x5916;</td>
+<td>:name</td>
+</tr>
+</tbody>
+</table>
+<p>&#x53C2;&#x8003;&#x8D44;&#x6599;&#xFF1A;<a href="https://blog.csdn.net/emerald0106/article/details/7358766" target="_blank">https://blog.csdn.net/emerald0106/article/details/7358766</a></p>
+<h3 id="9&#x3001;ruby&#x7684;&#x7279;&#x70B9;"><a name="9&#x3001;ruby&#x7684;&#x7279;&#x70B9;" class="anchor-navigation-ex-anchor" href="#9&#x3001;ruby&#x7684;&#x7279;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>9&#x3001;ruby&#x7684;&#x7279;&#x70B9;</h3>
+<ul>
+<li>&#x89E3;&#x91CA;&#x578B;&#x6267;&#x884C;&#xFF0C;&#x65B9;&#x4FBF;&#x5FEB;&#x6377;:Ruby&#x662F;&#x89E3;&#x91CA;&#x578B;&#x8BED;&#x8A00;&#xFF0C;&#x5176;&#x7A0B;&#x5E8F;&#x65E0;&#x9700;&#x7F16;&#x8BD1;&#x5373;&#x53EF;&#x6267;&#x884C;</li>
+<li>&#x8BED;&#x6CD5;&#x7B80;&#x5355;&#x3001;&#x4F18;&#x96C5;:</li>
+<li>&#x5B8C;&#x5168;&#x9762;&#x5411;&#x5BF9;&#x8C61;: Ruby&#x4ECE;&#x4E00;&#x5F00;&#x59CB;&#x5C31;&#x88AB;&#x8BBE;&#x8BA1;&#x6210;&#x7EAF;&#x7CB9;&#x7684;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x8BED;&#x8A00;&#xFF0C;&#x56E0;&#x6B64;&#x6240;&#x6709;&#x4E1C;&#x897F;&#x90FD;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x4F8B;&#x5982;&#x6574;&#x6570;&#x7B49;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</li>
+<li>&#x5185;&#x7F6E;&#x6B63;&#x5219;&#x5F0F;&#x5F15;&#x64CE;&#xFF0C;&#x9002;&#x5408;&#x6587;&#x672C;&#x5904;&#x7406;:Ruby&#x652F;&#x6301;&#x529F;&#x80FD;&#x5F3A;&#x5927;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x64CD;&#x4F5C;&#x548C;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x68C0;&#x7D22;&#x529F;&#x80FD;&#xFF0C;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;</li>
+<li>&#x81EA;&#x52A8;&#x5783;&#x573E;&#x6536;&#x96C6;: &#x5177;&#x6709;&#x5783;&#x573E;&#x56DE;&#x6536;&#xFF08;Garbage Collect&#xFF0C;GC&#xFF09;&#x529F;&#x80FD;&#xFF0C;&#x80FD;&#x81EA;&#x52A8;&#x56DE;&#x6536;&#x4E0D;&#x518D;&#x4F7F;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x4E0D;&#x9700;&#x8981;&#x7528;&#x6237;&#x5BF9;&#x5185;&#x5B58;&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#x3002;</li>
+<li>&#x8DE8;&#x5E73;&#x53F0;&#x548C;&#x9AD8;&#x5EA6;&#x53EF;&#x79FB;&#x690D;&#x6027;:Ruby&#x652F;&#x6301;&#x591A;&#x79CD;&#x5E73;&#x53F0;&#xFF0C;&#x5728;Windows&#xFF0C; Unix&#xFF0C; Linux&#xFF0C; MacOS&#x4E0A;&#x90FD;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x3002;Ruby&#x7A0B;&#x5E8F;&#x7684;&#x53EF;&#x79FB;&#x690D;&#x6027;&#x975E;&#x5E38;&#x597D;&#xFF0C;&#x7EDD;&#x5927;&#x591A;&#x6570;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x4E0D;&#x52A0;&#x4FEE;&#x6539;&#x7684;&#x5728;&#x5404;&#x79CD;&#x5E73;&#x53F0;&#x4E0A;&#x52A0;&#x4EE5;&#x8FD0;&#x884C;&#x3002;</li>
+<li>&#x6709;&#x4F18;&#x96C5;&#x3001;&#x5B8C;&#x5584;&#x7684;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x673A;&#x5236;: Ruby&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x6574;&#x5957;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x673A;&#x5236;&#xFF0C;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x4F18;&#x96C5;&#x5730;&#x5904;&#x7406;&#x4EE3;&#x7801;&#x5904;&#x7406;&#x51FA;&#x9519;&#x7684;&#x60C5;&#x51B5;&#x3002;</li>
+</ul>
+<p>&#x7F3A;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x89E3;&#x91CA;&#x578B;&#x8BED;&#x8A00;&#xFF0C;&#x6240;&#x4EE5;&#x901F;&#x5EA6;&#x8F83;&#x6162;</li>
+<li>&#x9759;&#x6001;&#x68C0;&#x67E5;&#x6BD4;&#x8F83;&#x5C11;</li>
+</ul>
+<h2 id="rails"><a name="rails" class="anchor-navigation-ex-anchor" href="#rails"><i class="fa fa-link" aria-hidden="true"></i></a>rails</h2>
+<h3 id="active-record"><a name="active-record" class="anchor-navigation-ex-anchor" href="#active-record"><i class="fa fa-link" aria-hidden="true"></i></a>active record</h3>
+<h4 id="&#x521B;&#x5EFA;&#x3001;&#x67E5;&#x8BE2;&#x3001;&#x4FEE;&#x6539;&#x3001;&#x5220;&#x9664;"><a name="&#x521B;&#x5EFA;&#x3001;&#x67E5;&#x8BE2;&#x3001;&#x4FEE;&#x6539;&#x3001;&#x5220;&#x9664;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;&#x3001;&#x67E5;&#x8BE2;&#x3001;&#x4FEE;&#x6539;&#x3001;&#x5220;&#x9664;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521B;&#x5EFA;&#x3001;&#x67E5;&#x8BE2;&#x3001;&#x4FEE;&#x6539;&#x3001;&#x5220;&#x9664;</h4>
+<pre class="language-"><code class="lang-ruby"><span class="token keyword">class</span> <span class="token class-name">Product</span> <span class="token operator">&lt;</span> ApplicationRecord
+<span class="token keyword">end</span>
+<span class="token comment"># &#x521B;&#x5EFA;</span>
+<span class="token comment"># create &#x65B9;&#x6CD5;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x8BB0;&#x5F55;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x5B58;&#x5165;&#x6570;&#x636E;&#x5E93;&#xFF1A;</span>
+user <span class="token operator">=</span> User<span class="token punctuation">.</span>create<span class="token punctuation">(</span><span class="token symbol">name</span><span class="token operator">:</span> <span class="token string-literal"><span class="token string">&quot;David&quot;</span></span><span class="token punctuation">,</span> <span class="token symbol">occupation</span><span class="token operator">:</span> <span class="token string-literal"><span class="token string">&quot;Code Artist&quot;</span></span><span class="token punctuation">)</span>
+<span class="token comment"># new &#x65B9;&#x6CD5;&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;&#x65B0;&#x5BF9;&#x8C61;&#xFF0C;&#x4F46;&#x4E0D;&#x4FDD;&#x5B58;&#xFF1A;</span>
+user <span class="token operator">=</span> <span class="token class-name">User</span><span class="token punctuation">.</span><span class="token keyword">new</span>
+user<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string-literal"><span class="token string">&quot;David&quot;</span></span>
+
+<span class="token comment"># &#x8BFB;&#x53D6;</span>
+users <span class="token operator">=</span> User<span class="token punctuation">.</span>all    <span class="token comment"># &#x8FD4;&#x56DE;&#x6240;&#x6709;&#x7528;&#x6237;&#x7EC4;&#x6210;&#x7684;&#x96C6;&#x5408;</span>
+user <span class="token operator">=</span> User<span class="token punctuation">.</span>first    <span class="token comment"># &#x8FD4;&#x56DE;&#x7B2C;&#x4E00;&#x4E2A;&#x7528;&#x6237;</span>
+david <span class="token operator">=</span> User<span class="token punctuation">.</span>find_by<span class="token punctuation">(</span><span class="token symbol">name</span><span class="token operator">:</span> <span class="token string-literal"><span class="token string">&apos;David&apos;</span></span><span class="token punctuation">)</span>        <span class="token comment"># &#x8FD4;&#x56DE;&#x7B2C;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; David &#x7684;&#x7528;&#x6237;</span>
+<span class="token comment"># &#x67E5;&#x627E;&#x6240;&#x6709;&#x540D;&#x4E3A; David&#xFF0C;&#x804C;&#x4E1A;&#x4E3A; Code Artists &#x7684;&#x7528;&#x6237;&#xFF0C;&#x800C;&#x4E14;&#x6309;&#x7167; created_at &#x53CD;&#x5411;&#x6392;&#x5217;</span>
+users <span class="token operator">=</span> User<span class="token punctuation">.</span>where<span class="token punctuation">(</span><span class="token symbol">name</span><span class="token operator">:</span> <span class="token string-literal"><span class="token string">&apos;David&apos;</span></span><span class="token punctuation">,</span> <span class="token symbol">occupation</span><span class="token operator">:</span> <span class="token string-literal"><span class="token string">&apos;Code Artist&apos;</span></span><span class="token punctuation">)</span><span class="token punctuation">.</span>order<span class="token punctuation">(</span><span class="token symbol">created_at</span><span class="token operator">:</span> <span class="token symbol">:desc</span><span class="token punctuation">)</span>
+
+<span class="token comment"># &#x66F4;&#x65B0;</span>
+user<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string-literal"><span class="token string">&apos;Dave&apos;</span></span>
+user<span class="token punctuation">.</span>save            <span class="token comment"># </span>
+user<span class="token punctuation">.</span>update<span class="token punctuation">(</span><span class="token symbol">name</span><span class="token operator">:</span> <span class="token string-literal"><span class="token string">&apos;Dave&apos;</span></span><span class="token punctuation">)</span>
+
+<span class="token comment"># &#x5220;&#x9664;</span>
+user<span class="token punctuation">.</span>destroy
+<span class="token comment"># https://ruby-china.github.io/rails-guides/active_record_basics.html#create</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4F1A;&#x521B;&#x5EFA; <code>Product</code> &#x6A21;&#x578B;&#xFF0C;&#x5BF9;&#x5E94;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684; <code>products</code> &#x8868;&#x3002;&#x540C;&#x65F6;&#xFF0C;<code>products</code> &#x8868;&#x4E2D;&#x7684;&#x5B57;&#x6BB5;&#x4E5F;&#x6620;&#x5C04;&#x5230; <code>Product</code> &#x6A21;&#x578B;&#x5B9E;&#x4F8B;&#x7684;&#x5C5E;&#x6027;&#x4E0A;&#x3002;</p>
+<h4 id="&#x5173;&#x8054;&#x6A21;&#x578B;"><a name="&#x5173;&#x8054;&#x6A21;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x5173;&#x8054;&#x6A21;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5173;&#x8054;&#x6A21;&#x578B;</h4>
+<p>&#x5173;&#x8054;&#x539F;&#x56E0;&#xFF1A; &#x64CD;&#x4F5C;&#x4E24;&#x4E2A;&#x6709;&#x5173;&#x7CFB;&#x7684;&#x8868;&#x65F6;&#x7B80;&#x5316;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x8868;&#x6709;&#x5173;&#x8054;&#xFF0C;&#x6BD4;&#x5982;&#x4E00;&#x4E2A;&#x4F5C;&#x8005;&#x8868;&#xFF0C;&#x4E00;&#x4E2A;&#x56FE;&#x4E66;&#x8868;&#xFF0C;&#x4E00;&#x4E2A;&#x4F5C;&#x8005;&#x5BF9;&#x5E94;&#x591A;&#x672C;&#x4E66;&#xFF0C;&#x5982;&#x679C;&#x6B64;&#x65F6;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x4F5C;&#x8005;&#x524D;&#x8981;&#x5148;&#x628A;&#x4F5C;&#x8005;&#x5BF9;&#x5E94;&#x7684;&#x4E66;&#x5220;&#x9664;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x5220;&#x9664;&#x4F5C;&#x8005;&#x3002;&#x4F46;&#x662F;&#x5173;&#x8054;&#x540E;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5728;&#x6A21;&#x578B;&#x4E2D;&#x5220;&#x9664;&#x4F5C;&#x8005;&#x8BED;&#x53E5;&#x5373;&#x53EF;&#xFF0C;&#x5220;&#x9664;&#x4E66;&#x7684;&#x52A8;&#x4F5C;active_record&#x4F1A;&#x81EA;&#x52A8;&#x5B8C;&#x6210;&#x3002;</p>
+<ul>
+<li><p>belongs_to:&#x4E00;&#x5BF9;&#x4E00;&#x5173;&#x7CFB;</p>
+<p><code>belongs_to</code> &#x5173;&#x8054;&#x521B;&#x5EFA;&#x4E24;&#x4E2A;&#x6A21;&#x578B;&#x4E4B;&#x95F4;&#x4E00;&#x5BF9;&#x4E00;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x58F0;&#x660E;&#x6240;&#x5728;&#x7684;&#x6A21;&#x578B;&#x5B9E;&#x4F8B;&#x5C5E;&#x4E8E;&#x53E6;&#x4E00;&#x4E2A;&#x6A21;&#x578B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#x5199;belongs_to&#x7684;&#x6A21;&#x578B;&#x91CC;&#x7684;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#x76F8;&#x5BF9;&#x4E8E;&#x53E6;&#x4E00;&#x4E2A;&#x8868;&#x91CC;&#x6709;&#x552F;&#x4E00;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#xFF0C;&#x53EB;&#x4E00;&#x5BF9;&#x4E00;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#x6709;&#x4F5C;&#x8005;&#x548C;&#x56FE;&#x4E66;&#x4E24;&#x4E2A;&#x6A21;&#x578B;&#xFF0C;&#x800C;&#x4E14;&#x6BCF;&#x672C;&#x4E66;&#x53EA;&#x80FD;&#x6307;&#x5B9A;&#x7ED9;&#x4E00;&#x4F4D;&#x4F5C;&#x8005;&#xFF0C;&#x5728;&#x56FE;&#x4E66;&#x8868;&#x4E2D;&#x5199;&#x4E0A;&#xFF1A;</p>
+<pre class="language-"><code>class Book &lt; ApplicationRecord
+  belongs_to :author
+end
+</code></pre></li>
+<li><p>has_one&#xFF1A;&#x4E00;&#x5BF9;&#x4E00;&#x5173;&#x7CFB;</p>
+<p><code>has_one</code> &#x5173;&#x8054;&#x4E5F;&#x5EFA;&#x7ACB;&#x4E24;&#x4E2A;&#x6A21;&#x578B;&#x4E4B;&#x95F4;&#x7684;&#x4E00;&#x5BF9;&#x4E00;&#x5173;&#x7CFB;&#xFF0C;&#x4F46;&#x8BED;&#x4E49;&#x548C;&#x7ED3;&#x679C;&#x6709;&#x70B9;&#x4E0D;&#x4E00;&#x6837;&#x3002;&#x8FD9;&#x79CD;&#x5173;&#x8054;&#x8868;&#x793A;&#x6A21;&#x578B;&#x7684;&#x5B9E;&#x4F8B;&#x5305;&#x542B;&#x6216;&#x62E5;&#x6709;&#x53E6;&#x4E00;&#x4E2A;&#x6A21;&#x578B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5E94;&#x7528;&#x4E2D;&#x6BCF;&#x4E2A;&#x4F9B;&#x5E94;&#x5546;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x8D26;&#x6237;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x5B9A;&#x4E49;&#x4F9B;&#x5E94;&#x5546;&#x6A21;&#x578B;&#xFF1A;</p>
+<pre class="language-"><code>class Supplier &lt; ApplicationRecord
+  has_one :account
+end
+</code></pre><p>has_one&#x4E0E;belongs_to&#x7684;&#x9009;&#x62E9;&#xFF1A;</p>
+<p>&#x200B;</p>
+</li>
+<li><p>has_many &#xFF1A;&#x4E00;&#x5BF9;&#x591A;</p>
+<p><code>has_many</code> &#x5173;&#x8054;&#x8868;&#x793A;&#x6A21;&#x578B;&#x7684;&#x5B9E;&#x4F8B;&#x6709;&#x96F6;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x53E6;&#x4E00;&#x6A21;&#x578B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5BF9;&#x5E94;&#x7528;&#x4E2D;&#x7684;&#x4F5C;&#x8005;&#x548C;&#x56FE;&#x4E66;&#x6A21;&#x578B;&#x6765;&#x8BF4;&#xFF0C;&#x4F5C;&#x8005;&#x6A21;&#x578B;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x58F0;&#x660E;&#xFF1A;</p>
+<pre class="language-"><code>class Author &lt; ApplicationRecord
+  has_many :books
+end
+</code></pre></li>
+<li><p><code>:through</code>: &#x901A;&#x8FC7;&#x7B2C;&#x4E09;&#x5F20;&#x8868;&#x6765;&#x5173;&#x8054;</p>
+<p><code>has_many :through</code></p>
+<p>&#x8FD9;&#x79CD;&#x5173;&#x8054;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x6A21;&#x578B;&#x7684;&#x5B9E;&#x4F8B;&#x53EF;&#x4EE5;&#x501F;&#x7531;&#x7B2C;&#x4E09;&#x4E2A;&#x6A21;&#x578B;&#xFF0C;&#x62E5;&#x6709;&#x96F6;&#x4E2A;&#x548C;&#x591A;&#x4E2A;&#x53E6;&#x4E00;&#x6A21;&#x578B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5728;&#x533B;&#x7597;&#x953B;&#x70BC;&#x4E2D;&#xFF0C;&#x75C5;&#x4EBA;&#x8981;&#x548C;&#x533B;&#x751F;&#x7EA6;&#x5B9A;&#x7EC3;&#x4E60;&#x65F6;&#x95F4;&#x3002;&#x8FD9;&#x4E2D;&#x95F4;&#x7684;&#x5173;&#x8054;&#x58F0;&#x660E;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-ruby"><span class="token keyword">class</span> <span class="token class-name">Physician</span> <span class="token operator">&lt;</span> ApplicationRecord
+  has_many <span class="token symbol">:appointments</span>
+  has_many <span class="token symbol">:patients</span><span class="token punctuation">,</span> <span class="token symbol">through</span><span class="token operator">:</span> <span class="token symbol">:appointments</span>
+<span class="token keyword">end</span>
+<span class="token keyword">class</span> <span class="token class-name">Appointment</span> <span class="token operator">&lt;</span> ApplicationRecord
+  belongs_to <span class="token symbol">:physician</span>
+  belongs_to <span class="token symbol">:patient</span>
+<span class="token keyword">end</span>
+<span class="token keyword">class</span> <span class="token class-name">Patient</span> <span class="token operator">&lt;</span> ApplicationRecord
+  has_many <span class="token symbol">:appointments</span>
+  has_many <span class="token symbol">:physicians</span><span class="token punctuation">,</span> <span class="token symbol">through</span><span class="token operator">:</span> <span class="token symbol">:appointments</span>
+<span class="token keyword">end</span>
+</code></pre>
+<p><code>has_one :through</code></p>
+<p>&#x8FD9;&#x79CD;&#x5173;&#x8054;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x6A21;&#x578B;&#x901A;&#x8FC7;&#x7B2C;&#x4E09;&#x4E2A;&#x6A21;&#x578B;&#x62E5;&#x6709;&#x53E6;&#x4E00;&#x6A21;&#x578B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x6BCF;&#x4E2A;&#x4F9B;&#x5E94;&#x5546;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x8D26;&#x6237;&#xFF0C;&#x800C;&#x4E14;&#x6BCF;&#x4E2A;&#x8D26;&#x6237;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x8D26;&#x6237;&#x5386;&#x53F2;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x5B9A;&#x4E49;&#x6A21;&#x578B;&#xFF1A;</p>
+<pre class="language-"><code>
+class Supplier &lt; ApplicationRecord
+  has_one :account
+  has_one :account_history, through: :account
+end
+
+class Account &lt; ApplicationRecord
+  belongs_to :supplier
+  has_one :account_history
+end
+
+class AccountHistory &lt; ApplicationRecord
+  belongs_to :account
+end
+</code></pre></li>
+<li><p>has_and_belongs_to_many</p>
+<p>&#x76F4;&#x63A5;&#x5EFA;&#x7ACB;&#x4E24;&#x4E2A;&#x6A21;&#x578B;&#x4E4B;&#x95F4;&#x7684;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#xFF0C;&#x4E0D;&#x501F;&#x7531;&#x7B2C;&#x4E09;&#x4E2A;&#x6A21;&#x578B;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5E94;&#x7528;&#x4E2D;&#x6709;&#x88C5;&#x914D;&#x4F53;&#x548C;&#x96F6;&#x4EF6;&#x4E24;&#x4E2A;&#x6A21;&#x578B;&#xFF0C;&#x6BCF;&#x4E2A;&#x88C5;&#x914D;&#x4F53;&#x6709;&#x591A;&#x4E2A;&#x96F6;&#x4EF6;&#xFF0C;&#x6BCF;&#x4E2A;&#x96F6;&#x4EF6;&#x53C8;&#x53EF;&#x7528;&#x4E8E;&#x591A;&#x4E2A;&#x88C5;&#x914D;&#x4F53;&#xFF0C;&#x8FD9;&#x65F6;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x5F0F;&#x5B9A;&#x4E49;&#x6A21;&#x578B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-ruby"><span class="token keyword">class</span> <span class="token class-name">Assembly</span> <span class="token operator">&lt;</span> ApplicationRecord
+  has_and_belongs_to_many <span class="token symbol">:parts</span>
+<span class="token keyword">end</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Part</span> <span class="token operator">&lt;</span> ApplicationRecord
+  has_and_belongs_to_many <span class="token symbol">:assemblies</span>
+<span class="token keyword">end</span>
+</code></pre>
+</li>
+</ul>
+<p>&#x53C2;&#x8003;&#x8D44;&#x6599;&#xFF1A; <a href="https://ruby-china.github.io/rails-guides/association_basics.html" target="_blank">https://ruby-china.github.io/rails-guides/association_basics.html</a></p>
+<h4 id="&#x67E5;&#x8BE2;&#x63A5;&#x53E3;"><a name="&#x67E5;&#x8BE2;&#x63A5;&#x53E3;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x8BE2;&#x63A5;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x8BE2;&#x63A5;&#x53E3;</h4>
+<ul>
+<li><p>&#x68C0;&#x7D22;&#x5BF9;&#x8C61;</p>
+<pre class="language-"><code class="lang-ruby">find    <span class="token comment"># &#x68C0;&#x7D22;&#x6307;&#x5B9A;&#x4E3B;&#x952E;&#x5BF9;&#x5E94;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x6CA1;&#x6709;&#x8BB0;&#x5F55;find&#x65B9;&#x6CD5;&#x629B;&#x51FA; ActiveRecord::RecordNotFound &#x5F02;&#x5E38;&#x3002;</span>
+client <span class="token operator">=</span> Client<span class="token punctuation">.</span>find<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>    <span class="token comment"># &#x67E5;&#x627E;&#x4E3B;&#x952E;&#xFF08;ID&#xFF09;&#x4E3A; 10 &#x7684;&#x5BA2;&#x6237;</span>
+
+take    <span class="token comment"># &#x68C0;&#x7D22;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#x800C;&#x4E0D;&#x8003;&#x8651;&#x6392;&#x5E8F;&#xFF0C;&#x6CA1;&#x6709;&#x8BB0;&#x5F55;take&#x65B9;&#x6CD5;&#x8FD4;&#x56DE; nil&#xFF0C;&#x800C;&#x4E0D;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;</span>
+client <span class="token operator">=</span> Client<span class="token punctuation">.</span>take    <span class="token comment"># SELECT * FROM clients LIMIT 1</span>
+
+first     <span class="token comment"># &#x9ED8;&#x8BA4;&#x67E5;&#x627E;&#x6309;&#x4E3B;&#x952E;&#x6392;&#x5E8F;&#x7684;&#x7B2C;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8BB0;&#x5F55;&#xFF0C;first &#x65B9;&#x6CD5;&#x8FD4;&#x56DE; nil&#xFF0C;&#x800C;&#x4E0D;&#x629B;&#x51FA;&#x5F02;&#x5E38;</span>
+client <span class="token operator">=</span> Client<span class="token punctuation">.</span>first    <span class="token comment"># SELECT * FROM clients ORDER BY clients.id ASC LIMIT 1</span>
+
+last    <span class="token comment"># &#x9ED8;&#x8BA4;&#x67E5;&#x627E;&#x6309;&#x4E3B;&#x952E;&#x6392;&#x5E8F;&#x7684;&#x6700;&#x540E;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#x3002;&#x6CA1;&#x6709;&#x8BB0;&#x5F55;last&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;nil&#xFF0C;&#x800C;&#x4E0D;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;</span>
+client <span class="token operator">=</span> Client<span class="token punctuation">.</span>last    <span class="token comment"># SELECT * FROM clients ORDER BY clients.id DESC LIMIT 1</span>
+client <span class="token operator">=</span> Client<span class="token punctuation">.</span>last<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token comment"># &#x8FD4;&#x56DE;&#x4E0D;&#x8D85;&#x8FC7;&#x6307;&#x5B9A;&#x6570;&#x91CF;&#x7684;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x3002;</span>
+client <span class="token operator">=</span> Client<span class="token punctuation">.</span>order<span class="token punctuation">(</span><span class="token symbol">:first_name</span><span class="token punctuation">)</span><span class="token punctuation">.</span>last <span class="token comment"># &#x8FD4;&#x56DE;&#x6309;&#x7167;&#x6307;&#x5B9A;&#x5C5E;&#x6027;&#x6392;&#x5E8F;&#x7684;&#x6700;&#x540E;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#x3002;</span>
+client <span class="token operator">=</span> Client<span class="token punctuation">.</span>last<span class="token operator">!</span>    <span class="token comment"># &#x548C; last &#x65B9;&#x6CD5;&#x7C7B;&#x4F3C;,&#x533A;&#x522B;&#x662F;&#x6CA1;&#x6709;&#x8BB0;&#x5F55;&#x4F1A;&#x629B;&#x51FA; ActiveRecord::RecordNotFound &#x5F02;&#x5E38;&#x3002;</span>
+
+find_by    <span class="token comment"># &#x67E5;&#x627E;&#x5339;&#x914D;&#x6307;&#x5B9A;&#x6761;&#x4EF6;&#x7684;&#x7B2C;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#x3002;</span>
+Client<span class="token punctuation">.</span>find_by first_name<span class="token operator">:</span> <span class="token string-literal"><span class="token string">&apos;Lifo&apos;</span></span>    <span class="token comment"># Client.where(first_name: &apos;Lifo&apos;).take</span>
+
+find_each     <span class="token comment"># &#x6279;&#x91CF;&#x68C0;&#x7D22;&#x8BB0;&#x5F55;&#xFF0C;&#x6BCF;&#x6761;&#x8BB0;&#x5F55;&#x4F20;&#x5165;&#x5757;&#xFF0C;</span>
+User<span class="token punctuation">.</span>find_each <span class="token keyword">do</span> <span class="token operator">|</span>user<span class="token operator">|</span>
+  NewsMailer<span class="token punctuation">.</span>weekly<span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">.</span>deliver_now
+<span class="token keyword">end</span>
+</code></pre>
+</li>
+<li><p>&#x6761;&#x4EF6;&#x67E5;&#x8BE2;</p>
+<p><code>where</code> &#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x6307;&#x660E;&#x9650;&#x5236;&#x8FD4;&#x56DE;&#x8BB0;&#x5F55;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E; SQL &#x8BED;&#x53E5;&#x7684; <code>WHERE</code> &#x90E8;&#x5206;&#x3002;&#x6761;&#x4EF6;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x6570;&#x7EC4;&#x6216;&#x6563;&#x5217;&#x6307;&#x5B9A;&#x3002;</p>
+<pre class="language-"><code class="lang-ruby">&#x7EAF;&#x5B57;&#x7B26;&#x4E32;&#x6761;&#x4EF6;<span class="token symbol">:&#x5BB9;&#x6613;&#x53D7;&#x5230;</span> <span class="token constant">SQL</span> &#x6CE8;&#x5165;&#x653B;&#x51FB;&#x7684;&#x98CE;&#x9669;&#x3002;
+Client<span class="token punctuation">.</span>where<span class="token punctuation">(</span><span class="token string-literal"><span class="token string">&quot;orders_count = &apos;2&apos;&quot;</span></span><span class="token punctuation">)</span>    <span class="token comment"># &#x67E5;&#x627E;&#x6240;&#x6709; orders_count &#x5B57;&#x6BB5;&#x7684;&#x503C;&#x4E3A; 2 &#x7684;&#x5BA2;&#x6237;&#x8BB0;&#x5F55;&#x3002;</span>
+
+<span class="token symbol">&#x6570;&#x7EC4;&#x6761;&#x4EF6;</span><span class="token operator">:</span> &#x540E;&#x9762;&#x7684;&#x53C2;&#x6570;&#x4F1A;&#x66FF;&#x6362;&#x524D;&#x9762;&#x7684;&#x95EE;&#x53F7;<span class="token punctuation">(</span>&#xFF1F;<span class="token punctuation">)</span>
+Client<span class="token punctuation">.</span>where<span class="token punctuation">(</span><span class="token string-literal"><span class="token string">&quot;orders_count = ?&quot;</span></span><span class="token punctuation">,</span> params<span class="token punctuation">[</span><span class="token symbol">:orders</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+Client<span class="token punctuation">.</span>where<span class="token punctuation">(</span><span class="token string-literal"><span class="token string">&quot;orders_count = ? AND locked = ?&quot;</span></span><span class="token punctuation">,</span> params<span class="token punctuation">[</span><span class="token symbol">:orders</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+
+&#x6761;&#x4EF6;&#x4E2D;&#x7684;&#x5360;&#x4F4D;&#x7B26;
+Client<span class="token punctuation">.</span>where<span class="token punctuation">(</span><span class="token string-literal"><span class="token string">&quot;created_at &gt;= :start_date AND created_at &lt;= :end_date&quot;</span></span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span><span class="token symbol">start_date</span><span class="token operator">:</span> params<span class="token punctuation">[</span><span class="token symbol">:start_date</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token symbol">end_date</span><span class="token operator">:</span> params<span class="token punctuation">[</span><span class="token symbol">:end_date</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+&#x6563;&#x5217;&#x6761;&#x4EF6;
+Client<span class="token punctuation">.</span>where<span class="token punctuation">(</span><span class="token symbol">locked</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">)</span>    <span class="token comment"># SELECT * FROM clients WHERE (clients.locked = 1)</span>
+
+<span class="token constant">NOT</span> &#x6761;&#x4EF6;&#xFF1A;&#x5148;&#x8C03;&#x7528;&#x6CA1;&#x6709;&#x53C2;&#x6570;&#x7684; where &#x65B9;&#x6CD5;&#xFF0C;&#x7136;&#x540E;&#x9A6C;&#x4E0A;&#x94FE;&#x5F0F;&#x8C03;&#x7528; <span class="token keyword">not</span> &#x65B9;&#x6CD5;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x751F;&#x6210;&#x8FD9;&#x4E2A;&#x67E5;&#x8BE2;&#x3002;
+Client<span class="token punctuation">.</span>where<span class="token punctuation">.</span><span class="token keyword">not</span><span class="token punctuation">(</span><span class="token symbol">locked</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">)</span>    <span class="token comment"># SELECT * FROM clients WHERE (clients.locked != 1)</span>
+</code></pre>
+</li>
+<li><p>&#x6392;&#x5E8F;</p>
+<pre class="language-"><code class="lang-ruby">&#x6309; created_at &#x5B57;&#x6BB5;&#x7684;&#x5347;&#x5E8F;&#x65B9;&#x5F0F;&#x53D6;&#x56DE;&#x8BB0;&#x5F55;&#xFF1A;
+Client<span class="token punctuation">.</span>order<span class="token punctuation">(</span><span class="token symbol">:created_at</span><span class="token punctuation">)</span>
+
+&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <span class="token constant">ASC</span>&#xFF08;&#x5347;&#x5E8F;&#xFF09; &#x6216; <span class="token constant">DESC</span>&#xFF08;&#x964D;&#x5E8F;&#xFF09; &#x6307;&#x5B9A;&#x6392;&#x5E8F;&#x65B9;&#x5F0F;&#xFF1A;
+Client<span class="token punctuation">.</span>order<span class="token punctuation">(</span><span class="token symbol">created_at</span><span class="token operator">:</span> <span class="token symbol">:desc</span><span class="token punctuation">)</span>
+Client<span class="token punctuation">.</span>order<span class="token punctuation">(</span><span class="token symbol">created_at</span><span class="token operator">:</span> <span class="token symbol">:asc</span><span class="token punctuation">)</span>
+Client<span class="token punctuation">.</span>order<span class="token punctuation">(</span><span class="token symbol">orders_count</span><span class="token operator">:</span> <span class="token symbol">:asc</span><span class="token punctuation">,</span> <span class="token symbol">created_at</span><span class="token operator">:</span> <span class="token symbol">:desc</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x200B;</p>
+</li>
+</ul>
+<h3 id="&#x6570;&#x636E;&#x5E93;&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><a name="&#x6570;&#x636E;&#x5E93;&#x57FA;&#x672C;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x5E93;&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x5E93;&#x57FA;&#x672C;&#x64CD;&#x4F5C;</h3>
+<ol>
+<li><p><strong>&#x63D2;&#x5165;&#x6570;&#x636E;</strong></p>
+<pre class="language-"><code>insert into <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tablename</span><span class="token punctuation">&gt;</span></span> (field1,field2,field3..) values (value1,value2,value3);
+</code></pre></li>
+<li><p><strong>&#x67E5;&#x8BE2;</strong></p>
+<pre class="language-"><code>select * from <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tablename</span><span class="token punctuation">&gt;</span></span>;
+select  &lt;*/filed&gt; select from <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tablename</span><span class="token punctuation">&gt;</span></span> where <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>field</span><span class="token punctuation">&gt;</span></span>=<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>key</span><span class="token punctuation">&gt;</span></span>;
+select &lt;*/field&gt; form <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tablename</span><span class="token punctuation">&gt;</span></span> where <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>field</span><span class="token punctuation">&gt;</span></span> like &apos;%value%&apos;;    // &#x6A21;&#x7CCA;&#x67E5;&#x8BE2;
+</code></pre></li>
+<li><p><strong>&#x5220;&#x9664;&#xFF08;Delete&#xFF09;</strong></p>
+<pre class="language-"><code>delete from <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tablename</span><span class="token punctuation">&gt;</span></span> where <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>&#x6761;&#x4EF6;&#xFF08;&#x548C;&#x67E5;&#x8BE2;&#x65F6;&#x6761;&#x4EF6;&#x7C7B;&#x4F3C;&#xFF09;</span><span class="token punctuation">&gt;</span></span>
+</code></pre></li>
+<li><p><strong>&#x66F4;&#x65B0;&#xFF08;update)</strong></p>
+<pre class="language-"><code>update <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tablename</span><span class="token punctuation">&gt;</span></span> set <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>field</span><span class="token punctuation">&gt;</span></span>=<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>value</span><span class="token punctuation">&gt;</span></span> where <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>&#x6761;&#x4EF6;(&#x548C;&#x67E5;&#x8BE2;&#x65F6;&#x7C7B;&#x4F3C;&#xFF09;</span><span class="token punctuation">&gt;</span></span>;
+</code></pre></li>
+</ol>
+<p>&#x53C2;&#x8003;&#x94FE;&#x63A5;&#xFF1A;<a href="https://blog.csdn.net/yuanmxiang/article/details/51683232" target="_blank">https://blog.csdn.net/yuanmxiang/article/details/51683232</a></p>
+<p><a href="https://www.cnblogs.com/daxueshan/p/6687521.html" target="_blank">https://www.cnblogs.com/daxueshan/p/6687521.html</a></p>
+<h2 id="&#x5176;&#x4ED6;&#x9762;&#x8BD5;&#x9898;"><a name="&#x5176;&#x4ED6;&#x9762;&#x8BD5;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x5176;&#x4ED6;&#x9762;&#x8BD5;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5176;&#x4ED6;&#x9762;&#x8BD5;&#x9898;</h2>
+<p><a href="https://www.jianshu.com/p/cc9f521d72ee" target="_blank">https://www.jianshu.com/p/cc9f521d72ee</a></p>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x6700;&#x540E;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&#xFF1A;
+2019-10-23 00:04:20
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="012-ruby_or_rails_错误解决.html" class="navigation navigation-prev " aria-label="Previous page: rubyor_rails错误解决">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="014-RubyMine常用快捷键.html" class="navigation navigation-next " aria-label="Next page: RubyMine常用快捷键">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ruby面试题","level":"2.2.13","depth":2,"next":{"title":"RubyMine常用快捷键","level":"2.2.14","depth":2,"path":"doc/ruby/014-RubyMine常用快捷键.md","ref":"doc/ruby/014-RubyMine常用快捷键.md","articles":[]},"previous":{"title":"rubyor_rails错误解决","level":"2.2.12","depth":2,"path":"doc/ruby/012-ruby_or_rails_错误解决.md","ref":"doc/ruby/012-ruby_or_rails_错误解决.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","-highlight","search-pro@2.0.2","expandable-chapters@0.2.0","edit-link@^2.0.2","tbfed-pagefooter@0.0.1","lightbox@1.1.0","favicon@0.0.2","splitter@0.0.8","prism@2.4.0","github@2.0.0","anchor-navigation-ex","page-treeview","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"文件最后修改时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/yulilong/my_blog"},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"mode":"float","showGoTop":false,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"favicon":{"shortcut":"asset/img/favicon.ico","bookmark":"asset/img/favicon.ico","appleTouch":"asset/img/favicon.ico","appleTouchMore":{"120x120":"asset/img/favicon.ico","180x180":"asset/img/favicon.ico"}},"lightbox":{"jquery":true},"back-to-top-button":{},"edit-link":{"label":"编辑此页面","base":"//github.com/yulilong/my_blog/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"expandable-chapters":{}},"theme":"default","author":"yu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"我的blog","language":"zh-hans","gitbook":"*","description":"我的blog"},"file":{"path":"doc/ruby/013-ruby面试题.md","mtime":"2019-10-22T16:04:20.892Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-01-23T06:33:03.728Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
