@@ -240,6 +240,37 @@ https://github.com/Microsoft/vscode-eslint
 
 
 
+### 1.20 文件夹折叠显示(Compact Folders)
+
+**VS Code 的“文件夹折叠显示”（Compact Folders）** 功能。这个功能会在 **某个文件夹下只有一个子文件夹时**，把它们的名字合并显示成类似：
+
+```css
+components/Button/
+```
+
+而不是分两层显示：
+
+```css
+components
+  └── Button
+```
+
+**关闭这个功能的方法**：
+
+1. 打开 **设置**（快捷键：`Ctrl + ,` 或 `Cmd + ,`）。
+2. 搜索：`compact folders`
+3. 关闭 **Explorer: Compact Folders** 选项。
+
+或者直接在 `settings.json` 中添加：
+
+```json
+"explorer.compactFolders": false
+```
+
+关闭后，VS Code 会恢复为传统的文件夹层级显示。
+
+
+
 ## 2. 快捷键设置   
 
 打开快捷键界面和快速找到想要修改的快捷键
