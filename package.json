@@ -1,0 +1,38 @@
+{
+    "name": "wiki",
+    "version": "1.0.0",
+    "description": "我的文档",
+    "main": "index.js",
+    "directories": {
+        "doc": "doc"
+    },
+    "scripts": {
+        "start": "gitbook serve",
+        "build": "bash deploy.sh",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yulilong/my_blog.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yulilong/my_blog/issues"
+    },
+    "homepage": "https://github.com/yulilong/my_blog#readme",
+    "dependencies": {
+        "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
+        "gitbook-plugin-back-to-top-button": "^0.1.4",
+        "gitbook-plugin-edit-link": "^2.0.2",
+        "gitbook-plugin-expandable-chapters": "^0.2.0",
+        "gitbook-plugin-favicon": "0.0.2",
+        "gitbook-plugin-github": "^2.0.0",
+        "gitbook-plugin-lightbox": "^1.1.0",
+        "gitbook-plugin-page-treeview": "^3.0.1",
+        "gitbook-plugin-prism": "^2.4.0",
+        "gitbook-plugin-search-pro": "^2.0.2",
+        "gitbook-plugin-splitter": "0.0.8",
+        "gitbook-plugin-tbfed-pagefooter": "0.0.1"
+    }
+}
